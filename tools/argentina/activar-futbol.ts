@@ -2,9 +2,9 @@
 //
 //   node tools/argentina/activar-futbol.ts ENTRADA.json SALIDA.json
 //
-// Con 11 en cancha, el motor modificado de este fork entra en "modo fútbol"
-// (formación, cambios, arquero, penales, generación de jugadores por posición).
-// Este script además ajusta la duración del partido y los desempates.
+// Todo se hace con ajustes del archivo, así que funciona en la página oficial
+// (play.basketball-gm.com): partidos de básquet con 11 en cancha y dos tiempos
+// de 45 minutos.
 
 import { readFileSync, writeFileSync } from "node:fs";
 
@@ -107,11 +107,25 @@ const cambios: Record<string, unknown> = {
 	pointsFormula: fromStart("3*W+T"),
 	tiebreakers: fromStart(["marginOfVictory", "headToHeadRecord", "coinFlip"]),
 
-	// Tarjetas: cada falta registrada es una amarilla, y con 2 el jugador queda
-	// expulsado. Con esta tasa salen unas 2,4 amarillas por equipo y por partido
-	// con los planteles reales del archivo.
-	foulRateFactor: 2,
+	// Ajustes para que el motor OFICIAL de play.basketball-gm.com dé partidos de
+	// básquet normales con 11 en cancha y 90 minutos. Medidos con los planteles
+	// reales del archivo contra el código oficial: unos 105 puntos por equipo,
+	// 45% de acierto, 10 triples, 6 tapones y 16 pérdidas por partido.
+	// - Ritmo: con 90 minutos, el ritmo de la NBA (100) daba unos 190 puntos.
+	pace: 55,
+	// - Puntería y tapones: con 11 defensores, el motor oficial suma su defensa
+	//   como si fueran jugadores de básquet de más, y el acierto caía al 25%.
+	twoPointAccuracyFactor: 1.4,
+	threePointAccuracyFactor: 1.4,
+	blockFactor: 0.4,
+	// - Pocas faltas (el valor del archivo 2023). Con más faltas, el motor
+	//   oficial da decenas de libres por partido.
+	foulRateFactor: 0.01,
+	// - Con 2 faltas el jugador sale del partido.
 	foulsNeededToFoulOut: 2,
+
+	// Temporada: 2 partidos contra cada uno de los otros 27 equipos activos
+	numGames: 54,
 
 	// Sin Partido de las Estrellas (con concurso de volcadas y de triples)
 	allStarGame: null,
