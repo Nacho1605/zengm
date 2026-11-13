@@ -69,7 +69,8 @@ El OVR es lo que usa la IA para valorar, contratar y armar el once.
 
 Consecuencia: a igual calidad, los altos y los buenos marcadores tienen más OVR.
 Un arquero sin tiro pierde unos 6 puntos de OVR por `tp`, `oiq` y `dnk`; hay que
-compensarlo con `hgt`, `diq`, `stre` y `spd` si queremos que la IA lo valore igual.
+compensarlo con `diq`, `stre`, `spd` y `endu` si queremos que la IA lo valore igual
+(`hgt` no: es el ancla con la altura real).
 
 ## Norma por posición
 
