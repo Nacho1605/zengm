@@ -1,0 +1,58 @@
+{
+  "$comment": "Reglas de formación para la variante de fútbol de BBGM. Borrador: todavía no está conectado al motor. Las etiquetas (PG, SG, G, GF, SF, PF, FC, F, C) son las de BBGM; el motor las sigue usando, pero su significado es de fútbol.",
+  "partido": {
+    "jugadoresPorEquipo": 11,
+    "tiempos": 2,
+    "minutosPorTiempo": 45
+  },
+  "lineas": {
+    "arquero": {
+      "etiquetas": ["C"],
+      "minimo": 1,
+      "maximo": 1
+    },
+    "defensores": {
+      "etiquetas": ["GF", "PF", "FC"],
+      "minimo": 3,
+      "maximo": 5
+    },
+    "mediocampistas": {
+      "etiquetas": ["PG", "SG", "G"],
+      "minimo": 3,
+      "maximo": 5,
+      "nota": "SF no está en la lista de obligatorias. Puede contar como mediocampista o como delantero, según la línea en la que se ubique en la cancha."
+    },
+    "delanteros": {
+      "etiquetas": ["F"],
+      "minimo": 1,
+      "maximo": 4,
+      "nota": "SF también puede ocupar una plaza de delantero, según la línea en la que se ubique."
+    }
+  },
+  "plazasLibres": {
+    "cantidad": 3,
+    "etiquetasPermitidas": ["PG", "SG", "G", "GF", "SF", "PF", "FC", "F", "C"],
+    "nota": "Cualquier etiqueta, sujeta a los topes de cada línea. Las plazas libres completan la formación; por eso 4-3-3, 4-4-2, 3-5-2 y 4-2-3-1 son todas válidas."
+  },
+  "formacionValida": {
+    "reglas": [
+      "Exactamente 11 jugadores en cancha.",
+      "Exactamente 1 arquero (C).",
+      "Entre 3 y 5 defensores (GF, PF, FC).",
+      "Entre 3 y 5 mediocampistas (PG, SG, G). Un SF que juegue en mediocampo cuenta aquí.",
+      "Entre 1 y 4 delanteros (F).",
+      "Los jugadores de plazas libres deben cumplir los topes de su línea."
+    ],
+    "cuandoSeValida": "En cada sustitución, antes de confirmarla. Si el cambio deja la formación fuera de estas reglas, se bloquea."
+  },
+  "ejemplos": {
+    "4-3-3": { "C": 1, "defensores": 4, "mediocampistas": 3, "delanteros": 3 },
+    "4-4-2": { "C": 1, "defensores": 4, "mediocampistas": 4, "delanteros": 2 },
+    "3-5-2": { "C": 1, "defensores": 3, "mediocampistas": 5, "delanteros": 2 },
+    "4-2-3-1": { "C": 1, "defensores": 4, "mediocampistas": 5, "delanteros": 1 }
+  },
+  "posicionFijada": {
+    "nota": "Cada jugador tiene una posición fijada a mano que no se recalcula desde los ratings. La posición calculada por BBGM (pos) se guarda en otro campo.",
+    "motivoTecnico": "Hoy BBGM recalcula ratings.pos en develop.ts y augmentPartialPlayer.ts. Hay que guardar la posición fijada en un campo aparte y leer ese campo primero."
+  }
+}

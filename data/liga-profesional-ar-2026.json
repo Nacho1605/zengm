@@ -1,0 +1,131 @@
+{
+  "$comment": "Definición base de una liga 'BasketballGM con reglas de fútbol' basada en la Liga Profesional de Fútbol (Argentina) 2026. Borrador de diseño: todavía no está conectado al motor del juego. Los campos con \"verificado\": false o null deben completarse antes de usar el archivo.",
+  "meta": {
+    "nombre": "Liga Profesional de Fútbol 2026 (Argentina)",
+    "deporte": "futbol",
+    "base": "basketball",
+    "idioma": "es-AR",
+    "temporada": 2026,
+    "fuentesClubes": [
+      "https://442.perfil.com/noticias/amp/futbol/guia-del-torneo-clausura-2026-zonas-formato-y-el-mapa-de-los-30-equipos-de-primera-division.phtml",
+      "https://www.canal26.com/deportes/2025/12/01/de-donde-son-los-30-equipos-que-jugaran-el-torneo-apertura-2026-el-impresionante-record-de-cordoba/",
+      "https://www.diariodecuyo.com.ar/pasiondeportiva/quedo-definida-la-lista-de-los-30-equipos-que-jugaran-en-primera-division-la-temporada-2026-1805064.html"
+    ]
+  },
+
+  "formato": {
+    "torneos": ["Apertura", "Clausura"],
+    "clausuraDespuesDelMundial": true,
+    "zonas": {
+      "cantidad": 2,
+      "equiposPorZona": 15,
+      "nombres": ["A", "B"]
+    },
+    "fechasPorZona": 14,
+    "fechaClasicos": true,
+    "fechaInterzonal": true,
+    "clasificanPlayoffsPorZona": 8,
+    "empatesPermitidos": true,
+    "desempateKnockout": "penales"
+  },
+
+  "partido": {
+    "duracionMinutos": 90,
+    "tiempos": 2,
+    "minutosPorTiempo": 45,
+    "tiempoAgregado": true,
+    "unidadDePuntuacion": "gol",
+    "relojDePosesion": false,
+    "relojDeJuegoContinuo": true,
+    "prorroga": {
+      "aplica": "solo eliminatorias",
+      "tiempos": 2,
+      "minutosPorTiempo": 15
+    },
+    "posesion": {
+      "equivalente": "posesión (equivale a la posesión de basquet)",
+      "resultadosPosibles": ["pase", "avance", "remate", "pérdida", "falta", "córner", "tiro libre"]
+    }
+  },
+
+  "plantel": {
+    "maxJugadores": 30,
+    "minJugadoresTitulares": 11,
+    "suplentesMaximos": 7,
+    "nota": "Los números son provisionales: el reglamento de la AFA fija el máximo de inscriptos por torneo; verificar antes de usar."
+  },
+
+  "posiciones": [
+    { "codigo": "ARQ", "nombre": "Arquero", "equivalenteBasquet": "C" },
+    { "codigo": "LD", "nombre": "Lateral derecho", "equivalenteBasquet": "G" },
+    { "codigo": "LI", "nombre": "Lateral izquierdo", "equivalenteBasquet": "G" },
+    { "codigo": "DFC", "nombre": "Defensor central", "equivalenteBasquet": "PF" },
+    { "codigo": "MCD", "nombre": "Volante central (contención)", "equivalenteBasquet": "PF" },
+    { "codigo": "MC", "nombre": "Volante central", "equivalenteBasquet": "SF" },
+    { "codigo": "MO", "nombre": "Mediocampista ofensivo (enganche)", "equivalenteBasquet": "SG" },
+    { "codigo": "EXT", "nombre": "Extremo", "equivalenteBasquet": "SG" },
+    { "codigo": "DEL", "nombre": "Delantero", "equivalenteBasquet": "F" }
+  ],
+
+  "atributos": {
+    "nota": "Mapeo desde los 15 ratings de BasketballGM hacia atributos de fútbol. Los nombres de los ratings originales se mantienen en la clave 'origen' para que el motor pueda reutilizar la lógica existente.",
+    "mapeo": [
+      { "origen": "hgt", "destino": "cab", "nombre": "Juego aéreo (cabeceo)", "nota": "La estatura pasa a ser la base del juego aéreo." },
+      { "origen": "stre", "destino": "fue", "nombre": "Fuerza (duelos y choques)" },
+      { "origen": "spd", "destino": "vel", "nombre": "Velocidad" },
+      { "origen": "jmp", "destino": "sal", "nombre": "Salto" },
+      { "origen": "endu", "destino": "res", "nombre": "Resistencia" },
+      { "origen": "ins", "destino": "rem", "nombre": "Definición cerca del arco" },
+      { "origen": "dnk", "destino": "pot", "nombre": "Potencia de disparo" },
+      { "origen": "ft", "destino": "pen", "nombre": "Penales" },
+      { "origen": "fg", "destino": "fin", "nombre": "Finalización de media distancia" },
+      { "origen": "tp", "destino": "tir", "nombre": "Tiro de larga distancia" },
+      { "origen": "diq", "destino": "def", "nombre": "Lectura defensiva" },
+      { "origen": "oiq", "destino": "cre", "nombre": "Creatividad ofensiva" },
+      { "origen": "drb", "destino": "con", "nombre": "Conducción" },
+      { "origen": "pss", "destino": "pas", "nombre": "Pase" },
+      { "origen": "reb", "destino": "pos", "nombre": "Posicionamiento y recuperación" }
+    ]
+  },
+
+  "equipos": [
+    { "abbrev": "ALD", "region": "Mar del Plata", "nombre": "Aldosivi", "verificado": true },
+    { "abbrev": "ARG", "region": "Buenos Aires", "nombre": "Argentinos Juniors", "verificado": true },
+    { "abbrev": "ATU", "region": "San Miguel de Tucumán", "nombre": "Atlético Tucumán", "verificado": true },
+    { "abbrev": "BAN", "region": "Buenos Aires", "nombre": "Banfield", "verificado": true },
+    { "abbrev": "BAR", "region": "Buenos Aires", "nombre": "Barracas Central", "verificado": true },
+    { "abbrev": "BEL", "region": "Córdoba", "nombre": "Belgrano", "verificado": true },
+    { "abbrev": "BOC", "region": "Buenos Aires", "nombre": "Boca Juniors", "verificado": true },
+    { "abbrev": "CCO", "region": "Santiago del Estero", "nombre": "Central Córdoba", "verificado": true, "nota": "Verificar que el nombre oficial sea Central Córdoba (SdE)." },
+    { "abbrev": "DYJ", "region": "Florencio Varela", "nombre": "Defensa y Justicia", "verificado": true },
+    { "abbrev": "HUR", "region": "Buenos Aires", "nombre": "Huracán", "verificado": true },
+    { "abbrev": "IND", "region": "Avellaneda", "nombre": "Independiente", "verificado": true },
+    { "abbrev": "RIE", "region": "Buenos Aires", "nombre": "Deportivo Riestra", "verificado": true },
+    { "abbrev": "ERC", "region": "Río Cuarto", "nombre": "Estudiantes", "verificado": true, "nota": "Ascendido desde la Primera Nacional 2025." },
+    { "abbrev": "GMZ", "region": "Mendoza", "nombre": "Gimnasia y Esgrima", "verificado": true, "nota": "Ascendido desde la Primera Nacional 2025." },
+    { "abbrev": "RIV", "region": "Buenos Aires", "nombre": "River Plate", "verificado": true },
+    { "abbrev": "SLO", "region": "Buenos Aires", "nombre": "San Lorenzo", "verificado": true },
+    { "abbrev": "SAR", "region": "Junín", "nombre": "Sarmiento", "verificado": true },
+    { "abbrev": "TAL", "region": "Córdoba", "nombre": "Talleres", "verificado": true },
+    { "abbrev": "TIG", "region": "Victoria", "nombre": "Tigre", "verificado": true },
+    { "abbrev": "UNI", "region": "Santa Fe", "nombre": "Unión", "verificado": true },
+    { "abbrev": "VEL", "region": "Buenos Aires", "nombre": "Vélez Sarsfield", "verificado": true },
+    { "abbrev": "ROS", "region": "Rosario", "nombre": "Rosario Central", "verificado": true },
+    { "abbrev": "ELP", "region": "La Plata", "nombre": "Estudiantes", "verificado": false, "nota": "Sin confirmar en las fuentes consultadas. Nombre ambiguo con Estudiantes RC: usar 'Estudiantes LP' o 'Estudiantes RC'." },
+    { "abbrev": "GLP", "region": "La Plata", "nombre": "Gimnasia y Esgrima", "verificado": false, "nota": "Sin confirmar en las fuentes consultadas." },
+    { "abbrev": "LAN", "region": "Buenos Aires", "nombre": "Lanús", "verificado": false, "nota": "Sin confirmar en las fuentes consultadas." },
+    { "abbrev": "NEW", "region": "Rosario", "nombre": "Newell's Old Boys", "verificado": false, "nota": "Sin confirmar en las fuentes consultadas." },
+    { "abbrev": "RAC", "region": "Avellaneda", "nombre": "Racing Club", "verificado": false, "nota": "Sin confirmar en las fuentes consultadas." },
+    { "abbrev": "PLA", "region": "Buenos Aires", "nombre": "Platense", "verificado": false, "nota": "Sin confirmar en las fuentes consultadas." },
+    { "abbrev": "INS", "region": "Córdoba", "nombre": "Instituto", "verificado": false, "nota": "Sin confirmar en las fuentes consultadas." },
+    { "abbrev": "IRM", "region": "Rivadavia", "nombre": "Independiente Rivadavia", "verificado": false, "nota": "Sin confirmar en las fuentes consultadas." }
+  ],
+
+  "pendientes": [
+    "Confirmar los 30 equipos de la temporada 2026 y su zona (A o B). Las fuentes consultadas solo confirman parte de la lista y se contradicen en algunos datos.",
+    "Colores, población y estadio de cada club: no incluidos porque no se verificaron.",
+    "Ratings y plantillas reales: no incluidos. Generar jugadores de forma aleatoria con el mapeo de 'atributos'.",
+    "Tope salarial: el fútbol argentino no usa tope rígido como la NBA. Definir si la liga tendrá tope blando, sin tope o un valor propio.",
+    "Calendario: el sistema 2026 es de zonas. Ya hay anuncio de un cambio a un sistema sin zonas a partir de 2027; no implementar hasta confirmarlo."
+  ]
+}
