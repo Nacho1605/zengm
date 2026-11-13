@@ -214,7 +214,7 @@ const TARGET_MEAN_FACTOR = 1.15;
 // Calibrated so that every position has a similar average ovr (about 33 for draft prospects, like in
 // basketball). Without it, the basketball ovr formula (which weights diq and
 // hgt heavily) would make defenders look better than attackers.
-const TALENT_BY_POSITION: Record<string, number> = {
+export const TALENT_BY_POSITION: Record<string, number> = {
 	C: 0.78,
 	GF: 1.08,
 	PF: 1.03,
@@ -242,11 +242,10 @@ const NON_HEIGHT_RATINGS = [
 	"reb",
 ] as const;
 
-const scaledFactors: Record<
-	string,
-	Record<(typeof NON_HEIGHT_RATINGS)[number], number>
-> = {};
-for (const [pos, profile] of Object.entries(FUTBOL_POSITION_PROFILES)) {
+// Computed on each call, so that a tool can change TALENT_BY_POSITION (for
+// example, to calibrate against a different ovr formula)
+const getScaledFactors = (pos: string) => {
+	const profile = FUTBOL_POSITION_PROFILES[pos]!;
 	let fixedSum = 0;
 	let scalableSum = 0;
 	for (const key of NON_HEIGHT_RATINGS) {
@@ -257,15 +256,15 @@ for (const [pos, profile] of Object.entries(FUTBOL_POSITION_PROFILES)) {
 			scalableSum += factor;
 		}
 	}
-	const target = (TALENT_BY_POSITION[pos] ?? TARGET_MEAN_FACTOR) as number;
+	const target = TALENT_BY_POSITION[pos] ?? TARGET_MEAN_FACTOR;
 	const scale = (target * NON_HEIGHT_RATINGS.length - fixedSum) / scalableSum;
 	const factors = {} as Record<(typeof NON_HEIGHT_RATINGS)[number], number>;
 	for (const key of NON_HEIGHT_RATINGS) {
 		const factor = profile.factors[key] ?? 1;
 		factors[key] = factor === NO_OFFENSE ? factor : factor * scale;
 	}
-	scaledFactors[pos] = factors;
-}
+	return factors;
+};
 
 const pickPosition = () => {
 	const entries = Object.entries(FUTBOL_POSITION_PROFILES);
@@ -301,6 +300,7 @@ const genRatingsFutbol = (
 			? posOverride
 			: pickPosition();
 	const profile = FUTBOL_POSITION_PROFILES[pos]!;
+	const scaledFactors = getScaledFactors(pos);
 
 	// The displayed height is heightInInches * heightFactor, so divide by it to
 	// get a displayed height that matches real footballers
@@ -335,7 +335,7 @@ const genRatingsFutbol = (
 	const factorIns = helpers.bound(realGauss(1, 0.2), 0.2, 1.2);
 
 	for (const key of helpers.keys(rawRatings)) {
-		const positionFactor = scaledFactors[pos]![key];
+		const positionFactor = scaledFactors[key];
 		let factor = factorIns;
 
 		if (athleticismRatings.has(key)) {

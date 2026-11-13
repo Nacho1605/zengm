@@ -79,6 +79,85 @@ const LESIONES = [
 	{ name: "Fractura en un dedo del pie", frequency: 9, games: 12.28 }, // Fractured Toe
 ];
 
+const PREMIOS = [
+	{
+		actAs: "mvp",
+		formula:
+			"ewa / 22 + vorp / 32 + min(ws/max(teamWs,ws),0.8) / 10 + seasonFraction * winp",
+		name: "Jugador Más Valioso",
+		shortName: "MVP",
+		showStats: "offense",
+	},
+	{
+		formula:
+			"dws/3.1 + seasonFraction * winp + gp / 43 * (blk / 4.1 + stl / 1.8)",
+		name: "Mejor Defensor",
+		shortName: "MD",
+		showStats: "defense",
+	},
+	{
+		actAs: "roy",
+		formula: "ewa / 2.1 + vorp + gp / 43 * pts / 2",
+		name: "Revelación del Año",
+		rookie: true,
+		shortName: "REV",
+		showStats: "offense",
+	},
+	{
+		bench: true,
+		formula:
+			"ewa / 5.5 + vorp / 2.3 + ws / 4.9 + seasonFraction * winp + gp / 43 * pts / 9.9",
+		name: "Mejor Suplente",
+		shortName: "SUP",
+		showStats: "offense",
+	},
+	{
+		formula: "pts + trb + ast + per",
+		mip: true,
+		name: "Jugador de Mayor Progreso",
+		shortName: "PRO",
+		showStats: "offense",
+	},
+	{
+		formula: "gmsc * (1 + 0.75*won)",
+		name: "Figura de la Final",
+		shortName: "FIN",
+		showStats: "offense",
+		statRange: -1,
+	},
+	{
+		formula: "gmsc * (1 + 0.75*won)",
+		name: "Figura de Semifinal",
+		shortName: "SEMI",
+		showStats: "offense",
+		statRange: -2,
+	},
+	{
+		formula:
+			"ewa / 22 + vorp / 32 + min(ws/max(teamWs,ws),0.8) / 10 + seasonFraction * winp",
+		name: "Equipo Ideal",
+		numTeams: 3,
+		shortName: "IDEAL",
+		showStats: "offense",
+	},
+	{
+		formula:
+			"dws/3.1 + seasonFraction * winp + gp / 43 * (blk / 4.1 + stl / 1.8)",
+		name: "Equipo Ideal Defensivo",
+		numTeams: 2,
+		shortName: "DEF",
+		showStats: "defense",
+	},
+	{
+		formula: "ewa / 2.1 + vorp + gp / 43 * pts / 2",
+		name: "Equipo Ideal de Revelaciones",
+		numTeams: 2,
+		rookie: true,
+		shortName: "REVS",
+		showStats: "offense",
+	},
+];
+
 // Algunos ajustes se guardan con historial por temporada
 const fromStart = <T>(value: T) => [{ start: null, value }];
 
@@ -124,8 +203,25 @@ const cambios: Record<string, unknown> = {
 	// - Con 2 faltas el jugador sale del partido.
 	foulsNeededToFoulOut: 2,
 
-	// Temporada: 2 partidos contra cada uno de los otros 27 equipos activos
-	numGames: 54,
+	// Temporada por zonas, como en el fútbol argentino: 2 partidos contra cada
+	// rival de la zona (28) y 1 contra cada equipo de la otra zona (15). Con
+	// numGamesDiv vacío, los rivales de la división cuentan como rivales de zona;
+	// si se pusiera un número, el juego lo rechazaría (hay divisiones de un solo
+	// equipo) y armaría el fixture al azar. Necesita 2 zonas de 15 equipos.
+	numGames: 43,
+	numGamesConf: 28,
+	numGamesDiv: null,
+
+	// Cierre del libro de pases a mitad de temporada, como el receso de invierno
+	tradeDeadline: 0.5,
+
+	// Paridad: todos los clubes con los mismos ingresos por población, y una
+	// masa salarial mínima más alta (el tope salarial rígido ya estaba)
+	equalizeRegions: true,
+	minPayroll: 120000,
+
+	// Premios en español (mismas fórmulas que la NBA, por partidos jugados de 43)
+	awards: PREMIOS,
 
 	// Sin Partido de las Estrellas (con concurso de volcadas y de triples)
 	allStarGame: null,
