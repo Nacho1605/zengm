@@ -7,17 +7,33 @@ import genRatingsFootball from "./genRatings.football.ts";
 import genRatingsHockey from "./genRatings.hockey.ts";
 import pos from "./pos.ts";
 import { bySport } from "../../../common/sportFunctions.ts";
+import { isFutbolMode } from "../../../common/futbol.ts";
+import genRatingsFutbol from "./genRatingsFutbol.ts";
 
 const genRatings = (season: number, scoutingLevel: number) => {
-	const { heightInInches, ratings } = bySport<{
-		heightInInches: number;
-		ratings: MinimalPlayerRatings;
-	}>({
-		baseball: genRatingsBaseball(season, scoutingLevel),
-		basketball: genRatingsBasketball(season, scoutingLevel),
-		football: genRatingsFootball(season, scoutingLevel),
-		hockey: genRatingsHockey(season, scoutingLevel),
-	});
+	// Fútbol mode: position is chosen first, ratings follow that position's
+	// profile, and the position stays fixed
+	const futbol =
+		__SPORT === "basketball" && isFutbolMode(g.get("numPlayersOnCourt"));
+
+	const { heightInInches, ratings, fixedPos } = futbol
+		? (genRatingsFutbol(season, scoutingLevel) as {
+				heightInInches: number;
+				ratings: MinimalPlayerRatings;
+				fixedPos: string | undefined;
+			})
+		: {
+				...bySport<{
+					heightInInches: number;
+					ratings: MinimalPlayerRatings;
+				}>({
+					baseball: genRatingsBaseball(season, scoutingLevel),
+					basketball: genRatingsBasketball(season, scoutingLevel),
+					football: genRatingsFootball(season, scoutingLevel),
+					hockey: genRatingsHockey(season, scoutingLevel),
+				}),
+				fixedPos: undefined,
+			};
 
 	// Should correspond to defaultGameAttributes.draftAges[0], but maybe they will diverge in the future..
 	const DEFAULT_AGE = bySport({
@@ -145,12 +161,12 @@ const genRatings = (season: number, scoutingLevel: number) => {
 	}
 	ratings.fuzz *= factor;
 
-	ratings.pos = pos(ratings);
+	ratings.pos = fixedPos ?? pos(ratings);
 
 	return {
 		heightInInches,
 		ratings,
-		// genPos,
+		fixedPos,
 	};
 };
 

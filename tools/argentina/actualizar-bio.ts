@@ -1,7 +1,7 @@
 // Actualiza la configuración biográfica (playerBioInfo) de un archivo de liga
 // de BBGM Argentina. Uso:
 //
-//   node data/argentina/scripts/actualizar-bio.ts ENTRADA.json SALIDA.json
+//   node tools/argentina/actualizar-bio.ts ENTRADA.json SALIDA.json
 //
 // Cambios:
 // 1. Nombres argentinos: base = nombres reales de los futbolistas argentinos del

@@ -1,6 +1,32 @@
 import type { RatingKey } from "../../../common/types.basketball.ts";
+import { isFutbolMode } from "../../../common/futbol.ts";
+import { g } from "../../util/index.ts";
 
-const ovr = (ratings: Record<RatingKey, number>): number => {
+// Fútbol mode: the goalkeeper never shoots, so his shooting ratings have no
+// effect in the game sim. Replace them by the average values used in the
+// formula below, which makes their contribution 0.
+const GOALKEEPER_NEUTRAL_RATINGS = {
+	ins: 42.4,
+	dnk: 49.5,
+	ft: 47.0,
+	fg: 47.0,
+	tp: 47.1,
+};
+
+const ovr = (
+	ratingsInput: Record<RatingKey, number>,
+	posOverride?: string,
+): number => {
+	let ratings = ratingsInput;
+	const pos = posOverride ?? (ratingsInput as { pos?: string }).pos;
+	if (
+		pos === "C" &&
+		Object.hasOwn(g, "numPlayersOnCourt") &&
+		isFutbolMode(g.get("numPlayersOnCourt"))
+	) {
+		ratings = { ...ratingsInput, ...GOALKEEPER_NEUTRAL_RATINGS };
+	}
+
 	// See analysis/player-ovr-basketball
 	const r =
 		0.159 * (ratings.hgt - 47.5) +

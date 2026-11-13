@@ -36,7 +36,7 @@ const generate = (
 		race: "asian",
 	},
 ): PlayerWithoutKey => {
-	const { heightInInches, ratings } = genRatings(
+	const { heightInInches, ratings, fixedPos } = genRatings(
 		newLeague ? g.get("startingSeason") : draftYear,
 		scoutingLevel,
 	);
@@ -106,6 +106,12 @@ const generate = (
 		valueFuzz: 0,
 		valueNoPotFuzz: 0,
 	};
+
+	// Fútbol mode: keep the generated position fixed, like players from league
+	// files, so it isn't recalculated from ratings every season
+	if (fixedPos !== undefined) {
+		(p as PlayerWithoutKey).pos = fixedPos;
+	}
 
 	return p;
 };
