@@ -38,14 +38,28 @@ const SQUAD = [
 	"SG",
 ];
 
-const genSquad = (tid: number) =>
-	SQUAD.map((pos) => {
+// Generate players until every position in SQUAD is filled. In fútbol mode,
+// the generator already picks a fixed position with matching ratings.
+const genSquad = async (tid: number) => {
+	const need = [...SQUAD];
+	const squad = [];
+	while (need.length > 0) {
 		const p = player.generate(tid, 25, 2010, true, DEFAULT_LEVEL);
-		// Fixed position, like in a league file
-		(p as any).pos = pos;
-		p.ratings[0]!.pos = pos;
-		return p;
-	});
+		const index = need.indexOf((p as any).pos);
+		if (index >= 0) {
+			await player.develop(p, 0);
+			// Approximate value, so that the coach makes voluntary substitutions
+			const ovr = p.ratings.at(-1)!.ovr;
+			p.value = ovr;
+			p.valueNoPot = ovr;
+			p.valueFuzz = ovr;
+			p.valueNoPotFuzz = ovr;
+			need.splice(index, 1);
+			squad.push(p);
+		}
+	}
+	return squad;
+};
 
 const setFutbolSettings = () => {
 	g.setWithoutSavingToDB("numPlayersOnCourt", 11);
@@ -58,7 +72,7 @@ beforeAll(async () => {
 	setFutbolSettings();
 	const teamsDefault = helpers.getTeamsDefault().slice(0, 2);
 	await resetCache({
-		players: [...genSquad(0), ...genSquad(1)],
+		players: [...(await genSquad(0)), ...(await genSquad(1))],
 		teams: teamsDefault.map(team.generate),
 		teamSeasons: teamsDefault.map((t) => team.genSeasonRow(t)),
 		teamStats: teamsDefault.map((t) => team.genStatsRow(t.tid)),
@@ -67,10 +81,11 @@ beforeAll(async () => {
 	await team.rosterAutoSort(1);
 });
 
-const NUM_GAMES = 20;
+const NUM_GAMES = 100;
 
 describe("fútbol mode", () => {
 	test("plays full games following the rules", async () => {
+		let totalVoluntary = 0;
 		for (let i = 0; i < NUM_GAMES; i++) {
 			const teams = await loadTeams([0, 1], {});
 			const game = new GameSim({
@@ -98,26 +113,61 @@ describe("fútbol mode", () => {
 
 			// Check the rules after every substitution check during the game
 			const subbedOff = [new Set<number>(), new Set<number>()];
+			let numVoluntary = 0;
+			const log: string[] = [];
 			const original = game.updatePlayersOnCourt.bind(game);
 			game.updatePlayersOnCourt = (args) => {
-				const before = game.playersOnCourt.map((ps) => ps.map((p) => p.id));
+				const before = game.playersOnCourt.map((ps) => [...ps]);
 				const result = original(args);
 				for (const t of [0, 1] as const) {
 					const now = game.playersOnCourt[t].map((p) => p.id);
-					for (const pid of before[t]!) {
-						if (!now.includes(pid)) {
-							subbedOff[t]!.add(pid);
+					for (const p of before[t]!) {
+						if (!now.includes(p.id)) {
+							const b = game.playersOnCourt[t].find(
+								(p2) => !before[t]!.includes(p2),
+							);
+							log.push(
+								`t${t} ${game.t === undefined ? "start" : game.futbolElapsedMinutes().toFixed(0)}' out ${p.pos}${p.injured ? " (injured)" : ""} pf${p.stat.pf} -> in ${b?.pos}${b?.injured ? " (injured)" : ""}`,
+							);
+							subbedOff[t]!.add(p.id);
+							const fouledOut = p.stat.pf >= g.get("foulsNeededToFoulOut");
+							if (!p.injured && !fouledOut) {
+								numVoluntary += 1;
+								// Voluntary substitutions only from minute 55
+								assert.isAtLeast(
+									game.futbolElapsedMinutes(),
+									55,
+									`pf ${p.stat.pf}`,
+								);
+							}
 						}
 					}
 					for (const pid of now) {
 						assert.isFalse(subbedOff[t]!.has(pid), "a player came back");
 					}
 					const injured = game.playersOnCourt[t].some((p) => p.injured);
-					if (!injured) {
-						assert.strictEqual(
-							isValidFutbolLineup(game.playersOnCourt[t].map((p) => p.pos)),
-							true,
-							`lineup ${game.playersOnCourt[t].map((p) => p.pos).join()}`,
+					const positions = game.playersOnCourt[t].map((p) => p.pos);
+					if (!injured && !isValidFutbolLineup(positions)) {
+						// Only allowed if no substitution could fix it: no subs left, or
+						// no eligible bench player (e.g. both goalkeepers injured or sent off)
+						const subsLeft = game.futbolSubsUsed[t] < FUTBOL_MAX_SUBS;
+						const fixable =
+							subsLeft &&
+							game.team[t].player.some(
+								(b) =>
+									!game.playersOnCourt[t].includes(b) &&
+									!game.futbolSubbedOff.has(b) &&
+									!b.injured &&
+									b.stat.pf < g.get("foulsNeededToFoulOut") &&
+									positions.some((_, j) =>
+										isValidFutbolLineup(
+											positions.map((pos, k) => (k === j ? b.pos : pos)),
+										),
+									),
+							);
+						assert.isFalse(
+							fixable,
+							`lineup ${positions.join()}\n${log.join("\n")}`,
 						);
 					}
 				}
@@ -125,6 +175,7 @@ describe("fútbol mode", () => {
 			};
 
 			const result = game.run();
+			totalVoluntary += numVoluntary;
 
 			for (const t of [0, 1] as const) {
 				assert.isAtMost(game.futbolSubsUsed[t], FUTBOL_MAX_SUBS);
@@ -144,6 +195,8 @@ describe("fútbol mode", () => {
 				}
 			}
 		}
+		// Coaches do make voluntary substitutions: on average at least 2 per team
+		assert.isAbove(totalVoluntary / (2 * NUM_GAMES), 2);
 	});
 
 	test("penalty shootout rotates kickers, goalkeeper last", async () => {

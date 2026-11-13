@@ -1073,14 +1073,18 @@ class GameSim extends GameSimBase {
 					continue;
 				}
 
-				// Fútbol: limited substitutions, and voluntary ones only from the second half
+				// Fútbol: limited substitutions, voluntary ones spread from minute 55 to 85
 				let futbolViolationsBefore: number | undefined;
 				let futbolMinViolationsAfter: number | undefined;
 				if (this.futbol) {
 					if (!recordStarters && this.futbolSubsUsed[t] >= FUTBOL_MAX_SUBS) {
 						break;
 					}
-					if (!onCourtIsIneligible && this.team[0].stat.ptsQtrs.length < 2) {
+					if (
+						!onCourtIsIneligible &&
+						(recordStarters ||
+							this.futbolSubsUsed[t] >= this.futbolAllowedSubs())
+					) {
 						continue;
 					}
 				}
@@ -1243,6 +1247,31 @@ class GameSim extends GameSimBase {
 		}
 
 		return substitutions;
+	}
+
+	/**
+	 * Fútbol: minutes played so far in the game, counting overtime.
+	 */
+	futbolElapsedMinutes() {
+		const quarterLength = g.get("quarterLength");
+		const period = this.team[0].stat.ptsQtrs.length;
+		if (period <= this.numPeriods) {
+			return (period - 1) * quarterLength + quarterLength - this.t / 60;
+		}
+		return this.numPeriods * quarterLength;
+	}
+
+	/**
+	 * Fútbol: how many voluntary substitutions a team may have made by now.
+	 * None until minute 55, then one more every 6 minutes, reaching the limit
+	 * at minute 85. Scaled if the game isn't 90 minutes long. Injury
+	 * replacements are always allowed, but they count towards the limit.
+	 */
+	futbolAllowedSubs() {
+		const scale = (this.numPeriods * g.get("quarterLength")) / 90;
+		const elapsed = this.futbolElapsedMinutes();
+		const progress = helpers.bound((elapsed - 55 * scale) / (30 * scale), 0, 1);
+		return Math.floor(FUTBOL_MAX_SUBS * progress);
 	}
 
 	/**
@@ -2873,9 +2902,13 @@ class GameSim extends GameSimBase {
 		const foulLimit = rating === "fouling" ? this.getFoulTroubleLimit() : 0;
 		let total = 0;
 
-		// Fútbol: the goalkeeper (C) never takes shots or gets assists
+		// Fútbol: the goalkeeper (C) never takes shots or gets assists, and doesn't
+		// go up for offensive rebounds (the player who gets one can shoot a putback)
 		const excludeGoalkeeper =
-			this.futbol && (rating === "usage" || rating === "passing");
+			this.futbol &&
+			(rating === "usage" ||
+				rating === "passing" ||
+				(rating === "rebounding" && t === this.o));
 
 		// Scale composite ratings
 		for (let i = 0; i < this.numPlayersOnCourt; i++) {
