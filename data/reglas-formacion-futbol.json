@@ -52,7 +52,8 @@
     "4-2-3-1": { "C": 1, "defensores": 4, "mediocampistas": 5, "delanteros": 1 }
   },
   "posicionFijada": {
-    "nota": "Cada jugador tiene una posición fijada a mano que no se recalcula desde los ratings. La posición calculada por BBGM (pos) se guarda en otro campo.",
-    "motivoTecnico": "Hoy BBGM recalcula ratings.pos en develop.ts y augmentPartialPlayer.ts. Hay que guardar la posición fijada en un campo aparte y leer ese campo primero."
+    "nota": "Cada jugador tiene una posición fijada a mano que no se recalcula desde los ratings.",
+    "comoSeHace": "Escribir \"pos\" en el nivel superior del jugador en el JSON (por ejemplo \"pos\": \"C\"). BBGM ya lo respeta: develop.ts y augmentPartialPlayer.ts usan p.pos si existe y no lo recalculan nunca.",
+    "limitacion": "Los jugadores que el juego genera solo (drafts aleatorios) no tienen p.pos y sí se recalculan. Para fijarles la posición hay que escribirlos en el JSON o cambiar el código de generación."
   }
 }
