@@ -18,6 +18,12 @@ import {
 import getWinner from "../../../common/getWinner.ts";
 import { formatClock } from "../../../common/formatClock.ts";
 import PlayByPlayLogger from "./PlayByPlayLogger.ts";
+import {
+	FUTBOL_MAX_SUBS,
+	countLines,
+	isFutbolMode,
+	lineupViolations,
+} from "../../../common/futbol.ts";
 import { choice, truncGauss, uniform } from "../../../common/random.ts";
 
 const SHOT_CLOCK = 24;
@@ -196,6 +202,11 @@ class GameSim extends GameSimBase {
 
 	numPlayersOnCourt: number;
 
+	// Fútbol mode (11 on court): formation rules, limited substitutions, no re-entry
+	futbol = false;
+	futbolSubsUsed: [number, number] = [0, 0];
+	futbolSubbedOff = new Set<PlayerGameSim>();
+
 	gender: GameAttributesLeague["gender"];
 
 	timeouts: [number, number] = [STARTING_NUM_TIMEOUTS!, STARTING_NUM_TIMEOUTS!];
@@ -250,6 +261,7 @@ class GameSim extends GameSimBase {
 
 		// Starting lineups, which will be reset by updatePlayersOnCourt. This must be done because of injured players in the top 5.
 		this.numPlayersOnCourt = g.get("numPlayersOnCourt");
+		this.futbol = isFutbolMode(this.numPlayersOnCourt);
 		this.playersOnCourt = [
 			this.team[0].player.slice(0, this.numPlayersOnCourt),
 			this.team[1].player.slice(0, this.numPlayersOnCourt),
@@ -286,6 +298,15 @@ class GameSim extends GameSimBase {
 		this.elamTarget = 0;
 
 		this.fatigueFactor = 0.055;
+
+		if (this.futbol) {
+			// Players stay on the field for the whole game, so energy must drain
+			// much more slowly than in basketball. With this value, a player with
+			// average endurance ends 90 minutes at about 65% energy, a low
+			// endurance player at about 50% and a high endurance player at about
+			// 80%.
+			this.fatigueFactor = 0.0078;
+		}
 
 		if (g.get("phase") === PHASE.PLAYOFFS) {
 			this.fatigueFactor /= 1.85;
@@ -402,7 +423,22 @@ class GameSim extends GameSimBase {
 
 	doShootoutShot(t: TeamNum, p: PlayerGameSim) {
 		// 20% to 80%
-		const probMake = p.compositeRating.shootingThreePointer * 0.6 + 0.2;
+		let probMake = p.compositeRating.shootingThreePointer * 0.6 + 0.2;
+
+		if (this.futbol) {
+			// Penalty kick: free throw rating ("penales") against the other team's
+			// goalkeeper. About 70% for an average kicker against an average keeper.
+			const opp = teamNums[1 - t]!;
+			const keeper = this.playersOnCourt[opp].find((p2) => p2.pos === "C");
+			const keeperBlocking = keeper?.compositeRating.blocking ?? 0.5;
+			probMake = helpers.bound(
+				0.5 +
+					0.4 * p.compositeRating.shootingFT -
+					0.15 * (keeperBlocking - 0.5),
+				0.05,
+				0.95,
+			);
+		}
 
 		const made = Math.random() < probMake;
 
@@ -453,8 +489,27 @@ class GameSim extends GameSimBase {
 			)!;
 		}) as [PlayerGameSim, PlayerGameSim];
 
+		// Fútbol: the players on the field at the end take turns, best penalty
+		// takers first and the goalkeeper last
+		const kickers = teamNums.map((t) =>
+			this.playersOnCourt[t]
+				.filter((p) => !p.injured)
+				.sort(
+					(a, b) =>
+						Number(a.pos === "C") - Number(b.pos === "C") ||
+						b.compositeRating.shootingFT - a.compositeRating.shootingFT,
+				),
+		) as [PlayerGameSim[], PlayerGameSim[]];
+		const getShooter = (t: TeamNum) => {
+			if (this.futbol && kickers[t].length > 0) {
+				return kickers[t][this.team[t].stat.sAtt % kickers[t].length]!;
+			}
+			return shooters[t];
+		};
+
 		this.runShootoutShots({
-			format: "teamByTeam",
+			// Fútbol penalty shootouts alternate between teams
+			format: this.futbol ? "alternating" : "teamByTeam",
 			getSPts: () => [this.team[0].stat.sPts, this.team[1].stat.sPts],
 			onTeamStart: (t) => {
 				this.playByPlay.logEvent({
@@ -469,7 +524,7 @@ class GameSim extends GameSimBase {
 				});
 			},
 			shoot: (t) => {
-				this.doShootoutShot(t, shooters[t]);
+				this.doShootoutShot(t, getShooter(t));
 			},
 		});
 
@@ -1018,6 +1073,18 @@ class GameSim extends GameSimBase {
 					continue;
 				}
 
+				// Fútbol: limited substitutions, and voluntary ones only from the second half
+				let futbolViolationsBefore: number | undefined;
+				let futbolMinViolationsAfter: number | undefined;
+				if (this.futbol) {
+					if (!recordStarters && this.futbolSubsUsed[t] >= FUTBOL_MAX_SUBS) {
+						break;
+					}
+					if (!onCourtIsIneligible && this.team[0].stat.ptsQtrs.length < 2) {
+						continue;
+					}
+				}
+
 				// The other lineup slots stay fixed until a substitute is accepted.
 				let positions:
 					| { numG: number; numPG: number; numF: number; numC: number }
@@ -1026,6 +1093,11 @@ class GameSim extends GameSimBase {
 				// Loop through bench players (in order of current roster position) to see if any should be subbed in)
 				for (const b of this.team[t].player) {
 					if (this.playersOnCourt[t].includes(b)) {
+						continue;
+					}
+
+					// Fútbol: a player who was subbed off can't come back
+					if (this.futbol && this.futbolSubbedOff.has(b)) {
 						continue;
 					}
 
@@ -1039,42 +1111,87 @@ class GameSim extends GameSimBase {
 						benchIsValidAndBetter ||
 						(onCourtIsIneligible && benchIsEligible)
 					) {
-						// Check if position of substitute makes for a valid lineup
-						// Require 2 Gs (or 1 PG) and 2 Fs (or 1 C)
-						if (positions === undefined) {
-							positions = { numG: 0, numPG: 0, numF: 0, numC: 0 };
-							for (let j = 0; j < this.playersOnCourt[t].length; j++) {
-								if (j !== pp) {
-									const pos = this.playersOnCourt[t][j]!.pos;
-									positions.numG += Number(pos.includes("G"));
-									positions.numPG += Number(pos === "PG");
-									positions.numF += Number(pos.includes("F"));
-									positions.numC += Number(pos === "C");
+						if (this.futbol) {
+							// Formation rules. A voluntary change must leave a valid
+							// formation, or at least improve an invalid one. Replacing an
+							// injured player picks the best formation available on the bench.
+							const violationsAfter = this.futbolViolationsWith(t, pp, b);
+							if (onCourtIsIneligible) {
+								if (futbolMinViolationsAfter === undefined) {
+									futbolMinViolationsAfter = Infinity;
+									for (const b2 of this.team[t].player) {
+										if (
+											!this.playersOnCourt[t].includes(b2) &&
+											!this.futbolSubbedOff.has(b2) &&
+											ovrs.get(b2.id) !== -Infinity
+										) {
+											futbolMinViolationsAfter = Math.min(
+												futbolMinViolationsAfter,
+												this.futbolViolationsWith(t, pp, b2),
+											);
+										}
+									}
+								}
+								if (violationsAfter > futbolMinViolationsAfter) {
+									continue;
+								}
+							} else {
+								if (futbolViolationsBefore === undefined) {
+									futbolViolationsBefore = this.futbolViolationsWith(t, pp);
+								}
+								if (
+									violationsAfter > 0 &&
+									violationsAfter >= futbolViolationsBefore
+								) {
+									continue;
 								}
 							}
-						}
-						const numG = positions.numG + Number(b.pos.includes("G"));
-						const numPG = positions.numPG + Number(b.pos === "PG");
-						const numF = positions.numF + Number(b.pos.includes("F"));
-						const numC = positions.numC + Number(b.pos === "C");
+						} else {
+							// Check if position of substitute makes for a valid lineup
+							// Require 2 Gs (or 1 PG) and 2 Fs (or 1 C)
+							if (positions === undefined) {
+								positions = { numG: 0, numPG: 0, numF: 0, numC: 0 };
+								for (let j = 0; j < this.playersOnCourt[t].length; j++) {
+									if (j !== pp) {
+										const pos = this.playersOnCourt[t][j]!.pos;
+										positions.numG += Number(pos.includes("G"));
+										positions.numPG += Number(pos === "PG");
+										positions.numF += Number(pos.includes("F"));
+										positions.numC += Number(pos === "C");
+									}
+								}
+							}
+							const numG = positions.numG + Number(b.pos.includes("G"));
+							const numPG = positions.numPG + Number(b.pos === "PG");
+							const numF = positions.numF + Number(b.pos.includes("F"));
+							const numC = positions.numC + Number(b.pos === "C");
 
-						const cutoff =
-							this.numPlayersOnCourt >= 5
-								? 2
-								: this.numPlayersOnCourt >= 3
-									? 1
-									: 0;
-						if (
-							(numG < cutoff && numPG === 0) ||
-							(numF < cutoff && numC === 0)
-						) {
-							if (this.fatigue(p.stat.energy) > 0.728 && !onCourtIsIneligible) {
-								// Exception for ridiculously tired players, so really unbalanced teams won't play starters whole game
-								continue;
+							const cutoff =
+								this.numPlayersOnCourt >= 5
+									? 2
+									: this.numPlayersOnCourt >= 3
+										? 1
+										: 0;
+							if (
+								(numG < cutoff && numPG === 0) ||
+								(numF < cutoff && numC === 0)
+							) {
+								if (
+									this.fatigue(p.stat.energy) > 0.728 &&
+									!onCourtIsIneligible
+								) {
+									// Exception for ridiculously tired players, so really unbalanced teams won't play starters whole game
+									continue;
+								}
 							}
 						}
 
 						substitutions = true;
+
+						if (this.futbol && !recordStarters) {
+							this.futbolSubsUsed[t] += 1;
+							this.futbolSubbedOff.add(p);
+						}
 
 						// Substitute player
 						this.playersOnCourt[t][pp] = b;
@@ -1129,6 +1246,17 @@ class GameSim extends GameSimBase {
 	}
 
 	/**
+	 * Fútbol: number of formation rule violations of team t's lineup, optionally
+	 * replacing the player at index pp with b. 0 means a valid formation.
+	 */
+	futbolViolationsWith(t: TeamNum, pp: number, b?: PlayerGameSim) {
+		const positions = this.playersOnCourt[t].map((p2, j) =>
+			j === pp && b !== undefined ? b.pos : p2.pos,
+		);
+		return lineupViolations(countLines(positions));
+	}
+
+	/**
 	 * Update synergy.
 	 *
 	 * This should be called after this.updatePlayersOnCourt as it only produces different output when the players on the court change.
@@ -1179,6 +1307,15 @@ class GameSim extends GameSimBase {
 				skillsCount.Po += skills.Po;
 				skillsCount.Ps += skills.Ps;
 				skillsCount.R += skills.R;
+			}
+
+			// Synergy thresholds are tuned for 5 players. With 11 on the field, scale the
+			// counts back so that a team doesn't get maximum synergy just by having more players.
+			if (this.futbol) {
+				const scale = 5 / this.numPlayersOnCourt;
+				for (const key of helpers.keys(skillsCount)) {
+					skillsCount[key] *= scale;
+				}
 			}
 
 			// Base offensive synergy
@@ -1272,13 +1409,19 @@ class GameSim extends GameSimBase {
 			const ratings = this.team[t].compositeRating;
 			const synergy = this.team[t].synergy;
 
-			ratings.dribbling = dribbling / 5 + this.synergyFactor * synergy.off;
-			ratings.passing = passing / 5 + this.synergyFactor * synergy.off;
-			ratings.rebounding = rebounding / 5 + this.synergyFactor * synergy.reb;
-			ratings.defense = defense / 5 + this.synergyFactor * synergy.def;
+			// Team ratings are the average of the players on the court. Basketball
+			// divides by 5 regardless of the setting; fútbol must divide by 11.
+			const divisor = this.futbol ? this.numPlayersOnCourt : 5;
+
+			ratings.dribbling =
+				dribbling / divisor + this.synergyFactor * synergy.off;
+			ratings.passing = passing / divisor + this.synergyFactor * synergy.off;
+			ratings.rebounding =
+				rebounding / divisor + this.synergyFactor * synergy.reb;
+			ratings.defense = defense / divisor + this.synergyFactor * synergy.def;
 			ratings.defensePerimeter =
-				defensePerimeter / 5 + this.synergyFactor * synergy.def;
-			ratings.blocking = blocking / 5 + this.synergyFactor * synergy.def;
+				defensePerimeter / divisor + this.synergyFactor * synergy.def;
+			ratings.blocking = blocking / divisor + this.synergyFactor * synergy.def;
 		}
 	}
 
@@ -2730,9 +2873,18 @@ class GameSim extends GameSimBase {
 		const foulLimit = rating === "fouling" ? this.getFoulTroubleLimit() : 0;
 		let total = 0;
 
+		// Fútbol: the goalkeeper (C) never takes shots or gets assists
+		const excludeGoalkeeper =
+			this.futbol && (rating === "usage" || rating === "passing");
+
 		// Scale composite ratings
 		for (let i = 0; i < this.numPlayersOnCourt; i++) {
 			const p = this.playersOnCourt[t][i]!;
+
+			if (excludeGoalkeeper && p.pos === "C") {
+				array[i] = 0;
+				continue;
+			}
 
 			let compositeRating = p.compositeRating[rating];
 
@@ -2753,10 +2905,14 @@ class GameSim extends GameSimBase {
 			total += value;
 		}
 
-		// Set floor (5% of total)
-		const floor = 0.05 * total;
+		// Set floor (5% of total). With 11 players, scale it down so weak players
+		// don't get a disproportionate share of the plays.
+		const floor = 0.05 * total * (this.futbol ? 5 / this.numPlayersOnCourt : 1);
 
 		for (let i = 0; i < this.numPlayersOnCourt; i++) {
+			if (excludeGoalkeeper && this.playersOnCourt[t][i]!.pos === "C") {
+				continue;
+			}
 			if (array[i]! < floor) {
 				array[i] = floor;
 			}

@@ -1,6 +1,7 @@
 import { idb } from "../../db/index.ts";
 import { g } from "../../util/index.ts";
 import { player } from "../index.ts";
+import { findStartersFutbol, isFutbolMode } from "../../../common/futbol.ts";
 
 /**
  * Given a list of players sorted by ability, find the starters.
@@ -77,8 +78,11 @@ export const getRosterOrderByPid = (
 	}
 
 	// Shuffle array so that position conditions are met - 2 G and 2 F/C in starting lineup, at most one pure C
+	// In fútbol mode, the starting 11 must follow the formation rules instead
 	const positions = players.map((p) => p.ratings.pos);
-	const starters = findStarters(positions);
+	const starters = isFutbolMode(g.get("numPlayersOnCourt"))
+		? findStartersFutbol(positions)
+		: findStarters(positions);
 	const newPlayers = starters.map((i) => players[i]!);
 
 	for (const [i, p] of players.entries()) {
