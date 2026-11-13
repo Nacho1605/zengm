@@ -19,7 +19,12 @@ import getWinner from "../../../common/getWinner.ts";
 import { formatClock } from "../../../common/formatClock.ts";
 import PlayByPlayLogger from "./PlayByPlayLogger.ts";
 import {
+	FUTBOL_BUILD_UP_SECONDS,
+	FUTBOL_FINISHING_FACTOR,
 	FUTBOL_MAX_SUBS,
+	FUTBOL_KEEPER_SAVE_SHARE,
+	FUTBOL_PENALTY_FOUL_FACTOR,
+	FUTBOL_SAVE_FACTOR,
 	countLines,
 	isFutbolMode,
 	lineupViolations,
@@ -206,6 +211,8 @@ class GameSim extends GameSimBase {
 	futbol = false;
 	futbolSubsUsed: [number, number] = [0, 0];
 	futbolSubbedOff = new Set<PlayerGameSim>();
+	// Sent off (red card): stays out of the game and isn't replaced
+	futbolExpelled = new Set<PlayerGameSim>();
 
 	gender: GameAttributesLeague["gender"];
 
@@ -426,18 +433,7 @@ class GameSim extends GameSimBase {
 		let probMake = p.compositeRating.shootingThreePointer * 0.6 + 0.2;
 
 		if (this.futbol) {
-			// Penalty kick: free throw rating ("penales") against the other team's
-			// goalkeeper. About 70% for an average kicker against an average keeper.
-			const opp = teamNums[1 - t]!;
-			const keeper = this.playersOnCourt[opp].find((p2) => p2.pos === "C");
-			const keeperBlocking = keeper?.compositeRating.blocking ?? 0.5;
-			probMake = helpers.bound(
-				0.5 +
-					0.4 * p.compositeRating.shootingFT -
-					0.15 * (keeperBlocking - 0.5),
-				0.05,
-				0.95,
-			);
+			probMake = this.futbolPenaltyProb(t, p);
 		}
 
 		const made = Math.random() < probMake;
@@ -493,7 +489,7 @@ class GameSim extends GameSimBase {
 		// takers first and the goalkeeper last
 		const kickers = teamNums.map((t) =>
 			this.playersOnCourt[t]
-				.filter((p) => !p.injured)
+				.filter((p) => !p.injured && !this.futbolExpelled.has(p))
 				.sort(
 					(a, b) =>
 						Number(a.pos === "C") - Number(b.pos === "C") ||
@@ -710,6 +706,11 @@ class GameSim extends GameSimBase {
 			return;
 		}
 
+		// Fútbol: no intentional fouls, holding for the last shot, etc.
+		if (this.futbol) {
+			return;
+		}
+
 		if (this.shouldIntentionalFoul()) {
 			return "intentionalFoul";
 		}
@@ -840,6 +841,15 @@ class GameSim extends GameSimBase {
 		const dtInbound = this.dtInbound();
 		this.t -= dtInbound;
 		this.possessionLength = 0;
+
+		// Fútbol: the ball circulates in midfield before each attack. This uses up
+		// game time without producing any stats, so there are far fewer attacks per
+		// game than basketball possessions, like in real fútbol.
+		let dtBuildUp = 0;
+		if (this.futbol && this.t > 1) {
+			dtBuildUp = Math.min(uniform(...FUTBOL_BUILD_UP_SECONDS), this.t - 1);
+			this.t -= dtBuildUp;
+		}
 		this.isClockRunning = true; // Set after computing dtIinbound!
 
 		const clockFactor = this.getClockFactor();
@@ -856,11 +866,11 @@ class GameSim extends GameSimBase {
 			this.d = this.o === 1 ? 0 : 1;
 		}
 
-		const possessionTime = dtInbound + this.possessionLength;
+		const possessionTime = dtInbound + dtBuildUp + this.possessionLength;
 		this.updatePlayingTime(possessionTime);
 
 		// Nobody can get hurt if no time elapsed, otherwise a player could be injured immediately after subbing in, with 0 minutes played
-		const injuries = possessionTime > 0 ? this.injuries() : false;
+		const injuries = possessionTime > 0 ? this.injuries(possessionTime) : false;
 
 		this.prevPossessionOutcome = outcome;
 
@@ -1059,6 +1069,25 @@ class GameSim extends GameSimBase {
 			const pids = [];
 			const pidsOff = [];
 
+			// Fútbol: reaching the foul limit is a red card. The player leaves and the
+			// team plays with one less.
+			let futbolFormationBroken = false;
+			if (this.futbol) {
+				for (const p of this.playersOnCourt[t]) {
+					if (
+						foulsNeededToFoulOut > 0 &&
+						p.stat.pf >= foulsNeededToFoulOut &&
+						!this.futbolExpelled.has(p)
+					) {
+						this.futbolExpelled.add(p);
+					}
+				}
+
+				// For example, the goalkeeper was sent off. Then a change to fix it is
+				// allowed at any time.
+				futbolFormationBroken = this.futbolViolationsWith(t, -1) > 0;
+			}
+
 			// Sub off the lowest ovr guy first
 			for (const pp of getSortedIndexes(ovrsOnCourt)) {
 				const p = this.playersOnCourt[t][pp]!;
@@ -1069,7 +1098,14 @@ class GameSim extends GameSimBase {
 				if (t === this.o && p === shooter) {
 					continue;
 				}
-				if (!(p.stat.courtTime > 2) && !onCourtIsIneligible) {
+				if (this.futbol && this.futbolExpelled.has(p)) {
+					continue;
+				}
+				if (
+					!(p.stat.courtTime > 2) &&
+					!onCourtIsIneligible &&
+					!futbolFormationBroken
+				) {
 					continue;
 				}
 
@@ -1082,6 +1118,7 @@ class GameSim extends GameSimBase {
 					}
 					if (
 						!onCourtIsIneligible &&
+						!futbolFormationBroken &&
 						(recordStarters ||
 							this.futbolSubsUsed[t] >= this.futbolAllowedSubs())
 					) {
@@ -1113,7 +1150,8 @@ class GameSim extends GameSimBase {
 
 					if (
 						benchIsValidAndBetter ||
-						(onCourtIsIneligible && benchIsEligible)
+						(onCourtIsIneligible && benchIsEligible) ||
+						(futbolFormationBroken && benchIsEligible)
 					) {
 						if (this.futbol) {
 							// Formation rules. A voluntary change must leave a valid
@@ -1275,14 +1313,61 @@ class GameSim extends GameSimBase {
 	}
 
 	/**
+	 * Fútbol: probability of scoring a penalty kick. Free throw rating
+	 * ("penales") against the other team's goalkeeper. About 70% for an average
+	 * kicker against an average keeper.
+	 */
+	futbolPenaltyProb(t: TeamNum, p: PlayerGameSim) {
+		const opp = teamNums[1 - t]!;
+		const keeper = this.playersOnCourt[opp].find(
+			(p2) => p2.pos === "C" && !this.futbolExpelled.has(p2),
+		);
+		const keeperBlocking = keeper?.compositeRating.blocking ?? 0.3;
+		return helpers.bound(
+			0.5 + 0.4 * p.compositeRating.shootingFT - 0.15 * (keeperBlocking - 0.5),
+			0.05,
+			0.95,
+		);
+	}
+
+	/**
+	 * Fútbol: the best penalty taker on the field for team t (the keeper only
+	 * if there's nobody else).
+	 */
+	futbolPenaltyTaker(t: TeamNum) {
+		const candidates = this.playersOnCourt[t].filter(
+			(p) => !p.injured && !this.futbolExpelled.has(p),
+		);
+		return maxBy(
+			candidates,
+			(p) => p.compositeRating.shootingFT - (p.pos === "C" ? 10 : 0),
+		);
+	}
+
+	/**
 	 * Fútbol: number of formation rule violations of team t's lineup, optionally
 	 * replacing the player at index pp with b. 0 means a valid formation.
 	 */
 	futbolViolationsWith(t: TeamNum, pp: number, b?: PlayerGameSim) {
-		const positions = this.playersOnCourt[t].map((p2, j) =>
-			j === pp && b !== undefined ? b.pos : p2.pos,
-		);
-		return lineupViolations(countLines(positions));
+		const positions = [];
+		for (const [j, p2] of this.playersOnCourt[t].entries()) {
+			if (this.futbolExpelled.has(p2)) {
+				continue;
+			}
+			positions.push(j === pp && b !== undefined ? b.pos : p2.pos);
+		}
+		const numPlayers = this.numPlayersOnCourt - this.futbolNumExpelled(t);
+		return lineupViolations(countLines(positions), numPlayers);
+	}
+
+	futbolNumExpelled(t: TeamNum) {
+		let count = 0;
+		for (const p of this.playersOnCourt[t]) {
+			if (this.futbolExpelled.has(p)) {
+				count += 1;
+			}
+		}
+		return count;
 	}
 
 	/**
@@ -1306,6 +1391,9 @@ class GameSim extends GameSimBase {
 
 			for (let i = 0; i < this.numPlayersOnCourt; i++) {
 				const p = this.playersOnCourt[t][i]!;
+				if (this.futbolExpelled.has(p)) {
+					continue;
+				}
 
 				let skills = this.skillsCountCache.get(p);
 
@@ -1420,6 +1508,10 @@ class GameSim extends GameSimBase {
 			let defensePerimeter = 0;
 			let blocking = 0;
 			for (const p of this.playersOnCourt[t]) {
+				// Fútbol: a sent off player doesn't help, so the team plays with 10
+				if (this.futbolExpelled.has(p)) {
+					continue;
+				}
 				const ratings = p.compositeRating;
 				const fatigue = this.fatigue(p.stat.energy);
 				const pf = p.stat.pf;
@@ -1466,6 +1558,10 @@ class GameSim extends GameSimBase {
 
 			// Update minutes (overall, court, and bench)
 			for (const p of this.team[t].player) {
+				// Fútbol: a sent off player doesn't play any more minutes
+				if (this.futbolExpelled.has(p)) {
+					continue;
+				}
 				if (playersOnCourt.includes(p)) {
 					p.stat.min += min;
 					this.team[t].stat.min += min;
@@ -1499,7 +1595,7 @@ class GameSim extends GameSimBase {
 	 *
 	 * This doesn't actually compute the type of injury, it just determines if a player is injured bad enough to miss the rest of the game.
 	 */
-	injuries() {
+	injuries(possessionTime: number) {
 		if (this.baseInjuryRate === 0) {
 			return false;
 		}
@@ -1510,10 +1606,16 @@ class GameSim extends GameSimBase {
 		// Modulate by pace - since injuries are evaluated per possession, but really probably happen per minute played
 		baseRate *= 100 / g.get("pace");
 
+		// Fútbol: possessions are much longer than in basketball, so scale by the
+		// time that went by (an average basketball possession is about 14.4 seconds)
+		if (this.futbol) {
+			baseRate *= possessionTime / 14.4;
+		}
+
 		for (const t of teamNums) {
 			for (const p of this.team[t].player) {
 				// Only players on the court can be injured
-				if (this.playersOnCourt[t].includes(p)) {
+				if (this.playersOnCourt[t].includes(p) && !this.futbolExpelled.has(p)) {
 					const injuryRate = getInjuryRate(
 						baseRate,
 						p.age,
@@ -1648,6 +1750,7 @@ class GameSim extends GameSimBase {
 			(this.prevPossessionOutcome === "timeout" && timeoutAdvancesBall);
 
 		if (
+			!this.futbol &&
 			!possessionStartsInFrontcourt &&
 			timeoutAdvancesBall &&
 			this.t < 120 &&
@@ -1767,7 +1870,8 @@ class GameSim extends GameSimBase {
 
 			// In the bonus? Checks offset by 1, because the foul counter won't increment until doPf is called below
 			const numFoulsUntilBonus = this.getNumFoulsUntilBonus();
-			const inBonus = numFoulsUntilBonus <= 1;
+			// Fútbol: a regular foul is a free kick, never free throws
+			const inBonus = !this.futbol && numFoulsUntilBonus <= 1;
 
 			if (this.t <= 0) {
 				throw new Error("Clock at 0 for non-shooting foul");
@@ -2057,6 +2161,13 @@ class GameSim extends GameSimBase {
 
 			probMissAndFoul *= foulFactor;
 			probAndOne *= foulFactor;
+
+			if (this.futbol) {
+				// A foul on a shot is a penalty kick, which is much rarer than a
+				// shooting foul in basketball. There are no "and ones".
+				probMissAndFoul *= FUTBOL_PENALTY_FOUL_FACTOR;
+				probAndOne = 0;
+			}
 			probMake =
 				(probMake -
 					0.25 * this.team[this.d].compositeRating.defense +
@@ -2074,6 +2185,11 @@ class GameSim extends GameSimBase {
 				if (passer !== undefined) {
 					probMake += 0.025;
 				}
+			}
+
+			// Fútbol: most shots don't end in a goal
+			if (this.futbol) {
+				probMake *= FUTBOL_FINISHING_FACTOR;
 			}
 		}
 
@@ -2263,6 +2379,10 @@ class GameSim extends GameSimBase {
 				shooter: p,
 			});
 
+			if (this.futbol) {
+				return this.doFt(p, 1);
+			}
+
 			if (threePointer) {
 				return this.doFt(p, 3);
 			}
@@ -2315,7 +2435,9 @@ class GameSim extends GameSimBase {
 		return (
 			g.get("blockFactor") *
 			0.2 *
-			this.team[this.d].compositeRating.blocking ** 2
+			this.team[this.d].compositeRating.blocking ** 2 *
+			// Fútbol: blocked shots include the goalkeeper's saves
+			(this.futbol ? FUTBOL_SAVE_FACTOR : 1)
 		);
 	}
 
@@ -2339,7 +2461,17 @@ class GameSim extends GameSimBase {
 			this.recordStat(this.o, p, "tpa");
 		}
 
-		const p2 = this.pickPlayer("blocking", this.d, 10);
+		// Fútbol: most blocked shots are saves by the goalkeeper, the rest are
+		// blocked by defenders
+		const keeper = this.futbol
+			? this.playersOnCourt[this.d].find(
+					(p3) => p3.pos === "C" && !this.futbolExpelled.has(p3),
+				)
+			: undefined;
+		const p2 =
+			keeper !== undefined && Math.random() < FUTBOL_KEEPER_SAVE_SHARE
+				? keeper
+				: this.pickPlayer("blocking", this.d, 10);
 		this.recordStat(this.d, p2, "blk");
 		let blockLogType: BlockType | undefined;
 		if (type === "tipIn") {
@@ -2385,7 +2517,8 @@ class GameSim extends GameSimBase {
 		const pid = p.id;
 		this.recordStat(this.o, p, "fga");
 		this.recordStat(this.o, p, "fg");
-		this.recordStat(this.o, p, "pts", 2); // 2 points for 2's
+		// 2 points for 2's. Fútbol: every goal is worth 1.
+		this.recordStat(this.o, p, "pts", this.futbol ? 1 : 2);
 
 		let fouler;
 		if (andOne) {
@@ -2414,7 +2547,7 @@ class GameSim extends GameSimBase {
 			this.recordStat(this.o, p, "fgMidRange");
 			fgMakeLogType = andOne ? "fgMidRangeAndOne" : "fgMidRange";
 		} else if (type === "threePointer") {
-			if (g.get("threePointers")) {
+			if (g.get("threePointers") && !this.futbol) {
 				this.recordStat(this.o, p, "pts"); // Extra point for 3's
 			}
 			this.recordStat(this.o, p, "tpa");
@@ -2720,13 +2853,21 @@ class GameSim extends GameSimBase {
 		}
 	}
 
-	doFt(p: PlayerGameSim, amount: number) {
+	doFt(pFouled: PlayerGameSim, amount: number) {
+		let p = pFouled;
+
 		// 95% max, a 75 FT rating gets you 90%, and a 25 FT rating gets you 60%
-		const ftp = helpers.bound(
+		let ftp = helpers.bound(
 			g.get("ftAccuracyFactor") * p.compositeRating.shootingFT * 0.6 + 0.45,
 			0,
 			0.95,
 		);
+
+		if (this.futbol) {
+			// Penalty kick, taken by the best penalty taker on the field
+			p = this.futbolPenaltyTaker(this.o) ?? pFouled;
+			ftp = this.futbolPenaltyProb(this.o, p);
+		}
 
 		let outcome: PossessionOutcome | undefined;
 
@@ -2914,7 +3055,7 @@ class GameSim extends GameSimBase {
 		for (let i = 0; i < this.numPlayersOnCourt; i++) {
 			const p = this.playersOnCourt[t][i]!;
 
-			if (excludeGoalkeeper && p.pos === "C") {
+			if ((excludeGoalkeeper && p.pos === "C") || this.futbolExpelled.has(p)) {
 				array[i] = 0;
 				continue;
 			}
@@ -2943,7 +3084,8 @@ class GameSim extends GameSimBase {
 		const floor = 0.05 * total * (this.futbol ? 5 / this.numPlayersOnCourt : 1);
 
 		for (let i = 0; i < this.numPlayersOnCourt; i++) {
-			if (excludeGoalkeeper && this.playersOnCourt[t][i]!.pos === "C") {
+			const p = this.playersOnCourt[t][i]!;
+			if ((excludeGoalkeeper && p.pos === "C") || this.futbolExpelled.has(p)) {
 				continue;
 			}
 			if (array[i]! < floor) {
@@ -2977,7 +3119,9 @@ class GameSim extends GameSimBase {
 
 		// Special case for all 0 rated players - randomly pick one
 		if (sum === 0) {
-			const candidates = playersOnCourt.filter((p) => p !== exempt);
+			const candidates = playersOnCourt.filter(
+				(p) => p !== exempt && !this.futbolExpelled.has(p),
+			);
 			return choice(candidates);
 		}
 

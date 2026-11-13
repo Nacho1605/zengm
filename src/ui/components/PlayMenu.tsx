@@ -1,3 +1,4 @@
+import { tr } from "../../common/futbolEs.ts";
 import { useCallback, type MouseEvent } from "react";
 import { Dropdown, Nav } from "react-bootstrap";
 import { toWorker } from "../util/toWorker.ts";
@@ -91,7 +92,7 @@ const PlayMenu = ({
 				id="play-button"
 				as={Nav.Link}
 			>
-				Play
+				{tr("Play")}
 			</Dropdown.Toggle>
 			<Dropdown.Menu>
 				{options.map((option, i) => {
@@ -104,7 +105,7 @@ const PlayMenu = ({
 							}
 							className="kbd-parent"
 						>
-							{option.label}
+							{tr(option.label)}
 							{option.keyboardShortcut ? (
 								<span className="text-body-secondary kbd">
 									{formatKeyboardShortcut(

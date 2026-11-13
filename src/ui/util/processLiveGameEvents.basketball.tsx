@@ -7,6 +7,7 @@ import type { ReactNode } from "react";
 import { formatClock } from "../../common/formatClock.ts";
 import { formatLiveGameStat } from "./formatLiveGameStat.ts";
 import type { PlayByPlayEvent } from "../../worker/core/GameSim/PlayByPlayLoggerBase.ts";
+import { isFutbolEs } from "../../common/futbolEs.ts";
 
 const getPronoun = (pronoun: Parameters<typeof helpers.pronoun>[1]) => {
 	return helpers.pronoun(local.getState().gender, pronoun);
@@ -28,6 +29,246 @@ const getName = (pid: number) => {
 	return playersByPid?.[pid]?.name ?? "???";
 };
 
+const isKeeper = (pid: number) => (playersByPid?.[pid] as any)?.pos === "C";
+
+// Fútbol mode: the play-by-play in Spanish, with fútbol vocabulary
+const getTextFutbol = (event: PlayByPlayEventOutput): ReactNode => {
+	if (playersByPid === undefined) {
+		throw new Error("playersByPid is undefined");
+	}
+	const p = playersByPid;
+	const name = (pid: number) => getName(pid);
+	const gol = (pid: number) => formatLiveGameStat(p[pid], "pts");
+
+	let texts: ReactNode[] | undefined;
+	let weights: number[] | undefined;
+
+	switch (event.type) {
+		case "period":
+			texts = [
+				event.period === 1
+					? "Comienza el primer tiempo"
+					: event.period === 2
+						? "Comienza el segundo tiempo"
+						: `Comienza el período ${event.period}`,
+			];
+			break;
+		case "overtime":
+			texts = ["Comienza el alargue"];
+			break;
+		case "injury":
+			texts = [`¡${name(event.pid)} se lesionó!`];
+			break;
+		case "tov":
+			texts = event.outOfBounds
+				? [`${name(event.pid)} la manda afuera`]
+				: [
+						`${name(event.pid)} pierde la pelota${formatLiveGameStat(p[event.pid], "tov")}`,
+						`Mal pase de ${name(event.pid)}${formatLiveGameStat(p[event.pid], "tov")}`,
+					];
+			break;
+		case "stl":
+			texts = [
+				`${name(event.pid)} le roba la pelota a ${name(event.pidTov)}${formatLiveGameStat(p[event.pid], "stl")}`,
+				`Gran quite de ${name(event.pid)} ante ${name(event.pidTov)}${formatLiveGameStat(p[event.pid], "stl")}`,
+			];
+			break;
+		case "fgaTipIn":
+			texts = [`Centro de ${name(event.pidPass)} y ${name(event.pid)} cabecea`];
+			break;
+		case "fgaPutBack":
+			texts = [`${name(event.pid)} toma el rebote y remata`];
+			break;
+		case "fgaAtRim":
+			texts = [
+				`${name(event.pid)} queda mano a mano con el arquero`,
+				`${name(event.pid)} define desde el área chica`,
+			];
+			break;
+		case "fgaLowPost":
+			texts = [
+				`${name(event.pid)} remata dentro del área`,
+				`${name(event.pid)} cabecea en el área`,
+			];
+			break;
+		case "fgaMidRange":
+			texts = [`${name(event.pid)} remata desde la puerta del área`];
+			break;
+		case "fgaTp":
+		case "fgaTpFake":
+			texts = event.desperation
+				? [`${name(event.pid)} prueba desde muy lejos sobre el final`]
+				: [
+						`${name(event.pid)} prueba de media distancia`,
+						`${name(event.pid)} saca un remate de lejos`,
+					];
+			break;
+		case "fgTipIn":
+		case "fgTipInAndOne":
+		case "fgPutBack":
+		case "fgPutBackAndOne":
+		case "fgLowPost":
+		case "fgLowPostAndOne":
+		case "fgMidRange":
+		case "fgMidRangeAndOne":
+		case "tp":
+		case "tpAndOne":
+			texts = [
+				`¡GOOOL de ${name(event.pid)}!${gol(event.pid)}`,
+				`¡Adentro! Gol de ${name(event.pid)}${gol(event.pid)}`,
+				`¡Golazo de ${name(event.pid)}!${gol(event.pid)}`,
+			];
+			weights = [3, 2, event.type === "tp" ? 3 : 1];
+			break;
+		case "fgAtRim":
+		case "fgAtRimAndOne":
+			texts = [
+				`¡GOOOL de ${name(event.pid)}! Le gana a ${name(event.pidDefense)}${gol(event.pid)}`,
+				`¡Adentro! ${name(event.pid)} la empuja${gol(event.pid)}`,
+			];
+			break;
+		case "blkAtRim":
+		case "blkTipIn":
+		case "blkPutBack":
+		case "blkLowPost":
+		case "blkMidRange":
+		case "blkTp":
+			texts = isKeeper(event.pid)
+				? [
+						`¡Atajada de ${name(event.pid)}!${formatLiveGameStat(p[event.pid], "blk")}`,
+						`¡Qué tapada de ${name(event.pid)}!${formatLiveGameStat(p[event.pid], "blk")}`,
+					]
+				: [
+						`Lo bloquea ${name(event.pid)}${formatLiveGameStat(p[event.pid], "blk")}`,
+						`${name(event.pid)} se cruza y tapa el remate${formatLiveGameStat(p[event.pid], "blk")}`,
+					];
+			break;
+		case "missTipIn":
+		case "missAtRim":
+		case "missPutBack":
+		case "missLowPost":
+		case "missMidRange":
+		case "missTp":
+			texts = [
+				"Se va desviado",
+				"¡Pegó en el palo!",
+				"Por arriba del travesaño",
+				"Se va afuera por poco",
+			];
+			weights = [4, 1, 2, 2];
+			break;
+		case "orb":
+			texts = [`${name(event.pid)} gana la segunda pelota en el área rival`];
+			break;
+		case "drb":
+			texts = isKeeper(event.pid)
+				? [`${name(event.pid)} se queda con la pelota`]
+				: [
+						`${name(event.pid)} despeja`,
+						`${name(event.pid)} recupera la pelota`,
+					];
+			break;
+		case "gameOver":
+			texts = ["¡Final del partido!"];
+			break;
+		case "ft":
+			texts = [`¡Gol de penal de ${name(event.pid)}!${gol(event.pid)}`];
+			break;
+		case "missFt":
+			texts = [
+				`¡${name(event.pid)} erra el penal!`,
+				`¡El arquero le ataja el penal a ${name(event.pid)}!`,
+			];
+			break;
+		case "pfNonShooting":
+		case "pfBonus":
+			texts = [
+				`Falta de ${name(event.pid)}. Tarjeta amarilla${formatLiveGameStat(p[event.pid], "pf")}`,
+			];
+			break;
+		case "pfFG":
+		case "pfTP":
+			texts = [
+				<>
+					¡Penal! Falta de {name(event.pid)} sobre {name(event.pidShooting)}
+					<br />
+					Tarjeta amarilla para {name(event.pid)}
+					{formatLiveGameStat(p[event.pid], "pf")}
+				</>,
+			];
+			break;
+		case "foulOut":
+			texts = [
+				<span className="text-danger">
+					¡Roja! {name(event.pid)} se va expulsado por doble amarilla
+				</span>,
+			];
+			break;
+		case "sub":
+			texts = [
+				<>
+					Cambio. Entra: {event.pids.map((pid) => name(pid)).join(", ")}
+					<br />
+					Sale: {event.pidsOff.map((pid) => name(pid)).join(", ")}
+				</>,
+			];
+			break;
+		case "jumpBall":
+			texts = ["¡Rueda la pelota!"];
+			break;
+		case "timeout":
+			texts = ["Pausa"];
+			break;
+		case "endOfPeriod":
+			texts = ["Final del tiempo"];
+			break;
+		case "outOfBounds":
+			texts = ["La pelota sale por el lateral"];
+			break;
+		case "shootoutStart":
+			texts = [`¡Se define por penales, ${event.rounds} por equipo!`];
+			break;
+		case "shootoutTeam":
+			texts = [`${name(event.pid)} se prepara para patear`];
+			break;
+		case "shootoutShot":
+			texts = event.made
+				? ["¡Gol!", "¡Adentro!", "¡La clavó en el ángulo!"]
+				: ["¡Atajó el arquero!", "¡Se fue afuera!", "¡Pegó en el palo!"];
+			weights = event.made ? [3, 2, 1] : [3, 2, 1];
+			break;
+		case "shootoutTie":
+			texts = [
+				"Sigue la igualdad. Penales alternados hasta que haya un ganador",
+			];
+			break;
+		default:
+			texts = undefined;
+	}
+
+	if (!texts) {
+		throw new Error(`No text for ${event.type}`);
+	}
+
+	let text = choice(texts, weights);
+
+	const eAny = event as any;
+	if (eAny.pidAst !== undefined) {
+		text = (
+			<>
+				{text}
+				<br />
+				<span className="text-body-secondary">
+					Asistencia de {name(eAny.pidAst)}
+					{formatLiveGameStat(p[eAny.pidAst], "ast")}
+				</span>
+			</>
+		);
+	}
+
+	return text;
+};
+
 const getText = (
 	event: PlayByPlayEventOutput,
 	boxScore: {
@@ -38,6 +279,10 @@ const getText = (
 		];
 	},
 ) => {
+	if (isFutbolEs()) {
+		return getTextFutbol(event);
+	}
+
 	let texts: ReactNode[] | undefined;
 	let weights;
 	if (playersByPid === undefined) {
@@ -449,12 +694,22 @@ const processLiveGameEvents = ({
 				} else if (overtimes > 1) {
 					boxScore.overtime = `(${overtimes}OT)`;
 				}
-				boxScore.quarter = `${helpers.ordinal(overtimes)} overtime`;
-				boxScore.quarterShort = overtimes === 1 ? "OT" : `${overtimes}OT`;
+				boxScore.quarter = isFutbolEs()
+					? "Alargue"
+					: `${helpers.ordinal(overtimes)} overtime`;
+				boxScore.quarterShort = isFutbolEs()
+					? "AL"
+					: overtimes === 1
+						? "OT"
+						: `${overtimes}OT`;
 			} else {
-				boxScore.quarter = `${helpers.ordinal(quarter)} ${getPeriodName(
-					boxScore.numPeriods,
-				)}`;
+				boxScore.quarter = isFutbolEs()
+					? quarter === 1
+						? "Primer tiempo"
+						: quarter === 2
+							? "Segundo tiempo"
+							: `Período ${quarter}`
+					: `${helpers.ordinal(quarter)} ${getPeriodName(boxScore.numPeriods)}`;
 				boxScore.quarterShort = `${getPeriodName(
 					boxScore.numPeriods,
 					true,

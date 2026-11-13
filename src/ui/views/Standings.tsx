@@ -1,3 +1,4 @@
+import { tr } from "../../common/futbolEs.ts";
 import clsx from "clsx";
 import { dropdownOptions } from "../hooks/useDropdownOptions.tsx";
 import { type CSSProperties, Fragment } from "react";
@@ -162,7 +163,7 @@ const GroupStandingsRow = ({
 			<td>{t.seasonAttrs.streak}</td>
 			<td>{t.seasonAttrs.lastTen}</td>
 			<td>
-				{showTiebreakers && t.tiebreaker ? TIEBREAKERS[t.tiebreaker] : null}
+				{showTiebreakers && t.tiebreaker ? tr(TIEBREAKERS[t.tiebreaker]) : null}
 			</td>
 		</tr>
 	);
@@ -232,36 +233,38 @@ const GroupStandings = ({
 				<thead>
 					<tr>
 						<th className="standings-name">{name}</th>
-						<th>W</th>
-						<th>L</th>
+						<th>{tr("W")}</th>
+						<th>{tr("L")}</th>
 						{otl ? <th>OTL</th> : null}
-						{ties ? <th>T</th> : null}
+						{ties ? <th>{tr("T")}</th> : null}
 						{usePts ? null : <th>%</th>}
 						<ColPtsOrGB pointsFormula={pointsFormula} usePts={usePts} />
 						{usePts ? <th>PTS%</th> : null}
-						<th>Home</th>
-						<th>Road</th>
-						<th>Div</th>
-						<th>Conf</th>
+						<th>{tr("Home")}</th>
+						<th>{tr("Road")}</th>
+						<th>{tr("Div")}</th>
+						<th>{tr("Conf")}</th>
 						{bySport({
 							baseball: <th title="Runs Scored">RS</th>,
 							hockey: <th title="Goals For">GF</th>,
-							default: <th title="Points Scored">PS</th>,
+							default: <th title="Points Scored">{tr("PS")}</th>,
 						})}
 						{bySport({
 							baseball: <th title="Runs Allowed">RA</th>,
 							hockey: <th title="Goals Against">GA</th>,
-							default: <th title="Points Against">PA</th>,
+							default: <th title="Points Against">{tr("PA")}</th>,
 						})}
 						{bySport({
 							baseball: <th title="Run Differential">Diff</th>,
-							basketball: <th title="Average Margin of Victory">MOV</th>,
+							basketball: (
+								<th title="Average Margin of Victory">{tr("MOV")}</th>
+							),
 							football: <th title="Point Differential">Diff</th>,
 							hockey: <th title="Goal Differential">Diff</th>,
 						})}
-						<th>Streak</th>
-						<th>L10</th>
-						<th style={{ minWidth: 191 }}>Tiebreaker</th>
+						<th>{tr("Streak")}</th>
+						<th>{tr("L10")}</th>
+						<th style={{ minWidth: 191 }}>{tr("Tiebreaker")}</th>
 					</tr>
 				</thead>
 				<tbody>

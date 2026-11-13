@@ -1,3 +1,4 @@
+import { tr } from "../../common/futbolEs.ts";
 import clsx from "clsx";
 import type { MouseEvent } from "react";
 import { PlayerNameLabels } from "./PlayerNameLabels.tsx";
@@ -27,9 +28,9 @@ const BoxScoreRow = ({
 
 	const statCols = showDNP ? (
 		<td colSpan={15} className="text-center">
-			DNP -{" "}
+			{tr("DNP")} -{" "}
 			{p.injury.gamesRemaining === 0 || p.injury.playingThrough
-				? "Coach's decision"
+				? tr("Coach's decision")
 				: p.injury.type}
 		</td>
 	) : (

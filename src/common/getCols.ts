@@ -1,5 +1,6 @@
 import type { Col } from "./types.ts";
 import { bySport } from "./sportFunctions.ts";
+import { trCol } from "./futbolEs.ts";
 
 type ColTemp = Omit<Col, "title"> & {
 	title?: string;
@@ -3694,10 +3695,10 @@ export const getCols = (
 			throw new Error(`Unknown column: "${title}"`);
 		}
 
-		return {
+		return trCol(title, {
 			...cols[title],
 			title: cols[title]!.title ?? title,
 			...overrides[title],
-		};
+		});
 	});
 };

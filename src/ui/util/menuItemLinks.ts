@@ -1,3 +1,4 @@
+import { tr } from "../../common/futbolEs.ts";
 import type { ReactNode } from "react";
 import type { MenuItemLink } from "../../common/types.ts";
 import { helpers } from "./helpers.ts";
@@ -6,10 +7,10 @@ export const getText = (
 	text: MenuItemLink["text"],
 ): Exclude<ReactNode, null | undefined | number | boolean> => {
 	if (typeof text === "object" && "side" in text) {
-		return text.side;
+		return tr(text.side);
 	}
 
-	return text;
+	return tr(text);
 };
 
 export const makeAnchorProps = (

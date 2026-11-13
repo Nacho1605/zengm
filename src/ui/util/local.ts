@@ -4,6 +4,8 @@ import type { LocalStateUI, GameAttributesLeague } from "../../common/types.ts";
 import { defaultGameAttributes } from "../../common/defaultGameAttributes.ts";
 import { safeLocalStorage } from "./safeLocalStorage.ts";
 import { gameAttributesSyncedToUi } from "../../common/gameAttributesSyncedToUi.ts";
+import { setFutbolEs } from "../../common/futbolEs.ts";
+import { isFutbolMode } from "../../common/futbol.ts";
 
 // These are variables that are needed to display parts of the UI not driven explicitly by worker/views/*.js files. Like
 // the top navbar, the multi team menu, etc. They come from gameAttributes, the account system, and elsewhere.
@@ -76,6 +78,7 @@ const getLeagueState = (): Pick<
 	nextPhase: undefined,
 	numGames: defaultGameAttributes.numGames[0].value,
 	numPeriods: defaultGameAttributes.numPeriods,
+	numPlayersOnCourt: defaultGameAttributes.numPlayersOnCourt,
 	numWatchColors: defaultGameAttributes.numWatchColors,
 	otherTeamsWantToHire: false,
 	phase: 0,
@@ -300,6 +303,12 @@ const useLocal = <Key extends keyof LocalStateUI>(keys: Key[]) => {
 };
 
 const local = useLocalRaw;
+
+// Fútbol mode (11 on the field): show the most visible texts in Spanish
+setFutbolEs(isFutbolMode(local.getState().numPlayersOnCourt));
+local.subscribe((state) => {
+	setFutbolEs(isFutbolMode(state.numPlayersOnCourt));
+});
 
 // This assumes the actions object never changes!
 const localActions = local.getState().actions;

@@ -16,6 +16,24 @@ export const FUTBOL_NUM_PLAYERS_ON_COURT = 11;
 // Cambios por partido y por equipo. El jugador que sale no puede volver.
 export const FUTBOL_MAX_SUBS = 5;
 
+// Goles. El motor de básquet genera muchas más posesiones y tiros que un
+// partido de fútbol, así que en modo fútbol se ajustan los valores de abajo.
+// Están calibrados con los planteles reales del archivo Argentina 2023: unos
+// 1,2 goles, 11 remates y 3,6 atajadas por equipo, y 28% de empates.
+// - Antes de cada ataque la pelota circula en el medio. Ese tiempo (en segundos
+//   de juego) no genera estadísticas, y hace que haya menos ataques.
+export const FUTBOL_BUILD_UP_SECONDS: [number, number] = [110, 230];
+// - Solo una parte de los tiros termina en gol.
+export const FUTBOL_FINISHING_FACTOR = 0.38;
+// - Una falta en un remate es un penal, mucho menos común que una falta de tiro
+//   en básquet.
+export const FUTBOL_PENALTY_FOUL_FACTOR = 0.09;
+
+// Atajadas. Muchos más remates terminan bloqueados que en básquet, y la mayoría
+// los ataja el arquero.
+export const FUTBOL_SAVE_FACTOR = 8;
+export const FUTBOL_KEEPER_SAVE_SHARE = 0.6;
+
 export const isFutbolMode = (numPlayersOnCourt: number) =>
 	numPlayersOnCourt >= FUTBOL_NUM_PLAYERS_ON_COURT;
 
@@ -87,12 +105,17 @@ const distanceToRange = (
 ) => (value < min ? min - value : value > max ? value - max : 0);
 
 /**
- * Cuántas "infracciones" tiene una formación de 11. 0 significa válida.
+ * Cuántas "infracciones" tiene una formación. 0 significa válida.
+ *
+ * numPlayers es 11, o menos si hay expulsados.
  *
  * Los comodines (SF) se reparten entre mediocampo y delantera de la forma que
  * menos infracciones produzca.
  */
-export const lineupViolations = (counts: FutbolLineCounts): number => {
+export const lineupViolations = (
+	counts: FutbolLineCounts,
+	numPlayers: number = FUTBOL_NUM_PLAYERS_ON_COURT,
+): number => {
 	const total =
 		counts.arquero +
 		counts.defensor +
@@ -101,7 +124,7 @@ export const lineupViolations = (counts: FutbolLineCounts): number => {
 		counts.comodin;
 
 	let base =
-		Math.abs(total - FUTBOL_NUM_PLAYERS_ON_COURT) +
+		Math.abs(total - numPlayers) +
 		distanceToRange(counts.arquero, FUTBOL_LIMITS.arquero) +
 		distanceToRange(counts.defensor, FUTBOL_LIMITS.defensor);
 

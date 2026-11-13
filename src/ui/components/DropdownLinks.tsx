@@ -1,3 +1,4 @@
+import { tr } from "../../common/futbolEs.ts";
 import clsx from "clsx";
 import { memo, useCallback, useId, useState } from "react";
 import type { MouseEvent, ReactNode } from "react";
@@ -28,8 +29,8 @@ const TopMenuToggle = ({ long, openID, short, toggle }: TopMenuToggleProps) => {
 	);
 	return (
 		<Dropdown.Toggle as={Nav.Link} id={id} onMouseEnter={handleMouseEnter}>
-			<span className="d-none d-md-inline">{long}</span>
-			<span className="d-md-none" title={long}>
+			<span className="d-none d-md-inline">{tr(long)}</span>
+			<span className="d-md-none" title={tr(long)}>
 				{short}
 			</span>
 		</Dropdown.Toggle>
@@ -84,10 +85,10 @@ const TopMenuDropdown = ({
 const getText = (text: MenuItemLink["text"]) => {
 	if (Object.hasOwn(text as any, "top")) {
 		// @ts-expect-error
-		return text.top;
+		return tr(text.top);
 	}
 
-	return text;
+	return tr(text);
 };
 
 const makeAnchorProps = (menuItem: MenuItemLink) => {
@@ -136,7 +137,7 @@ const MenuItem = ({
 	root: boolean;
 }) => {
 	if (menuItem.type === "text") {
-		return <Dropdown.Header>{menuItem.text}</Dropdown.Header>;
+		return <Dropdown.Header>{tr(menuItem.text)}</Dropdown.Header>;
 	}
 
 	if (!menuItem.league && inLeague) {

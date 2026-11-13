@@ -1,3 +1,4 @@
+import { tr } from "../../../common/futbolEs.ts";
 import clsx from "clsx";
 import { memo, type ReactNode, useCallback, useEffect, useState } from "react";
 import { localActions, useLocal } from "../../util/local.ts";
@@ -139,7 +140,7 @@ const MenuItem = ({
 			return null;
 		}
 
-		return <MenuGroup title={menuItem.long}>{children}</MenuGroup>;
+		return <MenuGroup title={tr(menuItem.long)}>{children}</MenuGroup>;
 	}
 };
 

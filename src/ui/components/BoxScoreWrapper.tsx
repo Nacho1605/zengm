@@ -1,3 +1,4 @@
+import { tr } from "../../common/futbolEs.ts";
 import clsx from "clsx";
 import {
 	useCallback,
@@ -471,11 +472,15 @@ const FourFactors = ({ teams }: { teams: any[] }) => {
 				<thead>
 					<tr />
 					<tr>
-						<th title="Four Factors: Effective Field Goal Percentage">eFG%</th>
-						<th title="Four Factors: Turnover Percentage">TOV%</th>
-						<th title="Four Factors: Offensive Rebound Percentage">ORB%</th>
+						<th title="Four Factors: Effective Field Goal Percentage">
+							{tr("eFG%")}
+						</th>
+						<th title="Four Factors: Turnover Percentage">{tr("TOV%")}</th>
+						<th title="Four Factors: Offensive Rebound Percentage">
+							{tr("ORB%")}
+						</th>
 						<th title="Four Factors: Free Throws Made Over Field Goal Attempts">
-							FT/FGA
+							{tr("FT/FGA")}
 						</th>
 					</tr>
 				</thead>

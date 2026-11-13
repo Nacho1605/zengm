@@ -21,6 +21,7 @@ export const gameAttributesSyncedToUi = [
 	"nextPhase",
 	"numGames",
 	"numPeriods",
+	"numPlayersOnCourt",
 	"numWatchColors",
 	"otherTeamsWantToHire",
 	"phase",
