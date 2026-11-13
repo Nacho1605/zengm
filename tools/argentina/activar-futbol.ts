@@ -215,9 +215,10 @@ const cambios: Record<string, unknown> = {
 	// Cierre del libro de pases a mitad de temporada, como el receso de invierno
 	tradeDeadline: 0.5,
 
-	// Paridad: todos los clubes con los mismos ingresos por población, y una
-	// masa salarial mínima más alta (el tope salarial rígido ya estaba)
-	equalizeRegions: true,
+	// Paridad: masa salarial mínima más alta (el tope salarial rígido ya
+	// estaba). equalizeRegions queda apagado para respetar la población real de
+	// cada club.
+	equalizeRegions: false,
 	minPayroll: 120000,
 
 	// Premios en español (mismas fórmulas que la NBA, por partidos jugados de 43)
