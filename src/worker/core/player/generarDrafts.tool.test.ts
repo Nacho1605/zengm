@@ -49,7 +49,12 @@ test.skipIf(!env.GENERAR_DRAFTS)(
 		const ga = league.gameAttributes;
 		const desde = Number(env.DESDE);
 		const hasta = Number(env.HASTA);
-		const porClase = Number(env.POR_CLASE ?? 65);
+		// The game needs round(2 * active teams * 7 / 6) prospects per class, or
+		// it adds random ones (65 with 28 teams, 70 with 30)
+		const numActive = league.teams.filter((t: any) => !t.disabled).length;
+		const porClase = Number(
+			env.POR_CLASE ?? Math.round((2 * numActive * 7) / 6),
+		);
 
 		// Nombres: la configuración del archivo, sobre la lista real del juego
 		const names = JSON.parse(readFileSync("data/names.json", "utf8"));
