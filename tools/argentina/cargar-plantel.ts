@@ -277,11 +277,19 @@ export const ovrSugerido = (j: any, edad: number) => {
 		cuota *= 2; // llegó a mitad de año: tuvo la mitad de los minutos posibles
 	}
 	cuota = Math.min(cuota, 1);
+	// El valor de los menores de 24 incluye lo que se espera que lleguen a ser:
+	// se descuenta, más cuanto más joven y más caro (desde 100 mil €; completo
+	// desde 10 M€)
+	const promesa =
+		Math.max(0, 24 - edad) *
+		1.5 *
+		Math.min(1, Math.max(0, Math.log10(valor / 100000) / 2));
 	return Math.round(
 		36 +
 			13 * Math.log10(valor / 10000) +
 			4 * (cuota - 0.5) +
-			Math.max(0, 0.6 * (edad - 29)),
+			Math.max(0, 0.6 * (edad - 29)) -
+			promesa,
 	);
 };
 
@@ -443,9 +451,15 @@ const cargar = (plantel: any) => {
 			throw new Error(`${j.nombre} ${j.apellido}: no existe ${j.debut.club}`);
 		}
 
+		// En BBGM, el draft de un año se juega al final de esa temporada: los que
+		// debutan en la temporada actual vienen del draft del año anterior (y así
+		// también pueden ganar la Revelación del Año)
+		const anioDraft =
+			j.debut?.anio === SEASON ? SEASON - 1 : (j.debut?.anio ?? nac.y + 18);
+
 		const p: any = {
 			pid,
-			tid: team.tid,
+			tid: j.prospecto ? -2 : team.tid,
 			firstName: j.nombre,
 			lastName: j.apellido,
 			pos,
@@ -453,39 +467,54 @@ const cargar = (plantel: any) => {
 			weight: Math.round(23.5 * j.altura ** 2 * 2.2046),
 			born: { year: nac.y, loc: j.pais },
 			college: j.college ?? "",
-			draft: {
-				round: 0,
-				pick: 0,
-				tid: clubDebut?.tid ?? -1,
-				originalTid: clubDebut?.tid ?? -1,
-				year: j.debut?.anio ?? nac.y + 18,
-			},
+			draft: j.prospecto
+				? { round: 0, pick: 0, tid: -1, originalTid: -1, year: SEASON }
+				: {
+						round: 0,
+						pick: 0,
+						tid: clubDebut?.tid ?? -1,
+						originalTid: clubDebut?.tid ?? -1,
+						year: anioDraft,
+					},
 			imgURL: j.imgURL ?? "",
-			contracts: [
-				{
-					type: "unknown",
-					start: SEASON,
-					amounts: Array.from({ length: exp - SEASON + 1 }, () => amount),
-					payments: [],
-				},
-			],
+			// Los prospectos no tienen contrato: lo firman al ser elegidos
+			contracts: j.prospecto
+				? []
+				: [
+						{
+							type: "unknown",
+							start: SEASON,
+							amounts: Array.from({ length: exp - SEASON + 1 }, () => amount),
+							payments: [],
+						},
+					],
 			ratings: [{ ...r, fuzz: 0, ovr: ovrMeta, pos, season: SEASON }],
 			stats: [],
 			statsTids: [],
 			transactions: [],
 			awards: [],
 			injuries: [],
-			injury: { type: "Healthy", gamesRemaining: 0 },
+			// Lesión actual: partidos que le faltan (1 partido ≈ 1 semana)
+			injury: j.lesion
+				? { type: j.lesion.tipo, gamesRemaining: j.lesion.partidos }
+				: { type: "Healthy", gamesRemaining: 0 },
 			relatives: [],
 			gamesUntilTradable: 0,
 			numDaysFreeAgent: 0,
 			ptModifier: 1,
 			yearsFreeAgent: 0,
 		};
-		if (j.n) {
+		if (j.n && !j.prospecto) {
 			p.jerseyNumber = j.n;
 		}
-		nuevos.push({ p, j, edad, amount, exp, clubDebut });
+		nuevos.push({
+			p,
+			j,
+			edad,
+			amount: j.prospecto ? 0 : amount,
+			exp,
+			clubDebut: j.prospecto ? undefined : clubDebut,
+		});
 		pid += 1;
 	}
 	nuevos.sort((a, b) => b.p.ratings[0].ovr - a.p.ratings[0].ovr);
@@ -510,9 +539,11 @@ const cargar = (plantel: any) => {
 	for (const { p, j, edad, amount, exp, clubDebut } of nuevos) {
 		payroll += amount;
 		const r = p.ratings[0];
-		const draft = clubDebut
-			? `draft ${p.draft.year} R${p.draft.round} P${p.draft.pick} ${clubDebut.abbrev}${clubDebut.disabled ? " (inactivo)" : ""}`
-			: `sin draft (${p.draft.year})`;
+		const draft = j.prospecto
+			? `PROSPECTO draft ${p.draft.year}`
+			: clubDebut
+				? `draft ${p.draft.year} R${p.draft.round} P${p.draft.pick} ${clubDebut.abbrev}${clubDebut.disabled ? " (inactivo)" : ""}`
+				: `sin draft (${p.draft.year})`;
 		filas.push(
 			[
 				(p.jerseyNumber ?? "-").padStart(2),
@@ -520,15 +551,21 @@ const cargar = (plantel: any) => {
 				p.pos.padEnd(2),
 				String(edad).padStart(2),
 				`OVR ${r.ovr}${j.ovr ? "*" : " "}`,
-				`$${(amount / 1000).toFixed(2)}M hasta ${exp}`,
+				j.prospecto
+					? "sin contrato"
+					: `$${(amount / 1000).toFixed(2)}M hasta ${exp}`,
 				draft,
 				`college: ${p.college || "-"}`,
+				j.lesion
+					? `lesión: ${j.lesion.tipo} (${j.lesion.partidos} partidos)`
+					: "",
 			].join(" | "),
 		);
 	}
 	console.log(filas.join("\n"));
+	const enPlantel = nuevos.filter(({ j }) => !j.prospecto).length;
 	console.log(
-		`${nuevos.length} jugadores, planilla $${(payroll / 1000).toFixed(1)}M (tope $${ga.salaryCap / 1000}M)`,
+		`${enPlantel} jugadores en el plantel, planilla $${(payroll / 1000).toFixed(1)}M (tope $${ga.salaryCap / 1000}M)`,
 	);
 };
 
