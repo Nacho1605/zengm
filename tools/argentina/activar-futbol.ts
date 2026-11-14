@@ -7,6 +7,7 @@
 // de 45 minutos.
 
 import { readFileSync, writeFileSync } from "node:fs";
+import { INJURY_RATE, LESIONES } from "./lesiones.ts";
 
 const [input, output] = process.argv.slice(2);
 if (!input || !output) {
@@ -15,69 +16,6 @@ if (!input || !output) {
 
 const league = JSON.parse(readFileSync(input, "utf8"));
 const ga = league.gameAttributes;
-
-// Lesiones en español. Misma frecuencia y duración (en partidos) que la lista
-// por defecto de BBGM para básquet; solo cambia el nombre.
-const LESIONES = [
-	{ name: "Esguince de tobillo", frequency: 1520, games: 6.41 }, // Sprained Ankle
-	{ name: "Molestias en la rodilla", frequency: 809, games: 6.52 }, // Sore Knee
-	{ name: "Dolor de espalda", frequency: 566, games: 4.51 }, // Sore Back
-	{ name: "Desgarro en el isquiotibial", frequency: 529, games: 8.3 }, // Strained Hamstring
-	{ name: "Desgarro en el gemelo", frequency: 454, games: 8.48 }, // Strained Calf
-	{ name: "Molestias en el tobillo", frequency: 375, games: 4.44 }, // Sore Ankle
-	{ name: "Pubalgia", frequency: 354, games: 5.44 }, // Strained Groin
-	{ name: "Molestias en el pie", frequency: 305, games: 6.31 }, // Sore Foot
-	{ name: "Molestias en la cadera", frequency: 302, games: 5.57 }, // Sore Hip
-	{ name: "Golpe en la rodilla", frequency: 261, games: 6.16 }, // Bruised Knee
-	{ name: "Esguince de rodilla", frequency: 248, games: 11.73 }, // Sprained Knee
-	{ name: "Conmoción cerebral", frequency: 198, games: 4.19 }, // Concussion
-	{ name: "Molestias en el tendón de Aquiles", frequency: 182, games: 4.44 }, // Sore Achilles
-	{ name: "Contractura en la espalda", frequency: 168, games: 3.9 }, // Back Spasms
-	{ name: "Golpe en la cadera", frequency: 160, games: 3.42 }, // Bruised Hip
-	{ name: "Molestias en el hombro", frequency: 150, games: 6.89 }, // Sore Shoulder
-	{ name: "Golpe en el cuádriceps", frequency: 145, games: 3.97 }, // Bruised Quadriceps
-	{ name: "Tendinitis rotuliana", frequency: 145, games: 5.61 }, // Patellar Tendinitis
-	{ name: "Esguince en un dedo del pie", frequency: 130, games: 7 }, // Sprained Toe
-	{ name: "Esguince en el pie", frequency: 120, games: 6.9 }, // Sprained Foot
-	{ name: "Golpe en la pierna", frequency: 116, games: 3.78 }, // Bruised Leg
-	{ name: "Esguince de muñeca", frequency: 114, games: 7.78 }, // Sprained Wrist
-	{ name: "Golpe en la espalda", frequency: 111, games: 5.18 }, // Bruised Back
-	{ name: "Esguince en el pulgar", frequency: 103, games: 5.65 }, // Sprained Thumb
-	{ name: "Esguince de hombro", frequency: 89, games: 7.89 }, // Sprained Shoulder
-	{ name: "Fascitis plantar", frequency: 86, games: 6.28 }, // Plantar Fasciitis
-	{ name: "Fractura en la mano", frequency: 83, games: 14.75 }, // Fractured Hand
-	{ name: "Golpe en el pie", frequency: 79, games: 6.7 }, // Bruised Foot
-	{ name: "Fractura en un dedo de la mano", frequency: 68, games: 10.94 }, // Fractured Finger
-	{ name: "Molestias en el cuádriceps", frequency: 62, games: 4.38 }, // Sore Quadriceps
-	{ name: "Golpe en la mano", frequency: 50, games: 3.95 }, // Bruised Hand
-	{ name: "Fractura de nariz", frequency: 50, games: 6.25 }, // Fractured Nose
-	{ name: "Desgarro en el cuádriceps", frequency: 50, games: 7.66 }, // Strained Quadriceps
-	{ name: "Golpe en el hombro", frequency: 48, games: 6.92 }, // Bruised Shoulder
-	{ name: "Molestias en el codo", frequency: 43, games: 6.8 }, // Sore Elbow
-	{ name: "Desgarro abdominal", frequency: 43, games: 9.51 }, // Strained Abdomen
-	{ name: "Rotura del ligamento cruzado", frequency: 43, games: 111 }, // Torn ACL
-	{ name: "Esguince de codo", frequency: 41, games: 7.67 }, // Sprained Elbow
-	{ name: "Molestias en la muñeca", frequency: 41, games: 6.76 }, // Sore Wrist
-	{ name: "Fractura de tobillo", frequency: 39, games: 27.06 }, // Fractured Ankle
-	{ name: "Fractura en el pie", frequency: 39, games: 33.9 }, // Fractured Foot
-	{ name: "Contractura cervical", frequency: 39, games: 6.63 }, // Strained Neck
-	{ name: "Molestias en un dedo del pie", frequency: 39, games: 2.49 }, // Sore Toe
-	{ name: "Rotura de menisco", frequency: 39, games: 29.03 }, // Torn Meniscus
-	{ name: "Molestias en la mano", frequency: 37, games: 3.6 }, // Sore Hand
-	{ name: "Esguince en la mano", frequency: 36, games: 7.08 }, // Sprained Hand
-	{ name: "Desgarro en el oblicuo", frequency: 36, games: 7.92 }, // Strained Oblique
-	{ name: "Contusión en las costillas", frequency: 32, games: 3.67 }, // Rib Contusion
-	{ name: "Esguince en un dedo de la mano", frequency: 32, games: 7.92 }, // Sprained Finger
-	{ name: "Rotura del tendón de Aquiles", frequency: 23, games: 111 }, // Torn Achilles Tendon
-	{ name: "Molestias en el cuello", frequency: 22, games: 5.31 }, // Sore Neck
-	{ name: "Golpe en el ojo", frequency: 18, games: 1.35 }, // Bruised Eye
-	{ name: "Fractura de costilla", frequency: 18, games: 9.53 }, // Fractured Rib
-	{ name: "Hernia de disco", frequency: 18, games: 18.82 }, // Herniated Disc
-	{ name: "Molestias en el pulgar", frequency: 18, games: 5.4 }, // Sore Thumb
-	{ name: "Golpe en el codo", frequency: 16, games: 1.99 }, // Bruised Elbow
-	{ name: "Contusión en el tobillo", frequency: 14, games: 5.59 }, // Ankle Contusion
-	{ name: "Fractura en un dedo del pie", frequency: 9, games: 12.28 }, // Fractured Toe
-];
 
 const PREMIOS = [
 	{
@@ -230,8 +168,9 @@ const cambios: Record<string, unknown> = {
 	allStarNum: 18,
 	allStarType: "byConf",
 
-	// Lesiones con nombres en español
+	// Lesiones de fútbol, en español (ver lesiones.ts)
 	injuries: LESIONES,
+	injuryRate: INJURY_RATE,
 };
 
 // Ajuste viejo de BBGM: al importar el archivo, "ties: false" se convierte en
