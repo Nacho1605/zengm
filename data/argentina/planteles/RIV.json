@@ -1,0 +1,576 @@
+{
+	"equipo": "RIV",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"reemplaza": [
+		{
+			"nombre": "Juan Carlos Portillo",
+			"nacimiento": 2000
+		},
+		{
+			"nombre": "Francisco Ortega",
+			"nacimiento": 1999
+		},
+		{
+			"nombre": "Aníbal Moreno",
+			"nacimiento": 1999
+		},
+		{
+			"nombre": "Fausto Vera",
+			"nacimiento": 2001
+		},
+		{
+			"nombre": "Tomás Galván",
+			"nacimiento": 2001
+		},
+		{
+			"nombre": "Lucas Beltrán",
+			"nacimiento": 2001
+		}
+	],
+	"jugadores": [
+		{
+			"n": "41",
+			"nombre": "Santiago",
+			"apellido": "Beltrán",
+			"pos": "Portero",
+			"nac": "04/10/2004",
+			"pais": "Argentina",
+			"altura": 1.91,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 11000000,
+			"pj": 45,
+			"goles": 0,
+			"min": 4031,
+			"ovr": 73,
+			"debut": {
+				"club": "RIV",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "33",
+			"nombre": "Ezequiel",
+			"apellido": "Centurión",
+			"pos": "Portero",
+			"nac": "20/05/1997",
+			"pais": "Argentina",
+			"altura": 1.84,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 1200000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 48,
+			"debut": {
+				"club": "EBA",
+				"anio": 2021
+			},
+			"college": "Club Atlético River Plate"
+		},
+		{
+			"n": "13",
+			"nombre": "Lautaro",
+			"apellido": "Rivero",
+			"pos": "Defensa central",
+			"nac": "01/11/2003",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2029",
+			"valor": 6000000,
+			"pj": 30,
+			"goles": 2,
+			"min": 2518,
+			"ovr": 68,
+			"debut": {
+				"club": "RIV",
+				"anio": 2024
+			}
+		},
+		{
+			"n": "28",
+			"nombre": "Lucas",
+			"apellido": "Martínez Quarta",
+			"pos": "Defensa central",
+			"nac": "10/05/1996",
+			"pais": "Argentina",
+			"altura": 1.83,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 3800000,
+			"pj": 40,
+			"goles": 3,
+			"min": 3454,
+			"ovr": 71,
+			"debut": {
+				"club": "RIV",
+				"anio": 2016
+			},
+			"college": "Club Atlético Kimberley (Mar del Plata)"
+		},
+		{
+			"n": "2",
+			"nombre": "Tobías",
+			"apellido": "Ramírez",
+			"pos": "Defensa central",
+			"nac": "11/11/2006",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 3500000,
+			"pj": 1,
+			"goles": 0,
+			"min": 45,
+			"ovr": 56,
+			"debut": {
+				"club": "ARG",
+				"anio": 2024
+			}
+		},
+		{
+			"n": "5",
+			"nombre": "Juan Carlos",
+			"apellido": "Portillo",
+			"pos": "Defensa central",
+			"nac": "18/05/2000",
+			"pais": "Argentina",
+			"altura": 1.82,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 3200000,
+			"pj": 1,
+			"goles": 0,
+			"min": 7,
+			"ovr": 57,
+			"debut": {
+				"club": null,
+				"anio": 2020
+			},
+			"college": "Club Mutual Crucero del Norte"
+		},
+		{
+			"n": "30",
+			"nombre": "Nicolás",
+			"apellido": "Otamendi",
+			"pos": "Defensa central",
+			"nac": "12/02/1988",
+			"pais": "Argentina",
+			"altura": 1.82,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 1000000,
+			"pj": 18,
+			"goles": 0,
+			"min": 1620,
+			"fichado": "01/07/2026",
+			"ovr": 65,
+			"debut": {
+				"club": "VEL",
+				"anio": 2009
+			}
+		},
+		{
+			"n": "31",
+			"nombre": "Facundo",
+			"apellido": "González",
+			"pos": "Defensa central",
+			"nac": "03/04/2006",
+			"pais": "Argentina",
+			"altura": 1.8,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2028",
+			"valor": 300000,
+			"pj": 9,
+			"goles": 0,
+			"min": 511,
+			"ovr": 50,
+			"debut": {
+				"club": "RIV",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "3",
+			"nombre": "Francisco",
+			"apellido": "Ortega",
+			"pos": "Lateral izquierdo",
+			"nac": "19/03/1999",
+			"pais": "Argentina",
+			"altura": 1.77,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2029",
+			"valor": 7000000,
+			"pj": 10,
+			"goles": 0,
+			"min": 502,
+			"fichado": "06/08/2026",
+			"ovr": 67,
+			"debut": {
+				"club": "VEL",
+				"anio": 2018
+			}
+		},
+		{
+			"n": "21",
+			"nombre": "Marcos",
+			"apellido": "Acuña",
+			"pos": "Lateral izquierdo",
+			"nac": "28/10/1991",
+			"pais": "Argentina",
+			"altura": 1.72,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 1000000,
+			"pj": 29,
+			"goles": 2,
+			"min": 2151,
+			"ovr": 62,
+			"debut": {
+				"club": "FCO",
+				"anio": 2010
+			}
+		},
+		{
+			"n": "29",
+			"nombre": "Gonzalo",
+			"apellido": "Montiel",
+			"pos": "Lateral derecho",
+			"nac": "01/01/1997",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 4500000,
+			"pj": 34,
+			"goles": 7,
+			"min": 2898,
+			"ovr": 75,
+			"debut": {
+				"club": "RIV",
+				"anio": 2017
+			}
+		},
+		{
+			"n": "20",
+			"nombre": "Giovanni",
+			"apellido": "González",
+			"pos": "Lateral derecho",
+			"nac": "20/09/1994",
+			"pais": "Uruguay",
+			"altura": 1.73,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 2000000,
+			"pj": 7,
+			"goles": 0,
+			"min": 352,
+			"fichado": "01/07/2026",
+			"ovr": 59,
+			"debut": {
+				"club": null,
+				"anio": 2014
+			},
+			"college": "Club Atlético River Plate (Montevideo)"
+		},
+		{
+			"n": "6",
+			"nombre": "Aníbal",
+			"apellido": "Moreno",
+			"pos": "Pivote",
+			"nac": "13/05/1999",
+			"pais": "Argentina",
+			"altura": 1.77,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 7000000,
+			"pj": 33,
+			"goles": 0,
+			"min": 2796,
+			"ovr": 67,
+			"debut": {
+				"club": "NOB",
+				"anio": 2019
+			},
+			"lesion": {
+				"tipo": "Molestias en el gemelo",
+				"partidos": 2
+			}
+		},
+		{
+			"n": "15",
+			"nombre": "Fausto",
+			"apellido": "Vera",
+			"pos": "Pivote",
+			"nac": "26/03/2000",
+			"pais": "Argentina",
+			"altura": 1.8,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 4500000,
+			"pj": 34,
+			"goles": 1,
+			"min": 2485,
+			"ovr": 66,
+			"debut": {
+				"club": "ARG",
+				"anio": 2019
+			}
+		},
+		{
+			"n": "44",
+			"nombre": "Lucas",
+			"apellido": "Silva",
+			"pos": "Pivote",
+			"nac": "26/02/2007",
+			"pais": "Argentina",
+			"altura": 1.79,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 300000,
+			"pj": 11,
+			"goles": 1,
+			"min": 520,
+			"ovr": 48,
+			"debut": {
+				"club": "RIV",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "50",
+			"nombre": "Tobías",
+			"apellido": "Andrada",
+			"pos": "Mediocentro",
+			"nac": "02/02/2007",
+			"pais": "Argentina",
+			"altura": 1.79,
+			"pie": "Derecho",
+			"contrato": "31/12/2030",
+			"valor": 10000000,
+			"pj": 15,
+			"goles": 1,
+			"min": 1170,
+			"fichado": "31/07/2026",
+			"ovr": 64,
+			"debut": {
+				"club": "VEL",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "8",
+			"nombre": "Mauro",
+			"apellido": "Arambarri",
+			"pos": "Mediocentro",
+			"nac": "30/09/1995",
+			"pais": "Uruguay",
+			"altura": 1.75,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 6000000,
+			"pj": 8,
+			"goles": 0,
+			"min": 213,
+			"fichado": "01/07/2026",
+			"ovr": 63,
+			"debut": {
+				"club": null,
+				"anio": 2013
+			},
+			"college": "Defensor Sporting Club"
+		},
+		{
+			"n": "25",
+			"nombre": "Lautaro",
+			"apellido": "Pereyra",
+			"pos": "Mediocentro",
+			"nac": "28/03/2008",
+			"pais": "Argentina",
+			"altura": 1.76,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 700000,
+			"pj": 16,
+			"goles": 1,
+			"min": 428,
+			"ovr": 49,
+			"debut": {
+				"club": "RIV",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "23",
+			"nombre": "Thiago",
+			"apellido": "Almada",
+			"pos": "Mediocentro ofensivo",
+			"nac": "26/04/2001",
+			"pais": "Argentina",
+			"altura": 1.71,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 20000000,
+			"pj": 14,
+			"goles": 3,
+			"min": 1020,
+			"fichado": "08/08/2026",
+			"ovr": 74,
+			"debut": {
+				"club": "VEL",
+				"anio": 2018
+			}
+		},
+		{
+			"n": "26",
+			"nombre": "Tomás",
+			"apellido": "Galván",
+			"pos": "Mediocentro ofensivo",
+			"nac": "11/04/2000",
+			"pais": "Argentina",
+			"altura": 1.72,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 4000000,
+			"pj": 43,
+			"goles": 7,
+			"min": 3160,
+			"ovr": 69,
+			"debut": {
+				"club": "RIV",
+				"anio": 2022
+			}
+		},
+		{
+			"n": "24",
+			"nombre": "Juan Cruz",
+			"apellido": "Meza",
+			"pos": "Mediocentro ofensivo",
+			"nac": "14/03/2008",
+			"pais": "Argentina",
+			"altura": 1.83,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 1800000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 52,
+			"debut": {
+				"club": "RIV",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "10",
+			"nombre": "Ángel",
+			"apellido": "Correa",
+			"pos": "Mediapunta",
+			"nac": "09/03/1995",
+			"pais": "Argentina",
+			"altura": 1.71,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 8000000,
+			"pj": 17,
+			"goles": 5,
+			"min": 1423,
+			"fichado": "24/07/2026",
+			"ovr": 70,
+			"debut": {
+				"club": "SLO",
+				"anio": 2013
+			}
+		},
+		{
+			"n": "18",
+			"nombre": "Lucas",
+			"apellido": "Beltrán",
+			"pos": "Delantero centro",
+			"nac": "29/03/2001",
+			"pais": "Argentina",
+			"altura": 1.76,
+			"pie": "Derecho",
+			"contrato": "30/06/2027",
+			"valor": 8000000,
+			"pj": 16,
+			"goles": 1,
+			"min": 781,
+			"fichado": "02/07/2026",
+			"ovr": 66,
+			"debut": {
+				"club": "RIV",
+				"anio": 2021
+			},
+			"college": "Instituto Atlético Central Córdoba"
+		},
+		{
+			"n": "9",
+			"nombre": "Sebastián",
+			"apellido": "Driussi",
+			"pos": "Delantero centro",
+			"nac": "09/02/1996",
+			"pais": "Argentina",
+			"altura": 1.79,
+			"pie": "Ambidiestro",
+			"contrato": "31/12/2028",
+			"valor": 4500000,
+			"pj": 28,
+			"goles": 9,
+			"min": 1728,
+			"ovr": 68,
+			"debut": {
+				"club": "RIV",
+				"anio": 2014
+			}
+		},
+		{
+			"n": "19",
+			"nombre": "Rafael",
+			"apellido": "Santos Borré",
+			"pos": "Delantero centro",
+			"nac": "15/09/1995",
+			"pais": "Colombia",
+			"altura": 1.74,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 3500000,
+			"pj": 14,
+			"goles": 1,
+			"min": 481,
+			"fichado": "04/07/2026",
+			"ovr": 61,
+			"debut": {
+				"club": null,
+				"anio": 2015
+			},
+			"college": "Asociación Deportivo Cali"
+		},
+		{
+			"n": "32",
+			"nombre": "Agustín",
+			"apellido": "Ruberto",
+			"pos": "Delantero centro",
+			"nac": "14/01/2006",
+			"pais": "Argentina",
+			"altura": 1.83,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 1700000,
+			"pj": 6,
+			"goles": 0,
+			"min": 229,
+			"ovr": 54,
+			"debut": {
+				"club": "RIV",
+				"anio": 2024
+			},
+			"lesion": {
+				"tipo": "Rotura del ligamento cruzado",
+				"partidos": 7
+			}
+		}
+	]
+}
