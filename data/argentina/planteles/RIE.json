@@ -1,10 +1,19 @@
 {
 	"equipo": "RIE",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario)",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
 	"reemplaza": [
-		{ "nombre": "Ignacio Arce", "nacimiento": 1992 },
-		{ "nombre": "Carlos Quintana", "nacimiento": 1988 },
-		{ "nombre": "Alexander Díaz", "nacimiento": 2001 }
+		{
+			"nombre": "Ignacio Arce",
+			"nacimiento": 1992
+		},
+		{
+			"nombre": "Carlos Quintana",
+			"nacimiento": 1988
+		},
+		{
+			"nombre": "Alexander Díaz",
+			"nacimiento": 2001
+		}
 	],
 	"jugadores": [
 		{
@@ -21,7 +30,11 @@
 			"pj": 37,
 			"goles": 0,
 			"min": 3330,
-			"ovr": 68
+			"ovr": 68,
+			"debut": {
+				"club": "UNI",
+				"anio": 2011
+			}
 		},
 		{
 			"n": "23",
@@ -39,8 +52,11 @@
 			"min": 360,
 			"fichado": "01/07/2026",
 			"ovr": 39,
-			"college": "Club Olimpia",
-			"debut": 2016
+			"debut": {
+				"club": null,
+				"anio": 2017
+			},
+			"college": "Club Olimpia"
 		},
 		{
 			"n": "12",
@@ -56,7 +72,11 @@
 			"pj": 1,
 			"goles": 0,
 			"min": 90,
-			"ovr": 37
+			"ovr": 37,
+			"debut": {
+				"club": "FCO",
+				"anio": 2017
+			}
 		},
 		{
 			"n": "24",
@@ -71,7 +91,12 @@
 			"valor": 900000,
 			"pj": 36,
 			"goles": 0,
-			"min": 2664
+			"min": 2664,
+			"debut": {
+				"club": "ALT",
+				"anio": 2020
+			},
+			"college": "Asociación Atlética Argentinos Juniors"
 		},
 		{
 			"n": "22",
@@ -86,7 +111,12 @@
 			"valor": 500000,
 			"pj": 37,
 			"goles": 0,
-			"min": 3090
+			"min": 3090,
+			"debut": {
+				"club": "SMG",
+				"anio": 2017
+			},
+			"college": "Club Atlético Temperley"
 		},
 		{
 			"n": "19",
@@ -101,7 +131,12 @@
 			"valor": 300000,
 			"pj": 24,
 			"goles": 4,
-			"min": 1925
+			"min": 1925,
+			"debut": {
+				"club": "FLA",
+				"anio": 2015
+			},
+			"college": "Arsenal Fútbol Club"
 		},
 		{
 			"n": "6",
@@ -117,7 +152,12 @@
 			"pj": 11,
 			"goles": 0,
 			"min": 619,
-			"fichado": "01/07/2026"
+			"fichado": "01/07/2026",
+			"debut": {
+				"club": "ARS",
+				"anio": 2020
+			},
+			"college": "Club Estudiantes de La Plata"
 		},
 		{
 			"n": "2",
@@ -133,7 +173,11 @@
 			"pj": 11,
 			"goles": 0,
 			"min": 776,
-			"fichado": "01/07/2026"
+			"fichado": "01/07/2026",
+			"debut": {
+				"club": "LAN",
+				"anio": 2007
+			}
 		},
 		{
 			"n": "3",
@@ -148,7 +192,11 @@
 			"valor": 50000,
 			"pj": 1,
 			"goles": 0,
-			"min": 61
+			"min": 61,
+			"debut": {
+				"club": "ALT",
+				"anio": 2013
+			}
 		},
 		{
 			"n": "4",
@@ -163,7 +211,12 @@
 			"valor": 25000,
 			"pj": 0,
 			"goles": 0,
-			"min": 0
+			"min": 0,
+			"debut": {
+				"club": null,
+				"anio": 2015
+			},
+			"college": "Club Sportivo Estudiantes"
 		},
 		{
 			"n": "5",
@@ -178,7 +231,11 @@
 			"valor": 800000,
 			"pj": 28,
 			"goles": 1,
-			"min": 1920
+			"min": 1920,
+			"debut": {
+				"club": "DYJ",
+				"anio": 2021
+			}
 		},
 		{
 			"n": "13",
@@ -193,7 +250,11 @@
 			"valor": 250000,
 			"pj": 14,
 			"goles": 0,
-			"min": 759
+			"min": 759,
+			"debut": {
+				"club": "GIM",
+				"anio": 2021
+			}
 		},
 		{
 			"n": "36",
@@ -208,7 +269,11 @@
 			"valor": 500000,
 			"pj": 27,
 			"goles": 1,
-			"min": 2096
+			"min": 2096,
+			"debut": {
+				"club": "MOR",
+				"anio": 2019
+			}
 		},
 		{
 			"n": "15",
@@ -223,7 +288,11 @@
 			"valor": 300000,
 			"pj": 31,
 			"goles": 0,
-			"min": 2572
+			"min": 2572,
+			"debut": {
+				"club": "ALM",
+				"anio": 2017
+			}
 		},
 		{
 			"n": "16",
@@ -238,7 +307,11 @@
 			"valor": 600000,
 			"pj": 35,
 			"goles": 0,
-			"min": 2112
+			"min": 2112,
+			"debut": {
+				"club": "INS",
+				"anio": 2022
+			}
 		},
 		{
 			"n": "27",
@@ -253,7 +326,12 @@
 			"valor": 325000,
 			"pj": 36,
 			"goles": 0,
-			"min": 2006
+			"min": 2006,
+			"debut": {
+				"club": "SBA",
+				"anio": 2016
+			},
+			"college": "Club Atlético Atlas"
 		},
 		{
 			"n": "14",
@@ -268,7 +346,12 @@
 			"valor": 600000,
 			"pj": 33,
 			"goles": 0,
-			"min": 2180
+			"min": 2180,
+			"debut": {
+				"club": "ARM",
+				"anio": 2020
+			},
+			"college": "Club Atlético Vélez Sarsfield"
 		},
 		{
 			"n": "8",
@@ -283,7 +366,11 @@
 			"valor": 200000,
 			"pj": 19,
 			"goles": 2,
-			"min": 1506
+			"min": 1506,
+			"debut": {
+				"club": "ARS",
+				"anio": 2012
+			}
 		},
 		{
 			"n": "10",
@@ -298,7 +385,12 @@
 			"valor": 100000,
 			"pj": 13,
 			"goles": 1,
-			"min": 767
+			"min": 767,
+			"debut": {
+				"club": "RIE",
+				"anio": 2014
+			},
+			"college": "Club Atlético San Miguel"
 		},
 		{
 			"n": "31",
@@ -313,7 +405,12 @@
 			"valor": 100000,
 			"pj": 9,
 			"goles": 0,
-			"min": 414
+			"min": 414,
+			"debut": {
+				"club": "CES",
+				"anio": 2021
+			},
+			"college": "Club Atlético Huracán"
 		},
 		{
 			"n": "20",
@@ -329,7 +426,12 @@
 			"pj": 2,
 			"goles": 0,
 			"min": 63,
-			"fichado": "10/07/2026"
+			"fichado": "10/07/2026",
+			"debut": {
+				"club": "MOR",
+				"anio": 2024
+			},
+			"college": "Club Defensores de Cambaceres"
 		},
 		{
 			"n": null,
@@ -344,7 +446,11 @@
 			"valor": null,
 			"pj": 0,
 			"goles": 0,
-			"min": 0
+			"min": 0,
+			"debut": {
+				"club": "RIE",
+				"anio": 2014
+			}
 		},
 		{
 			"n": "17",
@@ -360,7 +466,11 @@
 			"pj": 4,
 			"goles": 0,
 			"min": 85,
-			"fichado": "14/07/2026"
+			"fichado": "14/07/2026",
+			"debut": {
+				"club": "FEN",
+				"anio": 2021
+			}
 		},
 		{
 			"n": "35",
@@ -375,7 +485,11 @@
 			"valor": 100000,
 			"pj": 10,
 			"goles": 2,
-			"min": 534
+			"min": 534,
+			"debut": {
+				"club": "DOC",
+				"anio": 2018
+			}
 		},
 		{
 			"n": "40",
@@ -390,7 +504,12 @@
 			"valor": 175000,
 			"pj": 30,
 			"goles": 0,
-			"min": 1219
+			"min": 1219,
+			"debut": {
+				"club": null,
+				"anio": 2017
+			},
+			"college": "Club Atlético Huracán (Trelew)"
 		},
 		{
 			"n": "11",
@@ -405,7 +524,11 @@
 			"valor": 1200000,
 			"pj": 29,
 			"goles": 4,
-			"min": 1712
+			"min": 1712,
+			"debut": {
+				"club": "SLO",
+				"anio": 2020
+			}
 		},
 		{
 			"n": "7",
@@ -420,7 +543,12 @@
 			"valor": 1000000,
 			"pj": 37,
 			"goles": 4,
-			"min": 2469
+			"min": 2469,
+			"debut": {
+				"club": "JJU",
+				"anio": 2019
+			},
+			"college": "Club Atlético Atlas"
 		},
 		{
 			"n": "21",
@@ -436,7 +564,11 @@
 			"pj": 18,
 			"goles": 3,
 			"min": 713,
-			"fichado": "01/07/2026"
+			"fichado": "01/07/2026",
+			"debut": {
+				"club": "NCH",
+				"anio": 2022
+			}
 		},
 		{
 			"n": "9",
@@ -451,7 +583,12 @@
 			"valor": 450000,
 			"pj": 26,
 			"goles": 2,
-			"min": 1259
+			"min": 1259,
+			"debut": {
+				"club": "QUI",
+				"anio": 2016
+			},
+			"college": "Club Atlético Boca Juniors"
 		},
 		{
 			"n": "29",
@@ -467,7 +604,11 @@
 			"pj": 7,
 			"goles": 0,
 			"min": 326,
-			"fichado": "01/07/2026"
+			"fichado": "01/07/2026",
+			"debut": {
+				"club": "DME",
+				"anio": 2016
+			}
 		},
 		{
 			"n": "32",
@@ -482,7 +623,11 @@
 			"valor": 200000,
 			"pj": 10,
 			"goles": 0,
-			"min": 394
+			"min": 394,
+			"debut": {
+				"club": "TIG",
+				"anio": 2023
+			}
 		}
 	]
 }

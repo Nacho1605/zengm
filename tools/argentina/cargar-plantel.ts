@@ -1,8 +1,11 @@
-// Carga el plantel real de un equipo desde data/argentina/planteles/XXX.json.
-// Uso:
+// Carga los planteles reales desde data/argentina/planteles/XXX.json. Uso:
 //
-//   node tools/argentina/cargar-plantel.ts ENTRADA.json SALIDA.json PLANTEL.json
+//   node tools/argentina/cargar-plantel.ts ENTRADA.json SALIDA.json RIE.json [OTRO.json ...]
 //
+// Los planteles se cargan en el orden dado, siempre sobre la v2.0, para que el
+// orden de los picks del draft sea reproducible.
+//
+// - Planteles de 22 a 36 jugadores (en 2026, Belgrano tiene 25 y Platense 36).
 // - Los jugadores que hoy tiene el equipo pasan a ser libres.
 // - Los jugadores de "reemplaza" se borran del archivo (se crean de nuevo, sin
 //   historial).
@@ -11,23 +14,31 @@
 //   escala comprimida y ratings con la norma de su posición (la misma de los
 //   prospectos, ver genRatingsFutbol.ts), ajustados para que el OVR oficial dé
 //   exactamente el OVR buscado.
+// - Draft y College:
+//   - Debut en un club de la base: draft de ese club en el año de debut. Los
+//     picks de cada año van en orden de carga (dentro de cada plantel, del
+//     mejor al peor OVR), 30 por ronda. College: el club de inferiores, si es
+//     otro.
+//   - Debut en el exterior o en un club que no está en la base: sin draft, y
+//     ese club va como College.
 //
 // OVR buscado: el que diga el plantel ("ovr") o, si no hay, la fórmula de
 // ovrSugerido() (valor de mercado, minutos jugados y edad).
 
 import { readFileSync, writeFileSync } from "node:fs";
 
-const [input, output, plantelFile] = process.argv.slice(2);
-if (!input || !output || !plantelFile) {
+const [input, output, ...plantelFiles] = process.argv.slice(2);
+if (!input || !output || plantelFiles.length === 0) {
 	throw new Error(
-		"Uso: node cargar-plantel.ts ENTRADA.json SALIDA.json PLANTEL.json",
+		"Uso: node cargar-plantel.ts ENTRADA.json SALIDA.json PLANTEL.json [...]",
 	);
 }
 
 const league = JSON.parse(readFileSync(input, "utf8"));
-const plantel = JSON.parse(readFileSync(plantelFile, "utf8"));
 const ga = league.gameAttributes;
 const SEASON: number = ga.season;
+ga.minRosterSize = 22;
+ga.maxRosterSize = 36;
 
 type Key =
 	| "hgt"
@@ -365,133 +376,161 @@ const generarRatings = (j: any, pos: string, edad: number, ovrMeta: number) => {
 	return r;
 };
 
-// Equipo
-const team = league.teams.find((t: any) => t.abbrev === plantel.equipo);
-if (!team) {
-	throw new Error(`No existe el equipo ${plantel.equipo}`);
-}
+// Picks por año de debut: cuántos se asignaron hasta ahora
+const picksPorAnio = new Map<number, number>();
+const PICKS_POR_RONDA = 30;
 
-// 1. El plantel actual pasa a ser libre
-const anteriores = league.players.filter((p: any) => p.tid === team.tid);
-for (const p of anteriores) {
-	p.tid = -1;
-	const c = p.contracts?.at(-1);
-	if (c && !c.endedEarly) {
-		c.endedEarly = { season: SEASON, phase: ga.phase };
-	}
-	delete p.contractDemand; // el juego le calcula uno nuevo
-}
-
-// 2. Borrar las versiones viejas de los jugadores que se crean de nuevo
 const norm = (s: string) =>
 	s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-const borrados: string[] = [];
-for (const { nombre, nacimiento } of plantel.reemplaza ?? []) {
-	const matches = league.players.filter(
-		(p: any) =>
-			norm(`${p.firstName} ${p.lastName}`) === norm(nombre) &&
-			p.born.year === nacimiento,
+
+const cargar = (plantel: any) => {
+	const team = league.teams.find((t: any) => t.abbrev === plantel.equipo);
+	if (!team) {
+		throw new Error(`No existe el equipo ${plantel.equipo}`);
+	}
+
+	// 1. El plantel actual pasa a ser libre
+	const anteriores = league.players.filter((p: any) => p.tid === team.tid);
+	for (const p of anteriores) {
+		p.tid = -1;
+		const c = p.contracts?.at(-1);
+		if (c && !c.endedEarly) {
+			c.endedEarly = { season: SEASON, phase: ga.phase };
+		}
+		delete p.contractDemand; // el juego le calcula uno nuevo
+	}
+
+	// 2. Borrar las versiones viejas de los jugadores que se crean de nuevo
+	const borrados: string[] = [];
+	for (const { nombre, nacimiento } of plantel.reemplaza ?? []) {
+		const matches = league.players.filter(
+			(p: any) =>
+				norm(`${p.firstName} ${p.lastName}`) === norm(nombre) &&
+				p.born.year === nacimiento,
+		);
+		if (matches.length !== 1) {
+			throw new Error(
+				`"${nombre}" (${nacimiento}): ${matches.length} coincidencias`,
+			);
+		}
+		league.players = league.players.filter((p: any) => p !== matches[0]);
+		borrados.push(`${nombre} (pid ${matches[0].pid})`);
+	}
+
+	// 3. Jugadores nuevos
+	let pid = Math.max(...league.players.map((p: any) => p.pid)) + 1;
+	const nuevos = [];
+	for (const j of plantel.jugadores) {
+		const nac = parseFecha(j.nac);
+		const edad = SEASON - nac.y;
+		const pos = posicion(j.pos, j.pie);
+		const ovrMeta = j.ovr ?? ovrSugerido(j, edad);
+		const r = generarRatings(j, pos, edad, ovrMeta);
+		const exp = j.contrato ? parseFecha(j.contrato).y : SEASON;
+		const amount = sueldo(j.valor);
+		const cm = j.altura * 100;
+
+		const clubDebut = j.debut?.club
+			? league.teams.find((t: any) => t.abbrev === j.debut.club)
+			: undefined;
+		if (j.debut?.club && !clubDebut) {
+			throw new Error(`${j.nombre} ${j.apellido}: no existe ${j.debut.club}`);
+		}
+
+		const p: any = {
+			pid,
+			tid: team.tid,
+			firstName: j.nombre,
+			lastName: j.apellido,
+			pos,
+			hgt: Math.round(cm / 2.54),
+			weight: Math.round(23.5 * j.altura ** 2 * 2.2046),
+			born: { year: nac.y, loc: j.pais },
+			college: j.college ?? "",
+			draft: {
+				round: 0,
+				pick: 0,
+				tid: clubDebut?.tid ?? -1,
+				originalTid: clubDebut?.tid ?? -1,
+				year: j.debut?.anio ?? nac.y + 18,
+			},
+			imgURL: j.imgURL ?? "",
+			contracts: [
+				{
+					type: "unknown",
+					start: SEASON,
+					amounts: Array.from({ length: exp - SEASON + 1 }, () => amount),
+					payments: [],
+				},
+			],
+			ratings: [{ ...r, fuzz: 0, ovr: ovrMeta, pos, season: SEASON }],
+			stats: [],
+			statsTids: [],
+			transactions: [],
+			awards: [],
+			injuries: [],
+			injury: { type: "Healthy", gamesRemaining: 0 },
+			relatives: [],
+			gamesUntilTradable: 0,
+			numDaysFreeAgent: 0,
+			ptModifier: 1,
+			yearsFreeAgent: 0,
+		};
+		if (j.n) {
+			p.jerseyNumber = j.n;
+		}
+		nuevos.push({ p, j, edad, amount, exp, clubDebut });
+		pid += 1;
+	}
+	nuevos.sort((a, b) => b.p.ratings[0].ovr - a.p.ratings[0].ovr);
+	for (const [i, { p, clubDebut }] of nuevos.entries()) {
+		p.rosterOrder = i;
+		if (clubDebut) {
+			const n = (picksPorAnio.get(p.draft.year) ?? 0) + 1;
+			picksPorAnio.set(p.draft.year, n);
+			p.draft.round = Math.ceil(n / PICKS_POR_RONDA);
+			p.draft.pick = ((n - 1) % PICKS_POR_RONDA) + 1;
+		}
+		league.players.push(p);
+	}
+
+	// Resumen
+	console.log(
+		`\n${team.region} ${team.name}: ${anteriores.length} jugadores anteriores pasan a libres`,
 	);
-	if (matches.length !== 1) {
-		throw new Error(
-			`"${nombre}" (${nacimiento}): ${matches.length} coincidencias`,
+	console.log(`Borrados (se crean de nuevo): ${borrados.join(", ") || "-"}`);
+	let payroll = 0;
+	const filas = [];
+	for (const { p, j, edad, amount, exp, clubDebut } of nuevos) {
+		payroll += amount;
+		const r = p.ratings[0];
+		const draft = clubDebut
+			? `draft ${p.draft.year} R${p.draft.round} P${p.draft.pick} ${clubDebut.abbrev}${clubDebut.disabled ? " (inactivo)" : ""}`
+			: `sin draft (${p.draft.year})`;
+		filas.push(
+			[
+				(p.jerseyNumber ?? "-").padStart(2),
+				`${p.firstName} ${p.lastName}`.padEnd(20),
+				p.pos.padEnd(2),
+				String(edad).padStart(2),
+				`OVR ${r.ovr}${j.ovr ? "*" : " "}`,
+				`$${(amount / 1000).toFixed(2)}M hasta ${exp}`,
+				draft,
+				`college: ${p.college || "-"}`,
+			].join(" | "),
 		);
 	}
-	league.players = league.players.filter((p: any) => p !== matches[0]);
-	borrados.push(`${nombre} (pid ${matches[0].pid})`);
-}
-
-// 3. Jugadores nuevos
-let pid = Math.max(...league.players.map((p: any) => p.pid)) + 1;
-const nuevos = [];
-for (const j of plantel.jugadores) {
-	const nac = parseFecha(j.nac);
-	const edad = SEASON - nac.y;
-	const pos = posicion(j.pos, j.pie);
-	const ovrMeta = j.ovr ?? ovrSugerido(j, edad);
-	const r = generarRatings(j, pos, edad, ovrMeta);
-	const exp = j.contrato ? parseFecha(j.contrato).y : SEASON;
-	const amount = sueldo(j.valor);
-	const cm = j.altura * 100;
-
-	const p: any = {
-		pid,
-		tid: team.tid,
-		firstName: j.nombre,
-		lastName: j.apellido,
-		pos,
-		hgt: Math.round(cm / 2.54),
-		weight: Math.round(23.5 * j.altura ** 2 * 2.2046),
-		born: { year: nac.y, loc: j.pais },
-		college: j.college ?? "",
-		draft: {
-			round: 0,
-			pick: 0,
-			tid: -1,
-			originalTid: -1,
-			year: j.debut ?? nac.y + 18,
-		},
-		imgURL: j.imgURL ?? "",
-		contracts: [
-			{
-				type: "unknown",
-				start: SEASON,
-				amounts: Array.from({ length: exp - SEASON + 1 }, () => amount),
-				payments: [],
-			},
-		],
-		ratings: [{ ...r, fuzz: 0, ovr: ovrMeta, pos, season: SEASON }],
-		stats: [],
-		statsTids: [],
-		transactions: [],
-		awards: [],
-		injuries: [],
-		injury: { type: "Healthy", gamesRemaining: 0 },
-		relatives: [],
-		gamesUntilTradable: 0,
-		numDaysFreeAgent: 0,
-		ptModifier: 1,
-		yearsFreeAgent: 0,
-	};
-	if (j.n) {
-		p.jerseyNumber = j.n;
-	}
-	nuevos.push({ p, j, edad, amount, exp });
-	pid += 1;
-}
-nuevos.sort((a, b) => b.p.ratings[0].ovr - a.p.ratings[0].ovr);
-for (const [i, { p }] of nuevos.entries()) {
-	p.rosterOrder = i;
-	league.players.push(p);
-}
-
-// Resumen
-console.log(
-	`${team.region} ${team.name}: ${anteriores.length} jugadores anteriores pasan a libres`,
-);
-console.log(`Borrados (se crean de nuevo): ${borrados.join(", ") || "-"}`);
-let payroll = 0;
-const filas = [];
-for (const { p, j, edad, amount, exp } of nuevos) {
-	payroll += amount;
-	const r = p.ratings[0];
-	filas.push(
-		[
-			(p.jerseyNumber ?? "-").padStart(2),
-			`${p.firstName} ${p.lastName}`.padEnd(20),
-			p.pos.padEnd(2),
-			String(edad).padStart(2),
-			`${Math.round(j.altura * 100)}cm`,
-			`OVR ${r.ovr}${j.ovr ? "*" : " "}`,
-			`$${(amount / 1000).toFixed(2)}M hasta ${exp}`,
-			KEYS.map((k) => `${k} ${r[k]}`).join(" "),
-		].join(" | "),
+	console.log(filas.join("\n"));
+	console.log(
+		`${nuevos.length} jugadores, planilla $${(payroll / 1000).toFixed(1)}M (tope $${ga.salaryCap / 1000}M)`,
 	);
+};
+
+for (const file of plantelFiles) {
+	cargar(JSON.parse(readFileSync(file, "utf8")));
 }
-console.log(filas.join("\n"));
 console.log(
-	`${nuevos.length} jugadores, planilla $${(payroll / 1000).toFixed(1)}M (tope $${ga.salaryCap / 1000}M)`,
+	"\n* OVR indicado en el plantel; el resto, sugerido por la fórmula",
 );
-console.log("* OVR indicado en el plantel; el resto, sugerido por la fórmula");
 
 writeFileSync(output, JSON.stringify(league));
