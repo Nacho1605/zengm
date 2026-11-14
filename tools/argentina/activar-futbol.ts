@@ -159,6 +159,11 @@ const cambios: Record<string, unknown> = {
 	equalizeRegions: false,
 	minPayroll: 120000,
 
+	// Planteles de fútbol: de 22 a 36 jugadores (en 2026, Belgrano tiene 25 y
+	// Platense 36)
+	minRosterSize: 22,
+	maxRosterSize: 36,
+
 	// Premios en español (mismas fórmulas que la NBA, por partidos jugados de 43)
 	awards: PREMIOS,
 
