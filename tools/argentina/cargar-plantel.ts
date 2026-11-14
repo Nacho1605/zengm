@@ -418,7 +418,13 @@ const cargar = (plantel: any) => {
 	}
 
 	// 3. Jugadores nuevos
-	let pid = Math.max(...league.players.map((p: any) => p.pid)) + 1;
+	// Los prospectos generados no tienen pid (lo asigna el juego al importar)
+	let pid =
+		Math.max(
+			...league.players
+				.map((p: any) => p.pid)
+				.filter((x: unknown) => typeof x === "number"),
+		) + 1;
 	const nuevos = [];
 	for (const j of plantel.jugadores) {
 		const nac = parseFecha(j.nac);
