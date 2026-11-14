@@ -71,7 +71,7 @@
 			"goles": 0,
 			"min": 2070,
 			"fichado": "17/07/2026",
-			"ovr": 71,
+			"ovr": 69,
 			"debut": {
 				"club": "SLO",
 				"anio": 2015
@@ -161,7 +161,7 @@
 				"club": "BOC",
 				"anio": 2024
 			},
-			"ovr": 69
+			"ovr": 70
 		},
 		{
 			"n": "32",
@@ -181,7 +181,7 @@
 				"club": "IND",
 				"anio": 2020
 			},
-			"ovr": 65
+			"ovr": 67
 		},
 		{
 			"n": "42",
@@ -201,7 +201,7 @@
 				"club": "BOC",
 				"anio": 2026
 			},
-			"ovr": 57
+			"ovr": 62
 		},
 		{
 			"n": "26",
@@ -221,7 +221,7 @@
 				"club": "PLA",
 				"anio": 2023
 			},
-			"ovr": 59
+			"ovr": 60
 		},
 		{
 			"n": "46",
@@ -299,7 +299,7 @@
 				"club": "INS",
 				"anio": 2018
 			},
-			"ovr": 56
+			"ovr": 57
 		},
 		{
 			"n": "17",
@@ -321,7 +321,7 @@
 				"anio": 2019
 			},
 			"college": "Club Atlético Boston River",
-			"ovr": 61
+			"ovr": 64
 		},
 		{
 			"n": "24",
@@ -341,7 +341,7 @@
 				"club": "BOC",
 				"anio": 2026
 			},
-			"ovr": 53
+			"ovr": 56
 		},
 		{
 			"n": "18",
@@ -361,7 +361,7 @@
 				"club": "BOC",
 				"anio": 2024
 			},
-			"ovr": 67
+			"ovr": 68
 		},
 		{
 			"n": "25",
@@ -381,7 +381,7 @@
 				"club": "EST",
 				"anio": 2016
 			},
-			"ovr": 64
+			"ovr": 66
 		},
 		{
 			"n": "5",
@@ -421,7 +421,7 @@
 				"club": "LAN",
 				"anio": 2018
 			},
-			"ovr": 58
+			"ovr": 59
 		},
 		{
 			"n": "23",
@@ -441,7 +441,7 @@
 				"club": "BOC",
 				"anio": 2025
 			},
-			"ovr": 49
+			"ovr": 50
 		},
 		{
 			"n": "6",
@@ -461,7 +461,7 @@
 				"club": "HUR",
 				"anio": 2011
 			},
-			"ovr": 50
+			"ovr": 51
 		},
 		{
 			"n": "15",
@@ -482,7 +482,7 @@
 				"anio": 2019
 			},
 			"college": "Club Social y Deportivo Colo-Colo",
-			"ovr": 51
+			"ovr": 52
 		},
 		{
 			"n": null,
@@ -522,7 +522,7 @@
 				"club": "BOC",
 				"anio": 2026
 			},
-			"ovr": 63
+			"ovr": 66
 		},
 		{
 			"n": "7",
@@ -543,7 +543,7 @@
 				"anio": 2018
 			},
 			"college": "Unión Española",
-			"ovr": 54
+			"ovr": 55
 		},
 		{
 			"n": "22",
@@ -565,7 +565,7 @@
 				"anio": 2017
 			},
 			"college": "Club Deportes Tolima",
-			"ovr": 66
+			"ovr": 70
 		},
 		{
 			"n": "20",
@@ -605,7 +605,7 @@
 				"club": "BOC",
 				"anio": 2026
 			},
-			"ovr": 70
+			"ovr": 71
 		},
 		{
 			"n": "11",
@@ -630,7 +630,7 @@
 				"tipo": "Desgarro muscular",
 				"partidos": 3
 			},
-			"ovr": 48
+			"ovr": 49
 		},
 		{
 			"n": "16",
@@ -672,7 +672,7 @@
 				"anio": 2015
 			},
 			"college": "Club Olimpia",
-			"ovr": 60
+			"ovr": 61
 		},
 		{
 			"n": "9",
@@ -692,7 +692,7 @@
 				"club": "ATL",
 				"anio": 2015
 			},
-			"ovr": 53
+			"ovr": 54
 		},
 		{
 			"n": "13",
@@ -714,7 +714,7 @@
 				"anio": 2010
 			},
 			"college": "Club Sport Emelec",
-			"ovr": 57
+			"ovr": 65
 		}
 	]
 }

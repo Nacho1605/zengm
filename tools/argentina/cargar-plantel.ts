@@ -40,6 +40,48 @@ const SEASON: number = ga.season;
 ga.minRosterSize = 22;
 ga.maxRosterSize = 36;
 
+// Economía achicada (para la paridad): con planteles de 30 jugadores, el
+// contrato máximo de la NBA ($34M) no entra en ningún tope. Con $10M, los
+// sueldos que calcula el juego al renovar alcanzan para los chicos y aprietan
+// a los grandes
+const CONTRATO_MAXIMO_ANTERIOR: number = ga.maxContract;
+ga.maxContract = 10000;
+ga.minContract = 1000;
+
+// Tope estricto: aprieta a los clubes más caros, que no pueden renovar ni
+// fichar a todos, y deja margen a los chicos. Impuesto al lujo apenas arriba
+// del tope (lo pagan los que arrancan pasados) y planilla mínima a la altura
+// de los clubes más chicos. Se recalibra a medida que se cargan los planteles.
+const ECONOMIA = {
+	salaryCapType: "hard",
+	salaryCap: 115000,
+	luxuryPayroll: 125000,
+	minPayroll: 55000,
+};
+Object.assign(ga, ECONOMIA);
+
+// Los contratos que ya estaban en el archivo (jugadores de 2023) pasan a la
+// escala nueva, en la misma proporción entre el mínimo y el máximo
+const reescalar = (amount: number) =>
+	Math.round(
+		(ga.minContract +
+			((amount - ga.minContract) * (ga.maxContract - ga.minContract)) /
+				(CONTRATO_MAXIMO_ANTERIOR - ga.minContract)) /
+			10,
+	) * 10;
+if (CONTRATO_MAXIMO_ANTERIOR !== ga.maxContract) {
+	for (const p of league.players) {
+		for (const c of p.contracts ?? []) {
+			c.amounts = c.amounts.map((a: number) =>
+				Math.min(ga.maxContract, Math.max(ga.minContract, reescalar(a))),
+			);
+		}
+		if (p.contractDemand) {
+			delete p.contractDemand; // el juego le calcula uno nuevo
+		}
+	}
+}
+
 type Key =
 	| "hgt"
 	| "stre"
@@ -293,10 +335,25 @@ export const ovrSugerido = (j: any, edad: number) => {
 	);
 };
 
-// Escala comprimida: 10 mil € -> mínimo, 15 M€ -> máximo
-const sueldo = (valor: number | null) => {
+// Sueldo inicial: mitad según el valor de mercado (escala comprimida: 10 mil €
+// -> mínimo, 15 M€ -> máximo) y mitad según lo que el juego le pagaría por su
+// OVR al renovar (genContract, tope estricto, sin azar). Así, al vencer el
+// contrato, el sueldo nuevo no da un salto.
+const sueldoJuego = (ovr: number) => {
+	const amount =
+		(ovr / 100 - 0.47) * 1.6 * 1.7 * (ga.maxContract - ga.minContract) +
+		ga.minContract;
+	return amount < ga.minContract * 1.1
+		? ga.minContract
+		: Math.min(ga.maxContract, amount);
+};
+const sueldo = (valor: number | null, ovr: number) => {
 	const c = ga.maxContract / Math.sqrt(15_000_000);
-	const amount = Math.round((c * Math.sqrt(valor ?? 0)) / 10) * 10;
+	const mercado = Math.min(
+		ga.maxContract,
+		Math.max(ga.minContract, c * Math.sqrt(valor ?? 0)),
+	);
+	const amount = Math.round((mercado + sueldoJuego(ovr)) / 2 / 10) * 10;
 	return Math.min(ga.maxContract, Math.max(ga.minContract, amount));
 };
 
@@ -441,7 +498,7 @@ const cargar = (plantel: any) => {
 		const ovrMeta = j.ovr ?? ovrSugerido(j, edad);
 		const r = generarRatings(j, pos, edad, ovrMeta);
 		const exp = j.contrato ? parseFecha(j.contrato).y : SEASON;
-		const amount = sueldo(j.valor);
+		const amount = sueldo(j.valor, ovrMeta);
 		const cm = j.altura * 100;
 
 		const clubDebut = j.debut?.club
@@ -574,6 +631,26 @@ for (const file of plantelFiles) {
 }
 console.log(
 	"\n* OVR indicado en el plantel; el resto, sugerido por la fórmula",
+);
+
+const planillas = league.teams
+	.filter((t: any) => !t.disabled)
+	.map((t: any) => {
+		const ps = league.players.filter((p: any) => p.tid === t.tid);
+		const total = ps.reduce(
+			(sum: number, p: any) => sum + (p.contracts.at(-1)?.amounts[0] ?? 0),
+			0,
+		);
+		return { abbrev: t.abbrev, n: ps.length, total };
+	})
+	.sort((a: any, b: any) => b.total - a.total);
+console.log(
+	`\nPlanillas (tope $${ga.salaryCap / 1000}M, lujo $${ga.luxuryPayroll / 1000}M, mínimo $${ga.minPayroll / 1000}M):`,
+);
+console.log(
+	planillas
+		.map((x: any) => `${x.abbrev} $${(x.total / 1000).toFixed(1)}M (${x.n})`)
+		.join(" | "),
 );
 
 writeFileSync(output, JSON.stringify(league));
