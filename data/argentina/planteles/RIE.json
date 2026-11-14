@@ -96,7 +96,8 @@
 				"club": "ALT",
 				"anio": 2020
 			},
-			"college": "Asociación Atlética Argentinos Juniors"
+			"college": "Asociación Atlética Argentinos Juniors",
+			"ovr": 65
 		},
 		{
 			"n": "22",
@@ -116,7 +117,8 @@
 				"club": "SMG",
 				"anio": 2017
 			},
-			"college": "Club Atlético Temperley"
+			"college": "Club Atlético Temperley",
+			"ovr": 63
 		},
 		{
 			"n": "19",
@@ -136,7 +138,8 @@
 				"club": "FLA",
 				"anio": 2015
 			},
-			"college": "Arsenal Fútbol Club"
+			"college": "Arsenal Fútbol Club",
+			"ovr": 54
 		},
 		{
 			"n": "6",
@@ -157,7 +160,8 @@
 				"club": "ARS",
 				"anio": 2020
 			},
-			"college": "Club Estudiantes de La Plata"
+			"college": "Club Estudiantes de La Plata",
+			"ovr": 49
 		},
 		{
 			"n": "2",
@@ -177,7 +181,8 @@
 			"debut": {
 				"club": "LAN",
 				"anio": 2007
-			}
+			},
+			"ovr": 48
 		},
 		{
 			"n": "3",
@@ -196,7 +201,8 @@
 			"debut": {
 				"club": "ALT",
 				"anio": 2013
-			}
+			},
+			"ovr": 40
 		},
 		{
 			"n": "4",
@@ -216,7 +222,8 @@
 				"club": null,
 				"anio": 2015
 			},
-			"college": "Club Sportivo Estudiantes"
+			"college": "Club Sportivo Estudiantes",
+			"ovr": 36
 		},
 		{
 			"n": "5",
@@ -235,7 +242,8 @@
 			"debut": {
 				"club": "DYJ",
 				"anio": 2021
-			}
+			},
+			"ovr": 62
 		},
 		{
 			"n": "13",
@@ -254,7 +262,8 @@
 			"debut": {
 				"club": "GIM",
 				"anio": 2021
-			}
+			},
+			"ovr": 47
 		},
 		{
 			"n": "36",
@@ -273,7 +282,8 @@
 			"debut": {
 				"club": "MOR",
 				"anio": 2019
-			}
+			},
+			"ovr": 59
 		},
 		{
 			"n": "15",
@@ -292,7 +302,8 @@
 			"debut": {
 				"club": "ALM",
 				"anio": 2017
-			}
+			},
+			"ovr": 57
 		},
 		{
 			"n": "16",
@@ -311,7 +322,8 @@
 			"debut": {
 				"club": "INS",
 				"anio": 2022
-			}
+			},
+			"ovr": 60
 		},
 		{
 			"n": "27",
@@ -331,7 +343,8 @@
 				"club": "SBA",
 				"anio": 2016
 			},
-			"college": "Club Atlético Atlas"
+			"college": "Club Atlético Atlas",
+			"ovr": 58
 		},
 		{
 			"n": "14",
@@ -351,7 +364,8 @@
 				"club": "ARM",
 				"anio": 2020
 			},
-			"college": "Club Atlético Vélez Sarsfield"
+			"college": "Club Atlético Vélez Sarsfield",
+			"ovr": 61
 		},
 		{
 			"n": "8",
@@ -370,7 +384,8 @@
 			"debut": {
 				"club": "ARS",
 				"anio": 2012
-			}
+			},
+			"ovr": 53
 		},
 		{
 			"n": "10",
@@ -390,7 +405,8 @@
 				"club": "RIE",
 				"anio": 2014
 			},
-			"college": "Club Atlético San Miguel"
+			"college": "Club Atlético San Miguel",
+			"ovr": 44
 		},
 		{
 			"n": "31",
@@ -410,7 +426,8 @@
 				"club": "CES",
 				"anio": 2021
 			},
-			"college": "Club Atlético Huracán"
+			"college": "Club Atlético Huracán",
+			"ovr": 42
 		},
 		{
 			"n": "20",
@@ -431,7 +448,8 @@
 				"club": "MOR",
 				"anio": 2024
 			},
-			"college": "Club Defensores de Cambaceres"
+			"college": "Club Defensores de Cambaceres",
+			"ovr": 34
 		},
 		{
 			"n": null,
@@ -450,7 +468,8 @@
 			"debut": {
 				"club": "RIE",
 				"anio": 2014
-			}
+			},
+			"ovr": 35
 		},
 		{
 			"n": "17",
@@ -470,7 +489,8 @@
 			"debut": {
 				"club": "FEN",
 				"anio": 2021
-			}
+			},
+			"ovr": 46
 		},
 		{
 			"n": "35",
@@ -489,7 +509,8 @@
 			"debut": {
 				"club": "DOC",
 				"anio": 2018
-			}
+			},
+			"ovr": 43
 		},
 		{
 			"n": "40",
@@ -509,7 +530,8 @@
 				"club": null,
 				"anio": 2017
 			},
-			"college": "Club Atlético Huracán (Trelew)"
+			"college": "Club Atlético Huracán (Trelew)",
+			"ovr": 50
 		},
 		{
 			"n": "11",
@@ -528,7 +550,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2020
-			}
+			},
+			"ovr": 66
 		},
 		{
 			"n": "7",
@@ -548,7 +571,8 @@
 				"club": "JJU",
 				"anio": 2019
 			},
-			"college": "Club Atlético Atlas"
+			"college": "Club Atlético Atlas",
+			"ovr": 64
 		},
 		{
 			"n": "21",
@@ -568,7 +592,8 @@
 			"debut": {
 				"club": "NCH",
 				"anio": 2022
-			}
+			},
+			"ovr": 56
 		},
 		{
 			"n": "9",
@@ -588,7 +613,8 @@
 				"club": "QUI",
 				"anio": 2016
 			},
-			"college": "Club Atlético Boca Juniors"
+			"college": "Club Atlético Boca Juniors",
+			"ovr": 55
 		},
 		{
 			"n": "29",
@@ -608,7 +634,8 @@
 			"debut": {
 				"club": "DME",
 				"anio": 2016
-			}
+			},
+			"ovr": 52
 		},
 		{
 			"n": "32",
@@ -627,7 +654,8 @@
 			"debut": {
 				"club": "TIG",
 				"anio": 2023
-			}
+			},
+			"ovr": 45
 		}
 	]
 }

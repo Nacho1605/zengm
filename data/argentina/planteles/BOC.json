@@ -2,19 +2,58 @@
 	"equipo": "BOC",
 	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
 	"reemplaza": [
-		{ "nombre": "Leandro Brey", "nacimiento": 2003 },
-		{ "nombre": "Javier García", "nacimiento": 1987 },
-		{ "nombre": "Lautaro Di Lollo", "nacimiento": 2004 },
-		{ "nombre": "Ayrton Costa", "nacimiento": 2000 },
-		{ "nombre": "Nicolás Figal", "nacimiento": 1994 },
-		{ "nombre": "Malcom Braida", "nacimiento": 1998 },
-		{ "nombre": "Santiago Ascacíbar", "nacimiento": 1997 },
-		{ "nombre": "Tomás Belmonte", "nacimiento": 1999 },
-		{ "nombre": "Juan Ramírez", "nacimiento": 1994 },
-		{ "nombre": "Sebastián Villa", "nacimiento": 1996 },
-		{ "nombre": "Miguel Merentiel", "nacimiento": 1996 },
-		{ "nombre": "Adam Bareiro", "nacimiento": 1996 },
-		{ "nombre": "Milton Giménez", "nacimiento": 1998 }
+		{
+			"nombre": "Leandro Brey",
+			"nacimiento": 2003
+		},
+		{
+			"nombre": "Javier García",
+			"nacimiento": 1987
+		},
+		{
+			"nombre": "Lautaro Di Lollo",
+			"nacimiento": 2004
+		},
+		{
+			"nombre": "Ayrton Costa",
+			"nacimiento": 2000
+		},
+		{
+			"nombre": "Nicolás Figal",
+			"nacimiento": 1994
+		},
+		{
+			"nombre": "Malcom Braida",
+			"nacimiento": 1998
+		},
+		{
+			"nombre": "Santiago Ascacíbar",
+			"nacimiento": 1997
+		},
+		{
+			"nombre": "Tomás Belmonte",
+			"nacimiento": 1999
+		},
+		{
+			"nombre": "Juan Ramírez",
+			"nacimiento": 1994
+		},
+		{
+			"nombre": "Sebastián Villa",
+			"nacimiento": 1996
+		},
+		{
+			"nombre": "Miguel Merentiel",
+			"nacimiento": 1996
+		},
+		{
+			"nombre": "Adam Bareiro",
+			"nacimiento": 1996
+		},
+		{
+			"nombre": "Milton Giménez",
+			"nacimiento": 1998
+		}
 	],
 	"jugadores": [
 		{
@@ -33,7 +72,10 @@
 			"min": 2070,
 			"fichado": "17/07/2026",
 			"ovr": 71,
-			"debut": { "club": "SLO", "anio": 2015 },
+			"debut": {
+				"club": "SLO",
+				"anio": 2015
+			},
 			"college": "Associação Desportiva São Caetano"
 		},
 		{
@@ -51,7 +93,10 @@
 			"goles": 0,
 			"min": 1400,
 			"ovr": 55,
-			"debut": { "club": "AND", "anio": 2021 }
+			"debut": {
+				"club": "AND",
+				"anio": 2021
+			}
 		},
 		{
 			"n": null,
@@ -68,9 +113,15 @@
 			"goles": 0,
 			"min": 1084,
 			"ovr": 63,
-			"debut": { "club": "LAN", "anio": 2008 },
+			"debut": {
+				"club": "LAN",
+				"anio": 2008
+			},
 			"college": "Club Atlético Huracán (Tres Arroyos)",
-			"lesion": { "tipo": "Rotura del ligamento cruzado", "partidos": 7 }
+			"lesion": {
+				"tipo": "Rotura del ligamento cruzado",
+				"partidos": 7
+			}
 		},
 		{
 			"n": "30",
@@ -87,7 +138,10 @@
 			"goles": 0,
 			"min": 66,
 			"ovr": 38,
-			"debut": { "club": "BOC", "anio": 2008 }
+			"debut": {
+				"club": "BOC",
+				"anio": 2008
+			}
 		},
 		{
 			"n": "2",
@@ -103,7 +157,11 @@
 			"pj": 40,
 			"goles": 5,
 			"min": 3552,
-			"debut": { "club": "BOC", "anio": 2024 }
+			"debut": {
+				"club": "BOC",
+				"anio": 2024
+			},
+			"ovr": 69
 		},
 		{
 			"n": "32",
@@ -119,7 +177,11 @@
 			"pj": 30,
 			"goles": 0,
 			"min": 2416,
-			"debut": { "club": "IND", "anio": 2020 }
+			"debut": {
+				"club": "IND",
+				"anio": 2020
+			},
+			"ovr": 65
 		},
 		{
 			"n": "42",
@@ -135,7 +197,11 @@
 			"pj": 15,
 			"goles": 1,
 			"min": 1069,
-			"debut": { "club": "BOC", "anio": 2026 }
+			"debut": {
+				"club": "BOC",
+				"anio": 2026
+			},
+			"ovr": 57
 		},
 		{
 			"n": "26",
@@ -151,7 +217,11 @@
 			"pj": 17,
 			"goles": 0,
 			"min": 1096,
-			"debut": { "club": "PLA", "anio": 2023 }
+			"debut": {
+				"club": "PLA",
+				"anio": 2023
+			},
+			"ovr": 59
 		},
 		{
 			"n": "46",
@@ -168,7 +238,8 @@
 			"goles": 0,
 			"min": 91,
 			"prospecto": true,
-			"college": "Club Atlético Boca Juniors"
+			"college": "Club Atlético Boca Juniors",
+			"ovr": 48
 		},
 		{
 			"n": "4",
@@ -184,7 +255,11 @@
 			"pj": 13,
 			"goles": 0,
 			"min": 1108,
-			"debut": { "club": "IND", "anio": 2014 }
+			"debut": {
+				"club": "IND",
+				"anio": 2014
+			},
+			"ovr": 47
 		},
 		{
 			"n": "3",
@@ -200,7 +275,11 @@
 			"pj": 46,
 			"goles": 1,
 			"min": 3954,
-			"debut": { "club": "ROS", "anio": 2021 }
+			"debut": {
+				"club": "ROS",
+				"anio": 2021
+			},
+			"ovr": 68
 		},
 		{
 			"n": "27",
@@ -216,7 +295,11 @@
 			"pj": 13,
 			"goles": 0,
 			"min": 979,
-			"debut": { "club": "INS", "anio": 2018 }
+			"debut": {
+				"club": "INS",
+				"anio": 2018
+			},
+			"ovr": 56
 		},
 		{
 			"n": "17",
@@ -233,8 +316,12 @@
 			"goles": 2,
 			"min": 1570,
 			"fichado": "01/07/2026",
-			"debut": { "club": null, "anio": 2019 },
-			"college": "Club Atlético Boston River"
+			"debut": {
+				"club": null,
+				"anio": 2019
+			},
+			"college": "Club Atlético Boston River",
+			"ovr": 61
 		},
 		{
 			"n": "24",
@@ -250,7 +337,11 @@
 			"pj": 10,
 			"goles": 0,
 			"min": 683,
-			"debut": { "club": "BOC", "anio": 2026 }
+			"debut": {
+				"club": "BOC",
+				"anio": 2026
+			},
+			"ovr": 53
 		},
 		{
 			"n": "18",
@@ -266,7 +357,11 @@
 			"pj": 45,
 			"goles": 1,
 			"min": 3467,
-			"debut": { "club": "BOC", "anio": 2024 }
+			"debut": {
+				"club": "BOC",
+				"anio": 2024
+			},
+			"ovr": 67
 		},
 		{
 			"n": "25",
@@ -282,7 +377,11 @@
 			"pj": 44,
 			"goles": 8,
 			"min": 3280,
-			"debut": { "club": "EST", "anio": 2016 }
+			"debut": {
+				"club": "EST",
+				"anio": 2016
+			},
+			"ovr": 64
 		},
 		{
 			"n": "5",
@@ -298,8 +397,11 @@
 			"pj": 40,
 			"goles": 4,
 			"min": 3079,
-			"ovr": 77,
-			"debut": { "club": "BOC", "anio": 2012 }
+			"ovr": 78,
+			"debut": {
+				"club": "BOC",
+				"anio": 2012
+			}
 		},
 		{
 			"n": "8",
@@ -315,7 +417,11 @@
 			"pj": 22,
 			"goles": 1,
 			"min": 1248,
-			"debut": { "club": "LAN", "anio": 2018 }
+			"debut": {
+				"club": "LAN",
+				"anio": 2018
+			},
+			"ovr": 58
 		},
 		{
 			"n": "23",
@@ -331,7 +437,11 @@
 			"pj": 8,
 			"goles": 0,
 			"min": 356,
-			"debut": { "club": "BOC", "anio": 2025 }
+			"debut": {
+				"club": "BOC",
+				"anio": 2025
+			},
+			"ovr": 49
 		},
 		{
 			"n": "6",
@@ -347,7 +457,11 @@
 			"pj": 2,
 			"goles": 0,
 			"min": 147,
-			"debut": { "club": "HUR", "anio": 2011 }
+			"debut": {
+				"club": "HUR",
+				"anio": 2011
+			},
+			"ovr": 50
 		},
 		{
 			"n": "15",
@@ -363,8 +477,12 @@
 			"pj": 13,
 			"goles": 0,
 			"min": 721,
-			"debut": { "club": null, "anio": 2019 },
-			"college": "Club Social y Deportivo Colo-Colo"
+			"debut": {
+				"club": null,
+				"anio": 2019
+			},
+			"college": "Club Social y Deportivo Colo-Colo",
+			"ovr": 51
 		},
 		{
 			"n": null,
@@ -380,7 +498,11 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"debut": { "club": "ARG", "anio": 2012 }
+			"debut": {
+				"club": "ARG",
+				"anio": 2012
+			},
+			"ovr": 42
 		},
 		{
 			"n": "10",
@@ -396,7 +518,11 @@
 			"pj": 33,
 			"goles": 1,
 			"min": 2092,
-			"debut": { "club": "BOC", "anio": 2026 }
+			"debut": {
+				"club": "BOC",
+				"anio": 2026
+			},
+			"ovr": 63
 		},
 		{
 			"n": "7",
@@ -412,8 +538,12 @@
 			"pj": 12,
 			"goles": 0,
 			"min": 393,
-			"debut": { "club": null, "anio": 2018 },
-			"college": "Club Deportivo Unión Española"
+			"debut": {
+				"club": null,
+				"anio": 2018
+			},
+			"college": "Unión Española",
+			"ovr": 54
 		},
 		{
 			"n": "22",
@@ -430,8 +560,12 @@
 			"goles": 1,
 			"min": 1254,
 			"fichado": "17/07/2026",
-			"debut": { "club": null, "anio": 2017 },
-			"college": "Club Deportes Tolima"
+			"debut": {
+				"club": null,
+				"anio": 2017
+			},
+			"college": "Club Deportes Tolima",
+			"ovr": 66
 		},
 		{
 			"n": "20",
@@ -447,7 +581,11 @@
 			"pj": 30,
 			"goles": 6,
 			"min": 1381,
-			"debut": { "club": "IND", "anio": 2020 }
+			"debut": {
+				"club": "IND",
+				"anio": 2020
+			},
+			"ovr": 62
 		},
 		{
 			"n": "19",
@@ -463,7 +601,11 @@
 			"pj": 25,
 			"goles": 5,
 			"min": 1778,
-			"debut": { "club": "BOC", "anio": 2026 }
+			"debut": {
+				"club": "BOC",
+				"anio": 2026
+			},
+			"ovr": 70
 		},
 		{
 			"n": "11",
@@ -479,9 +621,16 @@
 			"pj": 23,
 			"goles": 3,
 			"min": 694,
-			"debut": { "club": null, "anio": 2011 },
+			"debut": {
+				"club": null,
+				"anio": 2011
+			},
 			"college": "Club Cerro Porteño",
-			"lesion": { "tipo": "Desgarro muscular", "partidos": 3 }
+			"lesion": {
+				"tipo": "Desgarro muscular",
+				"partidos": 3
+			},
+			"ovr": 48
 		},
 		{
 			"n": "16",
@@ -497,8 +646,12 @@
 			"pj": 46,
 			"goles": 15,
 			"min": 3110,
-			"debut": { "club": null, "anio": 2017 },
-			"college": "Club Atlético Peñarol"
+			"debut": {
+				"club": null,
+				"anio": 2017
+			},
+			"college": "Club Atlético Peñarol",
+			"ovr": 72
 		},
 		{
 			"n": "28",
@@ -514,8 +667,12 @@
 			"pj": 14,
 			"goles": 6,
 			"min": 979,
-			"debut": { "club": null, "anio": 2015 },
-			"college": "Club Olimpia"
+			"debut": {
+				"club": null,
+				"anio": 2015
+			},
+			"college": "Club Olimpia",
+			"ovr": 60
 		},
 		{
 			"n": "9",
@@ -531,7 +688,11 @@
 			"pj": 14,
 			"goles": 4,
 			"min": 634,
-			"debut": { "club": "ATL", "anio": 2015 }
+			"debut": {
+				"club": "ATL",
+				"anio": 2015
+			},
+			"ovr": 53
 		},
 		{
 			"n": "13",
@@ -548,8 +709,12 @@
 			"goles": 6,
 			"min": 563,
 			"fichado": "09/08/2026",
-			"debut": { "club": null, "anio": 2010 },
-			"college": "Club Sport Emelec"
+			"debut": {
+				"club": null,
+				"anio": 2010
+			},
+			"college": "Club Sport Emelec",
+			"ovr": 57
 		}
 	]
 }
