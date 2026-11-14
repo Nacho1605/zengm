@@ -224,8 +224,11 @@ const cambios: Record<string, unknown> = {
 	// Premios en español (mismas fórmulas que la NBA, por partidos jugados de 43)
 	awards: PREMIOS,
 
-	// Sin Partido de las Estrellas (con concurso de volcadas y de triples)
-	allStarGame: null,
+	// Partido de las Estrellas a mitad de temporada, Metropolitano contra
+	// Federal, con 18 convocados por equipo (11 titulares y 7 suplentes)
+	allStarGame: 0.7,
+	allStarNum: 18,
+	allStarType: "byConf",
 
 	// Lesiones con nombres en español
 	injuries: LESIONES,
