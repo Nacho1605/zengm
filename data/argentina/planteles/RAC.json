@@ -1,0 +1,608 @@
+{
+	"equipo": "RAC",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"reemplaza": [
+		{
+			"nombre": "Facundo Cambeses",
+			"nacimiento": 1998
+		},
+		{
+			"nombre": "Nazareno Colombo",
+			"nacimiento": 2000
+		},
+		{
+			"nombre": "Ezequiel Cannavo",
+			"nacimiento": 2003
+		},
+		{
+			"nombre": "Ulises Ortegoza",
+			"nacimiento": 1997
+		},
+		{
+			"nombre": "Gastón Lódico",
+			"nacimiento": 1999
+		},
+		{
+			"nombre": "Valentín Carboni",
+			"nacimiento": 2005
+		},
+		{
+			"nombre": "Matías Zaracho",
+			"nacimiento": 1998
+		},
+		{
+			"nombre": "Tomás Conechny",
+			"nacimiento": 1999
+		},
+		{
+			"nombre": "Adrián Martínez",
+			"nacimiento": 1993
+		}
+	],
+	"jugadores": [
+		{
+			"n": "25",
+			"nombre": "Facundo",
+			"apellido": "Cambeses",
+			"pos": "Portero",
+			"nac": "09/04/1997",
+			"pais": "Argentina",
+			"altura": 1.86,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 5000000,
+			"pj": 42,
+			"goles": 0,
+			"min": 3765,
+			"ovr": 70,
+			"debut": {
+				"club": "BAN",
+				"anio": 2019
+			}
+		},
+		{
+			"n": "30",
+			"nombre": "Matías",
+			"apellido": "Tagliamonte",
+			"pos": "Portero",
+			"nac": "19/02/1998",
+			"pais": "Argentina",
+			"altura": 1.93,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 1200000,
+			"pj": 3,
+			"goles": 0,
+			"min": 225,
+			"ovr": 46,
+			"debut": {
+				"club": "RAF",
+				"anio": 2019
+			}
+		},
+		{
+			"n": "3",
+			"nombre": "Marco",
+			"apellido": "Di Césare",
+			"pos": "Defensa central",
+			"nac": "30/01/2002",
+			"pais": "Argentina",
+			"altura": 1.86,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 5000000,
+			"pj": 20,
+			"goles": 2,
+			"min": 1629,
+			"ovr": 66,
+			"debut": {
+				"club": "ARG",
+				"anio": 2021
+			},
+			"lesion": {
+				"tipo": "Fractura de peroné",
+				"partidos": 7
+			}
+		},
+		{
+			"n": "23",
+			"nombre": "Nazareno",
+			"apellido": "Colombo",
+			"pos": "Defensa central",
+			"nac": "20/03/1999",
+			"pais": "Argentina",
+			"altura": 1.82,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 2800000,
+			"pj": 18,
+			"goles": 1,
+			"min": 1068,
+			"ovr": 62,
+			"debut": {
+				"club": "EST",
+				"anio": 2019
+			}
+		},
+		{
+			"n": "2",
+			"nombre": "Matías",
+			"apellido": "Pérez",
+			"pos": "Defensa central",
+			"nac": "03/03/1999",
+			"pais": "Argentina",
+			"altura": 1.81,
+			"pie": "Derecho",
+			"contrato": "31/12/2030",
+			"valor": 2700000,
+			"pj": 5,
+			"goles": 0,
+			"min": 301,
+			"fichado": "28/08/2026",
+			"ovr": 60,
+			"debut": {
+				"club": "LAN",
+				"anio": 2020
+			}
+		},
+		{
+			"n": "38",
+			"nombre": "Mateo",
+			"apellido": "Martínez",
+			"pos": "Defensa central",
+			"nac": "27/04/2008",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Derecho",
+			"contrato": "31/12/2030",
+			"valor": 800000,
+			"pj": 11,
+			"goles": 0,
+			"min": 959,
+			"ovr": 48,
+			"prospecto": true,
+			"college": "Racing Club"
+		},
+		{
+			"n": "43",
+			"nombre": "Gonzalo",
+			"apellido": "Escudero",
+			"pos": "Defensa central",
+			"nac": "01/04/2007",
+			"pais": "Argentina",
+			"altura": 1.87,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2029",
+			"valor": 50000,
+			"pj": 12,
+			"goles": 1,
+			"min": 994,
+			"ovr": 52,
+			"debut": {
+				"club": "RAC",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "19",
+			"nombre": "Ignacio",
+			"apellido": "Rodríguez",
+			"pos": "Lateral izquierdo",
+			"nac": "22/02/2002",
+			"pais": "Argentina",
+			"altura": 1.78,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2028",
+			"valor": 1200000,
+			"pj": 25,
+			"goles": 2,
+			"min": 1830,
+			"ovr": 64,
+			"debut": {
+				"club": "BAN",
+				"anio": 2023
+			}
+		},
+		{
+			"n": "18",
+			"nombre": "Alfonso",
+			"apellido": "Espino",
+			"pos": "Lateral izquierdo",
+			"nac": "05/01/1992",
+			"pais": "Uruguay",
+			"altura": 1.72,
+			"pie": "Izquierdo",
+			"contrato": "30/06/2028",
+			"valor": 600000,
+			"pj": 4,
+			"goles": 0,
+			"min": 249,
+			"fichado": "02/07/2026",
+			"ovr": 57,
+			"debut": {
+				"club": null,
+				"anio": 2014
+			},
+			"college": "Club Nacional de Football"
+		},
+		{
+			"n": "4",
+			"nombre": "Ezequiel",
+			"apellido": "Cannavo",
+			"pos": "Lateral derecho",
+			"nac": "12/06/2002",
+			"pais": "Argentina",
+			"altura": 1.8,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 3000000,
+			"pj": 35,
+			"goles": 1,
+			"min": 2770,
+			"ovr": 65,
+			"debut": {
+				"club": "DYJ",
+				"anio": 2024
+			}
+		},
+		{
+			"n": "14",
+			"nombre": "Juan",
+			"apellido": "Barinaga",
+			"pos": "Lateral derecho",
+			"nac": "10/10/2000",
+			"pais": "Argentina",
+			"altura": 1.76,
+			"pie": "Derecho",
+			"contrato": "30/06/2027",
+			"valor": 2800000,
+			"pj": 2,
+			"goles": 0,
+			"min": 122,
+			"fichado": "29/08/2026",
+			"ovr": 59,
+			"debut": {
+				"club": "BEL",
+				"anio": 2019
+			}
+		},
+		{
+			"n": "33",
+			"nombre": "Leonel",
+			"apellido": "Pérez",
+			"pos": "Pivote",
+			"nac": "09/08/2004",
+			"pais": "Argentina",
+			"altura": 1.86,
+			"pie": "Derecho",
+			"contrato": "30/06/2027",
+			"valor": 5500000,
+			"pj": 14,
+			"goles": 1,
+			"min": 885,
+			"fichado": "10/08/2026",
+			"ovr": 64,
+			"debut": {
+				"club": "HUR",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "16",
+			"nombre": "Ulises",
+			"apellido": "Ortegoza",
+			"pos": "Pivote",
+			"nac": "19/04/1997",
+			"pais": "Chile",
+			"altura": 1.8,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 1800000,
+			"pj": 17,
+			"goles": 1,
+			"min": 994,
+			"fichado": "01/07/2026",
+			"ovr": 62,
+			"debut": {
+				"club": "AND",
+				"anio": 2019
+			}
+		},
+		{
+			"n": "5",
+			"nombre": "Matías",
+			"apellido": "Kranevitter",
+			"pos": "Pivote",
+			"nac": "21/05/1993",
+			"pais": "Argentina",
+			"altura": 1.79,
+			"pie": "Derecho",
+			"contrato": "30/06/2027",
+			"valor": 600000,
+			"pj": 12,
+			"goles": 0,
+			"min": 579,
+			"fichado": "06/07/2026",
+			"ovr": 61,
+			"debut": {
+				"club": "RIV",
+				"anio": 2012
+			}
+		},
+		{
+			"n": "8",
+			"nombre": "Alan",
+			"apellido": "Forneris",
+			"pos": "Pivote",
+			"nac": "28/01/2005",
+			"pais": "Argentina",
+			"altura": 1.84,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 600000,
+			"pj": 8,
+			"goles": 0,
+			"min": 424,
+			"ovr": 50,
+			"debut": {
+				"club": "COL",
+				"anio": 2024
+			},
+			"lesion": {
+				"tipo": "Rotura del ligamento cruzado",
+				"partidos": 30
+			}
+		},
+		{
+			"n": "20",
+			"nombre": "Gastón",
+			"apellido": "Lódico",
+			"pos": "Mediocentro",
+			"nac": "28/05/1998",
+			"pais": "Argentina",
+			"altura": 1.73,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 3800000,
+			"pj": 13,
+			"goles": 1,
+			"min": 986,
+			"fichado": "13/08/2026",
+			"ovr": 63,
+			"debut": {
+				"club": "LAN",
+				"anio": 2018
+			}
+		},
+		{
+			"n": "21",
+			"nombre": "Valentín",
+			"apellido": "Carboni",
+			"pos": "Mediocentro ofensivo",
+			"nac": "05/03/2005",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Izquierdo",
+			"contrato": "30/06/2027",
+			"valor": 7000000,
+			"pj": 5,
+			"goles": 0,
+			"min": 204,
+			"ovr": 65,
+			"debut": {
+				"club": null,
+				"anio": 2022
+			},
+			"college": "Football Club Internazionale Milano"
+		},
+		{
+			"n": "10",
+			"nombre": "Matko",
+			"apellido": "Miljevic",
+			"pos": "Mediocentro ofensivo",
+			"nac": "09/05/2001",
+			"pais": "USA",
+			"altura": 1.76,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 4000000,
+			"pj": 32,
+			"goles": 4,
+			"min": 1550,
+			"ovr": 69,
+			"debut": {
+				"club": "ARG",
+				"anio": 2019
+			}
+		},
+		{
+			"n": "11",
+			"nombre": "Matías",
+			"apellido": "Zaracho",
+			"pos": "Mediocentro ofensivo",
+			"nac": "10/03/1998",
+			"pais": "Argentina",
+			"altura": 1.71,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 3500000,
+			"pj": 35,
+			"goles": 4,
+			"min": 1807,
+			"ovr": 67,
+			"debut": {
+				"club": "RAC",
+				"anio": 2017
+			}
+		},
+		{
+			"n": "24",
+			"nombre": "Adrián",
+			"apellido": "Fernández",
+			"pos": "Mediocentro ofensivo",
+			"nac": "20/05/2001",
+			"pais": "Argentina",
+			"altura": 1.83,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 700000,
+			"pj": 28,
+			"goles": 2,
+			"min": 1187,
+			"ovr": 61,
+			"debut": {
+				"club": "STE",
+				"anio": 2021
+			}
+		},
+		{
+			"n": "46",
+			"nombre": "Alejandro",
+			"apellido": "Tello",
+			"pos": "Mediocentro ofensivo",
+			"nac": "08/02/2008",
+			"pais": "Argentina",
+			"altura": 1.84,
+			"pie": "Derecho",
+			"contrato": "31/12/2030",
+			"valor": 400000,
+			"pj": 13,
+			"goles": 0,
+			"min": 733,
+			"ovr": 47,
+			"debut": {
+				"club": "RAC",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "17",
+			"nombre": "Tomás",
+			"apellido": "Conechny",
+			"pos": "Extremo izquierdo",
+			"nac": "30/03/1998",
+			"pais": "Argentina",
+			"altura": 1.76,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2029",
+			"valor": 2500000,
+			"pj": 41,
+			"goles": 5,
+			"min": 2225,
+			"ovr": 67,
+			"debut": {
+				"club": null,
+				"anio": 2018
+			},
+			"college": "Portland Timbers"
+		},
+		{
+			"n": "7",
+			"nombre": "Duván",
+			"apellido": "Vergara",
+			"pos": "Extremo izquierdo",
+			"nac": "09/09/1996",
+			"pais": "Colombia",
+			"altura": 1.77,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 1800000,
+			"pj": 29,
+			"goles": 4,
+			"min": 841,
+			"ovr": 62,
+			"debut": {
+				"club": null,
+				"anio": 2016
+			},
+			"college": "Envigado Fútbol Club"
+		},
+		{
+			"n": "27",
+			"nombre": "Leandro",
+			"apellido": "Córdoba",
+			"pos": "Extremo derecho",
+			"nac": "12/05/2005",
+			"pais": "Argentina",
+			"altura": 1.72,
+			"pie": "Derecho",
+			"contrato": "31/12/2030",
+			"valor": 300000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"fichado": "03/09/2026",
+			"ovr": 38,
+			"debut": {
+				"club": null,
+				"anio": 2020
+			},
+			"college": "Sociedad Sportiva Devoto"
+		},
+		{
+			"n": "9",
+			"nombre": "Adrián",
+			"apellido": "Martínez",
+			"pos": "Delantero centro",
+			"nac": "07/07/1992",
+			"pais": "Argentina",
+			"altura": 1.76,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2028",
+			"valor": 2000000,
+			"pj": 35,
+			"goles": 13,
+			"min": 2855,
+			"ovr": 72,
+			"debut": {
+				"club": "DUN",
+				"anio": 2015
+			},
+			"lesion": {
+				"tipo": "Esguince de tobillo",
+				"partidos": 1
+			}
+		},
+		{
+			"n": "32",
+			"nombre": "Lautaro",
+			"apellido": "Díaz",
+			"pos": "Delantero centro",
+			"nac": "21/05/1998",
+			"pais": "Argentina",
+			"altura": 1.81,
+			"pie": "Derecho",
+			"contrato": "30/06/2027",
+			"valor": 1500000,
+			"pj": 14,
+			"goles": 0,
+			"min": 884,
+			"fichado": "21/07/2026",
+			"ovr": 58,
+			"debut": {
+				"club": "EBA",
+				"anio": 2019
+			}
+		},
+		{
+			"n": "22",
+			"nombre": "Elías",
+			"apellido": "Torres",
+			"pos": "Delantero centro",
+			"nac": "02/03/2001",
+			"pais": "Argentina",
+			"altura": 1.86,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 850000,
+			"pj": 12,
+			"goles": 0,
+			"min": 253,
+			"ovr": 50,
+			"debut": {
+				"club": "ALD",
+				"anio": 2023
+			}
+		}
+	]
+}
