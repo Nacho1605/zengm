@@ -94,7 +94,7 @@
 			"pj": 20,
 			"goles": 2,
 			"min": 1629,
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "ARG",
 				"anio": 2021
@@ -118,7 +118,7 @@
 			"pj": 18,
 			"goles": 1,
 			"min": 1068,
-			"ovr": 62,
+			"ovr": 61,
 			"debut": {
 				"club": "EST",
 				"anio": 2019
@@ -197,7 +197,7 @@
 			"pj": 25,
 			"goles": 2,
 			"min": 1830,
-			"ovr": 64,
+			"ovr": 63,
 			"debut": {
 				"club": "BAN",
 				"anio": 2023
@@ -239,7 +239,7 @@
 			"pj": 35,
 			"goles": 1,
 			"min": 2770,
-			"ovr": 65,
+			"ovr": 64,
 			"debut": {
 				"club": "DYJ",
 				"anio": 2024
@@ -281,7 +281,7 @@
 			"goles": 1,
 			"min": 885,
 			"fichado": "10/08/2026",
-			"ovr": 64,
+			"ovr": 63,
 			"debut": {
 				"club": "HUR",
 				"anio": 2025
@@ -302,7 +302,7 @@
 			"goles": 1,
 			"min": 994,
 			"fichado": "01/07/2026",
-			"ovr": 62,
+			"ovr": 61,
 			"debut": {
 				"club": "AND",
 				"anio": 2019
@@ -368,7 +368,7 @@
 			"goles": 1,
 			"min": 986,
 			"fichado": "13/08/2026",
-			"ovr": 63,
+			"ovr": 62,
 			"debut": {
 				"club": "LAN",
 				"anio": 2018
@@ -388,7 +388,7 @@
 			"pj": 5,
 			"goles": 0,
 			"min": 204,
-			"ovr": 65,
+			"ovr": 64,
 			"debut": {
 				"club": null,
 				"anio": 2022
@@ -409,7 +409,7 @@
 			"pj": 32,
 			"goles": 4,
 			"min": 1550,
-			"ovr": 69,
+			"ovr": 68,
 			"debut": {
 				"club": "ARG",
 				"anio": 2019
@@ -429,7 +429,7 @@
 			"pj": 35,
 			"goles": 4,
 			"min": 1807,
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "RAC",
 				"anio": 2017
@@ -449,7 +449,7 @@
 			"pj": 28,
 			"goles": 2,
 			"min": 1187,
-			"ovr": 61,
+			"ovr": 60,
 			"debut": {
 				"club": "STE",
 				"anio": 2021
@@ -489,7 +489,7 @@
 			"pj": 41,
 			"goles": 5,
 			"min": 2225,
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": null,
 				"anio": 2018
@@ -510,7 +510,7 @@
 			"pj": 29,
 			"goles": 4,
 			"min": 841,
-			"ovr": 62,
+			"ovr": 61,
 			"debut": {
 				"club": null,
 				"anio": 2016
@@ -553,7 +553,7 @@
 			"pj": 35,
 			"goles": 13,
 			"min": 2855,
-			"ovr": 72,
+			"ovr": 71,
 			"debut": {
 				"club": "DUN",
 				"anio": 2015

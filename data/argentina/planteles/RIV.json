@@ -83,7 +83,7 @@
 			"pj": 30,
 			"goles": 2,
 			"min": 2518,
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "RIV",
 				"anio": 2024
@@ -207,7 +207,7 @@
 			"goles": 0,
 			"min": 502,
 			"fichado": "06/08/2026",
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "VEL",
 				"anio": 2018
@@ -289,7 +289,7 @@
 			"pj": 33,
 			"goles": 0,
 			"min": 2796,
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "NOB",
 				"anio": 2019
@@ -313,7 +313,7 @@
 			"pj": 34,
 			"goles": 1,
 			"min": 2485,
-			"ovr": 65,
+			"ovr": 64,
 			"debut": {
 				"club": "ARG",
 				"anio": 2019
@@ -499,7 +499,7 @@
 			"goles": 1,
 			"min": 781,
 			"fichado": "02/07/2026",
-			"ovr": 64,
+			"ovr": 63,
 			"debut": {
 				"club": "RIV",
 				"anio": 2021

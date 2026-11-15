@@ -47,7 +47,7 @@
 			"goles": 0,
 			"min": 360,
 			"fichado": "28/07/2026",
-			"ovr": 60,
+			"ovr": 65,
 			"debut": {
 				"club": null,
 				"anio": 2014
@@ -129,7 +129,7 @@
 			"pj": 22,
 			"goles": 0,
 			"min": 1866,
-			"ovr": 65,
+			"ovr": 66,
 			"debut": {
 				"club": "AND",
 				"anio": 2018
@@ -170,7 +170,7 @@
 			"pj": 23,
 			"goles": 1,
 			"min": 1541,
-			"ovr": 61,
+			"ovr": 62,
 			"debut": {
 				"club": "SDM",
 				"anio": 2019
@@ -190,7 +190,7 @@
 			"pj": 29,
 			"goles": 0,
 			"min": 2189,
-			"ovr": 63,
+			"ovr": 64,
 			"debut": {
 				"club": "ROS",
 				"anio": 2019
@@ -273,7 +273,7 @@
 			"pj": 21,
 			"goles": 1,
 			"min": 1338,
-			"ovr": 61,
+			"ovr": 62,
 			"debut": {
 				"club": "RAF",
 				"anio": 2015
@@ -313,7 +313,7 @@
 			"pj": 33,
 			"goles": 1,
 			"min": 2802,
-			"ovr": 64,
+			"ovr": 65,
 			"debut": {
 				"club": "ARS",
 				"anio": 2009
@@ -355,7 +355,7 @@
 			"pj": 28,
 			"goles": 3,
 			"min": 1201,
-			"ovr": 62,
+			"ovr": 63,
 			"debut": {
 				"club": "IND",
 				"anio": 2024
@@ -375,12 +375,12 @@
 			"pj": 27,
 			"goles": 1,
 			"min": 1864,
-			"ovr": 63,
+			"ovr": 64,
 			"debut": {
 				"club": "IND",
 				"anio": 2026
 			},
-			"college": "Club Deportivo Gimnasia y Esgrima (Mendoza)"
+			"college": "Club Atlético Gimnasia y Esgrima (Mendoza)"
 		},
 		{
 			"n": "10",
@@ -437,7 +437,7 @@
 			"pj": 33,
 			"goles": 5,
 			"min": 2225,
-			"ovr": 67,
+			"ovr": 68,
 			"debut": {
 				"club": null,
 				"anio": 2022
@@ -564,7 +564,7 @@
 			"goles": 0,
 			"min": 542,
 			"fichado": "18/08/2026",
-			"ovr": 66,
+			"ovr": 67,
 			"debut": {
 				"club": null,
 				"anio": 2011
