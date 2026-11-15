@@ -553,7 +553,8 @@ const cargar = (plantel: any) => {
 			firstName: j.nombre,
 			lastName: j.apellido,
 			pos,
-			hgt: Math.round(cm / 2.54),
+			// Pulgadas con decimales: así la altura en pantalla es la real
+			hgt: Math.round((cm / 2.54) * 100) / 100,
 			weight: Math.round(23.5 * j.altura ** 2 * 2.2046),
 			born: { year: nac.y, loc: j.pais },
 			college: j.college ?? "",
@@ -658,6 +659,61 @@ const cargar = (plantel: any) => {
 		`${enPlantel} jugadores en el plantel, planilla $${(payroll / 1000).toFixed(1)}M (tope $${ga.salaryCap / 1000}M)`,
 	);
 };
+
+// Expectativa de la hinchada (hype) y estrategia de la IA según la tabla anual
+// 2026 (puntos en 32 fechas). El hype va de 0,10 (último) a 0,90 (primero) y
+// mueve la asistencia, los ingresos y el humor de los jugadores; los 15
+// primeros arrancan compitiendo y el resto reconstruyendo. Después el juego
+// los actualiza solo, temporada a temporada.
+const TABLA_ANUAL_2026: Record<string, number> = {
+	BOC: 63,
+	ROS: 62,
+	ARG: 60,
+	IRM: 57,
+	GIM: 57,
+	VEL: 56,
+	RIV: 55,
+	INS: 55,
+	LAN: 50,
+	BEL: 49,
+	EST: 47,
+	BAR: 47,
+	DYJ: 47,
+	IND: 47,
+	HUR: 44,
+	UNI: 42,
+	GEM: 41,
+	SLO: 41,
+	SAR: 40,
+	TIG: 39,
+	TAL: 39,
+	NOB: 38,
+	RAC: 36,
+	PLA: 36,
+	BAN: 33,
+	ATU: 32,
+	CCO: 27,
+	RIE: 23,
+	ALD: 19,
+	ERC: 14,
+};
+{
+	const puntos = Object.values(TABLA_ANUAL_2026);
+	const max = Math.max(...puntos);
+	const min = Math.min(...puntos);
+	const orden = Object.entries(TABLA_ANUAL_2026).sort((a, b) => b[1] - a[1]);
+	for (const t of league.teams.filter((t2: any) => !t2.disabled)) {
+		const pts = TABLA_ANUAL_2026[t.abbrev];
+		if (pts === undefined) {
+			throw new Error(`${t.abbrev} no está en la tabla anual`);
+		}
+		const fila = t.seasons.find((s: any) => s.season === SEASON);
+		fila.hype =
+			Math.round((0.1 + (0.8 * (pts - min)) / (max - min)) * 100) / 100;
+		const puesto = orden.findIndex(([ab]) => ab === t.abbrev) + 1;
+		t.strategy = puesto <= 15 ? "contending" : "rebuilding";
+	}
+}
 
 for (const file of plantelFiles) {
 	cargar(JSON.parse(readFileSync(file, "utf8")));
