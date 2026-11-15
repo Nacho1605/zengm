@@ -1,0 +1,596 @@
+{
+	"equipo": "IND",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"reemplaza": [
+		{
+			"nombre": "Santiago Mele",
+			"nacimiento": 1998
+		},
+		{
+			"nombre": "Rodrigo Rey",
+			"nacimiento": 1992
+		},
+		{
+			"nombre": "Joaquín Blázquez",
+			"nacimiento": 2001
+		},
+		{
+			"nombre": "Franco Calderón",
+			"nacimiento": 1999
+		},
+		{
+			"nombre": "Leonardo Godoy",
+			"nacimiento": 1996
+		},
+		{
+			"nombre": "Iván Marcone",
+			"nacimiento": 1991
+		},
+		{
+			"nombre": "Imanol Machuca",
+			"nacimiento": 2000
+		}
+	],
+	"jugadores": [
+		{
+			"n": "77",
+			"nombre": "Santiago",
+			"apellido": "Mele",
+			"pos": "Portero",
+			"nac": "06/09/1997",
+			"pais": "Uruguay",
+			"altura": 1.85,
+			"pie": "Derecho",
+			"contrato": "30/06/2027",
+			"valor": 2000000,
+			"pj": 4,
+			"goles": 0,
+			"min": 360,
+			"fichado": "28/07/2026",
+			"ovr": 60,
+			"debut": {
+				"club": null,
+				"anio": 2014
+			},
+			"college": "Centro Atlético Fénix"
+		},
+		{
+			"n": "33",
+			"nombre": "Rodrigo",
+			"apellido": "Rey",
+			"pos": "Portero",
+			"nac": "08/03/1991",
+			"pais": "Argentina",
+			"altura": 1.9,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 1000000,
+			"pj": 31,
+			"goles": 0,
+			"min": 2790,
+			"ovr": 68,
+			"debut": {
+				"club": "NOB",
+				"anio": 2013
+			},
+			"college": "Club Atlético River Plate"
+		},
+		{
+			"n": "1",
+			"nombre": "Joaquín",
+			"apellido": "Blázquez",
+			"pos": "Portero",
+			"nac": "28/01/2001",
+			"pais": "Argentina",
+			"altura": 1.93,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 150000,
+			"pj": 1,
+			"goles": 0,
+			"min": 90,
+			"ovr": 45,
+			"debut": {
+				"club": "TAL",
+				"anio": 2020
+			}
+		},
+		{
+			"n": "35",
+			"nombre": "Juan Miguel",
+			"apellido": "Arrayago",
+			"pos": "Defensa central",
+			"nac": "17/11/2008",
+			"pais": "Argentina",
+			"altura": 1.84,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2028",
+			"valor": 2000000,
+			"pj": 12,
+			"goles": 1,
+			"min": 1006,
+			"ovr": 56,
+			"debut": {
+				"club": "IND",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "36",
+			"nombre": "Sebastián",
+			"apellido": "Valdez",
+			"pos": "Defensa central",
+			"nac": "06/11/1995",
+			"pais": "Argentina",
+			"altura": 1.91,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 1500000,
+			"pj": 22,
+			"goles": 0,
+			"min": 1866,
+			"ovr": 65,
+			"debut": {
+				"club": "AND",
+				"anio": 2018
+			}
+		},
+		{
+			"n": "2",
+			"nombre": "Franco",
+			"apellido": "Calderón",
+			"pos": "Defensa central",
+			"nac": "13/05/1998",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 1200000,
+			"pj": 2,
+			"goles": 0,
+			"min": 94,
+			"fichado": "16/08/2026",
+			"ovr": 53,
+			"debut": {
+				"club": "UNI",
+				"anio": 2020
+			}
+		},
+		{
+			"n": "13",
+			"nombre": "Juan",
+			"apellido": "Fedorco",
+			"pos": "Defensa central",
+			"nac": "28/11/2000",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 700000,
+			"pj": 23,
+			"goles": 1,
+			"min": 1541,
+			"ovr": 61,
+			"debut": {
+				"club": "SDM",
+				"anio": 2019
+			}
+		},
+		{
+			"n": "22",
+			"nombre": "Facundo",
+			"apellido": "Zabala",
+			"pos": "Lateral izquierdo",
+			"nac": "02/01/1999",
+			"pais": "Argentina",
+			"altura": 1.72,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2028",
+			"valor": 1800000,
+			"pj": 29,
+			"goles": 0,
+			"min": 2189,
+			"ovr": 63,
+			"debut": {
+				"club": "ROS",
+				"anio": 2019
+			}
+		},
+		{
+			"n": "5",
+			"nombre": "Nahuel",
+			"apellido": "Banegas",
+			"pos": "Lateral izquierdo",
+			"nac": "06/10/1996",
+			"pais": "Argentina",
+			"altura": 1.77,
+			"pie": "Izquierdo",
+			"contrato": "30/06/2027",
+			"valor": 750000,
+			"pj": 6,
+			"goles": 0,
+			"min": 462,
+			"fichado": "01/10/2026",
+			"ovr": 55,
+			"debut": {
+				"club": "PNU",
+				"anio": 2018
+			},
+			"college": "Club Atlético Tigre"
+		},
+		{
+			"n": "3",
+			"nombre": "Jonathan",
+			"apellido": "De Irastorza",
+			"pos": "Lateral izquierdo",
+			"nac": "05/08/2005",
+			"pais": "Argentina",
+			"altura": 1.74,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 125000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 40,
+			"debut": {
+				"club": "IND",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "4",
+			"nombre": "Santiago",
+			"apellido": "Arias",
+			"pos": "Lateral derecho",
+			"nac": "13/01/1992",
+			"pais": "Colombia",
+			"altura": 1.77,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 1200000,
+			"pj": 27,
+			"goles": 0,
+			"min": 1886,
+			"ovr": 64,
+			"debut": {
+				"club": null,
+				"anio": 2009
+			},
+			"college": "Club Deportivo La Equidad"
+		},
+		{
+			"n": "29",
+			"nombre": "Leonardo",
+			"apellido": "Godoy",
+			"pos": "Lateral derecho",
+			"nac": "28/04/1995",
+			"pais": "Argentina",
+			"altura": 1.73,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 1000000,
+			"pj": 21,
+			"goles": 1,
+			"min": 1338,
+			"ovr": 61,
+			"debut": {
+				"club": "RAF",
+				"anio": 2015
+			}
+		},
+		{
+			"n": "32",
+			"nombre": "David",
+			"apellido": "Martínez",
+			"pos": "Pivote",
+			"nac": "14/06/2004",
+			"pais": "Argentina",
+			"altura": 1.7,
+			"pie": null,
+			"contrato": "31/12/2027",
+			"valor": 1200000,
+			"pj": 7,
+			"goles": 0,
+			"min": 113,
+			"ovr": 47,
+			"debut": {
+				"club": "IND",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "23",
+			"nombre": "Iván",
+			"apellido": "Marcone",
+			"pos": "Pivote",
+			"nac": "03/06/1990",
+			"pais": "Argentina",
+			"altura": 1.83,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 400000,
+			"pj": 33,
+			"goles": 1,
+			"min": 2802,
+			"ovr": 64,
+			"debut": {
+				"club": "ARS",
+				"anio": 2009
+			}
+		},
+		{
+			"n": "37",
+			"nombre": "Joel",
+			"apellido": "Medina",
+			"pos": "Mediocentro",
+			"nac": "07/07/2007",
+			"pais": "Argentina",
+			"altura": 1.74,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 50000,
+			"pj": 1,
+			"goles": 0,
+			"min": 22,
+			"ovr": 40,
+			"prospecto": true,
+			"college": "Club Atlético Independiente",
+			"lesion": {
+				"tipo": "Rotura del ligamento cruzado",
+				"partidos": 24
+			}
+		},
+		{
+			"n": "14",
+			"nombre": "Lautaro",
+			"apellido": "Millán",
+			"pos": "Mediocentro ofensivo",
+			"nac": "16/08/2005",
+			"pais": "Chile",
+			"altura": 1.71,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 2500000,
+			"pj": 28,
+			"goles": 3,
+			"min": 1201,
+			"ovr": 62,
+			"debut": {
+				"club": "IND",
+				"anio": 2024
+			}
+		},
+		{
+			"n": "16",
+			"nombre": "Mateo",
+			"apellido": "Pérez Curci",
+			"pos": "Mediocentro ofensivo",
+			"nac": "24/01/2006",
+			"pais": "Argentina",
+			"altura": 1.79,
+			"pie": null,
+			"contrato": "31/12/2028",
+			"valor": 2500000,
+			"pj": 27,
+			"goles": 1,
+			"min": 1864,
+			"ovr": 63,
+			"debut": {
+				"club": "IND",
+				"anio": 2026
+			},
+			"college": "Club Deportivo Gimnasia y Esgrima (Mendoza)"
+		},
+		{
+			"n": "10",
+			"nombre": "Luciano",
+			"apellido": "Cabral",
+			"pos": "Mediocentro ofensivo",
+			"nac": "26/04/1995",
+			"pais": "Chile",
+			"altura": 1.72,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 750000,
+			"pj": 17,
+			"goles": 2,
+			"min": 503,
+			"ovr": 59,
+			"debut": {
+				"club": "ARG",
+				"anio": 2014
+			},
+			"college": "Comisión de Actividades Infantiles"
+		},
+		{
+			"n": "24",
+			"nombre": "Josias",
+			"apellido": "Palais",
+			"pos": "Mediocentro ofensivo",
+			"nac": "11/04/2006",
+			"pais": "Argentina",
+			"altura": 1.81,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 300000,
+			"pj": 11,
+			"goles": 0,
+			"min": 525,
+			"ovr": 49,
+			"debut": {
+				"club": "IND",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "19",
+			"nombre": "Matías",
+			"apellido": "Abaldo",
+			"pos": "Extremo izquierdo",
+			"nac": "03/04/2004",
+			"pais": "Uruguay",
+			"altura": 1.72,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 5000000,
+			"pj": 33,
+			"goles": 5,
+			"min": 2225,
+			"ovr": 67,
+			"debut": {
+				"club": null,
+				"anio": 2022
+			},
+			"college": "Defensor Sporting Club"
+		},
+		{
+			"n": null,
+			"nombre": "Rodrigo",
+			"apellido": "Márquez",
+			"pos": "Extremo izquierdo",
+			"nac": "15/02/2002",
+			"pais": "Argentina",
+			"altura": 1.77,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 100000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 38,
+			"debut": {
+				"club": "IND",
+				"anio": 2021
+			}
+		},
+		{
+			"n": "7",
+			"nombre": "Santiago",
+			"apellido": "Montiel",
+			"pos": "Extremo derecho",
+			"nac": "22/11/2000",
+			"pais": "Argentina",
+			"altura": 1.66,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2028",
+			"valor": 4000000,
+			"pj": 30,
+			"goles": 5,
+			"min": 2123,
+			"ovr": 70,
+			"debut": {
+				"club": "ARG",
+				"anio": 2023
+			},
+			"college": "Club Atlético River Plate"
+		},
+		{
+			"n": "8",
+			"nombre": "Maximiliano",
+			"apellido": "Meza",
+			"pos": "Extremo derecho",
+			"nac": "15/12/1992",
+			"pais": "Argentina",
+			"altura": 1.81,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 700000,
+			"pj": 16,
+			"goles": 4,
+			"min": 819,
+			"fichado": "01/07/2026",
+			"ovr": 62,
+			"debut": {
+				"club": "GIM",
+				"anio": 2012
+			}
+		},
+		{
+			"n": "15",
+			"nombre": "Imanol",
+			"apellido": "Machuca",
+			"pos": "Extremo derecho",
+			"nac": "15/01/2000",
+			"pais": "Malaysia",
+			"altura": 1.7,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": null,
+			"pj": 2,
+			"goles": 0,
+			"min": 62,
+			"fichado": "31/07/2026",
+			"ovr": 52,
+			"debut": {
+				"club": "UNI",
+				"anio": 2021
+			}
+		},
+		{
+			"n": "9",
+			"nombre": "Iván",
+			"apellido": "Morales",
+			"pos": "Delantero centro",
+			"nac": "29/07/1999",
+			"pais": "Chile",
+			"altura": 1.8,
+			"pie": "Derecho",
+			"contrato": "30/06/2027",
+			"valor": 1500000,
+			"pj": 8,
+			"goles": 0,
+			"min": 216,
+			"fichado": "08/09/2026",
+			"ovr": 57,
+			"debut": {
+				"club": null,
+				"anio": 2017
+			},
+			"college": "Club Social y Deportivo Colo-Colo"
+		},
+		{
+			"n": "6",
+			"nombre": "Ezequiel",
+			"apellido": "Ávila",
+			"pos": "Delantero centro",
+			"nac": "06/02/1994",
+			"pais": "Argentina",
+			"altura": 1.72,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 1000000,
+			"pj": 9,
+			"goles": 0,
+			"min": 542,
+			"fichado": "18/08/2026",
+			"ovr": 66,
+			"debut": {
+				"club": null,
+				"anio": 2011
+			},
+			"college": "Club Atlético Tiro Federal Argentino"
+		},
+		{
+			"n": "34",
+			"nombre": "Felipe",
+			"apellido": "Tempone",
+			"pos": "Delantero centro",
+			"nac": "03/02/2006",
+			"pais": "Argentina",
+			"altura": 1.84,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 100000,
+			"pj": 16,
+			"goles": 2,
+			"min": 344,
+			"ovr": 50,
+			"debut": {
+				"club": "IND",
+				"anio": 2026
+			},
+			"college": "Club Atlético River Plate"
+		}
+	]
+}

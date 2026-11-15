@@ -60,6 +60,39 @@ const ECONOMIA = {
 };
 Object.assign(ga, ECONOMIA);
 
+// Países: el nombre tiene que ser el del juego para que aparezca la bandera, y
+// los que no tienen bandera en el juego (o la tienen vieja) llevan una imagen
+const PAISES = {
+	renombrar: { "São Tomé and Príncipe": "Sao Tome and Principe" } as Record<
+		string,
+		string
+	>,
+	banderas: {
+		Syria:
+			"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Flag_of_Syria_%282025-%29.svg/1280px-Flag_of_Syria_%282025-%29.svg.png",
+	} as Record<string, string>,
+};
+const bio = ga.playerBioInfo;
+for (const [viejo, nuevo] of Object.entries(PAISES.renombrar)) {
+	for (const p of league.players) {
+		if (p.born?.loc === viejo) {
+			p.born.loc = nuevo;
+		} else if (p.born?.loc?.endsWith(`, ${viejo}`)) {
+			p.born.loc = p.born.loc.replace(`, ${viejo}`, `, ${nuevo}`);
+		}
+	}
+	for (const key of ["countries", "frequencies"]) {
+		if (bio?.[key]?.[viejo] !== undefined) {
+			bio[key][nuevo] = bio[key][viejo];
+			delete bio[key][viejo];
+		}
+	}
+}
+for (const [pais, flag] of Object.entries(PAISES.banderas)) {
+	bio.countries ??= {};
+	bio.countries[pais] = { ...bio.countries[pais], flag };
+}
+
 // Los contratos que ya estaban en el archivo (jugadores de 2023) pasan a la
 // escala nueva, en la misma proporción entre el mínimo y el máximo
 const reescalar = (amount: number) =>
