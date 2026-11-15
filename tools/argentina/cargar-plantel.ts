@@ -60,6 +60,25 @@ const ECONOMIA = {
 };
 Object.assign(ga, ECONOMIA);
 
+// Ajustes de liga decididos en la fase 2
+Object.assign(ga, {
+	// Muertes trágicas, pero la mitad de frecuentes que en el juego
+	tragicDeathRate: 0.0001,
+	// Ventaja de local más fuerte que en el básquet
+	homeCourtAdvantage: 2,
+	// Partido de las Estrellas sin concursos de volcadas ni de triples
+	allStarDunk: false,
+	allStarThree: false,
+});
+
+// Equipo del usuario por defecto (al crear la liga se puede elegir cualquier
+// equipo activo; Colón no, porque en 2026 está inactivo)
+{
+	const tid = league.teams.find((t: any) => t.abbrev === "RIE").tid;
+	ga.userTid = [{ start: null, value: tid }];
+	ga.userTids = [tid];
+}
+
 // Países: el nombre tiene que ser el del juego para que aparezca la bandera, y
 // los que no tienen bandera en el juego (o la tienen vieja) llevan una imagen
 const PAISES = {
