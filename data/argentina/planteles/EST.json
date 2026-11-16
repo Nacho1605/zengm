@@ -67,7 +67,7 @@
 				"anio": 2004
 			},
 			"college": "Montevideo Wanderers Fútbol Club",
-			"ovr": 69
+			"ovr": 70
 		},
 		{
 			"n": "1",
@@ -128,7 +128,7 @@
 				"anio": 2024
 			},
 			"college": "Club Costa Brava (General Pico)",
-			"ovr": 68,
+			"ovr": 69,
 			"rasgos": ["aereo"]
 		},
 		{
@@ -212,7 +212,7 @@
 				"club": "EST",
 				"anio": 2009
 			},
-			"ovr": 63,
+			"ovr": 65,
 			"rasgos": ["aereo"]
 		},
 		{
@@ -316,7 +316,7 @@
 				"anio": 2022
 			},
 			"college": "Club Atlético Boca Juniors",
-			"ovr": 64
+			"ovr": 63
 		},
 		{
 			"n": "20",
@@ -528,7 +528,7 @@
 				"club": "EST",
 				"anio": 2024
 			},
-			"ovr": 64
+			"ovr": 66
 		},
 		{
 			"n": "18",
@@ -549,7 +549,7 @@
 				"anio": 2016
 			},
 			"college": "Rocha Fútbol Club",
-			"ovr": 68
+			"ovr": 70
 		},
 		{
 			"n": "28",
@@ -631,7 +631,7 @@
 				"club": "EST",
 				"anio": 2013
 			},
-			"ovr": 64
+			"ovr": 66
 		},
 		{
 			"n": "19",
@@ -693,7 +693,7 @@
 				"club": "COL",
 				"anio": 2011
 			},
-			"ovr": 56
+			"ovr": 59
 		}
 	]
 }
