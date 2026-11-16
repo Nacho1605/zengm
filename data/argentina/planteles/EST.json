@@ -128,7 +128,7 @@
 				"anio": 2024
 			},
 			"college": "Club Costa Brava (General Pico)",
-			"ovr": 69,
+			"ovr": 68,
 			"rasgos": ["aereo"]
 		},
 		{
@@ -212,7 +212,7 @@
 				"club": "EST",
 				"anio": 2009
 			},
-			"ovr": 60,
+			"ovr": 63,
 			"rasgos": ["aereo"]
 		},
 		{
@@ -316,7 +316,7 @@
 				"anio": 2022
 			},
 			"college": "Club Atlético Boca Juniors",
-			"ovr": 65
+			"ovr": 64
 		},
 		{
 			"n": "20",
@@ -399,7 +399,7 @@
 				"anio": 2014
 			},
 			"college": "Club Atlético Vélez Sarsfield",
-			"ovr": 67,
+			"ovr": 66,
 			"parientes": [
 				{
 					"tipo": "brother",
@@ -425,7 +425,7 @@
 				"club": "TIG",
 				"anio": 2015
 			},
-			"ovr": 68
+			"ovr": 67
 		},
 		{
 			"n": "52",
@@ -466,7 +466,7 @@
 				"club": "RAC",
 				"anio": 2023
 			},
-			"ovr": 63
+			"ovr": 64
 		},
 		{
 			"n": "34",
@@ -610,7 +610,7 @@
 				"club": "EST",
 				"anio": 2025
 			},
-			"ovr": 64
+			"ovr": 65
 		},
 		{
 			"n": "32",
