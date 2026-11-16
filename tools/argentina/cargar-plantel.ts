@@ -445,6 +445,13 @@ const generarRatings = (j: any, pos: string, edad: number, ovrMeta: number) => {
 			sumar("ins", 3);
 		}
 	}
+	// Rasgos indicados en el plantel (dan forma, el OVR no cambia)
+	if (j.rasgos?.includes("aereo")) {
+		// Gran cabeceador
+		sumar("jmp", 8);
+		sumar("dnk", 5);
+		sumar("reb", 4);
+	}
 	for (const k of KEYS) {
 		if (k !== "hgt") {
 			sumar(k, (rand() - 0.5) * 6);
@@ -549,7 +556,8 @@ const cargar = (plantel: any) => {
 		const pos = posicion(j.pos, j.pie);
 		const ovrMeta = j.ovr ?? ovrSugerido(j, edad);
 		const r = generarRatings(j, pos, edad, ovrMeta);
-		const exp = j.contrato ? parseFecha(j.contrato).y : SEASON;
+		// Contrato sin fecha en Transfermarkt ("-"): hasta 2027
+		const exp = j.contrato ? parseFecha(j.contrato).y : SEASON + 1;
 		const amount = sueldo(j.valor, ovrMeta);
 		const cm = j.altura * 100;
 
@@ -736,6 +744,50 @@ const TABLA_ANUAL_2026: Record<string, number> = {
 
 for (const file of plantelFiles) {
 	cargar(JSON.parse(readFileSync(file, "utf8")));
+}
+
+// Parientes ("parientes": [{ "tipo": "brother", "nombre": "..." }]), en los dos
+// sentidos. Se resuelven al final, cuando ya están todos los planteles
+{
+	const VUELTA: Record<string, string> = {
+		brother: "brother",
+		son: "father",
+		father: "son",
+	};
+	const buscar = (nombre: string) =>
+		league.players.filter(
+			(p: any) =>
+				p.tid !== -3 && norm(`${p.firstName} ${p.lastName}`) === norm(nombre),
+		);
+	for (const file of plantelFiles) {
+		const plantel = JSON.parse(readFileSync(file, "utf8"));
+		for (const j of plantel.jugadores) {
+			for (const { tipo, nombre } of j.parientes ?? []) {
+				const [p] = buscar(`${j.nombre} ${j.apellido}`);
+				const otros = buscar(nombre);
+				if (!p || otros.length !== 1) {
+					console.log(
+						`Pariente sin resolver: ${j.nombre} ${j.apellido} -> ${nombre} (${otros.length})`,
+					);
+					continue;
+				}
+				const otro = otros[0];
+				const agregar = (a: any, b: any, type: string) => {
+					a.relatives = (a.relatives ?? []).filter((r: any) => r.pid !== b.pid);
+					a.relatives.push({
+						type,
+						pid: b.pid,
+						name: `${b.firstName} ${b.lastName}`,
+					});
+				};
+				agregar(p, otro, tipo);
+				agregar(otro, p, VUELTA[tipo] ?? tipo);
+				console.log(
+					`Parientes: ${p.firstName} ${p.lastName} (${tipo}) ${otro.firstName} ${otro.lastName}`,
+				);
+			}
+		}
+	}
 }
 console.log(
 	"\n* OVR indicado en el plantel; el resto, sugerido por la fórmula",

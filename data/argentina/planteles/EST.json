@@ -1,7 +1,52 @@
 {
 	"equipo": "EST",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario). PENDIENTE: debut, inferiores, OVR, lesiones",
-	"reemplaza": [],
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"reemplaza": [
+		{
+			"nombre": "Tomás Palacios",
+			"nacimiento": 2004
+		},
+		{
+			"nombre": "Leandro González Pírez",
+			"nacimiento": 1992
+		},
+		{
+			"nombre": "Marcos Rojo",
+			"nacimiento": 1990
+		},
+		{
+			"nombre": "Ramiro Funes Mori",
+			"nacimiento": 1991
+		},
+		{
+			"nombre": "Eros Mancuso",
+			"nacimiento": 2000
+		},
+		{
+			"nombre": "Eric Meza",
+			"nacimiento": 2000
+		},
+		{
+			"nombre": "Jalil Elías",
+			"nacimiento": 1996
+		},
+		{
+			"nombre": "Alexis Castro",
+			"nacimiento": 1995
+		},
+		{
+			"nombre": "José Sosa",
+			"nacimiento": 1986
+		},
+		{
+			"nombre": "Brian Aguirre",
+			"nacimiento": 2003
+		},
+		{
+			"nombre": "Guido Carrillo",
+			"nacimiento": 1992
+		}
+	],
 	"jugadores": [
 		{
 			"n": "16",
@@ -17,7 +62,12 @@
 			"pj": 38,
 			"goles": 0,
 			"min": 3375,
-			"debut": null
+			"debut": {
+				"club": null,
+				"anio": 2004
+			},
+			"college": "Montevideo Wanderers Fútbol Club",
+			"ovr": 69
 		},
 		{
 			"n": "1",
@@ -33,7 +83,11 @@
 			"pj": 13,
 			"goles": 0,
 			"min": 1125,
-			"debut": null
+			"debut": {
+				"club": "EST",
+				"anio": 2024
+			},
+			"ovr": 57
 		},
 		{
 			"n": "12",
@@ -49,7 +103,11 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"debut": null
+			"debut": {
+				"club": "EST",
+				"anio": 2026
+			},
+			"ovr": 40
 		},
 		{
 			"n": "24",
@@ -65,7 +123,13 @@
 			"pj": 34,
 			"goles": 1,
 			"min": 2869,
-			"debut": null
+			"debut": {
+				"club": "TAL",
+				"anio": 2024
+			},
+			"college": "Club Costa Brava (General Pico)",
+			"ovr": 69,
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": "4",
@@ -81,7 +145,12 @@
 			"pj": 34,
 			"goles": 1,
 			"min": 2651,
-			"debut": null
+			"debut": {
+				"club": "EST",
+				"anio": 2021
+			},
+			"ovr": 66,
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": "14",
@@ -97,7 +166,12 @@
 			"pj": 38,
 			"goles": 2,
 			"min": 3134,
-			"debut": null
+			"debut": {
+				"club": "RIV",
+				"anio": 2012
+			},
+			"ovr": 67,
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": "35",
@@ -113,7 +187,11 @@
 			"pj": 5,
 			"goles": 0,
 			"min": 220,
-			"debut": null
+			"debut": {
+				"club": "EST",
+				"anio": 2025
+			},
+			"ovr": 48
 		},
 		{
 			"n": "5",
@@ -130,7 +208,12 @@
 			"goles": 0,
 			"min": 347,
 			"fichado": "10/10/2026",
-			"debut": null
+			"debut": {
+				"club": "EST",
+				"anio": 2009
+			},
+			"ovr": 60,
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": "26",
@@ -146,7 +229,11 @@
 			"pj": 10,
 			"goles": 0,
 			"min": 660,
-			"debut": null
+			"debut": {
+				"club": "RIV",
+				"anio": 2011
+			},
+			"ovr": 56
 		},
 		{
 			"n": "15",
@@ -162,7 +249,12 @@
 			"pj": 2,
 			"goles": 0,
 			"min": 46,
-			"debut": null
+			"debut": {
+				"club": null,
+				"anio": 2017
+			},
+			"college": "Club Cerro Porteño",
+			"ovr": 57
 		},
 		{
 			"n": "13",
@@ -178,7 +270,12 @@
 			"pj": 37,
 			"goles": 0,
 			"min": 3116,
-			"debut": null
+			"debut": {
+				"club": "GBR",
+				"anio": 2022
+			},
+			"college": "Club Estudiantes de La Plata",
+			"ovr": 66
 		},
 		{
 			"n": "36",
@@ -194,7 +291,11 @@
 			"pj": 4,
 			"goles": 0,
 			"min": 296,
-			"debut": null
+			"debut": {
+				"club": "EST",
+				"anio": 2026
+			},
+			"ovr": 46
 		},
 		{
 			"n": "40",
@@ -210,7 +311,12 @@
 			"pj": 34,
 			"goles": 1,
 			"min": 2154,
-			"debut": null
+			"debut": {
+				"club": "EST",
+				"anio": 2022
+			},
+			"college": "Club Atlético Boca Juniors",
+			"ovr": 65
 		},
 		{
 			"n": "20",
@@ -226,7 +332,11 @@
 			"pj": 38,
 			"goles": 0,
 			"min": 2576,
-			"debut": null
+			"debut": {
+				"club": "COL",
+				"anio": 2021
+			},
+			"ovr": 65
 		},
 		{
 			"n": "39",
@@ -243,7 +353,11 @@
 			"goles": 0,
 			"min": 109,
 			"fichado": "02/09/2026",
-			"debut": null
+			"debut": {
+				"club": "NOB",
+				"anio": 2015
+			},
+			"ovr": 56
 		},
 		{
 			"n": "8",
@@ -259,7 +373,12 @@
 			"pj": 31,
 			"goles": 0,
 			"min": 1416,
-			"debut": null
+			"debut": {
+				"club": null,
+				"anio": 2017
+			},
+			"college": "Club Nacional de Football",
+			"ovr": 64
 		},
 		{
 			"n": "21",
@@ -275,7 +394,18 @@
 			"pj": 42,
 			"goles": 1,
 			"min": 3393,
-			"debut": null
+			"debut": {
+				"club": "LAM",
+				"anio": 2014
+			},
+			"college": "Club Atlético Vélez Sarsfield",
+			"ovr": 67,
+			"parientes": [
+				{
+					"tipo": "brother",
+					"nombre": "Gonzalo Piovi"
+				}
+			]
 		},
 		{
 			"n": "22",
@@ -291,7 +421,11 @@
 			"pj": 45,
 			"goles": 8,
 			"min": 2415,
-			"debut": null
+			"debut": {
+				"club": "TIG",
+				"anio": 2015
+			},
+			"ovr": 68
 		},
 		{
 			"n": "52",
@@ -307,7 +441,11 @@
 			"pj": 7,
 			"goles": 0,
 			"min": 336,
-			"debut": null
+			"debut": {
+				"club": "EST",
+				"anio": 2022
+			},
+			"ovr": 52
 		},
 		{
 			"n": "31",
@@ -324,7 +462,11 @@
 			"goles": 1,
 			"min": 1081,
 			"fichado": "08/08/2026",
-			"debut": null
+			"debut": {
+				"club": "RAC",
+				"anio": 2023
+			},
+			"ovr": 63
 		},
 		{
 			"n": "34",
@@ -341,7 +483,12 @@
 			"goles": 1,
 			"min": 225,
 			"fichado": "29/08/2026",
-			"debut": null
+			"debut": {
+				"club": null,
+				"anio": 2022
+			},
+			"college": "Deportivo Independiente Medellín",
+			"ovr": 59
 		},
 		{
 			"n": "7",
@@ -357,7 +504,11 @@
 			"pj": 20,
 			"goles": 0,
 			"min": 584,
-			"debut": null
+			"debut": {
+				"club": "EST",
+				"anio": 2002
+			},
+			"ovr": 58
 		},
 		{
 			"n": "17",
@@ -373,7 +524,11 @@
 			"pj": 35,
 			"goles": 2,
 			"min": 2029,
-			"debut": null
+			"debut": {
+				"club": "EST",
+				"anio": 2024
+			},
+			"ovr": 64
 		},
 		{
 			"n": "18",
@@ -389,7 +544,12 @@
 			"pj": 42,
 			"goles": 3,
 			"min": 1771,
-			"debut": null
+			"debut": {
+				"club": null,
+				"anio": 2016
+			},
+			"college": "Rocha Fútbol Club",
+			"ovr": 68
 		},
 		{
 			"n": "28",
@@ -405,7 +565,11 @@
 			"pj": 27,
 			"goles": 1,
 			"min": 880,
-			"debut": null
+			"debut": {
+				"club": "NOB",
+				"anio": 2022
+			},
+			"ovr": 62
 		},
 		{
 			"n": "10",
@@ -421,7 +585,12 @@
 			"pj": 33,
 			"goles": 9,
 			"min": 2108,
-			"debut": null
+			"debut": {
+				"club": "PLA",
+				"anio": 2020
+			},
+			"college": "Club Atlético River Plate",
+			"ovr": 69
 		},
 		{
 			"n": "29",
@@ -437,7 +606,11 @@
 			"pj": 36,
 			"goles": 6,
 			"min": 1671,
-			"debut": null
+			"debut": {
+				"club": "EST",
+				"anio": 2025
+			},
+			"ovr": 64
 		},
 		{
 			"n": "32",
@@ -454,7 +627,11 @@
 			"goles": 1,
 			"min": 836,
 			"fichado": "07/08/2026",
-			"debut": null
+			"debut": {
+				"club": "EST",
+				"anio": 2013
+			},
+			"ovr": 64
 		},
 		{
 			"n": "19",
@@ -470,7 +647,12 @@
 			"pj": 27,
 			"goles": 4,
 			"min": 1146,
-			"debut": null
+			"debut": {
+				"club": "SLO",
+				"anio": 2018
+			},
+			"ovr": 62,
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": "9",
@@ -486,7 +668,12 @@
 			"pj": 41,
 			"goles": 10,
 			"min": 2888,
-			"debut": null
+			"debut": {
+				"club": "EST",
+				"anio": 2011
+			},
+			"ovr": 69,
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": "27",
@@ -502,7 +689,11 @@
 			"pj": 17,
 			"goles": 1,
 			"min": 460,
-			"debut": null
+			"debut": {
+				"club": "COL",
+				"anio": 2011
+			},
+			"ovr": 56
 		}
 	]
 }
