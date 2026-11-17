@@ -62,7 +62,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2018
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOfrr8vQe2JxxGpTFb5yMBACmXjbbrAQMHjlP1gCn6bw&s=10"
 		},
 		{
 			"n": "20",
@@ -82,7 +83,8 @@
 			"debut": {
 				"club": "BAN",
 				"anio": 2017
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm9WBX3mwwT1GwYniFL9sY3otDWqePaxO_DU5aiwT9yA&s=10"
 		},
 		{
 			"n": "1",
@@ -102,7 +104,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2018
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYRZeMXn5Tdg0EwTJM-OaALOCQR8c2kMflODzg6KNjw&s"
 		},
 		{
 			"n": "23",
@@ -123,7 +126,8 @@
 				"club": "SMJ",
 				"anio": 2020
 			},
-			"college": "Club Atlético Huracán (San Rafael)"
+			"college": "Club Atlético Huracán (San Rafael)",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQHAaGKGgQgHR7_PjRPMYdcyujYHh1qr06qBfQlzTaw&s=10"
 		},
 		{
 			"n": "36",
@@ -143,7 +147,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJemrXuUK8oJTgmEN1mpqVWrD53mDbDdLyXTfTtD8eZA&s=10"
 		},
 		{
 			"n": "2",
@@ -165,7 +170,8 @@
 				"club": null,
 				"anio": 2017
 			},
-			"college": "Patriotas Boyacá"
+			"college": "Patriotas Boyacá",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp-n11YHmzjWCQThJTfJS8ZoEVnOp-uTFyWMp520EzWA&s=10"
 		},
 		{
 			"n": "19",
@@ -186,7 +192,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2015
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO53WcL1ppXibSu2LU_QIcKPcZsJRba6wsCwzpe4rjzg&s=10"
 		},
 		{
 			"n": "42",
@@ -206,7 +213,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFWPNcSQRGBP2zOe9vzw58WM5l2fbHHJAhXXZysBzXbQ&s=10"
 		},
 		{
 			"n": "16",
@@ -227,7 +235,8 @@
 				"club": null,
 				"anio": 2017
 			},
-			"college": "Club Nacional de Football"
+			"college": "Club Nacional de Football",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ8B83O9jgl7Ts7m8z0V_qHftkVz4TEsGvVbRqMsjFJQ&s=10"
 		},
 		{
 			"n": "35",
@@ -267,7 +276,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6uhXOIqK20PkMb-is1k9B_vKB1qtaXzBgS2WHw479Tg&s=10"
 		},
 		{
 			"n": "6",
@@ -288,7 +298,8 @@
 				"club": "BAN",
 				"anio": 2024
 			},
-			"college": "Club Atlético Peñarol"
+			"college": "Club Atlético Peñarol",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3djT0b2rrAW5LmVMQZe4iQUypgVfg5iefxQrV1G4g5Q&s=10"
 		},
 		{
 			"n": "32",
@@ -308,7 +319,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdMn5J4nhZsbiSfPYNcLDeUy4oiHXQllDNDH42eZvtdA&s=10"
 		},
 		{
 			"n": "30",
@@ -328,7 +340,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzrFmyblDAvHQw7gLAB-Gt_k4c3H7rd0RjNZ2BSewxew&s=10"
 		},
 		{
 			"n": "5",
@@ -348,7 +361,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZLKUIvwTjbnpvGCcTqTIotF8OVxrydwHY4ToC_WmBhg&s=10"
 		},
 		{
 			"n": "24",
@@ -368,7 +382,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2015
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXoI6WwvxpX9Fp4FhZLQyCOhrk5VU9p0i9tBvBMb9b1Q&s=10"
 		},
 		{
 			"n": "27",
@@ -390,7 +405,8 @@
 				"club": "TRE",
 				"anio": 2021
 			},
-			"college": "Racing Club"
+			"college": "Racing Club",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQluAwmudwe-TQ-kxbFdhEmGuMXZW2XNO3WLmImtW9s2Q&s=10"
 		},
 		{
 			"n": "26",
@@ -410,7 +426,8 @@
 			"debut": {
 				"club": "GOD",
 				"anio": 2020
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZD1paZr2903YCPBbUq38A0g3tjN6_UBsutehtMpgU0g&s=10"
 		},
 		{
 			"n": "8",
@@ -430,7 +447,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2018
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPToip7iTBXivYEqw-2MiiKMmjzi0-5Q07nLlR5NfUFg&s=10"
 		},
 		{
 			"n": "15",
@@ -451,7 +469,8 @@
 				"club": "IRM",
 				"anio": 2024
 			},
-			"college": "Club Atlético Lanús"
+			"college": "Club Atlético Lanús",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQpxcliQwHFIrdmbMg1iviy2_Yua-ohvXvNidIADMbaw&s=10"
 		},
 		{
 			"n": "13",
@@ -471,7 +490,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBEkigf10YMutqt_k4t-MuPIxd743-PHzc4oNLdXN_ew&s=10"
 		},
 		{
 			"n": "62",
@@ -491,7 +511,8 @@
 			"debut": {
 				"club": "RAF",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIhxm5rgfYwK1lwlPK1M4cEF0zdAXxlnLuMQ3IqjTYFg&s"
 		},
 		{
 			"n": "10",
@@ -511,7 +532,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEbDVrTKLCDu7pj6TSlY5sCcg-V8kf2pqTDACgwj2kgw&s=10"
 		},
 		{
 			"n": "38",
@@ -532,7 +554,8 @@
 			"debut": {
 				"club": "COL",
 				"anio": 2020
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKFrpTrwJ-xyHXIRPFYrJrPgkAcH-L2MZAO-4HuqSKw&s=10"
 		},
 		{
 			"n": "28",
@@ -556,7 +579,8 @@
 			"lesion": {
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 20
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZayjXpLh1giq1Z-44ODrIPQ6kj0MOGxWaU0virDVMjw&s=10"
 		},
 		{
 			"n": "14",
@@ -576,7 +600,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ1FpxMlzQpCG0kZYdaZu-7ruehJI0NLUzEhr-NdAd_Q&s=10"
 		},
 		{
 			"n": "22",
@@ -597,7 +622,8 @@
 			"debut": {
 				"club": "BAN",
 				"anio": 2017
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNA2zS92QDraID5cSeEo52oz7Wj3AsYS3mvdG06raiSQ&s=10"
 		},
 		{
 			"n": "7",
@@ -617,7 +643,8 @@
 			"debut": {
 				"club": "SAR",
 				"anio": 2012
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqKZaFkw8fzejHQtt2QAp37gFRvXAG6J18hc1G-SBDBw&s=10"
 		},
 		{
 			"n": "9",
@@ -638,7 +665,8 @@
 				"club": "BAR",
 				"anio": 2019
 			},
-			"college": "Racing Club"
+			"college": "Racing Club",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJM6hTSvBVEmqZs7VKqtryMR7ssLqBgrzLfE9FMQc-Jw&s=10"
 		},
 		{
 			"n": "29",
@@ -659,7 +687,8 @@
 				"club": null,
 				"anio": 2019
 			},
-			"college": "Club Plaza Colonia de Deportes"
+			"college": "Club Plaza Colonia de Deportes",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/690727-1755788528.jpg?lm=4711"
 		},
 		{
 			"n": "21",
@@ -680,7 +709,8 @@
 			"debut": {
 				"club": "CIP",
 				"anio": 2014
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTin-uX1cBQFB9poK0MtXCYchfXDKus8c0hy7WXOE-N_Q&s=10"
 		},
 		{
 			"n": "18",
@@ -701,10 +731,11 @@
 				"club": null,
 				"anio": 2015
 			},
-			"college": "Deportivo Independiente Medellín"
+			"college": "Deportivo Independiente Medellín",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbNLFHufae1utzrd7HANUGFFqbg8Sh9D6ekvgYB-sH2Q&s=10"
 		},
 		{
-			"n": null,
+			"n": "54",
 			"nombre": "Branco",
 			"apellido": "Salinardi",
 			"pos": "Delantero centro",
@@ -721,7 +752,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVfEXqPBC6RU7tukyXjleAEjSjW732fHjL4LtE3R5Wgw&s=10"
 		}
 	]
 }

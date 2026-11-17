@@ -67,7 +67,8 @@
 				"anio": 2004
 			},
 			"college": "Montevideo Wanderers Fútbol Club",
-			"ovr": 70
+			"ovr": 70,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCFdgZX3bMBgCvS4Zv8JJD0trk-xAC-N255nCBNA-7VA&s=10"
 		},
 		{
 			"n": "1",
@@ -87,7 +88,8 @@
 				"club": "EST",
 				"anio": 2024
 			},
-			"ovr": 57
+			"ovr": 57,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4-S5b-QgZhutgBFiwXizBgv-1QzMLd_cagy1UsexFjw&s=10"
 		},
 		{
 			"n": "12",
@@ -107,7 +109,8 @@
 				"club": "EST",
 				"anio": 2026
 			},
-			"ovr": 40
+			"ovr": 40,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8kXZu-gFmXlhdaj_m8xGEqwpP6r3RDgngo13cCQ1GA&s=10"
 		},
 		{
 			"n": "24",
@@ -129,7 +132,8 @@
 			},
 			"college": "Club Costa Brava (General Pico)",
 			"ovr": 69,
-			"rasgos": ["aereo"]
+			"rasgos": ["aereo"],
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLUaPo7djYwsxgbmQoJOG8i5r5MsPFMAt6Lue1i6wOww&s=10"
 		},
 		{
 			"n": "4",
@@ -150,7 +154,8 @@
 				"anio": 2021
 			},
 			"ovr": 66,
-			"rasgos": ["aereo"]
+			"rasgos": ["aereo"],
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjYNn8rV0XqFjmxXKrMl8rXGmUYSDA__DmqYweIfne3Q&s=10"
 		},
 		{
 			"n": "14",
@@ -171,7 +176,8 @@
 				"anio": 2012
 			},
 			"ovr": 67,
-			"rasgos": ["aereo"]
+			"rasgos": ["aereo"],
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_TflhAjaPK0ZcXfqYhrMVE3qYBZDAY0GnvMLK2iBQGw&s=10"
 		},
 		{
 			"n": "35",
@@ -191,7 +197,8 @@
 				"club": "EST",
 				"anio": 2025
 			},
-			"ovr": 48
+			"ovr": 48,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlpvI56knTpToEi4Sqi8SQQIHJVTkQsshZFHziq1tHfg&s=10"
 		},
 		{
 			"n": "5",
@@ -213,7 +220,8 @@
 				"anio": 2009
 			},
 			"ovr": 65,
-			"rasgos": ["aereo"]
+			"rasgos": ["aereo"],
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQex3kmtIvSjheCAB-xe7BJXcOybZX2AcARAA1Sf4y2w&s=10"
 		},
 		{
 			"n": "26",
@@ -233,7 +241,8 @@
 				"club": "RIV",
 				"anio": 2011
 			},
-			"ovr": 56
+			"ovr": 56,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJknT_OMYRqf_zFX5Mr-J77o4G1QnbzfkW85qsXlJMsA&s=10"
 		},
 		{
 			"n": "15",
@@ -254,7 +263,8 @@
 				"anio": 2017
 			},
 			"college": "Club Cerro Porteño",
-			"ovr": 57
+			"ovr": 57,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8n2BDSTTznWhayVWYewmhfeFdw75IGeT78qANEcR71Q&s=10"
 		},
 		{
 			"n": "13",
@@ -275,7 +285,8 @@
 				"anio": 2022
 			},
 			"college": "Club Estudiantes de La Plata",
-			"ovr": 66
+			"ovr": 66,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7OjjS4YKDiV-Y1IJT0sjN3gh_Jfe1dR8_wNXxNMbjOw&s=10"
 		},
 		{
 			"n": "36",
@@ -295,7 +306,8 @@
 				"club": "EST",
 				"anio": 2026
 			},
-			"ovr": 46
+			"ovr": 46,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1243110-1739829574.jpg?lm=4711"
 		},
 		{
 			"n": "40",
@@ -316,7 +328,8 @@
 				"anio": 2022
 			},
 			"college": "Club Atlético Boca Juniors",
-			"ovr": 63
+			"ovr": 63,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZaWEqv-F3wvoCOpLLkJfd2MlZ8sieL__aMOKWO2xt2A&s=10"
 		},
 		{
 			"n": "20",
@@ -336,7 +349,8 @@
 				"club": "COL",
 				"anio": 2021
 			},
-			"ovr": 65
+			"ovr": 65,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUn5hGg8txPmbLPA4KyJEEadi9_0p9uiJMTktf_tx4jg&s=10"
 		},
 		{
 			"n": "39",
@@ -357,7 +371,8 @@
 				"club": "NOB",
 				"anio": 2015
 			},
-			"ovr": 56
+			"ovr": 56,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9w34HUCVxYP0p8vabF6fMH-OgpNd43Cr4bHIFltaHVA&s=10"
 		},
 		{
 			"n": "8",
@@ -378,7 +393,8 @@
 				"anio": 2017
 			},
 			"college": "Club Nacional de Football",
-			"ovr": 64
+			"ovr": 64,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyDjvkPjattknjOsWjAF5y7p85e55PVNK9IvqktpoRUw&s=10"
 		},
 		{
 			"n": "21",
@@ -405,7 +421,8 @@
 					"tipo": "brother",
 					"nombre": "Gonzalo Piovi"
 				}
-			]
+			],
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRL2Vc_VmG3bBzAhB_kWCfbVvgT-EHquzvJY91ZzrRpA&s=10"
 		},
 		{
 			"n": "22",
@@ -425,7 +442,8 @@
 				"club": "TIG",
 				"anio": 2015
 			},
-			"ovr": 67
+			"ovr": 67,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlI9A2bgPtMLaddJCtdpqEPuzo7Ka7dU2bG9QJTlJidg&s=10"
 		},
 		{
 			"n": "52",
@@ -445,7 +463,8 @@
 				"club": "EST",
 				"anio": 2022
 			},
-			"ovr": 52
+			"ovr": 52,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrfPOZFG2F5byUJvuESQbTDoia0mLeZySSkeB9xwmkTw&s=10"
 		},
 		{
 			"n": "31",
@@ -466,7 +485,8 @@
 				"club": "RAC",
 				"anio": 2023
 			},
-			"ovr": 64
+			"ovr": 64,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy1R14ZeoeCgCwytkFu01fKeqR0-DdltjOaSOrywiQUg&s=10"
 		},
 		{
 			"n": "34",
@@ -488,7 +508,8 @@
 				"anio": 2022
 			},
 			"college": "Deportivo Independiente Medellín",
-			"ovr": 59
+			"ovr": 59,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR57Hah69_9GxKUsn-bBd1jd3dVbjYnPssgsClmWkaxcQ&s=10"
 		},
 		{
 			"n": "7",
@@ -508,7 +529,8 @@
 				"club": "EST",
 				"anio": 2002
 			},
-			"ovr": 58
+			"ovr": 58,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRukuG4GxRrHnfqB1qJWa8S79c25nIFTsLdaYxOqSIiWA&s=10"
 		},
 		{
 			"n": "17",
@@ -528,7 +550,8 @@
 				"club": "EST",
 				"anio": 2024
 			},
-			"ovr": 66
+			"ovr": 66,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGftzBkjP13wF9nfyoBUfgj6QVwHACANqw6fQ9p-Wcaw&s=10"
 		},
 		{
 			"n": "18",
@@ -549,7 +572,8 @@
 				"anio": 2016
 			},
 			"college": "Rocha Fútbol Club",
-			"ovr": 70
+			"ovr": 70,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUFEMP6eZnWbpseZ1-gAp2i6QUp6MXhOJOQg0Z_VpQQg&s=10"
 		},
 		{
 			"n": "28",
@@ -569,7 +593,8 @@
 				"club": "NOB",
 				"anio": 2022
 			},
-			"ovr": 62
+			"ovr": 62,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYRJ3wkEMkETLIFJu325k6FA6wqDmEur3TWDToSlfSEg&s"
 		},
 		{
 			"n": "10",
@@ -590,7 +615,8 @@
 				"anio": 2020
 			},
 			"college": "Club Atlético River Plate",
-			"ovr": 69
+			"ovr": 69,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRDXd7fxKPSJG2PU8TXrDuCG3PdWGCwhj4Uffsba7R8w&s=10"
 		},
 		{
 			"n": "29",
@@ -610,7 +636,8 @@
 				"club": "EST",
 				"anio": 2025
 			},
-			"ovr": 65
+			"ovr": 65,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYriG6TwU3cYJP8H75GGPHkZRTDZ78TT_xfBdt4Hv2qg&s=10"
 		},
 		{
 			"n": "32",
@@ -631,7 +658,24 @@
 				"club": "EST",
 				"anio": 2013
 			},
-			"ovr": 66
+			"ovr": 67,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKAGFMrFn3lnkf4250nN_bpf3Oa3a67oO_e1hWPXvt_Q&s=10",
+			"ratings": {
+				"stre": 47,
+				"spd": 48,
+				"jmp": 55,
+				"endu": 48,
+				"ins": 52,
+				"dnk": 55,
+				"ft": 62,
+				"fg": 60,
+				"tp": 59,
+				"oiq": 74,
+				"diq": 48,
+				"drb": 67,
+				"pss": 75,
+				"reb": 46
+			}
 		},
 		{
 			"n": "19",
@@ -651,8 +695,25 @@
 				"club": "SLO",
 				"anio": 2018
 			},
-			"ovr": 62,
-			"rasgos": ["aereo"]
+			"ovr": 59,
+			"rasgos": ["aereo"],
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-q1WykPkXpWJbeKTAKEo14iq-NhsPsZJYeuTRiBSHbQ&s=10",
+			"ratings": {
+				"stre": 70,
+				"spd": 49,
+				"jmp": 60,
+				"endu": 49,
+				"ins": 69,
+				"dnk": 72,
+				"ft": 48,
+				"fg": 59,
+				"tp": 45,
+				"oiq": 55,
+				"diq": 30,
+				"drb": 44,
+				"pss": 43,
+				"reb": 51
+			}
 		},
 		{
 			"n": "9",
@@ -673,7 +734,8 @@
 				"anio": 2011
 			},
 			"ovr": 69,
-			"rasgos": ["aereo"]
+			"rasgos": ["aereo"],
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx3Yue4b_eX4uccuO68X-hXsvxcMdUfg6PeMbbADyt_w&s=10"
 		},
 		{
 			"n": "27",
@@ -693,7 +755,24 @@
 				"club": "COL",
 				"anio": 2011
 			},
-			"ovr": 59
+			"ovr": 61,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQexvZfSt11fpPbwNiCt4XDxZpSLLesFKRs2uq0dXsfHQ&s=10",
+			"ratings": {
+				"stre": 61,
+				"spd": 45,
+				"jmp": 55,
+				"endu": 42,
+				"ins": 74,
+				"dnk": 69,
+				"ft": 56,
+				"fg": 61,
+				"tp": 52,
+				"oiq": 62,
+				"diq": 48,
+				"drb": 50,
+				"pss": 49,
+				"reb": 52
+			}
 		}
 	]
 }

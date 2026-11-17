@@ -52,7 +52,8 @@
 				"club": null,
 				"anio": 2014
 			},
-			"college": "Centro Atlético Fénix"
+			"college": "Centro Atlético Fénix",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRja3lu36qjhqiHhV4-vBYafZ8KO_UHPHYuQJtk5OWeyg&s=10"
 		},
 		{
 			"n": "33",
@@ -73,7 +74,8 @@
 				"club": "NOB",
 				"anio": 2013
 			},
-			"college": "Club Atlético River Plate"
+			"college": "Club Atlético River Plate",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ZT8ugcv8bBRj17DFRovfiDNpKDzqLCYAoMCkz7N3zQ&s=10"
 		},
 		{
 			"n": "1",
@@ -93,7 +95,8 @@
 			"debut": {
 				"club": "TAL",
 				"anio": 2020
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs4QzYgvUUwVmWPRYZyNtT3LcfkrytNMxJ4PvfBQr-tQ&s=10"
 		},
 		{
 			"n": "35",
@@ -113,7 +116,8 @@
 			"debut": {
 				"club": "IND",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNR50WwVEC7e1PWeSPz6Z0247wgQTTV12MkEm0khYnLQ&s"
 		},
 		{
 			"n": "36",
@@ -133,7 +137,8 @@
 			"debut": {
 				"club": "AND",
 				"anio": 2018
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw5yQb9ny-v-1OL2_fxNeG33JuWA53SMs6JCIX2oQ1rA&s=10"
 		},
 		{
 			"n": "2",
@@ -154,7 +159,8 @@
 			"debut": {
 				"club": "UNI",
 				"anio": 2020
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdnF816Tp7CQf-D3RlYiR6mFNfGzRfSTZLhJALT9GbQQ&s=10"
 		},
 		{
 			"n": "13",
@@ -174,7 +180,8 @@
 			"debut": {
 				"club": "SDM",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/997070-1707925618.JPG?lm=4711"
 		},
 		{
 			"n": "22",
@@ -194,7 +201,8 @@
 			"debut": {
 				"club": "ROS",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlYkqxXJOw9fAYGasJyOgXrSJWkJtLbe1l6te_d5sTXA&s=10"
 		},
 		{
 			"n": "5",
@@ -216,7 +224,8 @@
 				"club": "PNU",
 				"anio": 2018
 			},
-			"college": "Club Atlético Tigre"
+			"college": "Club Atlético Tigre",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu6QW8ZDkV7Nzfgkt92U1PVXs7OecgEv9lgBnGj6FBxg&s=10"
 		},
 		{
 			"n": "3",
@@ -236,7 +245,8 @@
 			"debut": {
 				"club": "IND",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgUctze3Q9jN8RL9v8PhhVVgMiV-ZBBsg54ZJD-LwOig&s=10"
 		},
 		{
 			"n": "4",
@@ -257,7 +267,8 @@
 				"club": null,
 				"anio": 2009
 			},
-			"college": "Club Deportivo La Equidad"
+			"college": "Club Deportivo La Equidad",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYp7xRjPE862pLG5m-16m6bE3z4RyDoJAvEra6e7GGWQ&s=10"
 		},
 		{
 			"n": "29",
@@ -277,7 +288,8 @@
 			"debut": {
 				"club": "RAF",
 				"anio": 2015
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAASNAuF_MgrmY6qM7SJFwAO7FLEyTb71NdMJnxuAMog&s=10"
 		},
 		{
 			"n": "32",
@@ -297,7 +309,8 @@
 			"debut": {
 				"club": "IND",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0tM4CeEwxx3A37fPvQaXjfz87j8T02q14DRjRIxb2Ng&s=10"
 		},
 		{
 			"n": "23",
@@ -317,7 +330,8 @@
 			"debut": {
 				"club": "ARS",
 				"anio": 2009
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9hxQeND1Fz6-Y_Wx4rKpR4GaKzJA7AngbdB3Tf9EFBQ&s=10"
 		},
 		{
 			"n": "37",
@@ -359,7 +373,8 @@
 			"debut": {
 				"club": "IND",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnQz8ilIbPUQUZ7DAnP2VyW9Srr1IBZkAlPDWX3QBWjA&s=10"
 		},
 		{
 			"n": "16",
@@ -380,7 +395,8 @@
 				"club": "IND",
 				"anio": 2026
 			},
-			"college": "Club Atlético Gimnasia y Esgrima (Mendoza)"
+			"college": "Club Atlético Gimnasia y Esgrima (Mendoza)",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3wCmBTOnQefoOjMsdA-2NU2E26ODTPXFTYQoD-buZRA&s=10"
 		},
 		{
 			"n": "10",
@@ -401,7 +417,8 @@
 				"club": "ARG",
 				"anio": 2014
 			},
-			"college": "Comisión de Actividades Infantiles"
+			"college": "Comisión de Actividades Infantiles",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl3J_mhyMwLvqsMp2ac16WX08Atgwmq3CoK8RJ8uZdow&s=10"
 		},
 		{
 			"n": "24",
@@ -421,7 +438,8 @@
 			"debut": {
 				"club": "IND",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeRi4YtgVWEaU_xb_abGyIBezYxguIKP2Dxd2QYHAX1PQRZs96k6j68S4&s=10"
 		},
 		{
 			"n": "19",
@@ -442,10 +460,11 @@
 				"club": null,
 				"anio": 2022
 			},
-			"college": "Defensor Sporting Club"
+			"college": "Defensor Sporting Club",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW2uN6BBLmhyBGgY8rXCLeeAKxjkXYApMkthMsgomX-w&s=10"
 		},
 		{
-			"n": null,
+			"n": "18",
 			"nombre": "Rodrigo",
 			"apellido": "Márquez",
 			"pos": "Extremo izquierdo",
@@ -462,7 +481,8 @@
 			"debut": {
 				"club": "IND",
 				"anio": 2021
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRTLPe5lm9Lt6yA9Gqlvk_zZcJd-S-PiqON-T1BrPYqA&s"
 		},
 		{
 			"n": "7",
@@ -483,7 +503,8 @@
 				"club": "ARG",
 				"anio": 2023
 			},
-			"college": "Club Atlético River Plate"
+			"college": "Club Atlético River Plate",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgmSqfuGMxiUMszv_A8cHqNYlP6JR9IsNwtJ6IC0LcLw&s=10"
 		},
 		{
 			"n": "8",
@@ -504,7 +525,8 @@
 			"debut": {
 				"club": "GIM",
 				"anio": 2012
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyX37r-9YFz1Xsc7NOq3x2bYr5VeIlXQE4U4U6-RSh9g&s"
 		},
 		{
 			"n": "15",
@@ -525,7 +547,8 @@
 			"debut": {
 				"club": "UNI",
 				"anio": 2021
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRf709gv8-srpz2R1sK_Cyfe3fzksnpKdtjCa_wNDGuw&s=10"
 		},
 		{
 			"n": "9",
@@ -547,7 +570,8 @@
 				"club": null,
 				"anio": 2017
 			},
-			"college": "Club Social y Deportivo Colo-Colo"
+			"college": "Club Social y Deportivo Colo-Colo",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWrz-uFJVQgtpdNJjMxVlGEnSADuUyvkaQD4HuoG4foQ&s=10"
 		},
 		{
 			"n": "6",
@@ -569,7 +593,8 @@
 				"club": null,
 				"anio": 2011
 			},
-			"college": "Club Atlético Tiro Federal Argentino"
+			"college": "Club Atlético Tiro Federal Argentino",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRboSGoNWo5xt-h-brwJ48jYmF2uSNYKo_U7AYrI-PYMw&s"
 		},
 		{
 			"n": "34",
@@ -590,7 +615,8 @@
 				"club": "IND",
 				"anio": 2026
 			},
-			"college": "Club Atlético River Plate"
+			"college": "Club Atlético River Plate",
+			"imgURL": "https://clubaindependiente.com.ar/cache/plantel/34_tempone_felipe.jpg"
 		}
 	]
 }

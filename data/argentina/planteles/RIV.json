@@ -42,10 +42,27 @@
 			"pj": 45,
 			"goles": 0,
 			"min": 4031,
-			"ovr": 73,
+			"ovr": 72,
 			"debut": {
 				"club": "RIV",
 				"anio": 2025
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1138089-1762437740.png?lm=4711",
+			"ratings": {
+				"stre": 73,
+				"spd": 67,
+				"jmp": 88,
+				"endu": 79,
+				"ins": 0,
+				"dnk": 0,
+				"ft": 59,
+				"fg": 0,
+				"tp": 0,
+				"oiq": 56,
+				"diq": 83,
+				"drb": 54,
+				"pss": 63,
+				"reb": 92
 			}
 		},
 		{
@@ -67,7 +84,8 @@
 				"club": "EBA",
 				"anio": 2021
 			},
-			"college": "Club Atlético River Plate"
+			"college": "Club Atlético River Plate",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTS7k_C0J8B4llFrbXz6Xz-jvgbfl-z6P2NtAzD2LI3A&s=10"
 		},
 		{
 			"n": "13",
@@ -87,7 +105,8 @@
 			"debut": {
 				"club": "RIV",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoGc4KBTYG_lHBZQ6Sy-kvInDyZBQ3MSQxBtuNvzgM9Q&s=10"
 		},
 		{
 			"n": "28",
@@ -108,7 +127,8 @@
 				"club": "RIV",
 				"anio": 2016
 			},
-			"college": "Club Atlético Kimberley (Mar del Plata)"
+			"college": "Club Atlético Kimberley (Mar del Plata)",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ra81k99SXrdllKI8eUT6ROpwoRWAL8cGurPRUqGcrg&s=10"
 		},
 		{
 			"n": "2",
@@ -128,7 +148,8 @@
 			"debut": {
 				"club": "ARG",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiSMWfbEku689R2PRU-fdFOVPtB3yL53DORePHtL-7Qw&s=10"
 		},
 		{
 			"n": "5",
@@ -149,7 +170,8 @@
 				"club": null,
 				"anio": 2020
 			},
-			"college": "Club Mutual Crucero del Norte"
+			"college": "Club Mutual Crucero del Norte",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_8-B7qmzyQKpQYzPkeEma4zvO6hPR2k6q2y-wQgGaA&s=10"
 		},
 		{
 			"n": "30",
@@ -170,7 +192,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2009
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLyaf3p-YBXuS6_dwlfwPRlBGSBOwgzuSexsNIJtyyA&s=10"
 		},
 		{
 			"n": "31",
@@ -190,7 +213,8 @@
 			"debut": {
 				"club": "RIV",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxccZwBFC7M9crJk9tO0-lZV_vzS4U-L0BAGR65FXDg&s=10"
 		},
 		{
 			"n": "3",
@@ -211,7 +235,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2018
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGiQX-_e6_MCepwdP83SfQzN_MaKLL8sE4aG8NrTIrDg&s=10"
 		},
 		{
 			"n": "21",
@@ -231,7 +256,8 @@
 			"debut": {
 				"club": "FCO",
 				"anio": 2010
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDq6bGVhIS23s_8GOesinaN1Fdv_zJrC9SRdNUipdiJA&s=10"
 		},
 		{
 			"n": "29",
@@ -251,7 +277,8 @@
 			"debut": {
 				"club": "RIV",
 				"anio": 2017
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/402733-1668181612.jpg?lm=4711"
 		},
 		{
 			"n": "20",
@@ -268,12 +295,29 @@
 			"goles": 0,
 			"min": 352,
 			"fichado": "01/07/2026",
-			"ovr": 57,
+			"ovr": 56,
 			"debut": {
 				"club": null,
 				"anio": 2014
 			},
-			"college": "Club Atlético River Plate (Montevideo)"
+			"college": "Club Atlético River Plate (Montevideo)",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThw8FkXXyxbCj889DnJfnKhy3e7YE-iDAADKJ3slYmNw&s=10",
+			"ratings": {
+				"stre": 48,
+				"spd": 58,
+				"jmp": 51,
+				"endu": 56,
+				"ins": 36,
+				"dnk": 40,
+				"ft": 51,
+				"fg": 47,
+				"tp": 42,
+				"oiq": 56,
+				"diq": 58,
+				"drb": 51,
+				"pss": 53,
+				"reb": 52
+			}
 		},
 		{
 			"n": "6",
@@ -297,7 +341,8 @@
 			"lesion": {
 				"tipo": "Molestias en el gemelo",
 				"partidos": 2
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQARAaXVE1cvtnumFvUk6FhHveCyZ7_GoZ_BrDyk5Ktyg&s=10"
 		},
 		{
 			"n": "15",
@@ -317,7 +362,8 @@
 			"debut": {
 				"club": "ARG",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvSD0pl_6QOmqlupQg-FaN3qjS51d4WH9yKy_wmFp6uQ&s=10"
 		},
 		{
 			"n": "44",
@@ -337,7 +383,8 @@
 			"debut": {
 				"club": "RIV",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmtaq6u-2SbmcqW_2Ds4lMf3VixuQ3Vg8poW1gkWvvrg&s"
 		},
 		{
 			"n": "50",
@@ -358,7 +405,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT527NyiRYz3Dk_E7kqCo0TLHK7v3H_HAK_3JBgc1EQ-g&s=10"
 		},
 		{
 			"n": "8",
@@ -380,7 +428,8 @@
 				"club": null,
 				"anio": 2013
 			},
-			"college": "Defensor Sporting Club"
+			"college": "Defensor Sporting Club",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-OdmbVDyRRRTLLrUwfixmta04l4r_IghVeGbYNKxTLg&s=10"
 		},
 		{
 			"n": "25",
@@ -400,7 +449,8 @@
 			"debut": {
 				"club": "RIV",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRloqRmsfROzfYUtcemlIK1i3uRqXps1t3dx2eNcS0Agw&s=10"
 		},
 		{
 			"n": "23",
@@ -421,7 +471,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2018
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/576028-1773174386.jpg?lm=4711"
 		},
 		{
 			"n": "26",
@@ -441,7 +492,8 @@
 			"debut": {
 				"club": "RIV",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1iIf55Vf3Wp87Y6HdFZFMBGJ8fMqc9kNhJrntv7o2DA&s=10"
 		},
 		{
 			"n": "24",
@@ -461,7 +513,8 @@
 			"debut": {
 				"club": "RIV",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZBsTvnljfWhoO42S5tNClKyV9K9OhnhZmrM1OpA5hEg&s=10"
 		},
 		{
 			"n": "10",
@@ -482,7 +535,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2013
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Cty3OIinMB2FVrQNBLOKcFbwBoEcW6VqBBmIStPBCw&s"
 		},
 		{
 			"n": "18",
@@ -504,7 +558,8 @@
 				"club": "RIV",
 				"anio": 2021
 			},
-			"college": "Instituto Atlético Central Córdoba"
+			"college": "Instituto Atlético Central Córdoba",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT84IpSky39co_46Iky2jxPyk-_s1oCXQEt39F42rWpNA&s"
 		},
 		{
 			"n": "9",
@@ -524,7 +579,8 @@
 			"debut": {
 				"club": "RIV",
 				"anio": 2014
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tGOY5xDHqO0q1zw5DBPbTs7Oe-5bh783On6uwUq5wA&s=10"
 		},
 		{
 			"n": "19",
@@ -546,7 +602,8 @@
 				"club": null,
 				"anio": 2015
 			},
-			"college": "Asociación Deportivo Cali"
+			"college": "Asociación Deportivo Cali",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9s1Gkdf3DmHM79BLHyEZL3kGs0bGJWm_bFBAuapTg9Q&s=10"
 		},
 		{
 			"n": "32",
@@ -570,7 +627,8 @@
 			"lesion": {
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 7
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR53TPsbjVQRJ0ac7s_F-ifYOf_5efo59Xv9dorKI7bgw&s=10"
 		}
 	]
 }

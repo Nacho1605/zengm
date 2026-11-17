@@ -71,10 +71,11 @@ Object.assign(ga, {
 	allStarThree: false,
 });
 
-// Equipo del usuario por defecto (al crear la liga se puede elegir cualquier
+// Equipo del usuario por defecto: Rosario Central, elegido por el usuario (al
+// crear la liga se puede elegir cualquier
 // equipo activo; Colón no, porque en 2026 está inactivo)
 {
-	const tid = league.teams.find((t: any) => t.abbrev === "RIE").tid;
+	const tid = league.teams.find((t: any) => t.abbrev === "ROS").tid;
 	ga.userTid = [{ start: null, value: tid }];
 	ga.userTids = [tid];
 }
@@ -555,7 +556,19 @@ const cargar = (plantel: any) => {
 		const edad = SEASON - nac.y;
 		const pos = posicion(j.pos, j.pie);
 		const ovrMeta = j.ovr ?? ovrSugerido(j, edad);
-		const r = generarRatings(j, pos, edad, ovrMeta);
+		if (!j.altura) {
+			throw new Error(`${j.nombre} ${j.apellido}: falta la altura`);
+		}
+		// Ratings exactos (los que el usuario ajustó a mano en el juego) o
+		// generados con la norma de la posición
+		const r = j.ratings
+			? { ...j.ratings, hgt: Math.round(((j.altura * 100 - 156) * 100) / 44) }
+			: generarRatings(j, pos, edad, ovrMeta);
+		if (j.ratings && ovrOficial(r) !== ovrMeta) {
+			throw new Error(
+				`${j.nombre} ${j.apellido}: sus ratings dan OVR ${ovrOficial(r)}, no ${ovrMeta}`,
+			);
+		}
 		// Contrato sin fecha en Transfermarkt ("-"): hasta 2027
 		const exp = j.contrato ? parseFecha(j.contrato).y : SEASON + 1;
 		const amount = sueldo(j.valor, ovrMeta);

@@ -58,7 +58,8 @@
 			"debut": {
 				"club": "BAN",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1R0OauQ1Hn06dkc3rI8id1xmGCWMe4QsB4CsZPRRY8g&s=10"
 		},
 		{
 			"n": "30",
@@ -78,7 +79,8 @@
 			"debut": {
 				"club": "RAF",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQleV1XMB5e-7U-DlmXAlrDqw4C6_EFHpS45lOopnpv1A&s"
 		},
 		{
 			"n": "3",
@@ -102,7 +104,8 @@
 			"lesion": {
 				"tipo": "Fractura de peroné",
 				"partidos": 7
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRboH6qpeAJ2lz7HTZKZFKLoC2aiaQhPYBbB6v8cvVlBA&s=10"
 		},
 		{
 			"n": "23",
@@ -122,7 +125,8 @@
 			"debut": {
 				"club": "EST",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHSwiUsn6qtkJNrpX3V_8eknphQDFNbt9iHZIqVduJsg&s=10"
 		},
 		{
 			"n": "2",
@@ -143,7 +147,8 @@
 			"debut": {
 				"club": "LAN",
 				"anio": 2020
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/744416-1772566334.PNG?lm=4711"
 		},
 		{
 			"n": "38",
@@ -181,7 +186,8 @@
 			"debut": {
 				"club": "RAC",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZOZIBf6qLF5ZeOnf7_7gymEB_08ReeUBD6ZbVjQv4WQ&s=10"
 		},
 		{
 			"n": "19",
@@ -201,7 +207,8 @@
 			"debut": {
 				"club": "BAN",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk_wR14aTUvMzz-up_goOj5eAJRLbEAUJPnqeFJf_CCA&s=10"
 		},
 		{
 			"n": "18",
@@ -223,7 +230,8 @@
 				"club": null,
 				"anio": 2014
 			},
-			"college": "Club Nacional de Football"
+			"college": "Club Nacional de Football",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMfpHQxz2yGmPSd8xEOe-NQQD7t3ELYy6NkZweVpsFgQ&s=10"
 		},
 		{
 			"n": "4",
@@ -243,7 +251,8 @@
 			"debut": {
 				"club": "DYJ",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkaqc_1nwB-TROmXREDXCQj0KbHP7tsdxqSKLNDrIimg&s=10"
 		},
 		{
 			"n": "14",
@@ -264,7 +273,8 @@
 			"debut": {
 				"club": "BEL",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWlEFaj9-oWKrFjoQH33H7coMtk8iGU3zONqXsK76jHQ&s"
 		},
 		{
 			"n": "33",
@@ -285,7 +295,8 @@
 			"debut": {
 				"club": "HUR",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTXYS-L6pfPW3KRsX_5BmduYwUHyveQ_Xh2IPh1NHL_Q&s=10"
 		},
 		{
 			"n": "16",
@@ -306,7 +317,8 @@
 			"debut": {
 				"club": "AND",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShd8bJ63iFgOJqYVR8zc1yTam7w8qqk-y52uFwZtSjwA&s=10"
 		},
 		{
 			"n": "5",
@@ -327,7 +339,8 @@
 			"debut": {
 				"club": "RIV",
 				"anio": 2012
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzRezGCH14uE8vQ6smFhtQSkrImYpAiv0QtoLAzhU5lA&s=10"
 		},
 		{
 			"n": "8",
@@ -351,7 +364,8 @@
 			"lesion": {
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 30
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH0m-oP8aRfdAGwh_3rSRDkvv6POqbdV40YGxr_G7U8Q&s=10"
 		},
 		{
 			"n": "20",
@@ -372,7 +386,8 @@
 			"debut": {
 				"club": "LAN",
 				"anio": 2018
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFo_l9NcWDA_pqVosm5hCjPHL5_5ejHiN36Fx2HXln4Q&s=10"
 		},
 		{
 			"n": "21",
@@ -393,7 +408,8 @@
 				"club": null,
 				"anio": 2022
 			},
-			"college": "Football Club Internazionale Milano"
+			"college": "Football Club Internazionale Milano",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ3CTME5NW196hUyWq0r-PvdLbzi1LQmJqvX_JhEZ1zw&s=10"
 		},
 		{
 			"n": "10",
@@ -413,7 +429,8 @@
 			"debut": {
 				"club": "ARG",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk5g3SN9kMUoMTatidaeez82wKXdcIf20mzXLZKaR7Og&s=10"
 		},
 		{
 			"n": "11",
@@ -433,7 +450,8 @@
 			"debut": {
 				"club": "RAC",
 				"anio": 2017
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpUp7iK8STG5vckp5t3Ay7cVrjYQVu7XA09w8aeYDfvg&s=10"
 		},
 		{
 			"n": "24",
@@ -453,7 +471,8 @@
 			"debut": {
 				"club": "STE",
 				"anio": 2021
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-MC628pMFZCx3v2jce5nBGmz_e05Z3GAMw8UPVvMwpg&s=10"
 		},
 		{
 			"n": "46",
@@ -473,7 +492,8 @@
 			"debut": {
 				"club": "RAC",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUvZtjFQIbBvHS124j3jDvbDZXjapjvtZcRICYHNfBQ&s"
 		},
 		{
 			"n": "17",
@@ -494,7 +514,8 @@
 				"club": null,
 				"anio": 2018
 			},
-			"college": "Portland Timbers"
+			"college": "Portland Timbers",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLUy49ZnrMDoTixObu04jjdb4HUNPuoH_ZQC8sLtgWFA&s=10"
 		},
 		{
 			"n": "7",
@@ -515,7 +536,8 @@
 				"club": null,
 				"anio": 2016
 			},
-			"college": "Envigado Fútbol Club"
+			"college": "Envigado Fútbol Club",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuF-GJnepa_eGjIW67kwnpxVO-gK14Sge0e2Pnao5pxg&s=10"
 		},
 		{
 			"n": "27",
@@ -537,7 +559,8 @@
 				"club": null,
 				"anio": 2020
 			},
-			"college": "Sociedad Sportiva Devoto"
+			"college": "Sociedad Sportiva Devoto",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkqqDcUvgf3M40bq2F89mJMZN7TKaMYaA7d6UtbWm6mw&s"
 		},
 		{
 			"n": "9",
@@ -561,7 +584,8 @@
 			"lesion": {
 				"tipo": "Esguince de tobillo",
 				"partidos": 1
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRm9PSFE4zjGJgh8DZK9qVmZ2fQTPkz1Ih48BHEnc3SA&s=10"
 		},
 		{
 			"n": "32",
@@ -582,7 +606,8 @@
 			"debut": {
 				"club": "EBA",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9n0agTcWmWfteEyKs-0H0V3EM1YbnvA8ayJBdX7SyHQ&s=10"
 		},
 		{
 			"n": "22",
@@ -602,7 +627,8 @@
 			"debut": {
 				"club": "ALD",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDBgDufLzBTkszcDeZqnaF8mZkdaiH9vUZ9OsAevFpBg&s=10"
 		}
 	]
 }

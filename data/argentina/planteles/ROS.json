@@ -70,7 +70,8 @@
 				"club": "ROS",
 				"anio": 2016
 			},
-			"ovr": 68
+			"ovr": 68,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlebyIHhZhXKaUjFGHZWdJOiet4MX3MI9lC_E-6l_fhA&s=10"
 		},
 		{
 			"n": "1",
@@ -91,7 +92,8 @@
 				"club": "RAF",
 				"anio": 2014
 			},
-			"ovr": 51
+			"ovr": 51,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6VeFgKGH5ny90AEUESx7W34z_sscWp8sipmQ9lpm8Dw&s=10"
 		},
 		{
 			"n": "38",
@@ -111,7 +113,8 @@
 				"club": "ROS",
 				"anio": 2024
 			},
-			"ovr": 40
+			"ovr": 40,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1297991-1742571367.png?lm=4711"
 		},
 		{
 			"n": "46",
@@ -158,7 +161,8 @@
 					"tipo": "brother",
 					"nombre": "Ezequiel Ávila"
 				}
-			]
+			],
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl4Np9vwt_BbdqgoS2VJAMm8lKUUqNhdRt5fxbrlT07Q&s=10"
 		},
 		{
 			"n": "24",
@@ -178,7 +182,8 @@
 				"club": "ROS",
 				"anio": 2024
 			},
-			"ovr": 52
+			"ovr": 52,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaucBMgjkaeRL6FFGpBmESyXpZe06IKdAXPDu88NybYQ&s=10"
 		},
 		{
 			"n": "15",
@@ -199,7 +204,8 @@
 				"anio": 2014
 			},
 			"college": "Liverpool Fútbol Club",
-			"ovr": 62
+			"ovr": 62,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sjgwgB--hjw3NXa5PDdTFFD61vqn20nr8Zm9au2YaA&s=10"
 		},
 		{
 			"n": "2",
@@ -221,7 +227,8 @@
 				"anio": 2018
 			},
 			"college": "Club General Díaz",
-			"ovr": 52
+			"ovr": 52,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT48vyXWb-d1iFP_pSBLZdmyP0zW48iEcavi5itUJVJuw&s=10"
 		},
 		{
 			"n": "6",
@@ -241,7 +248,8 @@
 				"club": "BOC",
 				"anio": 2015
 			},
-			"ovr": 48
+			"ovr": 48,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-4Qjpldt8JdO03uqNr2mPyNiNlhwxBuBXIwsVKWX13g&s=10"
 		},
 		{
 			"n": "47",
@@ -261,7 +269,8 @@
 				"club": "ROS",
 				"anio": 2026
 			},
-			"ovr": 47
+			"ovr": 47,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOV8JJ5N-AnvrYmrnwfRVkeVbQqqpNn3wFN3GLmH5RRg&s=10"
 		},
 		{
 			"n": "3",
@@ -281,7 +290,8 @@
 				"club": "BOC",
 				"anio": 2021
 			},
-			"ovr": 65
+			"ovr": 65,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6yBZ_TcpEP_OAv4Ptt5rkp3HmPzjKOhpV_trBIEbyDA&s=10"
 		},
 		{
 			"n": "33",
@@ -301,7 +311,8 @@
 				"club": "DOC",
 				"anio": 2013
 			},
-			"ovr": 60
+			"ovr": 60,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDWN0m1H6QKcMLn2_VrptVtL9JWCLPgCwN_nJTVeU0NQ&s=10"
 		},
 		{
 			"n": "32",
@@ -322,7 +333,8 @@
 				"anio": 2019
 			},
 			"college": "Racing Club",
-			"ovr": 66
+			"ovr": 66,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaEQei3ED3Ez7rXZVXQGk0i1tluR-iAMd_Sndpa6B4dA&s=10"
 		},
 		{
 			"n": "4",
@@ -342,7 +354,8 @@
 				"club": "ROS",
 				"anio": 2024
 			},
-			"ovr": 40
+			"ovr": 40,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn8YSVx945bbMQffbc38ZF83dM3sS3lxkaOn7tFru6WQ&s=10"
 		},
 		{
 			"n": "42",
@@ -351,7 +364,7 @@
 			"pos": "Lateral derecho",
 			"nac": "07/03/2007",
 			"pais": "Argentina",
-			"altura": null,
+			"altura": 1.73,
 			"pie": "Derecho",
 			"contrato": null,
 			"valor": 100000,
@@ -362,7 +375,8 @@
 				"club": "ROS",
 				"anio": 2026
 			},
-			"ovr": 48
+			"ovr": 48,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRtOdMoelsThG21GJfjr7tB44K99WLidnNyCdSrhaHfg&s"
 		},
 		{
 			"n": "5",
@@ -382,7 +396,8 @@
 				"club": "ARG",
 				"anio": 2020
 			},
-			"ovr": 70
+			"ovr": 70,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ11b5EoxW1XOI4dwNVK0ZCQlpk5fOsL3qQmrZ2ErE04g&s=10"
 		},
 		{
 			"n": "20",
@@ -403,7 +418,8 @@
 				"anio": 2021
 			},
 			"college": "Club Social y Deportivo Colo-Colo",
-			"ovr": 67
+			"ovr": 67,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/662740-1709827857.jpg?lm=4711"
 		},
 		{
 			"n": "31",
@@ -423,7 +439,8 @@
 				"club": "TAL",
 				"anio": 2019
 			},
-			"ovr": 60
+			"ovr": 60,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpuxJejFoMcQrKbrTlEbLCIuIe7JJ_k5NzOmJm_e3xoQ&s=10"
 		},
 		{
 			"n": "88",
@@ -445,7 +462,8 @@
 				"anio": 2019
 			},
 			"college": "Defensor Sporting Club",
-			"ovr": 61
+			"ovr": 61,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPzUCwIWs6v37fVy1oOf7MMuKL-ncEWMNpXKz4CsttzA&s=10"
 		},
 		{
 			"n": "28",
@@ -465,7 +483,8 @@
 				"club": "BOC",
 				"anio": 2011
 			},
-			"ovr": 58
+			"ovr": 58,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNaOM0cs7fkQe55_nKYq-MW8H3zcH_ixpP-3If3yusEA&s"
 		},
 		{
 			"n": "19",
@@ -485,7 +504,8 @@
 				"club": "ROS",
 				"anio": 2025
 			},
-			"ovr": 43
+			"ovr": 43,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp-S7sjV5XolQsfgmZRFTDzyduJdffrQcnhq86o2JgTQ&s=10"
 		},
 		{
 			"n": "8",
@@ -506,7 +526,8 @@
 				"anio": 2019
 			},
 			"college": "Club Deportes Tolima",
-			"ovr": 71
+			"ovr": 71,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkugFxP_Y5FwNGrPX8ZdxTtDZkoD4HzgZnV_rSdLRTbA&s=10"
 		},
 		{
 			"n": "26",
@@ -526,7 +547,8 @@
 				"club": "ROS",
 				"anio": 2025
 			},
-			"ovr": 62
+			"ovr": 62,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqj6XtzLQsCNVz2i1DtwEQ7bxNGfpTmZx0XZ9zsdiuqw&s=10"
 		},
 		{
 			"n": "10",
@@ -547,7 +569,8 @@
 				"club": "ROS",
 				"anio": 2014
 			},
-			"ovr": 56
+			"ovr": 56,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQThGlaUROihVGVSR2jlMorD0aemEnti5EynqaXFWEyQ&s=10"
 		},
 		{
 			"n": "18",
@@ -567,7 +590,8 @@
 				"club": "VEL",
 				"anio": 2022
 			},
-			"ovr": 65
+			"ovr": 65,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSGN-V3Flfb09lKeZHKt-N9wEuUtBJ6o3cQIb0QaLJBA&s=10"
 		},
 		{
 			"n": "11",
@@ -587,6 +611,23 @@
 			"debut": {
 				"club": "ROS",
 				"anio": 2006
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1S9nMOZqdzH-Q_Faq3RgQKT8aCrVEP7j7W7qVl2XPw&s=10",
+			"ratings": {
+				"stre": 62,
+				"spd": 77,
+				"jmp": 66,
+				"endu": 63,
+				"ins": 78,
+				"dnk": 78,
+				"ft": 72,
+				"fg": 74,
+				"tp": 75,
+				"oiq": 76,
+				"diq": 55,
+				"drb": 88,
+				"pss": 82,
+				"reb": 59
 			}
 		},
 		{
@@ -607,7 +648,8 @@
 				"club": "ROS",
 				"anio": 2024
 			},
-			"ovr": 53
+			"ovr": 53,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKkAMiB2hDOHeam2bLRgdqcNLwt9fDG1TS3UAQbHK8Eg&s=10"
 		},
 		{
 			"n": "16",
@@ -628,7 +670,8 @@
 				"club": "GOD",
 				"anio": 2019
 			},
-			"ovr": 60
+			"ovr": 60,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr9Nd923tO65leZJ8-5slnZFF8IbZl979Lz53YnMEzUg&s=10"
 		},
 		{
 			"n": "22",
@@ -648,7 +691,8 @@
 				"club": "RAF",
 				"anio": 2017
 			},
-			"ovr": 66
+			"ovr": 66,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ20ZK1GPA5MX7SPZXzoZAPfntMiToT1e8fNDBnIpuew&s=10"
 		},
 		{
 			"n": "9",
@@ -668,7 +712,8 @@
 				"club": "ROS",
 				"anio": 2004
 			},
-			"ovr": 50
+			"ovr": 50,
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiQZVtSAgAPl-xOa_mwj4YBRysuPKgl9_qHnkWjJ1Odw&s=10"
 		}
 	]
 }
