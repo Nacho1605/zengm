@@ -544,7 +544,7 @@ const NOMBRE_COMPLETO: Record<string, string> = {
 	RIV: "Club Atlético River Plate",
 	ROS: "Club Atlético Rosario Central",
 	SAR: "Club Atlético Sarmiento (Junín)",
-	SDM: "Club Sol de Mayo",
+	SDM: "Club Social y Deportivo Sol de Mayo",
 	SLO: "Club Atlético San Lorenzo de Almagro",
 	STE: "Club Atlético San Telmo",
 	TAL: "Club Atlético Talleres (Córdoba)",
