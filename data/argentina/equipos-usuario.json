@@ -2,9 +2,10 @@
 	"descripcion": "Datos de equipos editados por el usuario en el juego (por tid). Se aplican al armar el archivo.",
 	"equipos": {
 		"131": {
-			"_equipo": "EPO",
+			"_equipo": "EPO (El Porvenir)",
 			"colors": ["#000000", "#ffffff", "#737373"],
-			"jersey": "jersey5"
+			"jersey": "jersey5",
+			"abbrev": "PVN"
 		},
 		"153": {
 			"_equipo": "AHZ",
@@ -97,7 +98,7 @@
 			"colors": ["#000000", "#ffffff", "#8a8a8a"],
 			"jersey": "jersey",
 			"pop": 0.019303,
-			"stadiumCapacity": 0
+			"stadiumCapacity": 1000
 		}
 	}
 }
