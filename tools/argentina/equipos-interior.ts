@@ -4,8 +4,9 @@
 //
 //   node tools/argentina/equipos-interior.ts ENTRADA.json SALIDA.json
 //
-// Apodos, colores, logos, estadio y población son provisorios: los completa el
-// usuario. Cada club va a la división regional de su provincia.
+// Cada club va a la división regional de su provincia. Los datos de cada club
+// (apodo, logo, colores, estadio, población) los completa el usuario en el
+// juego y se guardan en data/argentina/equipos-usuario.json.
 //
 // También: Colón vuelve a ser "Santa Fe Fishermen", porque Huracán de Goya usa
 // "Shads".
@@ -86,6 +87,58 @@ for (const [abbrev, region, name, club, ref] of EQUIPOS) {
 	});
 	console.log(`Agregado: ${abbrev} (tid ${tid}) ${region} ${name} — ${club}`);
 	tid += 1;
+}
+
+// Datos que el usuario editó en el juego (data/argentina/equipos-usuario.json,
+// por tid): nombres, logos, colores, camisetas, población y estadio
+const usuario = JSON.parse(
+	readFileSync(
+		new URL("../../data/argentina/equipos-usuario.json", import.meta.url),
+		"utf8",
+	),
+);
+for (const [tidStr, datos] of Object.entries<any>(usuario.equipos)) {
+	const t = league.teams.find((t2: any) => t2.tid === Number(tidStr));
+	if (!t) {
+		throw new Error(`equipos-usuario.json: no existe el tid ${tidStr}`);
+	}
+	const { _equipo, ...campos } = datos;
+	Object.assign(t, campos);
+	for (const s of t.seasons ?? []) {
+		for (const k of [
+			"region",
+			"name",
+			"abbrev",
+			"imgURL",
+			"imgURLSmall",
+			"colors",
+			"jersey",
+		]) {
+			if (k in campos) {
+				s[k] = campos[k];
+			}
+		}
+	}
+}
+
+// Jugadores sin pid (prospectos generados): el juego los descarta al importar,
+// así que cada uno recibe uno
+{
+	let pid =
+		Math.max(
+			...league.players
+				.map((p: any) => p.pid)
+				.filter((x: unknown) => typeof x === "number"),
+		) + 1;
+	let n = 0;
+	for (const p of league.players) {
+		if (typeof p.pid !== "number") {
+			p.pid = pid;
+			pid += 1;
+			n += 1;
+		}
+	}
+	console.log(`pid asignado a ${n} jugadores que no tenían`);
 }
 
 const colon = league.teams.find((t: any) => t.abbrev === "COL");

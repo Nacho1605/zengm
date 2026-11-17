@@ -1,0 +1,103 @@
+{
+	"descripcion": "Datos de equipos editados por el usuario en el juego (por tid). Se aplican al armar el archivo.",
+	"equipos": {
+		"131": {
+			"_equipo": "EPO",
+			"colors": ["#000000", "#ffffff", "#737373"],
+			"jersey": "jersey5"
+		},
+		"153": {
+			"_equipo": "AHZ",
+			"imgURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Asociaci%C3%B3n_Cultural_y_Deportiva_Altos_Hornos_Zapla.png/330px-Asociaci%C3%B3n_Cultural_y_Deportiva_Altos_Hornos_Zapla.png",
+			"imgURLSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Asociaci%C3%B3n_Cultural_y_Deportiva_Altos_Hornos_Zapla.png/330px-Asociaci%C3%B3n_Cultural_y_Deportiva_Altos_Hornos_Zapla.png",
+			"colors": ["#ffffff", "#000000", "#ffcd00"],
+			"pop": 0.065541,
+			"stadiumCapacity": 20000
+		},
+		"154": {
+			"_equipo": "DES",
+			"imgURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Escudo_del_Club_Desamparados_de_San_Juan.svg/330px-Escudo_del_Club_Desamparados_de_San_Juan.svg.png",
+			"imgURLSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Escudo_del_Club_Desamparados_de_San_Juan.svg/330px-Escudo_del_Club_Desamparados_de_San_Juan.svg.png",
+			"colors": ["#ffffff", "#009b40", "#009b40"],
+			"jersey": "jersey5",
+			"pop": 0.11534,
+			"stadiumCapacity": 18000
+		},
+		"155": {
+			"_equipo": "JUG",
+			"imgURL": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Juventud_unida_%28G%29.png",
+			"imgURLSmall": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Juventud_unida_%28G%29.png",
+			"colors": ["#ffffff", "#0082c6", "#0082c6"],
+			"jersey": "jersey5",
+			"pop": 0.126147,
+			"stadiumCapacity": 10000
+		},
+		"156": {
+			"_equipo": "CON",
+			"name": "Rooks",
+			"imgURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Concepci%C3%B3n_F.C..png/330px-Concepci%C3%B3n_F.C..png",
+			"imgURLSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Concepci%C3%B3n_F.C..png/330px-Concepci%C3%B3n_F.C..png",
+			"colors": ["#000000", "#ffffff", "#0a8601"],
+			"jersey": "jersey",
+			"pop": 0.080735,
+			"stadiumCapacity": 12000
+		},
+		"157": {
+			"_equipo": "PAC",
+			"name": "74ers",
+			"imgURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Logo_SC_Pac%C3%ADfico_de_General_Alvear.svg/330px-Logo_SC_Pac%C3%ADfico_de_General_Alvear.svg.png",
+			"imgURLSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Logo_SC_Pac%C3%ADfico_de_General_Alvear.svg/330px-Logo_SC_Pac%C3%ADfico_de_General_Alvear.svg.png",
+			"jersey": "jersey5",
+			"pop": 0.052584,
+			"stadiumCapacity": 6000
+		},
+		"158": {
+			"_equipo": "CSJ",
+			"name": "Conquerors",
+			"imgURL": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Club_Col%C3%B3n_de_San_Justo2.png",
+			"imgURLSmall": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Club_Col%C3%B3n_de_San_Justo2.png",
+			"colors": ["#ed1c24", "#ffffff", "#000000"],
+			"jersey": "jersey5",
+			"pop": 0.046665,
+			"stadiumCapacity": 10000
+		},
+		"159": {
+			"_equipo": "HGO",
+			"imgURL": "https://img.a.transfermarkt.technology/wappen/head/46881.png",
+			"imgURLSmall": "https://img.a.transfermarkt.technology/wappen/head/46881.png",
+			"colors": ["#2592cc", "#ffffff", "#00b4fd"],
+			"pop": 0.106371,
+			"stadiumCapacity": 6000
+		},
+		"160": {
+			"_equipo": "RAO",
+			"name": "Stars",
+			"imgURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Escudo_del_Club_Racing_de_Olavarria_-_BSAS.svg/330px-Escudo_del_Club_Racing_de_Olavarria_-_BSAS.svg.png",
+			"imgURLSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Escudo_del_Club_Racing_de_Olavarria_-_BSAS.svg/330px-Escudo_del_Club_Racing_de_Olavarria_-_BSAS.svg.png",
+			"colors": ["#ffffff", "#3e368c", "#cecfd5"],
+			"pop": 0.125751,
+			"stadiumCapacity": 15000
+		},
+		"161": {
+			"_equipo": "HIW",
+			"imgURL": "https://upload.wikimedia.org/wikipedia/en/1/12/Huracan_white_badge.png",
+			"imgURLSmall": "https://upload.wikimedia.org/wikipedia/en/1/12/Huracan_white_badge.png",
+			"colors": ["#ffffff", "#ff0000", "#ff0000"],
+			"jersey": "jersey2",
+			"pop": 0.336574,
+			"stadiumCapacity": 4200
+		},
+		"162": {
+			"_equipo": "MSF",
+			"region": "Laishí",
+			"name": "Tobas",
+			"abbrev": "MSL",
+			"imgURL": "https://www.bibliotecariodelfutbol.com/escudos/municipal-de-laishi.png",
+			"imgURLSmall": "https://www.bibliotecariodelfutbol.com/escudos/municipal-de-laishi.png",
+			"colors": ["#000000", "#ffffff", "#8a8a8a"],
+			"jersey": "jersey",
+			"pop": 0.019303,
+			"stadiumCapacity": 0
+		}
+	}
+}
