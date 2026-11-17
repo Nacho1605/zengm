@@ -505,6 +505,54 @@ const generarRatings = (j: any, pos: string, edad: number, ovrMeta: number) => {
 const picksPorAnio = new Map<number, number>();
 const PICKS_POR_RONDA = 30;
 
+// Nombre completo de cada club, para el College de los que no tienen club de
+// inferiores distinto del de debut (el College repite el club que lo "drafteó")
+const NOMBRE_COMPLETO: Record<string, string> = {
+	ALD: "Club Atlético Aldosivi",
+	ALM: "Club Almagro",
+	ALT: "Club Atlético Almirante Brown",
+	AND: "Club Atlético Los Andes",
+	ARG: "Asociación Atlética Argentinos Juniors",
+	ARS: "Arsenal Fútbol Club",
+	ATL: "Club Atlético Atlanta",
+	BAN: "Club Atlético Banfield",
+	BEL: "Club Atlético Belgrano",
+	BOC: "Club Atlético Boca Juniors",
+	CIP: "Club Cipolletti",
+	COL: "Club Atlético Colón",
+	DME: "Club Social y Deportivo Merlo",
+	DOC: "Club Atlético Dock Sud",
+	DUN: "Club Atlético Defensores Unidos",
+	DYJ: "Club Social y Deportivo Defensa y Justicia",
+	EBA: "Club Atlético Estudiantes (Caseros)",
+	EST: "Club Estudiantes de La Plata",
+	FCO: "Club Ferro Carril Oeste",
+	FEN: "Club Atlético Fénix",
+	GIM: "Club de Gimnasia y Esgrima La Plata",
+	GOD: "Club Deportivo Godoy Cruz Antonio Tomba",
+	HUR: "Club Atlético Huracán",
+	IND: "Club Atlético Independiente",
+	INS: "Instituto Atlético Central Córdoba",
+	LAN: "Club Atlético Lanús",
+	MOR: "Club Deportivo Morón",
+	NCH: "Club Atlético Nueva Chicago",
+	NOB: "Club Atlético Newell's Old Boys",
+	PLA: "Club Atlético Platense",
+	RAC: "Racing Club",
+	RAF: "Asociación Mutual Social y Deportiva Atlético de Rafaela",
+	RIE: "Club Deportivo Riestra",
+	RIV: "Club Atlético River Plate",
+	ROS: "Club Atlético Rosario Central",
+	SAR: "Club Atlético Sarmiento (Junín)",
+	SDM: "Club Sol de Mayo",
+	SLO: "Club Atlético San Lorenzo de Almagro",
+	STE: "Club Atlético San Telmo",
+	TAL: "Club Atlético Talleres (Córdoba)",
+	TIG: "Club Atlético Tigre",
+	UNI: "Club Atlético Unión",
+	VEL: "Club Atlético Vélez Sarsfield",
+};
+
 const norm = (s: string) =>
 	s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 
@@ -597,7 +645,16 @@ const cargar = (plantel: any) => {
 			hgt: Math.round((cm / 2.54) * 100) / 100,
 			weight: Math.round(23.5 * j.altura ** 2 * 2.2046),
 			born: { year: nac.y, loc: j.pais },
-			college: j.college ?? "",
+			college:
+				j.college ??
+				(clubDebut && !j.prospecto
+					? (NOMBRE_COMPLETO[clubDebut.abbrev] ??
+						(() => {
+							throw new Error(
+								`Falta el nombre completo de ${clubDebut.abbrev}`,
+							);
+						})())
+					: ""),
 			draft: j.prospecto
 				? { round: 0, pick: 0, tid: -1, originalTid: -1, year: SEASON }
 				: {
