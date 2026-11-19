@@ -501,6 +501,34 @@ const generarRatings = (j: any, pos: string, edad: number, ovrMeta: number) => {
 	return r;
 };
 
+// Prospectos generados: el rating de altura salía de la fórmula del juego
+// (unos 8 puntos por debajo del ancla 156 cm = 0, 200 cm = 100). Se corrige
+// con la regla de tres y se recalcula su OVR oficial
+{
+	let n = 0;
+	for (const p of league.players) {
+		if (p.tid !== -2) {
+			continue;
+		}
+		for (const r of p.ratings) {
+			const hgt = hgtRating(p.hgt * 2.54);
+			if (r.hgt !== hgt) {
+				r.hgt = hgt;
+				r.ovr = ovrOficial(r);
+				n += 1;
+			}
+		}
+		if (p.draft?.year === p.ratings[0].season) {
+			p.draft.ovr = p.ratings[0].ovr;
+		}
+	}
+	console.log(`Altura de prospectos corregida: ${n}`);
+}
+
+// Jugadores borrados y creados de nuevo: pid viejo -> jugador nuevo, para
+// que sus parientes apunten al jugador nuevo
+const reemplazados = new Map<number, { nombre: string; nacimiento: number }>();
+
 // Picks por año de debut: cuántos se asignaron hasta ahora
 const picksPorAnio = new Map<number, number>();
 const PICKS_POR_RONDA = 30;
@@ -587,6 +615,7 @@ const cargar = (plantel: any) => {
 			);
 		}
 		league.players = league.players.filter((p: any) => p !== matches[0]);
+		reemplazados.set(matches[0].pid, { nombre, nacimiento });
 		borrados.push(`${nombre} (pid ${matches[0].pid})`);
 	}
 
@@ -814,6 +843,56 @@ const TABLA_ANUAL_2026: Record<string, number> = {
 
 for (const file of plantelFiles) {
 	cargar(JSON.parse(readFileSync(file, "utf8")));
+}
+
+// Parientes de jugadores reemplazados: pasan al jugador nuevo, en los dos
+// sentidos; y se borran los que apuntan a jugadores que no existen
+{
+	const VUELTA0: Record<string, string> = {
+		brother: "brother",
+		son: "father",
+		father: "son",
+	};
+	const porPid = new Map(league.players.map((p: any) => [p.pid, p]));
+	for (const p of league.players) {
+		const nuevos: any[] = [];
+		for (const r of p.relatives ?? []) {
+			const viejo = reemplazados.get(r.pid);
+			if (viejo) {
+				const nuevo = league.players.find(
+					(q: any) =>
+						q.tid !== -3 &&
+						norm(`${q.firstName} ${q.lastName}`) === norm(viejo.nombre) &&
+						Math.abs(q.born.year - viejo.nacimiento) <= 1,
+				);
+				if (nuevo) {
+					nuevos.push({ ...r, pid: nuevo.pid });
+					nuevo.relatives = (nuevo.relatives ?? []).filter(
+						(x: any) => x.pid !== p.pid,
+					);
+					nuevo.relatives.push({
+						type: VUELTA0[r.type] ?? r.type,
+						pid: p.pid,
+						name: `${p.firstName} ${p.lastName}`,
+					});
+					console.log(
+						`Parientes: ${p.firstName} ${p.lastName} -> ${nuevo.firstName} ${nuevo.lastName} (nuevo)`,
+					);
+					continue;
+				}
+			}
+			if (porPid.has(r.pid)) {
+				nuevos.push(r);
+			} else {
+				console.log(
+					`Pariente borrado (no existe): ${p.firstName} ${p.lastName} -> ${r.name}`,
+				);
+			}
+		}
+		if (p.relatives) {
+			p.relatives = nuevos;
+		}
+	}
 }
 
 // Parientes ("parientes": [{ "tipo": "brother", "nombre": "..." }]), en los dos

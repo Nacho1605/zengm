@@ -141,6 +141,21 @@ for (const [tidStr, datos] of Object.entries<any>(usuario.equipos)) {
 	console.log(`pid asignado a ${n} jugadores que no tenían`);
 }
 
+// Logos sin parámetros de rastreo (utm_...): no cambian la imagen
+{
+	const limpiar = (u: string) =>
+		u.replaceAll(/[&?]utm_[^&]*/g, "").replace(/^([^?]*)&/, "$1?");
+	for (const t of league.teams) {
+		for (const obj of [t, ...(t.seasons ?? [])]) {
+			for (const k of ["imgURL", "imgURLSmall"]) {
+				if (typeof obj[k] === "string") {
+					obj[k] = limpiar(obj[k]);
+				}
+			}
+		}
+	}
+}
+
 const colon = league.teams.find((t: any) => t.abbrev === "COL");
 colon.name = "Fishermen";
 for (const s of colon.seasons ?? []) {
