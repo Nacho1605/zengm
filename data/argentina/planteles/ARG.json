@@ -118,7 +118,7 @@
 			}
 		},
 		{
-			"n": null,
+			"n": "23",
 			"nombre": "Mateo",
 			"apellido": "Mendoza",
 			"pos": "Defensa central",
@@ -316,7 +316,7 @@
 			"goles": 1,
 			"min": 1296,
 			"fichado": "17/07/2026",
-			"ovr": 66,
+			"ovr": 67,
 			"debut": {
 				"club": "RAC",
 				"anio": 2018
@@ -382,10 +382,14 @@
 				"club": "SAR",
 				"anio": 2023
 			},
-			"college": "Club Rivadavia (Lincoln)"
+			"college": "Club Rivadavia (Lincoln)",
+			"lesion": {
+				"tipo": "Rotura del ligamento cruzado",
+				"partidos": 6
+			}
 		},
 		{
-			"n": "23",
+			"n": "10",
 			"nombre": "Hernán",
 			"apellido": "López Muñoz",
 			"pos": "Mediocentro ofensivo",
@@ -530,7 +534,7 @@
 		{
 			"n": "19",
 			"nombre": "Matías",
-			"apellido": "Giménez",
+			"apellido": "Giménez Rojas",
 			"pos": "Delantero centro",
 			"nac": "06/03/1999",
 			"pais": "Argentina",
@@ -620,7 +624,7 @@
 			"pj": 9,
 			"goles": 0,
 			"min": 489,
-			"ovr": 46,
+			"ovr": 50,
 			"prospecto": true,
 			"college": "Asociación Atlética Argentinos Juniors"
 		},
@@ -675,6 +679,24 @@
 			"goles": 0,
 			"min": 0,
 			"ovr": 37,
+			"prospecto": true,
+			"college": "Asociación Atlética Argentinos Juniors"
+		},
+		{
+			"n": "13",
+			"nombre": "Santino",
+			"apellido": "Gianini",
+			"pos": "Defensa central",
+			"nac": "24/09/2008",
+			"pais": "Argentina",
+			"altura": 1.82,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2028",
+			"valor": 50000,
+			"pj": 1,
+			"goles": 0,
+			"min": 71,
+			"ovr": 42,
 			"prospecto": true,
 			"college": "Asociación Atlética Argentinos Juniors"
 		}
