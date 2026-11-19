@@ -536,6 +536,12 @@ const PICKS_POR_RONDA = 30;
 // Nombre completo de cada club, para el College de los que no tienen club de
 // inferiores distinto del de debut (el College repite el club que lo "drafteó")
 const NOMBRE_COMPLETO: Record<string, string> = {
+	IRM: "Club Sportivo Independiente Rivadavia",
+	GEM: "Club Atlético Gimnasia y Esgrima (Mendoza)",
+	ERC: "Asociación Atlética Estudiantes (Río Cuarto)",
+	CCO: "Club Atlético Central Córdoba (Santiago del Estero)",
+	BAR: "Club Atlético Barracas Central",
+	ATU: "Club Atlético Tucumán",
 	ALD: "Club Atlético Aldosivi",
 	ALM: "Club Almagro",
 	ALT: "Club Atlético Almirante Brown",
@@ -574,9 +580,12 @@ const NOMBRE_COMPLETO: Record<string, string> = {
 	SAR: "Club Atlético Sarmiento (Junín)",
 	SDM: "Club Social y Deportivo Sol de Mayo",
 	SLO: "Club Atlético San Lorenzo de Almagro",
+	SMG: "Club Atlético San Miguel",
+	SMJ: "Club Atlético San Martín (San Juan)",
 	STE: "Club Atlético San Telmo",
 	TAL: "Club Atlético Talleres (Córdoba)",
 	TIG: "Club Atlético Tigre",
+	TRE: "Club Atlético Talleres (Remedios de Escalada)",
 	UNI: "Club Atlético Unión",
 	VEL: "Club Atlético Vélez Sarsfield",
 };

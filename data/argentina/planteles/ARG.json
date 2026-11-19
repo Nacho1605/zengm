@@ -1,0 +1,682 @@
+{
+	"equipo": "ARG",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"reemplaza": [
+		{
+			"nombre": "Francisco Álvarez",
+			"nacimiento": 2000
+		},
+		{
+			"nombre": "Érik Godoy",
+			"nacimiento": 1994
+		},
+		{
+			"nombre": "Sebastián Prieto",
+			"nacimiento": 1994
+		},
+		{
+			"nombre": "Kevin Gutiérrez",
+			"nacimiento": 1998
+		},
+		{
+			"nombre": "Gino Infantino",
+			"nacimiento": 2004
+		},
+		{
+			"nombre": "Federico Mancuello",
+			"nacimiento": 1990
+		},
+		{
+			"nombre": "Nicolás Oroz",
+			"nacimiento": 1994
+		},
+		{
+			"nombre": "Gastón Verón",
+			"nacimiento": 2002
+		}
+	],
+	"jugadores": [
+		{
+			"n": "25",
+			"nombre": "Brayan",
+			"apellido": "Cortés",
+			"pos": "Portero",
+			"nac": "11/03/1995",
+			"pais": "Chile",
+			"altura": 1.86,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 2000000,
+			"pj": 37,
+			"goles": 0,
+			"min": 3390,
+			"ovr": 69,
+			"debut": {
+				"club": null,
+				"anio": 2013
+			},
+			"college": "Club de Deportes Iquique"
+		},
+		{
+			"n": "12",
+			"nombre": "Gonzalo",
+			"apellido": "Siri",
+			"pos": "Portero",
+			"nac": "01/02/2003",
+			"pais": "Argentina",
+			"altura": 1.83,
+			"pie": "Derecho",
+			"contrato": "31/12/2030",
+			"valor": 250000,
+			"pj": 1,
+			"goles": 0,
+			"min": 90,
+			"ovr": 39,
+			"debut": {
+				"club": "ARG",
+				"anio": 2024
+			}
+		},
+		{
+			"n": "1",
+			"nombre": "Agustín",
+			"apellido": "Mangiaut",
+			"pos": "Portero",
+			"nac": "24/05/2004",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": null,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 36,
+			"debut": {
+				"club": "ARG",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "16",
+			"nombre": "Francisco",
+			"apellido": "Álvarez",
+			"pos": "Defensa central",
+			"nac": "26/02/2000",
+			"pais": "Argentina",
+			"altura": 1.8,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 5500000,
+			"pj": 35,
+			"goles": 3,
+			"min": 3179,
+			"ovr": 70,
+			"debut": {
+				"club": "SMJ",
+				"anio": 2019
+			}
+		},
+		{
+			"n": null,
+			"nombre": "Mateo",
+			"apellido": "Mendoza",
+			"pos": "Defensa central",
+			"nac": "21/11/2004",
+			"pais": "Argentina",
+			"altura": 1.81,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 2500000,
+			"pj": 4,
+			"goles": 0,
+			"min": 207,
+			"fichado": "14/09/2026",
+			"ovr": 60,
+			"debut": {
+				"club": "GOD",
+				"anio": 2024
+			}
+		},
+		{
+			"n": "6",
+			"nombre": "Franco",
+			"apellido": "Vázquez",
+			"pos": "Defensa central",
+			"nac": "02/01/2005",
+			"pais": "Argentina",
+			"altura": 1.83,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2029",
+			"valor": 1500000,
+			"pj": 12,
+			"goles": 0,
+			"min": 942,
+			"ovr": 62,
+			"debut": {
+				"club": "ARG",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "17",
+			"nombre": "Franco",
+			"apellido": "Paredes",
+			"pos": "Defensa central",
+			"nac": "18/03/1999",
+			"pais": "Argentina",
+			"altura": 1.76,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 350000,
+			"pj": 10,
+			"goles": 0,
+			"min": 641,
+			"ovr": 60,
+			"debut": {
+				"club": "DYJ",
+				"anio": 2020
+			},
+			"college": "Club Atlético River Plate"
+		},
+		{
+			"n": "4",
+			"nombre": "Érik",
+			"apellido": "Godoy",
+			"pos": "Defensa central",
+			"nac": "16/08/1993",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 300000,
+			"pj": 20,
+			"goles": 1,
+			"min": 1064,
+			"ovr": 64,
+			"debut": {
+				"club": "TIG",
+				"anio": 2012
+			}
+		},
+		{
+			"n": "26",
+			"nombre": "Claudio",
+			"apellido": "Bravo",
+			"pos": "Lateral izquierdo",
+			"nac": "13/03/1997",
+			"pais": "Argentina",
+			"altura": 1.79,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2029",
+			"valor": 400000,
+			"pj": 13,
+			"goles": 0,
+			"min": 414,
+			"ovr": 57,
+			"debut": {
+				"club": "BAN",
+				"anio": 2015
+			}
+		},
+		{
+			"n": "20",
+			"nombre": "Sebastián",
+			"apellido": "Prieto",
+			"pos": "Lateral izquierdo",
+			"nac": "09/04/1993",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 275000,
+			"pj": 35,
+			"goles": 3,
+			"min": 2876,
+			"ovr": 67,
+			"debut": {
+				"club": "TRE",
+				"anio": 2014
+			}
+		},
+		{
+			"n": "30",
+			"nombre": "Alan",
+			"apellido": "Núñez",
+			"pos": "Lateral derecho",
+			"nac": "01/10/2004",
+			"pais": "Paraguay",
+			"altura": 1.76,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 1000000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"fichado": "06/08/2026",
+			"ovr": 56,
+			"debut": {
+				"club": null,
+				"anio": 2022
+			},
+			"college": "Club Cerro Porteño"
+		},
+		{
+			"n": "22",
+			"nombre": "Kevin",
+			"apellido": "Coronel",
+			"pos": "Lateral derecho",
+			"nac": "11/08/2004",
+			"pais": "Argentina",
+			"altura": 1.68,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 600000,
+			"pj": 22,
+			"goles": 0,
+			"min": 1288,
+			"ovr": 64,
+			"debut": {
+				"club": "ARG",
+				"anio": 2024
+			}
+		},
+		{
+			"n": "3",
+			"nombre": "Luciano",
+			"apellido": "Sánchez",
+			"pos": "Lateral derecho",
+			"nac": "25/01/1994",
+			"pais": "Argentina",
+			"altura": 1.69,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 50000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 45,
+			"debut": {
+				"club": "IRM",
+				"anio": 2015
+			}
+		},
+		{
+			"n": "15",
+			"nombre": "Kevin",
+			"apellido": "Gutiérrez",
+			"pos": "Pivote",
+			"nac": "03/06/1997",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Derecho",
+			"contrato": "31/12/2030",
+			"valor": 2500000,
+			"pj": 16,
+			"goles": 1,
+			"min": 1296,
+			"fichado": "17/07/2026",
+			"ovr": 66,
+			"debut": {
+				"club": "RAC",
+				"anio": 2018
+			}
+		},
+		{
+			"n": "32",
+			"nombre": "Gino",
+			"apellido": "Infantino",
+			"pos": "Mediocentro",
+			"nac": "19/05/2003",
+			"pais": "Argentina",
+			"altura": 1.78,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 350000,
+			"pj": 3,
+			"goles": 0,
+			"min": 51,
+			"ovr": 54,
+			"debut": {
+				"club": "ROS",
+				"anio": 2021
+			}
+		},
+		{
+			"n": "18",
+			"nombre": "Federico",
+			"apellido": "Mancuello",
+			"pos": "Mediocentro",
+			"nac": "26/03/1989",
+			"pais": "Argentina",
+			"altura": 1.77,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 50000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"fichado": "31/07/2026",
+			"ovr": 55,
+			"debut": {
+				"club": "IND",
+				"anio": 2009
+			}
+		},
+		{
+			"n": "28",
+			"nombre": "Joaquín",
+			"apellido": "Gho",
+			"pos": "Interior derecho",
+			"nac": "14/05/2003",
+			"pais": "Argentina",
+			"altura": 1.76,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 1800000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 57,
+			"debut": {
+				"club": "SAR",
+				"anio": 2023
+			},
+			"college": "Club Rivadavia (Lincoln)"
+		},
+		{
+			"n": "23",
+			"nombre": "Hernán",
+			"apellido": "López Muñoz",
+			"pos": "Mediocentro ofensivo",
+			"nac": "07/09/2000",
+			"pais": "Argentina",
+			"altura": 1.69,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 5000000,
+			"pj": 31,
+			"goles": 4,
+			"min": 1867,
+			"ovr": 71,
+			"debut": {
+				"club": "RIV",
+				"anio": 2021
+			},
+			"college": "Asociación Atlética Argentinos Juniors"
+		},
+		{
+			"n": "11",
+			"nombre": "Nicolás",
+			"apellido": "Oroz",
+			"pos": "Mediocentro ofensivo",
+			"nac": "01/04/1994",
+			"pais": "Argentina",
+			"altura": 1.71,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 1000000,
+			"pj": 37,
+			"goles": 2,
+			"min": 2869,
+			"ovr": 68,
+			"debut": {
+				"club": "RAC",
+				"anio": 2014
+			}
+		},
+		{
+			"n": "21",
+			"nombre": "Gabriel",
+			"apellido": "Florentín",
+			"pos": "Mediocentro ofensivo",
+			"nac": "13/03/1999",
+			"pais": "Argentina",
+			"altura": 1.73,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 500000,
+			"pj": 14,
+			"goles": 0,
+			"min": 306,
+			"ovr": 57,
+			"debut": {
+				"club": "ARG",
+				"anio": 2019
+			}
+		},
+		{
+			"n": "29",
+			"nombre": "Emiliano",
+			"apellido": "Viveros",
+			"pos": "Extremo izquierdo",
+			"nac": "30/09/2002",
+			"pais": "Argentina",
+			"altura": 1.78,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 800000,
+			"pj": 20,
+			"goles": 1,
+			"min": 1079,
+			"ovr": 61,
+			"debut": {
+				"club": "ARS",
+				"anio": 2023
+			}
+		},
+		{
+			"n": "27",
+			"nombre": "Tomás",
+			"apellido": "Molina",
+			"pos": "Delantero centro",
+			"nac": "12/04/1995",
+			"pais": "Argentina",
+			"altura": 1.83,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 2500000,
+			"pj": 32,
+			"goles": 5,
+			"min": 2448,
+			"ovr": 68,
+			"debut": {
+				"club": "ALT",
+				"anio": 2018
+			},
+			"college": "Club Atlético Huracán"
+		},
+		{
+			"n": "48",
+			"nombre": "Facundo",
+			"apellido": "Jainikoski",
+			"pos": "Delantero centro",
+			"nac": "15/03/2008",
+			"pais": "Argentina",
+			"altura": 1.78,
+			"pie": null,
+			"contrato": "31/12/2027",
+			"valor": 2500000,
+			"pj": 26,
+			"goles": 1,
+			"min": 933,
+			"ovr": 61,
+			"debut": {
+				"club": "ARG",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "9",
+			"nombre": "Gastón",
+			"apellido": "Verón",
+			"pos": "Delantero centro",
+			"nac": "23/04/2001",
+			"pais": "Argentina",
+			"altura": 1.84,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 1800000,
+			"pj": 16,
+			"goles": 5,
+			"min": 1081,
+			"ovr": 65,
+			"debut": {
+				"club": "EBA",
+				"anio": 2020
+			},
+			"college": "Asociación Atlética Argentinos Juniors"
+		},
+		{
+			"n": "19",
+			"nombre": "Matías",
+			"apellido": "Giménez",
+			"pos": "Delantero centro",
+			"nac": "06/03/1999",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2029",
+			"valor": 1500000,
+			"pj": 15,
+			"goles": 3,
+			"min": 402,
+			"ovr": 62,
+			"debut": {
+				"club": "SMJ",
+				"anio": 2019
+			}
+		},
+		{
+			"n": "47",
+			"nombre": "Diego",
+			"apellido": "Porcel",
+			"pos": "Delantero centro",
+			"nac": "21/01/2005",
+			"pais": "Argentina",
+			"altura": 1.77,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 800000,
+			"pj": 32,
+			"goles": 3,
+			"min": 1222,
+			"ovr": 62,
+			"debut": {
+				"club": "ARG",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "34",
+			"nombre": "Ryoga",
+			"apellido": "Kida",
+			"pos": "Delantero centro",
+			"nac": "15/07/2005",
+			"pais": "Japan",
+			"altura": 1.76,
+			"pie": null,
+			"contrato": "31/12/2026",
+			"valor": 100000,
+			"pj": 5,
+			"goles": 1,
+			"min": 89,
+			"ovr": 50,
+			"debut": {
+				"club": null,
+				"anio": 2024
+			},
+			"college": "Nagoya Grampus"
+		},
+		{
+			"n": "41",
+			"nombre": "Santiago",
+			"apellido": "Silveira",
+			"pos": "Lateral derecho",
+			"nac": "24/04/2008",
+			"pais": "Argentina",
+			"altura": 1.68,
+			"pie": null,
+			"contrato": "31/12/2030",
+			"valor": null,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 38,
+			"prospecto": true,
+			"college": "Asociación Atlética Argentinos Juniors"
+		},
+		{
+			"n": "5",
+			"nombre": "Facundo",
+			"apellido": "Carrizo",
+			"pos": "Mediocentro ofensivo",
+			"nac": "31/05/2007",
+			"pais": "Argentina",
+			"altura": 1.78,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 25000,
+			"pj": 9,
+			"goles": 0,
+			"min": 489,
+			"ovr": 46,
+			"prospecto": true,
+			"college": "Asociación Atlética Argentinos Juniors"
+		},
+		{
+			"n": "36",
+			"nombre": "Gastón",
+			"apellido": "Bouhier",
+			"pos": "Mediocentro ofensivo",
+			"nac": "06/11/2008",
+			"pais": "Argentina",
+			"altura": 1.78,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": null,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 38,
+			"prospecto": true,
+			"college": "Asociación Atlética Argentinos Juniors"
+		},
+		{
+			"n": "35",
+			"nombre": "Alan",
+			"apellido": "Alcaraz",
+			"pos": "Delantero centro",
+			"nac": "11/07/2009",
+			"pais": "Argentina",
+			"altura": 1.8,
+			"pie": "Ambidiestro",
+			"contrato": "31/12/2028",
+			"valor": 200000,
+			"pj": 4,
+			"goles": 0,
+			"min": 88,
+			"ovr": 45,
+			"prospecto": true,
+			"college": "Asociación Atlética Argentinos Juniors"
+		},
+		{
+			"n": "45",
+			"nombre": "Benjamín",
+			"apellido": "Rey",
+			"pos": "Delantero centro",
+			"nac": "08/03/2007",
+			"pais": "Argentina",
+			"altura": 1.8,
+			"pie": null,
+			"contrato": null,
+			"valor": null,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 37,
+			"prospecto": true,
+			"college": "Asociación Atlética Argentinos Juniors"
+		}
+	]
+}
