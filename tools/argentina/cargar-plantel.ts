@@ -535,7 +535,11 @@ const PICKS_POR_RONDA = 30;
 
 // Nombre completo de cada club, para el College de los que no tienen club de
 // inferiores distinto del de debut (el College repite el club que lo "drafteó")
+// Lealtad: debut (draft) o College hasta esta temporada inclusive
+const ULTIMO_ANIO_LEALTAD = 2021;
+
 const NOMBRE_COMPLETO: Record<string, string> = {
+	CHA: "Club Atlético Chacarita Juniors",
 	IRM: "Club Sportivo Independiente Rivadavia",
 	GEM: "Club Atlético Gimnasia y Esgrima (Mendoza)",
 	ERC: "Asociación Atlética Estudiantes (Río Cuarto)",
@@ -743,6 +747,27 @@ const cargar = (plantel: any) => {
 		});
 		pid += 1;
 	}
+	// Rasgos de personalidad (F fama, L lealtad, $ plata, W ganar). Leal: el
+	// que debutó en 2021 o antes y juega en el club que lo drafteó o en el de su
+	// College. El resto, sorteado como en el juego (uno, y la mitad de las veces
+	// un segundo), pero sin lealtad
+	for (const { p, j } of nuevos) {
+		if (j.prospecto) {
+			continue;
+		}
+		const leal =
+			(j.debut?.anio ?? Infinity) <= ULTIMO_ANIO_LEALTAD &&
+			(p.draft.tid === team.tid || p.college === NOMBRE_COMPLETO[team.abbrev]);
+		const rand = azar(`rasgos ${j.nombre} ${j.apellido} ${j.nac}`);
+		const otros = ["F", "$", "W"];
+		const elegir = (xs: string[]) => xs[Math.floor(rand() * xs.length)]!;
+		const rasgos = leal ? ["L"] : [elegir(otros)];
+		if (rand() < 0.5) {
+			rasgos.push(elegir(otros.filter((x) => !rasgos.includes(x))));
+		}
+		p.moodTraits = rasgos.sort();
+	}
+
 	nuevos.sort((a, b) => b.p.ratings[0].ovr - a.p.ratings[0].ovr);
 	for (const [i, { p, clubDebut }] of nuevos.entries()) {
 		p.rosterOrder = i;

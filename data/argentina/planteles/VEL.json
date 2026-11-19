@@ -1,0 +1,546 @@
+{
+	"equipo": "VEL",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario. PENDIENTE: altura de Feler y T. Aguirre",
+	"reemplaza": [
+		{
+			"nombre": "Tomás Marchiori",
+			"nacimiento": 1996
+		},
+		{
+			"nombre": "Emanuel Mammana",
+			"nacimiento": 1996
+		},
+		{
+			"nombre": "Rodrigo Aliendro",
+			"nacimiento": 1991
+		},
+		{
+			"nombre": "Ronaldo Martínez",
+			"nacimiento": 1997
+		}
+	],
+	"jugadores": [
+		{
+			"n": "23",
+			"nombre": "Facundo",
+			"apellido": "Sanguinetti",
+			"pos": "Portero",
+			"nac": "01/03/2001",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 2500000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"fichado": "21/08/2026",
+			"ovr": 64,
+			"debut": {
+				"club": "BAN",
+				"anio": 2020
+			}
+		},
+		{
+			"n": "1",
+			"nombre": "Tomás",
+			"apellido": "Marchiori",
+			"pos": "Portero",
+			"nac": "20/06/1995",
+			"pais": "Argentina",
+			"altura": 1.86,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 2000000,
+			"pj": 19,
+			"goles": 0,
+			"min": 1710,
+			"ovr": 66,
+			"debut": {
+				"club": "GEM",
+				"anio": 2018
+			}
+		},
+		{
+			"n": "32",
+			"nombre": "Thiago",
+			"apellido": "Silvero",
+			"pos": "Defensa central",
+			"nac": "18/04/2006",
+			"pais": "Argentina",
+			"altura": 1.88,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 5000000,
+			"pj": 22,
+			"goles": 2,
+			"min": 1734,
+			"ovr": 65,
+			"debut": {
+				"club": "VEL",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "2",
+			"nombre": "Emanuel",
+			"apellido": "Mammana",
+			"pos": "Defensa central",
+			"nac": "10/02/1996",
+			"pais": "Argentina",
+			"altura": 1.84,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 2500000,
+			"pj": 23,
+			"goles": 0,
+			"min": 1728,
+			"ovr": 67,
+			"debut": {
+				"club": "RIV",
+				"anio": 2015
+			}
+		},
+		{
+			"n": "16",
+			"nombre": "Lisandro",
+			"apellido": "Magallán",
+			"pos": "Defensa central",
+			"nac": "27/09/1993",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 1000000,
+			"pj": 30,
+			"goles": 0,
+			"min": 2577,
+			"ovr": 64,
+			"debut": {
+				"club": "GIM",
+				"anio": 2010
+			}
+		},
+		{
+			"n": "18",
+			"nombre": "Simón",
+			"apellido": "Escobar",
+			"pos": "Lateral izquierdo",
+			"nac": "17/07/2009",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 4000000,
+			"pj": 15,
+			"goles": 0,
+			"min": 668,
+			"ovr": 57,
+			"debut": {
+				"club": "VEL",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "3",
+			"nombre": "Elías",
+			"apellido": "Gómez",
+			"pos": "Lateral izquierdo",
+			"nac": "09/06/1994",
+			"pais": "Argentina",
+			"altura": 1.74,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2028",
+			"valor": 1200000,
+			"pj": 35,
+			"goles": 0,
+			"min": 3111,
+			"ovr": 65,
+			"debut": {
+				"club": "DYJ",
+				"anio": 2016
+			},
+			"college": "Club Atlético Rosario Central"
+		},
+		{
+			"n": null,
+			"nombre": "Joaquín",
+			"apellido": "Vaquero",
+			"pos": "Lateral izquierdo",
+			"nac": "01/04/2003",
+			"pais": "Argentina",
+			"altura": 1.73,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 25000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 40,
+			"debut": {
+				"club": "VEL",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "4",
+			"nombre": "Joaquín",
+			"apellido": "García",
+			"pos": "Lateral derecho",
+			"nac": "20/08/2001",
+			"pais": "Argentina",
+			"altura": 1.82,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 3000000,
+			"pj": 32,
+			"goles": 2,
+			"min": 2772,
+			"ovr": 65,
+			"debut": {
+				"club": "VEL",
+				"anio": 2023
+			}
+		},
+		{
+			"n": "21",
+			"nombre": "Jano",
+			"apellido": "Gordon",
+			"pos": "Lateral derecho",
+			"nac": "16/06/2004",
+			"pais": "Argentina",
+			"altura": 1.82,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 1000000,
+			"pj": 4,
+			"goles": 1,
+			"min": 266,
+			"ovr": 55,
+			"debut": {
+				"club": "VEL",
+				"anio": 2025
+			},
+			"lesion": {
+				"tipo": "Rotura del ligamento cruzado",
+				"partidos": 20
+			}
+		},
+		{
+			"n": "5",
+			"nombre": "Claudio",
+			"apellido": "Baeza",
+			"pos": "Pivote",
+			"nac": "23/12/1993",
+			"pais": "Chile",
+			"altura": 1.71,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 1200000,
+			"pj": 27,
+			"goles": 0,
+			"min": 1469,
+			"ovr": 63,
+			"debut": {
+				"club": null,
+				"anio": 2012
+			},
+			"college": "Club Social y Deportivo Colo-Colo"
+		},
+		{
+			"n": "8",
+			"nombre": "Lucas",
+			"apellido": "Robertone",
+			"pos": "Mediocentro",
+			"nac": "18/03/1997",
+			"pais": "Argentina",
+			"altura": 1.69,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 2000000,
+			"pj": 33,
+			"goles": 2,
+			"min": 2095,
+			"ovr": 68,
+			"debut": {
+				"club": "VEL",
+				"anio": 2017
+			}
+		},
+		{
+			"n": "29",
+			"nombre": "Rodrigo",
+			"apellido": "Aliendro",
+			"pos": "Mediocentro",
+			"nac": "16/02/1991",
+			"pais": "Argentina",
+			"altura": 1.73,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 325000,
+			"pj": 35,
+			"goles": 1,
+			"min": 2342,
+			"ovr": 66,
+			"debut": {
+				"club": "CHA",
+				"anio": 2011
+			}
+		},
+		{
+			"n": "10",
+			"nombre": "Diego",
+			"apellido": "Valdés",
+			"pos": "Mediocentro ofensivo",
+			"nac": "30/01/1994",
+			"pais": "Chile",
+			"altura": 1.79,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 2800000,
+			"pj": 26,
+			"goles": 4,
+			"min": 1041,
+			"ovr": 68,
+			"debut": {
+				"club": null,
+				"anio": 2013
+			},
+			"college": "Audax Club Sportivo Italiano"
+		},
+		{
+			"n": "22",
+			"nombre": "Manuel",
+			"apellido": "Lanzini",
+			"pos": "Mediocentro ofensivo",
+			"nac": "15/02/1993",
+			"pais": "Argentina",
+			"altura": 1.7,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 900000,
+			"pj": 35,
+			"goles": 6,
+			"min": 2655,
+			"ovr": 69,
+			"debut": {
+				"club": "RIV",
+				"anio": 2010
+			},
+			"college": "Club Atlético Vélez Sarsfield"
+		},
+		{
+			"n": "35",
+			"nombre": "Matías",
+			"apellido": "Arias",
+			"pos": "Mediocentro ofensivo",
+			"nac": "08/05/2007",
+			"pais": "Argentina",
+			"altura": 1.68,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2028",
+			"valor": 50000,
+			"pj": 7,
+			"goles": 0,
+			"min": 208,
+			"ovr": 49,
+			"debut": {
+				"club": "VEL",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "37",
+			"nombre": "Juan Cruz",
+			"apellido": "Policella",
+			"pos": "Extremo izquierdo",
+			"nac": "03/08/2009",
+			"pais": "Argentina",
+			"altura": 1.81,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 500000,
+			"pj": 11,
+			"goles": 2,
+			"min": 555,
+			"ovr": 56,
+			"debut": {
+				"club": "VEL",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "11",
+			"nombre": "Matías",
+			"apellido": "Pellegrini",
+			"pos": "Extremo derecho",
+			"nac": "11/03/2000",
+			"pais": "Argentina",
+			"altura": 1.76,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 1700000,
+			"pj": 27,
+			"goles": 5,
+			"min": 1930,
+			"ovr": 68,
+			"debut": {
+				"club": "EST",
+				"anio": 2018
+			}
+		},
+		{
+			"n": "17",
+			"nombre": "Álex",
+			"apellido": "Verón",
+			"pos": "Extremo derecho",
+			"nac": "24/10/2008",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 1500000,
+			"pj": 17,
+			"goles": 0,
+			"min": 444,
+			"ovr": 53,
+			"debut": {
+				"club": "VEL",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "77",
+			"nombre": "Ronaldo",
+			"apellido": "Martínez",
+			"pos": "Delantero centro",
+			"nac": "25/04/1996",
+			"pais": "Paraguay",
+			"altura": 1.78,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 4000000,
+			"pj": 10,
+			"goles": 9,
+			"min": 848,
+			"fichado": "31/08/2026",
+			"ovr": 70,
+			"debut": {
+				"club": null,
+				"anio": 2018
+			},
+			"college": "Club Deportivo Capiatá",
+			"rasgos": ["aereo"]
+		},
+		{
+			"n": "15",
+			"nombre": "Dilan",
+			"apellido": "Godoy",
+			"pos": "Delantero centro",
+			"nac": "05/02/2006",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 700000,
+			"pj": 26,
+			"goles": 2,
+			"min": 1039,
+			"ovr": 60,
+			"debut": {
+				"club": "VEL",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "34",
+			"nombre": "Álvaro",
+			"apellido": "Busso",
+			"pos": "Portero",
+			"nac": "11/10/2006",
+			"pais": "Argentina",
+			"altura": 1.88,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2028",
+			"valor": 100000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 40,
+			"prospecto": true,
+			"college": "Club Atlético Vélez Sarsfield"
+		},
+		{
+			"n": "33",
+			"nombre": "Franco",
+			"apellido": "Villalba",
+			"pos": "Portero",
+			"nac": "03/02/2006",
+			"pais": "Argentina",
+			"altura": 1.83,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": null,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 37,
+			"prospecto": true,
+			"college": "Club Atlético Vélez Sarsfield"
+		},
+		{
+			"n": "42",
+			"nombre": "Agustín",
+			"apellido": "Cortez",
+			"pos": "Portero",
+			"nac": "15/03/2007",
+			"pais": "Argentina",
+			"altura": 1.83,
+			"pie": null,
+			"contrato": "31/12/2029",
+			"valor": null,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 36,
+			"prospecto": true,
+			"college": "Club Atlético Vélez Sarsfield"
+		},
+		{
+			"n": "19",
+			"nombre": "Leo",
+			"apellido": "Cristaldo",
+			"pos": "Defensa central",
+			"nac": "12/01/2009",
+			"pais": "Paraguay",
+			"altura": 1.86,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": null,
+			"pj": 1,
+			"goles": 0,
+			"min": 56,
+			"ovr": 42,
+			"prospecto": true,
+			"college": "Club Atlético Vélez Sarsfield"
+		},
+		{
+			"n": "27",
+			"nombre": "Simón",
+			"apellido": "Prima",
+			"pos": "Extremo derecho",
+			"nac": "18/02/2008",
+			"pais": "Argentina",
+			"altura": 1.71,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": null,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"ovr": 37,
+			"prospecto": true,
+			"college": "Club Atlético Vélez Sarsfield"
+		}
+	]
+}
