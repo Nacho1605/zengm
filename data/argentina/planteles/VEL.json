@@ -1,6 +1,6 @@
 {
 	"equipo": "VEL",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario. PENDIENTE: altura de Feler y T. Aguirre",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
 	"reemplaza": [
 		{
 			"nombre": "Tomás Marchiori",
@@ -55,7 +55,7 @@
 			"pj": 19,
 			"goles": 0,
 			"min": 1710,
-			"ovr": 66,
+			"ovr": 67,
 			"debut": {
 				"club": "GEM",
 				"anio": 2018
@@ -115,7 +115,7 @@
 			"pj": 30,
 			"goles": 0,
 			"min": 2577,
-			"ovr": 64,
+			"ovr": 65,
 			"debut": {
 				"club": "GIM",
 				"anio": 2010
@@ -222,8 +222,8 @@
 				"anio": 2025
 			},
 			"lesion": {
-				"tipo": "Rotura del ligamento cruzado",
-				"partidos": 20
+				"tipo": "Recuperación de rotura del ligamento cruzado",
+				"partidos": 3
 			}
 		},
 		{
@@ -281,7 +281,7 @@
 			"pj": 35,
 			"goles": 1,
 			"min": 2342,
-			"ovr": 66,
+			"ovr": 67,
 			"debut": {
 				"club": "CHA",
 				"anio": 2011
@@ -301,7 +301,7 @@
 			"pj": 26,
 			"goles": 4,
 			"min": 1041,
-			"ovr": 68,
+			"ovr": 69,
 			"debut": {
 				"club": null,
 				"anio": 2013
@@ -328,6 +328,26 @@
 				"anio": 2010
 			},
 			"college": "Club Atlético Vélez Sarsfield"
+		},
+		{
+			"n": "48",
+			"nombre": "Luca",
+			"apellido": "Feler",
+			"pos": "Mediocentro ofensivo",
+			"nac": "26/01/2008",
+			"pais": "Argentina",
+			"altura": 1.78,
+			"pie": null,
+			"contrato": "31/12/2028",
+			"valor": 700000,
+			"pj": 16,
+			"goles": 0,
+			"min": 206,
+			"ovr": 48,
+			"debut": {
+				"club": "VEL",
+				"anio": 2026
+			}
 		},
 		{
 			"n": "35",
@@ -431,6 +451,26 @@
 			},
 			"college": "Club Deportivo Capiatá",
 			"rasgos": ["aereo"]
+		},
+		{
+			"n": "39",
+			"nombre": "Thiago",
+			"apellido": "Aguirre",
+			"pos": "Delantero centro",
+			"nac": "14/02/2009",
+			"pais": "Argentina",
+			"altura": 1.73,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 1000000,
+			"pj": 11,
+			"goles": 1,
+			"min": 381,
+			"ovr": 50,
+			"debut": {
+				"club": "VEL",
+				"anio": 2026
+			}
 		},
 		{
 			"n": "15",
