@@ -43,6 +43,8 @@ node tools/argentina/validar.ts ARCHIVO.json     # esquema oficial: 0 errores
 node tools/argentina/auditar.ts ARCHIVO.json     # 53 controles
 node tools/argentina/escalera.ts ARCHIVO.json 52 EQUIPO   # OVR por posición
 node tools/argentina/ver-equipo.ts EQUIPO [...]  # plantel por línea con datos
+node tools/argentina/cruces.ts                   # jugadores con números en dos clubes
+node tools/argentina/ajustar-ovr.ts EQUIPO APELLIDO OVR  # cambia un OVR (y sus ratings a mano)
 node tools/argentina/desde-juego.ts LIGA_DEL_USUARIO.json # importa sus cambios
 ```
 
@@ -113,7 +115,11 @@ v2.14.1 → v2.14.2).
   sobre los jugadores (le quita la gracia; si algo falta, preguntar).
 - Los que figuran en Rendimiento y no en el plantel se fueron del club: sus
   números van a `data/argentina/salidas-2026.json`, por si aparecen en otro
-  equipo (al cargarlo, tenerlos en cuenta).
+  equipo. Jugadores con números en dos clubes en el año: al cargar cada
+  equipo, correr `cruces.ts` y valorarlos con la temporada completa (también
+  hacia atrás: si uno que se fue ya está en un equipo cargado, revisar su OVR).
+- Capitán: anotarlo en el plantel (`"capitan": true`) cuando el usuario lo
+  diga. No suma puntos (el juego no tiene capitán): es contexto.
 - Juveniles del plantel que siguen en reserva (el usuario lo aclara):
   prospectos del draft 2026 (`prospecto: true`, College = el club).
 - Lealtad (rasgo L): debut en 2021 o antes y juega en su club de draft o College;

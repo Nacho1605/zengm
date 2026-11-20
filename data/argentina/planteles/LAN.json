@@ -1,0 +1,577 @@
+{
+	"equipo": "LAN",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"reemplaza": [
+		{
+			"nombre": "Nahuel Losada",
+			"nacimiento": 1994
+		},
+		{
+			"nombre": "José Canale",
+			"nacimiento": 1997
+		},
+		{
+			"nombre": "Carlos Izquierdoz",
+			"nacimiento": 1989
+		},
+		{
+			"nombre": "Tomás Guidara",
+			"nacimiento": 1996
+		},
+		{
+			"nombre": "Nicolás Morgantini",
+			"nacimiento": 1995
+		},
+		{
+			"nombre": "Felipe Peña Biafore",
+			"nacimiento": 2002
+		},
+		{
+			"nombre": "Raúl Loaiza",
+			"nacimiento": 1995
+		},
+		{
+			"nombre": "Marcelino Moreno",
+			"nacimiento": 1996
+		},
+		{
+			"nombre": "Franco Watson",
+			"nacimiento": 2002
+		}
+	],
+	"jugadores": [
+		{
+			"n": "26",
+			"nombre": "Nahuel",
+			"apellido": "Losada",
+			"pos": "Portero",
+			"nac": "17/04/1993",
+			"pais": "Argentina",
+			"altura": 1.88,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 3000000,
+			"pj": 42,
+			"goles": 0,
+			"min": 3810,
+			"fichado": "22/07/2024",
+			"ovr": 69,
+			"debut": {
+				"club": "EST",
+				"anio": 2013
+			}
+		},
+		{
+			"n": "1",
+			"nombre": "Franco",
+			"apellido": "Petroli",
+			"pos": "Portero",
+			"nac": "11/06/1998",
+			"pais": "Argentina",
+			"altura": 1.88,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2029",
+			"valor": 1500000,
+			"pj": 3,
+			"goles": 0,
+			"min": 270,
+			"fichado": "15/01/2026",
+			"ovr": 44,
+			"debut": {
+				"club": "RIV",
+				"anio": 2022
+			}
+		},
+		{
+			"n": "24",
+			"nombre": "Carlos",
+			"apellido": "Izquierdoz",
+			"pos": "Defensa central",
+			"nac": "03/11/1988",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 375000,
+			"pj": 40,
+			"goles": 4,
+			"min": 3583,
+			"fichado": "01/07/2024",
+			"ovr": 68,
+			"debut": {
+				"club": "LAN",
+				"anio": 2009
+			}
+		},
+		{
+			"n": "13",
+			"nombre": "José",
+			"apellido": "Canale",
+			"pos": "Defensa central",
+			"nac": "20/07/1996",
+			"pais": "Paraguay",
+			"altura": 1.87,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 2200000,
+			"pj": 33,
+			"goles": 1,
+			"min": 2872,
+			"fichado": "01/01/2023",
+			"ovr": 67,
+			"debut": {
+				"club": null,
+				"anio": 2016
+			},
+			"college": "Club Libertad"
+		},
+		{
+			"n": "35",
+			"nombre": "Ronaldo",
+			"apellido": "Dejesús",
+			"pos": "Defensa central",
+			"nac": "21/04/2001",
+			"pais": "Paraguay",
+			"altura": 1.92,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 1300000,
+			"pj": 24,
+			"goles": 0,
+			"min": 1552,
+			"fichado": "21/01/2025",
+			"ovr": 63,
+			"debut": {
+				"club": null,
+				"anio": 2022
+			},
+			"college": "Club River Plate (Paraguay)"
+		},
+		{
+			"n": "4",
+			"nombre": "Gonzalo",
+			"apellido": "Pérez",
+			"pos": "Defensa central",
+			"nac": "04/01/2001",
+			"pais": "Uruguay",
+			"altura": 1.84,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 1200000,
+			"pj": 20,
+			"goles": 0,
+			"min": 1086,
+			"fichado": "02/08/2023",
+			"ovr": 61,
+			"debut": {
+				"club": null,
+				"anio": 2020
+			},
+			"college": "Liverpool Fútbol Club"
+		},
+		{
+			"n": "2",
+			"nombre": "Luciano",
+			"apellido": "Romero",
+			"pos": "Defensa central",
+			"nac": "03/01/2006",
+			"pais": "Argentina",
+			"altura": 1.86,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 100000,
+			"pj": 1,
+			"goles": 0,
+			"min": 80,
+			"fichado": "01/01/2026",
+			"ovr": 44,
+			"debut": {
+				"club": "LAN",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "6",
+			"nombre": "Sasha",
+			"apellido": "Marcich",
+			"pos": "Lateral izquierdo",
+			"nac": "29/05/1998",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2028",
+			"valor": 3000000,
+			"pj": 44,
+			"goles": 2,
+			"min": 3838,
+			"fichado": "13/01/2025",
+			"ovr": 66,
+			"debut": {
+				"club": "PLA",
+				"anio": 2021
+			}
+		},
+		{
+			"n": "33",
+			"nombre": "Tomás",
+			"apellido": "Guidara",
+			"pos": "Lateral derecho",
+			"nac": "13/03/1996",
+			"pais": "Argentina",
+			"altura": 1.73,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 1200000,
+			"pj": 37,
+			"goles": 0,
+			"min": 3134,
+			"fichado": "14/01/2026",
+			"ovr": 64,
+			"debut": {
+				"club": "BEL",
+				"anio": 2017
+			}
+		},
+		{
+			"n": "3",
+			"nombre": "Nicolás",
+			"apellido": "Morgantini",
+			"pos": "Lateral derecho",
+			"nac": "11/09/1994",
+			"pais": "Argentina",
+			"altura": 1.78,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 200000,
+			"pj": 7,
+			"goles": 0,
+			"min": 256,
+			"fichado": "16/01/2020",
+			"ovr": 55,
+			"debut": {
+				"club": "PLA",
+				"anio": 2013
+			}
+		},
+		{
+			"n": "30",
+			"nombre": "Agustín",
+			"apellido": "Cardozo",
+			"pos": "Pivote",
+			"nac": "30/05/1997",
+			"pais": "Argentina",
+			"altura": 1.83,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 2500000,
+			"pj": 39,
+			"goles": 1,
+			"min": 3357,
+			"fichado": "01/01/2025",
+			"ovr": 67,
+			"debut": {
+				"club": "TIG",
+				"anio": 2017
+			}
+		},
+		{
+			"n": "17",
+			"nombre": "Agustín",
+			"apellido": "Medina",
+			"pos": "Pivote",
+			"nac": "24/10/2006",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 4000000,
+			"pj": 36,
+			"goles": 1,
+			"min": 2183,
+			"fichado": "01/01/2025",
+			"ovr": 64,
+			"debut": {
+				"club": "LAN",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "5",
+			"nombre": "Felipe",
+			"apellido": "Peña Biafore",
+			"pos": "Pivote",
+			"nac": "05/04/2001",
+			"pais": "Argentina",
+			"altura": 1.8,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 2200000,
+			"pj": 41,
+			"goles": 3,
+			"min": 1993,
+			"fichado": "22/08/2024",
+			"ovr": 63,
+			"debut": {
+				"club": "RIV",
+				"anio": 2021
+			}
+		},
+		{
+			"n": "15",
+			"nombre": "Raúl",
+			"apellido": "Loaiza",
+			"pos": "Pivote",
+			"nac": "08/06/1994",
+			"pais": "Colombia",
+			"altura": 1.8,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 400000,
+			"pj": 2,
+			"goles": 0,
+			"min": 110,
+			"fichado": "21/06/2022",
+			"ovr": 52,
+			"debut": {
+				"club": null,
+				"anio": 2013
+			},
+			"college": "Patriotas Boyacá",
+			"lesion": {
+				"tipo": "Lesión muscular",
+				"partidos": 3
+			}
+		},
+		{
+			"n": "23",
+			"nombre": "Ramiro",
+			"apellido": "Carrera",
+			"pos": "Interior derecho",
+			"nac": "24/10/1993",
+			"pais": "Argentina",
+			"altura": 1.82,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 1000000,
+			"pj": 39,
+			"goles": 3,
+			"min": 2266,
+			"fichado": "02/01/2024",
+			"ovr": 64,
+			"debut": {
+				"club": "ARS",
+				"anio": 2013
+			}
+		},
+		{
+			"n": "16",
+			"nombre": "Matías",
+			"apellido": "Sepúlveda",
+			"pos": "Interior izquierdo",
+			"nac": "12/03/1999",
+			"pais": "Chile",
+			"altura": 1.86,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2029",
+			"valor": 1200000,
+			"pj": 38,
+			"goles": 0,
+			"min": 1457,
+			"fichado": "15/01/2026",
+			"ovr": 61,
+			"debut": {
+				"club": null,
+				"anio": 2017
+			},
+			"college": "Club Deportivo O'Higgins"
+		},
+		{
+			"n": "27",
+			"nombre": "Facundo",
+			"apellido": "Sánchez",
+			"pos": "Mediocentro",
+			"nac": "07/08/2005",
+			"pais": "Argentina",
+			"altura": 1.81,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 50000,
+			"pj": 5,
+			"goles": 0,
+			"min": 203,
+			"fichado": "01/07/2025",
+			"ovr": 47,
+			"debut": {
+				"club": "LAN",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "10",
+			"nombre": "Marcelino",
+			"apellido": "Moreno",
+			"pos": "Mediocentro ofensivo",
+			"nac": "25/06/1995",
+			"pais": "Argentina",
+			"altura": 1.68,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 4000000,
+			"pj": 21,
+			"goles": 5,
+			"min": 1326,
+			"fichado": "19/01/2024",
+			"ovr": 67,
+			"debut": {
+				"club": "LAN",
+				"anio": 2016
+			}
+		},
+		{
+			"n": "8",
+			"nombre": "Franco",
+			"apellido": "Watson",
+			"pos": "Mediocentro ofensivo",
+			"nac": "25/07/2002",
+			"pais": "Argentina",
+			"altura": 1.77,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 600000,
+			"pj": 26,
+			"goles": 1,
+			"min": 1002,
+			"fichado": "04/09/2023",
+			"ovr": 59,
+			"debut": {
+				"club": "INS",
+				"anio": 2019
+			}
+		},
+		{
+			"n": "11",
+			"nombre": "Eduardo",
+			"apellido": "Salvio",
+			"pos": "Extremo derecho",
+			"nac": "13/07/1990",
+			"pais": "Argentina",
+			"altura": 1.73,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 750000,
+			"pj": 44,
+			"goles": 3,
+			"min": 3138,
+			"fichado": "01/07/2024",
+			"ovr": 68,
+			"debut": {
+				"club": "LAN",
+				"anio": 2008
+			}
+		},
+		{
+			"n": "77",
+			"nombre": "Lucas",
+			"apellido": "Besozzi",
+			"pos": "Extremo izquierdo",
+			"nac": "22/01/2003",
+			"pais": "Argentina",
+			"altura": 1.76,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 350000,
+			"pj": 38,
+			"goles": 1,
+			"min": 1491,
+			"fichado": "01/01/2022",
+			"ovr": 60,
+			"debut": {
+				"club": "LAN",
+				"anio": 2022
+			}
+		},
+		{
+			"n": "38",
+			"nombre": "Benjamín",
+			"apellido": "Acosta",
+			"pos": "Extremo derecho",
+			"nac": "08/02/2006",
+			"pais": "Argentina",
+			"altura": 1.63,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 50000,
+			"pj": 6,
+			"goles": 0,
+			"min": 104,
+			"fichado": "01/07/2025",
+			"ovr": 45,
+			"debut": {
+				"club": "LAN",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "20",
+			"nombre": "Allan",
+			"apellido": "Wlk",
+			"pos": "Delantero centro",
+			"nac": "01/03/2003",
+			"pais": "Paraguay",
+			"altura": 1.86,
+			"pie": "Derecho",
+			"contrato": "31/12/2030",
+			"valor": 2500000,
+			"pj": 18,
+			"goles": 4,
+			"min": 1101,
+			"fichado": "16/07/2026",
+			"ovr": 63,
+			"debut": {
+				"club": null,
+				"anio": 2023
+			},
+			"college": "Club Olimpia"
+		},
+		{
+			"n": "19",
+			"nombre": "Yoshan",
+			"apellido": "Valois",
+			"pos": "Delantero centro",
+			"nac": "04/10/2004",
+			"pais": "Colombia",
+			"altura": 1.87,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 3000000,
+			"pj": 32,
+			"goles": 5,
+			"min": 1182,
+			"fichado": "16/03/2026",
+			"ovr": 61,
+			"debut": {
+				"club": null,
+				"anio": 2024
+			},
+			"college": "Internacional Fútbol Club de Palmira"
+		},
+		{
+			"n": "39",
+			"nombre": "Thiago",
+			"apellido": "Laplace",
+			"pos": "Mediocentro",
+			"nac": "03/04/2006",
+			"pais": "Argentina",
+			"altura": 1.78,
+			"pie": null,
+			"contrato": "31/12/2028",
+			"valor": 25000,
+			"pj": 3,
+			"goles": 0,
+			"min": 14,
+			"ovr": 39,
+			"prospecto": true,
+			"college": "Club Atlético Lanús"
+		}
+	]
+}
