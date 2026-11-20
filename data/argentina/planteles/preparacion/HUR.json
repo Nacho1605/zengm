@@ -1,6 +1,6 @@
 {
 	"equipo": "HUR",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 20/11/2026); faltan debut, inferiores, OVR, lesiones, capitán y rasgos",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 20/11/2026); altura de Uribe y capitán, datos del usuario; faltan debut, inferiores, OVR, lesiones y rasgos",
 	"reemplaza": [
 		{
 			"nombre": "Sebastián Meza",
@@ -78,7 +78,8 @@
 			"salio": 0,
 			"ppp": 1.34,
 			"convocado": 32,
-			"fichado": "08/01/2024"
+			"fichado": "08/01/2024",
+			"capitan": true
 		},
 		{
 			"n": "27",
@@ -570,7 +571,7 @@
 			"pos": "Extremo derecho",
 			"nac": "27/06/2007",
 			"pais": "Argentina",
-			"altura": null,
+			"altura": 1.74,
 			"pie": "Derecho",
 			"contrato": "31/12/2027",
 			"valor": 100000,

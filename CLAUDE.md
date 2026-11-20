@@ -151,6 +151,8 @@ v2.14.1 → v2.14.2).
 - Capitán: anotarlo en el plantel (`"capitan": true`; si no hay capitán fijo,
   `"capitanias": N` con las veces que lo fue). No suma puntos ni entra al
   archivo del juego (no tiene capitán): es contexto. Lista en TRASPASO §4.
+- Solo entran al equipo los jugadores de las capturas del plantel; los
+  juveniles que figuran solo en Rendimiento no se agregan (van a salidas).
 - Juveniles del plantel que siguen en reserva (el usuario lo aclara):
   prospectos del draft 2026 (`prospecto: true`, College = el club).
 - Lealtad (rasgo L): debut en 2021 o antes y juega en su club de draft o College;

@@ -8,13 +8,20 @@ controles, 8 con alertas. En los equipos cargados solo aparecen José Sosa (41
 años, real) y homónimos reales con otros equipos o libres; el resto es de
 equipos sin cargar o libres con datos de 2023. Fotos: 612 de 612.
 
-**Lo que sigue:** Huracán y Talleres a la vez (el usuario manda las capturas
-de un equipo por mensaje, hasta 5 imágenes, y el comentario de los dos
-después). Huracán: capturas transcriptas en `planteles/preparacion/HUR.json` (27
-jugadores, sin OVR, debut, College, lesiones, capitán ni rasgos; todavía no
-está en `armar-v2.sh`), `reemplaza` con 7 y 13 salidas en
-`salidas-2026.json`. Falta la altura de Tomás Uribe. Si manda otra liga
-exportada, importarla con la versión sobre la que jugó como base.
+**Lo que sigue:** Huracán (v2.16) y Talleres (v2.17) a la vez: se arman y
+comprueban por separado y se le manda la v2.17 (decisión de Claude; el
+usuario dejó elegir). Las capturas de los dos ya están transcriptas en
+`planteles/preparacion/` (HUR 27 jugadores, TAL 29), con `reemplaza` (7 y 7)
+y las salidas en `salidas-2026.json`. Capitán de Huracán: Galíndez; Talleres
+no tiene capitán fijo. **Falta del usuario:** el comentario de cada equipo
+(contexto, copas), Sofascore, arquetipos, biografías (debut y club de
+inferiores; aclarar si alguno del plantel sigue en reserva), lesiones (Luján
+HUR y Matías Gómez TAL), la altura de Thiago Baroni (TAL) y, si los tiene,
+los números del primer semestre de los que llegaron a Talleres a mitad de año
+(Unsaín, Riquelme, Fascendini, Chamorro, Fattori, Álvarez). Solo entran los
+jugadores de las capturas del plantel (los juveniles que solo figuran en
+Rendimiento no se agregan). Si manda otra liga exportada, importarla con la
+versión sobre la que jugó como base.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -147,8 +154,12 @@ Formato de un jugador en el plantel:
 del juego: "USA", "Japan", "Syria", "Malaysia"…; con doble nacionalidad, la
 primera bandera); `ratings` solo si el usuario los ajustó a mano (los guarda
 `desde-juego.ts`); `n` null deja que el juego asigne camiseta. Nombres como
-los escribe el usuario cuando los da (ej.: "Juan José" Pérez); si no, como
-Transfermarkt.
+los escribe el usuario cuando los da (ej.: "Juan José" Pérez, "Unsaín" con
+tilde como en su lista de arqueros); si no, como Transfermarkt. Un solo
+nombre (Rick, TAL): `nombre` vacío y el nombre en `apellido`, para que el
+juego muestre "Rick" (con el nombre de pila lo abreviaría "R."). Sin pie en
+Transfermarkt: `pie` null (un central sin pie va de #6). Sin fecha de fichaje
+(juveniles de la casa): sin `fichado`.
 
 ## 4. Escala de OVR y criterio
 
@@ -219,9 +230,9 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
 Capitanes (contexto, no suman puntos): Paredes (BOC), Otamendi (RIV),
 Cambeses (RAC), Marcone (IND), Tripichio y Devecchi (SLO, comparten),
 E. Gómez (VEL), Di María (ROS), Izquierdoz (LAN), Oroz (ARG), Nacho Fernández
-(GIM), Álex Arce (IRM), Céliz (RIE). Estudiantes no tiene capitán fijo:
-Carrillo 5 capitanías, Sosa 3, Núñez 3, Muslera 2, González Pírez 1,
-Correa 1.
+(GIM), Álex Arce (IRM), Céliz (RIE), Galíndez (HUR). Estudiantes no tiene
+capitán fijo: Carrillo 5 capitanías, Sosa 3, Núñez 3, Muslera 2, González
+Pírez 1, Correa 1. Talleres tampoco (sin conteo de capitanías).
 
 ## 5. Configuración vigente (la aplica `cargar-plantel.ts`)
 
@@ -242,14 +253,18 @@ Correa 1.
 ## 6. Archivos de datos
 
 - `planteles/XXX.json`: los 13 planteles cargados; `planteles/preparacion/`: los
-  que están en preparación (hoy HUR, sin OVR): solo los lee `cruces.ts`; al
+  que están en preparación (hoy HUR y TAL, sin OVR): solo los lee `cruces.ts`; al
   terminar se pasan a `planteles/` y se suman a `armar-v2.sh`.
 - `arqueros/`: la lista de arqueros del usuario y la comparación con hoy
   (ver §4).
-- `salidas-2026.json`: los que se fueron de IRM (8), GIM (14), LAN (12) y HUR
-  (13) con sus números 2026. Villa (IRM → BOC): con la suma (44 PJ, 4 g, 8 a)
-  su 70 se sostiene. Dylan Aquino (LAN) se fue a Union Saint-Gilloise
-  (Bélgica). Leonel Pérez (HUR → RAC): 0 PJ en Huracán, no cambia nada.
+- `salidas-2026.json`: los que se fueron de IRM (8), GIM (14), LAN (12), HUR
+  (13), TAL (12) e IND (2: Fernández Cedrés y Pussetto, números que dio el
+  usuario; IND se cargó antes de que existiera este archivo) con sus números
+  2026. Villa (IRM → BOC): con la suma (44 PJ, 4 g, 8 a) su 70 se sostiene.
+  Dylan Aquino (LAN) se fue a Union Saint-Gilloise (Bélgica). Leonel Pérez
+  (HUR → RAC): 0 PJ en Huracán, no cambia nada. Por revisar con la suma al
+  cargar TAL (ya están en equipos cargados): Vigo (TAL → IRM, 57), Ortegoza
+  (TAL → RAC, 61), Río (TAL → SLO, 54) y Ronaldo Martínez (TAL → VEL, 69).
 - `tablas-2026.json`: Apertura, Clausura, Anual y Promedios 2026 (verificadas:
   Apertura + Clausura = Anual; promedios = puntos / partidos).
 - `propuesta-valores-fijos.md`: propuesta sobre valores fijos, ya resuelta
@@ -301,7 +316,8 @@ Correa 1.
 8. Fase 3: historia. Pendiente para entonces: Guillermo y Gustavo Barros
    Schelotto (hermanos; padres de Nicolás y de Bautista, que son primos). El
    juego solo vincula padre, hijo y hermano: los primos quedan unidos a través
-   de los padres.
+   de los padres. Marcelo Barticciotto (leyenda de Colo-Colo), padre de Bruno
+   Barticciotto (HUR).
 
 ## 8. Trampas conocidas
 
@@ -378,9 +394,16 @@ Correa 1.
   Rendimiento completo; `reemplaza`: Meza, Nervo, Pereyra (estaba en CCO),
   Ibáñez, Blondel (libre, 1997 en el archivo), Ó. Romero (estaba en ERC) y
   Bisanz (estaba en BAN, 2002 en el archivo). Llegaron a mitad de año:
-  Fernández Cedrés y Pussetto (de IND, que se cargó sin salidas: faltan sus
-  números previos) y Barticciotto (club anterior de rayas azules y blancas,
-  a préstamo; aparecerá en el Rendimiento de ese club).
+  Fernández Cedrés y Pussetto (de IND, que se cargó sin salidas: el usuario
+  dio sus números de Independiente) y Barticciotto (de Talleres).
+  Respuestas del usuario: Uribe mide 1,74; Galíndez es el capitán; Zabala no
+  jugó porque no lo usaron; solo entran los jugadores de las capturas del
+  plantel; versiones a elección de Claude (v2.16 HUR, v2.17 TAL).
+  Talleres transcripto de 5 capturas (2 + 3; encajan, Rendimiento completo de
+  41 filas), 29 jugadores; `reemplaza`: Unsaín (estaba en DYJ, 1996),
+  Catalán (1993), Sforza (NOB), Fattori (estaba en HUR), Cristaldo (ALD,
+  1997), Depietri (2001) y Valoyes (1997). 12 salidas; 4 de ellas ya están
+  en equipos cargados (ver §6).
 - v2.15.8 (sesión del 20/11, noche): fotos de Cena (IRM) y Zalazar (GIM),
   enlaces que dio el usuario. Comparada con la v2.15.7 campo por campo: esas 2
   diferencias y nada más.
