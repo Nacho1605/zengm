@@ -28,6 +28,8 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import {
 	azar,
+	FORMA_1,
+	SIN_TIRO,
 	FORMA_2,
 	generarRatings,
 	hgtRating,
@@ -710,6 +712,80 @@ console.log(
 		.join(" | "),
 );
 
+// Prospectos generados de los drafts (los ficticios de la fase 1): nivel base
+// 3 puntos más bajo (el generador partía de stre 37, spd 40, jmp 40, endu 17,
+// ins 27, dnk 27, ft/fg/tp 32, oiq/diq 22, drb/pss/reb 37) y forma 2 (misma
+// diferencia entre la forma 2 y la 1 que en los jugadores reales, con su
+// techo). Su OVR baja por el nivel; el potencial lo recalcula el juego al
+// importar (se borra el guardado, como en los prospectos reales)
+{
+	const BASE: Record<string, number> = { stre: 37, spd: 40, jmp: 40, endu: 17, ins: 27, dnk: 27, ft: 32, fg: 32, tp: 32, oiq: 22, diq: 22, drb: 37, pss: 37, reb: 37 };
+	const BAJA = 3;
+	const TECHO = FORMA_2.techo!;
+	let n = 0;
+	let sinForma = 0;
+	let suma = 0;
+	for (const p of league.players) {
+		if (p.tid !== -2 || creados.has(p.pid)) {
+			continue;
+		}
+		const r0 = p.ratings.at(-1);
+		const edad = r0.season - p.born.year;
+		const r1: Record<string, number> = { hgt: r0.hgt };
+		for (const k of KEYS) {
+			if (k !== "hgt") {
+				r1[k] = (r0[k] * (BASE[k]! - BAJA)) / BASE[k]!;
+			}
+		}
+		const redondo = (x: Record<string, number>) => {
+			const o: Record<string, number> = { hgt: x.hgt! };
+			for (const k of KEYS) {
+				if (k !== "hgt") {
+					const v = x[k]!;
+					const w = v > TECHO.desde ? Math.min(TECHO.max, TECHO.desde + (v - TECHO.desde) * TECHO.factor) : v;
+					o[k] = Math.max(0, Math.min(100, Math.round(w)));
+				}
+			}
+			return o as Ratings;
+		};
+		const ovrMeta = ovrOficial(redondo(r1));
+		const pseudo = { nombre: p.firstName, apellido: p.lastName, nac: `pid ${p.pid}`, altura: (p.hgt * 2.54) / 100, min: 0, goles: 0 };
+		let r2 = r1;
+		try {
+			const g1 = generarRatings(pseudo, p.pos, edad, ovrMeta, FORMA_1);
+			const g2 = generarRatings(pseudo, p.pos, edad, ovrMeta, FORMA_2);
+			r2 = { ...r1 };
+			for (const k of KEYS) {
+				if (k !== "hgt" && !(p.pos === "C" && SIN_TIRO.includes(k))) {
+					r2[k] = r1[k]! + g2[k] - g1[k];
+				}
+			}
+		} catch {
+			sinForma += 1; // OVR tan bajo que el generador no llega: solo baja el nivel
+		}
+		const r = redondo(r2);
+		const llave: Key = ["C", "PF", "FC", "G", "GF"].includes(p.pos) ? "diq" : "oiq";
+		for (let i = 0; i < 30 && ovrOficial(r) !== ovrMeta; i++) {
+			r[llave] += ovrOficial(r) < ovrMeta ? 1 : -1;
+		}
+		if (ovrOficial(r) !== ovrMeta) {
+			throw new Error(`${p.firstName} ${p.lastName}: no llega a OVR ${ovrMeta}`);
+		}
+		suma += r0.ovr - ovrMeta;
+		for (const k of KEYS) {
+			r0[k] = r[k];
+		}
+		r0.ovr = ovrMeta;
+		delete r0.pot;
+		delete r0.skills;
+		delete p.draft.pot;
+		delete p.draft.ovr;
+		delete p.draft.skills;
+		n += 1;
+	}
+	console.log(`Prospectos generados con nivel base -${BAJA} y forma 2: ${n} (OVR ${(suma / n).toFixed(1)} más bajo en promedio; ${sinForma} solo con el nivel, por OVR muy bajo)`);
+}
+
 // Techo para el resto de los jugadores (prospectos generados, libres y
 // equipos sin cargar): ningún rating actual llega a 100. Mismo techo que la
 // forma 2 (desde 93, cada punto cuenta la mitad, tope 95) y retoque fino para
@@ -718,7 +794,7 @@ console.log(
 	const TECHO = FORMA_2.techo!;
 	let n = 0;
 	for (const p of league.players) {
-		if (creados.has(p.pid) || p.tid === -3) {
+		if (creados.has(p.pid) || p.tid === -3 || p.tid === -2) {
 			continue;
 		}
 		const r = p.ratings.at(-1);
