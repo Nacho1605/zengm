@@ -1,0 +1,651 @@
+{
+	"equipo": "IRM",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"reemplaza": [
+		{
+			"nombre": "Ramiro Macagno",
+			"nacimiento": 1998
+		},
+		{
+			"nombre": "Alex Vigo",
+			"nacimiento": 2000
+		},
+		{
+			"nombre": "José Florentín",
+			"nacimiento": 1996
+		}
+	],
+	"jugadores": [
+		{
+			"n": "30",
+			"nombre": "Nicolás",
+			"apellido": "Bolcato",
+			"pos": "Portero",
+			"nac": "06/05/2004",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 3000000,
+			"pj": 43,
+			"goles": 0,
+			"min": 3856,
+			"fichado": "01/01/2026",
+			"ovr": 67,
+			"debut": {
+				"club": "IRM",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "12",
+			"nombre": "Ramiro",
+			"apellido": "Macagno",
+			"pos": "Portero",
+			"nac": "18/03/1997",
+			"pais": "Argentina",
+			"altura": 1.85,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 450000,
+			"pj": 1,
+			"goles": 0,
+			"min": 14,
+			"fichado": "07/01/2026",
+			"ovr": 43,
+			"debut": {
+				"club": "RAF",
+				"anio": 2016
+			},
+			"lesion": {
+				"tipo": "Desgarro muscular",
+				"partidos": 3
+			}
+		},
+		{
+			"n": "21",
+			"nombre": "Emmanuel",
+			"apellido": "Gómez Riga",
+			"pos": "Portero",
+			"nac": "14/09/2001",
+			"pais": "Argentina",
+			"altura": 1.86,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 100000,
+			"pj": 2,
+			"goles": 0,
+			"min": 180,
+			"fichado": "14/01/2026",
+			"ovr": 38,
+			"debut": {
+				"club": "VEL",
+				"anio": 2024
+			}
+		},
+		{
+			"n": "42",
+			"nombre": "Sheyko",
+			"apellido": "Studer",
+			"pos": "Defensa central",
+			"nac": "12/11/2002",
+			"pais": "Argentina",
+			"altura": 1.92,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 6000000,
+			"pj": 35,
+			"goles": 2,
+			"min": 3064,
+			"fichado": "01/01/2026",
+			"ovr": 67,
+			"debut": {
+				"club": "TAL",
+				"anio": 2024
+			}
+		},
+		{
+			"n": "13",
+			"nombre": "Alejo",
+			"apellido": "Osella",
+			"pos": "Defensa central",
+			"nac": "30/09/2000",
+			"pais": "Argentina",
+			"altura": 1.9,
+			"pie": null,
+			"contrato": "31/12/2026",
+			"valor": 1200000,
+			"pj": 26,
+			"goles": 4,
+			"min": 1660,
+			"fichado": "14/01/2026",
+			"ovr": 65,
+			"debut": {
+				"club": "CCR",
+				"anio": 2022
+			},
+			"college": "Club Atlético Colón"
+		},
+		{
+			"n": "2",
+			"nombre": "Leonard",
+			"apellido": "Costa",
+			"pos": "Defensa central",
+			"nac": "24/08/1998",
+			"pais": "Uruguay",
+			"altura": 1.85,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 1000000,
+			"pj": 40,
+			"goles": 1,
+			"min": 3056,
+			"fichado": "01/01/2025",
+			"ovr": 65,
+			"debut": {
+				"club": null,
+				"anio": 2020
+			},
+			"college": "Central Español Fútbol Club"
+		},
+		{
+			"n": "40",
+			"nombre": "Iván",
+			"apellido": "Villalba",
+			"pos": "Defensa central",
+			"nac": "19/01/1995",
+			"pais": "Paraguay",
+			"altura": 1.82,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 800000,
+			"pj": 39,
+			"goles": 0,
+			"min": 2678,
+			"fichado": "05/07/2024",
+			"ovr": 65,
+			"debut": {
+				"club": null,
+				"anio": 2015
+			},
+			"college": "Imbabura Sporting Club"
+		},
+		{
+			"n": "6",
+			"nombre": "Santiago",
+			"apellido": "Cena",
+			"pos": "Defensa central",
+			"nac": "16/03/2005",
+			"pais": "Argentina",
+			"altura": 1.86,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": null,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"fichado": "14/01/2026",
+			"ovr": 40,
+			"debut": {
+				"club": "SAC",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "3",
+			"nombre": "Juan",
+			"apellido": "Elordi",
+			"pos": "Lateral izquierdo",
+			"nac": "21/08/1994",
+			"pais": "Argentina",
+			"altura": 1.76,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 400000,
+			"pj": 41,
+			"goles": 2,
+			"min": 2929,
+			"fichado": "14/01/2026",
+			"ovr": 65,
+			"debut": {
+				"club": "GBR",
+				"anio": 2015
+			},
+			"college": "Racing Club"
+		},
+		{
+			"n": "14",
+			"nombre": "Luciano",
+			"apellido": "Gómez",
+			"pos": "Lateral derecho",
+			"nac": "22/03/1996",
+			"pais": "Argentina",
+			"altura": 1.64,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 700000,
+			"pj": 26,
+			"goles": 2,
+			"min": 1611,
+			"fichado": "03/07/2024",
+			"ovr": 66,
+			"debut": {
+				"club": "BAN",
+				"anio": 2016
+			}
+		},
+		{
+			"n": "28",
+			"nombre": "Alex",
+			"apellido": "Vigo",
+			"pos": "Lateral derecho",
+			"nac": "28/04/1999",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 600000,
+			"pj": 14,
+			"goles": 0,
+			"min": 627,
+			"fichado": "08/08/2026",
+			"ovr": 57,
+			"debut": {
+				"club": "COL",
+				"anio": 2019
+			}
+		},
+		{
+			"n": "36",
+			"nombre": "Ezequiel",
+			"apellido": "Bonifacio",
+			"pos": "Lateral derecho",
+			"nac": "09/05/1994",
+			"pais": "Argentina",
+			"altura": 1.68,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 100000,
+			"pj": 24,
+			"goles": 0,
+			"min": 1309,
+			"fichado": "01/07/2025",
+			"ovr": 62,
+			"debut": {
+				"club": "GIM",
+				"anio": 2015
+			},
+			"college": "Club Atlético Tigre"
+		},
+		{
+			"n": "8",
+			"nombre": "Leonel",
+			"apellido": "Bucca",
+			"pos": "Pivote",
+			"nac": "20/03/1999",
+			"pais": "Argentina",
+			"altura": 1.9,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 700000,
+			"pj": 33,
+			"goles": 5,
+			"min": 1233,
+			"fichado": "06/07/2025",
+			"ovr": 61,
+			"debut": {
+				"club": "UNI",
+				"anio": 2021
+			}
+		},
+		{
+			"n": "34",
+			"nombre": "Stefano",
+			"apellido": "Moreyra",
+			"pos": "Pivote",
+			"nac": "19/09/2001",
+			"pais": "Argentina",
+			"altura": 1.79,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 600000,
+			"pj": 12,
+			"goles": 0,
+			"min": 173,
+			"fichado": "14/01/2026",
+			"ovr": 50,
+			"debut": {
+				"club": "COL",
+				"anio": 2023
+			}
+		},
+		{
+			"n": "32",
+			"nombre": "Kevin",
+			"apellido": "Vázquez",
+			"pos": "Pivote",
+			"nac": "19/03/2001",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 225000,
+			"pj": 10,
+			"goles": 0,
+			"min": 320,
+			"fichado": "20/01/2026",
+			"ovr": 51,
+			"debut": {
+				"club": "FCO",
+				"anio": 2023
+			}
+		},
+		{
+			"n": "25",
+			"nombre": "José",
+			"apellido": "Florentín",
+			"pos": "Mediocentro",
+			"nac": "05/07/1996",
+			"pais": "Paraguay",
+			"altura": 1.84,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 2200000,
+			"pj": 43,
+			"goles": 10,
+			"min": 3609,
+			"fichado": "14/01/2026",
+			"ovr": 69,
+			"debut": {
+				"club": null,
+				"anio": 2019
+			},
+			"college": "Club Guaraní"
+		},
+		{
+			"n": "5",
+			"nombre": "Tomás",
+			"apellido": "Bottari",
+			"pos": "Mediocentro",
+			"nac": "26/04/2001",
+			"pais": "Argentina",
+			"altura": 1.73,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 1800000,
+			"pj": 38,
+			"goles": 0,
+			"min": 2820,
+			"fichado": "10/01/2025",
+			"ovr": 65,
+			"debut": {
+				"club": "QUI",
+				"anio": 2021
+			}
+		},
+		{
+			"n": "10",
+			"nombre": "Matías",
+			"apellido": "Fernández",
+			"pos": "Mediocentro ofensivo",
+			"nac": "23/06/2001",
+			"pais": "Argentina",
+			"altura": 1.73,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 5000000,
+			"pj": 42,
+			"goles": 4,
+			"min": 3086,
+			"fichado": "14/01/2026",
+			"ovr": 70,
+			"debut": {
+				"club": "VSC",
+				"anio": 2021
+			},
+			"college": "Quilmes Atlético Club"
+		},
+		{
+			"n": "11",
+			"nombre": "Gonzalo",
+			"apellido": "Ríos",
+			"pos": "Mediocentro ofensivo",
+			"nac": "27/01/1999",
+			"pais": "Argentina",
+			"altura": 1.72,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 2000000,
+			"pj": 42,
+			"goles": 5,
+			"min": 2079,
+			"fichado": "13/07/2024",
+			"ovr": 64,
+			"debut": {
+				"club": "ARM",
+				"anio": 2020
+			},
+			"college": "Club Atlético San Lorenzo de Almagro"
+		},
+		{
+			"n": "77",
+			"nombre": "Luis",
+			"apellido": "Sequeira",
+			"pos": "Mediocentro ofensivo",
+			"nac": "08/01/2003",
+			"pais": "Argentina",
+			"altura": 1.72,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 500000,
+			"pj": 15,
+			"goles": 0,
+			"min": 499,
+			"fichado": "27/01/2026",
+			"ovr": 53,
+			"debut": {
+				"club": "TAL",
+				"anio": 2023
+			},
+			"college": "Club Atlético San Lorenzo de Almagro"
+		},
+		{
+			"n": "27",
+			"nombre": "Diego",
+			"apellido": "Crego",
+			"pos": "Extremo izquierdo",
+			"nac": "19/06/1997",
+			"pais": "Argentina",
+			"altura": 1.73,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 250000,
+			"pj": 15,
+			"goles": 1,
+			"min": 450,
+			"fichado": "14/01/2026",
+			"ovr": 54,
+			"debut": {
+				"club": "RPI",
+				"anio": 2018
+			}
+		},
+		{
+			"n": "19",
+			"nombre": "Rodrigo",
+			"apellido": "Atencio",
+			"pos": "Extremo derecho",
+			"nac": "30/06/2002",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 2000000,
+			"pj": 28,
+			"goles": 0,
+			"min": 977,
+			"fichado": "20/01/2026",
+			"ovr": 59,
+			"debut": {
+				"club": "IND",
+				"anio": 2024
+			}
+		},
+		{
+			"n": null,
+			"nombre": "Matías",
+			"apellido": "Reali",
+			"pos": "Extremo derecho",
+			"nac": "14/11/1997",
+			"pais": "Argentina",
+			"altura": 1.65,
+			"pie": "Ambidiestro",
+			"contrato": "31/12/2027",
+			"valor": 1500000,
+			"pj": 5,
+			"goles": 0,
+			"min": 200,
+			"fichado": "10/10/2026",
+			"ovr": 57,
+			"debut": {
+				"club": "CDC",
+				"anio": 2019
+			},
+			"college": "Club de Gimnasia y Esgrima La Plata"
+		},
+		{
+			"n": "23",
+			"nombre": "Luis",
+			"apellido": "Díaz",
+			"pos": "Extremo derecho",
+			"nac": "24/04/2004",
+			"pais": "Colombia",
+			"altura": 1.77,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 550000,
+			"pj": 6,
+			"goles": 1,
+			"min": 64,
+			"fichado": "02/08/2026",
+			"ovr": 47,
+			"debut": {
+				"club": null,
+				"anio": 2022
+			},
+			"college": "Envigado Fútbol Club"
+		},
+		{
+			"n": "20",
+			"nombre": "Alessandro",
+			"apellido": "Riep",
+			"pos": "Extremo derecho",
+			"nac": "03/07/2003",
+			"pais": "Argentina",
+			"altura": 1.74,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 350000,
+			"pj": 6,
+			"goles": 0,
+			"min": 262,
+			"fichado": "24/01/2026",
+			"ovr": 48,
+			"debut": {
+				"club": null,
+				"anio": 2023
+			},
+			"college": "Audax Club Sportivo Italiano"
+		},
+		{
+			"n": "17",
+			"nombre": "Maximiliano",
+			"apellido": "Salas",
+			"pos": "Delantero centro",
+			"nac": "01/12/1997",
+			"pais": "Argentina",
+			"altura": 1.74,
+			"pie": "Izquierdo",
+			"contrato": "30/06/2027",
+			"valor": 4000000,
+			"pj": 11,
+			"goles": 0,
+			"min": 808,
+			"fichado": "07/08/2026",
+			"ovr": 60,
+			"debut": {
+				"club": "ALL",
+				"anio": 2016
+			},
+			"lesion": {
+				"tipo": "Rotura del ligamento cruzado",
+				"partidos": 32
+			}
+		},
+		{
+			"n": "9",
+			"nombre": "Álex",
+			"apellido": "Arce",
+			"pos": "Delantero centro",
+			"nac": "16/06/1995",
+			"pais": "Paraguay",
+			"altura": 1.88,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 3500000,
+			"pj": 34,
+			"goles": 20,
+			"min": 2368,
+			"fichado": "06/07/2025",
+			"ovr": 71,
+			"debut": {
+				"club": null,
+				"anio": 2017
+			},
+			"college": "Club Cerro Porteño"
+		},
+		{
+			"n": "43",
+			"nombre": "Fabrizio",
+			"apellido": "Sartori",
+			"pos": "Delantero centro",
+			"nac": "15/07/2002",
+			"pais": "Argentina",
+			"altura": 1.78,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 3500000,
+			"pj": 40,
+			"goles": 9,
+			"min": 2610,
+			"fichado": "01/01/2025",
+			"ovr": 66,
+			"debut": {
+				"club": "IRM",
+				"anio": 2025
+			},
+			"college": "Club Atlético Newell's Old Boys"
+		},
+		{
+			"n": "7",
+			"nombre": "Victorio",
+			"apellido": "Ramis",
+			"pos": "Delantero centro",
+			"nac": "07/07/1994",
+			"pais": "Argentina",
+			"altura": 1.81,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 100000,
+			"pj": 7,
+			"goles": 0,
+			"min": 85,
+			"fichado": "01/01/2023",
+			"ovr": 49,
+			"debut": {
+				"club": "TAL",
+				"anio": 2014
+			}
+		}
+	]
+}

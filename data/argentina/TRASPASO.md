@@ -1,8 +1,9 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 20/11/2026. Última versión: **v2.12.2**
-(`data/argentina/BBGM_Argentina_2026_v.2.12.2_futbol.json`), igual a la liga
-exportada por el usuario ese día (fotos y ratings incluidos).
+Estado al 20/11/2026. Última versión: **v2.13**
+(`data/argentina/BBGM_Argentina_2026_v.2.13_futbol.json`): la v2.12.2 (igual a
+la liga exportada por el usuario ese día, fotos y ratings incluidos) más el
+plantel de Independiente Rivadavia, pendiente de revisión del usuario.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -11,7 +12,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 - **Fase 1 (v1.x, terminada):** esqueleto de la liga. Motor de fútbol con
   ajustes del archivo (`activar-futbol.ts`), 163 equipos (30 activos), zonas,
   premios y lesiones en español, drafts generados con norma de posición.
-- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **10 de
+- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **11 de
   30** equipos.
 - **Fase 3 (futura):** historia de la liga (temporadas pasadas, campeones,
   premios, Salón de la Fama — hay 32 retirados en el Salón, mal hechos, como
@@ -20,7 +21,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 ## 2. Equipos
 
 Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
-`RIE BOC RIV RAC SLO IND ROS EST ARG VEL`.
+`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM`.
 
 | Abrev | En el juego | Zona / división | |
 |---|---|---|---|
@@ -53,14 +54,14 @@ Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
 | ATU | Tucumán Deans | Fed / Noroeste | |
 | CCO | Santiago Railroaders (Central Córdoba SdE) | Fed / Chaqueña | |
 | GEM | Mendoza 33ers (Gimnasia de Mendoza) | Fed / Cuyo | |
-| IRM | Mendoza Blues (Independiente Rivadavia) | Fed / Cuyo | |
+| IRM | Mendoza Blues (Independiente Rivadavia, "CSIR") | Fed / Cuyo | ✔ |
 
 Siglas que usa el usuario: AAAJ = ARG, CASLA = SLO, EDLP = EST, CARC = ROS,
 SMSJ = SMJ (San Martín de San Juan, inactivo). Colón (COL) es inactivo, es el
 club del usuario: "Santa Fe Fishermen". El Porvenir = PVN.
 
-**Próximos sugeridos:** Independiente Rivadavia y Gimnasia LP (4.º y 5.º de la
-tabla anual), después Lanús y Huracán, el bloque cordobés y el resto de a dos.
+**Próximos sugeridos:** Gimnasia LP (5.º de la tabla anual), después Lanús y
+Huracán, el bloque cordobés y el resto de a dos.
 
 133 inactivos: Primera Nacional, Federal A, Primera B y C Metro, Patagonia y 10
 clasificados al Torneo Argentino del Interior 2027 (AHZ DES JUG CON PAC CSJ HGO
@@ -108,8 +109,8 @@ asigne camiseta.
 ## 4. Escala de OVR (referencias actuales)
 
 Once (promedio de los 11 mejores): RIV 70,3 · BOC 69,7 · ROS 68,5 · EST 67,8 ·
-ARG 66,9 · VEL 66,9 · IND 65,6 · RAC 65,6 · SLO 64,8 · RIE 60,5. Los 20 sin
-cargar tienen datos de 2023 (47–60).
+ARG 66,9 · IRM 66,9 · VEL 66,9 · IND 65,6 · RAC 65,6 · SLO 64,8 · RIE 60,5. Los
+19 sin cargar tienen datos de 2023 (47–60).
 
 Techo: Paredes 78, Di María 77, Montiel 75, Almada 74, Correa 73. Pocos por
 encima de 70; titulares de grandes 66–72, de medianos 62–68, suplentes 50–60,
@@ -122,6 +123,7 @@ Cardozo BEL 70, Losada LAN 69, Cortés 69, Arce 68, Rey 68, Ledesma 67 (68),
 Marchiori 66, Mele 60 (65), Sanguinetti 62 (64), Iacovich 57, Brey 55,
 Werner 51, Centurión 48, Tagliamonte 46, Devecchi 43 (55), Altamirano 43 (44),
 Busso 40, Siri 39 (44), Arzamendia 39, J. García 38, Sitaro INS 34 (el peor).
+De Independiente Rivadavia: Bolcato 67, Macagno 43, Gómez Riga 38.
 
 Correcciones que hizo el usuario y que enseñan el criterio: no temerle a la
 edad (Muslera 70 a los 40, Otamendi 71, Rojo 65), valorar a los que no viven
@@ -145,7 +147,9 @@ rendimiento por partido, Sofascore ≥ 7 como señal de los mejores.
 
 ## 6. Pendientes
 
-1. Cargar los 20 equipos restantes.
+1. Cargar los 19 equipos restantes. Independiente Rivadavia: faltan los
+   juveniles que aparecen en Rendimiento y no en el plantel (Dadín, Sábato,
+   Salvo, Suárez, Ortiz; Muro y Arena) y la respuesta a las dudas de la v2.13.
 2. **Fotos:** 221 de los primeros ocho equipos son miniaturas de Google
    (`encrypted-tbn0.gstatic.com`), no de Transfermarkt; el usuario las está
    cambiando a mano. Transfermarkt está bloqueado en la red de la sesión; el
