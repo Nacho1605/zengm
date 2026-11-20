@@ -1,0 +1,704 @@
+{
+	"equipo": "GIM",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"reemplaza": [
+		{
+			"nombre": "Germán Conti",
+			"nacimiento": 1995
+		},
+		{
+			"nombre": "Matías Melluso",
+			"nacimiento": 1999
+		},
+		{
+			"nombre": "Alexis Steimbach",
+			"nacimiento": 2003
+		},
+		{
+			"nombre": "Ignacio Miramón",
+			"nacimiento": 2004
+		},
+		{
+			"nombre": "Mateo Seoane",
+			"nacimiento": 2004
+		},
+		{
+			"nombre": "Nacho Fernández",
+			"nacimiento": 1990
+		},
+		{
+			"nombre": "Lucas Janson",
+			"nacimiento": 1995
+		}
+	],
+	"jugadores": [
+		{
+			"n": "23",
+			"nombre": "Nelson",
+			"apellido": "Insfrán",
+			"pos": "Portero",
+			"nac": "24/05/1995",
+			"pais": "Argentina",
+			"altura": 1.79,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 2000000,
+			"pj": 30,
+			"goles": 0,
+			"min": 2638,
+			"fichado": "01/07/2019",
+			"ovr": 66,
+			"debut": {
+				"club": "CDC",
+				"anio": 2016
+			},
+			"college": "Club de Gimnasia y Esgrima La Plata"
+		},
+		{
+			"n": "15",
+			"nombre": "Harlen",
+			"apellido": "Castillo",
+			"pos": "Portero",
+			"nac": "17/08/1993",
+			"pais": "Colombia",
+			"altura": 1.88,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 350000,
+			"pj": 5,
+			"goles": 0,
+			"min": 450,
+			"fichado": "14/07/2026",
+			"ovr": 50,
+			"debut": {
+				"club": null,
+				"anio": 2015
+			},
+			"college": "Deportivo Pereira"
+		},
+		{
+			"n": "27",
+			"nombre": "Julián",
+			"apellido": "Kadijevic",
+			"pos": "Portero",
+			"nac": "27/01/2004",
+			"pais": "Argentina",
+			"altura": 1.86,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 50000,
+			"pj": 2,
+			"goles": 0,
+			"min": 152,
+			"fichado": "06/01/2024",
+			"ovr": 40,
+			"debut": {
+				"club": "COM",
+				"anio": 2022
+			}
+		},
+		{
+			"n": "4",
+			"nombre": "Renzo",
+			"apellido": "Giampaoli",
+			"pos": "Defensa central",
+			"nac": "07/01/2000",
+			"pais": "Argentina",
+			"altura": 1.87,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 1500000,
+			"pj": 27,
+			"goles": 1,
+			"min": 1783,
+			"fichado": "16/01/2025",
+			"ovr": 63,
+			"debut": {
+				"club": "BOC",
+				"anio": 2022
+			}
+		},
+		{
+			"n": "21",
+			"nombre": "Enzo",
+			"apellido": "Martínez",
+			"pos": "Defensa central",
+			"nac": "29/04/1998",
+			"pais": "Uruguay",
+			"altura": 1.84,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2028",
+			"valor": 1500000,
+			"pj": 33,
+			"goles": 2,
+			"min": 2935,
+			"fichado": "03/09/2024",
+			"ovr": 68,
+			"debut": {
+				"club": null,
+				"anio": 2018
+			},
+			"college": "Club Atlético Peñarol"
+		},
+		{
+			"n": "35",
+			"nombre": "Juan",
+			"apellido": "Cortazzo",
+			"pos": "Defensa central",
+			"nac": "18/10/2005",
+			"pais": "Argentina",
+			"altura": 1.91,
+			"pie": "Ambidiestro",
+			"contrato": "31/12/2027",
+			"valor": 400000,
+			"pj": 13,
+			"goles": 0,
+			"min": 446,
+			"fichado": "01/01/2026",
+			"ovr": 51,
+			"debut": {
+				"club": "GIM",
+				"anio": 2026
+			},
+			"lesion": {
+				"tipo": "Lesión muscular",
+				"partidos": 2
+			}
+		},
+		{
+			"n": "14",
+			"nombre": "Gonzalo",
+			"apellido": "Errecalde",
+			"pos": "Defensa central",
+			"nac": "30/03/2000",
+			"pais": "Argentina",
+			"altura": 1.86,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 175000,
+			"pj": 5,
+			"goles": 0,
+			"min": 230,
+			"fichado": "23/01/2026",
+			"ovr": 48,
+			"debut": {
+				"club": "SAC",
+				"anio": 2021
+			},
+			"college": "Racing Club"
+		},
+		{
+			"n": "13",
+			"nombre": "Germán",
+			"apellido": "Conti",
+			"pos": "Defensa central",
+			"nac": "03/06/1994",
+			"pais": "Argentina",
+			"altura": 1.93,
+			"pie": "Derecho",
+			"contrato": "30/06/2027",
+			"valor": 150000,
+			"pj": 17,
+			"goles": 2,
+			"min": 1411,
+			"fichado": "24/07/2025",
+			"ovr": 62,
+			"debut": {
+				"club": "COL",
+				"anio": 2013
+			}
+		},
+		{
+			"n": "24",
+			"nombre": "Pedro",
+			"apellido": "Silva Torrejón",
+			"pos": "Lateral izquierdo",
+			"nac": "25/01/1997",
+			"pais": "Argentina",
+			"altura": 1.8,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 1200000,
+			"pj": 35,
+			"goles": 1,
+			"min": 2930,
+			"fichado": "23/01/2025",
+			"ovr": 65,
+			"debut": {
+				"club": "OLI",
+				"anio": 2017
+			},
+			"college": "Club Atlético Boca Juniors"
+		},
+		{
+			"n": "22",
+			"nombre": "Matías",
+			"apellido": "Melluso",
+			"pos": "Lateral izquierdo",
+			"nac": "09/06/1998",
+			"pais": "Argentina",
+			"altura": 1.7,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 200000,
+			"pj": 11,
+			"goles": 0,
+			"min": 358,
+			"fichado": "24/01/2025",
+			"ovr": 56,
+			"debut": {
+				"club": "GIM",
+				"anio": 2018
+			}
+		},
+		{
+			"n": "25",
+			"nombre": "Alexis",
+			"apellido": "Steimbach",
+			"pos": "Lateral derecho",
+			"nac": "25/07/2002",
+			"pais": "Argentina",
+			"altura": 1.84,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 2200000,
+			"pj": 32,
+			"goles": 2,
+			"min": 2353,
+			"fichado": "01/07/2022",
+			"ovr": 67,
+			"debut": {
+				"club": "GIM",
+				"anio": 2022
+			}
+		},
+		{
+			"n": "31",
+			"nombre": "Bautista",
+			"apellido": "Barros Schelotto",
+			"pos": "Lateral derecho",
+			"nac": "13/01/2000",
+			"pais": "Argentina",
+			"altura": 1.81,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 350000,
+			"pj": 16,
+			"goles": 1,
+			"min": 1059,
+			"fichado": "01/01/2022",
+			"ovr": 58,
+			"debut": {
+				"club": "GIM",
+				"anio": 2022
+			}
+		},
+		{
+			"n": "28",
+			"nombre": "Fabricio",
+			"apellido": "Corbalán",
+			"pos": "Lateral derecho",
+			"nac": "29/09/2003",
+			"pais": "Argentina",
+			"altura": 1.7,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 75000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"fichado": "01/01/2025",
+			"ovr": 37,
+			"debut": {
+				"club": "GIM",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "10",
+			"nombre": "Nicolás",
+			"apellido": "Barros Schelotto",
+			"pos": "Pivote",
+			"nac": "22/09/2006",
+			"pais": "Argentina",
+			"altura": 1.74,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 6000000,
+			"pj": 27,
+			"goles": 4,
+			"min": 1712,
+			"fichado": "01/07/2025",
+			"ovr": 68,
+			"debut": {
+				"club": "GIM",
+				"anio": 2025
+			}
+		},
+		{
+			"n": "5",
+			"nombre": "Ignacio",
+			"apellido": "Miramón",
+			"pos": "Pivote",
+			"nac": "12/06/2003",
+			"pais": "Argentina",
+			"altura": 1.73,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 2500000,
+			"pj": 30,
+			"goles": 1,
+			"min": 2347,
+			"fichado": "14/01/2026",
+			"ovr": 67,
+			"debut": {
+				"club": "GIM",
+				"anio": 2023
+			}
+		},
+		{
+			"n": "18",
+			"nombre": "Mateo",
+			"apellido": "Seoane",
+			"pos": "Pivote",
+			"nac": "09/02/2004",
+			"pais": "Argentina",
+			"altura": 1.78,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 700000,
+			"pj": 22,
+			"goles": 1,
+			"min": 1543,
+			"fichado": "06/07/2025",
+			"ovr": 63,
+			"debut": {
+				"club": "VEL",
+				"anio": 2022
+			}
+		},
+		{
+			"n": "39",
+			"nombre": "Facundo",
+			"apellido": "Di Biasi",
+			"pos": "Pivote",
+			"nac": "22/06/2005",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 300000,
+			"pj": 3,
+			"goles": 0,
+			"min": 56,
+			"fichado": "01/01/2025",
+			"ovr": 44,
+			"debut": {
+				"club": "GIM",
+				"anio": 2025
+			},
+			"lesion": {
+				"tipo": "Recuperación de rotura del ligamento cruzado",
+				"partidos": 4
+			}
+		},
+		{
+			"n": "16",
+			"nombre": "Augusto",
+			"apellido": "Max",
+			"pos": "Mediocentro",
+			"nac": "10/08/1992",
+			"pais": "Argentina",
+			"altura": 1.68,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 100000,
+			"pj": 25,
+			"goles": 0,
+			"min": 1635,
+			"fichado": "03/09/2024",
+			"ovr": 62,
+			"debut": {
+				"club": "SMT",
+				"anio": 2010
+			}
+		},
+		{
+			"n": "8",
+			"nombre": "Nacho",
+			"apellido": "Fernández",
+			"pos": "Mediocentro ofensivo",
+			"nac": "12/01/1990",
+			"pais": "Argentina",
+			"altura": 1.82,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 225000,
+			"pj": 34,
+			"goles": 6,
+			"min": 2831,
+			"fichado": "14/01/2026",
+			"ovr": 72,
+			"debut": {
+				"club": "GIM",
+				"anio": 2011
+			}
+		},
+		{
+			"n": "20",
+			"nombre": "Juan José",
+			"apellido": "Pérez",
+			"pos": "Mediocentro ofensivo",
+			"nac": "25/07/2004",
+			"pais": "Colombia",
+			"altura": 1.69,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 150000,
+			"pj": 7,
+			"goles": 0,
+			"min": 222,
+			"fichado": "04/07/2025",
+			"ovr": 48,
+			"debut": {
+				"club": null,
+				"anio": 2022
+			},
+			"college": "Club Deportivo América"
+		},
+		{
+			"n": "34",
+			"nombre": "Leandro",
+			"apellido": "Mamut",
+			"pos": "Mediocentro ofensivo",
+			"nac": "31/12/2003",
+			"pais": "Argentina",
+			"altura": 1.78,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 50000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"fichado": "01/01/2023",
+			"ovr": 36,
+			"debut": {
+				"club": "GIM",
+				"anio": 2023
+			}
+		},
+		{
+			"n": "42",
+			"nombre": "Santiago",
+			"apellido": "Villarreal",
+			"pos": "Mediocentro ofensivo",
+			"nac": "20/11/2005",
+			"pais": "Argentina",
+			"altura": 1.68,
+			"pie": null,
+			"contrato": "31/12/2028",
+			"valor": 50000,
+			"pj": 2,
+			"goles": 0,
+			"min": 51,
+			"fichado": "01/01/2026",
+			"ovr": 42,
+			"debut": {
+				"club": "GIM",
+				"anio": 2026
+			}
+		},
+		{
+			"n": "11",
+			"nombre": "Jeremías",
+			"apellido": "Merlo",
+			"pos": "Extremo izquierdo",
+			"nac": "20/06/2006",
+			"pais": "Argentina",
+			"altura": 1.7,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 700000,
+			"pj": 8,
+			"goles": 0,
+			"min": 230,
+			"fichado": "01/01/2025",
+			"ovr": 49,
+			"debut": {
+				"club": "GIM",
+				"anio": 2025
+			},
+			"lesion": {
+				"tipo": "Lesión muscular",
+				"partidos": 2
+			}
+		},
+		{
+			"n": "17",
+			"nombre": "Lucas",
+			"apellido": "Janson",
+			"pos": "Extremo izquierdo",
+			"nac": "16/08/1994",
+			"pais": "Argentina",
+			"altura": 1.71,
+			"pie": "Derecho",
+			"contrato": "30/06/2027",
+			"valor": 200000,
+			"pj": 14,
+			"goles": 1,
+			"min": 804,
+			"fichado": "28/07/2026",
+			"ovr": 61,
+			"debut": {
+				"club": "TIG",
+				"anio": 2012
+			}
+		},
+		{
+			"n": "7",
+			"nombre": "Manuel",
+			"apellido": "Panaro",
+			"pos": "Extremo derecho",
+			"nac": "28/12/2002",
+			"pais": "Argentina",
+			"altura": 1.81,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 1800000,
+			"pj": 25,
+			"goles": 1,
+			"min": 961,
+			"fichado": "13/08/2024",
+			"ovr": 60,
+			"debut": {
+				"club": "ALD",
+				"anio": 2023
+			}
+		},
+		{
+			"n": "43",
+			"nombre": "Maximiliano",
+			"apellido": "Zalazar",
+			"pos": "Extremo derecho",
+			"nac": "08/03/2001",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 375000,
+			"pj": 17,
+			"goles": 2,
+			"min": 725,
+			"fichado": "06/07/2025",
+			"ovr": 57,
+			"debut": {
+				"club": "BOC",
+				"anio": 2023
+			}
+		},
+		{
+			"n": "26",
+			"nombre": "Franco",
+			"apellido": "Torres",
+			"pos": "Extremo derecho",
+			"nac": "25/05/1999",
+			"pais": "Argentina",
+			"altura": 1.7,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 300000,
+			"pj": 27,
+			"goles": 5,
+			"min": 869,
+			"fichado": "01/01/2022",
+			"ovr": 61,
+			"debut": {
+				"club": "GIM",
+				"anio": 2022
+			},
+			"college": "Club Atlético Banfield"
+		},
+		{
+			"n": "32",
+			"nombre": "Marcelo",
+			"apellido": "Torres",
+			"pos": "Delantero centro",
+			"nac": "06/11/1997",
+			"pais": "Argentina",
+			"altura": 1.8,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 2800000,
+			"pj": 30,
+			"goles": 11,
+			"min": 1996,
+			"fichado": "08/07/2025",
+			"ovr": 69,
+			"debut": {
+				"club": "TAL",
+				"anio": 2017
+			},
+			"college": "Club Atlético Boca Juniors"
+		},
+		{
+			"n": "29",
+			"nombre": "Agustín",
+			"apellido": "Auzmendi",
+			"pos": "Delantero centro",
+			"nac": "01/02/1997",
+			"pais": "Argentina",
+			"altura": 1.81,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 1800000,
+			"pj": 37,
+			"goles": 8,
+			"min": 2256,
+			"fichado": "15/01/2026",
+			"ovr": 66,
+			"debut": {
+				"club": "ACA",
+				"anio": 2017
+			}
+		},
+		{
+			"n": "19",
+			"nombre": "Agustín",
+			"apellido": "Colazo",
+			"pos": "Delantero centro",
+			"nac": "15/11/2000",
+			"pais": "Argentina",
+			"altura": 1.86,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 350000,
+			"pj": 10,
+			"goles": 3,
+			"min": 488,
+			"fichado": "31/07/2026",
+			"ovr": 60,
+			"debut": {
+				"club": "BEL",
+				"anio": 2022
+			}
+		},
+		{
+			"n": "33",
+			"nombre": "Pablo",
+			"apellido": "Aguiar",
+			"pos": "Pivote",
+			"nac": "18/03/2006",
+			"pais": "Paraguay",
+			"altura": 1.71,
+			"pie": "Derecho",
+			"contrato": null,
+			"valor": 75000,
+			"pj": 7,
+			"goles": 0,
+			"min": 268,
+			"ovr": 48,
+			"prospecto": true,
+			"college": "Club de Gimnasia y Esgrima La Plata"
+		}
+	]
+}

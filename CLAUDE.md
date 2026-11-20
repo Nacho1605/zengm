@@ -59,9 +59,9 @@ Commit + push de cada versión (`git -c push.negotiate=true push`).
 - OVR: valor a mano en el plantel (`ovr`), escala amplia, top sin repetir
   (Paredes 78, Di María 77, Montiel 75). Arqueros: la lista del usuario
   (desactualizada unos 5 meses; ajustar con contexto). Método:
-  - Escalonar el plantel por jerarquía (estrellas, titulares clave, titulares,
-    rotación, suplentes, poco uso, sin minutos) con los rangos de TRASPASO §4.
-    No amontonar a todos los titulares en el mismo valor.
+  - Escalonar el plantel según la jerarquía real de cada jugador, con análisis
+    propio (los rangos de TRASPASO §4 orientan, no son reglas). No amontonar a
+    todos los titulares en el mismo valor.
   - Antes de dar cada valor, compararlo en la escalera con los de ese número y
     los de arriba y abajo: ¿es mejor, igual o peor que ellos?
   - Leer más allá de los números: rol (titular fijo, rotación, revulsivo, el que
@@ -69,8 +69,8 @@ Commit + push de cada versión (`git -c push.negotiate=true push`).
     defensores no viven del gol; hay ofensivos que tampoco.
   - NO castigar la edad; los de media temporada, por partido; las tablas y
     Sofascore son guías, no verdad absoluta.
-  - Mostrarlos agrupados: Arqueros, Centrales, Laterales, Mediocampistas,
-    Ofensivos y Delanteros.
+  - Mostrarlos en cuadros (N.º, jugador, OVR, por qué), uno por sección:
+    Arqueros, Centrales, Laterales, Mediocampistas, Ofensivos y Delanteros.
 - Draft = club y año en que fue promovido al primer equipo (el usuario lo anota
   "debutó en"; si fue en 2026, draft 2025). Un juvenil que ya jugó pero no fue
   promovido sigue como prospecto (ej.: Satas). College = club de inferiores; si
@@ -86,7 +86,8 @@ Commit + push de cada versión (`git -c push.negotiate=true push`).
   números se guardan en `data/argentina/salidas-2026.json`, por si aparecen en
   otro equipo.
 - Juveniles que siguen en reserva: prospectos del draft 2026 (`prospecto: true`).
-- Lealtad (rasgo L): debut en 2021 o antes y juega en su club de draft o College.
+- Lealtad (rasgo L): debut en 2021 o antes y juega en su club de draft o College;
+  o a mano, si el usuario lo pide (`"leal": true` en el plantel; ej.: Arce).
 - Lesiones: 1 partido ≈ 1 semana desde la fecha actual.
 - Contrato "-" en Transfermarkt: vence en 2027.
 - Jugadores que ya existen en el archivo con datos de 2023: van en

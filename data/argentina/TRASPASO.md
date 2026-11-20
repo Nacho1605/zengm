@@ -1,10 +1,10 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 20/11/2026. Última versión: **v2.13.1**
-(`data/argentina/BBGM_Argentina_2026_v.2.13.1_futbol.json`): la v2.12.2 (igual
-a la liga exportada por el usuario ese día, fotos y ratings incluidos) más el
-plantel de Independiente Rivadavia (v2.13) con los OVR rehechos según las
-correcciones de criterio del usuario (v2.13.1), pendiente de su revisión.
+Estado al 20/11/2026. Última versión: **v2.14**
+(`data/argentina/BBGM_Argentina_2026_v.2.14_futbol.json`): la v2.12.2 (igual a
+la liga exportada por el usuario ese día, fotos y ratings incluidos), más
+Independiente Rivadavia ya revisado por el usuario (v2.13 → v2.13.2), más
+Gimnasia LP (v2.14), pendiente de su revisión.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -13,7 +13,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 - **Fase 1 (v1.x, terminada):** esqueleto de la liga. Motor de fútbol con
   ajustes del archivo (`activar-futbol.ts`), 163 equipos (30 activos), zonas,
   premios y lesiones en español, drafts generados con norma de posición.
-- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **11 de
+- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **12 de
   30** equipos.
 - **Fase 3 (futura):** historia de la liga (temporadas pasadas, campeones,
   premios, Salón de la Fama — hay 32 retirados en el Salón, mal hechos, como
@@ -22,7 +22,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 ## 2. Equipos
 
 Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
-`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM`.
+`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM`.
 
 | Abrev | En el juego | Zona / división | |
 |---|---|---|---|
@@ -42,7 +42,7 @@ Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
 | LAN | Lanús Garnets | Met / Conurbano | |
 | TIG | Victoria Tigers | Met / Conurbano | |
 | EST | La Plata Students ("EDLP") | Fed / Buenos Aires | ✔ |
-| GIM | La Plata Wolves (Gimnasia LP) | Fed / Buenos Aires | |
+| GIM | La Plata Wolves (Gimnasia LP, "GELP") | Fed / Buenos Aires | ✔ |
 | SAR | Junín Greens (Sarmiento) | Fed / Buenos Aires | |
 | ALD | Mar del Plata Sharks (Aldosivi) | Fed / Buenos Aires | |
 | BEL | Córdoba Pirates (Belgrano) | Fed / Córdoba | |
@@ -61,8 +61,7 @@ Siglas que usa el usuario: AAAJ = ARG, CASLA = SLO, EDLP = EST, CARC = ROS,
 SMSJ = SMJ (San Martín de San Juan, inactivo). Colón (COL) es inactivo, es el
 club del usuario: "Santa Fe Fishermen". El Porvenir = PVN.
 
-**Próximos sugeridos:** Gimnasia LP (5.º de la tabla anual), después Lanús y
-Huracán, el bloque cordobés y el resto de a dos.
+**Próximos sugeridos:** Lanús y Huracán, el bloque cordobés y el resto de a dos.
 
 133 inactivos: Primera Nacional, Federal A, Primera B y C Metro, Patagonia y 10
 clasificados al Torneo Argentino del Interior 2027 (AHZ DES JUG CON PAC CSJ HGO
@@ -104,7 +103,8 @@ Formato de un jugador en el plantel:
   "college": "Asociación Atlética Argentinos Juniors",
   "rasgos": ["aereo"], "lesion": { "tipo": "...", "partidos": 7 },
   "parientes": [{ "tipo": "brother", "nombre": "Ezequiel Ávila" }],
-  "prospecto": true, "imgURL": "https://img.a.transfermarkt.technology/...",
+  "prospecto": true, "leal": true,
+  "imgURL": "https://img.a.transfermarkt.technology/...",
   "ratings": { "stre": 50, "...": 0 } }
 ```
 
@@ -116,17 +116,13 @@ asigne camiseta.
 ## 4. Escala de OVR (referencias actuales)
 
 Once (promedio de los 11 mejores): RIV 70,3 · BOC 69,7 · ROS 68,5 · EST 67,8 ·
-ARG 66,9 · VEL 66,9 · IRM 66,7 · IND 65,6 · RAC 65,6 · SLO 64,8 · RIE 60,5. Los
-19 sin cargar tienen datos de 2023 (47–60).
+ARG 66,9 · VEL 66,9 · IRM 66,8 · GIM 66,7 · IND 65,6 · RAC 65,6 · SLO 64,8 ·
+RIE 60,5. Los 18 sin cargar tienen datos de 2023 (47–60).
 
 Techo: Paredes 78, Di María 77, Montiel 75, Almada 74, Correa 73. Pocos por
 encima de 70; titulares de grandes 66–72, de medianos 62–68, suplentes 50–60,
-juveniles con pocos minutos 38–48, sin minutos 30–40.
-
-Dentro de cada plantel, escalonar por jerarquía y no amontonar. Así quedó
-Independiente Rivadavia (v2.13.1), como ejemplo de un equipo mediano:
-estrellas 69–71 · titulares clave 67 · titulares 63–65 · rotación 60–62 ·
-suplentes 52–57 · poco uso 46–49 · sin minutos y tercer arquero 38.
+juveniles con pocos minutos 38–48, sin minutos 30–40. Son orientativos: el
+usuario prefiere el análisis propio de cada jugador a las reglas escritas.
 
 Arqueros de la lista del usuario (hecha durante el Mundial 2026; los
 actualizados entre paréntesis): Beltrán 73 (72), Gill 72 (se fue a Lille),
@@ -135,7 +131,9 @@ Cardozo BEL 70, Losada LAN 69, Cortés 69, Arce 68, Rey 68, Ledesma 67 (68),
 Marchiori 66, Mele 60 (65), Sanguinetti 62 (64), Iacovich 57, Brey 55,
 Werner 51, Centurión 48, Tagliamonte 46, Devecchi 43 (55), Altamirano 43 (44),
 Busso 40, Siri 39 (44), Arzamendia 39, J. García 38, Sitaro INS 34 (el peor).
-De Independiente Rivadavia: Bolcato 67, Macagno 43, Gómez Riga 38.
+De Independiente Rivadavia: Bolcato 67 (confirmado), Macagno 43, Gómez Riga 38.
+De Gimnasia LP: Insfrán 64 (propuesto 66), Castillo 42 (propuesto 50) y
+Kadijevic (no estaba en la lista; propuesto 40).
 
 Correcciones que hizo el usuario y que enseñan el criterio: no temerle a la
 edad (Muslera 70 a los 40, Otamendi 71, Rojo 65), valorar a los que no viven
@@ -159,10 +157,12 @@ rendimiento por partido, Sofascore ≥ 7 como señal de los mejores.
 
 ## 6. Pendientes
 
-1. Cargar los 19 equipos restantes. Independiente Rivadavia: falta la revisión
-   del usuario de la v2.13.1. Los que se fueron (Villa, Dadín, Sábato, Salvo,
-   Suárez, Ortiz, Muro, Arena) están en `salidas-2026.json`; Villa ya está en
-   Boca y sus números de IRM todavía no se sumaron a nada.
+1. Cargar los 18 equipos restantes. Gimnasia LP: falta la revisión del usuario
+   de la v2.14. Los que se fueron de IRM y GIM están en `salidas-2026.json`;
+   Villa ya está en Boca y sus números de IRM todavía no se sumaron a nada.
+   Tablas: solo está guardada la tabla anual (puntos, `TABLA_ANUAL_2026` en
+   `cargar-plantel.ts`); las de grupos del Apertura y el Clausura y la de
+   promedios se perdieron con la sesión anterior.
 2. **Fotos:** 221 de los primeros ocho equipos son miniaturas de Google
    (`encrypted-tbn0.gstatic.com`), no de Transfermarkt; el usuario las está
    cambiando a mano. Transfermarkt está bloqueado en la red de la sesión; el
@@ -176,7 +176,10 @@ rendimiento por partido, Sofascore ≥ 7 como señal de los mejores.
    Cruz y uno más en diciembre): el usuario decidió esperar. Plan propuesto:
    pretemporada 2027, contratos de fin de 2026 renovados un año, lesiones
    recalculadas al 24/01/2027, prospectos de reserva a la clase 2027.
-7. Fase 3: historia.
+7. Fase 3: historia. Pendiente para entonces: Guillermo y Gustavo Barros
+   Schelotto (hermanos; padres de Nicolás y de Bautista, que son primos). El
+   juego solo vincula padre, hijo y hermano: los primos quedan unidos a través
+   de los padres.
 
 ## 7. Trampas conocidas
 
