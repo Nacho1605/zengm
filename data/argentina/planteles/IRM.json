@@ -98,7 +98,7 @@
 			"goles": 2,
 			"min": 3064,
 			"fichado": "01/01/2026",
-			"ovr": 67,
+			"ovr": 68,
 			"debut": {
 				"club": "TAL",
 				"anio": 2024
@@ -572,7 +572,7 @@
 			"goles": 0,
 			"min": 808,
 			"fichado": "07/08/2026",
-			"ovr": 60,
+			"ovr": 63,
 			"debut": {
 				"club": "ALL",
 				"anio": 2016
@@ -602,7 +602,8 @@
 				"club": null,
 				"anio": 2017
 			},
-			"college": "Club Cerro Porteño"
+			"college": "Club Cerro Porteño",
+			"leal": true
 		},
 		{
 			"n": "43",

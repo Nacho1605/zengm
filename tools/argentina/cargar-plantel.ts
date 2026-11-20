@@ -547,6 +547,7 @@ const NOMBRE_COMPLETO: Record<string, string> = {
 	CCO: "Club Atlético Central Córdoba (Santiago del Estero)",
 	BAR: "Club Atlético Barracas Central",
 	ATU: "Club Atlético Tucumán",
+	ACA: "Club Atlético Acassuso",
 	ALD: "Club Atlético Aldosivi",
 	ALL: "Club Atlético All Boys",
 	ALM: "Club Almagro",
@@ -559,6 +560,7 @@ const NOMBRE_COMPLETO: Record<string, string> = {
 	BEL: "Club Atlético Belgrano",
 	BOC: "Club Atlético Boca Juniors",
 	CIP: "Club Cipolletti",
+	COM: "Club Comunicaciones",
 	COL: "Club Atlético Colón",
 	DME: "Club Social y Deportivo Merlo",
 	DOC: "Club Atlético Dock Sud",
@@ -591,6 +593,7 @@ const NOMBRE_COMPLETO: Record<string, string> = {
 	SLO: "Club Atlético San Lorenzo de Almagro",
 	SMG: "Club Atlético San Miguel",
 	SMJ: "Club Atlético San Martín (San Juan)",
+	SMT: "Club Atlético San Martín (Tucumán)",
 	STE: "Club Atlético San Telmo",
 	TAL: "Club Atlético Talleres (Córdoba)",
 	TIG: "Club Atlético Tigre",
@@ -754,15 +757,18 @@ const cargar = (plantel: any) => {
 	}
 	// Rasgos de personalidad (F fama, L lealtad, $ plata, W ganar). Leal: el
 	// que debutó en 2021 o antes y juega en el club que lo drafteó o en el de su
-	// College. El resto, sorteado como en el juego (uno, y la mitad de las veces
-	// un segundo), pero sin lealtad
+	// College, o el que el usuario indique ("leal": true, ej.: ídolos que
+	// llegaron de afuera). El resto, sorteado como en el juego (uno, y la mitad
+	// de las veces un segundo), pero sin lealtad
 	for (const { p, j } of nuevos) {
 		if (j.prospecto) {
 			continue;
 		}
 		const leal =
-			(j.debut?.anio ?? Infinity) <= ULTIMO_ANIO_LEALTAD &&
-			(p.draft.tid === team.tid || p.college === NOMBRE_COMPLETO[team.abbrev]);
+			j.leal === true ||
+			((j.debut?.anio ?? Infinity) <= ULTIMO_ANIO_LEALTAD &&
+				(p.draft.tid === team.tid ||
+					p.college === NOMBRE_COMPLETO[team.abbrev]));
 		const rand = azar(`rasgos ${j.nombre} ${j.apellido} ${j.nac}`);
 		const otros = ["F", "$", "W"];
 		const elegir = (xs: string[]) => xs[Math.floor(rand() * xs.length)]!;
