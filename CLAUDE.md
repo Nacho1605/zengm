@@ -82,6 +82,16 @@ v2.14.1 → v2.14.2).
   · F delantero.
 - `hgt` = round((cm − 156) × 100 / 44). Ancla fija: nunca se usa para compensar.
 - Arqueros: ins, dnk, fg, tp en 0.
+- Forma de los ratings (`tools/argentina/ratings-futbol.ts`, forma 2 desde la
+  v2.15.4): el OVR siempre da exacto con la fórmula oficial (nunca se pisa a
+  mano); lo que cambia es cómo se reparte. Los atacantes defienden menos y los
+  defensores atacan menos (nunca a cero: todo es relativo), la experiencia va
+  más a la inteligencia de su línea y la fuerza acompaña a la altura (con
+  margen: hay altos débiles y bajos fuertes).
+- Rasgos de juego en el plantel (`"rasgos"`), cuando el usuario los describe:
+  `aereo` (buen juego aéreo), `gambeta` (gambeteador), `habilidoso` (técnica y
+  conducción), `pase` (buen pasador). Dan forma; el OVR no cambia. A un jugador
+  con ratings a mano no se le aplican solos: sumarle la diferencia a mano.
 - OVR: valor a mano en el plantel (`ovr`), escala amplia, top sin repetir
   (Paredes 78, Di María 77, Montiel 75, Almada 74, Correa 73). Arqueros: la
   lista del usuario (TRASPASO §4; ajustar con contexto y avisar). Método:

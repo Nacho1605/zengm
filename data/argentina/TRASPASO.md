@@ -1,15 +1,18 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 20/11/2026. Última versión: **v2.15.3**
-(`data/argentina/BBGM_Argentina_2026_v.2.15.3_futbol.json`): 13 de 30 equipos
-con plantel 2026, con las fotos y los ajustes que el usuario hizo en el juego. Validación con el esquema oficial: 0 errores. Auditoría: 53
+Estado al 20/11/2026. Última versión: **v2.15.4**
+(`data/argentina/BBGM_Argentina_2026_v.2.15.4_futbol.json`): 13 de 30 equipos
+con plantel 2026, con las fotos y los ajustes que el usuario hizo en el juego,
+y la forma 2 de los ratings (mismos OVR). Validación con el esquema oficial: 0 errores. Auditoría: 53
 controles, 9 con alertas. En los equipos cargados solo aparecen 2 fotos que
 faltan (Cena IRM, Zalazar GIM), José Sosa (41 años, real) y homónimos reales
 con otros equipos o libres; el resto es de equipos
 sin cargar o libres con datos de 2023.
 
-**Lo que sigue:** Huracán (v2.16). Si el usuario manda otra liga exportada,
-importarla con la versión sobre la que jugó como base.
+**Lo que sigue:** que el usuario diga qué jugadores son gambeteadores,
+habilidosos, buenos pasadores o de buen juego aéreo (rasgos; no cambian el
+OVR) y revise la forma 2; después, Huracán (v2.16). Si manda otra liga
+exportada, importarla con la versión sobre la que jugó como base.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -122,7 +125,8 @@ Formato de un jugador en el plantel:
   "valor": 5000000, "pj": 31, "goles": 4, "min": 1867, "fichado": "06/07/2025",
   "ovr": 71, "debut": { "club": "RIV", "anio": 2021 },
   "college": "Asociación Atlética Argentinos Juniors",
-  "rasgos": ["aereo"], "lesion": { "tipo": "...", "partidos": 7 },
+  "rasgos": ["aereo", "gambeta", "habilidoso", "pase"],
+  "lesion": { "tipo": "...", "partidos": 7 },
   "parientes": [{ "tipo": "brother", "nombre": "Ezequiel Ávila" }],
   "prospecto": true, "leal": true, "capitan": true, "capitanias": 5,
   "imgURL": "https://img.a.transfermarkt.technology/...",
@@ -231,7 +235,18 @@ Correa 1.
 
 ## 7. Pendientes
 
-1. **Fotos:** faltan Cena (IRM) y Zalazar (GIM); Ramis (IRM) tiene una
+1. **Rasgos de juego:** pedirle al usuario, equipo por equipo, sus
+   gambeteadores, habilidosos, pasadores y buenos cabeceadores. Hoy solo hay
+   `aereo` (Carrillo, centrales de EST, Gaich, R. Martínez…).
+   **Forma 2 pendiente** en los prospectos generados de los drafts
+   2026–2055 y en los libres de 2023 (siguen con la forma 1); los libres se
+   normalizan al final de la fase 2.
+   **Logos de equipos:** sin enlaces mal formados (todos https, ninguna
+   miniatura de Google). Sitios poco comunes para mirar en el juego: Pinterest
+   (ALD), pikpng (CAR), seeklogo (MOR, DPV), fundacionamigospd.com (FAD),
+   ESPN (CMN), bibliotecariodelfutbol (MSL), wikia (IND), footylogos (HUR, SLO,
+   RAC, LAN, GIM, ARG chico); Transfermarkt en RIN y HGO.
+   **Fotos:** faltan Cena (IRM) y Zalazar (GIM); Ramis (IRM) tiene una
    miniatura de Google; 5 vienen de otros sitios (Tempone, Mangiaut, Kida,
    Policella, T. Aguirre). De los 16 prospectos reales, solo Satas, Medina y
    Ma. Martínez tienen foto: el usuario puede ponerlas en el juego (draft) y
@@ -288,6 +303,9 @@ Correa 1.
   Transfermarkt en la foto son la misma persona (pasó con Giménez Rojas y con
   Gabriel Florentín, que estaba como "José Florentín"). Revisarlo al importar
   fotos.
+- La forma de los ratings: si se toca `ratings-futbol.ts`, armar con la forma
+  vieja tiene que dar el mismo archivo, y la nueva no puede mover ningún OVR
+  (verificarlo jugador por jugador con una fórmula escrita aparte).
 - `desde-juego.ts` compara la liga del usuario contra el archivo armado más
   reciente salvo que se le dé la base: si se armó una versión después de la
   que usó el usuario, darle esa base o los OVR nuevos se pisan.
@@ -323,6 +341,14 @@ Correa 1.
   en el juego, hermanos Watson y Auzmendi, color de Unión; capitanes
   aceptados; dos duplicados de libres borrados; sin la bienvenida vieja de
   Unión. `desde-juego.ts` ahora trae también los parientes.
+- v2.15.4: forma 2 de los ratings (pedido del usuario: delanteros con menos
+  defensa, defensores con menos ataque, fuerza según la altura) sin mover
+  ningún OVR: generador separado en `ratings-futbol.ts` (la forma 1 da el
+  archivo idéntico), 360 jugadores generados de nuevo y los 23 con ratings a
+  mano pasados con `forma2-a-mano.ts` (conservan sus retoques). Rasgos nuevos:
+  gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
+  era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
+  (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
 - Capitanes revisados frente a sus compañeros: el usuario aceptó Marcone 65,
   E. Gómez 66 y Devecchi 60 (entraron en la v2.15.3).
 
@@ -332,7 +358,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Leé CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la
-> v2.15.3. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
+> v2.15.4. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
 > que entendiste el estado, antes de seguir.
 
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara

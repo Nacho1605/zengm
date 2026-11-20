@@ -49,20 +49,20 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1138089-1762437740.png?lm=4711",
 			"ratings": {
-				"stre": 73,
-				"spd": 67,
+				"stre": 79,
+				"spd": 66,
 				"jmp": 88,
-				"endu": 79,
+				"endu": 78,
 				"ins": 0,
 				"dnk": 0,
-				"ft": 59,
+				"ft": 58,
 				"fg": 0,
 				"tp": 0,
-				"oiq": 56,
+				"oiq": 55,
 				"diq": 83,
-				"drb": 54,
-				"pss": 63,
-				"reb": 92
+				"drb": 53,
+				"pss": 62,
+				"reb": 91
 			}
 		},
 		{
@@ -304,20 +304,20 @@
 			"college": "Club Atlético River Plate (Montevideo)",
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThw8FkXXyxbCj889DnJfnKhy3e7YE-iDAADKJ3slYmNw&s=10",
 			"ratings": {
-				"stre": 48,
-				"spd": 58,
-				"jmp": 51,
-				"endu": 56,
-				"ins": 36,
-				"dnk": 40,
-				"ft": 51,
-				"fg": 47,
-				"tp": 42,
-				"oiq": 56,
-				"diq": 58,
-				"drb": 51,
-				"pss": 53,
-				"reb": 52
+				"stre": 45,
+				"spd": 59,
+				"jmp": 52,
+				"endu": 57,
+				"ins": 31,
+				"dnk": 35,
+				"ft": 52,
+				"fg": 44,
+				"tp": 41,
+				"oiq": 55,
+				"diq": 60,
+				"drb": 52,
+				"pss": 54,
+				"reb": 53
 			}
 		},
 		{
