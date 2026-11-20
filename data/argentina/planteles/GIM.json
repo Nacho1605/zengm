@@ -69,7 +69,7 @@
 			"goles": 0,
 			"min": 450,
 			"fichado": "14/07/2026",
-			"ovr": 50,
+			"ovr": 47,
 			"debut": {
 				"club": null,
 				"anio": 2015
@@ -91,7 +91,7 @@
 			"goles": 0,
 			"min": 152,
 			"fichado": "06/01/2024",
-			"ovr": 40,
+			"ovr": 38,
 			"debut": {
 				"club": "COM",
 				"anio": 2022
@@ -133,7 +133,7 @@
 			"goles": 2,
 			"min": 2935,
 			"fichado": "03/09/2024",
-			"ovr": 68,
+			"ovr": 66,
 			"debut": {
 				"club": null,
 				"anio": 2018
@@ -438,7 +438,7 @@
 			"goles": 6,
 			"min": 2831,
 			"fichado": "14/01/2026",
-			"ovr": 72,
+			"ovr": 70,
 			"debut": {
 				"club": "GIM",
 				"anio": 2011
@@ -633,7 +633,7 @@
 			"goles": 11,
 			"min": 1996,
 			"fichado": "08/07/2025",
-			"ovr": 69,
+			"ovr": 67,
 			"debut": {
 				"club": "TAL",
 				"anio": 2017
@@ -655,7 +655,7 @@
 			"goles": 8,
 			"min": 2256,
 			"fichado": "15/01/2026",
-			"ovr": 66,
+			"ovr": 64,
 			"debut": {
 				"club": "ACA",
 				"anio": 2017
@@ -696,7 +696,7 @@
 			"pj": 7,
 			"goles": 0,
 			"min": 268,
-			"ovr": 48,
+			"ovr": 46,
 			"prospecto": true,
 			"college": "Club de Gimnasia y Esgrima La Plata"
 		}

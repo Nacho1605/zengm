@@ -1,10 +1,11 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 20/11/2026. Última versión: **v2.14**
-(`data/argentina/BBGM_Argentina_2026_v.2.14_futbol.json`): la v2.12.2 (igual a
-la liga exportada por el usuario ese día, fotos y ratings incluidos), más
-Independiente Rivadavia ya revisado por el usuario (v2.13 → v2.13.2), más
-Gimnasia LP (v2.14), pendiente de su revisión.
+Estado al 20/11/2026. Última versión: **v2.14.1**
+(`data/argentina/BBGM_Argentina_2026_v.2.14.1_futbol.json`): la v2.12.2 (igual
+a la liga exportada por el usuario ese día, fotos y ratings incluidos), más
+Independiente Rivadavia (v2.13 → v2.13.2) y Gimnasia LP (v2.14), más una
+revisión general de OVR de 11 equipos (v2.14.1, 39 cambios; River sin tocar),
+pendiente de la revisión del usuario.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -115,9 +116,17 @@ asigne camiseta.
 
 ## 4. Escala de OVR (referencias actuales)
 
-Once (promedio de los 11 mejores): RIV 70,3 · BOC 69,7 · ROS 68,5 · EST 67,8 ·
-ARG 66,9 · VEL 66,9 · IRM 66,8 · GIM 66,7 · IND 65,6 · RAC 65,6 · SLO 64,8 ·
-RIE 60,5. Los 18 sin cargar tienen datos de 2023 (47–60).
+Once (promedio de los 11 mejores): RIV 70,3 · BOC 69,7 · ROS 68,5 · EST 67,7 ·
+VEL 66,8 · IRM 66,8 · ARG 66,6 · GIM 66,0 · RAC 65,4 · IND 65,2 · SLO 64,6 ·
+RIE 60,5 (EST 67,7). Los 18 sin cargar tienen datos de 2023 (47–60).
+
+Revisión general (v2.14.1): el usuario notó inflación y amontonamiento. Se
+bajaron titulares por encima de sus pares (goleadores de equipos medianos,
+recién llegados sin goles como E. Ávila = Salas 63, suplentes con muy pocos
+minutos en 60+) y se subieron suplentes con minutos reales que estaban muy
+abajo (Figal, Romero, M. Giménez, Alarcón, Escudero, Arrayago). No se tocan:
+ratings ajustados a mano, valores que fijó el usuario ni arqueros de su
+lista. Tablas 2026 completas en `tablas-2026.json`.
 
 Techo: Paredes 78, Di María 77, Montiel 75, Almada 74, Correa 73. Pocos por
 encima de 70; titulares de grandes 66–72, de medianos 62–68, suplentes 50–60,
@@ -132,8 +141,7 @@ Marchiori 66, Mele 60 (65), Sanguinetti 62 (64), Iacovich 57, Brey 55,
 Werner 51, Centurión 48, Tagliamonte 46, Devecchi 43 (55), Altamirano 43 (44),
 Busso 40, Siri 39 (44), Arzamendia 39, J. García 38, Sitaro INS 34 (el peor).
 De Independiente Rivadavia: Bolcato 67 (confirmado), Macagno 43, Gómez Riga 38.
-De Gimnasia LP: Insfrán 64 (propuesto 66), Castillo 42 (propuesto 50) y
-Kadijevic (no estaba en la lista; propuesto 40).
+De Gimnasia LP: Insfrán 66 (la lista decía 64), Castillo 47 (42), Kadijevic 38.
 
 Correcciones que hizo el usuario y que enseñan el criterio: no temerle a la
 edad (Muslera 70 a los 40, Otamendi 71, Rojo 65), valorar a los que no viven
@@ -157,12 +165,10 @@ rendimiento por partido, Sofascore ≥ 7 como señal de los mejores.
 
 ## 6. Pendientes
 
-1. Cargar los 18 equipos restantes. Gimnasia LP: falta la revisión del usuario
-   de la v2.14. Los que se fueron de IRM y GIM están en `salidas-2026.json`;
+1. Cargar los 18 equipos restantes. Falta la revisión del usuario de la v2.14.1
+   (Gimnasia y la revisión general). Los que se fueron de IRM y GIM están en `salidas-2026.json`;
    Villa ya está en Boca y sus números de IRM todavía no se sumaron a nada.
-   Tablas: solo está guardada la tabla anual (puntos, `TABLA_ANUAL_2026` en
-   `cargar-plantel.ts`); las de grupos del Apertura y el Clausura y la de
-   promedios se perdieron con la sesión anterior.
+   Tablas: `tablas-2026.json` (Apertura, Clausura, Anual y Promedios).
 2. **Fotos:** 221 de los primeros ocho equipos son miniaturas de Google
    (`encrypted-tbn0.gstatic.com`), no de Transfermarkt; el usuario las está
    cambiando a mano. Transfermarkt está bloqueado en la red de la sesión; el
