@@ -229,6 +229,9 @@ const sueldo = (valor: number | null, ovr: number) => {
 // que sus parientes apunten al jugador nuevo
 const reemplazados = new Map<number, { nombre: string; nacimiento: number }>();
 
+// Jugadores creados desde los planteles (el resto viene de la base)
+const creados = new Set<number>();
+
 // Picks por año de debut: cuántos se asignaron hasta ahora
 const picksPorAnio = new Map<number, number>();
 const PICKS_POR_RONDA = 30;
@@ -487,6 +490,7 @@ const cargar = (plantel: any) => {
 			p.draft.round = Math.ceil(n / PICKS_POR_RONDA);
 			p.draft.pick = ((n - 1) % PICKS_POR_RONDA) + 1;
 		}
+		creados.add(p.pid);
 		league.players.push(p);
 	}
 
@@ -705,6 +709,38 @@ console.log(
 		.map((x: any) => `${x.abbrev} $${(x.total / 1000).toFixed(1)}M (${x.n})`)
 		.join(" | "),
 );
+
+// Techo para el resto de los jugadores (prospectos generados, libres y
+// equipos sin cargar): ningún rating actual llega a 100. Mismo techo que la
+// forma 2 (desde 93, cada punto cuenta la mitad, tope 95) y retoque fino para
+// que el OVR guardado siga dando exacto
+{
+	const TECHO = FORMA_2.techo!;
+	let n = 0;
+	for (const p of league.players) {
+		if (creados.has(p.pid) || p.tid === -3) {
+			continue;
+		}
+		const r = p.ratings.at(-1);
+		const antes = JSON.stringify(r);
+		for (const k of KEYS) {
+			if (k !== "hgt" && r[k] > TECHO.desde) {
+				r[k] = Math.round(Math.min(TECHO.max, TECHO.desde + (r[k] - TECHO.desde) * TECHO.factor));
+			}
+		}
+		const llave: Key = ["C", "PF", "FC", "G", "GF"].includes(p.pos) ? "diq" : "oiq";
+		for (let i = 0; i < 20 && ovrOficial(r) !== r.ovr; i++) {
+			r[llave] += ovrOficial(r) < r.ovr ? 1 : -1;
+		}
+		if (ovrOficial(r) !== r.ovr) {
+			throw new Error(`${p.firstName} ${p.lastName}: el techo le cambia el OVR`);
+		}
+		if (JSON.stringify(r) !== antes) {
+			n += 1;
+		}
+	}
+	console.log(`Techo de ratings aplicado a ${n} jugadores de la base`);
+}
 
 // Sin eventos guardados: así el juego escribe la bienvenida ("Welcome to your
 // new league!") con el escudo del equipo que elige el usuario al crear la liga.

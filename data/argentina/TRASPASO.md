@@ -1,7 +1,7 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 21/11/2026. Última versión: **v2.15.5**
-(`data/argentina/BBGM_Argentina_2026_v.2.15.5_futbol.json`): 13 de 30 equipos
+Estado al 21/11/2026. Última versión: **v2.15.6**
+(`data/argentina/BBGM_Argentina_2026_v.2.15.6_futbol.json`): 13 de 30 equipos
 con plantel 2026, con las fotos y los ajustes que el usuario hizo en el juego,
 y la forma 2 de los ratings (mismos OVR). Validación con el esquema oficial: 0 errores. Auditoría: 53
 controles, 9 con alertas. En los equipos cargados solo aparecen 2 fotos que
@@ -347,6 +347,10 @@ Correa 1.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+- v2.15.6: techo de ratings (pedido del usuario: nada en 100, menos 95+):
+  desde 93 cada punto cuenta la mitad, tope 95, en los planteles y en el
+  resto del archivo (34 prospectos de la base), sin mover ningún OVR. Villa
+  94 de velocidad. Vuelve "aereo" a To. Palacios, Rojo y Gaich.
 - v2.15.5: 17 arquetipos + defecto `lento` ("+" = 1,5 veces); rasgos del
   usuario en 83 jugadores; los 23 con ratings a mano, generados de cero. 97
   jugadores con ratings nuevos, ningún OVR movido. A To. Palacios, Núñez,
@@ -360,7 +364,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Leé CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la
-> v2.15.5. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
+> v2.15.6. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
 > que entendiste el estado, antes de seguir.
 
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara

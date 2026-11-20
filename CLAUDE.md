@@ -87,7 +87,8 @@ v2.14.1 → v2.14.2).
   mano); lo que cambia es cómo se reparte. Los atacantes defienden menos y los
   defensores atacan menos (nunca a cero: todo es relativo), la experiencia va
   más a la inteligencia de su línea y la fuerza acompaña a la altura (con
-  margen: hay altos débiles y bajos fuertes).
+  margen: hay altos débiles y bajos fuertes). Ningún rating llega a 100: techo
+  suave desde 93 (cada punto cuenta la mitad), tope 95, en todo el archivo.
 - Rasgos de juego (arquetipos) en el plantel (`"rasgos"`), según el usuario:
   goleador, pegador, aereo, gambeta, veloz, pelota parada, habilidoso, pase,
   cerebro, centrador, recuperador, potente, pulmon, tactico; arqueros:

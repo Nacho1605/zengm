@@ -134,7 +134,7 @@
 			},
 			"college": "Club Costa Brava (General Pico)",
 			"ovr": 69,
-			"rasgos": ["recuperador"],
+			"rasgos": ["aereo", "recuperador"],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLUaPo7djYwsxgbmQoJOG8i5r5MsPFMAt6Lue1i6wOww&s=10"
 		},
 		{
@@ -223,7 +223,7 @@
 				"anio": 2009
 			},
 			"ovr": 65,
-			"rasgos": ["recuperador"],
+			"rasgos": ["aereo", "recuperador"],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQex3kmtIvSjheCAB-xe7BJXcOybZX2AcARAA1Sf4y2w&s=10"
 		},
 		{
@@ -692,7 +692,7 @@
 				"anio": 2018
 			},
 			"ovr": 59,
-			"rasgos": ["potente"],
+			"rasgos": ["aereo", "potente"],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-q1WykPkXpWJbeKTAKEo14iq-NhsPsZJYeuTRiBSHbQ&s=10"
 		},
 		{

@@ -247,6 +247,9 @@ export type Forma = {
 	// Rasgos de juego del plantel ("rasgos": ["gambeta", ...]); "aereo" está
 	// en las dos formas
 	rasgos: Record<string, Partial<Record<Key, number>>>;
+	// Techo suave: por encima de "desde", cada punto cuenta "factor"; nunca
+	// pasa de "max" (ningún rating llega a 100)
+	techo?: { desde: number; factor: number; max: number };
 };
 
 export const FORMA_1: Forma = {
@@ -278,6 +281,8 @@ export const FORMA_2: Forma = {
 		medio: { oiq: 1, diq: 1 },
 	},
 	fuerzaPorCm: 0.6,
+	// Ningún rating llega a 100: desde 93, cada punto cuenta la mitad; tope 95
+	techo: { desde: 93, factor: 0.5, max: 95 },
 	rasgos: {
 		// Arquetipos que indica el usuario. Con "+" (ej.: "gambeta+") el efecto
 		// es una vez y media el normal: el que se destaca aun entre los de su tipo
@@ -405,7 +410,9 @@ export const generarRatings = (
 				ESCALA_NORMA * ((norma[k] ?? 1) - 1) +
 				(contraste[k] ?? 0) +
 				(ajuste[k] ?? 0);
-			r[k] = Math.max(0, Math.min(100, Math.round(v)));
+			const t = forma.techo;
+			const w = t && v > t.desde ? Math.min(t.max, t.desde + (v - t.desde) * t.factor) : v;
+			r[k] = Math.max(0, Math.min(100, Math.round(w)));
 		}
 		return r;
 	};
