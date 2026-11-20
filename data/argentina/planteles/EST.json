@@ -88,7 +88,7 @@
 				"club": "EST",
 				"anio": 2024
 			},
-			"ovr": 57,
+			"ovr": 55,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4-S5b-QgZhutgBFiwXizBgv-1QzMLd_cagy1UsexFjw&s=10"
 		},
 		{
@@ -550,7 +550,7 @@
 				"club": "EST",
 				"anio": 2024
 			},
-			"ovr": 66,
+			"ovr": 65,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGftzBkjP13wF9nfyoBUfgj6QVwHACANqw6fQ9p-Wcaw&s=10"
 		},
 		{
@@ -572,7 +572,7 @@
 				"anio": 2016
 			},
 			"college": "Rocha Fútbol Club",
-			"ovr": 70,
+			"ovr": 69,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUFEMP6eZnWbpseZ1-gAp2i6QUp6MXhOJOQg0Z_VpQQg&s=10"
 		},
 		{
@@ -658,23 +658,23 @@
 				"club": "EST",
 				"anio": 2013
 			},
-			"ovr": 67,
+			"ovr": 66,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKAGFMrFn3lnkf4250nN_bpf3Oa3a67oO_e1hWPXvt_Q&s=10",
 			"ratings": {
-				"stre": 47,
-				"spd": 48,
-				"jmp": 55,
-				"endu": 48,
-				"ins": 52,
-				"dnk": 55,
-				"ft": 62,
-				"fg": 60,
-				"tp": 59,
-				"oiq": 74,
-				"diq": 48,
-				"drb": 67,
-				"pss": 75,
-				"reb": 46
+				"stre": 46,
+				"spd": 47,
+				"jmp": 54,
+				"endu": 47,
+				"ins": 51,
+				"dnk": 54,
+				"ft": 61,
+				"fg": 59,
+				"tp": 58,
+				"oiq": 73,
+				"diq": 47,
+				"drb": 66,
+				"pss": 74,
+				"reb": 45
 			}
 		},
 		{

@@ -1,9 +1,15 @@
 # Propuesta: valores fijos revisados (20/11/2026, sobre la v2.14.2)
 
+**Resuelta (v2.14.3).** El usuario aceptó: Mallo 61, Werner 47, Cetré 69 (no
+68), Tobio Burgos 65, J. Correa 66 (no 65; ratings bajados parejo con
+`ajustar-ovr.ts`), Iacovich 55, Galván 66, Centurión 45 y Arzamendia 42. El
+resto quedó como estaba: Ibarra 70, Rojo 65, Alario 61, Giménez Rojas 64,
+Infantino 56, Valdés 68, Marchiori 66, Sanguinetti 64, Mele 65, Macagno 43 y
+Gómez Riga 38.
+
 Pedido del usuario: analizar a los jugadores con valores fijos (los que fijó
 él, los que tienen ratings ajustados a mano —marcados con ª— y su lista de
-arqueros) y proponer el valor que les daría Claude. **El usuario dice cuáles
-acepta; todavía no se aplicó nada.** Quedan afuera los que decidió en esta
+arqueros) y proponer el valor que les daría Claude. Quedan afuera los que decidió en esta
 misma sesión (Studer, Salas, Farías, Ascacíbar, Carrillo, Carboni, E. Ávila,
 Mammana, Bolcato, Insfrán, Castillo, Kadijevic).
 
