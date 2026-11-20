@@ -193,7 +193,8 @@
 				"club": "VEL",
 				"anio": 2009
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLyaf3p-YBXuS6_dwlfwPRlBGSBOwgzuSexsNIJtyyA&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLyaf3p-YBXuS6_dwlfwPRlBGSBOwgzuSexsNIJtyyA&s=10",
+			"capitan": true
 		},
 		{
 			"n": "31",

@@ -199,7 +199,8 @@
 				"anio": 2016
 			},
 			"college": "Club Atlético Rosario Central",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/302139-1720645277.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/302139-1720645277.jpg?lm=4711",
+			"capitan": true
 		},
 		{
 			"n": "20",

@@ -442,7 +442,8 @@
 			"debut": {
 				"club": "GIM",
 				"anio": 2011
-			}
+			},
+			"capitan": true
 		},
 		{
 			"n": "20",

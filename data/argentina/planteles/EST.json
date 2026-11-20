@@ -68,7 +68,8 @@
 			},
 			"college": "Montevideo Wanderers Fútbol Club",
 			"ovr": 70,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCFdgZX3bMBgCvS4Zv8JJD0trk-xAC-N255nCBNA-7VA&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCFdgZX3bMBgCvS4Zv8JJD0trk-xAC-N255nCBNA-7VA&s=10",
+			"capitanias": 2
 		},
 		{
 			"n": "1",
@@ -155,7 +156,8 @@
 			},
 			"ovr": 66,
 			"rasgos": ["aereo"],
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjYNn8rV0XqFjmxXKrMl8rXGmUYSDA__DmqYweIfne3Q&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjYNn8rV0XqFjmxXKrMl8rXGmUYSDA__DmqYweIfne3Q&s=10",
+			"capitanias": 3
 		},
 		{
 			"n": "14",
@@ -177,7 +179,8 @@
 			},
 			"ovr": 67,
 			"rasgos": ["aereo"],
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_TflhAjaPK0ZcXfqYhrMVE3qYBZDAY0GnvMLK2iBQGw&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_TflhAjaPK0ZcXfqYhrMVE3qYBZDAY0GnvMLK2iBQGw&s=10",
+			"capitanias": 1
 		},
 		{
 			"n": "35",
@@ -530,7 +533,8 @@
 				"anio": 2002
 			},
 			"ovr": 58,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRukuG4GxRrHnfqB1qJWa8S79c25nIFTsLdaYxOqSIiWA&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRukuG4GxRrHnfqB1qJWa8S79c25nIFTsLdaYxOqSIiWA&s=10",
+			"capitanias": 3
 		},
 		{
 			"n": "17",
@@ -675,7 +679,8 @@
 				"drb": 66,
 				"pss": 74,
 				"reb": 45
-			}
+			},
+			"capitanias": 1
 		},
 		{
 			"n": "19",
@@ -735,7 +740,8 @@
 			},
 			"ovr": 69,
 			"rasgos": ["aereo"],
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx3Yue4b_eX4uccuO68X-hXsvxcMdUfg6PeMbbADyt_w&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx3Yue4b_eX4uccuO68X-hXsvxcMdUfg6PeMbbADyt_w&s=10",
+			"capitanias": 5
 		},
 		{
 			"n": "27",

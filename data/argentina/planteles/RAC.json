@@ -59,7 +59,8 @@
 				"club": "BAN",
 				"anio": 2019
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1R0OauQ1Hn06dkc3rI8id1xmGCWMe4QsB4CsZPRRY8g&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1R0OauQ1Hn06dkc3rI8id1xmGCWMe4QsB4CsZPRRY8g&s=10",
+			"capitan": true
 		},
 		{
 			"n": "30",

@@ -118,8 +118,9 @@ v2.14.1 → v2.14.2).
   equipo. Jugadores con números en dos clubes en el año: al cargar cada
   equipo, correr `cruces.ts` y valorarlos con la temporada completa (también
   hacia atrás: si uno que se fue ya está en un equipo cargado, revisar su OVR).
-- Capitán: anotarlo en el plantel (`"capitan": true`) cuando el usuario lo
-  diga. No suma puntos (el juego no tiene capitán): es contexto.
+- Capitán: anotarlo en el plantel (`"capitan": true`; si no hay capitán fijo,
+  `"capitanias": N` con las veces que lo fue). No suma puntos ni entra al
+  archivo del juego (no tiene capitán): es contexto. Lista en TRASPASO §4.
 - Juveniles del plantel que siguen en reserva (el usuario lo aclara):
   prospectos del draft 2026 (`prospecto: true`, College = el club).
 - Lealtad (rasgo L): debut en 2021 o antes y juega en su club de draft o College;

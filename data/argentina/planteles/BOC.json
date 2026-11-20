@@ -418,7 +418,8 @@
 				"club": "BOC",
 				"anio": 2012
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpSz0m8PuR99eSshpEgw9NBOusYWGFgecxvFP0U3qxQw&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpSz0m8PuR99eSshpEgw9NBOusYWGFgecxvFP0U3qxQw&s=10",
+			"capitan": true
 		},
 		{
 			"n": "8",

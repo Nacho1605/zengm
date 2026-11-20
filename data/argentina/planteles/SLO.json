@@ -63,7 +63,8 @@
 				"club": "SLO",
 				"anio": 2018
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOfrr8vQe2JxxGpTFb5yMBACmXjbbrAQMHjlP1gCn6bw&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOfrr8vQe2JxxGpTFb5yMBACmXjbbrAQMHjlP1gCn6bw&s=10",
+			"capitan": true
 		},
 		{
 			"n": "20",
@@ -384,7 +385,8 @@
 				"club": "VEL",
 				"anio": 2015
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXoI6WwvxpX9Fp4FhZLQyCOhrk5VU9p0i9tBvBMb9b1Q&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXoI6WwvxpX9Fp4FhZLQyCOhrk5VU9p0i9tBvBMb9b1Q&s=10",
+			"capitan": true
 		},
 		{
 			"n": "27",

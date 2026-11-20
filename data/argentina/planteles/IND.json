@@ -331,7 +331,8 @@
 				"club": "ARS",
 				"anio": 2009
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9hxQeND1Fz6-Y_Wx4rKpR4GaKzJA7AngbdB3Tf9EFBQ&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9hxQeND1Fz6-Y_Wx4rKpR4GaKzJA7AngbdB3Tf9EFBQ&s=10",
+			"capitan": true
 		},
 		{
 			"n": "37",

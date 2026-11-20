@@ -1,16 +1,16 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 20/11/2026. Última versión: **v2.15**
-(`data/argentina/BBGM_Argentina_2026_v.2.15_futbol.json`): 13 de 30 equipos
-con plantel 2026 (Lanús, pendiente de la revisión del usuario). Validación con el esquema oficial: 0 errores. Auditoría: 53
+Estado al 20/11/2026. Última versión: **v2.15.1**
+(`data/argentina/BBGM_Argentina_2026_v.2.15.1_futbol.json`): 13 de 30 equipos
+con plantel 2026 (Lanús ya revisado por el usuario). Validación con el esquema oficial: 0 errores. Auditoría: 53
 controles, 9 con alertas. En los equipos cargados solo aparecen las fotos que
 faltan de IRM, GIM y LAN (las pone el usuario en el juego), José Sosa (41 años,
 real) y homónimos reales con otros equipos o libres; el resto es de equipos
 sin cargar o libres con datos de 2023.
 
-**Lo que sigue:** la revisión de Lanús por el usuario (sus cambios, v2.15.1).
-Después el usuario carga fotos nuevas en el juego y manda su liga exportada
-(importar con `desde-juego.ts` antes de seguir). Luego, Huracán (v2.16).
+**Lo que sigue:** el usuario carga fotos nuevas en el juego y manda su liga
+exportada: compararla con la v2.15.1 e importar sus cambios con
+`desde-juego.ts` antes de seguir. Luego, Huracán (v2.16).
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -125,7 +125,7 @@ Formato de un jugador en el plantel:
   "college": "Asociación Atlética Argentinos Juniors",
   "rasgos": ["aereo"], "lesion": { "tipo": "...", "partidos": 7 },
   "parientes": [{ "tipo": "brother", "nombre": "Ezequiel Ávila" }],
-  "prospecto": true, "leal": true, "capitan": true,
+  "prospecto": true, "leal": true, "capitan": true, "capitanias": 5,
   "imgURL": "https://img.a.transfermarkt.technology/...",
   "ratings": { "stre": 50, "...": 0 } }
 ```
@@ -139,8 +139,8 @@ Transfermarkt.
 
 ## 4. Escala de OVR y criterio
 
-Once (promedio de los 11 mejores), v2.15: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
-EST 67,6 · VEL 66,9 · IRM 66,7 · ARG 66,6 · LAN 66,1 · GIM 66,0 · RAC 65,5 ·
+Once (promedio de los 11 mejores), v2.15.1: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
+EST 67,6 · VEL 66,9 · IRM 66,7 · ARG 66,6 · GIM 66,0 · LAN 65,5 · RAC 65,5 ·
 IND 65,4 · SLO 64,6 · RIE 60,5. Estudiantes queda alto siendo 11.º porque está por jugar
 la final de la Libertadores 2026. Los 17 sin cargar tienen datos de 2023
 (47–60).
@@ -169,6 +169,9 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
   mano), Farías 69, Ascacíbar 68, Mammana 67, Studer 68 (la promesa de IRM).
 - Recién llegados: se valoran por lo que jugaron, con algo de peso para el
   talento (E. Ávila 65, Carboni 63, Salas 61).
+- Lanús (v2.15.1): −1 a todos los mediocampistas, a Guidara y a G. Pérez, y
+  Salvio −2 (66): un ídolo veterano de un equipo mediano no llega a 68 por
+  asistencias y minutos. No vio casos para subir (quizás Canale o M. Moreno).
 - Valores fijos revisados (v2.14.3): aceptó bajar por pocos minutos (Werner,
   Iacovich, Centurión, Mallo) y moderó otros (Cetré 69, J. Correa 66); mantuvo
   a Ibarra, Rojo, Alario, Valdés, Marchiori, Sanguinetti, Mele y otros.
@@ -185,6 +188,13 @@ De Independiente Rivadavia: Bolcato 67 (confirmado), Macagno 43, Gómez Riga 38.
 De Gimnasia LP: Insfrán 66 (la lista decía 64), Castillo 47 (42), Kadijevic 38.
 De Lanús: Losada 69, Petroli 44. Cambios aceptados en v2.14.3: Werner 47,
 Iacovich 55, Centurión 45, Arzamendia 42.
+
+Capitanes (contexto, no suman puntos): Paredes (BOC), Otamendi (RIV),
+Cambeses (RAC), Marcone (IND), Tripichio y Devecchi (SLO, comparten),
+E. Gómez (VEL), Di María (ROS), Izquierdoz (LAN), Oroz (ARG), Nacho Fernández
+(GIM), Álex Arce (IRM), Céliz (RIE). Estudiantes no tiene capitán fijo:
+Carrillo 5 capitanías, Sosa 3, Núñez 3, Muslera 2, González Pírez 1,
+Correa 1.
 
 ## 5. Configuración vigente (la aplica `cargar-plantel.ts`)
 
@@ -207,8 +217,7 @@ Iacovich 55, Centurión 45, Arzamendia 42.
 - `planteles/XXX.json`: los 13 planteles cargados.
 - `salidas-2026.json`: los que se fueron de IRM (8), GIM (14) y LAN (12) con
   sus números 2026. Villa (IRM → BOC): con la suma (44 PJ, 4 g, 8 a) su 70 se
-  sostiene. Dylan Aquino (LAN, 31 PJ, 7 g, Sofascore 7,06) todavía no está en
-  ningún equipo cargado.
+  sostiene. Dylan Aquino (LAN) se fue a Union Saint-Gilloise (Bélgica).
 - `tablas-2026.json`: Apertura, Clausura, Anual y Promedios 2026 (verificadas:
   Apertura + Clausura = Anual; promedios = puntos / partidos).
 - `propuesta-valores-fijos.md`: propuesta sobre valores fijos, ya resuelta
@@ -217,7 +226,7 @@ Iacovich 55, Centurión 45, Arzamendia 42.
 
 ## 7. Pendientes
 
-1. Revisión de Lanús por el usuario (v2.15.1).
+1. Importar la liga del usuario con las fotos nuevas (`desde-juego.ts`).
 2. Cargar los 17 equipos restantes (próximo: Huracán).
 3. **Fotos:** las pone el usuario en el juego y vuelven con `desde-juego.ts`.
    Faltan las de IRM (29), GIM (30) y LAN (24); el usuario las va a cargar
@@ -227,8 +236,8 @@ Iacovich 55, Centurión 45, Arzamendia 42.
 4. **Libres (~340):** versiones viejas de 2023. Al final de la fase 2: retirar
    a los que ya no juegan en el país y normalizar al resto con la norma.
 5. Personalidad de los ídolos de cada club (cuando estén todos los planteles).
-   Capitanes: anotarlos (`"capitan": true`) a medida que el usuario los diga;
-   faltan los de los 13 equipos cargados.
+   Capitanes: anotados en los 13 equipos cargados (ver §4); pedirlos con
+   cada equipo nuevo.
 6. All-Star: trabajarlo más (el usuario quiere).
 7. Posible paso a 2027 (descensos Aldosivi y Estudiantes RC, ascenso Godoy
    Cruz y uno más en diciembre): el usuario decidió esperar. Plan propuesto:
@@ -278,6 +287,8 @@ Iacovich 55, Centurión 45, Arzamendia 42.
 - v2.15 Lanús (24 jugadores y Laplace como prospecto). Leales: Izquierdoz,
   Salvio, M. Moreno. Nuevo: `cruces.ts` (jugadores en dos clubes) y el
   capitán como dato de contexto.
+- v2.15.1: correcciones del usuario a Lanús (11 OVR) y capitanes de los 13
+  equipos en los planteles.
 
 ## 10. Cómo empezar la próxima sesión
 
@@ -285,7 +296,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Leé CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la
-> v2.15. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
+> v2.15.1. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
 > que entendiste el estado, antes de seguir.
 
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara

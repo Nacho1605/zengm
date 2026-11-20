@@ -403,7 +403,8 @@
 				"anio": 2012
 			},
 			"ovr": 55,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrMFIDoHY_1uOxkVGP_DTcdrKP1yYJsCg63IgytdioiA&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrMFIDoHY_1uOxkVGP_DTcdrKP1yYJsCg63IgytdioiA&s=10",
+			"capitan": true
 		},
 		{
 			"n": "10",
