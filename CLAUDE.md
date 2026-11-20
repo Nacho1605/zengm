@@ -3,8 +3,10 @@
 Rama de trabajo: `liga-profesional-ar-2026-json` (fork `Nacho1605/zengm`).
 Detalle completo, estado, pendientes y bitácora: **`data/argentina/TRASPASO.md`**.
 
-Al empezar una sesión nueva: leer este archivo y TRASPASO.md, correr la
-auditoría (y la validación) sobre la última versión y confirmarle al usuario
+Al empezar una sesión nueva: primero traer la rama de GitHub (`git fetch
+origin liga-profesional-ar-2026-json` y `git merge --ff-only FETCH_HEAD`): la
+copia local puede venir atrasada. Después leer este archivo y TRASPASO.md,
+correr la auditoría (y la validación) sobre la última versión y confirmarle al usuario
 el estado en pocas líneas antes de seguir. Si manda su liga exportada,
 compararla con la del repositorio (huella sha256) e importar sus cambios con
 `desde-juego.ts`, dándole como base la versión sobre la que jugó el usuario

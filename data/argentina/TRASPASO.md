@@ -367,7 +367,7 @@ Correa 1.
 Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
-> Leé CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la
+> Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la
 > v2.15.7. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
 > que entendiste el estado, antes de seguir.
 
