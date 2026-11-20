@@ -7,7 +7,9 @@ Al empezar una sesión nueva: leer este archivo y TRASPASO.md, correr la
 auditoría (y la validación) sobre la última versión y confirmarle al usuario
 el estado en pocas líneas antes de seguir. Si manda su liga exportada,
 compararla con la del repositorio (huella sha256) e importar sus cambios con
-`desde-juego.ts`.
+`desde-juego.ts`, dándole como base la versión sobre la que jugó el usuario
+(si hay una más nueva, sin esa base los OVR cambiados después volverían al
+valor viejo).
 
 ## Qué es
 
@@ -45,7 +47,7 @@ node tools/argentina/escalera.ts ARCHIVO.json 52 EQUIPO   # OVR por posición
 node tools/argentina/ver-equipo.ts EQUIPO [...]  # plantel por línea con datos
 node tools/argentina/cruces.ts                   # jugadores con números en dos clubes
 node tools/argentina/ajustar-ovr.ts EQUIPO APELLIDO OVR  # cambia un OVR (y sus ratings a mano)
-node tools/argentina/desde-juego.ts LIGA_DEL_USUARIO.json # importa sus cambios
+node tools/argentina/desde-juego.ts LIGA_DEL_USUARIO.json VERSION_QUE_USÓ.json # importa sus cambios
 ```
 
 En una máquina nueva, `validar.ts` necesita la librería `ajv` (no instalar

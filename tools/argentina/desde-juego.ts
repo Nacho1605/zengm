@@ -2,7 +2,12 @@
 // (su liga exportada), para que no se pierdan al volver a armar el archivo.
 // Uso:
 //
-//   node tools/argentina/desde-juego.ts LIGA_EXPORTADA.json
+//   node tools/argentina/desde-juego.ts LIGA_EXPORTADA.json [VERSION_BASE.json]
+//
+// VERSION_BASE: el archivo del repositorio sobre el que jugó el usuario. Si no
+// se da, se usa el más reciente. Darlo siempre que haya una versión más nueva
+// que la que usó el usuario: si no, los OVR cambiados después parecerían
+// "ratings ajustados a mano" y volverían al valor viejo.
 //
 // - Planteles (data/argentina/planteles/*.json): fotos, camisetas que asignó
 //   el juego y ratings ajustados a mano (se guardan exactos en "ratings").
@@ -12,9 +17,11 @@
 
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 
-const [exportada] = process.argv.slice(2);
+const [exportada, versionBase] = process.argv.slice(2);
 if (!exportada) {
-	throw new Error("Uso: node desde-juego.ts LIGA_EXPORTADA.json");
+	throw new Error(
+		"Uso: node desde-juego.ts LIGA_EXPORTADA.json [VERSION_BASE.json]",
+	);
 }
 
 const U = JSON.parse(readFileSync(exportada, "utf8"));
@@ -38,13 +45,15 @@ const KEYS = [
 const limpiar = (u: string) =>
 	u.replaceAll(/[&?]utm_[^&]*/g, "").replace(/^([^?]*)&/, "$1?");
 
-// Los cambios se miden contra el archivo armado más reciente del repositorio
+// Los cambios se miden contra la versión que usó el usuario (por defecto, el
+// archivo armado más reciente del repositorio)
 const armados = readdirSync(dir)
 	.filter((f) => /^BBGM_Argentina_2026_v\..*_futbol\.json$/.test(f))
 	.sort((a, b) =>
 		a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" }),
 	);
-const base = JSON.parse(readFileSync(new URL(armados.at(-1)!, dir), "utf8"));
+const rutaBase = versionBase ?? new URL(armados.at(-1)!, dir);
+const base = JSON.parse(readFileSync(rutaBase, "utf8"));
 const clave = (p: any) => `${p.firstName} ${p.lastName} ${p.born.year}`;
 const enBase = new Map(base.players.map((p: any) => [clave(p), p]));
 
@@ -133,7 +142,7 @@ if (equipos.length > 0) {
 	writeFileSync(rutaEquipos, JSON.stringify(usuario, null, "\t"));
 }
 
-console.log(`Comparado contra ${armados.at(-1)}`);
+console.log(`Comparado contra ${versionBase ?? armados.at(-1)}`);
 for (const [k, v] of Object.entries(resumen)) {
 	console.log(`${k}: ${v.length}${v.length ? ` — ${v.join(", ")}` : ""}`);
 }

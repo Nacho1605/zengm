@@ -1,16 +1,18 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 20/11/2026. Última versión: **v2.15.1**
-(`data/argentina/BBGM_Argentina_2026_v.2.15.1_futbol.json`): 13 de 30 equipos
+Estado al 20/11/2026. Última versión: **v2.15.2**
+(`data/argentina/BBGM_Argentina_2026_v.2.15.2_futbol.json`): 13 de 30 equipos
 con plantel 2026 (Lanús ya revisado por el usuario). Validación con el esquema oficial: 0 errores. Auditoría: 53
 controles, 9 con alertas. En los equipos cargados solo aparecen las fotos que
 faltan de IRM, GIM y LAN (las pone el usuario en el juego), José Sosa (41 años,
 real) y homónimos reales con otros equipos o libres; el resto es de equipos
 sin cargar o libres con datos de 2023.
 
-**Lo que sigue:** el usuario carga fotos nuevas en el juego y manda su liga
-exportada: compararla con la v2.15.1 e importar sus cambios con
-`desde-juego.ts` antes de seguir. Luego, Huracán (v2.16).
+**Lo que sigue:** el usuario está cargando fotos sobre la v2.15.2 y va a
+mandar su liga exportada. Importarla con
+`node tools/argentina/desde-juego.ts SU_LIGA.json data/argentina/BBGM_Argentina_2026_v.2.15.2_futbol.json`
+(base v2.15.2) antes de cualquier otro cambio. Después: su respuesta a la
+propuesta de capitanes (§7) y Huracán (v2.16).
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -139,8 +141,8 @@ Transfermarkt.
 
 ## 4. Escala de OVR y criterio
 
-Once (promedio de los 11 mejores), v2.15.1: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
-EST 67,6 · VEL 66,9 · IRM 66,7 · ARG 66,6 · GIM 66,0 · LAN 65,5 · RAC 65,5 ·
+Once (promedio de los 11 mejores), v2.15.2: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
+EST 67,6 · VEL 66,9 · IRM 66,7 · ARG 66,6 · GIM 66,0 · LAN 65,8 · RAC 65,5 ·
 IND 65,4 · SLO 64,6 · RIE 60,5. Estudiantes queda alto siendo 11.º porque está por jugar
 la final de la Libertadores 2026. Los 17 sin cargar tienen datos de 2023
 (47–60).
@@ -170,8 +172,7 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
 - Recién llegados: se valoran por lo que jugaron, con algo de peso para el
   talento (E. Ávila 65, Carboni 63, Salas 61).
 - Lanús (v2.15.1): −1 a todos los mediocampistas, a Guidara y a G. Pérez, y
-  Salvio −2 (66): un ídolo veterano de un equipo mediano no llega a 68 por
-  asistencias y minutos. No vio casos para subir (quizás Canale o M. Moreno).
+  después Canale y M. Moreno 68 y Salvio 67 (v2.15.2). Cambeses 69.
 - Valores fijos revisados (v2.14.3): aceptó bajar por pocos minutos (Werner,
   Iacovich, Centurión, Mallo) y moderó otros (Cetré 69, J. Correa 66); mantuvo
   a Ibarra, Rojo, Alario, Valdés, Marchiori, Sanguinetti, Mele y otros.
@@ -186,7 +187,7 @@ Werner 51, Centurión 48, Tagliamonte 46, Devecchi 43 (55), Altamirano 43 (44),
 Busso 40, Siri 39 (44), Arzamendia 39, J. García 38, Sitaro INS 34 (el peor).
 De Independiente Rivadavia: Bolcato 67 (confirmado), Macagno 43, Gómez Riga 38.
 De Gimnasia LP: Insfrán 66 (la lista decía 64), Castillo 47 (42), Kadijevic 38.
-De Lanús: Losada 69, Petroli 44. Cambios aceptados en v2.14.3: Werner 47,
+De Lanús: Losada 69, Petroli 44. Cambeses baja a 69 (v2.15.2). Cambios aceptados en v2.14.3: Werner 47,
 Iacovich 55, Centurión 45, Arzamendia 42.
 
 Capitanes (contexto, no suman puntos): Paredes (BOC), Otamendi (RIV),
@@ -226,7 +227,16 @@ Correa 1.
 
 ## 7. Pendientes
 
-1. Importar la liga del usuario con las fotos nuevas (`desde-juego.ts`).
+1. Importar la liga del usuario con las fotos nuevas (`desde-juego.ts` con
+   base v2.15.2).
+   **Propuesta de capitanes** (pedido del usuario: revisar su valor frente a
+   sus compañeros; nada aplicado). Coherentes: Paredes, Di María, Nacho
+   Fernández y Arce (1.º de su equipo), Cambeses e Izquierdoz (2.º), Otamendi,
+   Oroz, Tripichio, Céliz y los de Estudiantes. Propuestos: Marcone 63 → 65
+   (único volante central fijo de IND y el que más jugó; hoy debajo de un
+   arquero suplente y de un recién llegado), E. Gómez 65 → 66 (el que más
+   jugó en Vélez, lateral fijo), Devecchi 55 → 60 (arquero titular de SLO
+   desde que se fue Gill, en una defensa de 30 goles en contra).
 2. Cargar los 17 equipos restantes (próximo: Huracán).
 3. **Fotos:** las pone el usuario en el juego y vuelven con `desde-juego.ts`.
    Faltan las de IRM (29), GIM (30) y LAN (24); el usuario las va a cargar
@@ -263,6 +273,9 @@ Correa 1.
 - Un jugador con `ratings` a mano no puede cambiar de OVR sin cambiar sus
   ratings: el cargador se frena si no coinciden.
 - `validar.ts` necesita `ajv` (ver CLAUDE.md); sin eso falla al arrancar.
+- `desde-juego.ts` compara la liga del usuario contra el archivo armado más
+  reciente salvo que se le dé la base: si se armó una versión después de la
+  que usó el usuario, darle esa base o los OVR nuevos se pisan.
 
 ## 9. Bitácora
 
@@ -289,6 +302,8 @@ Correa 1.
   capitán como dato de contexto.
 - v2.15.1: correcciones del usuario a Lanús (11 OVR) y capitanes de los 13
   equipos en los planteles.
+- v2.15.2: Canale y M. Moreno 68, Salvio 67, Cambeses 69. `desde-juego.ts`
+  acepta la versión base.
 
 ## 10. Cómo empezar la próxima sesión
 
@@ -296,7 +311,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Leé CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la
-> v2.15.1. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
+> v2.15.2. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
 > que entendiste el estado, antes de seguir.
 
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara
