@@ -119,7 +119,7 @@
 			"goles": 4,
 			"min": 1660,
 			"fichado": "14/01/2026",
-			"ovr": 65,
+			"ovr": 63,
 			"debut": {
 				"club": "CCR",
 				"anio": 2022
@@ -163,7 +163,7 @@
 			"goles": 0,
 			"min": 2678,
 			"fichado": "05/07/2024",
-			"ovr": 65,
+			"ovr": 64,
 			"debut": {
 				"club": null,
 				"anio": 2015
@@ -185,7 +185,7 @@
 			"goles": 0,
 			"min": 0,
 			"fichado": "14/01/2026",
-			"ovr": 40,
+			"ovr": 38,
 			"debut": {
 				"club": "SAC",
 				"anio": 2025
@@ -206,7 +206,7 @@
 			"goles": 2,
 			"min": 2929,
 			"fichado": "14/01/2026",
-			"ovr": 65,
+			"ovr": 64,
 			"debut": {
 				"club": "GBR",
 				"anio": 2015
@@ -228,7 +228,7 @@
 			"goles": 2,
 			"min": 1611,
 			"fichado": "03/07/2024",
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "BAN",
 				"anio": 2016
@@ -270,7 +270,7 @@
 			"goles": 0,
 			"min": 1309,
 			"fichado": "01/07/2025",
-			"ovr": 62,
+			"ovr": 61,
 			"debut": {
 				"club": "GIM",
 				"anio": 2015
@@ -292,7 +292,7 @@
 			"goles": 5,
 			"min": 1233,
 			"fichado": "06/07/2025",
-			"ovr": 61,
+			"ovr": 62,
 			"debut": {
 				"club": "UNI",
 				"anio": 2021
@@ -313,7 +313,7 @@
 			"goles": 0,
 			"min": 173,
 			"fichado": "14/01/2026",
-			"ovr": 50,
+			"ovr": 48,
 			"debut": {
 				"club": "COL",
 				"anio": 2023
@@ -334,7 +334,7 @@
 			"goles": 0,
 			"min": 320,
 			"fichado": "20/01/2026",
-			"ovr": 51,
+			"ovr": 52,
 			"debut": {
 				"club": "FCO",
 				"anio": 2023
@@ -377,7 +377,7 @@
 			"goles": 0,
 			"min": 2820,
 			"fichado": "10/01/2025",
-			"ovr": 65,
+			"ovr": 64,
 			"debut": {
 				"club": "QUI",
 				"anio": 2021
@@ -420,7 +420,7 @@
 			"goles": 5,
 			"min": 2079,
 			"fichado": "13/07/2024",
-			"ovr": 64,
+			"ovr": 65,
 			"debut": {
 				"club": "ARM",
 				"anio": 2020
@@ -442,7 +442,7 @@
 			"goles": 0,
 			"min": 499,
 			"fichado": "27/01/2026",
-			"ovr": 53,
+			"ovr": 52,
 			"debut": {
 				"club": "TAL",
 				"anio": 2023
@@ -464,7 +464,7 @@
 			"goles": 1,
 			"min": 450,
 			"fichado": "14/01/2026",
-			"ovr": 54,
+			"ovr": 53,
 			"debut": {
 				"club": "RPI",
 				"anio": 2018
@@ -485,7 +485,7 @@
 			"goles": 0,
 			"min": 977,
 			"fichado": "20/01/2026",
-			"ovr": 59,
+			"ovr": 60,
 			"debut": {
 				"club": "IND",
 				"anio": 2024
@@ -528,7 +528,7 @@
 			"goles": 1,
 			"min": 64,
 			"fichado": "02/08/2026",
-			"ovr": 47,
+			"ovr": 46,
 			"debut": {
 				"club": null,
 				"anio": 2022
@@ -619,7 +619,7 @@
 			"goles": 9,
 			"min": 2610,
 			"fichado": "01/01/2025",
-			"ovr": 66,
+			"ovr": 67,
 			"debut": {
 				"club": "IRM",
 				"anio": 2025

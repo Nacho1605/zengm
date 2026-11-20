@@ -1,9 +1,10 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 20/11/2026. Última versión: **v2.13**
-(`data/argentina/BBGM_Argentina_2026_v.2.13_futbol.json`): la v2.12.2 (igual a
-la liga exportada por el usuario ese día, fotos y ratings incluidos) más el
-plantel de Independiente Rivadavia, pendiente de revisión del usuario.
+Estado al 20/11/2026. Última versión: **v2.13.1**
+(`data/argentina/BBGM_Argentina_2026_v.2.13.1_futbol.json`): la v2.12.2 (igual
+a la liga exportada por el usuario ese día, fotos y ratings incluidos) más el
+plantel de Independiente Rivadavia (v2.13) con los OVR rehechos según las
+correcciones de criterio del usuario (v2.13.1), pendiente de su revisión.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -71,8 +72,9 @@ RAO HIW MSL). Sus datos editados por el usuario: `equipos-usuario.json`.
 
 El usuario manda (máximo 5 imágenes por mensaje): Transfermarkt "Ampliado"
 (nacimiento, altura, pie, fichado, contrato, valor), "Rendimiento" 2026
-(PJ, goles, asistencias, minutos), y en texto: club y año de debut e inferiores
-de cada jugador, sus OVR de arqueros, lesiones, comentario del momento del
+(convocado, PJ, goles, asistencias, tarjetas, ingresos y salidas desde el
+banco, puntos por partido, minutos), y en texto: club y año de promoción al
+primer equipo ("debutó en") e inferiores de cada jugador, sus OVR de arqueros, lesiones, comentario del momento del
 equipo (figuras, contexto). Pasos:
 
 1. Transcribir a `data/argentina/planteles/XXX.json` (ver formato abajo).
@@ -81,10 +83,15 @@ equipo (figuras, contexto). Pasos:
    de nacimiento que tienen EN EL ARCHIVO. Cuidado con homónimos.
 3. Club de debut → abreviatura de la liga (buscar por ciudad/apodo). Si no está
    en la base o es del exterior: `club: null` y el club en `college`.
-4. OVR a mano (ver §4), con la escalera (`escalera.ts`) de los ya cargados.
-5. Agregar la abreviatura al final de `armar-v2.sh`, armar, validar, auditar.
-6. Mostrar al usuario la tabla del equipo con la justificación de cada valor.
-   Él corrige; aplicar sus cambios (subir la corrección: v2.N.1).
+4. Los que están en Rendimiento y no en el plantel se fueron: guardar sus
+   números en `salidas-2026.json`. Si un jugador nuevo figura ahí, tener en
+   cuenta esos números al valorarlo.
+5. OVR a mano (ver §4), con la escalera (`escalera.ts`) de los ya cargados.
+6. Agregar la abreviatura al final de `armar-v2.sh`, armar, validar, auditar.
+7. Mostrar al usuario los OVR agrupados (Arqueros, Centrales, Laterales,
+   Mediocampistas, Ofensivos, Delanteros) con la justificación de cada valor y
+   su comparación en la escalera. Él corrige; aplicar sus cambios como parche
+   (v2.13 → v2.13.1).
 
 Formato de un jugador en el plantel:
 
@@ -109,12 +116,17 @@ asigne camiseta.
 ## 4. Escala de OVR (referencias actuales)
 
 Once (promedio de los 11 mejores): RIV 70,3 · BOC 69,7 · ROS 68,5 · EST 67,8 ·
-ARG 66,9 · IRM 66,9 · VEL 66,9 · IND 65,6 · RAC 65,6 · SLO 64,8 · RIE 60,5. Los
+ARG 66,9 · VEL 66,9 · IRM 66,7 · IND 65,6 · RAC 65,6 · SLO 64,8 · RIE 60,5. Los
 19 sin cargar tienen datos de 2023 (47–60).
 
 Techo: Paredes 78, Di María 77, Montiel 75, Almada 74, Correa 73. Pocos por
 encima de 70; titulares de grandes 66–72, de medianos 62–68, suplentes 50–60,
 juveniles con pocos minutos 38–48, sin minutos 30–40.
+
+Dentro de cada plantel, escalonar por jerarquía y no amontonar. Así quedó
+Independiente Rivadavia (v2.13.1), como ejemplo de un equipo mediano:
+estrellas 69–71 · titulares clave 67 · titulares 63–65 · rotación 60–62 ·
+suplentes 52–57 · poco uso 46–49 · sin minutos y tercer arquero 38.
 
 Arqueros de la lista del usuario (hecha durante el Mundial 2026; los
 actualizados entre paréntesis): Beltrán 73 (72), Gill 72 (se fue a Lille),
@@ -147,9 +159,10 @@ rendimiento por partido, Sofascore ≥ 7 como señal de los mejores.
 
 ## 6. Pendientes
 
-1. Cargar los 19 equipos restantes. Independiente Rivadavia: faltan los
-   juveniles que aparecen en Rendimiento y no en el plantel (Dadín, Sábato,
-   Salvo, Suárez, Ortiz; Muro y Arena) y la respuesta a las dudas de la v2.13.
+1. Cargar los 19 equipos restantes. Independiente Rivadavia: falta la revisión
+   del usuario de la v2.13.1. Los que se fueron (Villa, Dadín, Sábato, Salvo,
+   Suárez, Ortiz, Muro, Arena) están en `salidas-2026.json`; Villa ya está en
+   Boca y sus números de IRM todavía no se sumaron a nada.
 2. **Fotos:** 221 de los primeros ocho equipos son miniaturas de Google
    (`encrypted-tbn0.gstatic.com`), no de Transfermarkt; el usuario las está
    cambiando a mano. Transfermarkt está bloqueado en la red de la sesión; el

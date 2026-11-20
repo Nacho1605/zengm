@@ -46,26 +46,45 @@ Entregar: `gzip -c` al scratchpad y mandar con SendUserFile (`.json.gz`); el
 juego lo acepta. Alternativa: URL raw de GitHub del archivo en la rama.
 Commit + push de cada versión (`git -c push.negotiate=true push`).
 
-**Versiones:** vFase.Equipos.Corrección. Cada equipo cargado suma 1 al segundo
-número; correcciones sin equipos nuevos, el tercero (v2.12 → v2.12.1).
+**Versiones:** vX.Y.Z = Fase.Versión.Parche. Cada equipo nuevo es una versión
+(v2.13 → v2.14); las correcciones de esa versión son parches (v2.13 → v2.13.1).
 
 ## Normas de los jugadores (resumen; detalle en TRASPASO.md)
 
 - Posición fija (`pos`): C arquero · FC central #2 (pie derecho) · PF central #6
-  (pie izquierdo o ambidiestro) · GF lateral · G pivote · SG mediocentro/interior
+  (pie izquierdo, ambidiestro o sin dato: faltan zurdos en el juego) · GF lateral · G pivote · SG mediocentro/interior
   · PG mediapunta/MCO · SF extremo · F delantero.
 - `hgt` = round((cm − 156) × 100 / 44). Ancla fija: nunca se usa para compensar.
 - Arqueros: ins, dnk, fg, tp en 0.
 - OVR: valor a mano en el plantel (`ovr`), escala amplia, top sin repetir
   (Paredes 78, Di María 77, Montiel 75). Arqueros: la lista del usuario
-  (desactualizada unos 5 meses; ajustar con contexto). Método: comparar con la
-  escalera de posición; NO castigar la edad (viejos ni jóvenes); valorar rol y
-  continuidad, no solo goles y asistencias; los de media temporada, por partido;
-  las tablas y Sofascore son guías, no verdad absoluta.
-- Draft = club de debut (año de debut; si debutó en 2026, draft 2025). College =
-  club de inferiores; si no hay otro, el club del draft con nombre completo
-  (`NOMBRE_COMPLETO` en `cargar-plantel.ts`). Debut fuera de la base o en el
-  exterior: sin draft y ese club como College.
+  (desactualizada unos 5 meses; ajustar con contexto). Método:
+  - Escalonar el plantel por jerarquía (estrellas, titulares clave, titulares,
+    rotación, suplentes, poco uso, sin minutos) con los rangos de TRASPASO §4.
+    No amontonar a todos los titulares en el mismo valor.
+  - Antes de dar cada valor, compararlo en la escalera con los de ese número y
+    los de arriba y abajo: ¿es mejor, igual o peor que ellos?
+  - Leer más allá de los números: rol (titular fijo, rotación, revulsivo, el que
+    entra a cerrar partidos), jerarquía en el club, minutos decisivos. Los
+    defensores no viven del gol; hay ofensivos que tampoco.
+  - NO castigar la edad; los de media temporada, por partido; las tablas y
+    Sofascore son guías, no verdad absoluta.
+  - Mostrarlos agrupados: Arqueros, Centrales, Laterales, Mediocampistas,
+    Ofensivos y Delanteros.
+- Draft = club y año en que fue promovido al primer equipo (el usuario lo anota
+  "debutó en"; si fue en 2026, draft 2025). Un juvenil que ya jugó pero no fue
+  promovido sigue como prospecto (ej.: Satas). College = club de inferiores; si
+  el usuario no lo indica, el mismo club del draft, con el nombre oficial
+  completo (`NOMBRE_COMPLETO` en `cargar-plantel.ts`; ej.: Club Sportivo
+  Independiente Rivadavia). Debut fuera de la base o en el exterior: sin draft
+  y ese club como College.
+- Club sin localidad: el más importante (Estudiantes = La Plata, Talleres =
+  Córdoba, Gimnasia = La Plata), salvo que el usuario diga otra cosa.
+- Usar solo las capturas y los datos del usuario: no buscar fuentes externas
+  sobre los jugadores.
+- Los que figuran en Rendimiento y no en el plantel se fueron del club: sus
+  números se guardan en `data/argentina/salidas-2026.json`, por si aparecen en
+  otro equipo.
 - Juveniles que siguen en reserva: prospectos del draft 2026 (`prospecto: true`).
 - Lealtad (rasgo L): debut en 2021 o antes y juega en su club de draft o College.
 - Lesiones: 1 partido ≈ 1 semana desde la fecha actual.
