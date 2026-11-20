@@ -55,7 +55,8 @@
 				"club": null,
 				"anio": 2013
 			},
-			"college": "Club de Deportes Iquique"
+			"college": "Club de Deportes Iquique",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/248352-1613738423.jpg?lm=4711"
 		},
 		{
 			"n": "12",
@@ -71,10 +72,27 @@
 			"pj": 1,
 			"goles": 0,
 			"min": 90,
-			"ovr": 39,
+			"ovr": 44,
 			"debut": {
 				"club": "ARG",
 				"anio": 2024
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1225292-1720124113.png?lm=4711",
+			"ratings": {
+				"stre": 52,
+				"spd": 47,
+				"jmp": 63,
+				"endu": 46,
+				"ins": 0,
+				"dnk": 0,
+				"ft": 40,
+				"fg": 0,
+				"tp": 0,
+				"oiq": 33,
+				"diq": 66,
+				"drb": 38,
+				"pss": 41,
+				"reb": 72
 			}
 		},
 		{
@@ -91,10 +109,27 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"ovr": 36,
+			"ovr": 33,
 			"debut": {
 				"club": "ARG",
 				"anio": 2026
+			},
+			"imgURL": "https://cdn3.futbin.com/content/fifa26/img/players/75072.png?fm=png&ixlib=java-2.1.0&verzion=1&w=512&s=0e87bb22912a9ece444cc893c042bf3d",
+			"ratings": {
+				"stre": 43,
+				"spd": 40,
+				"jmp": 59,
+				"endu": 35,
+				"ins": 0,
+				"dnk": 0,
+				"ft": 28,
+				"fg": 0,
+				"tp": 0,
+				"oiq": 27,
+				"diq": 55,
+				"drb": 27,
+				"pss": 31,
+				"reb": 66
 			}
 		},
 		{
@@ -115,7 +150,8 @@
 			"debut": {
 				"club": "SMJ",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/565766-1720122151.png?lm=4711"
 		},
 		{
 			"n": "23",
@@ -136,7 +172,8 @@
 			"debut": {
 				"club": "GOD",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1103933-1739373252.JPG?lm=4711"
 		},
 		{
 			"n": "6",
@@ -156,7 +193,8 @@
 			"debut": {
 				"club": "ARG",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1240379-1722266778.png?lm=4711"
 		},
 		{
 			"n": "17",
@@ -177,7 +215,8 @@
 				"club": "DYJ",
 				"anio": 2020
 			},
-			"college": "Club Atlético River Plate"
+			"college": "Club Atlético River Plate",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/749016-1621169548.jpg?lm=4711"
 		},
 		{
 			"n": "4",
@@ -197,7 +236,8 @@
 			"debut": {
 				"club": "TIG",
 				"anio": 2012
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/225479-1720122281.png?lm=4711"
 		},
 		{
 			"n": "26",
@@ -217,7 +257,8 @@
 			"debut": {
 				"club": "BAN",
 				"anio": 2015
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/441408-1740821371.jpg?lm=4711"
 		},
 		{
 			"n": "20",
@@ -237,7 +278,8 @@
 			"debut": {
 				"club": "TRE",
 				"anio": 2014
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/613708-1720122570.png?lm=4711"
 		},
 		{
 			"n": "30",
@@ -259,7 +301,8 @@
 				"club": null,
 				"anio": 2022
 			},
-			"college": "Club Cerro Porteño"
+			"college": "Club Cerro Porteño",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/912703-1688431907.jpg?lm=4711"
 		},
 		{
 			"n": "22",
@@ -279,7 +322,8 @@
 			"debut": {
 				"club": "ARG",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/1198369-1720122741.png?lm=4711"
 		},
 		{
 			"n": "3",
@@ -299,7 +343,8 @@
 			"debut": {
 				"club": "IRM",
 				"anio": 2015
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/444495-1720122858.png?lm=4711"
 		},
 		{
 			"n": "15",
@@ -320,7 +365,8 @@
 			"debut": {
 				"club": "RAC",
 				"anio": 2018
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/554799-1636413162.JPG?lm=4711"
 		},
 		{
 			"n": "32",
@@ -336,10 +382,27 @@
 			"pj": 3,
 			"goles": 0,
 			"min": 51,
-			"ovr": 54,
+			"ovr": 56,
 			"debut": {
 				"club": "ROS",
 				"anio": 2021
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/831162-1695027339.jpg?lm=4711",
+			"ratings": {
+				"stre": 49,
+				"spd": 50,
+				"jmp": 51,
+				"endu": 54,
+				"ins": 46,
+				"dnk": 51,
+				"ft": 45,
+				"fg": 51,
+				"tp": 51,
+				"oiq": 52,
+				"diq": 52,
+				"drb": 52,
+				"pss": 54,
+				"reb": 48
 			}
 		},
 		{
@@ -361,7 +424,8 @@
 			"debut": {
 				"club": "IND",
 				"anio": 2009
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/96313-1720465539.png?lm=4711"
 		},
 		{
 			"n": "28",
@@ -386,7 +450,8 @@
 			"lesion": {
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 6
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/842589-1742329073.jpg?lm=4711"
 		},
 		{
 			"n": "10",
@@ -407,7 +472,8 @@
 				"club": "RIV",
 				"anio": 2021
 			},
-			"college": "Asociación Atlética Argentinos Juniors"
+			"college": "Asociación Atlética Argentinos Juniors",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/665309-1740595309.jpg?lm=4711"
 		},
 		{
 			"n": "11",
@@ -423,10 +489,27 @@
 			"pj": 37,
 			"goles": 2,
 			"min": 2869,
-			"ovr": 68,
+			"ovr": 67,
 			"debut": {
 				"club": "RAC",
 				"anio": 2014
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/332250-1720123236.png?lm=4711",
+			"ratings": {
+				"stre": 53,
+				"spd": 56,
+				"jmp": 60,
+				"endu": 60,
+				"ins": 58,
+				"dnk": 57,
+				"ft": 67,
+				"fg": 66,
+				"tp": 68,
+				"oiq": 77,
+				"diq": 58,
+				"drb": 73,
+				"pss": 80,
+				"reb": 53
 			}
 		},
 		{
@@ -447,7 +530,8 @@
 			"debut": {
 				"club": "ARG",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/675341-1690113335.png?lm=4711"
 		},
 		{
 			"n": "29",
@@ -467,7 +551,8 @@
 			"debut": {
 				"club": "ARS",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/907313-1722266480.png?lm=4711"
 		},
 		{
 			"n": "27",
@@ -488,7 +573,8 @@
 				"club": "ALT",
 				"anio": 2018
 			},
-			"college": "Club Atlético Huracán"
+			"college": "Club Atlético Huracán",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/429591-1708010672.JPG?lm=4711"
 		},
 		{
 			"n": "48",
@@ -504,10 +590,27 @@
 			"pj": 26,
 			"goles": 1,
 			"min": 933,
-			"ovr": 61,
+			"ovr": 57,
 			"debut": {
 				"club": "ARG",
 				"anio": 2026
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1310744-1762852689.jpg?lm=4711",
+			"ratings": {
+				"stre": 59,
+				"spd": 58,
+				"jmp": 57,
+				"endu": 51,
+				"ins": 66,
+				"dnk": 62,
+				"ft": 51,
+				"fg": 62,
+				"tp": 52,
+				"oiq": 56,
+				"diq": 40,
+				"drb": 53,
+				"pss": 49,
+				"reb": 53
 			}
 		},
 		{
@@ -529,7 +632,8 @@
 				"club": "EBA",
 				"anio": 2020
 			},
-			"college": "Asociación Atlética Argentinos Juniors"
+			"college": "Asociación Atlética Argentinos Juniors",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/564001-1720123908.png?lm=4711"
 		},
 		{
 			"n": "19",
@@ -545,10 +649,27 @@
 			"pj": 15,
 			"goles": 3,
 			"min": 402,
-			"ovr": 62,
+			"ovr": 64,
 			"debut": {
 				"club": "SMJ",
 				"anio": 2019
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/656112-1720466488.png?lm=4711",
+			"ratings": {
+				"stre": 63,
+				"spd": 54,
+				"jmp": 60,
+				"endu": 50,
+				"ins": 80,
+				"dnk": 80,
+				"ft": 57,
+				"fg": 68,
+				"tp": 50,
+				"oiq": 63,
+				"diq": 48,
+				"drb": 52,
+				"pss": 47,
+				"reb": 53
 			}
 		},
 		{
@@ -569,7 +690,8 @@
 			"debut": {
 				"club": "ARG",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1269429-1722266602.png?lm=4711"
 		},
 		{
 			"n": "34",
@@ -590,7 +712,8 @@
 				"club": null,
 				"anio": 2024
 			},
-			"college": "Nagoya Grampus"
+			"college": "Nagoya Grampus",
+			"imgURL": "https://cdn-img.staticzz.com/img/jogadores/new/24/10/1492410_ryoga_kida_20260519172127.png"
 		},
 		{
 			"n": "41",

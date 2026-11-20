@@ -8,7 +8,8 @@
 
 import { readFileSync } from "node:fs";
 
-const [file, oficial = "/home/user/zengm-oficial"] = process.argv.slice(2);
+const [file, oficial = new URL("../..", import.meta.url).pathname] =
+	process.argv.slice(2);
 if (!file) {
 	throw new Error("Uso: node auditar.ts ARCHIVO.json [RAIZ_DEL_JUEGO]");
 }

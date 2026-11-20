@@ -3,13 +3,16 @@
 //
 //   node tools/argentina/validar.ts ARCHIVO.json [ESQUEMA.json]
 //
-// El esquema por defecto es build/files/league-schema.json del juego oficial.
+// El esquema por defecto es tools/argentina/league-schema.json, copiado del
+// juego oficial (build/files/league-schema.json, commit ac109bb).
 
 import { readFileSync } from "node:fs";
 import Ajv from "ajv";
 
-const [file, schemaFile = "build/files/league-schema.json"] =
-	process.argv.slice(2);
+const [
+	file,
+	schemaFile = new URL("league-schema.json", import.meta.url).pathname,
+] = process.argv.slice(2);
 const schema: any = JSON.parse(readFileSync(schemaFile, "utf8"));
 const league = JSON.parse(readFileSync(file, "utf8"));
 

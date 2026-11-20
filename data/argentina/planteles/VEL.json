@@ -39,7 +39,8 @@
 			"debut": {
 				"club": "BAN",
 				"anio": 2020
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/870032-1755785095.jpg?lm=4711"
 		},
 		{
 			"n": "1",
@@ -55,10 +56,27 @@
 			"pj": 19,
 			"goles": 0,
 			"min": 1710,
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "GEM",
 				"anio": 2018
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/596909-1720644730.jpg?lm=4711",
+			"ratings": {
+				"stre": 69,
+				"spd": 57,
+				"jmp": 80,
+				"endu": 68,
+				"ins": 0,
+				"dnk": 0,
+				"ft": 58,
+				"fg": 0,
+				"tp": 0,
+				"oiq": 56,
+				"diq": 86,
+				"drb": 50,
+				"pss": 55,
+				"reb": 88
 			}
 		},
 		{
@@ -75,10 +93,27 @@
 			"pj": 22,
 			"goles": 2,
 			"min": 1734,
-			"ovr": 65,
+			"ovr": 63,
 			"debut": {
 				"club": "VEL",
 				"anio": 2025
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1285238-1771509951.jpg?lm=4711",
+			"ratings": {
+				"stre": 69,
+				"spd": 57,
+				"jmp": 66,
+				"endu": 54,
+				"ins": 44,
+				"dnk": 49,
+				"ft": 55,
+				"fg": 38,
+				"tp": 35,
+				"oiq": 43,
+				"diq": 68,
+				"drb": 42,
+				"pss": 47,
+				"reb": 65
 			}
 		},
 		{
@@ -99,7 +134,8 @@
 			"debut": {
 				"club": "RIV",
 				"anio": 2015
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/275512-1720645007.jpg?lm=4711"
 		},
 		{
 			"n": "16",
@@ -119,7 +155,8 @@
 			"debut": {
 				"club": "GIM",
 				"anio": 2010
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/66736-1583506940.jpg?lm=4711"
 		},
 		{
 			"n": "18",
@@ -139,7 +176,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1310741-1762504896.jpg?lm=4711"
 		},
 		{
 			"n": "3",
@@ -160,10 +198,11 @@
 				"club": "DYJ",
 				"anio": 2016
 			},
-			"college": "Club Atlético Rosario Central"
+			"college": "Club Atlético Rosario Central",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/302139-1720645277.jpg?lm=4711"
 		},
 		{
-			"n": null,
+			"n": "20",
 			"nombre": "Joaquín",
 			"apellido": "Vaquero",
 			"pos": "Lateral izquierdo",
@@ -180,7 +219,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1290990-1747752814.JPG?lm=4711"
 		},
 		{
 			"n": "4",
@@ -200,7 +240,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/829433-1720645206.jpg?lm=4711"
 		},
 		{
 			"n": "21",
@@ -224,7 +265,8 @@
 			"lesion": {
 				"tipo": "Recuperación de rotura del ligamento cruzado",
 				"partidos": 3
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1285237-1771509929.jpg?lm=4711"
 		},
 		{
 			"n": "5",
@@ -245,7 +287,8 @@
 				"club": null,
 				"anio": 2012
 			},
-			"college": "Club Social y Deportivo Colo-Colo"
+			"college": "Club Social y Deportivo Colo-Colo",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/248346-1579704061.png?lm=4711"
 		},
 		{
 			"n": "8",
@@ -265,7 +308,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2017
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/457221-1732735211.jpg?lm=4711"
 		},
 		{
 			"n": "29",
@@ -285,7 +329,8 @@
 			"debut": {
 				"club": "CHA",
 				"anio": 2011
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/424045-1693315106.png?lm=4711"
 		},
 		{
 			"n": "10",
@@ -301,12 +346,29 @@
 			"pj": 26,
 			"goles": 4,
 			"min": 1041,
-			"ovr": 69,
+			"ovr": 68,
 			"debut": {
 				"club": null,
 				"anio": 2013
 			},
-			"college": "Audax Club Sportivo Italiano"
+			"college": "Audax Club Sportivo Italiano",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/249776-1691602983.jpg?lm=4711",
+			"ratings": {
+				"stre": 53,
+				"spd": 51,
+				"jmp": 57,
+				"endu": 56,
+				"ins": 61,
+				"dnk": 63,
+				"ft": 66,
+				"fg": 68,
+				"tp": 63,
+				"oiq": 79,
+				"diq": 52,
+				"drb": 70,
+				"pss": 81,
+				"reb": 52
+			}
 		},
 		{
 			"n": "22",
@@ -327,7 +389,8 @@
 				"club": "RIV",
 				"anio": 2010
 			},
-			"college": "Club Atlético Vélez Sarsfield"
+			"college": "Club Atlético Vélez Sarsfield",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/135853-1694001401.png?lm=4711"
 		},
 		{
 			"n": "48",
@@ -347,7 +410,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1516245-1771510655.jpg?lm=4711"
 		},
 		{
 			"n": "35",
@@ -367,7 +431,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1379347-1771510098.jpg?lm=4711"
 		},
 		{
 			"n": "37",
@@ -387,7 +452,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://www.zerozero.com.mx/img/jogadores/new/41/07/2824107_juan_policella_20260410144345.jpg"
 		},
 		{
 			"n": "11",
@@ -403,10 +469,27 @@
 			"pj": 27,
 			"goles": 5,
 			"min": 1930,
-			"ovr": 68,
+			"ovr": 67,
 			"debut": {
 				"club": "EST",
 				"anio": 2018
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/606267-1720647401.jpg?lm=4711",
+			"ratings": {
+				"stre": 56,
+				"spd": 80,
+				"jmp": 66,
+				"endu": 61,
+				"ins": 64,
+				"dnk": 68,
+				"ft": 60,
+				"fg": 59,
+				"tp": 63,
+				"oiq": 67,
+				"diq": 42,
+				"drb": 75,
+				"pss": 58,
+				"reb": 51
 			}
 		},
 		{
@@ -427,7 +510,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1231224-1771510235.jpg?lm=4711"
 		},
 		{
 			"n": "77",
@@ -444,13 +528,30 @@
 			"goles": 9,
 			"min": 848,
 			"fichado": "31/08/2026",
-			"ovr": 70,
+			"ovr": 69,
 			"debut": {
 				"club": null,
 				"anio": 2018
 			},
 			"college": "Club Deportivo Capiatá",
-			"rasgos": ["aereo"]
+			"rasgos": ["aereo"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/567736-1724876503.jpg?lm=4711",
+			"ratings": {
+				"stre": 66,
+				"spd": 59,
+				"jmp": 78,
+				"endu": 61,
+				"ins": 86,
+				"dnk": 88,
+				"ft": 65,
+				"fg": 77,
+				"tp": 58,
+				"oiq": 73,
+				"diq": 50,
+				"drb": 60,
+				"pss": 57,
+				"reb": 68
+			}
 		},
 		{
 			"n": "39",
@@ -470,7 +571,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://cdn-img.staticzz.com/img/jogadores/new/41/05/2824105_thiago_aguirre_20260922010138.jpg"
 		},
 		{
 			"n": "15",
@@ -490,7 +592,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1379348-1771510210.jpg?lm=4711"
 		},
 		{
 			"n": "34",
