@@ -8,7 +8,12 @@ controles, 8 con alertas. En los equipos cargados solo aparecen José Sosa (41
 años, real) y homónimos reales con otros equipos o libres; el resto es de
 equipos sin cargar o libres con datos de 2023. Fotos: 612 de 612.
 
-**Lo que sigue:** Huracán (v2.16), con sus rasgos de juego. Si manda otra liga
+**Lo que sigue:** Huracán y Talleres a la vez (el usuario manda las capturas
+de un equipo por mensaje, hasta 5 imágenes, y el comentario de los dos
+después). Huracán: capturas transcriptas en `planteles/preparacion/HUR.json` (27
+jugadores, sin OVR, debut, College, lesiones, capitán ni rasgos; todavía no
+está en `armar-v2.sh`), `reemplaza` con 7 y 13 salidas en
+`salidas-2026.json`. Falta la altura de Tomás Uribe. Si manda otra liga
 exportada, importarla con la versión sobre la que jugó como base.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
@@ -93,7 +98,12 @@ RAO HIW MSL). Sus datos editados por el usuario: `equipos-usuario.json`.
 **Pasos:**
 
 1. Transcribir a `data/argentina/planteles/XXX.json` (ver formato abajo). Si es
-   largo, un script en el scratchpad que genere el JSON evita errores.
+   largo, un script en el scratchpad que genere el JSON evita errores. Desde
+   Huracán se guarda el Rendimiento completo de cada jugador (`convocado`,
+   `asist`, `amarillas`, `dobleAmarilla`, `rojas`, `entro`, `salio`, `ppp`),
+   no solo PJ, goles y minutos. Comprobar que las capturas encajan (que no
+   falte ninguna fila entre una imagen y la siguiente) y leer los números con
+   zoom.
 2. Buscar en la liga a los que ya existen con datos de 2023 (nombre igual, o
    apellido igual ±1 año de nacimiento) y ponerlos en `reemplaza` con el año
    de nacimiento que tienen EN EL ARCHIVO. Cuidado con homónimos.
@@ -107,7 +117,8 @@ RAO HIW MSL). Sus datos editados por el usuario: `equipos-usuario.json`.
    que llegaron a mitad de año (valorar por partido).
 5. OVR a mano (ver §4), comparando cada uno en la escalera (`escalera.ts`).
 6. Agregar la abreviatura al final de `armar-v2.sh`, armar, validar, auditar,
-   comparar la auditoría con la versión anterior.
+   comparar la auditoría con la versión anterior. Regenerar la tabla de
+   arqueros (`arqueros.ts`, ver §4).
 7. Mostrarle al usuario los OVR en cuadros por sección (Arqueros, Centrales,
    Laterales, Mediocampistas, Ofensivos, Delanteros) con el porqué de cada
    valor y su comparación en la escalera, más una lista corta de dudas. Él
@@ -119,7 +130,9 @@ Formato de un jugador en el plantel:
 { "n": "10", "nombre": "Hernán", "apellido": "López Muñoz",
   "pos": "Mediocentro ofensivo", "nac": "07/09/2000", "pais": "Argentina",
   "altura": 1.69, "pie": "Izquierdo", "contrato": "31/12/2026",
-  "valor": 5000000, "pj": 31, "goles": 4, "min": 1867, "fichado": "06/07/2025",
+  "valor": 5000000, "pj": 31, "goles": 4, "min": 1867,
+  "asist": 3, "amarillas": 5, "dobleAmarilla": 0, "rojas": 0, "entro": 4,
+  "salio": 12, "ppp": 1.45, "convocado": 33, "fichado": "06/07/2025",
   "ovr": 71, "debut": { "club": "RIV", "anio": 2021 },
   "college": "Asociación Atlética Argentinos Juniors",
   "rasgos": ["aereo", "gambeta", "habilidoso", "pase"],
@@ -183,17 +196,25 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
   a Ibarra, Rojo, Alario, Valdés, Marchiori, Sanguinetti, Mele y otros.
 - Escalonar por análisis, no por bandas fijas ("rotación = 60–62" no).
 
-Arqueros de la lista del usuario (hecha durante el Mundial 2026; los
-actualizados entre paréntesis): Beltrán 73 (72), Gill 72 (se fue a Lille),
-Cambeses 72 (70), Montero 71 (69), Muslera 71 (70), Galíndez HUR 70,
-Cardozo BEL 70, Losada LAN 69, Cortés 69, Arce 68, Rey 68, Ledesma 67 (68),
-Marchiori 66, Mele 60 (65), Sanguinetti 62 (64), Iacovich 57, Brey 55,
-Werner 51, Centurión 48, Tagliamonte 46, Devecchi 43 (55), Altamirano 43 (44),
-Busso 40, Siri 39 (44), Arzamendia 39, J. García 38, Sitaro INS 34 (el peor).
-De Independiente Rivadavia: Bolcato 67 (confirmado), Macagno 43, Gómez Riga 38.
-De Gimnasia LP: Insfrán 66 (la lista decía 64), Castillo 47 (42), Kadijevic 38.
-De Lanús: Losada 69, Petroli 44. Cambeses baja a 69 (v2.15.2). Cambios aceptados en v2.14.3: Werner 47,
-Iacovich 55, Centurión 45, Arzamendia 42.
+**Arqueros:** carpeta `data/argentina/arqueros/`.
+
+- `lista-apertura-2026.md`: la lista del usuario tal cual la mandó (20/11),
+  hecha durante el Torneo Apertura, antes del Mundial 2026 (mayo/junio).
+  **Desactualizada**: es una base de comparación entre arqueros, no un valor
+  fijo. Ejemplos del usuario: Montero 71 por su Apertura en Vélez, bajó en el
+  Clausura ya en Boca (69); Gill 72 por su Mundial, vendido al Lille en agosto.
+  Siglas: INR = IRM, AAE = ERC (Estudiantes de Río Cuarto).
+- `valores-actuales.md`: la lista contra los OVR de hoy en los planteles
+  cargados (cambio, PJ y minutos 2026), los de la lista que ya no están en su
+  equipo y los de equipos sin cargar. Se genera con
+  `node tools/argentina/arqueros.ts ARCHIVO.json > data/argentina/arqueros/valores-actuales.md`
+  y se regenera con cada equipo cargado.
+- Decisiones ya tomadas (están en la tabla): Cambeses 69 (v2.15.2), Insfrán 66,
+  Bolcato 67 (confirmado), Devecchi 60 (capitán, v2.15.3); bajas por pocos
+  minutos aceptadas en la v2.14.3 (Werner 47, Iacovich 55, Centurión 45,
+  Arzamendia 42).
+- Para los equipos que faltan, la lista es el punto de partida, ajustado con
+  la temporada (PJ, minutos, contexto) y avisándole al usuario.
 
 Capitanes (contexto, no suman puntos): Paredes (BOC), Otamendi (RIV),
 Cambeses (RAC), Marcone (IND), Tripichio y Devecchi (SLO, comparten),
@@ -220,10 +241,15 @@ Correa 1.
 
 ## 6. Archivos de datos
 
-- `planteles/XXX.json`: los 13 planteles cargados.
-- `salidas-2026.json`: los que se fueron de IRM (8), GIM (14) y LAN (12) con
-  sus números 2026. Villa (IRM → BOC): con la suma (44 PJ, 4 g, 8 a) su 70 se
-  sostiene. Dylan Aquino (LAN) se fue a Union Saint-Gilloise (Bélgica).
+- `planteles/XXX.json`: los 13 planteles cargados; `planteles/preparacion/`: los
+  que están en preparación (hoy HUR, sin OVR): solo los lee `cruces.ts`; al
+  terminar se pasan a `planteles/` y se suman a `armar-v2.sh`.
+- `arqueros/`: la lista de arqueros del usuario y la comparación con hoy
+  (ver §4).
+- `salidas-2026.json`: los que se fueron de IRM (8), GIM (14), LAN (12) y HUR
+  (13) con sus números 2026. Villa (IRM → BOC): con la suma (44 PJ, 4 g, 8 a)
+  su 70 se sostiene. Dylan Aquino (LAN) se fue a Union Saint-Gilloise
+  (Bélgica). Leonel Pérez (HUR → RAC): 0 PJ en Huracán, no cambia nada.
 - `tablas-2026.json`: Apertura, Clausura, Anual y Promedios 2026 (verificadas:
   Apertura + Clausura = Anual; promedios = puntos / partidos).
 - `propuesta-valores-fijos.md`: propuesta sobre valores fijos, ya resuelta
@@ -345,6 +371,16 @@ Correa 1.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+- Sesión del 20/11 (noche), después de la v2.15.8: carpeta `arqueros/` con la
+  lista del Apertura del usuario y la tabla contra los valores de hoy
+  (`arqueros.ts`). Huracán transcripto de 5 capturas (2 de plantel, 3 de
+  Rendimiento; se comprobó que encajan sin filas perdidas), con el
+  Rendimiento completo; `reemplaza`: Meza, Nervo, Pereyra (estaba en CCO),
+  Ibáñez, Blondel (libre, 1997 en el archivo), Ó. Romero (estaba en ERC) y
+  Bisanz (estaba en BAN, 2002 en el archivo). Llegaron a mitad de año:
+  Fernández Cedrés y Pussetto (de IND, que se cargó sin salidas: faltan sus
+  números previos) y Barticciotto (club anterior de rayas azules y blancas,
+  a préstamo; aparecerá en el Rendimiento de ese club).
 - v2.15.8 (sesión del 20/11, noche): fotos de Cena (IRM) y Zalazar (GIM),
   enlaces que dio el usuario. Comparada con la v2.15.7 campo por campo: esas 2
   diferencias y nada más.

@@ -48,6 +48,7 @@ node tools/argentina/auditar.ts ARCHIVO.json     # 53 controles
 node tools/argentina/escalera.ts ARCHIVO.json 52 EQUIPO   # OVR por posición
 node tools/argentina/ver-equipo.ts EQUIPO [...]  # plantel por línea con datos
 node tools/argentina/cruces.ts                   # jugadores con números en dos clubes
+node tools/argentina/arqueros.ts ARCHIVO.json > data/argentina/arqueros/valores-actuales.md  # lista de arqueros vs hoy
 node tools/argentina/ajustar-ovr.ts EQUIPO APELLIDO OVR  # cambia un OVR (y sus ratings a mano)
 node tools/argentina/desde-juego.ts LIGA_DEL_USUARIO.json VERSION_QUE_USÓ.json # importa fotos, camisetas, ratings, parientes y equipos
 ```
@@ -100,7 +101,11 @@ v2.14.1 → v2.14.2).
   cada equipo nuevo. A un jugador con ratings a mano no se le aplican solos.
 - OVR: valor a mano en el plantel (`ovr`), escala amplia, top sin repetir
   (Paredes 78, Di María 77, Montiel 75, Almada 74, Correa 73). Arqueros: la
-  lista del usuario (TRASPASO §4; ajustar con contexto y avisar). Método:
+  lista del usuario en `data/argentina/arqueros/lista-apertura-2026.md`
+  (hecha en el Apertura, antes del Mundial 2026: DESACTUALIZADA, es una base
+  de comparación no estricta; ajustar con la temporada y avisar); los valores
+  de hoy, en `arqueros/valores-actuales.md` (regenerarlo con cada equipo).
+  Método:
   - Análisis propio de cada jugador; los rangos de TRASPASO §4 orientan, no
     son reglas. Escalonar el plantel según la jerarquía real; no amontonar a
     los titulares en el mismo valor ni dejar huecos sin razón.
@@ -131,6 +136,13 @@ v2.14.1 → v2.14.2).
   Córdoba, Gimnasia = La Plata), salvo que el usuario diga otra cosa.
 - Usar solo las capturas y los datos del usuario: NO buscar fuentes externas
   sobre los jugadores (le quita la gracia; si algo falta, preguntar).
+- Rendimiento: guardar en el plantel todas las columnas (convocado, PJ,
+  goles, asistencias, tarjetas, entró, salió, puntos por partido, minutos).
+  Comprobar que las capturas encajan (sin filas perdidas entre imágenes).
+- Dos equipos a la vez: el usuario manda las capturas de cada equipo por
+  separado (límite de 5 imágenes por mensaje) y el comentario después.
+  Transcribir apenas llegan a `planteles/preparacion/` (sin OVR; solo lo lee
+  `cruces.ts`); al tener todo, pasarlo a `planteles/` y a `armar-v2.sh`.
 - Los que figuran en Rendimiento y no en el plantel se fueron del club: sus
   números van a `data/argentina/salidas-2026.json`, por si aparecen en otro
   equipo. Jugadores con números en dos clubes en el año: al cargar cada

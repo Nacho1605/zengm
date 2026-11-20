@@ -20,11 +20,12 @@ const norm = (s: string) =>
 const salidas = JSON.parse(
 	readFileSync(new URL("salidas-2026.json", dir), "utf8"),
 ).jugadores;
-const planteles = readdirSync(new URL("planteles/", dir))
-	.filter((f) => f.endsWith(".json"))
-	.map((f) =>
-		JSON.parse(readFileSync(new URL(`planteles/${f}`, dir), "utf8")),
-	);
+// Los cargados y los que están en preparación (planteles/preparacion/)
+const leer = (sub: string) =>
+	readdirSync(new URL(sub, dir))
+		.filter((f) => f.endsWith(".json"))
+		.map((f) => JSON.parse(readFileSync(new URL(`${sub}${f}`, dir), "utf8")));
+const planteles = [...leer("planteles/"), ...leer("planteles/preparacion/")];
 
 const linea = (x: any) =>
 	`${x.pj ?? 0} PJ, ${x.goles ?? 0} g${x.asist !== undefined ? `, ${x.asist} a` : ""}, ${x.min ?? 0}'`;
