@@ -1,13 +1,12 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 21/11/2026. Última versión: **v2.15.7**
-(`data/argentina/BBGM_Argentina_2026_v.2.15.7_futbol.json`): 13 de 30 equipos
+Estado al 20/11/2026. Última versión: **v2.15.8**
+(`data/argentina/BBGM_Argentina_2026_v.2.15.8_futbol.json`): 13 de 30 equipos
 con plantel 2026, con las fotos y los ajustes que el usuario hizo en el juego,
 y la forma 2 de los ratings (mismos OVR). Validación con el esquema oficial: 0 errores. Auditoría: 53
-controles, 9 con alertas. En los equipos cargados solo aparecen 2 fotos que
-faltan (Cena IRM, Zalazar GIM), José Sosa (41 años, real) y homónimos reales
-con otros equipos o libres; el resto es de equipos
-sin cargar o libres con datos de 2023.
+controles, 8 con alertas. En los equipos cargados solo aparecen José Sosa (41
+años, real) y homónimos reales con otros equipos o libres; el resto es de
+equipos sin cargar o libres con datos de 2023. Fotos: 612 de 612.
 
 **Lo que sigue:** Huracán (v2.16), con sus rasgos de juego. Si manda otra liga
 exportada, importarla con la versión sobre la que jugó como base.
@@ -243,7 +242,7 @@ Correa 1.
    (ALD), pikpng (CAR), seeklogo (MOR, DPV), fundacionamigospd.com (FAD),
    ESPN (CMN), bibliotecariodelfutbol (MSL), wikia (IND), footylogos (HUR, SLO,
    RAC, LAN, GIM, ARG chico); Transfermarkt en RIN y HGO.
-   **Fotos:** faltan Cena (IRM) y Zalazar (GIM); Ramis (IRM) tiene una
+   **Fotos:** Cena (IRM) y Zalazar (GIM) ya tienen (v2.15.8); Ramis (IRM) tiene una
    miniatura de Google; 5 vienen de otros sitios (Tempone, Mangiaut, Kida,
    Policella, T. Aguirre). De los 16 prospectos reales, solo Satas, Medina y
    Ma. Martínez tienen foto: el usuario puede ponerlas en el juego (draft) y
@@ -346,6 +345,9 @@ Correa 1.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+- v2.15.8 (sesión del 20/11, noche): fotos de Cena (IRM) y Zalazar (GIM),
+  enlaces que dio el usuario. Comparada con la v2.15.7 campo por campo: esas 2
+  diferencias y nada más.
 - v2.15.7: prospectos generados de los drafts 2026–2055 (2100): nivel base
   3 puntos más bajo (pedido del usuario) y forma 2 con techo 95, en el
   cargador. OVR medio 33,0 → 27,9 (máx. 61 → 55). Se borra su potencial
@@ -368,7 +370,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la
-> v2.15.7. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
+> v2.15.8. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
 > que entendiste el estado, antes de seguir.
 
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara
