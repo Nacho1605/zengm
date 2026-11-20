@@ -106,7 +106,8 @@
 				"club": "TAL",
 				"anio": 2024
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1190390-1781278682.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1190390-1781278682.jpg?lm=4711",
+			"rasgos": ["recuperador"]
 		},
 		{
 			"n": "13",
@@ -152,7 +153,8 @@
 				"anio": 2020
 			},
 			"college": "Central Español Fútbol Club",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/800720-1781277593.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/800720-1781277593.jpg?lm=4711",
+			"rasgos": ["potente"]
 		},
 		{
 			"n": "40",
@@ -375,7 +377,8 @@
 				"anio": 2019
 			},
 			"college": "Club Guaraní",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/741965-1781277180.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/741965-1781277180.jpg?lm=4711",
+			"rasgos": ["pegador", "pulmon"]
 		},
 		{
 			"n": "5",
@@ -421,22 +424,7 @@
 			},
 			"college": "Quilmes Atlético Club",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/707153-1781282905.jpg?lm=4711",
-			"ratings": {
-				"stre": 52,
-				"spd": 66,
-				"jmp": 63,
-				"endu": 69,
-				"ins": 63,
-				"dnk": 59,
-				"ft": 69,
-				"fg": 67,
-				"tp": 69,
-				"oiq": 80,
-				"diq": 48,
-				"drb": 89,
-				"pss": 83,
-				"reb": 45
-			}
+			"rasgos": ["gambeta+"]
 		},
 		{
 			"n": "11",
@@ -646,7 +634,8 @@
 			"college": "Club Cerro Porteño",
 			"leal": true,
 			"capitan": true,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/970518-1781276813.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/970518-1781276813.jpg?lm=4711",
+			"rasgos": ["goleador", "aereo", "potente"]
 		},
 		{
 			"n": "43",
@@ -669,23 +658,7 @@
 				"anio": 2025
 			},
 			"college": "Club Atlético Newell's Old Boys",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/978970-1781277381.jpg?lm=4711",
-			"ratings": {
-				"stre": 68,
-				"spd": 65,
-				"jmp": 69,
-				"endu": 67,
-				"ins": 80,
-				"dnk": 79,
-				"ft": 60,
-				"fg": 74,
-				"tp": 59,
-				"oiq": 71,
-				"diq": 38,
-				"drb": 56,
-				"pss": 55,
-				"reb": 51
-			}
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/978970-1781277381.jpg?lm=4711"
 		},
 		{
 			"n": "7",

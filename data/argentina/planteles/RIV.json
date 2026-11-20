@@ -47,23 +47,7 @@
 				"club": "RIV",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1138089-1762437740.png?lm=4711",
-			"ratings": {
-				"stre": 79,
-				"spd": 66,
-				"jmp": 88,
-				"endu": 78,
-				"ins": 0,
-				"dnk": 0,
-				"ft": 58,
-				"fg": 0,
-				"tp": 0,
-				"oiq": 55,
-				"diq": 83,
-				"drb": 53,
-				"pss": 62,
-				"reb": 91
-			}
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1138089-1762437740.png?lm=4711"
 		},
 		{
 			"n": "33",
@@ -171,7 +155,8 @@
 				"anio": 2020
 			},
 			"college": "Club Mutual Crucero del Norte",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_8-B7qmzyQKpQYzPkeEma4zvO6hPR2k6q2y-wQgGaA&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_8-B7qmzyQKpQYzPkeEma4zvO6hPR2k6q2y-wQgGaA&s=10",
+			"rasgos": ["pulmon"]
 		},
 		{
 			"n": "30",
@@ -194,7 +179,8 @@
 				"anio": 2009
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLyaf3p-YBXuS6_dwlfwPRlBGSBOwgzuSexsNIJtyyA&s=10",
-			"capitan": true
+			"capitan": true,
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": "31",
@@ -258,7 +244,8 @@
 				"club": "FCO",
 				"anio": 2010
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDq6bGVhIS23s_8GOesinaN1Fdv_zJrC9SRdNUipdiJA&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDq6bGVhIS23s_8GOesinaN1Fdv_zJrC9SRdNUipdiJA&s=10",
+			"rasgos": ["centrador"]
 		},
 		{
 			"n": "29",
@@ -279,7 +266,8 @@
 				"club": "RIV",
 				"anio": 2017
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/402733-1668181612.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/402733-1668181612.jpg?lm=4711",
+			"rasgos": ["centrador"]
 		},
 		{
 			"n": "20",
@@ -302,23 +290,7 @@
 				"anio": 2014
 			},
 			"college": "Club Atlético River Plate (Montevideo)",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThw8FkXXyxbCj889DnJfnKhy3e7YE-iDAADKJ3slYmNw&s=10",
-			"ratings": {
-				"stre": 45,
-				"spd": 59,
-				"jmp": 52,
-				"endu": 57,
-				"ins": 31,
-				"dnk": 35,
-				"ft": 52,
-				"fg": 44,
-				"tp": 41,
-				"oiq": 55,
-				"diq": 60,
-				"drb": 52,
-				"pss": 54,
-				"reb": 53
-			}
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThw8FkXXyxbCj889DnJfnKhy3e7YE-iDAADKJ3slYmNw&s=10"
 		},
 		{
 			"n": "6",
@@ -430,7 +402,8 @@
 				"anio": 2013
 			},
 			"college": "Defensor Sporting Club",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-OdmbVDyRRRTLLrUwfixmta04l4r_IghVeGbYNKxTLg&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-OdmbVDyRRRTLLrUwfixmta04l4r_IghVeGbYNKxTLg&s=10",
+			"rasgos": ["pulmon"]
 		},
 		{
 			"n": "25",
@@ -473,7 +446,8 @@
 				"club": "VEL",
 				"anio": 2018
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/576028-1773174386.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/576028-1773174386.jpg?lm=4711",
+			"rasgos": ["gambeta", "habilidoso", "pase"]
 		},
 		{
 			"n": "26",
@@ -537,7 +511,8 @@
 				"club": "SLO",
 				"anio": 2013
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Cty3OIinMB2FVrQNBLOKcFbwBoEcW6VqBBmIStPBCw&s"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Cty3OIinMB2FVrQNBLOKcFbwBoEcW6VqBBmIStPBCw&s",
+			"rasgos": ["gambeta+"]
 		},
 		{
 			"n": "18",

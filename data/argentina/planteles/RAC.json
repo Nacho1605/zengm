@@ -60,7 +60,8 @@
 				"anio": 2019
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1R0OauQ1Hn06dkc3rI8id1xmGCWMe4QsB4CsZPRRY8g&s=10",
-			"capitan": true
+			"capitan": true,
+			"rasgos": ["reflejos"]
 		},
 		{
 			"n": "30",
@@ -438,7 +439,8 @@
 				"club": "ARG",
 				"anio": 2019
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk5g3SN9kMUoMTatidaeez82wKXdcIf20mzXLZKaR7Og&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk5g3SN9kMUoMTatidaeez82wKXdcIf20mzXLZKaR7Og&s=10",
+			"rasgos": ["habilidoso"]
 		},
 		{
 			"n": "11",
@@ -459,7 +461,8 @@
 				"club": "RAC",
 				"anio": 2017
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpUp7iK8STG5vckp5t3Ay7cVrjYQVu7XA09w8aeYDfvg&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpUp7iK8STG5vckp5t3Ay7cVrjYQVu7XA09w8aeYDfvg&s=10",
+			"rasgos": ["gambeta"]
 		},
 		{
 			"n": "24",
@@ -545,7 +548,8 @@
 				"anio": 2016
 			},
 			"college": "Envigado Fútbol Club",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuF-GJnepa_eGjIW67kwnpxVO-gK14Sge0e2Pnao5pxg&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuF-GJnepa_eGjIW67kwnpxVO-gK14Sge0e2Pnao5pxg&s=10",
+			"rasgos": ["veloz"]
 		},
 		{
 			"n": "27",
@@ -593,7 +597,8 @@
 				"tipo": "Esguince de tobillo",
 				"partidos": 1
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRm9PSFE4zjGJgh8DZK9qVmZ2fQTPkz1Ih48BHEnc3SA&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRm9PSFE4zjGJgh8DZK9qVmZ2fQTPkz1Ih48BHEnc3SA&s=10",
+			"rasgos": ["goleador", "potente"]
 		},
 		{
 			"n": "32",
@@ -615,7 +620,8 @@
 				"club": "EBA",
 				"anio": 2019
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9n0agTcWmWfteEyKs-0H0V3EM1YbnvA8ayJBdX7SyHQ&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9n0agTcWmWfteEyKs-0H0V3EM1YbnvA8ayJBdX7SyHQ&s=10",
+			"rasgos": ["gambeta"]
 		},
 		{
 			"n": "22",

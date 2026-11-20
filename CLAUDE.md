@@ -88,10 +88,13 @@ v2.14.1 → v2.14.2).
   defensores atacan menos (nunca a cero: todo es relativo), la experiencia va
   más a la inteligencia de su línea y la fuerza acompaña a la altura (con
   margen: hay altos débiles y bajos fuertes).
-- Rasgos de juego en el plantel (`"rasgos"`), cuando el usuario los describe:
-  `aereo` (buen juego aéreo), `gambeta` (gambeteador), `habilidoso` (técnica y
-  conducción), `pase` (buen pasador). Dan forma; el OVR no cambia. A un jugador
-  con ratings a mano no se le aplican solos: sumarle la diferencia a mano.
+- Rasgos de juego (arquetipos) en el plantel (`"rasgos"`), según el usuario:
+  goleador, pegador, aereo, gambeta, veloz, pelota parada, habilidoso, pase,
+  cerebro, centrador, recuperador, potente, pulmon, tactico; arqueros:
+  reflejos, achique, pies; defecto: lento. Con "+" (ej. `gambeta+`) el efecto
+  es 1,5 veces. Dan forma; el OVR no cambia. Efectos en `ratings-futbol.ts`;
+  la lista del usuario, en `tools/argentina/rasgos-usuario.ts`. Pedirlos con
+  cada equipo nuevo. A un jugador con ratings a mano no se le aplican solos.
 - OVR: valor a mano en el plantel (`ovr`), escala amplia, top sin repetir
   (Paredes 78, Di María 77, Montiel 75, Almada 74, Correa 73). Arqueros: la
   lista del usuario (TRASPASO §4; ajustar con contexto y avisar). Método:

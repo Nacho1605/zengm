@@ -105,7 +105,8 @@
 				"anio": 2009
 			},
 			"capitan": true,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/116968-1721933804.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/116968-1721933804.png?lm=4711",
+			"rasgos": ["potente", "tactico"]
 		},
 		{
 			"n": "13",
@@ -128,7 +129,8 @@
 				"anio": 2016
 			},
 			"college": "Club Libertad",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/402627-1782800694.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/402627-1782800694.jpg?lm=4711",
+			"rasgos": ["aereo", "recuperador"]
 		},
 		{
 			"n": "35",
@@ -218,7 +220,8 @@
 				"club": "PLA",
 				"anio": 2021
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/867621-1724877200.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/867621-1724877200.jpg?lm=4711",
+			"rasgos": ["pulmon"]
 		},
 		{
 			"n": "33",
@@ -445,22 +448,7 @@
 				"anio": 2016
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/456617-1721935774.png?lm=4711",
-			"ratings": {
-				"stre": 53,
-				"spd": 63,
-				"jmp": 63,
-				"endu": 61,
-				"ins": 67,
-				"dnk": 68,
-				"ft": 69,
-				"fg": 75,
-				"tp": 68,
-				"oiq": 82,
-				"diq": 48,
-				"drb": 86,
-				"pss": 80,
-				"reb": 50
-			}
+			"rasgos": ["gambeta", "pelota parada"]
 		},
 		{
 			"n": "8",
@@ -510,7 +498,8 @@
 				"club": "LAN",
 				"anio": 2008
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/84535-1721935987.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/84535-1721935987.png?lm=4711",
+			"rasgos": ["centrador"]
 		},
 		{
 			"n": "77",
@@ -577,7 +566,8 @@
 				"anio": 2023
 			},
 			"college": "Club Olimpia",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1065388-1788275650.jpeg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1065388-1788275650.jpeg?lm=4711",
+			"rasgos": ["potente"]
 		},
 		{
 			"n": "19",

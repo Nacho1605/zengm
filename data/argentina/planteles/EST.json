@@ -69,7 +69,8 @@
 			"college": "Montevideo Wanderers Fútbol Club",
 			"ovr": 70,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCFdgZX3bMBgCvS4Zv8JJD0trk-xAC-N255nCBNA-7VA&s=10",
-			"capitanias": 2
+			"capitanias": 2,
+			"rasgos": ["reflejos"]
 		},
 		{
 			"n": "1",
@@ -133,7 +134,7 @@
 			},
 			"college": "Club Costa Brava (General Pico)",
 			"ovr": 69,
-			"rasgos": ["aereo"],
+			"rasgos": ["recuperador"],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLUaPo7djYwsxgbmQoJOG8i5r5MsPFMAt6Lue1i6wOww&s=10"
 		},
 		{
@@ -155,7 +156,6 @@
 				"anio": 2021
 			},
 			"ovr": 66,
-			"rasgos": ["aereo"],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjYNn8rV0XqFjmxXKrMl8rXGmUYSDA__DmqYweIfne3Q&s=10",
 			"capitanias": 3
 		},
@@ -178,7 +178,7 @@
 				"anio": 2012
 			},
 			"ovr": 67,
-			"rasgos": ["aereo"],
+			"rasgos": ["tactico"],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_TflhAjaPK0ZcXfqYhrMVE3qYBZDAY0GnvMLK2iBQGw&s=10",
 			"capitanias": 1
 		},
@@ -223,7 +223,7 @@
 				"anio": 2009
 			},
 			"ovr": 65,
-			"rasgos": ["aereo"],
+			"rasgos": ["recuperador"],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQex3kmtIvSjheCAB-xe7BJXcOybZX2AcARAA1Sf4y2w&s=10"
 		},
 		{
@@ -289,7 +289,8 @@
 			},
 			"college": "Club Estudiantes de La Plata",
 			"ovr": 66,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7OjjS4YKDiV-Y1IJT0sjN3gh_Jfe1dR8_wNXxNMbjOw&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7OjjS4YKDiV-Y1IJT0sjN3gh_Jfe1dR8_wNXxNMbjOw&s=10",
+			"rasgos": ["centrador"]
 		},
 		{
 			"n": "36",
@@ -353,7 +354,8 @@
 				"anio": 2021
 			},
 			"ovr": 65,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUn5hGg8txPmbLPA4KyJEEadi9_0p9uiJMTktf_tx4jg&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUn5hGg8txPmbLPA4KyJEEadi9_0p9uiJMTktf_tx4jg&s=10",
+			"rasgos": ["veloz", "centrador"]
 		},
 		{
 			"n": "39",
@@ -397,7 +399,8 @@
 			},
 			"college": "Club Nacional de Football",
 			"ovr": 62,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyDjvkPjattknjOsWjAF5y7p85e55PVNK9IvqktpoRUw&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyDjvkPjattknjOsWjAF5y7p85e55PVNK9IvqktpoRUw&s=10",
+			"rasgos": ["cerebro"]
 		},
 		{
 			"n": "21",
@@ -425,7 +428,8 @@
 					"nombre": "Gonzalo Piovi"
 				}
 			],
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRL2Vc_VmG3bBzAhB_kWCfbVvgT-EHquzvJY91ZzrRpA&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRL2Vc_VmG3bBzAhB_kWCfbVvgT-EHquzvJY91ZzrRpA&s=10",
+			"rasgos": ["pulmon"]
 		},
 		{
 			"n": "22",
@@ -534,7 +538,8 @@
 			},
 			"ovr": 58,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRukuG4GxRrHnfqB1qJWa8S79c25nIFTsLdaYxOqSIiWA&s=10",
-			"capitanias": 3
+			"capitanias": 3,
+			"rasgos": ["habilidoso"]
 		},
 		{
 			"n": "17",
@@ -577,7 +582,8 @@
 			},
 			"college": "Rocha Fútbol Club",
 			"ovr": 69,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUFEMP6eZnWbpseZ1-gAp2i6QUp6MXhOJOQg0Z_VpQQg&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUFEMP6eZnWbpseZ1-gAp2i6QUp6MXhOJOQg0Z_VpQQg&s=10",
+			"rasgos": ["gambeta", "veloz"]
 		},
 		{
 			"n": "28",
@@ -664,23 +670,8 @@
 			},
 			"ovr": 66,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKAGFMrFn3lnkf4250nN_bpf3Oa3a67oO_e1hWPXvt_Q&s=10",
-			"ratings": {
-				"stre": 52,
-				"spd": 49,
-				"jmp": 56,
-				"endu": 48,
-				"ins": 53,
-				"dnk": 55,
-				"ft": 62,
-				"fg": 60,
-				"tp": 59,
-				"oiq": 74,
-				"diq": 39,
-				"drb": 68,
-				"pss": 75,
-				"reb": 40
-			},
-			"capitanias": 1
+			"capitanias": 1,
+			"rasgos": ["gambeta"]
 		},
 		{
 			"n": "19",
@@ -701,24 +692,8 @@
 				"anio": 2018
 			},
 			"ovr": 59,
-			"rasgos": ["aereo"],
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-q1WykPkXpWJbeKTAKEo14iq-NhsPsZJYeuTRiBSHbQ&s=10",
-			"ratings": {
-				"stre": 78,
-				"spd": 51,
-				"jmp": 62,
-				"endu": 51,
-				"ins": 71,
-				"dnk": 74,
-				"ft": 50,
-				"fg": 61,
-				"tp": 46,
-				"oiq": 57,
-				"diq": 19,
-				"drb": 46,
-				"pss": 45,
-				"reb": 41
-			}
+			"rasgos": ["potente"],
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-q1WykPkXpWJbeKTAKEo14iq-NhsPsZJYeuTRiBSHbQ&s=10"
 		},
 		{
 			"n": "9",
@@ -763,22 +738,7 @@
 			},
 			"ovr": 61,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQexvZfSt11fpPbwNiCt4XDxZpSLLesFKRs2uq0dXsfHQ&s=10",
-			"ratings": {
-				"stre": 66,
-				"spd": 48,
-				"jmp": 57,
-				"endu": 44,
-				"ins": 76,
-				"dnk": 72,
-				"ft": 58,
-				"fg": 64,
-				"tp": 55,
-				"oiq": 65,
-				"diq": 35,
-				"drb": 52,
-				"pss": 51,
-				"reb": 42
-			}
+			"rasgos": ["goleador"]
 		}
 	]
 }

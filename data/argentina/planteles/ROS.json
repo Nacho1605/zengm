@@ -398,7 +398,8 @@
 				"anio": 2020
 			},
 			"ovr": 70,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ11b5EoxW1XOI4dwNVK0ZCQlpk5fOsL3qQmrZ2ErE04g&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ11b5EoxW1XOI4dwNVK0ZCQlpk5fOsL3qQmrZ2ErE04g&s=10",
+			"rasgos": ["recuperador", "pulmon"]
 		},
 		{
 			"n": "20",
@@ -528,7 +529,8 @@
 			},
 			"college": "Club Deportes Tolima",
 			"ovr": 71,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkugFxP_Y5FwNGrPX8ZdxTtDZkoD4HzgZnV_rSdLRTbA&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkugFxP_Y5FwNGrPX8ZdxTtDZkoD4HzgZnV_rSdLRTbA&s=10",
+			"rasgos": ["gambeta", "pase"]
 		},
 		{
 			"n": "26",
@@ -614,23 +616,8 @@
 				"anio": 2006
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1S9nMOZqdzH-Q_Faq3RgQKT8aCrVEP7j7W7qVl2XPw&s=10",
-			"ratings": {
-				"stre": 64,
-				"spd": 79,
-				"jmp": 69,
-				"endu": 66,
-				"ins": 81,
-				"dnk": 80,
-				"ft": 74,
-				"fg": 76,
-				"tp": 78,
-				"oiq": 79,
-				"diq": 44,
-				"drb": 91,
-				"pss": 84,
-				"reb": 53
-			},
-			"capitan": true
+			"capitan": true,
+			"rasgos": ["pegador", "gambeta", "pelota parada", "habilidoso+", "centrador"]
 		},
 		{
 			"n": "27",
@@ -694,7 +681,8 @@
 				"anio": 2017
 			},
 			"ovr": 66,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ20ZK1GPA5MX7SPZXzoZAPfntMiToT1e8fNDBnIpuew&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ20ZK1GPA5MX7SPZXzoZAPfntMiToT1e8fNDBnIpuew&s=10",
+			"rasgos": ["pulmon"]
 		},
 		{
 			"n": "9",

@@ -61,23 +61,7 @@
 				"club": "GEM",
 				"anio": 2018
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/596909-1720644730.jpg?lm=4711",
-			"ratings": {
-				"stre": 72,
-				"spd": 57,
-				"jmp": 80,
-				"endu": 68,
-				"ins": 0,
-				"dnk": 0,
-				"ft": 58,
-				"fg": 0,
-				"tp": 0,
-				"oiq": 54,
-				"diq": 86,
-				"drb": 50,
-				"pss": 55,
-				"reb": 88
-			}
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/596909-1720644730.jpg?lm=4711"
 		},
 		{
 			"n": "32",
@@ -98,23 +82,7 @@
 				"club": "VEL",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1285238-1771509951.jpg?lm=4711",
-			"ratings": {
-				"stre": 75,
-				"spd": 59,
-				"jmp": 67,
-				"endu": 55,
-				"ins": 33,
-				"dnk": 41,
-				"ft": 57,
-				"fg": 31,
-				"tp": 30,
-				"oiq": 42,
-				"diq": 69,
-				"drb": 37,
-				"pss": 48,
-				"reb": 66
-			}
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1285238-1771509951.jpg?lm=4711"
 		},
 		{
 			"n": "2",
@@ -200,7 +168,8 @@
 			},
 			"college": "Club Atlético Rosario Central",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/302139-1720645277.jpg?lm=4711",
-			"capitan": true
+			"capitan": true,
+			"rasgos": ["centrador"]
 		},
 		{
 			"n": "20",
@@ -310,7 +279,8 @@
 				"club": "VEL",
 				"anio": 2017
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/457221-1732735211.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/457221-1732735211.jpg?lm=4711",
+			"rasgos": ["cerebro"]
 		},
 		{
 			"n": "29",
@@ -331,7 +301,8 @@
 				"club": "CHA",
 				"anio": 2011
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/424045-1693315106.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/424045-1693315106.png?lm=4711",
+			"rasgos": ["cerebro"]
 		},
 		{
 			"n": "10",
@@ -354,22 +325,7 @@
 			},
 			"college": "Audax Club Sportivo Italiano",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/249776-1691602983.jpg?lm=4711",
-			"ratings": {
-				"stre": 54,
-				"spd": 52,
-				"jmp": 59,
-				"endu": 58,
-				"ins": 63,
-				"dnk": 65,
-				"ft": 68,
-				"fg": 70,
-				"tp": 65,
-				"oiq": 82,
-				"diq": 44,
-				"drb": 72,
-				"pss": 83,
-				"reb": 47
-			}
+			"rasgos": ["pelota parada", "pase"]
 		},
 		{
 			"n": "22",
@@ -391,7 +347,8 @@
 				"anio": 2010
 			},
 			"college": "Club Atlético Vélez Sarsfield",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/135853-1694001401.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/135853-1694001401.png?lm=4711",
+			"rasgos": ["pegador"]
 		},
 		{
 			"n": "48",
@@ -475,23 +432,7 @@
 				"club": "EST",
 				"anio": 2018
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/606267-1720647401.jpg?lm=4711",
-			"ratings": {
-				"stre": 55,
-				"spd": 82,
-				"jmp": 69,
-				"endu": 63,
-				"ins": 66,
-				"dnk": 70,
-				"ft": 62,
-				"fg": 61,
-				"tp": 65,
-				"oiq": 70,
-				"diq": 34,
-				"drb": 77,
-				"pss": 60,
-				"reb": 45
-			}
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/606267-1720647401.jpg?lm=4711"
 		},
 		{
 			"n": "17",
@@ -535,24 +476,8 @@
 				"anio": 2018
 			},
 			"college": "Club Deportivo Capiatá",
-			"rasgos": ["aereo"],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/567736-1724876503.jpg?lm=4711",
-			"ratings": {
-				"stre": 68,
-				"spd": 61,
-				"jmp": 81,
-				"endu": 63,
-				"ins": 89,
-				"dnk": 91,
-				"ft": 67,
-				"fg": 80,
-				"tp": 61,
-				"oiq": 76,
-				"diq": 39,
-				"drb": 63,
-				"pss": 60,
-				"reb": 59
-			}
+			"rasgos": ["goleador", "aereo"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/567736-1724876503.jpg?lm=4711"
 		},
 		{
 			"n": "39",

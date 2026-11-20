@@ -279,12 +279,28 @@ export const FORMA_2: Forma = {
 	},
 	fuerzaPorCm: 0.6,
 	rasgos: {
-		// Gambeteador: desequilibra con la pelota
+		// Arquetipos que indica el usuario. Con "+" (ej.: "gambeta+") el efecto
+		// es una vez y media el normal: el que se destaca aun entre los de su tipo
+		goleador: { ins: 10, dnk: 6 },
+		pegador: { tp: 10, fg: 6 },
+		aereo: { jmp: 8, dnk: 5, reb: 4 },
 		gambeta: { drb: 12, spd: 2 },
-		// Habilidoso: técnica, conducción y lectura con la pelota
+		veloz: { spd: 12, endu: 2 },
+		"pelota parada": { ft: 12, tp: 4 },
 		habilidoso: { drb: 8, oiq: 4, pss: 3 },
-		// Buen pasador
 		pase: { pss: 12, oiq: 4 },
+		cerebro: { oiq: 8, pss: 6 },
+		centrador: { pss: 8, tp: 4, endu: 3 },
+		recuperador: { diq: 8, stre: 3, reb: 2 },
+		potente: { stre: 10, jmp: 3 },
+		pulmon: { endu: 12, diq: 2 },
+		tactico: { oiq: 5, diq: 5 },
+		// Arqueros
+		reflejos: { jmp: 8, diq: 3 },
+		achique: { reb: 8, stre: 3 },
+		pies: { pss: 10, oiq: 3 },
+		// Defectos
+		lento: { spd: -12 },
 	},
 };
 
@@ -345,15 +361,25 @@ export const generarRatings = (
 		}
 	}
 	// Rasgos indicados en el plantel (dan forma, el OVR no cambia)
-	if (j.rasgos?.includes("aereo")) {
+	// Forma 1: solo "aereo", fijo
+	if (!forma.rasgos.aereo && j.rasgos?.includes("aereo")) {
 		// Gran cabeceador
 		sumar("jmp", 8);
 		sumar("dnk", 5);
 		sumar("reb", 4);
 	}
-	for (const rasgo of j.rasgos ?? []) {
-		for (const [k, v] of Object.entries(forma.rasgos[rasgo] ?? {})) {
-			sumar(k as Key, v!);
+	for (const texto of j.rasgos ?? []) {
+		const mas = texto.endsWith("+");
+		const rasgo = mas ? texto.slice(0, -1) : texto;
+		const efecto = forma.rasgos[rasgo];
+		if (!efecto) {
+			if (forma.rasgos.aereo) {
+				throw new Error(`${j.nombre} ${j.apellido}: rasgo desconocido "${texto}"`);
+			}
+			continue;
+		}
+		for (const [k, v] of Object.entries(efecto)) {
+			sumar(k as Key, v! * (mas ? 1.5 : 1));
 		}
 	}
 	for (const k of KEYS) {

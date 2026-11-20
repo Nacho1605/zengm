@@ -1,7 +1,7 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 20/11/2026. Última versión: **v2.15.4**
-(`data/argentina/BBGM_Argentina_2026_v.2.15.4_futbol.json`): 13 de 30 equipos
+Estado al 21/11/2026. Última versión: **v2.15.5**
+(`data/argentina/BBGM_Argentina_2026_v.2.15.5_futbol.json`): 13 de 30 equipos
 con plantel 2026, con las fotos y los ajustes que el usuario hizo en el juego,
 y la forma 2 de los ratings (mismos OVR). Validación con el esquema oficial: 0 errores. Auditoría: 53
 controles, 9 con alertas. En los equipos cargados solo aparecen 2 fotos que
@@ -9,9 +9,7 @@ faltan (Cena IRM, Zalazar GIM), José Sosa (41 años, real) y homónimos reales
 con otros equipos o libres; el resto es de equipos
 sin cargar o libres con datos de 2023.
 
-**Lo que sigue:** que el usuario diga qué jugadores son gambeteadores,
-habilidosos, buenos pasadores o de buen juego aéreo (rasgos; no cambian el
-OVR) y revise la forma 2; después, Huracán (v2.16). Si manda otra liga
+**Lo que sigue:** Huracán (v2.16), con sus rasgos de juego. Si manda otra liga
 exportada, importarla con la versión sobre la que jugó como base.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
@@ -235,9 +233,9 @@ Correa 1.
 
 ## 7. Pendientes
 
-1. **Rasgos de juego:** pedirle al usuario, equipo por equipo, sus
-   gambeteadores, habilidosos, pasadores y buenos cabeceadores. Hoy solo hay
-   `aereo` (Carrillo, centrales de EST, Gaich, R. Martínez…).
+1. **Rasgos de juego:** cargados en la v2.15.5 (83 jugadores, lista del
+   usuario en `rasgos-usuario.ts`). Ya no hay ratings a mano: los 23 se
+   generaron de cero con sus rasgos (permiso del usuario).
    **Forma 2 pendiente** en los prospectos generados de los drafts
    2026–2055 y en los libres de 2023 (siguen con la forma 1); los libres se
    normalizan al final de la fase 2.
@@ -349,6 +347,10 @@ Correa 1.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+- v2.15.5: 17 arquetipos + defecto `lento` ("+" = 1,5 veces); rasgos del
+  usuario en 83 jugadores; los 23 con ratings a mano, generados de cero. 97
+  jugadores con ratings nuevos, ningún OVR movido. A To. Palacios, Núñez,
+  González Pírez, Rojo y Gaich se les quitó "aereo" (no estaban en la lista).
 - Capitanes revisados frente a sus compañeros: el usuario aceptó Marcone 65,
   E. Gómez 66 y Devecchi 60 (entraron en la v2.15.3).
 
@@ -358,7 +360,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Leé CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la
-> v2.15.4. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
+> v2.15.5. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
 > que entendiste el estado, antes de seguir.
 
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara

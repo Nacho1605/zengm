@@ -53,7 +53,8 @@
 				"anio": 2014
 			},
 			"college": "Centro Atlético Fénix",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRja3lu36qjhqiHhV4-vBYafZ8KO_UHPHYuQJtk5OWeyg&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRja3lu36qjhqiHhV4-vBYafZ8KO_UHPHYuQJtk5OWeyg&s=10",
+			"rasgos": ["pies"]
 		},
 		{
 			"n": "33",
@@ -75,7 +76,8 @@
 				"anio": 2013
 			},
 			"college": "Club Atlético River Plate",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ZT8ugcv8bBRj17DFRovfiDNpKDzqLCYAoMCkz7N3zQ&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ZT8ugcv8bBRj17DFRovfiDNpKDzqLCYAoMCkz7N3zQ&s=10",
+			"rasgos": ["achique"]
 		},
 		{
 			"n": "1",
@@ -268,7 +270,8 @@
 				"anio": 2009
 			},
 			"college": "Club Deportivo La Equidad",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYp7xRjPE862pLG5m-16m6bE3z4RyDoJAvEra6e7GGWQ&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYp7xRjPE862pLG5m-16m6bE3z4RyDoJAvEra6e7GGWQ&s=10",
+			"rasgos": ["tactico"]
 		},
 		{
 			"n": "29",
@@ -506,7 +509,8 @@
 				"anio": 2023
 			},
 			"college": "Club Atlético River Plate",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgmSqfuGMxiUMszv_A8cHqNYlP6JR9IsNwtJ6IC0LcLw&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgmSqfuGMxiUMszv_A8cHqNYlP6JR9IsNwtJ6IC0LcLw&s=10",
+			"rasgos": ["gambeta", "pelota parada"]
 		},
 		{
 			"n": "8",
@@ -596,7 +600,8 @@
 				"anio": 2011
 			},
 			"college": "Club Atlético Tiro Federal Argentino",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRboSGoNWo5xt-h-brwJ48jYmF2uSNYKo_U7AYrI-PYMw&s"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRboSGoNWo5xt-h-brwJ48jYmF2uSNYKo_U7AYrI-PYMw&s",
+			"rasgos": ["potente"]
 		},
 		{
 			"n": "34",

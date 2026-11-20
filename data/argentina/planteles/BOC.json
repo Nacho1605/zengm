@@ -166,7 +166,8 @@
 				"anio": 2024
 			},
 			"ovr": 70,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrki1a19pluSjky22mmDeTfXVk1WM4tf_UT2ydRl6jw&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrki1a19pluSjky22mmDeTfXVk1WM4tf_UT2ydRl6jw&s=10",
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": "32",
@@ -229,7 +230,8 @@
 				"anio": 2023
 			},
 			"ovr": 60,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgF97Nxd3cXE5WaAEl6ieotvLZcLfuD2wMBZEzKWlqaA&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgF97Nxd3cXE5WaAEl6ieotvLZcLfuD2wMBZEzKWlqaA&s=10",
+			"rasgos": ["tactico"]
 		},
 		{
 			"n": "46",
@@ -397,7 +399,8 @@
 				"anio": 2016
 			},
 			"ovr": 68,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmbqX2qeDzUyl8o-MNNDV_1HdutWiixnJg_xlahKf0kg&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmbqX2qeDzUyl8o-MNNDV_1HdutWiixnJg_xlahKf0kg&s=10",
+			"rasgos": ["recuperador"]
 		},
 		{
 			"n": "5",
@@ -419,7 +422,8 @@
 				"anio": 2012
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpSz0m8PuR99eSshpEgw9NBOusYWGFgecxvFP0U3qxQw&s=10",
-			"capitan": true
+			"capitan": true,
+			"rasgos": ["pelota parada", "habilidoso", "pase+", "cerebro", "recuperador", "lento"]
 		},
 		{
 			"n": "8",
@@ -591,7 +595,8 @@
 			},
 			"college": "Club Deportes Tolima",
 			"ovr": 70,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLVq3OtBEIA5Lde5I7kbVqY6ZTAc51_VZ989t1SbYmbg&s"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLVq3OtBEIA5Lde5I7kbVqY6ZTAc51_VZ989t1SbYmbg&s",
+			"rasgos": ["veloz+"]
 		},
 		{
 			"n": "20",
@@ -633,7 +638,8 @@
 				"anio": 2026
 			},
 			"ovr": 71,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_gr6qqjH2a8gQGCtWvAALahod-Hkm8RCqmUmxta1sTg&s"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_gr6qqjH2a8gQGCtWvAALahod-Hkm8RCqmUmxta1sTg&s",
+			"rasgos": ["gambeta"]
 		},
 		{
 			"n": "11",
@@ -681,7 +687,8 @@
 			},
 			"college": "Club Atlético Peñarol",
 			"ovr": 72,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8EAf1SHRT9DS63_NwMeSs92frtdjLx7QZkuTQeuQkQ&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8EAf1SHRT9DS63_NwMeSs92frtdjLx7QZkuTQeuQkQ&s=10",
+			"rasgos": ["goleador"]
 		},
 		{
 			"n": "28",
@@ -724,7 +731,8 @@
 				"anio": 2015
 			},
 			"ovr": 57,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR1Ey8kXIIDBrSJzlSAR9auMiJWiTHTZ6KCePjE8vnDA&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR1Ey8kXIIDBrSJzlSAR9auMiJWiTHTZ6KCePjE8vnDA&s=10",
+			"rasgos": ["potente"]
 		},
 		{
 			"n": "13",
@@ -747,7 +755,8 @@
 			},
 			"college": "Club Sport Emelec",
 			"ovr": 65,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Ony12tvhm8P8R9DUfr_eTcSitJdEQBlB4UR2_DtjWg&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Ony12tvhm8P8R9DUfr_eTcSitJdEQBlB4UR2_DtjWg&s=10",
+			"rasgos": ["aereo"]
 		}
 	]
 }

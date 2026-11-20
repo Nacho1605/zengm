@@ -128,7 +128,8 @@
 				"anio": 2020
 			},
 			"college": "Club Atlético Huracán (San Rafael)",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQHAaGKGgQgHR7_PjRPMYdcyujYHh1qr06qBfQlzTaw&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQHAaGKGgQgHR7_PjRPMYdcyujYHh1qr06qBfQlzTaw&s=10",
+			"rasgos": ["recuperador"]
 		},
 		{
 			"n": "36",
@@ -172,7 +173,8 @@
 				"anio": 2017
 			},
 			"college": "Patriotas Boyacá",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp-n11YHmzjWCQThJTfJS8ZoEVnOp-uTFyWMp520EzWA&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp-n11YHmzjWCQThJTfJS8ZoEVnOp-uTFyWMp520EzWA&s=10",
+			"rasgos": ["potente"]
 		},
 		{
 			"n": "19",
@@ -386,7 +388,8 @@
 				"anio": 2015
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXoI6WwvxpX9Fp4FhZLQyCOhrk5VU9p0i9tBvBMb9b1Q&s=10",
-			"capitan": true
+			"capitan": true,
+			"rasgos": ["pulmon"]
 		},
 		{
 			"n": "27",
@@ -558,7 +561,8 @@
 				"club": "COL",
 				"anio": 2020
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKFrpTrwJ-xyHXIRPFYrJrPgkAcH-L2MZAO-4HuqSKw&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKFrpTrwJ-xyHXIRPFYrJrPgkAcH-L2MZAO-4HuqSKw&s=10",
+			"rasgos": ["gambeta"]
 		},
 		{
 			"n": "28",
@@ -583,7 +587,8 @@
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 20
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZayjXpLh1giq1Z-44ODrIPQ6kj0MOGxWaU0virDVMjw&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZayjXpLh1giq1Z-44ODrIPQ6kj0MOGxWaU0virDVMjw&s=10",
+			"rasgos": ["veloz"]
 		},
 		{
 			"n": "14",
@@ -669,7 +674,8 @@
 				"anio": 2019
 			},
 			"college": "Racing Club",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJM6hTSvBVEmqZs7VKqtryMR7ssLqBgrzLfE9FMQc-Jw&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJM6hTSvBVEmqZs7VKqtryMR7ssLqBgrzLfE9FMQc-Jw&s=10",
+			"rasgos": ["veloz"]
 		},
 		{
 			"n": "29",
@@ -691,7 +697,8 @@
 				"anio": 2019
 			},
 			"college": "Club Plaza Colonia de Deportes",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/690727-1755788528.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/690727-1755788528.jpg?lm=4711",
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": "21",
@@ -735,7 +742,8 @@
 				"anio": 2015
 			},
 			"college": "Deportivo Independiente Medellín",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbNLFHufae1utzrd7HANUGFFqbg8Sh9D6ekvgYB-sH2Q&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbNLFHufae1utzrd7HANUGFFqbg8Sh9D6ekvgYB-sH2Q&s=10",
+			"rasgos": ["potente"]
 		},
 		{
 			"n": "54",
