@@ -11,8 +11,10 @@ sin cargar o libres con datos de 2023.
 **Lo que sigue:** el usuario está cargando fotos sobre la v2.15.2 y va a
 mandar su liga exportada. Importarla con
 `node tools/argentina/desde-juego.ts SU_LIGA.json data/argentina/BBGM_Argentina_2026_v.2.15.2_futbol.json`
-(base v2.15.2) antes de cualquier otro cambio. Después: su respuesta a la
-propuesta de capitanes (§7) y Huracán (v2.16).
+(base v2.15.2, obligatorio) y armar la **v2.15.3**, que junta sus fotos con
+los capitanes aceptados (ya aplicados en los planteles: Marcone 65, E. Gómez
+66, Devecchi 60; todavía no hay archivo armado con ellos). Después, Huracán
+(v2.16).
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -141,9 +143,9 @@ Transfermarkt.
 
 ## 4. Escala de OVR y criterio
 
-Once (promedio de los 11 mejores), v2.15.2: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
-EST 67,6 · VEL 66,9 · IRM 66,7 · ARG 66,6 · GIM 66,0 · LAN 65,8 · RAC 65,5 ·
-IND 65,4 · SLO 64,6 · RIE 60,5. Estudiantes queda alto siendo 11.º porque está por jugar
+Once (promedio de los 11 mejores), con los capitanes aceptados: RIV 70,3 ·
+BOC 69,8 · ROS 68,5 · EST 67,6 · VEL 67,0 · IRM 66,7 · ARG 66,6 · GIM 66,0 ·
+LAN 65,8 · IND 65,5 · RAC 65,5 · SLO 64,6 · RIE 60,5. Estudiantes queda alto siendo 11.º porque está por jugar
 la final de la Libertadores 2026. Los 17 sin cargar tienen datos de 2023
 (47–60).
 
@@ -228,9 +230,9 @@ Correa 1.
 ## 7. Pendientes
 
 1. Importar la liga del usuario con las fotos nuevas (`desde-juego.ts` con
-   base v2.15.2).
+   base v2.15.2) y armar la v2.15.3.
    **Propuesta de capitanes** (pedido del usuario: revisar su valor frente a
-   sus compañeros; nada aplicado). Coherentes: Paredes, Di María, Nacho
+   sus compañeros; aceptada y aplicada en los planteles). Coherentes: Paredes, Di María, Nacho
    Fernández y Arce (1.º de su equipo), Cambeses e Izquierdoz (2.º), Otamendi,
    Oroz, Tripichio, Céliz y los de Estudiantes. Propuestos: Marcone 63 → 65
    (único volante central fijo de IND y el que más jugó; hoy debajo de un
@@ -304,6 +306,9 @@ Correa 1.
   equipos en los planteles.
 - v2.15.2: Canale y M. Moreno 68, Salvio 67, Cambeses 69. `desde-juego.ts`
   acepta la versión base.
+- Capitanes revisados frente a sus compañeros: el usuario aceptó Marcone 65,
+  E. Gómez 66 y Devecchi 60 (en los planteles; entran en la v2.15.3 con las
+  fotos).
 
 ## 10. Cómo empezar la próxima sesión
 
