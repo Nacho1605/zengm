@@ -47,7 +47,7 @@ node tools/argentina/escalera.ts ARCHIVO.json 52 EQUIPO   # OVR por posición
 node tools/argentina/ver-equipo.ts EQUIPO [...]  # plantel por línea con datos
 node tools/argentina/cruces.ts                   # jugadores con números en dos clubes
 node tools/argentina/ajustar-ovr.ts EQUIPO APELLIDO OVR  # cambia un OVR (y sus ratings a mano)
-node tools/argentina/desde-juego.ts LIGA_DEL_USUARIO.json VERSION_QUE_USÓ.json # importa sus cambios
+node tools/argentina/desde-juego.ts LIGA_DEL_USUARIO.json VERSION_QUE_USÓ.json # importa fotos, camisetas, ratings, parientes y equipos
 ```
 
 En una máquina nueva, `validar.ts` necesita la librería `ajv` (no instalar

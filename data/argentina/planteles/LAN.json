@@ -59,7 +59,8 @@
 			"debut": {
 				"club": "EST",
 				"anio": 2013
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/323918-1721933353.png?lm=4711"
 		},
 		{
 			"n": "1",
@@ -80,7 +81,8 @@
 			"debut": {
 				"club": "RIV",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/401587-1625773256.png?lm=4711"
 		},
 		{
 			"n": "24",
@@ -102,7 +104,8 @@
 				"club": "LAN",
 				"anio": 2009
 			},
-			"capitan": true
+			"capitan": true,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/116968-1721933804.png?lm=4711"
 		},
 		{
 			"n": "13",
@@ -124,7 +127,8 @@
 				"club": null,
 				"anio": 2016
 			},
-			"college": "Club Libertad"
+			"college": "Club Libertad",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/402627-1782800694.jpg?lm=4711"
 		},
 		{
 			"n": "35",
@@ -146,7 +150,8 @@
 				"club": null,
 				"anio": 2022
 			},
-			"college": "Club River Plate (Paraguay)"
+			"college": "Club River Plate (Paraguay)",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/847074-1755012394.png?lm=4711"
 		},
 		{
 			"n": "4",
@@ -168,7 +173,8 @@
 				"club": null,
 				"anio": 2020
 			},
-			"college": "Liverpool Fútbol Club"
+			"college": "Liverpool Fútbol Club",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/799594-1721933872.png?lm=4711"
 		},
 		{
 			"n": "2",
@@ -189,7 +195,8 @@
 			"debut": {
 				"club": "LAN",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1005803-1778273670.jpeg?lm=4711"
 		},
 		{
 			"n": "6",
@@ -210,7 +217,8 @@
 			"debut": {
 				"club": "PLA",
 				"anio": 2021
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/867621-1724877200.jpg?lm=4711"
 		},
 		{
 			"n": "33",
@@ -231,7 +239,8 @@
 			"debut": {
 				"club": "BEL",
 				"anio": 2017
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/355900-1755535002.jpg?lm=4711"
 		},
 		{
 			"n": "3",
@@ -252,7 +261,8 @@
 			"debut": {
 				"club": "PLA",
 				"anio": 2013
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/615253-1721935501.png?lm=4711"
 		},
 		{
 			"n": "30",
@@ -273,7 +283,8 @@
 			"debut": {
 				"club": "TIG",
 				"anio": 2017
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/469762-1727449491.jpg?lm=4711"
 		},
 		{
 			"n": "17",
@@ -294,7 +305,8 @@
 			"debut": {
 				"club": "LAN",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1294453-1776351125.png?lm=4711"
 		},
 		{
 			"n": "5",
@@ -315,7 +327,8 @@
 			"debut": {
 				"club": "RIV",
 				"anio": 2021
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/894194-1644878091.png?lm=4711"
 		},
 		{
 			"n": "15",
@@ -341,7 +354,8 @@
 			"lesion": {
 				"tipo": "Lesión muscular",
 				"partidos": 3
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/260898-1721935536.png?lm=4711"
 		},
 		{
 			"n": "23",
@@ -362,7 +376,8 @@
 			"debut": {
 				"club": "ARS",
 				"anio": 2013
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/282283-1721935700.png?lm=4711"
 		},
 		{
 			"n": "16",
@@ -384,7 +399,8 @@
 				"club": null,
 				"anio": 2017
 			},
-			"college": "Club Deportivo O'Higgins"
+			"college": "Club Deportivo O'Higgins",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/511436-1776351175.png?lm=4711"
 		},
 		{
 			"n": "27",
@@ -405,7 +421,8 @@
 			"debut": {
 				"club": "LAN",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1240378-1771512430.png?lm=4711"
 		},
 		{
 			"n": "10",
@@ -422,10 +439,27 @@
 			"goles": 5,
 			"min": 1326,
 			"fichado": "19/01/2024",
-			"ovr": 68,
+			"ovr": 67,
 			"debut": {
 				"club": "LAN",
 				"anio": 2016
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/456617-1721935774.png?lm=4711",
+			"ratings": {
+				"stre": 58,
+				"spd": 60,
+				"jmp": 61,
+				"endu": 59,
+				"ins": 65,
+				"dnk": 66,
+				"ft": 66,
+				"fg": 73,
+				"tp": 66,
+				"oiq": 79,
+				"diq": 55,
+				"drb": 84,
+				"pss": 78,
+				"reb": 54
 			}
 		},
 		{
@@ -447,7 +481,14 @@
 			"debut": {
 				"club": "INS",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/654733-1778273355.jpeg?lm=4711",
+			"parientes": [
+				{
+					"tipo": "brother",
+					"nombre": "Nicolás Watson"
+				}
+			]
 		},
 		{
 			"n": "11",
@@ -468,7 +509,8 @@
 			"debut": {
 				"club": "LAN",
 				"anio": 2008
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/84535-1721935987.png?lm=4711"
 		},
 		{
 			"n": "77",
@@ -489,7 +531,8 @@
 			"debut": {
 				"club": "LAN",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/829381-1721935796.png?lm=4711"
 		},
 		{
 			"n": "38",
@@ -510,7 +553,8 @@
 			"debut": {
 				"club": "LAN",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1119045-1778273775.jpeg?lm=4711"
 		},
 		{
 			"n": "20",
@@ -532,7 +576,8 @@
 				"club": null,
 				"anio": 2023
 			},
-			"college": "Club Olimpia"
+			"college": "Club Olimpia",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1065388-1788275650.jpeg?lm=4711"
 		},
 		{
 			"n": "19",
@@ -554,7 +599,8 @@
 				"club": null,
 				"anio": 2024
 			},
-			"college": "Internacional Fútbol Club de Palmira"
+			"college": "Internacional Fútbol Club de Palmira",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1258292-1759370576.jpg?lm=4711"
 		},
 		{
 			"n": "39",

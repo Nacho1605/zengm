@@ -1,20 +1,15 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 20/11/2026. Última versión: **v2.15.2**
-(`data/argentina/BBGM_Argentina_2026_v.2.15.2_futbol.json`): 13 de 30 equipos
-con plantel 2026 (Lanús ya revisado por el usuario). Validación con el esquema oficial: 0 errores. Auditoría: 53
-controles, 9 con alertas. En los equipos cargados solo aparecen las fotos que
-faltan de IRM, GIM y LAN (las pone el usuario en el juego), José Sosa (41 años,
-real) y homónimos reales con otros equipos o libres; el resto es de equipos
+Estado al 20/11/2026. Última versión: **v2.15.3**
+(`data/argentina/BBGM_Argentina_2026_v.2.15.3_futbol.json`): 13 de 30 equipos
+con plantel 2026, con las fotos y los ajustes que el usuario hizo en el juego. Validación con el esquema oficial: 0 errores. Auditoría: 53
+controles, 9 con alertas. En los equipos cargados solo aparecen 2 fotos que
+faltan (Cena IRM, Zalazar GIM), José Sosa (41 años, real) y homónimos reales
+con otros equipos o libres; el resto es de equipos
 sin cargar o libres con datos de 2023.
 
-**Lo que sigue:** el usuario está cargando fotos sobre la v2.15.2 y va a
-mandar su liga exportada. Importarla con
-`node tools/argentina/desde-juego.ts SU_LIGA.json data/argentina/BBGM_Argentina_2026_v.2.15.2_futbol.json`
-(base v2.15.2, obligatorio) y armar la **v2.15.3**, que junta sus fotos con
-los capitanes aceptados (ya aplicados en los planteles: Marcone 65, E. Gómez
-66, Devecchi 60; todavía no hay archivo armado con ellos). Después, Huracán
-(v2.16).
+**Lo que sigue:** Huracán (v2.16). Si el usuario manda otra liga exportada,
+importarla con la versión sobre la que jugó como base.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -143,9 +138,13 @@ Transfermarkt.
 
 ## 4. Escala de OVR y criterio
 
-Once (promedio de los 11 mejores), con los capitanes aceptados: RIV 70,3 ·
-BOC 69,8 · ROS 68,5 · EST 67,6 · VEL 67,0 · IRM 66,7 · ARG 66,6 · GIM 66,0 ·
-LAN 65,8 · IND 65,5 · RAC 65,5 · SLO 64,6 · RIE 60,5. Estudiantes queda alto siendo 11.º porque está por jugar
+Once (promedio de los 11 mejores), v2.15.3: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
+EST 67,6 · VEL 67,0 · IRM 66,7 · ARG 66,6 · LAN 65,7 · GIM 65,6 · IND 65,5 ·
+RAC 65,5 · SLO 64,6 · RIE 60,5. Valoración de equipo del propio juego (Power
+Rankings que mandó el usuario, sobre la v2.15.2, con los 17 sin cargar
+desactivados): RIV 136 · BOC 134 · ROS 127 · EST 116 · ARG 114 · IRM 114 ·
+VEL 112 · LAN 108 · GIM 106 · IND 105 · SLO 101 · RAC 99 (107 sin
+lesionados) · RIE 78. Estudiantes queda alto siendo 11.º porque está por jugar
 la final de la Libertadores 2026. Los 17 sin cargar tienen datos de 2023
 (47–60).
 
@@ -175,6 +174,9 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
   talento (E. Ávila 65, Carboni 63, Salas 61).
 - Lanús (v2.15.1): −1 a todos los mediocampistas, a Guidara y a G. Pérez, y
   después Canale y M. Moreno 68 y Salvio 67 (v2.15.2). Cambeses 69.
+- Ajustes en el juego (v2.15.3): marca la habilidad con la gambeta (`drb`:
+  M. Fernández 87 → OVR 70, M. Moreno 84 → 67) y bajó a E. Martínez 65, Silva
+  Torrejón 63, M. Torres 66 y Sartori 66.
 - Valores fijos revisados (v2.14.3): aceptó bajar por pocos minutos (Werner,
   Iacovich, Centurión, Mallo) y moderó otros (Cetré 69, J. Correa 66); mantuvo
   a Ibarra, Rojo, Alario, Valdés, Marchiori, Sanguinetti, Mele y otros.
@@ -229,8 +231,14 @@ Correa 1.
 
 ## 7. Pendientes
 
-1. Importar la liga del usuario con las fotos nuevas (`desde-juego.ts` con
-   base v2.15.2) y armar la v2.15.3.
+1. **Fotos:** faltan Cena (IRM) y Zalazar (GIM); Ramis (IRM) tiene una
+   miniatura de Google; 5 vienen de otros sitios (Tempone, Mangiaut, Kida,
+   Policella, T. Aguirre). De los 16 prospectos reales, solo Satas, Medina y
+   Ma. Martínez tienen foto: el usuario puede ponerlas en el juego (draft) y
+   vuelven con `desde-juego.ts`. Las miniaturas de Google de los primeros ocho
+   equipos (221) las corrige el usuario al final de la fase 2. Para comprobar
+   que cada foto abre hay que permitir `img.a.transfermarkt.technology` en la
+   red (hoy bloqueada).
    **Propuesta de capitanes** (pedido del usuario: revisar su valor frente a
    sus compañeros; aceptada y aplicada en los planteles). Coherentes: Paredes, Di María, Nacho
    Fernández y Arce (1.º de su equipo), Cambeses e Izquierdoz (2.º), Otamendi,
@@ -238,13 +246,11 @@ Correa 1.
    (único volante central fijo de IND y el que más jugó; hoy debajo de un
    arquero suplente y de un recién llegado), E. Gómez 65 → 66 (el que más
    jugó en Vélez, lateral fijo), Devecchi 55 → 60 (arquero titular de SLO
-   desde que se fue Gill, en una defensa de 30 goles en contra).
+   desde que se fue Gill, en una defensa de 30 goles en contra). Aplicada en
+   la v2.15.3.
 2. Cargar los 17 equipos restantes (próximo: Huracán).
-3. **Fotos:** las pone el usuario en el juego y vuelven con `desde-juego.ts`.
-   Faltan las de IRM (29), GIM (30) y LAN (24); el usuario las va a cargar
-   antes de Huracán. 221 de los primeros ocho equipos eran
-   miniaturas de Google y el usuario las está cambiando. Transfermarkt está
-   bloqueado en la red de la sesión.
+3. Parentescos: el usuario los va agregando en el juego (Watson y Auzmendi en
+   la v2.15.3; seguramente falten más) y vuelven con `desde-juego.ts`.
 4. **Libres (~340):** versiones viejas de 2023. Al final de la fase 2: retirar
    a los que ya no juegan en el país y normalizar al resto con la norma.
 5. Personalidad de los ídolos de cada club (cuando estén todos los planteles).
@@ -275,6 +281,13 @@ Correa 1.
 - Un jugador con `ratings` a mano no puede cambiar de OVR sin cambiar sus
   ratings: el cargador se frena si no coinciden.
 - `validar.ts` necesita `ajv` (ver CLAUDE.md); sin eso falla al arrancar.
+- La bienvenida ("Welcome to your new league!") solo la escribe el juego si
+  el archivo no trae eventos guardados: el cargador los borra (la v2.0 traía
+  una vieja con el escudo de Unión). Así sale el escudo del equipo elegido.
+- Duplicados escondidos en los libres: dos jugadores con el mismo número de
+  Transfermarkt en la foto son la misma persona (pasó con Giménez Rojas y con
+  Gabriel Florentín, que estaba como "José Florentín"). Revisarlo al importar
+  fotos.
 - `desde-juego.ts` compara la liga del usuario contra el archivo armado más
   reciente salvo que se le dé la base: si se armó una versión después de la
   que usó el usuario, darle esa base o los OVR nuevos se pisan.
@@ -306,9 +319,12 @@ Correa 1.
   equipos en los planteles.
 - v2.15.2: Canale y M. Moreno 68, Salvio 67, Cambeses 69. `desde-juego.ts`
   acepta la versión base.
+- v2.15.3: la liga del usuario con fotos (81), Reali #33, 6 ratings ajustados
+  en el juego, hermanos Watson y Auzmendi, color de Unión; capitanes
+  aceptados; dos duplicados de libres borrados; sin la bienvenida vieja de
+  Unión. `desde-juego.ts` ahora trae también los parientes.
 - Capitanes revisados frente a sus compañeros: el usuario aceptó Marcone 65,
-  E. Gómez 66 y Devecchi 60 (en los planteles; entran en la v2.15.3 con las
-  fotos).
+  E. Gómez 66 y Devecchi 60 (entraron en la v2.15.3).
 
 ## 10. Cómo empezar la próxima sesión
 
@@ -316,7 +332,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Leé CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la
-> v2.15.2. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
+> v2.15.3. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
 > que entendiste el estado, antes de seguir.
 
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara

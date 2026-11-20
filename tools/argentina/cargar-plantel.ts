@@ -1007,4 +1007,9 @@ console.log(
 		.join(" | "),
 );
 
+// Sin eventos guardados: así el juego escribe la bienvenida ("Welcome to your
+// new league!") con el escudo del equipo que elige el usuario al crear la liga.
+// La v2.0 traía una sola, vieja, con el escudo de Unión
+delete league.events;
+
 writeFileSync(output, JSON.stringify(league));

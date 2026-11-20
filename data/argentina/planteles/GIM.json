@@ -52,7 +52,8 @@
 				"club": "CDC",
 				"anio": 2016
 			},
-			"college": "Club de Gimnasia y Esgrima La Plata"
+			"college": "Club de Gimnasia y Esgrima La Plata",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/660280-1699913821.jpg?lm=4711"
 		},
 		{
 			"n": "15",
@@ -74,7 +75,8 @@
 				"club": null,
 				"anio": 2015
 			},
-			"college": "Deportivo Pereira"
+			"college": "Deportivo Pereira",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/652707-1708969692.jpg?lm=4711"
 		},
 		{
 			"n": "27",
@@ -95,7 +97,8 @@
 			"debut": {
 				"club": "COM",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1085432-1739197951.jpg?lm=4711"
 		},
 		{
 			"n": "4",
@@ -116,7 +119,8 @@
 			"debut": {
 				"club": "BOC",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/838405-1739197009.jpg?lm=4711"
 		},
 		{
 			"n": "21",
@@ -133,12 +137,29 @@
 			"goles": 2,
 			"min": 2935,
 			"fichado": "03/09/2024",
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": null,
 				"anio": 2018
 			},
-			"college": "Club Atlético Peñarol"
+			"college": "Club Atlético Peñarol",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/578737-1739197041.jpg?lm=4711",
+			"ratings": {
+				"stre": 62,
+				"spd": 52,
+				"jmp": 69,
+				"endu": 57,
+				"ins": 47,
+				"dnk": 50,
+				"ft": 56,
+				"fg": 43,
+				"tp": 39,
+				"oiq": 50,
+				"diq": 74,
+				"drb": 46,
+				"pss": 57,
+				"reb": 63
+			}
 		},
 		{
 			"n": "35",
@@ -163,7 +184,8 @@
 			"lesion": {
 				"tipo": "Lesión muscular",
 				"partidos": 2
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1224924-1739197138.jpg?lm=4711"
 		},
 		{
 			"n": "14",
@@ -185,7 +207,8 @@
 				"club": "SAC",
 				"anio": 2021
 			},
-			"college": "Racing Club"
+			"college": "Racing Club",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/909170-1748281103.jpg?lm=4711"
 		},
 		{
 			"n": "13",
@@ -206,7 +229,8 @@
 			"debut": {
 				"club": "COL",
 				"anio": 2013
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/284321-1724348811.png?lm=4711"
 		},
 		{
 			"n": "24",
@@ -223,12 +247,29 @@
 			"goles": 1,
 			"min": 2930,
 			"fichado": "23/01/2025",
-			"ovr": 65,
+			"ovr": 63,
 			"debut": {
 				"club": "OLI",
 				"anio": 2017
 			},
-			"college": "Club Atlético Boca Juniors"
+			"college": "Club Atlético Boca Juniors",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/438927-1739197175.jpg?lm=4711",
+			"ratings": {
+				"stre": 56,
+				"spd": 65,
+				"jmp": 56,
+				"endu": 69,
+				"ins": 39,
+				"dnk": 44,
+				"ft": 55,
+				"fg": 49,
+				"tp": 46,
+				"oiq": 55,
+				"diq": 62,
+				"drb": 57,
+				"pss": 52,
+				"reb": 54
+			}
 		},
 		{
 			"n": "22",
@@ -249,7 +290,8 @@
 			"debut": {
 				"club": "GIM",
 				"anio": 2018
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/564216-1739197270.jpg?lm=4711"
 		},
 		{
 			"n": "25",
@@ -270,7 +312,8 @@
 			"debut": {
 				"club": "GIM",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1046802-1699915063.jpg?lm=4711"
 		},
 		{
 			"n": "31",
@@ -291,7 +334,8 @@
 			"debut": {
 				"club": "GIM",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/852761-1724877606.jpg?lm=4711"
 		},
 		{
 			"n": "28",
@@ -312,7 +356,8 @@
 			"debut": {
 				"club": "GIM",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1283981-1739197298.jpg?lm=4711"
 		},
 		{
 			"n": "10",
@@ -333,7 +378,8 @@
 			"debut": {
 				"club": "GIM",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1123309-1770216831.jpg?lm=4711"
 		},
 		{
 			"n": "5",
@@ -354,7 +400,8 @@
 			"debut": {
 				"club": "GIM",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/836518-1739897521.jpg?lm=4711"
 		},
 		{
 			"n": "18",
@@ -375,7 +422,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/850433-1682256346.JPG?lm=4711"
 		},
 		{
 			"n": "39",
@@ -400,7 +448,8 @@
 			"lesion": {
 				"tipo": "Recuperación de rotura del ligamento cruzado",
 				"partidos": 4
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1305326-1739197987.jpg?lm=4711"
 		},
 		{
 			"n": "16",
@@ -421,7 +470,8 @@
 			"debut": {
 				"club": "SMT",
 				"anio": 2010
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/149770-1739197474.jpg?lm=4711"
 		},
 		{
 			"n": "8",
@@ -443,7 +493,8 @@
 				"club": "GIM",
 				"anio": 2011
 			},
-			"capitan": true
+			"capitan": true,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/50669-1693315048.png?lm=4711"
 		},
 		{
 			"n": "20",
@@ -465,7 +516,8 @@
 				"club": null,
 				"anio": 2022
 			},
-			"college": "Club Deportivo América"
+			"college": "Club Deportivo América",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1087316-1739373928.jpg?lm=4711"
 		},
 		{
 			"n": "34",
@@ -486,7 +538,8 @@
 			"debut": {
 				"club": "GIM",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/865201-1699913996.jpg?lm=4711"
 		},
 		{
 			"n": "42",
@@ -507,7 +560,8 @@
 			"debut": {
 				"club": "GIM",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1305339-1739197999.jpg?lm=4711"
 		},
 		{
 			"n": "11",
@@ -532,7 +586,8 @@
 			"lesion": {
 				"tipo": "Lesión muscular",
 				"partidos": 2
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1283982-1739197963.jpg?lm=4711"
 		},
 		{
 			"n": "17",
@@ -553,7 +608,8 @@
 			"debut": {
 				"club": "TIG",
 				"anio": 2012
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/238448-1739899503.jpg?lm=4711"
 		},
 		{
 			"n": "7",
@@ -574,7 +630,8 @@
 			"debut": {
 				"club": "ALD",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/836252-1739197758.jpg?lm=4711"
 		},
 		{
 			"n": "43",
@@ -617,7 +674,8 @@
 				"club": "GIM",
 				"anio": 2022
 			},
-			"college": "Club Atlético Banfield"
+			"college": "Club Atlético Banfield",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/909789-1739197619.jpg?lm=4711"
 		},
 		{
 			"n": "32",
@@ -634,12 +692,29 @@
 			"goles": 11,
 			"min": 1996,
 			"fichado": "08/07/2025",
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "TAL",
 				"anio": 2017
 			},
-			"college": "Club Atlético Boca Juniors"
+			"college": "Club Atlético Boca Juniors",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/480778-1493294367.jpg?lm=4711",
+			"ratings": {
+				"stre": 67,
+				"spd": 55,
+				"jmp": 69,
+				"endu": 58,
+				"ins": 85,
+				"dnk": 85,
+				"ft": 60,
+				"fg": 73,
+				"tp": 56,
+				"oiq": 70,
+				"diq": 46,
+				"drb": 55,
+				"pss": 52,
+				"reb": 58
+			}
 		},
 		{
 			"n": "29",
@@ -660,7 +735,14 @@
 			"debut": {
 				"club": "ACA",
 				"anio": 2017
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/732442-1763054201.jpeg?lm=4711",
+			"parientes": [
+				{
+					"tipo": "brother",
+					"nombre": "Rodrigo Auzmendi"
+				}
+			]
 		},
 		{
 			"n": "19",
@@ -681,7 +763,8 @@
 			"debut": {
 				"club": "BEL",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/842808-1732804707.JPG?lm=4711"
 		},
 		{
 			"n": "33",

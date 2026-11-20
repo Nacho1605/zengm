@@ -10,7 +10,9 @@
 // "ratings ajustados a mano" y volverían al valor viejo.
 //
 // - Planteles (data/argentina/planteles/*.json): fotos, camisetas que asignó
-//   el juego y ratings ajustados a mano (se guardan exactos en "ratings").
+//   el juego, ratings ajustados a mano (se guardan exactos en "ratings") y
+//   parientes nuevos (en "parientes", de un solo lado: el cargador los une en
+//   los dos sentidos).
 // - Equipos (data/argentina/equipos-usuario.json): ciudad, apodo,
 //   abreviatura, logos, colores, camiseta, población y estadio.
 // Imprime todo lo que cambió. No toca la configuración de la liga.
@@ -62,16 +64,34 @@ const resumen: Record<string, string[]> = {
 	fotos: [],
 	camisetas: [],
 	ratings: [],
+	parientes: [],
 	noEncontrados: [],
 };
-for (const archivo of readdirSync(new URL("planteles/", dir))) {
-	if (!archivo.endsWith(".json")) {
-		continue;
+const planteles = readdirSync(new URL("planteles/", dir))
+	.filter((archivo) => archivo.endsWith(".json"))
+	.map((archivo) => {
+		const ruta = new URL(`planteles/${archivo}`, dir);
+		const texto = readFileSync(ruta, "utf8");
+		return { ruta, texto, d: JSON.parse(texto), cambios: 0 };
+	});
+// Parientes ya anotados (en cualquiera de los dos lados), para no repetirlos
+const norm = (s: string) =>
+	s
+		.normalize("NFD")
+		.replace(/[\u0300-\u036f]/g, "")
+		.toLowerCase();
+const pares = new Set<string>();
+const par = (a: string, b: string) => [norm(a), norm(b)].sort().join(" | ");
+for (const { d } of planteles) {
+	for (const j of d.jugadores) {
+		for (const r of j.parientes ?? []) {
+			pares.add(par(`${j.nombre} ${j.apellido}`, r.nombre));
+		}
 	}
-	const ruta = new URL(`planteles/${archivo}`, dir);
-	const d = JSON.parse(readFileSync(ruta, "utf8"));
+}
+for (const pl of planteles) {
+	const { d } = pl;
 	const team = U.teams.find((t: any) => t.abbrev === d.equipo);
-	let cambios = 0;
 	for (const j of d.jugadores) {
 		const y = Number(j.nac.slice(-4));
 		const p = U.players.find(
@@ -88,24 +108,49 @@ for (const archivo of readdirSync(new URL("planteles/", dir))) {
 		if (p.imgURL && limpiar(p.imgURL) !== j.imgURL) {
 			j.imgURL = limpiar(p.imgURL);
 			resumen.fotos!.push(`${j.apellido} (${d.equipo})`);
-			cambios += 1;
+			pl.cambios += 1;
 		}
 		if (!j.n && p.jerseyNumber && !j.prospecto) {
 			j.n = p.jerseyNumber;
 			resumen.camisetas!.push(`${j.apellido} #${p.jerseyNumber}`);
-			cambios += 1;
+			pl.cambios += 1;
 		}
 		const r = p.ratings.at(-1);
-		const b = (enBase.get(clave(p)) as any)?.ratings.at(-1);
+		const bp = enBase.get(clave(p)) as any;
+		const b = bp?.ratings.at(-1);
 		if (b && KEYS.some((k) => b[k] !== r[k])) {
 			j.ratings = Object.fromEntries(KEYS.map((k) => [k, r[k]]));
 			resumen.ratings!.push(`${j.nombre} ${j.apellido} ${j.ovr}→${r.ovr}`);
 			j.ovr = r.ovr;
-			cambios += 1;
+			pl.cambios += 1;
+		}
+		// Parientes nuevos (los que el usuario agregó en el juego)
+		for (const rel of p.relatives ?? []) {
+			if ((bp?.relatives ?? []).some((x: any) => x.pid === rel.pid)) {
+				continue;
+			}
+			const otro = U.players.find((q: any) => q.pid === rel.pid);
+			const nombre = otro ? `${otro.firstName} ${otro.lastName}` : rel.name;
+			const clavePar = par(`${j.nombre} ${j.apellido}`, nombre);
+			if (pares.has(clavePar)) {
+				continue;
+			}
+			pares.add(clavePar);
+			j.parientes = [...(j.parientes ?? []), { tipo: rel.type, nombre }];
+			resumen.parientes!.push(`${j.nombre} ${j.apellido} (${rel.type}) ${nombre}`);
+			pl.cambios += 1;
 		}
 	}
+}
+for (const { ruta, texto, d, cambios } of planteles) {
 	if (cambios > 0) {
-		writeFileSync(ruta, JSON.stringify(d, null, "\t"));
+		writeFileSync(
+			ruta,
+			JSON.stringify(d, null, "\t").replace(
+				/"rasgos": \[\n\t+"aereo"\n\t+\]/g,
+				'"rasgos": ["aereo"]',
+			) + (texto.endsWith("\n") ? "\n" : ""),
+		);
 	}
 }
 

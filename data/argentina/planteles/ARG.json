@@ -33,6 +33,14 @@
 		{
 			"nombre": "Gastón Verón",
 			"nacimiento": 2002
+		},
+		{
+			"nombre": "Matías Giménez Rojas",
+			"nacimiento": 2000
+		},
+		{
+			"nombre": "José Florentín",
+			"nacimiento": 1999
 		}
 	],
 	"jugadores": [
