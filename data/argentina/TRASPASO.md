@@ -1,11 +1,11 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 20/11/2026. Última versión: **v2.14.1**
-(`data/argentina/BBGM_Argentina_2026_v.2.14.1_futbol.json`): la v2.12.2 (igual
+Estado al 20/11/2026. Última versión: **v2.14.2**
+(`data/argentina/BBGM_Argentina_2026_v.2.14.2_futbol.json`): la v2.12.2 (igual
 a la liga exportada por el usuario ese día, fotos y ratings incluidos), más
-Independiente Rivadavia (v2.13 → v2.13.2) y Gimnasia LP (v2.14), más una
-revisión general de OVR de 11 equipos (v2.14.1, 39 cambios; River sin tocar),
-pendiente de la revisión del usuario.
+Independiente Rivadavia (v2.13 → v2.13.2), Gimnasia LP (v2.14) y una revisión
+general de OVR de los 12 equipos (v2.14.1 y v2.14.2: correcciones del usuario
+y revisión de IRM, River y Riestra), pendiente de la revisión del usuario.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -116,9 +116,10 @@ asigne camiseta.
 
 ## 4. Escala de OVR (referencias actuales)
 
-Once (promedio de los 11 mejores): RIV 70,3 · BOC 69,7 · ROS 68,5 · EST 67,7 ·
-VEL 66,8 · IRM 66,8 · ARG 66,6 · GIM 66,0 · RAC 65,4 · IND 65,2 · SLO 64,6 ·
-RIE 60,5 (EST 67,7). Los 18 sin cargar tienen datos de 2023 (47–60).
+Once (promedio de los 11 mejores): RIV 70,3 · BOC 69,8 · ROS 68,5 · EST 67,8 ·
+VEL 66,9 · IRM 66,7 · ARG 66,6 · GIM 66,0 · RAC 65,5 · IND 65,4 · SLO 64,6 ·
+RIE 60,5. Estudiantes queda alto siendo 11.º: está por jugar la final de la
+Libertadores 2026 (el usuario lo valora así). Los 18 sin cargar tienen datos de 2023 (47–60).
 
 Revisión general (v2.14.1): el usuario notó inflación y amontonamiento. Se
 bajaron titulares por encima de sus pares (goleadores de equipos medianos,
@@ -165,8 +166,8 @@ rendimiento por partido, Sofascore ≥ 7 como señal de los mejores.
 
 ## 6. Pendientes
 
-1. Cargar los 18 equipos restantes. Falta la revisión del usuario de la v2.14.1
-   (Gimnasia y la revisión general). Los que se fueron de IRM y GIM están en `salidas-2026.json`;
+1. Cargar los 18 equipos restantes. Falta la revisión del usuario de la v2.14.2
+   (IRM, River y Riestra con el criterio de la revisión general). Los que se fueron de IRM y GIM están en `salidas-2026.json`;
    Villa ya está en Boca y sus números de IRM todavía no se sumaron a nada.
    Tablas: `tablas-2026.json` (Apertura, Clausura, Anual y Promedios).
 2. **Fotos:** 221 de los primeros ocho equipos son miniaturas de Google

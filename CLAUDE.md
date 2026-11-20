@@ -69,6 +69,9 @@ Commit + push de cada versión (`git -c push.negotiate=true push`).
     defensores no viven del gol; hay ofensivos que tampoco.
   - NO castigar la edad; los de media temporada, por partido; las tablas y
     Sofascore son guías, no verdad absoluta.
+  - Mirar también las copas (Libertadores, Sudamericana, Copa Argentina): hay
+    equipos que priorizan la copa sobre la liga (Estudiantes 2026: 11.º en la
+    tabla y finalista de la Libertadores).
   - Mostrarlos en cuadros (N.º, jugador, OVR, por qué), uno por sección:
     Arqueros, Centrales, Laterales, Mediocampistas, Ofensivos y Delanteros.
 - Draft = club y año en que fue promovido al primer equipo (el usuario lo anota
