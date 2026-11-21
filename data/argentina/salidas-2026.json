@@ -90,6 +90,21 @@
 		{ "club": "INS", "nombre": "Manuel", "apellido": "Romero", "pos": "Extremo derecho", "edad": 25, "pais": "Paraguay", "convocado": 1, "pj": 1, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 1, "salio": 1, "ppp": 0, "min": 14 },
 		{ "club": "INS", "nombre": "Jonathan", "apellido": "Dellarossa", "pos": "Delantero centro", "edad": 26, "pais": "Argentina", "convocado": 0, "pj": 0, "nota": "no estuvo en el plantel en 2026" },
 		{ "club": "INS", "nombre": "Franco", "apellido": "Jara", "pos": "Delantero centro", "edad": 38, "pais": "Argentina", "convocado": 11, "pj": 11, "goles": 1, "asist": 0, "amarillas": 2, "dobleAmarilla": 0, "rojas": 0, "entro": 3, "salio": 4, "ppp": 0.82, "min": 712 },
-		{ "club": "INS", "nombre": "Benjamín", "apellido": "Olmedo", "pos": "Delantero centro", "edad": 20, "pais": "Argentina", "convocado": 1, "pj": 0 }
+		{ "club": "INS", "nombre": "Benjamín", "apellido": "Olmedo", "pos": "Delantero centro", "edad": 20, "pais": "Argentina", "convocado": 1, "pj": 0 },
+		{ "club": "NOB", "nombre": "Williams", "apellido": "Barlasina", "pos": "Portero", "edad": 28, "pais": "Argentina", "convocado": 17, "pj": 6, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 1, "salio": 0, "ppp": 0.67, "min": 467 },
+		{ "club": "NOB", "nombre": "Armando", "apellido": "Méndez", "pos": "Lateral derecho", "edad": 30, "pais": "Uruguay", "convocado": 16, "pj": 15, "goles": 0, "asist": 0, "amarillas": 3, "dobleAmarilla": 0, "rojas": 1, "entro": 0, "salio": 3, "ppp": 0.8, "min": 1266 },
+		{ "club": "NOB", "nombre": "Jherson", "apellido": "Mosquera", "pos": "Lateral derecho", "edad": 27, "pais": "Colombia", "convocado": 5, "pj": 1, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 0, "salio": 0, "ppp": 1, "min": 90 },
+		{ "club": "NOB", "nombre": "Gabriel", "apellido": "Risso Patrón", "pos": "Lateral izquierdo", "edad": 31, "pais": "Argentina", "convocado": 9, "pj": 4, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 1, "salio": 1, "ppp": 0.25, "min": 285 },
+		{ "club": "NOB", "nombre": "Fabián", "apellido": "Noguera", "pos": "Defensa central", "edad": 33, "pais": "Argentina", "convocado": 4, "pj": 2, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 2, "salio": 0, "ppp": 2, "min": 108 },
+		{ "club": "NOB", "nombre": "Valentino", "apellido": "Torrente", "pos": "Lateral izquierdo", "edad": 21, "pais": "Argentina", "convocado": 1, "pj": 0 },
+		{ "club": "NOB", "nombre": "Lucas", "apellido": "Baños", "pos": "Defensa central", "edad": 21, "pais": "Argentina", "convocado": 3, "pj": 0 },
+		{ "club": "NOB", "nombre": "Blas", "apellido": "Benedetto", "pos": "Interior derecho", "edad": 20, "pais": "Argentina", "convocado": 7, "pj": 2, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 2, "salio": 0, "ppp": 2, "min": 2 },
+		{ "club": "NOB", "nombre": "Mateo", "apellido": "Villalba", "pos": "Mediocentro ofensivo", "edad": 19, "pais": "Argentina", "convocado": 1, "pj": 0 },
+		{ "club": "NOB", "nombre": "Tomás", "apellido": "Viola", "pos": "Mediocentro ofensivo", "edad": 20, "pais": "Argentina", "convocado": 1, "pj": 0 },
+		{ "club": "NOB", "nombre": "Luciano", "apellido": "Herrera", "pos": "Extremo izquierdo", "edad": 30, "pais": "Argentina", "convocado": 17, "pj": 17, "goles": 0, "asist": 1, "amarillas": 4, "dobleAmarilla": 0, "rojas": 0, "entro": 7, "salio": 8, "ppp": 0.88, "min": 877 },
+		{ "club": "NOB", "nombre": "Franco", "apellido": "Orozco", "pos": "Extremo derecho", "edad": 24, "pais": "Argentina", "convocado": 10, "pj": 3, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 3, "salio": 0, "ppp": 0.33, "min": 72 },
+		{ "club": "NOB", "nombre": "Franco", "apellido": "García", "pos": "Extremo derecho", "edad": 29, "pais": "Argentina", "convocado": 13, "pj": 8, "goles": 1, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 6, "salio": 2, "ppp": 0.75, "min": 219 },
+		{ "club": "NOB", "nombre": "Michael", "apellido": "Hoyos", "pos": "Delantero centro", "edad": 35, "pais": "Argentina", "convocado": 14, "pj": 9, "goles": 1, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 6, "salio": 2, "ppp": 0.56, "min": 430 },
+		{ "club": "NOB", "nombre": "Thiago", "apellido": "Gigena", "pos": "Delantero centro", "edad": 21, "pais": "Mexico", "convocado": 1, "pj": 0 }
 	]
 }
