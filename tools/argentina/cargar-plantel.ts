@@ -31,6 +31,7 @@ import {
 	FORMA_1,
 	SIN_TIRO,
 	FORMA_2,
+	FORMA_VIGENTE,
 	generarRatings,
 	hgtRating,
 	KEYS,
@@ -366,7 +367,7 @@ const cargar = (plantel: any) => {
 		// generados con la norma de la posición
 		const r = j.ratings
 			? { ...j.ratings, hgt: Math.round(((j.altura * 100 - 156) * 100) / 44) }
-			: generarRatings(j, pos, edad, ovrMeta, FORMA_2);
+			: generarRatings(j, pos, edad, ovrMeta, FORMA_VIGENTE);
 		if (j.ratings && ovrOficial(r) !== ovrMeta) {
 			throw new Error(
 				`${j.nombre} ${j.apellido}: sus ratings dan OVR ${ovrOficial(r)}, no ${ovrMeta}`,
@@ -756,7 +757,7 @@ console.log(
 		let r2 = r1;
 		try {
 			const g1 = generarRatings(pseudo, p.pos, edad, ovrMeta, FORMA_1);
-			const g2 = generarRatings(pseudo, p.pos, edad, ovrMeta, FORMA_2);
+			const g2 = generarRatings(pseudo, p.pos, edad, ovrMeta, FORMA_VIGENTE);
 			r2 = { ...r1 };
 			for (const k of KEYS) {
 				if (k !== "hgt" && !(p.pos === "C" && SIN_TIRO.includes(k))) {
@@ -786,7 +787,7 @@ console.log(
 		delete p.draft.skills;
 		n += 1;
 	}
-	console.log(`Prospectos generados con nivel base -${BAJA} y forma 2: ${n} (OVR ${(suma / n).toFixed(1)} más bajo en promedio; ${sinForma} solo con el nivel, por OVR muy bajo)`);
+	console.log(`Prospectos generados con nivel base -${BAJA} y forma ${FORMA_VIGENTE === FORMA_2 ? 2 : 3}: ${n} (OVR ${(suma / n).toFixed(1)} más bajo en promedio; ${sinForma} solo con el nivel, por OVR muy bajo)`);
 }
 
 // Techo para el resto de los jugadores (prospectos generados, libres y

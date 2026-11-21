@@ -1,20 +1,19 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 21/11/2026. Última versión: **v2.17**
-(`data/argentina/BBGM_Argentina_2026_v.2.17_futbol.json`): 15 de 30 equipos
+Estado al 21/11/2026. Última versión: **v2.17.2**
+(`data/argentina/BBGM_Argentina_2026_v.2.17.2_futbol.json`): 15 de 30 equipos
 con plantel 2026 (v2.16 Huracán, v2.17 Talleres), con las fotos y los ajustes
-que el usuario hizo en el juego y la forma 2 de los ratings. Validación con el
+que el usuario hizo en el juego, sus correcciones a HUR y TAL (v2.17.1) y
+la forma 3 de los ratings (v2.17.2). Validación con el
 esquema oficial: 0 errores. Auditoría: 53 controles, 9 con alertas. En los
 equipos cargados solo aparecen José Sosa (41 años, real), homónimos reales con
 otros equipos o libres y las fotos de HUR y TAL (51 sin foto: las pone el
 usuario en el juego y vuelven con `desde-juego.ts`); el resto es de equipos
 sin cargar o libres con datos de 2023.
 
-**Lo que sigue:** que el usuario revise los OVR de Huracán y Talleres (sus
-correcciones van como parche v2.17.x) y responda las propuestas pendientes
-(§7: los 4 que jugaron en Talleres y ya estaban cargados; la lesión de Luján).
-Después, los próximos equipos de a dos. Si manda otra liga exportada,
-importarla con la versión sobre la que jugó como base (v2.17).
+**Lo que sigue:** el usuario pone las fotos de HUR y TAL en el juego y manda
+la liga exportada (importarla con `desde-juego.ts` y la versión que usó como
+base). Después, los próximos equipos de a dos.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -300,7 +299,9 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    desde que se fue Gill, en una defensa de 30 goles en contra). Aplicada en
    la v2.15.3.
 2. Cargar los 15 equipos restantes.
-   **Propuestas pendientes de la v2.17** (no aplicadas; decide el usuario):
+   **Propuestas de la v2.17, resueltas en la v2.17.1** (el usuario aceptó
+   Ortegoza 62 y Vigo 58; rechazó bajar a Ronaldo Martínez, sigue en 69;
+   Luján pasó a 60 partidos: "es un cáncer, no una lesión cualquiera"):
    jugaron en Talleres y ya estaban cargados, con la temporada completa:
    Ronaldo Martínez VEL 69 → 67 (TAL 24 PJ 4 g + VEL 10 PJ 9 g = 34 PJ, 13 g,
    2571'; el 69 salió de sus 10 partidos en Vélez), Ortegoza RAC 61 → 62 (34
@@ -393,6 +394,28 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+- v2.17.2: forma 3 de los ratings (pedido del usuario: ins y dnk de los
+  goleadores inflados; Merentiel, Maravilla, Valencia, Driussi y Ronaldo en
+  89–95). Causa: esos dos ratings casi no pesan en el OVR y el generador los
+  subía casi gratis (norma del delantero +18/+15, bonificación por goles
+  hasta +8, rasgo goleador +10/+6, y nivel base más alto en altos y
+  veteranos). Forma 3: norma del delantero −15 ins y −14 dnk, goles con
+  escala 20 (antes 25), goleador +6/+3. Delanteros de los equipos cargados:
+  ins 76,8 → 62,1 y dnk 74,0 → 60,3 de promedio; ninguno llega a 85 (antes
+  11); máximo 83
+  (Merentiel y Maravilla). Lo que bajó volvió repartido (+1 en el resto). 436
+  jugadores con ratings nuevos (132 de equipos cargados, 304 prospectos
+  generados), ningún OVR movido (verificado con la fórmula oficial copiada
+  aparte); con `FORMA=2` se arma la v2.17.1 idéntica. Arce queda en 75 de
+  ins por su altura (el nivel base de los altos es más bajo): si el usuario
+  lo quiere más arriba, "goleador+".
+- v2.17.1: correcciones del usuario: Nervo 64, Pereyra 65, Caicedo 68,
+  Pussetto 62, Catalán 66, Unsaín 64, Depietri 65, Fattori 68, Riquelme 62,
+  G. Baroni 55 y Dávila 54 (revisados contra los juveniles de su nivel);
+  Ortegoza 62 (RAC), Vigo 58 (IRM); Luján 60 partidos; Marchiori "reflejos".
+  El usuario corrió una simulación con los 15 equipos (Power Rankings: RIV 136,
+  BOC 134, ROS 127, EST 116, ARG 114, IRM 114, VEL 112, RAC 99 (107 sano),
+  LAN 107, IND 106, GIM 106, SLO 101, HUR 98, TAL 91, RIE 78; campeón Boca).
 - v2.17 Talleres (24 en el plantel y 5 prospectos de reserva: Thiago Baroni,
   Nuccio, Trey, Ortiz, Alastra). v2.16 Huracán (27). Comentario del usuario
   (21/11) guardado en los planteles: `contexto` del equipo, `sofascore` por

@@ -85,8 +85,9 @@ v2.14.1 → v2.14.2).
   · F delantero.
 - `hgt` = round((cm − 156) × 100 / 44). Ancla fija: nunca se usa para compensar.
 - Arqueros: ins, dnk, fg, tp en 0.
-- Forma de los ratings (`tools/argentina/ratings-futbol.ts`, forma 2 desde la
-  v2.15.4): el OVR siempre da exacto con la fórmula oficial (nunca se pisa a
+- Forma de los ratings (`tools/argentina/ratings-futbol.ts`; forma 2 desde la
+  v2.15.4, forma 3 desde la v2.17.2: delanteros con ins y dnk sin inflar;
+  `FORMA=2` en el entorno arma con la anterior, para comprobar): el OVR siempre da exacto con la fórmula oficial (nunca se pisa a
   mano); lo que cambia es cómo se reparte. Los atacantes defienden menos y los
   defensores atacan menos (nunca a cero: todo es relativo), la experiencia va
   más a la inteligencia de su línea y la fuerza acompaña a la altura (con
@@ -131,7 +132,8 @@ v2.14.1 → v2.14.2).
   el usuario no lo indica, el mismo club del draft, con el nombre oficial
   completo (`NOMBRE_COMPLETO` en `cargar-plantel.ts`; ej.: Club Sportivo
   Independiente Rivadavia). Debut fuera de la base o en el exterior: sin draft
-  y ese club como College, con el nombre que da el usuario.
+  y ese club como College, con el nombre que da el usuario. Ante la duda con
+  un nombre, buscar si otro jugador ya tiene ese College y usar el mismo.
 - Club sin localidad: el más importante (Estudiantes = La Plata, Talleres =
   Córdoba, Gimnasia = La Plata), salvo que el usuario diga otra cosa.
 - Usar solo las capturas y los datos del usuario: NO buscar fuentes externas

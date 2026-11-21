@@ -250,6 +250,10 @@ export type Forma = {
 	// Techo suave: por encima de "desde", cada punto cuenta "factor"; nunca
 	// pasa de "max" (ningún rating llega a 100)
 	techo?: { desde: number; factor: number; max: number };
+	// Gol: atacantes con más de 0,2 goles cada 90' suman "escala" puntos de
+	// ins y dnk por cada gol de más (y la mitad en fg), entre "min" y "max".
+	// Sin este campo: escala 25, entre -6 y +8 (formas 1 y 2)
+	gol?: { escala: number; min: number; max: number };
 };
 
 export const FORMA_1: Forma = {
@@ -309,6 +313,28 @@ export const FORMA_2: Forma = {
 	},
 };
 
+// Forma 3 (desde la v2.17.2, pedido del usuario): los delanteros tenían ins y
+// dnk inflados (95 los goleadores, 77 de promedio). Como esos dos ratings casi
+// no pesan en el OVR, el generador los subía casi gratis: norma alta del
+// delantero, bonificación por goles, rasgo goleador y, en los altos o
+// veteranos, un nivel base más alto. La forma 3 baja la norma del delantero
+// en ins y dnk, mantiene la diferencia por goles (algo más pareja) y suaviza
+// el rasgo goleador. El OVR no cambia: lo que se saca de ins y dnk vuelve
+// repartido en el resto.
+export const FORMA_3: Forma = {
+	...FORMA_2,
+	contraste: {
+		...FORMA_2.contraste,
+		F: { ...FORMA_2.contraste.F, ins: -15, dnk: -14 },
+	},
+	gol: { escala: 20, min: -6, max: 8 },
+	rasgos: { ...FORMA_2.rasgos, goleador: { ins: 6, dnk: 3 } },
+};
+
+// Forma con la que se arma el archivo. FORMA=2 en el entorno arma con la
+// forma anterior (para comprobar que el resto del archivo no cambia)
+export const FORMA_VIGENTE: Forma = process.env.FORMA === "2" ? FORMA_2 : FORMA_3;
+
 const LINEA: Record<string, "ataque" | "defensa" | "medio"> = {
 	F: "ataque",
 	SF: "ataque",
@@ -354,7 +380,8 @@ export const generarRatings = (
 	if (j.min >= 300 && pos !== "C") {
 		const golesPor90 = (j.goles * 90) / j.min;
 		if (["F", "SF", "PG", "SG"].includes(pos)) {
-			const gol = Math.max(-6, Math.min(8, (golesPor90 - 0.2) * 25));
+			const g = forma.gol ?? { escala: 25, min: -6, max: 8 };
+			const gol = Math.max(g.min, Math.min(g.max, (golesPor90 - 0.2) * g.escala));
 			sumar("ins", gol);
 			sumar("dnk", gol);
 			sumar("fg", gol / 2);
