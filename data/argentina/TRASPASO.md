@@ -1,15 +1,16 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 22/11/2026. Última versión: **v2.19**
-(`data/argentina/BBGM_Argentina_2026_v.2.19_futbol.json`): 17 de 30 equipos
+Estado al 22/11/2026. Última versión: **v2.19.1**
+(`data/argentina/BBGM_Argentina_2026_v.2.19.1_futbol.json`): 17 de 30 equipos
 con plantel 2026 (último: Instituto). Validación con el esquema oficial: 0
 errores. Auditoría: 53 controles, 9 con alertas; en los equipos cargados solo
 José Sosa (41 años, real), homónimos reales y las 50 fotos de Belgrano e
 Instituto (el usuario las pone en el juego juntas y manda la liga exportada:
-importarla con la v2.19 como base, o la versión sobre la que jugó).
+importarla con la versión sobre la que jugó como base).
 
-**Lo que sigue:** correcciones del usuario a los OVR de Instituto (parche
-v2.19.x), propuesta de Lodico (§7), fotos de BEL e INS, el próximo equipo.
+**Lo que sigue:** que el usuario decida sobre la segunda revisión de
+juveniles (`propuesta-juveniles.md`, con la reserva; no aplicada); fotos de
+BEL e INS; el próximo equipo.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -260,6 +261,9 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   (HUR → RAC): 0 PJ en Huracán, no cambia nada. Por revisar con la suma al
   cargar TAL (ya están en equipos cargados): Vigo (TAL → IRM, 57), Ortegoza
   (TAL → RAC, 61), Río (TAL → SLO, 54) y Ronaldo Martínez (TAL → VEL, 69).
+- `tablas-reserva-2026.json`: Torneo de Reserva 2026 (Anual, Apertura y
+  Clausura; sin promedios). Sirve para valorar a los juveniles que casi no
+  jugaron en Primera.
 - `tablas-2026.json`: Apertura, Clausura, Anual y Promedios 2026 (verificadas:
   Apertura + Clausura = Anual; promedios = puntos / partidos).
 - `propuesta-valores-fijos.md`: propuesta sobre valores fijos, ya resuelta
@@ -305,8 +309,7 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    playoffs eliminó a Talleres, Unión y Argentinos y le ganó la final a
    River); Morales sin draft con College "Club Atlético Paraná" (correcto).
    Menores de 19: resuelto en la v2.18.2 (`propuesta-juveniles.md`).
-   **Propuesta de la v2.19 (no aplicada):** Lodico (RAC) 62 → 63: con
-   Instituto suma 28 PJ y 2107' (el 62 salió de sus 13 PJ en Racing).
+   Lodico (RAC) 63: aceptado en la v2.19.1 (con Instituto suma 28 PJ).
    Lesiones de INS sin fecha de vuelta, estimadas: Rafaelli (muslo) 3
    partidos, Albarracín (muscular) 2.
    **Propuestas de la v2.17, resueltas en la v2.17.1** (el usuario aceptó
@@ -404,6 +407,12 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+- v2.19.1: correcciones del usuario a Instituto: Ledesma 64, Cerato 66, Sosa
+  64, Córdoba 62, Gallardo 61, Luna 68 y, para compensar, Tissera 63 (+2) y
+  Méndez 58 (+1) (el usuario dejó elegir +1 o +2). Lodico (RAC) 63. Once INS
+  64,8. Tablas del Torneo de Reserva 2026 (`tablas-reserva-2026.json`,
+  verificadas: Apertura + Clausura = Anual en los 36). Segunda revisión de
+  juveniles con la reserva (propuesta, 18 cambios de ±1 a −6).
 - v2.19 Instituto (26 y Medina y Albarracín como prospectos). Contexto: de
   menor a mayor, 1.º de su grupo en el Clausura, clasificado a copa.
   Ledesma 65 (lista 59: llegó en julio y el equipo sacó 2,00 pts por

@@ -85,3 +85,50 @@ y Dávila (51, 19 años) quedan como los fijó el usuario.
 | RIV | J. C. Meza | 40 | 40 | 1,8 M€ (+1) | 41 |
 
 Sin cambios: Gianini 42, L. Cristaldo 42, Silveira 38, Bouhier 38, Prima 37.
+
+## Segunda revisión: menores de 20 y prospectos, con la reserva (v2.19.1, propuesta)
+
+Pedido del usuario (22/11/2026): revisar otra vez a todos los prospectos de
+draft y a los menores de 20 de los planteles cargados, con las tablas del
+Torneo de Reserva 2026 como complemento (`tablas-reserva-2026.json`). Son 51:
+37 menores de 20 y 14 prospectos de 20 o más.
+
+**Cómo entra la reserva.** Para el que casi no jugó en Primera (menos de
+300'), su nivel se ve sobre todo en la reserva: +1 si su reserva quedó entre
+las 5 primeras de la anual (IND, VEL, LAN, BOC, RIV), −1 si quedó del 21.º para
+abajo (ARG, IRM, GIM y otros sin cargar), 0 el resto. El que ya juega en Primera
+se valora por Primera (criterio de la v2.18.2: rendimiento + valor de mercado).
+Los arqueros no se tocan (van por la lista del usuario). Dávila (51) y Baroni
+(52) quedan como los fijó el usuario.
+
+**Los de 19 años** (no estaban en la revisión anterior), con el mismo
+criterio: Flores 71, Andrada 69, Ovando 68 y Aranda 66 se sostienen (titulares
+o casi en equipos grandes; Andrada llegó en julio: 15 PJ en medio año).
+
+| Club | Jugador | Edad | Primera | Reserva | Hoy | Propuesta | Por qué |
+|---|---|---|---|---|---|---|---|
+| ROS | Giovanni Cantizano | 19 | 1074', 2 g | 11.º | 62 | 56 | Números como Baroni (1156', 1 g 3 a): mismo criterio, +3 por 3,5 M€. |
+| RAC | Gonzalo Escudero | 19 | 994', 1 g | 16.º | 54 | 53 | Como Arrayago (55) sin su valor de mercado. |
+| ARG | Facundo Carrizo (P) | 19 | 489' | 21.º | 50 | 47 | Como L. Pereyra y Tello (47). |
+| ROS | Elías Verón | 19 | 431', 1 g | 11.º | 48 | 47 | Como L. Pereyra. |
+| VEL | Matías Arias | 19 | 208' | 2.º | 49 | 45 | Como Feler, +1 por la reserva. |
+| VEL | Luca Feler | 18 | 206' | 2.º | 44 | 45 | +1 por la reserva. |
+| BOC | Matías Satas (P) | 18 | 91' | 4.º | 44 | 45 | +1 por la reserva. |
+| GIM | Pablo Aguiar (P) | 20 | 268' | 23.º | 46 | 45 | −1 por la reserva. |
+| VEL | Leo Cristaldo (P) | 17 | 56' | 2.º | 42 | 43 | +1 por la reserva. |
+| ARG | Alan Alcaraz (P) | 17 | 88' | 21.º | 43 | 42 | −1 por la reserva. |
+| RIV | Juan Cruz Meza | 18 | 0' | 5.º | 41 | 42 | +1 por la reserva. |
+| IND | Joel Medina (P) | 19 | 22' | 1.º | 40 | 41 | +1 por la reserva (la mejor). |
+| ARG | Santino Gianini (P) | 18 | 71' | 21.º | 42 | 41 | −1 por la reserva. |
+| LAN | Thiago Laplace (P) | 20 | 14' | 3.º | 38 | 39 | +1 por la reserva. |
+| VEL | Simón Prima (P) | 18 | 0' | 2.º | 37 | 38 | +1 por la reserva. |
+| ARG | Santiago Silveira (P) | 18 | 0' | 21.º | 38 | 37 | −1 por la reserva. |
+| ARG | Gastón Bouhier (P) | 18 | 0' | 21.º | 38 | 37 | −1 por la reserva. |
+| ARG | Benjamín Rey (P) | 19 | 0' | 21.º | 37 | 36 | −1 por la reserva. |
+
+Se sostienen (33): Flores 71, Andrada 69, Ovando 68, Aranda 66, Arrayago 55,
+Escobar 54, Baroni 52, Jainikoski 52, Ma. Martínez 51, Dávila 51, Peralta 51,
+Policella 50, L. Silva 48, Tello 47, Á. Verón 47, L. Pereyra 47, T. Aguirre
+47, Rafaelli 46, Ortiz 44, Uribe 43, Tulián 43, Segovia 43, Trey 40, J.
+Medina (INS) 38, T. Baroni 38, Salinardi 38, Albarracín 37, Nuccio 37,
+Alastra 37 y los arqueros Busso 40, Daniele 38, Villalba 37, Cortez 36.
