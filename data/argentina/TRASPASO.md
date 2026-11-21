@@ -1,20 +1,15 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 21/11/2026. Última versión: **v2.18.2**
-(`data/argentina/BBGM_Argentina_2026_v.2.18.2_futbol.json`): 16 de 30 equipos
-con plantel 2026 (último: Belgrano), con las fotos y los ajustes que el
-usuario hizo en el juego (importados de su liga sobre la v2.17.2) y la forma
-3 de los ratings. Validación con el esquema oficial: 0 errores. Auditoría: 53
-controles, 9 con alertas. En los equipos cargados solo aparecen José Sosa (41
-años, real), homónimos reales y las 24 fotos de Belgrano (las pone el
-usuario en el juego); el resto es de equipos sin cargar o libres de 2023.
+Estado al 22/11/2026. Última versión: **v2.19**
+(`data/argentina/BBGM_Argentina_2026_v.2.19_futbol.json`): 17 de 30 equipos
+con plantel 2026 (último: Instituto). Validación con el esquema oficial: 0
+errores. Auditoría: 53 controles, 9 con alertas; en los equipos cargados solo
+José Sosa (41 años, real), homónimos reales y las 50 fotos de Belgrano e
+Instituto (el usuario las pone en el juego juntas y manda la liga exportada:
+importarla con la v2.19 como base, o la versión sobre la que jugó).
 
-**Lo que sigue (sesión del 22/11):** el usuario aceptó todos los cambios de
-la v2.18.2. Mañana manda su liga exportada con las fotos de Belgrano
-(importarla con `desde-juego.ts` y la v2.18.2 como base) y carga Instituto
-(INS, v2.19). Arqueros de INS en la lista: Ma. Ledesma 59, L. Maldonado 37,
-Sitaro 34 (el peor de la lista).
-Después, el resto de los equipos (de a uno o de a dos).
+**Lo que sigue:** correcciones del usuario a los OVR de Instituto (parche
+v2.19.x), propuesta de Lodico (§7), fotos de BEL e INS, el próximo equipo.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -23,7 +18,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 - **Fase 1 (v1.x, terminada):** esqueleto de la liga. Motor de fútbol con
   ajustes del archivo (`activar-futbol.ts`), 163 equipos (30 activos), zonas,
   premios y lesiones en español, drafts generados con norma de posición.
-- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **16 de
+- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **17 de
   30** equipos.
 - **Fase 3 (futura):** historia de la liga (temporadas pasadas, campeones,
   premios, Salón de la Fama — hay 32 retirados en el Salón, mal hechos, como
@@ -32,7 +27,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 ## 2. Equipos
 
 Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
-`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN HUR TAL BEL`.
+`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN HUR TAL BEL INS`.
 
 | Abrev | En el juego | Zona / división | |
 |---|---|---|---|
@@ -56,7 +51,7 @@ Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
 | SAR | Junín Greens (Sarmiento) | Fed / Buenos Aires | |
 | ALD | Mar del Plata Sharks (Aldosivi) | Fed / Buenos Aires | |
 | BEL | Córdoba Pirates (Belgrano) | Fed / Córdoba | ✔ |
-| INS | Córdoba Glory (Instituto) | Fed / Córdoba | |
+| INS | Córdoba Glory (Instituto) | Fed / Córdoba | ✔ |
 | TAL | Córdoba Matadors (Talleres) | Fed / Córdoba | ✔ |
 | ERC | Río Cuarto Lions (Estudiantes RC) | Fed / Córdoba | |
 | UNI | Santa Fe Royals (Unión) | Fed / Santa Fe | |
@@ -163,7 +158,8 @@ Transfermarkt: `pie` null (un central sin pie va de #6). Sin fecha de fichaje
 Once (promedio de los 11 mejores), v2.15.3: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
 EST 67,6 · VEL 67,0 · IRM 66,7 · ARG 66,6 · LAN 65,7 · GIM 65,6 · IND 65,5 ·
 RAC 65,5 · SLO 64,6 · RIE 60,5; v2.17: HUR 64,5 (15.º en la anual) y TAL 63,5
-(21.º); v2.18: BEL 66,8 (10.º en la anual y campeón), HUR 64,7 y TAL 64,3. Valoración de equipo del propio juego (Power
+(21.º); v2.18: BEL 66,8 (10.º en la anual y campeón), HUR 64,7 y TAL 64,3; v2.19: INS
+65,3 (8.º en la anual, 1.º de su grupo en el Clausura). Valoración de equipo del propio juego (Power
 Rankings que mandó el usuario, sobre la v2.15.2, con los 17 sin cargar
 desactivados): RIV 136 · BOC 134 · ROS 127 · EST 116 · ARG 114 · IRM 114 ·
 VEL 112 · LAN 108 · GIM 106 · IND 105 · SLO 101 · RAC 99 (107 sin
@@ -228,7 +224,7 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
 Capitanes (contexto, no suman puntos): Paredes (BOC), Otamendi (RIV),
 Cambeses (RAC), Marcone (IND), Tripichio y Devecchi (SLO, comparten),
 E. Gómez (VEL), Di María (ROS), Izquierdoz (LAN), Oroz (ARG), Nacho Fernández
-(GIM), Álex Arce (IRM), Céliz (RIE), Galíndez (HUR), Lucas Zelarayán (BEL). Estudiantes no tiene
+(GIM), Álex Arce (IRM), Céliz (RIE), Galíndez (HUR), Lucas Zelarayán (BEL), Fernando Alarcón (INS). Estudiantes no tiene
 capitán fijo: Carrillo 5 capitanías, Sosa 3, Núñez 3, Muslera 2, González
 Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 (los dos con `capitan`, como Tripichio y Devecchi).
@@ -309,6 +305,10 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    playoffs eliminó a Talleres, Unión y Argentinos y le ganó la final a
    River); Morales sin draft con College "Club Atlético Paraná" (correcto).
    Menores de 19: resuelto en la v2.18.2 (`propuesta-juveniles.md`).
+   **Propuesta de la v2.19 (no aplicada):** Lodico (RAC) 62 → 63: con
+   Instituto suma 28 PJ y 2107' (el 62 salió de sus 13 PJ en Racing).
+   Lesiones de INS sin fecha de vuelta, estimadas: Rafaelli (muslo) 3
+   partidos, Albarracín (muscular) 2.
    **Propuestas de la v2.17, resueltas en la v2.17.1** (el usuario aceptó
    Ortegoza 62 y Vigo 58; rechazó bajar a Ronaldo Martínez, sigue en 69;
    Luján pasó a 60 partidos: "es un cáncer, no una lesión cualquiera"):
@@ -404,6 +404,16 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+- v2.19 Instituto (26 y Medina y Albarracín como prospectos). Contexto: de
+  menor a mayor, 1.º de su grupo en el Clausura, clasificado a copa.
+  Ledesma 65 (lista 59: llegó en julio y el equipo sacó 2,00 pts por
+  partido con él), Sittaro 40 (lista 34; en la lista figura "Sitaro":
+  `arqueros.ts` ahora ignora letras dobles). `reemplaza`: 10 (Méndez lo
+  encontró la auditoría: la búsqueda previa fallaba con nombres de pila
+  compuestos; revisar siempre "Mismo nombre" en la auditoría). Fonseca con el
+  College del Inter que ya existía ("Football Club Internazionale Milano").
+  Franco Jara figura en las salidas de INS (11 PJ, 1 g). Desde hoy no se
+  buscan huecos en las capturas (el usuario: "nunca tendrán huecos").
 - v2.18.2: menores de 19 normalizados (13 OVR; ver `propuesta-juveniles.md`).
   Criterio del usuario: rendimiento (minutos, rol, goles y asistencias por
   minuto) más un plus por valor de mercado (+1 desde 1 M€, +2 desde 2 M€, +3

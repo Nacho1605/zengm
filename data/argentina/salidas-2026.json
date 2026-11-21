@@ -75,6 +75,21 @@
 		{ "club": "BEL", "nombre": "Thiago", "apellido": "Cortés", "pos": "Centrocampista", "edad": 20, "pais": "Argentina", "convocado": 1, "pj": 0 },
 		{ "club": "BEL", "nombre": "Gastón", "apellido": "Martínez", "pos": "Pivote", "edad": 21, "pais": "Argentina", "convocado": 3, "pj": 0 },
 		{ "club": "BEL", "nombre": "Agustín", "apellido": "Bono", "pos": "Extremo derecho", "edad": 18, "pais": "Argentina", "convocado": 7, "pj": 1, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 1, "salio": 0, "ppp": 3, "min": 2 },
-		{ "club": "BEL", "nombre": "Julián", "apellido": "Nuñez", "pos": "Delantero centro", "edad": 19, "pais": "Argentina", "convocado": 1, "pj": 0 }
+		{ "club": "BEL", "nombre": "Julián", "apellido": "Nuñez", "pos": "Delantero centro", "edad": 19, "pais": "Argentina", "convocado": 1, "pj": 0 },
+		{ "club": "INS", "nombre": "Manuel", "apellido": "Roffo", "pos": "Portero", "edad": 26, "pais": "Argentina", "convocado": 17, "pj": 17, "goles": 0, "asist": 0, "amarillas": 1, "dobleAmarilla": 0, "rojas": 0, "entro": 0, "salio": 0, "ppp": 1.41, "min": 1530 },
+		{ "club": "INS", "nombre": "Lautaro", "apellido": "Maldonado", "pos": "Portero", "edad": 25, "pais": "Argentina", "convocado": 4, "pj": 0 },
+		{ "club": "INS", "nombre": "Gonzalo", "apellido": "Requena", "pos": "Defensa central", "edad": 23, "pais": "Argentina", "convocado": 2, "pj": 0 },
+		{ "club": "INS", "nombre": "Iván", "apellido": "Erquiaga", "pos": "Lateral izquierdo", "edad": 27, "pais": "Argentina", "convocado": 7, "pj": 2, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 2, "salio": 0, "ppp": 0.5, "min": 54 },
+		{ "club": "INS", "nombre": "Genaro", "apellido": "Ordóñez", "pos": "Defensa central", "edad": 19, "pais": "Argentina", "convocado": 6, "pj": 0 },
+		{ "club": "INS", "nombre": "Lucas", "apellido": "Olivera", "pos": "Defensa", "edad": 18, "pais": "Argentina", "convocado": 2, "pj": 0 },
+		{ "club": "INS", "nombre": "Gastón", "apellido": "Lodico", "pos": "Mediocentro", "edad": 28, "pais": "Argentina", "convocado": 17, "pj": 15, "goles": 0, "asist": 2, "amarillas": 1, "dobleAmarilla": 0, "rojas": 0, "entro": 1, "salio": 12, "ppp": 1.6, "min": 1121, "nota": "se fue a Racing (fichado el 13/08/2026; ya cargado en RAC)" },
+		{ "club": "INS", "nombre": "Ignacio", "apellido": "Rossi", "pos": "Mediocentro ofensivo", "edad": 23, "pais": "Argentina", "convocado": 7, "pj": 0 },
+		{ "club": "INS", "nombre": "Pedro", "apellido": "Baster", "pos": "Centrocampista", "edad": 20, "pais": "Argentina", "convocado": 6, "pj": 0 },
+		{ "club": "INS", "nombre": "Augusto", "apellido": "Coronel", "pos": "Mediocentro ofensivo", "edad": 18, "pais": "Argentina", "convocado": 2, "pj": 0 },
+		{ "club": "INS", "nombre": "Luca", "apellido": "Klimowicz", "pos": "Delantero centro", "edad": 22, "pais": "Argentina", "convocado": 4, "pj": 2, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 2, "salio": 0, "ppp": 0, "min": 10 },
+		{ "club": "INS", "nombre": "Manuel", "apellido": "Romero", "pos": "Extremo derecho", "edad": 25, "pais": "Paraguay", "convocado": 1, "pj": 1, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 1, "salio": 1, "ppp": 0, "min": 14 },
+		{ "club": "INS", "nombre": "Jonathan", "apellido": "Dellarossa", "pos": "Delantero centro", "edad": 26, "pais": "Argentina", "convocado": 0, "pj": 0, "nota": "no estuvo en el plantel en 2026" },
+		{ "club": "INS", "nombre": "Franco", "apellido": "Jara", "pos": "Delantero centro", "edad": 38, "pais": "Argentina", "convocado": 11, "pj": 11, "goles": 1, "asist": 0, "amarillas": 2, "dobleAmarilla": 0, "rojas": 0, "entro": 3, "salio": 4, "ppp": 0.82, "min": 712 },
+		{ "club": "INS", "nombre": "Benjamín", "apellido": "Olmedo", "pos": "Delantero centro", "edad": 20, "pais": "Argentina", "convocado": 1, "pj": 0 }
 	]
 }

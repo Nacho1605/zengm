@@ -143,11 +143,13 @@ v2.14.1 → v2.14.2).
   sobre los jugadores (le quita la gracia; si algo falta, preguntar).
 - Rendimiento: guardar en el plantel todas las columnas (convocado, PJ,
   goles, asistencias, tarjetas, entró, salió, puntos por partido, minutos).
-  Comprobar que las capturas encajan (sin filas perdidas entre imágenes); si
-  el control da un hueco, preguntarle al usuario (puede ser una falsa alarma,
-  como en Belgrano).
+  Las capturas no tienen huecos (el usuario las parte en 2 de plantel y 3 de
+  Rendimiento solo porque no entran en pantalla, y es muy cuidadoso): NO
+  buscar filas perdidas entre imágenes.
   El comentario del usuario también se guarda: `"contexto"` del equipo y
   `"sofascore"` de cada jugador en el plantel; `"peso"` (kg) si lo da.
+- Fotos: el usuario las pone en el juego cuando le conviene (a veces de
+  varios equipos juntos) y manda la liga exportada; recién ahí se importan.
 - Dos equipos a la vez (cada uno es su versión: v2.16 HUR y v2.17 TAL, se
   arman y comprueban por separado y se manda la última): el usuario manda las capturas de cada equipo por
   separado (límite de 5 imágenes por mensaje) y el comentario después.

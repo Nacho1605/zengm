@@ -58,8 +58,10 @@ const arqueros = planteles.flatMap((p) =>
 // Mismo jugador: mismo nombre de pila y apellido igual o casi (Arzamendi/Arzamendia)
 const mismo = (nombreLista: string, nombre: string, apellido: string) => {
 	const [pila, ...resto] = nombreLista.split(" ");
-	const a = norm(resto.join(" "));
-	const b = norm(apellido);
+	// Sin letras dobles: la lista dice "Sitaro" y Transfermarkt "Sittaro"
+	const simple = (x: string) => x.replace(/(.)\1/g, "$1");
+	const a = simple(norm(resto.join(" ")));
+	const b = simple(norm(apellido));
 	return (
 		norm(pila) === norm(nombre.split(" ")[0]) &&
 		(a === b || b.startsWith(a) || a.startsWith(b))
