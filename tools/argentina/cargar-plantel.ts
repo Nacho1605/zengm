@@ -292,6 +292,7 @@ const NOMBRE_COMPLETO: Record<string, string> = {
 	ROS: "Club Atlético Rosario Central",
 	RPI: "Real Pilar Fútbol Club",
 	SAC: "Sacachispas Fútbol Club",
+	SAN: "Club y Biblioteca Ramón Santamarina",
 	SAR: "Club Atlético Sarmiento (Junín)",
 	SDM: "Club Social y Deportivo Sol de Mayo",
 	SLO: "Club Atlético San Lorenzo de Almagro",
@@ -397,7 +398,9 @@ const cargar = (plantel: any) => {
 			pos,
 			// Pulgadas con decimales: así la altura en pantalla es la real
 			hgt: Math.round((cm / 2.54) * 100) / 100,
-			weight: Math.round(23.5 * j.altura ** 2 * 2.2046),
+			// Peso en libras: el real si el usuario lo da ("peso" en kg); si no,
+			// el de un índice de masa corporal de 23,5
+			weight: Math.round((j.peso ?? 23.5 * j.altura ** 2) * 2.2046),
 			born: { year: nac.y, loc: j.pais },
 			college:
 				j.college ??

@@ -1,6 +1,6 @@
 {
 	"equipo": "TAL",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 20/11/2026); faltan debut, inferiores, OVR, lesiones y rasgos. Sin capitán fijo (dato del usuario).",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 20/11/2026); debut, inferiores, reserva, lesión, Sofascore, rasgos, capitanes, altura y peso de Thiago Baroni y contexto: datos del usuario (21/11/2026). OVR: Claude.",
 	"reemplaza": [
 		{
 			"nombre": "Ezequiel Unsaín",
@@ -54,7 +54,12 @@
 			"salio": 0,
 			"ppp": 0.81,
 			"convocado": 16,
-			"fichado": "01/07/2026"
+			"fichado": "01/07/2026",
+			"ovr": 63,
+			"debut": {
+				"club": "NOB",
+				"anio": 2013
+			}
 		},
 		{
 			"n": "1",
@@ -71,7 +76,12 @@
 			"goles": 0,
 			"min": 0,
 			"convocado": 34,
-			"fichado": "01/01/2026"
+			"fichado": "01/01/2026",
+			"ovr": 37,
+			"debut": {
+				"club": "TAL",
+				"anio": 2026
+			}
 		},
 		{
 			"n": "44",
@@ -95,7 +105,12 @@
 			"salio": 3,
 			"ppp": 1.5,
 			"convocado": 33,
-			"fichado": "01/01/2025"
+			"fichado": "01/01/2025",
+			"ovr": 62,
+			"debut": {
+				"club": "TAL",
+				"anio": 2025
+			}
 		},
 		{
 			"n": "6",
@@ -119,7 +134,14 @@
 			"salio": 0,
 			"ppp": 0.92,
 			"convocado": 12,
-			"fichado": "11/07/2026"
+			"fichado": "11/07/2026",
+			"ovr": 63,
+			"debut": {
+				"club": "GBR",
+				"anio": 2024
+			},
+			"college": "Asociación Atlética Argentinos Juniors",
+			"sofascore": 7.12
 		},
 		{
 			"n": "13",
@@ -143,7 +165,13 @@
 			"salio": 2,
 			"ppp": 0.89,
 			"convocado": 15,
-			"fichado": "23/07/2026"
+			"fichado": "23/07/2026",
+			"ovr": 59,
+			"debut": {
+				"club": "UNI",
+				"anio": 2024
+			},
+			"college": "Club Atlético Boca Juniors"
 		},
 		{
 			"n": "4",
@@ -167,7 +195,14 @@
 			"salio": 2,
 			"ppp": 1.32,
 			"convocado": 29,
-			"fichado": "20/01/2023"
+			"fichado": "20/01/2023",
+			"ovr": 65,
+			"debut": {
+				"club": "SLO",
+				"anio": 2013
+			},
+			"sofascore": 7.01,
+			"rasgos": ["pulmon", "tactico"]
 		},
 		{
 			"n": "25",
@@ -176,14 +211,18 @@
 			"pos": "Defensa central",
 			"nac": "11/07/2006",
 			"pais": "Argentina",
-			"altura": null,
+			"altura": 1.8,
 			"pie": null,
 			"contrato": "31/12/2027",
 			"valor": null,
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"convocado": 13
+			"convocado": 13,
+			"ovr": 38,
+			"college": "Club Atlético Talleres (Córdoba)",
+			"prospecto": true,
+			"peso": 75
 		},
 		{
 			"n": "35",
@@ -199,7 +238,10 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"convocado": 4
+			"convocado": 4,
+			"ovr": 37,
+			"college": "Club Atlético Talleres (Córdoba)",
+			"prospecto": true
 		},
 		{
 			"n": "3",
@@ -223,7 +265,13 @@
 			"salio": 2,
 			"ppp": 1.26,
 			"convocado": 23,
-			"fichado": "09/03/2026"
+			"fichado": "09/03/2026",
+			"ovr": 62,
+			"debut": {
+				"club": null,
+				"anio": 2023
+			},
+			"college": "Atyrá Fútbol Club"
 		},
 		{
 			"n": "23",
@@ -247,7 +295,12 @@
 			"salio": 6,
 			"ppp": 1,
 			"convocado": 30,
-			"fichado": "24/07/2025"
+			"fichado": "24/07/2025",
+			"ovr": 59,
+			"debut": {
+				"club": "NOB",
+				"anio": 2015
+			}
 		},
 		{
 			"n": "20",
@@ -271,7 +324,14 @@
 			"salio": 6,
 			"ppp": 1.21,
 			"convocado": 34,
-			"fichado": "10/08/2020"
+			"fichado": "10/08/2020",
+			"ovr": 64,
+			"debut": {
+				"club": "TAL",
+				"anio": 2020
+			},
+			"capitan": true,
+			"rasgos": ["pulmon"]
 		},
 		{
 			"n": "2",
@@ -295,7 +355,12 @@
 			"salio": 3,
 			"ppp": 0.75,
 			"convocado": 30,
-			"fichado": "01/07/2026"
+			"fichado": "01/07/2026",
+			"ovr": 54,
+			"debut": {
+				"club": "TAL",
+				"anio": 2026
+			}
 		},
 		{
 			"n": null,
@@ -312,7 +377,12 @@
 			"goles": 0,
 			"min": 0,
 			"convocado": 0,
-			"fichado": "01/01/2025"
+			"fichado": "01/01/2025",
+			"ovr": 43,
+			"debut": {
+				"club": "TAL",
+				"anio": 2025
+			}
 		},
 		{
 			"n": "5",
@@ -336,7 +406,13 @@
 			"salio": 7,
 			"ppp": 1.15,
 			"convocado": 34,
-			"fichado": "22/08/2024"
+			"fichado": "22/08/2024",
+			"ovr": 66,
+			"debut": {
+				"club": "ARG",
+				"anio": 2022
+			},
+			"sofascore": 7.23
 		},
 		{
 			"n": "15",
@@ -360,7 +436,13 @@
 			"salio": 4,
 			"ppp": 1.46,
 			"convocado": 27,
-			"fichado": "20/01/2026"
+			"fichado": "20/01/2026",
+			"ovr": 62,
+			"debut": {
+				"club": "NOB",
+				"anio": 2021
+			},
+			"sofascore": 7.02
 		},
 		{
 			"n": "8",
@@ -384,7 +466,14 @@
 			"salio": 9,
 			"ppp": 0.92,
 			"convocado": 14,
-			"fichado": "11/07/2026"
+			"fichado": "11/07/2026",
+			"ovr": 64,
+			"debut": {
+				"club": "NCH",
+				"anio": 2013
+			},
+			"sofascore": 7.12,
+			"rasgos": ["cerebro", "recuperador"]
 		},
 		{
 			"n": "31",
@@ -407,7 +496,10 @@
 			"entro": 1,
 			"salio": 0,
 			"ppp": 0,
-			"convocado": 12
+			"convocado": 12,
+			"ovr": 40,
+			"college": "Club Atlético Talleres (Córdoba)",
+			"prospecto": true
 		},
 		{
 			"n": "26",
@@ -431,7 +523,12 @@
 			"salio": 10,
 			"ppp": 1.43,
 			"convocado": 24,
-			"fichado": "20/07/2025"
+			"fichado": "20/07/2025",
+			"ovr": 57,
+			"debut": {
+				"club": "TIG",
+				"anio": 2024
+			}
 		},
 		{
 			"n": "21",
@@ -455,7 +552,17 @@
 			"salio": 1,
 			"ppp": 1.5,
 			"convocado": 3,
-			"fichado": "01/01/2025"
+			"fichado": "01/01/2025",
+			"ovr": 44,
+			"debut": {
+				"club": "TAL",
+				"anio": 2025
+			},
+			"college": "Club Sportivo Estudiantes",
+			"lesion": {
+				"tipo": "Rotura del ligamento cruzado",
+				"partidos": 1
+			}
 		},
 		{
 			"n": "18",
@@ -479,7 +586,14 @@
 			"salio": 15,
 			"ppp": 1.09,
 			"convocado": 22,
-			"fichado": "02/03/2026"
+			"fichado": "02/03/2026",
+			"ovr": 63,
+			"debut": {
+				"club": "BOC",
+				"anio": 2015
+			},
+			"capitan": true,
+			"rasgos": ["habilidoso"]
 		},
 		{
 			"n": "30",
@@ -503,7 +617,12 @@
 			"salio": 13,
 			"ppp": 1.04,
 			"convocado": 32,
-			"fichado": "23/01/2026"
+			"fichado": "23/01/2026",
+			"ovr": 60,
+			"debut": {
+				"club": "TAL",
+				"anio": 2026
+			}
 		},
 		{
 			"n": "39",
@@ -526,7 +645,10 @@
 			"entro": 5,
 			"salio": 1,
 			"ppp": 1.5,
-			"convocado": 17
+			"convocado": 17,
+			"ovr": 44,
+			"college": "Club Atlético Talleres (Córdoba)",
+			"prospecto": true
 		},
 		{
 			"n": "37",
@@ -550,7 +672,14 @@
 			"salio": 18,
 			"ppp": 1.15,
 			"convocado": 35,
-			"fichado": "18/01/2025"
+			"fichado": "18/01/2025",
+			"ovr": 64,
+			"debut": {
+				"club": null,
+				"anio": 2019
+			},
+			"college": "Ceará Sporting Club",
+			"rasgos": ["gambeta", "veloz"]
 		},
 		{
 			"n": "11",
@@ -574,7 +703,12 @@
 			"salio": 12,
 			"ppp": 1,
 			"convocado": 28,
-			"fichado": "18/01/2023"
+			"fichado": "18/01/2023",
+			"ovr": 62,
+			"debut": {
+				"club": "SAN",
+				"anio": 2019
+			}
 		},
 		{
 			"n": "7",
@@ -598,7 +732,14 @@
 			"salio": 4,
 			"ppp": 1.53,
 			"convocado": 19,
-			"fichado": "19/01/2026"
+			"fichado": "19/01/2026",
+			"ovr": 55,
+			"debut": {
+				"club": null,
+				"anio": 2015
+			},
+			"college": "Club Deportivo La Equidad",
+			"rasgos": ["veloz"]
 		},
 		{
 			"n": "24",
@@ -614,7 +755,10 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"convocado": 3
+			"convocado": 3,
+			"ovr": 37,
+			"college": "Club Atlético Talleres (Córdoba)",
+			"prospecto": true
 		},
 		{
 			"n": "36",
@@ -638,7 +782,12 @@
 			"salio": 1,
 			"ppp": 0.69,
 			"convocado": 23,
-			"fichado": "01/01/2026"
+			"fichado": "01/01/2026",
+			"ovr": 47,
+			"debut": {
+				"club": "TAL",
+				"anio": 2026
+			}
 		},
 		{
 			"n": "9",
@@ -662,7 +811,13 @@
 			"salio": 6,
 			"ppp": 1,
 			"convocado": 9,
-			"fichado": "14/08/2026"
+			"fichado": "14/08/2026",
+			"ovr": 63,
+			"debut": {
+				"club": null,
+				"anio": 2020
+			},
+			"college": "Club Atlético Peñarol"
 		},
 		{
 			"n": "49",
@@ -686,7 +841,13 @@
 			"salio": 4,
 			"ppp": 1.16,
 			"convocado": 35,
-			"fichado": "01/01/2026"
+			"fichado": "01/01/2026",
+			"ovr": 57,
+			"debut": {
+				"club": "TAL",
+				"anio": 2026
+			}
 		}
-	]
+	],
+	"contexto": "Talleres fue de mayor a menor: arrancó competitivo, pero el recambio le quitó jerarquía y regularidad. Aunque sostuvo una idea de tenencia y pase corto, le faltó profundidad para romper defensas y abusó del remate lejano; atrás, quedó expuesto en las contras y pagó caro varias expulsiones. Ezequiel Unsain respondió en un arco muy exigido y Matías Catalán aportó oficio pese a la fragilidad colectiva. Federico Fattori dio orden en el medio y Matías Galarza sumó buen pie, aunque intermitente. Arriba, Rick y Valentín Depietri desequilibraron a ráfagas, dejando a un Agustín Álvarez sacrificado pero aislado. Giovanni Baroni juega el Mundial Sub-17 con Argentina (noviembre de 2026). Tabla anual 2026: 21.º (39 pts, 34-36); Apertura 4.º zona A; Clausura 13.º grupo A."
 }

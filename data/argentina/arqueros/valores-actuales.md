@@ -1,10 +1,10 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.15.8_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.17_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
-## Equipos cargados (13)
+## Equipos cargados (15)
 
 | Equipo | Arquero | Lista | Hoy | Cambio | PJ 2026 | Min |
 |---|---|---|---|---|---|---|
@@ -12,6 +12,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | EST | Fernando Muslera | 71 | 70 | −1 | 38 | 3375 |
 | ARG | Brayan Cortés | 69 | 69 | = | 37 | 3390 |
 | BOC | Álvaro Montero | 71 | 69 | −2 | 23 | 2070 |
+| HUR | Hernán Galíndez | 70 | 69 | −1 | 32 | 2940 |
 | LAN | Nahuel Losada | 69 | 69 | = | 42 | 3810 |
 | RAC | Facundo Cambeses | 72 | 69 | −3 | 42 | 3765 |
 | IND | Rodrigo Rey | 68 | 68 | = | 31 | 2790 |
@@ -23,12 +24,14 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | IND | Santiago Mele | 60 | 65 | +5 | 4 | 360 |
 | VEL | Facundo Sanguinetti | 62 (BAN) | 64 | +2 | 0 | 0 |
 | BOC | Agustín Marchesín | 63 | 63 | = | 13 | 1084 |
+| TAL | Ezequiel Unsaín | 63 | 63 | = | 16 | 1440 |
 | SLO | José Devecchi | 43 | 60 | +17 | 15 | 1287 |
 | BOC | Leandro Brey | 55 | 55 | = | 17 | 1400 |
 | EST | Fabricio Iacovich | 57 | 55 | −2 | 13 | 1125 |
 | GIM | Harlen Castillo | 42 | 47 | +5 | 5 | 450 |
 | ROS | Axel Werner | 51 | 47 | −4 | 3 | 270 |
 | RAC | Matías Tagliamonte | 46 | 46 | = | 3 | 225 |
+| HUR | Sebastián Meza | 43 | 45 | +2 | 4 | 360 |
 | IND | Joaquín Blázquez | — | 45 | no estaba | 1 | 90 |
 | RIV | Ezequiel Centurión | 48 | 45 | −3 | 0 | 0 |
 | ARG | Gonzalo Siri | 39 | 44 | +5 | 1 | 90 |
@@ -42,8 +45,10 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | BOC | Javier García | 40 | 38 | −2 | 1 | 66 |
 | GIM | Julián Kadijevic | — | 38 | no estaba | 2 | 152 |
 | IRM | Emmanuel Gómez Riga | 38 | 38 | = | 2 | 180 |
+| HUR | Nazareno Durán | — | 37 | no estaba | 0 | 0 |
 | RIE | Iván López | — | 37 | no estaba | 1 | 90 |
 | SLO | Mateo Clemente | — | 37 | no estaba | 0 | 0 |
+| TAL | Santino Barbi | 35 | 37 | +2 | 0 | 0 |
 | VEL | Franco Villalba | — | 37 | no estaba | 0 | 0 |
 | VEL | Agustín Cortez | — | 36 | no estaba | 0 | 0 |
 | ARG | Agustín Mangiaut | — | 33 | no estaba | 0 | 0 |
@@ -56,18 +61,16 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | 52 | Diego Rodríguez | ARG | ERC |
 | 42 | Lautaro Morales | LAN | libre |
 
-## Equipos sin cargar: la lista es la base (33)
+## Equipos sin cargar: la lista es la base (29)
 
 | Lista | Arquero | Club en la lista | Hoy en el archivo (datos 2023) |
 |---|---|---|---|
 | 70 | Thiago Cardozo | BEL | no está en el archivo |
-| 70 | Hernán Galíndez | HUR | no está en el archivo |
 | 67 | Matías Borgogno | DYJ | no está en el archivo |
 | 65 | Marcelo Miño | BAR | no está en el archivo |
 | 64 | Felipe Zenobio | TIG | no está en el archivo |
 | 63 | Juan Pablo Cozzani | PLA | no está en el archivo |
-| 63 | Ezequiel Unsaín | TAL | DYJ |
-| 61 | Alan Aguerre | CCO | TAL |
+| 61 | Alan Aguerre | CCO | libre |
 | 60 | Matías Mansilla | UNI | CCO |
 | 59 | Marcos Ledesma | INS | CCO |
 | 58 | Lucas Acosta | ALD | libre |
@@ -82,7 +85,6 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | 45 | Manuel Vicentini | BEL | BEL |
 | 45 | Federico Gomes Gerth | UNI | no está en el archivo |
 | 44 | Ignacio Chicco | ALD | ALD |
-| 43 | Sebastián Meza | HUR | HUR |
 | 42 | Tomás Durso | ATU | libre |
 | 41 | Brian Bustos | PLA | no está en el archivo |
 | 41 | Gino Santilli | BAN | no está en el archivo |
@@ -91,6 +93,5 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | 38 | Nicolás Sumavil | PLA | no está en el archivo |
 | 38 | Sebastián Moyano | ALD | UNI |
 | 37 | Lautaro Maldonado | INS | no está en el archivo |
-| 35 | Santino Barbi | TAL | no está en el archivo |
 | 34 | Emanuel Sitaro | INS | no está en el archivo |
 

@@ -139,7 +139,10 @@ v2.14.1 → v2.14.2).
 - Rendimiento: guardar en el plantel todas las columnas (convocado, PJ,
   goles, asistencias, tarjetas, entró, salió, puntos por partido, minutos).
   Comprobar que las capturas encajan (sin filas perdidas entre imágenes).
-- Dos equipos a la vez: el usuario manda las capturas de cada equipo por
+  El comentario del usuario también se guarda: `"contexto"` del equipo y
+  `"sofascore"` de cada jugador en el plantel; `"peso"` (kg) si lo da.
+- Dos equipos a la vez (cada uno es su versión: v2.16 HUR y v2.17 TAL, se
+  arman y comprueban por separado y se manda la última): el usuario manda las capturas de cada equipo por
   separado (límite de 5 imágenes por mensaje) y el comentario después.
   Transcribir apenas llegan a `planteles/preparacion/` (sin OVR; solo lo lee
   `cruces.ts`); al tener todo, pasarlo a `planteles/` y a `armar-v2.sh`.

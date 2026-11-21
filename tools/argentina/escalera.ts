@@ -66,7 +66,7 @@ for (const [grupo, pos] of Object.entries(GRUPOS)) {
 			[
 				marcar.includes(a) ? ">>" : "  ",
 				String(p.ratings.at(-1).ovr),
-				`${p.firstName[0]}. ${p.lastName}`.padEnd(22),
+				(p.firstName ? `${p.firstName[0]}. ${p.lastName}` : p.lastName).padEnd(22),
 				a,
 				`${L.gameAttributes.season - p.born.year} años`,
 				`${j.pj ?? "-"} PJ`,

@@ -1,27 +1,20 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 20/11/2026. Última versión: **v2.15.8**
-(`data/argentina/BBGM_Argentina_2026_v.2.15.8_futbol.json`): 13 de 30 equipos
-con plantel 2026, con las fotos y los ajustes que el usuario hizo en el juego,
-y la forma 2 de los ratings (mismos OVR). Validación con el esquema oficial: 0 errores. Auditoría: 53
-controles, 8 con alertas. En los equipos cargados solo aparecen José Sosa (41
-años, real) y homónimos reales con otros equipos o libres; el resto es de
-equipos sin cargar o libres con datos de 2023. Fotos: 612 de 612.
+Estado al 21/11/2026. Última versión: **v2.17**
+(`data/argentina/BBGM_Argentina_2026_v.2.17_futbol.json`): 15 de 30 equipos
+con plantel 2026 (v2.16 Huracán, v2.17 Talleres), con las fotos y los ajustes
+que el usuario hizo en el juego y la forma 2 de los ratings. Validación con el
+esquema oficial: 0 errores. Auditoría: 53 controles, 9 con alertas. En los
+equipos cargados solo aparecen José Sosa (41 años, real), homónimos reales con
+otros equipos o libres y las fotos de HUR y TAL (51 sin foto: las pone el
+usuario en el juego y vuelven con `desde-juego.ts`); el resto es de equipos
+sin cargar o libres con datos de 2023.
 
-**Lo que sigue:** Huracán (v2.16) y Talleres (v2.17) a la vez: se arman y
-comprueban por separado y se le manda la v2.17 (decisión de Claude; el
-usuario dejó elegir). Las capturas de los dos ya están transcriptas en
-`planteles/preparacion/` (HUR 27 jugadores, TAL 29), con `reemplaza` (7 y 7)
-y las salidas en `salidas-2026.json`. Capitán de Huracán: Galíndez; Talleres
-no tiene capitán fijo. **Falta del usuario:** el comentario de cada equipo
-(contexto, copas), Sofascore, arquetipos, biografías (debut y club de
-inferiores; aclarar si alguno del plantel sigue en reserva), lesiones (Luján
-HUR y Matías Gómez TAL), la altura de Thiago Baroni (TAL) y, si los tiene,
-los números del primer semestre de los que llegaron a Talleres a mitad de año
-(Unsaín, Riquelme, Fascendini, Chamorro, Fattori, Álvarez). Solo entran los
-jugadores de las capturas del plantel (los juveniles que solo figuran en
-Rendimiento no se agregan). Si manda otra liga exportada, importarla con la
-versión sobre la que jugó como base.
+**Lo que sigue:** que el usuario revise los OVR de Huracán y Talleres (sus
+correcciones van como parche v2.17.x) y responda las propuestas pendientes
+(§7: los 4 que jugaron en Talleres y ya estaban cargados; la lesión de Luján).
+Después, los próximos equipos de a dos. Si manda otra liga exportada,
+importarla con la versión sobre la que jugó como base (v2.17).
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -30,7 +23,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 - **Fase 1 (v1.x, terminada):** esqueleto de la liga. Motor de fútbol con
   ajustes del archivo (`activar-futbol.ts`), 163 equipos (30 activos), zonas,
   premios y lesiones en español, drafts generados con norma de posición.
-- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **13 de
+- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **15 de
   30** equipos.
 - **Fase 3 (futura):** historia de la liga (temporadas pasadas, campeones,
   premios, Salón de la Fama — hay 32 retirados en el Salón, mal hechos, como
@@ -39,14 +32,14 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 ## 2. Equipos
 
 Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
-`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN`.
+`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN HUR TAL`.
 
 | Abrev | En el juego | Zona / división | |
 |---|---|---|---|
 | ARG | La Paternal Firebugs (Argentinos) | Met / Capital | ✔ |
 | BAR | Barracas Braves (Barracas Central) | Met / Capital | |
 | BOC | La Boca 12ers | Met / Capital | ✔ |
-| HUR | La Quema Hurricanes (Huracán) | Met / Capital | |
+| HUR | La Quema Hurricanes (Huracán) | Met / Capital | ✔ |
 | RIV | Núñez Millionaires | Met / Capital | ✔ |
 | SLO | Boedo Crows (San Lorenzo, "CASLA") | Met / Capital | ✔ |
 | VEL | Liniers 14ers | Met / Capital | ✔ |
@@ -64,7 +57,7 @@ Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
 | ALD | Mar del Plata Sharks (Aldosivi) | Fed / Buenos Aires | |
 | BEL | Córdoba Pirates (Belgrano) | Fed / Córdoba | |
 | INS | Córdoba Glory (Instituto) | Fed / Córdoba | |
-| TAL | Córdoba Matadors (Talleres) | Fed / Córdoba | |
+| TAL | Córdoba Matadors (Talleres) | Fed / Córdoba | ✔ |
 | ERC | Río Cuarto Lions (Estudiantes RC) | Fed / Córdoba | |
 | UNI | Santa Fe Royals (Unión) | Fed / Santa Fe | |
 | ROS | Rosario Scoundrels (Central, "CARC") | Fed / Santa Fe | ✔ |
@@ -80,8 +73,7 @@ CSIR = IRM, GELP = GIM, SMSJ = SMJ (San Martín de San Juan, inactivo). Colón
 PVN. En las tablas, "Gimnasia y Esgrima" aparece dos veces (GIM y GEM) y
 "Estudiantes" también (EST y ERC).
 
-**Próximos:** Huracán (después de que el usuario cargue fotos), el bloque
-cordobés y el resto de a dos.
+**Próximos:** el resto de a dos (el usuario elige cuáles).
 
 133 inactivos: Primera Nacional, Federal A, Primera B y C Metro, Patagonia y 10
 clasificados al Torneo Argentino del Interior 2027 (AHZ DES JUG CON PAC CSJ HGO
@@ -147,8 +139,13 @@ Formato de un jugador en el plantel:
   "parientes": [{ "tipo": "brother", "nombre": "Ezequiel Ávila" }],
   "prospecto": true, "leal": true, "capitan": true, "capitanias": 5,
   "imgURL": "https://img.a.transfermarkt.technology/...",
+  "sofascore": 7.1, "peso": 75,
   "ratings": { "stre": 50, "...": 0 } }
 ```
+
+Arriba del plantel, `"contexto"`: el comentario del usuario sobre el equipo
+(y su lugar en las tablas). `sofascore` y `contexto` son datos guardados, no
+entran al juego; `peso` (kg) reemplaza el peso calculado por la altura.
 
 `pos` usa la posición de Transfermarkt en español; `pais` en inglés (nombre
 del juego: "USA", "Japan", "Syria", "Malaysia"…; con doble nacionalidad, la
@@ -165,7 +162,8 @@ Transfermarkt: `pie` null (un central sin pie va de #6). Sin fecha de fichaje
 
 Once (promedio de los 11 mejores), v2.15.3: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
 EST 67,6 · VEL 67,0 · IRM 66,7 · ARG 66,6 · LAN 65,7 · GIM 65,6 · IND 65,5 ·
-RAC 65,5 · SLO 64,6 · RIE 60,5. Valoración de equipo del propio juego (Power
+RAC 65,5 · SLO 64,6 · RIE 60,5; v2.17: HUR 64,5 (15.º en la anual) y TAL 63,5
+(21.º). Valoración de equipo del propio juego (Power
 Rankings que mandó el usuario, sobre la v2.15.2, con los 17 sin cargar
 desactivados): RIV 136 · BOC 134 · ROS 127 · EST 116 · ARG 114 · IRM 114 ·
 VEL 112 · LAN 108 · GIM 106 · IND 105 · SLO 101 · RAC 99 (107 sin
@@ -232,7 +230,8 @@ Cambeses (RAC), Marcone (IND), Tripichio y Devecchi (SLO, comparten),
 E. Gómez (VEL), Di María (ROS), Izquierdoz (LAN), Oroz (ARG), Nacho Fernández
 (GIM), Álex Arce (IRM), Céliz (RIE), Galíndez (HUR). Estudiantes no tiene
 capitán fijo: Carrillo 5 capitanías, Sosa 3, Núñez 3, Muslera 2, González
-Pírez 1, Correa 1. Talleres tampoco (sin conteo de capitanías).
+Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
+(los dos con `capitan`, como Tripichio y Devecchi).
 
 ## 5. Configuración vigente (la aplica `cargar-plantel.ts`)
 
@@ -253,7 +252,7 @@ Pírez 1, Correa 1. Talleres tampoco (sin conteo de capitanías).
 ## 6. Archivos de datos
 
 - `planteles/XXX.json`: los 13 planteles cargados; `planteles/preparacion/`: los
-  que están en preparación (hoy HUR y TAL, sin OVR): solo los lee `cruces.ts`; al
+  que están en preparación (hoy ninguno): solo los lee `cruces.ts`; al
   terminar se pasan a `planteles/` y se suman a `armar-v2.sh`.
 - `arqueros/`: la lista de arqueros del usuario y la comparación con hoy
   (ver §4).
@@ -300,7 +299,14 @@ Pírez 1, Correa 1. Talleres tampoco (sin conteo de capitanías).
    jugó en Vélez, lateral fijo), Devecchi 55 → 60 (arquero titular de SLO
    desde que se fue Gill, en una defensa de 30 goles en contra). Aplicada en
    la v2.15.3.
-2. Cargar los 17 equipos restantes (próximo: Huracán).
+2. Cargar los 15 equipos restantes.
+   **Propuestas pendientes de la v2.17** (no aplicadas; decide el usuario):
+   jugaron en Talleres y ya estaban cargados, con la temporada completa:
+   Ronaldo Martínez VEL 69 → 67 (TAL 24 PJ 4 g + VEL 10 PJ 9 g = 34 PJ, 13 g,
+   2571'; el 69 salió de sus 10 partidos en Vélez), Ortegoza RAC 61 → 62 (34
+   PJ, 1921'), Vigo IRM 57 → 58 (24 PJ, 1076'), Río SLO 54 se sostiene (17 PJ,
+   420'). Luján (HUR): linfoma, parado hace más de un año y sin fecha de
+   vuelta: se estimaron 30 partidos (unos 7 meses); confirmar.
 3. Parentescos: el usuario los va agregando en el juego (Watson y Auzmendi en
    la v2.15.3; seguramente falten más) y vuelven con `desde-juego.ts`.
 4. **Libres (~340):** versiones viejas de 2023. Al final de la fase 2: retirar
@@ -387,6 +393,18 @@ Pírez 1, Correa 1. Talleres tampoco (sin conteo de capitanías).
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+- v2.17 Talleres (24 en el plantel y 5 prospectos de reserva: Thiago Baroni,
+  Nuccio, Trey, Ortiz, Alastra). v2.16 Huracán (27). Comentario del usuario
+  (21/11) guardado en los planteles: `contexto` del equipo, `sofascore` por
+  jugador, debut e inferiores, lesiones (Luján, linfoma: 30 partidos
+  estimados; Matías Gómez, cruzado, vuelve el 30/11: 1 partido), capitanes
+  (Galíndez; Schott y Cristaldo), leales a mano (Nervo, Pussetto), hermanos
+  Óscar (HUR) y Ángel Romero (BOC), altura y peso de Thiago Baroni (1,80 m,
+  75 kg: `peso` nuevo en el cargador). 15 rasgos nuevos en
+  `rasgos-usuario.ts`. `SAN` (Santamarina) con nombre completo. Once: HUR
+  64,5 y TAL 63,5. Las dos versiones se rearman idénticas; la v2.15.8 también
+  (el cambio del cargador no la mueve). `escalera.ts` muestra bien a los de
+  un solo nombre (Rick).
 - Sesión del 20/11 (noche), después de la v2.15.8: carpeta `arqueros/` con la
   lista del Apertura del usuario y la tabla contra los valores de hoy
   (`arqueros.ts`). Huracán transcripto de 5 capturas (2 de plantel, 3 de
@@ -429,7 +447,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la
-> v2.15.8. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
+> v2.17. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
 > que entendiste el estado, antes de seguir.
 
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara

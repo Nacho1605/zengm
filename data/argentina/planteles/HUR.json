@@ -1,6 +1,6 @@
 {
 	"equipo": "HUR",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 20/11/2026); altura de Uribe y capitán, datos del usuario; faltan debut, inferiores, OVR, lesiones y rasgos",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 20/11/2026); altura de Uribe, capitán, debut, inferiores (= club de debut en todos), lesión, Sofascore, rasgos y contexto: datos del usuario (21/11/2026). OVR: Claude.",
 	"reemplaza": [
 		{
 			"nombre": "Sebastián Meza",
@@ -54,7 +54,12 @@
 			"salio": 0,
 			"ppp": 1.75,
 			"convocado": 36,
-			"fichado": "01/07/2021"
+			"fichado": "01/07/2021",
+			"ovr": 45,
+			"debut": {
+				"club": "HUR",
+				"anio": 2021
+			}
 		},
 		{
 			"n": "1",
@@ -79,7 +84,14 @@
 			"ppp": 1.34,
 			"convocado": 32,
 			"fichado": "08/01/2024",
-			"capitan": true
+			"capitan": true,
+			"ovr": 69,
+			"debut": {
+				"club": "ROS",
+				"anio": 2008
+			},
+			"sofascore": 7.1,
+			"rasgos": ["achique"]
 		},
 		{
 			"n": "27",
@@ -96,7 +108,12 @@
 			"goles": 0,
 			"min": 0,
 			"convocado": 4,
-			"fichado": "01/01/2025"
+			"fichado": "01/01/2025",
+			"ovr": 37,
+			"debut": {
+				"club": "HUR",
+				"anio": 2025
+			}
 		},
 		{
 			"n": "35",
@@ -120,7 +137,12 @@
 			"salio": 2,
 			"ppp": 1.48,
 			"convocado": 29,
-			"fichado": "01/01/2026"
+			"fichado": "01/01/2026",
+			"ovr": 62,
+			"debut": {
+				"club": "HUR",
+				"anio": 2026
+			}
 		},
 		{
 			"n": "21",
@@ -144,7 +166,15 @@
 			"salio": 0,
 			"ppp": 1.86,
 			"convocado": 36,
-			"fichado": "23/07/2025"
+			"fichado": "23/07/2025",
+			"ovr": 63,
+			"debut": {
+				"club": "ARS",
+				"anio": 2009
+			},
+			"sofascore": 6.96,
+			"leal": true,
+			"rasgos": ["potente"]
 		},
 		{
 			"n": "6",
@@ -168,7 +198,15 @@
 			"salio": 2,
 			"ppp": 1.43,
 			"convocado": 34,
-			"fichado": "15/08/2023"
+			"fichado": "15/08/2023",
+			"ovr": 64,
+			"debut": {
+				"club": null,
+				"anio": 2011
+			},
+			"college": "Comisión de Actividades Infantiles",
+			"sofascore": 6.93,
+			"rasgos": ["recuperador"]
 		},
 		{
 			"n": "22",
@@ -185,7 +223,12 @@
 			"goles": 0,
 			"min": 0,
 			"convocado": 0,
-			"fichado": "16/01/2025"
+			"fichado": "16/01/2025",
+			"ovr": 45,
+			"debut": {
+				"club": "RIV",
+				"anio": 2024
+			}
 		},
 		{
 			"n": "25",
@@ -209,7 +252,12 @@
 			"salio": 9,
 			"ppp": 1.4,
 			"convocado": 30,
-			"fichado": "01/07/2021"
+			"fichado": "01/07/2021",
+			"ovr": 64,
+			"debut": {
+				"club": "HUR",
+				"anio": 2021
+			}
 		},
 		{
 			"n": "19",
@@ -233,7 +281,12 @@
 			"salio": 4,
 			"ppp": 1.14,
 			"convocado": 34,
-			"fichado": "01/01/2025"
+			"fichado": "01/01/2025",
+			"ovr": 55,
+			"debut": {
+				"club": "HUR",
+				"anio": 2025
+			}
 		},
 		{
 			"n": "2",
@@ -257,7 +310,13 @@
 			"salio": 3,
 			"ppp": 1.36,
 			"convocado": 28,
-			"fichado": "06/03/2026"
+			"fichado": "06/03/2026",
+			"ovr": 63,
+			"debut": {
+				"club": "RAF",
+				"anio": 2016
+			},
+			"rasgos": ["tactico"]
 		},
 		{
 			"n": "4",
@@ -281,7 +340,12 @@
 			"salio": 2,
 			"ppp": 2,
 			"convocado": 28,
-			"fichado": "14/01/2026"
+			"fichado": "14/01/2026",
+			"ovr": 56,
+			"debut": {
+				"club": "UNI",
+				"anio": 2019
+			}
 		},
 		{
 			"n": "34",
@@ -305,7 +369,12 @@
 			"salio": 6,
 			"ppp": 1.47,
 			"convocado": 33,
-			"fichado": "01/01/2026"
+			"fichado": "01/01/2026",
+			"ovr": 58,
+			"debut": {
+				"club": "HUR",
+				"anio": 2026
+			}
 		},
 		{
 			"n": "5",
@@ -329,7 +398,14 @@
 			"salio": 2,
 			"ppp": 1.5,
 			"convocado": 12,
-			"fichado": "01/08/2026"
+			"fichado": "01/08/2026",
+			"ovr": 63,
+			"debut": {
+				"club": null,
+				"anio": 2016
+			},
+			"college": "Danubio Fútbol Club",
+			"sofascore": 6.9
 		},
 		{
 			"n": "20",
@@ -353,7 +429,12 @@
 			"salio": 10,
 			"ppp": 1.43,
 			"convocado": 32,
-			"fichado": "14/01/2026"
+			"fichado": "14/01/2026",
+			"ovr": 61,
+			"debut": {
+				"club": "ROS",
+				"anio": 2019
+			}
 		},
 		{
 			"n": "41",
@@ -377,7 +458,12 @@
 			"salio": 2,
 			"ppp": 1.77,
 			"convocado": 27,
-			"fichado": "01/01/2026"
+			"fichado": "01/01/2026",
+			"ovr": 49,
+			"debut": {
+				"club": "HUR",
+				"anio": 2026
+			}
 		},
 		{
 			"n": "8",
@@ -401,7 +487,15 @@
 			"salio": 14,
 			"ppp": 1.4,
 			"convocado": 35,
-			"fichado": "11/01/2025"
+			"fichado": "11/01/2025",
+			"ovr": 64,
+			"debut": {
+				"club": null,
+				"anio": 2009
+			},
+			"college": "Comisión de Actividades Infantiles",
+			"sofascore": 6.92,
+			"rasgos": ["pulmon"]
 		},
 		{
 			"n": "52",
@@ -425,7 +519,12 @@
 			"salio": 16,
 			"ppp": 1.65,
 			"convocado": 34,
-			"fichado": "01/01/2026"
+			"fichado": "01/01/2026",
+			"ovr": 60,
+			"debut": {
+				"club": "HUR",
+				"anio": 2025
+			}
 		},
 		{
 			"n": null,
@@ -442,7 +541,16 @@
 			"goles": 0,
 			"min": 0,
 			"convocado": 0,
-			"fichado": "01/01/2023"
+			"fichado": "01/01/2023",
+			"ovr": 46,
+			"debut": {
+				"club": "HUR",
+				"anio": 2023
+			},
+			"lesion": {
+				"tipo": "Linfoma difuso de células B grandes",
+				"partidos": 30
+			}
 		},
 		{
 			"n": "15",
@@ -466,7 +574,14 @@
 			"salio": 14,
 			"ppp": 1.48,
 			"convocado": 31,
-			"fichado": "24/07/2025"
+			"fichado": "24/07/2025",
+			"ovr": 65,
+			"debut": {
+				"club": null,
+				"anio": 2014
+			},
+			"college": "Club Plaza Colonia de Deportes",
+			"sofascore": 7.07
 		},
 		{
 			"n": "11",
@@ -490,7 +605,12 @@
 			"salio": 6,
 			"ppp": 0.95,
 			"convocado": 34,
-			"fichado": "01/01/2026"
+			"fichado": "01/01/2026",
+			"ovr": 54,
+			"debut": {
+				"club": "HUR",
+				"anio": 2026
+			}
 		},
 		{
 			"n": "10",
@@ -514,7 +634,20 @@
 			"salio": 10,
 			"ppp": 1.45,
 			"convocado": 31,
-			"fichado": "18/02/2026"
+			"fichado": "18/02/2026",
+			"ovr": 58,
+			"debut": {
+				"club": null,
+				"anio": 2012
+			},
+			"college": "Club Cerro Porteño",
+			"parientes": [
+				{
+					"tipo": "brother",
+					"nombre": "Ángel Romero"
+				}
+			],
+			"rasgos": ["pase"]
 		},
 		{
 			"n": "7",
@@ -538,7 +671,13 @@
 			"salio": 26,
 			"ppp": 1.44,
 			"convocado": 34,
-			"fichado": "14/01/2026"
+			"fichado": "14/01/2026",
+			"ovr": 65,
+			"debut": {
+				"club": null,
+				"anio": 2022
+			},
+			"college": "Millonarios Fútbol Club"
 		},
 		{
 			"n": "17",
@@ -562,7 +701,12 @@
 			"salio": 11,
 			"ppp": 1.42,
 			"convocado": 36,
-			"fichado": "01/07/2025"
+			"fichado": "01/07/2025",
+			"ovr": 59,
+			"debut": {
+				"club": "ATL",
+				"anio": 2021
+			}
 		},
 		{
 			"n": "49",
@@ -586,7 +730,12 @@
 			"salio": 1,
 			"ppp": 1,
 			"convocado": 12,
-			"fichado": "30/06/2026"
+			"fichado": "30/06/2026",
+			"ovr": 43,
+			"debut": {
+				"club": "HUR",
+				"anio": 2026
+			}
 		},
 		{
 			"n": "9",
@@ -610,7 +759,14 @@
 			"salio": 12,
 			"ppp": 1.41,
 			"convocado": 29,
-			"fichado": "14/01/2026"
+			"fichado": "14/01/2026",
+			"ovr": 67,
+			"debut": {
+				"club": null,
+				"anio": 2012
+			},
+			"college": "Club Sport Norte América",
+			"rasgos": ["aereo", "potente"]
 		},
 		{
 			"n": "33",
@@ -634,7 +790,14 @@
 			"salio": 2,
 			"ppp": 1,
 			"convocado": 7,
-			"fichado": "02/09/2026"
+			"fichado": "02/09/2026",
+			"ovr": 57,
+			"debut": {
+				"club": null,
+				"anio": 2021
+			},
+			"college": "Club Deportivo Universidad Católica",
+			"rasgos": ["habilidoso"]
 		},
 		{
 			"n": "23",
@@ -658,7 +821,15 @@
 			"salio": 2,
 			"ppp": 1.1,
 			"convocado": 10,
-			"fichado": "31/07/2026"
+			"fichado": "31/07/2026",
+			"ovr": 60,
+			"debut": {
+				"club": "RAF",
+				"anio": 2013
+			},
+			"leal": true,
+			"rasgos": ["goleador"]
 		}
-	]
+	],
+	"contexto": "Huracán transitó un año de vaivenes, sin lograr consolidarse: empezó con intensidad y empuje, perdió aire por el desgaste físico y recién recuperó algo de firmeza en el tramo final. Su presión alta y las transiciones rápidas lastiman con campo abierto, pero el equipo se traba ante defensas cerradas y se desordena fácil cuando pierde la pelota. Hernán Galíndez respondió con oficio en un arco muchas veces desprotegido. Arriba, el peso físico de Jordy Caicedo, el desequilibrio intermitente de Óscar Cortés y la movilidad de Bruno Barticciotto sostuvieron la amenaza, aunque con demasiados altibajos. Tabla anual 2026: 15.º (44 pts, 31-29); Apertura 7.º zona B; Clausura 8.º grupo B."
 }
