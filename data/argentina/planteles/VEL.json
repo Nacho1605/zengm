@@ -61,7 +61,8 @@
 				"club": "GEM",
 				"anio": 2018
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/596909-1720644730.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/596909-1720644730.jpg?lm=4711",
+			"rasgos": ["reflejos"]
 		},
 		{
 			"n": "32",

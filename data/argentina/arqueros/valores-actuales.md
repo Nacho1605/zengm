@@ -1,6 +1,6 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.17_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.17.1_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
@@ -22,9 +22,9 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | GIM | Nelson Insfrán | 64 | 66 | +2 | 30 | 2638 |
 | VEL | Tomás Marchiori | 66 | 66 | = | 19 | 1710 |
 | IND | Santiago Mele | 60 | 65 | +5 | 4 | 360 |
+| TAL | Ezequiel Unsaín | 63 | 64 | +1 | 16 | 1440 |
 | VEL | Facundo Sanguinetti | 62 (BAN) | 64 | +2 | 0 | 0 |
 | BOC | Agustín Marchesín | 63 | 63 | = | 13 | 1084 |
-| TAL | Ezequiel Unsaín | 63 | 63 | = | 16 | 1440 |
 | SLO | José Devecchi | 43 | 60 | +17 | 15 | 1287 |
 | BOC | Leandro Brey | 55 | 55 | = | 17 | 1400 |
 | EST | Fabricio Iacovich | 57 | 55 | −2 | 13 | 1125 |

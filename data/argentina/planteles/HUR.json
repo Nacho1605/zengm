@@ -167,7 +167,7 @@
 			"ppp": 1.86,
 			"convocado": 36,
 			"fichado": "23/07/2025",
-			"ovr": 63,
+			"ovr": 64,
 			"debut": {
 				"club": "ARS",
 				"anio": 2009
@@ -199,7 +199,7 @@
 			"ppp": 1.43,
 			"convocado": 34,
 			"fichado": "15/08/2023",
-			"ovr": 64,
+			"ovr": 65,
 			"debut": {
 				"club": null,
 				"anio": 2011
@@ -549,7 +549,7 @@
 			},
 			"lesion": {
 				"tipo": "Linfoma difuso de células B grandes",
-				"partidos": 30
+				"partidos": 60
 			}
 		},
 		{
@@ -760,7 +760,7 @@
 			"ppp": 1.41,
 			"convocado": 29,
 			"fichado": "14/01/2026",
-			"ovr": 67,
+			"ovr": 68,
 			"debut": {
 				"club": null,
 				"anio": 2012
@@ -822,7 +822,7 @@
 			"ppp": 1.1,
 			"convocado": 10,
 			"fichado": "31/07/2026",
-			"ovr": 60,
+			"ovr": 62,
 			"debut": {
 				"club": "RAF",
 				"anio": 2013

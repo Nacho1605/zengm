@@ -24,7 +24,7 @@ const LISTA: Record<string, [string, string, string?][]> = {
 	potente: [["BOC", "Giménez"], ["RAC", "Martínez", "Adrián"], ["IND", "Ávila"], ["SLO", "Arboleda"], ["SLO", "Herazo"], ["EST", "Gaich"], ["IRM", "Costa"], ["IRM", "Arce"], ["LAN", "Izquierdoz"], ["LAN", "Wlk"], ["RIE", "Quintana"], ["RIE", "Murillo"], ["HUR", "Nervo"], ["HUR", "Caicedo"]],
 	pulmon: [["RIV", "Portillo"], ["RIV", "Arambarri"], ["SLO", "Tripichio"], ["EST", "Piovi"], ["ROS", "Ibarra"], ["ROS", "Copetti"], ["ARG", "Oroz"], ["IRM", "Florentín"], ["GIM", "Steimbach"], ["GIM", "Miramón"], ["LAN", "Marcich"], ["RIE", "Céliz"], ["HUR", "Gil"], ["TAL", "Catalán"], ["TAL", "Schott"]],
 	tactico: [["BOC", "Pellegrino"], ["IND", "Arias"], ["EST", "González Pírez"], ["LAN", "Izquierdoz"], ["RIE", "Quintana"], ["HUR", "Blondel"], ["TAL", "Catalán"]],
-	reflejos: [["RAC", "Cambeses"], ["EST", "Muslera"]],
+	reflejos: [["RAC", "Cambeses"], ["EST", "Muslera"], ["VEL", "Marchiori"]],
 	achique: [["IND", "Rey"], ["HUR", "Galíndez"]],
 	pies: [["IND", "Mele"], ["RIE", "Arce"]],
 	lento: [["BOC", "Paredes"]],
