@@ -1,19 +1,18 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 21/11/2026. Última versión: **v2.17.2**
-(`data/argentina/BBGM_Argentina_2026_v.2.17.2_futbol.json`): 15 de 30 equipos
-con plantel 2026 (v2.16 Huracán, v2.17 Talleres), con las fotos y los ajustes
-que el usuario hizo en el juego, sus correcciones a HUR y TAL (v2.17.1) y
-la forma 3 de los ratings (v2.17.2). Validación con el
-esquema oficial: 0 errores. Auditoría: 53 controles, 9 con alertas. En los
-equipos cargados solo aparecen José Sosa (41 años, real), homónimos reales con
-otros equipos o libres y las fotos de HUR y TAL (51 sin foto: las pone el
-usuario en el juego y vuelven con `desde-juego.ts`); el resto es de equipos
-sin cargar o libres con datos de 2023.
+Estado al 21/11/2026. Última versión: **v2.18**
+(`data/argentina/BBGM_Argentina_2026_v.2.18_futbol.json`): 16 de 30 equipos
+con plantel 2026 (último: Belgrano), con las fotos y los ajustes que el
+usuario hizo en el juego (importados de su liga sobre la v2.17.2) y la forma
+3 de los ratings. Validación con el esquema oficial: 0 errores. Auditoría: 53
+controles, 9 con alertas. En los equipos cargados solo aparecen José Sosa (41
+años, real), homónimos reales y las 24 fotos de Belgrano (las pone el
+usuario en el juego); el resto es de equipos sin cargar o libres de 2023.
 
-**Lo que sigue:** el usuario pone las fotos de HUR y TAL en el juego y manda
-la liga exportada (importarla con `desde-juego.ts` y la versión que usó como
-base). Después, los próximos equipos de a dos.
+**Lo que sigue:** respuestas pendientes de Belgrano (ver §7: filas que faltan
+en las capturas de Rendimiento, año de debut de Melano, qué título ganó) y
+sus correcciones a los OVR (parche v2.18.x); fotos de Belgrano en el juego.
+Después, el resto de los equipos (de a uno o de a dos).
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -22,7 +21,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 - **Fase 1 (v1.x, terminada):** esqueleto de la liga. Motor de fútbol con
   ajustes del archivo (`activar-futbol.ts`), 163 equipos (30 activos), zonas,
   premios y lesiones en español, drafts generados con norma de posición.
-- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **15 de
+- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **16 de
   30** equipos.
 - **Fase 3 (futura):** historia de la liga (temporadas pasadas, campeones,
   premios, Salón de la Fama — hay 32 retirados en el Salón, mal hechos, como
@@ -31,7 +30,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 ## 2. Equipos
 
 Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
-`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN HUR TAL`.
+`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN HUR TAL BEL`.
 
 | Abrev | En el juego | Zona / división | |
 |---|---|---|---|
@@ -54,7 +53,7 @@ Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
 | GIM | La Plata Wolves (Gimnasia LP, "GELP") | Fed / Buenos Aires | ✔ |
 | SAR | Junín Greens (Sarmiento) | Fed / Buenos Aires | |
 | ALD | Mar del Plata Sharks (Aldosivi) | Fed / Buenos Aires | |
-| BEL | Córdoba Pirates (Belgrano) | Fed / Córdoba | |
+| BEL | Córdoba Pirates (Belgrano) | Fed / Córdoba | ✔ |
 | INS | Córdoba Glory (Instituto) | Fed / Córdoba | |
 | TAL | Córdoba Matadors (Talleres) | Fed / Córdoba | ✔ |
 | ERC | Río Cuarto Lions (Estudiantes RC) | Fed / Córdoba | |
@@ -162,7 +161,7 @@ Transfermarkt: `pie` null (un central sin pie va de #6). Sin fecha de fichaje
 Once (promedio de los 11 mejores), v2.15.3: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
 EST 67,6 · VEL 67,0 · IRM 66,7 · ARG 66,6 · LAN 65,7 · GIM 65,6 · IND 65,5 ·
 RAC 65,5 · SLO 64,6 · RIE 60,5; v2.17: HUR 64,5 (15.º en la anual) y TAL 63,5
-(21.º). Valoración de equipo del propio juego (Power
+(21.º); v2.18: BEL 66,8 (10.º en la anual y campeón), HUR 64,7 y TAL 64,3. Valoración de equipo del propio juego (Power
 Rankings que mandó el usuario, sobre la v2.15.2, con los 17 sin cargar
 desactivados): RIV 136 · BOC 134 · ROS 127 · EST 116 · ARG 114 · IRM 114 ·
 VEL 112 · LAN 108 · GIM 106 · IND 105 · SLO 101 · RAC 99 (107 sin
@@ -227,7 +226,7 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
 Capitanes (contexto, no suman puntos): Paredes (BOC), Otamendi (RIV),
 Cambeses (RAC), Marcone (IND), Tripichio y Devecchi (SLO, comparten),
 E. Gómez (VEL), Di María (ROS), Izquierdoz (LAN), Oroz (ARG), Nacho Fernández
-(GIM), Álex Arce (IRM), Céliz (RIE), Galíndez (HUR). Estudiantes no tiene
+(GIM), Álex Arce (IRM), Céliz (RIE), Galíndez (HUR), Lucas Zelarayán (BEL). Estudiantes no tiene
 capitán fijo: Carrillo 5 capitanías, Sosa 3, Núñez 3, Muslera 2, González
 Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 (los dos con `capitan`, como Tripichio y Devecchi).
@@ -298,7 +297,15 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    jugó en Vélez, lateral fijo), Devecchi 55 → 60 (arquero titular de SLO
    desde que se fue Gill, en una defensa de 30 goles en contra). Aplicada en
    la v2.15.3.
-2. Cargar los 15 equipos restantes.
+2. Cargar los 14 equipos restantes.
+   **Pendiente de Belgrano (v2.18):** (a) las capturas de Rendimiento tienen
+   dos huecos (filas perdidas entre Flandes y Adrián Sánchez, y entre Gastón
+   Martínez y Nicolás Fernández): solo faltan jugadores que se fueron
+   (posiblemente Franco Jara, que el usuario nombra en el contexto); pedir
+   esas filas para `salidas-2026.json`. (b) Año de debut de Melano: se supuso
+   2025. (c) Qué título ganó Belgrano. (d) Morales debutó en "Club Atlético
+   Paraná", que no está en la base (PAT, "Paraná Patrons", es Patronato): va
+   sin draft, con ese College.
    **Propuestas de la v2.17, resueltas en la v2.17.1** (el usuario aceptó
    Ortegoza 62 y Vigo 58; rechazó bajar a Ronaldo Martínez, sigue en 69;
    Luján pasó a 60 partidos: "es un cáncer, no una lesión cualquiera"):
@@ -394,6 +401,19 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+- v2.18 Belgrano (24 y Daniele como prospecto). Campeón 2026 (10.º en la
+  anual), Zelarayán MVP del Apertura y en el Equipo Ideal con L. López.
+  Cardozo 71 (lista 70: Sofascore 7,37, el más alto hasta ahora), Vicentini
+  46 (lista 45). Hermanos: N. Fernández con Leandro y Brian Fernández (libres,
+  2023), Melano con Lucas Melano (SAR, 2023). `reemplaza`: 8. Leales:
+  Longo, L. Zelarayán, Vázquez, Rigoni (debut en BEL hasta 2021). El cargador
+  ahora elige, entre homónimos, al del propio equipo para unir parientes (la
+  v2.17.3 se rearma idéntica). 14 salidas de BEL (incompletas, ver §7).
+- v2.17.3: liga del usuario importada sobre la v2.17.2 (`desde-juego.ts`):
+  51 fotos de HUR y TAL (no puso las de los prospectos de TAL), camisetas de
+  Luján (42) y Olmos (25), ratings a mano de Durán (35) y Barbi (36). Arce
+  "goleador+" (ins 75 → 78), Giovanni Baroni 52 y Dávila 51 ("seguir
+  nerfeando").
 - v2.17.2: forma 3 de los ratings (pedido del usuario: ins y dnk de los
   goleadores inflados; Merentiel, Maravilla, Valencia, Driussi y Ronaldo en
   89–95). Causa: esos dos ratings casi no pesan en el OVR y el generador los

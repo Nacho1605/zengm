@@ -1,14 +1,15 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.17.3_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.18_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
-## Equipos cargados (15)
+## Equipos cargados (16)
 
 | Equipo | Arquero | Lista | Hoy | Cambio | PJ 2026 | Min |
 |---|---|---|---|---|---|---|
 | RIV | Santiago Beltrán | 73 | 72 | −1 | 45 | 4031 |
+| BEL | Thiago Cardozo | 70 | 71 | +1 | 37 | 3390 |
 | EST | Fernando Muslera | 71 | 70 | −1 | 38 | 3375 |
 | ARG | Brayan Cortés | 69 | 69 | = | 37 | 3390 |
 | BOC | Álvaro Montero | 71 | 69 | −2 | 23 | 2070 |
@@ -30,6 +31,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | EST | Fabricio Iacovich | 57 | 55 | −2 | 13 | 1125 |
 | GIM | Harlen Castillo | 42 | 47 | +5 | 5 | 450 |
 | ROS | Axel Werner | 51 | 47 | −4 | 3 | 270 |
+| BEL | Manuel Vicentini | 45 | 46 | +1 | 3 | 270 |
 | RAC | Matías Tagliamonte | 46 | 46 | = | 3 | 225 |
 | HUR | Sebastián Meza | 43 | 45 | +2 | 4 | 360 |
 | IND | Joaquín Blázquez | — | 45 | no estaba | 1 | 90 |
@@ -42,6 +44,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | EST | Rodrigo Borzone | — | 40 | no estaba | 0 | 0 |
 | ROS | Damián Fernández | — | 40 | no estaba | 0 | 0 |
 | VEL | Álvaro Busso | 40 | 40 | = | 0 | 0 |
+| BEL | Matías Daniele | — | 38 | no estaba | 0 | 0 |
 | BOC | Javier García | 40 | 38 | −2 | 1 | 66 |
 | GIM | Julián Kadijevic | — | 38 | no estaba | 2 | 152 |
 | IRM | Emmanuel Gómez Riga | 38 | 38 | = | 2 | 180 |
@@ -61,11 +64,10 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | 52 | Diego Rodríguez | ARG | ERC |
 | 42 | Lautaro Morales | LAN | libre |
 
-## Equipos sin cargar: la lista es la base (29)
+## Equipos sin cargar: la lista es la base (27)
 
 | Lista | Arquero | Club en la lista | Hoy en el archivo (datos 2023) |
 |---|---|---|---|
-| 70 | Thiago Cardozo | BEL | no está en el archivo |
 | 67 | Matías Borgogno | DYJ | no está en el archivo |
 | 65 | Marcelo Miño | BAR | no está en el archivo |
 | 64 | Felipe Zenobio | TIG | no está en el archivo |
@@ -82,7 +84,6 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | 53 | Juan Espínola | BAR | no está en el archivo |
 | 52 | Josué Reinatti | NOB | no está en el archivo |
 | 49 | Agustín Lastra | ERC | no está en el archivo |
-| 45 | Manuel Vicentini | BEL | BEL |
 | 45 | Federico Gomes Gerth | UNI | no está en el archivo |
 | 44 | Ignacio Chicco | ALD | ALD |
 | 42 | Tomás Durso | ATU | libre |

@@ -666,7 +666,13 @@ for (const file of plantelFiles) {
 		const plantel = JSON.parse(readFileSync(file, "utf8"));
 		for (const j of plantel.jugadores) {
 			for (const { tipo, nombre } of j.parientes ?? []) {
-				const [p] = buscar(`${j.nombre} ${j.apellido}`);
+				// Con homónimos, el del propio equipo (o el prospecto de su club)
+				const propios = buscar(`${j.nombre} ${j.apellido}`);
+				const tidEquipo = league.teams.find((t: any) => t.abbrev === plantel.equipo)?.tid;
+				const p =
+					propios.length === 1
+						? propios[0]
+						: propios.find((x: any) => x.tid === (j.prospecto ? -2 : tidEquipo));
 				const otros = buscar(nombre);
 				if (!p || otros.length !== 1) {
 					console.log(
