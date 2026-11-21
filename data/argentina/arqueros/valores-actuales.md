@@ -1,6 +1,6 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.17.1_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.17.3_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
@@ -45,12 +45,12 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | BOC | Javier García | 40 | 38 | −2 | 1 | 66 |
 | GIM | Julián Kadijevic | — | 38 | no estaba | 2 | 152 |
 | IRM | Emmanuel Gómez Riga | 38 | 38 | = | 2 | 180 |
-| HUR | Nazareno Durán | — | 37 | no estaba | 0 | 0 |
 | RIE | Iván López | — | 37 | no estaba | 1 | 90 |
 | SLO | Mateo Clemente | — | 37 | no estaba | 0 | 0 |
-| TAL | Santino Barbi | 35 | 37 | +2 | 0 | 0 |
 | VEL | Franco Villalba | — | 37 | no estaba | 0 | 0 |
+| TAL | Santino Barbi | 35 | 36 | +1 | 0 | 0 |
 | VEL | Agustín Cortez | — | 36 | no estaba | 0 | 0 |
+| HUR | Nazareno Durán | — | 35 | no estaba | 0 | 0 |
 | ARG | Agustín Mangiaut | — | 33 | no estaba | 0 | 0 |
 
 ## En la lista con un equipo cargado, pero hoy no están en su plantel

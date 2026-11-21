@@ -636,7 +636,7 @@
 			"leal": true,
 			"capitan": true,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/970518-1781276813.jpg?lm=4711",
-			"rasgos": ["goleador", "aereo", "potente"]
+			"rasgos": ["goleador+", "aereo", "potente"]
 		},
 		{
 			"n": "43",

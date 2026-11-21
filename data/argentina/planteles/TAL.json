@@ -59,7 +59,8 @@
 			"debut": {
 				"club": "NOB",
 				"anio": 2013
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/337600-1636413366.JPG?lm=4711"
 		},
 		{
 			"n": "1",
@@ -77,10 +78,27 @@
 			"min": 0,
 			"convocado": 34,
 			"fichado": "01/01/2026",
-			"ovr": 37,
+			"ovr": 36,
 			"debut": {
 				"club": "TAL",
 				"anio": 2026
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1197308-1758546950.jpg?lm=4711",
+			"ratings": {
+				"stre": 48,
+				"spd": 40,
+				"jmp": 57,
+				"endu": 36,
+				"ins": 0,
+				"dnk": 0,
+				"ft": 30,
+				"fg": 0,
+				"tp": 0,
+				"oiq": 25,
+				"diq": 52,
+				"drb": 24,
+				"pss": 29,
+				"reb": 59
 			}
 		},
 		{
@@ -110,7 +128,8 @@
 			"debut": {
 				"club": "TAL",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1106217-1758546891.jpg?lm=4711"
 		},
 		{
 			"n": "6",
@@ -141,7 +160,8 @@
 				"anio": 2024
 			},
 			"college": "Asociación Atlética Argentinos Juniors",
-			"sofascore": 7.12
+			"sofascore": 7.12,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/909736-1684336489.jpeg?lm=4711"
 		},
 		{
 			"n": "13",
@@ -171,7 +191,8 @@
 				"club": "UNI",
 				"anio": 2024
 			},
-			"college": "Club Atlético Boca Juniors"
+			"college": "Club Atlético Boca Juniors",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1149559-1721140195.png?lm=4711"
 		},
 		{
 			"n": "4",
@@ -202,7 +223,8 @@
 				"anio": 2013
 			},
 			"sofascore": 7.01,
-			"rasgos": ["pulmon", "tactico"]
+			"rasgos": ["pulmon", "tactico"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/237051-1719388533.jpg?lm=4711"
 		},
 		{
 			"n": "25",
@@ -271,7 +293,8 @@
 				"club": null,
 				"anio": 2023
 			},
-			"college": "Atyrá Fútbol Club"
+			"college": "Atyrá Fútbol Club",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1371519-1755109849.png?lm=4711"
 		},
 		{
 			"n": "23",
@@ -300,7 +323,8 @@
 			"debut": {
 				"club": "NOB",
 				"anio": 2015
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/376858-1771860305.jpg?lm=4711"
 		},
 		{
 			"n": "20",
@@ -331,7 +355,8 @@
 				"anio": 2020
 			},
 			"capitan": true,
-			"rasgos": ["pulmon"]
+			"rasgos": ["pulmon"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/670566-1771860337.jpg?lm=4711"
 		},
 		{
 			"n": "2",
@@ -360,10 +385,11 @@
 			"debut": {
 				"club": "TAL",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1296330-1771862836.jpg?lm=4711"
 		},
 		{
-			"n": null,
+			"n": "25",
 			"nombre": "Tomás",
 			"apellido": "Olmos",
 			"pos": "Lateral derecho",
@@ -382,7 +408,8 @@
 			"debut": {
 				"club": "TAL",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1126741-1690762110.JPG?lm=4711"
 		},
 		{
 			"n": "5",
@@ -412,7 +439,8 @@
 				"club": "ARG",
 				"anio": 2022
 			},
-			"sofascore": 7.23
+			"sofascore": 7.23,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/909737-1771860398.jpg?lm=4711"
 		},
 		{
 			"n": "15",
@@ -442,7 +470,8 @@
 				"club": "NOB",
 				"anio": 2021
 			},
-			"sofascore": 7.02
+			"sofascore": 7.02,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/659264-1574073945.jpg?lm=4711"
 		},
 		{
 			"n": "8",
@@ -473,7 +502,8 @@
 				"anio": 2013
 			},
 			"sofascore": 7.12,
-			"rasgos": ["cerebro", "recuperador"]
+			"rasgos": ["cerebro", "recuperador"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/357956-1646656039.JPG?lm=4711"
 		},
 		{
 			"n": "31",
@@ -528,7 +558,8 @@
 			"debut": {
 				"club": "TIG",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/907835-1771862402.jpg?lm=4711"
 		},
 		{
 			"n": "21",
@@ -562,7 +593,8 @@
 			"lesion": {
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 1
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1150517-1771862421.jpg?lm=4711"
 		},
 		{
 			"n": "18",
@@ -593,7 +625,8 @@
 				"anio": 2015
 			},
 			"capitan": true,
-			"rasgos": ["habilidoso"]
+			"rasgos": ["habilidoso"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/332259-1684807927.jpg?lm=4711"
 		},
 		{
 			"n": "30",
@@ -618,11 +651,12 @@
 			"ppp": 1.04,
 			"convocado": 32,
 			"fichado": "23/01/2026",
-			"ovr": 55,
+			"ovr": 52,
 			"debut": {
 				"club": "TAL",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1265841-1771862436.jpg?lm=4711"
 		},
 		{
 			"n": "39",
@@ -679,7 +713,8 @@
 				"anio": 2019
 			},
 			"college": "Ceará Sporting Club",
-			"rasgos": ["gambeta", "veloz"]
+			"rasgos": ["gambeta", "veloz"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/645955-1771862496.jpg?lm=4711"
 		},
 		{
 			"n": "11",
@@ -708,7 +743,8 @@
 			"debut": {
 				"club": "SAN",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/697056-1771862528.jpg?lm=4711"
 		},
 		{
 			"n": "7",
@@ -739,7 +775,8 @@
 				"anio": 2015
 			},
 			"college": "Club Deportivo La Equidad",
-			"rasgos": ["veloz"]
+			"rasgos": ["veloz"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/413983-1789047366.png?lm=4711"
 		},
 		{
 			"n": "24",
@@ -787,7 +824,8 @@
 			"debut": {
 				"club": "TAL",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1296331-1771862893.jpg?lm=4711"
 		},
 		{
 			"n": "9",
@@ -817,7 +855,8 @@
 				"club": null,
 				"anio": 2020
 			},
-			"college": "Club Atlético Peñarol"
+			"college": "Club Atlético Peñarol",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/812625-1704205457.jpg?lm=4711"
 		},
 		{
 			"n": "49",
@@ -842,11 +881,12 @@
 			"ppp": 1.16,
 			"convocado": 35,
 			"fichado": "01/01/2026",
-			"ovr": 54,
+			"ovr": 51,
 			"debut": {
 				"club": "TAL",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1280274-1771862678.jpg?lm=4711"
 		}
 	],
 	"contexto": "Talleres fue de mayor a menor: arrancó competitivo, pero el recambio le quitó jerarquía y regularidad. Aunque sostuvo una idea de tenencia y pase corto, le faltó profundidad para romper defensas y abusó del remate lejano; atrás, quedó expuesto en las contras y pagó caro varias expulsiones. Ezequiel Unsain respondió en un arco muy exigido y Matías Catalán aportó oficio pese a la fragilidad colectiva. Federico Fattori dio orden en el medio y Matías Galarza sumó buen pie, aunque intermitente. Arriba, Rick y Valentín Depietri desequilibraron a ráfagas, dejando a un Agustín Álvarez sacrificado pero aislado. Giovanni Baroni juega el Mundial Sub-17 con Argentina (noviembre de 2026). Tabla anual 2026: 21.º (39 pts, 34-36); Apertura 4.º zona A; Clausura 13.º grupo A."

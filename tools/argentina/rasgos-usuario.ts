@@ -10,7 +10,7 @@ import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 
 // rasgo -> [equipo, apellido, nombre (si hace falta)]
 const LISTA: Record<string, [string, string, string?][]> = {
-	goleador: [["BOC", "Merentiel"], ["RAC", "Martínez", "Adrián"], ["VEL", "Martínez", "Ronaldo"], ["EST", "Alario"], ["IRM", "Arce"], ["HUR", "Pussetto"]],
+	goleador: [["BOC", "Merentiel"], ["RAC", "Martínez", "Adrián"], ["VEL", "Martínez", "Ronaldo"], ["EST", "Alario"], ["IRM", "Arce", "+"], ["HUR", "Pussetto"]],
 	pegador: [["VEL", "Lanzini"], ["ROS", "Di María"], ["IRM", "Florentín"]],
 	aereo: [["EST", "Palacios", "Tomás"], ["EST", "Rojo"], ["EST", "Gaich"], ["BOC", "Di Lollo"], ["BOC", "Valencia"], ["RIV", "Otamendi"], ["VEL", "Martínez", "Ronaldo"], ["EST", "Carrillo"], ["ARG", "Álvarez"], ["IRM", "Arce"], ["LAN", "Canale"], ["ARG", "Molina"], ["SLO", "Auzmendi"], ["HUR", "Caicedo"]],
 	gambeta: [["BOC", "Flores"], ["RIV", "Almada"], ["RIV", "Correa", "+"], ["RAC", "Zaracho"], ["SLO", "Farías"], ["EST", "Cetré"], ["EST", "Correa"], ["ROS", "Campaz"], ["ROS", "Di María"], ["ARG", "López Muñoz", "+"], ["IRM", "Fernández", "+"], ["LAN", "Moreno"], ["IND", "Montiel"], ["RAC", "Díaz"], ["TAL", "Rick"]],
