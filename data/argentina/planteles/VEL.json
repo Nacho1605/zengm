@@ -365,7 +365,7 @@
 			"pj": 16,
 			"goles": 0,
 			"min": 206,
-			"ovr": 44,
+			"ovr": 45,
 			"debut": {
 				"club": "VEL",
 				"anio": 2026
@@ -386,7 +386,7 @@
 			"pj": 7,
 			"goles": 0,
 			"min": 208,
-			"ovr": 49,
+			"ovr": 45,
 			"debut": {
 				"club": "VEL",
 				"anio": 2026
@@ -590,7 +590,7 @@
 			"pj": 1,
 			"goles": 0,
 			"min": 56,
-			"ovr": 42,
+			"ovr": 43,
 			"prospecto": true,
 			"college": "Club Atlético Vélez Sarsfield"
 		},
@@ -608,7 +608,7 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"ovr": 37,
+			"ovr": 38,
 			"prospecto": true,
 			"college": "Club Atlético Vélez Sarsfield"
 		}

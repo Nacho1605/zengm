@@ -120,7 +120,10 @@ v2.14.1 → v2.14.2).
     lo que jugó, no por el nombre (con algo de peso para el talento probado).
   - Juveniles (menores de 19): rendimiento (minutos, rol, producción por
     minuto) más un plus por valor de mercado (+1 desde 1 M€, +2 desde 2 M€,
-    +3 desde 3,5 M€): el precio también dice algo. Ver propuesta-juveniles.md.
+    +3 desde 3,5 M€): el precio también dice algo. Vale para menores de 20 y
+    prospectos. Los que jugaron menos de 300' en Primera: +1 si su reserva
+    quedó entre las 5 primeras de la anual, −1 del 21.º para abajo
+    (`tablas-reserva-2026.json`). Ver propuesta-juveniles.md.
   - NO castigar la edad; los de media temporada, por partido; las tablas
     (`tablas-2026.json`) y Sofascore son guías, no verdad absoluta.
   - Mirar también las copas: hay equipos que priorizan la copa sobre la liga

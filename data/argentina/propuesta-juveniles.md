@@ -86,7 +86,7 @@ y Dávila (51, 19 años) quedan como los fijó el usuario.
 
 Sin cambios: Gianini 42, L. Cristaldo 42, Silveira 38, Bouhier 38, Prima 37.
 
-## Segunda revisión: menores de 20 y prospectos, con la reserva (v2.19.1, propuesta)
+## Segunda revisión: menores de 20 y prospectos, con la reserva (aceptada y aplicada en la v2.19.2)
 
 Pedido del usuario (22/11/2026): revisar otra vez a todos los prospectos de
 draft y a los menores de 20 de los planteles cargados, con las tablas del

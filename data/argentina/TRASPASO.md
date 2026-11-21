@@ -1,16 +1,16 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 22/11/2026. Última versión: **v2.19.1**
-(`data/argentina/BBGM_Argentina_2026_v.2.19.1_futbol.json`): 17 de 30 equipos
+Estado al 22/11/2026. Última versión: **v2.19.2**
+(`data/argentina/BBGM_Argentina_2026_v.2.19.2_futbol.json`): 17 de 30 equipos
 con plantel 2026 (último: Instituto). Validación con el esquema oficial: 0
 errores. Auditoría: 53 controles, 9 con alertas; en los equipos cargados solo
 José Sosa (41 años, real), homónimos reales y las 50 fotos de Belgrano e
 Instituto (el usuario las pone en el juego juntas y manda la liga exportada:
 importarla con la versión sobre la que jugó como base).
 
-**Lo que sigue:** que el usuario decida sobre la segunda revisión de
-juveniles (`propuesta-juveniles.md`, con la reserva; no aplicada); fotos de
-BEL e INS; el próximo equipo.
+**Lo que sigue:** Newell's (NOB, v2.20) y Estudiantes de Río Cuarto (ERC,
+v2.21) a la vez. Capturas de NOB transcriptas en `planteles/preparacion/`;
+falta el comentario de los dos y las capturas de ERC. Fotos de BEL e INS.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -407,6 +407,9 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+- v2.19.2: segunda revisión de juveniles aceptada (18 OVR; Cantizano 62 → 56).
+  Juveniles que casi no jugaron en Primera (< 300'): +1 si su reserva quedó
+  entre las 5 primeras de la anual, −1 del 21.º para abajo.
 - v2.19.1: correcciones del usuario a Instituto: Ledesma 64, Cerato 66, Sosa
   64, Córdoba 62, Gallardo 61, Luna 68 y, para compensar, Tissera 63 (+2) y
   Méndez 58 (+1) (el usuario dejó elegir +1 o +2). Lodico (RAC) 63. Once INS
