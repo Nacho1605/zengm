@@ -55,3 +55,33 @@ para normalizarlas. Son 22: 13 del primer equipo y 9 prospectos de reserva (P).
 
 Bajan 11, sube 1 (Mateo Martínez) y 10 se sostienen. Vélez es el más
 afectado (5 juveniles con valores altos para sus minutos).
+
+## Resultado (v2.18.2, aplicado)
+
+El usuario aceptó la propuesta a medias: "hay que hacer una combinación de
+rendimiento y valor de mercado; hay un motivo por el cual algunos jugadores
+cuestan más que otros". Valor final = propuesta por rendimiento + un plus por
+valor de mercado: +1 desde 1 M€, +2 desde 2 M€, +3 desde 3,5 M€. Baroni (52)
+y Dávila (51, 19 años) quedan como los fijó el usuario.
+
+| Club | Jugador | Antes | Rendimiento | Valor | Final |
+|---|---|---|---|---|---|
+| IND | Arrayago | 58 | 53 | 2,0 M€ (+2) | 55 |
+| VEL | Escobar | 57 | 51 | 4,0 M€ (+3) | 54 |
+| ARG | Jainikoski | 57 | 50 | 2,5 M€ (+2) | 52 |
+| TAL | G. Baroni | 52 | — | valor del usuario | 52 |
+| HUR | Peralta | 54 | 50 | 1,0 M€ (+1) | 51 |
+| RAC | Mateo Martínez (P) | 48 | 51 | 0,8 M€ | 51 |
+| VEL | Policella | 56 | 50 | 0,5 M€ | 50 |
+| VEL | Verón | 53 | 46 | 1,5 M€ (+1) | 47 |
+| VEL | T. Aguirre | 50 | 46 | 1,0 M€ (+1) | 47 |
+| RAC | Tello | 47 | 47 | 0,4 M€ | 47 |
+| RIV | L. Pereyra | 47 | 47 | 0,7 M€ | 47 |
+| VEL | Feler | 48 | 44 | 0,7 M€ | 44 |
+| BOC | Satas (P) | 48 | 43 | 1,0 M€ (+1) | 44 |
+| TAL | Ortiz (P) | 44 | 44 | 0,1 M€ | 44 |
+| BEL | Tulián | 44 | 43 | 0,05 M€ | 43 |
+| ARG | Alcaraz (P) | 45 | 43 | 0,2 M€ | 43 |
+| RIV | J. C. Meza | 40 | 40 | 1,8 M€ (+1) | 41 |
+
+Sin cambios: Gianini 42, L. Cristaldo 42, Silveira 38, Bouhier 38, Prima 37.

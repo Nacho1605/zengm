@@ -118,6 +118,9 @@ v2.14.1 → v2.14.2).
   - No inflar: un goleador o una figura de un equipo mediano no vale lo mismo
     que la de un grande por los mismos números; el recién llegado se valora por
     lo que jugó, no por el nombre (con algo de peso para el talento probado).
+  - Juveniles (menores de 19): rendimiento (minutos, rol, producción por
+    minuto) más un plus por valor de mercado (+1 desde 1 M€, +2 desde 2 M€,
+    +3 desde 3,5 M€): el precio también dice algo. Ver propuesta-juveniles.md.
   - NO castigar la edad; los de media temporada, por partido; las tablas
     (`tablas-2026.json`) y Sofascore son guías, no verdad absoluta.
   - Mirar también las copas: hay equipos que priorizan la copa sobre la liga

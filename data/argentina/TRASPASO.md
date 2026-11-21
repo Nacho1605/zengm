@@ -1,7 +1,7 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 21/11/2026. Última versión: **v2.18.1**
-(`data/argentina/BBGM_Argentina_2026_v.2.18.1_futbol.json`): 16 de 30 equipos
+Estado al 21/11/2026. Última versión: **v2.18.2**
+(`data/argentina/BBGM_Argentina_2026_v.2.18.2_futbol.json`): 16 de 30 equipos
 con plantel 2026 (último: Belgrano), con las fotos y los ajustes que el
 usuario hizo en el juego (importados de su liga sobre la v2.17.2) y la forma
 3 de los ratings. Validación con el esquema oficial: 0 errores. Auditoría: 53
@@ -9,9 +9,7 @@ controles, 9 con alertas. En los equipos cargados solo aparecen José Sosa (41
 años, real), homónimos reales y las 24 fotos de Belgrano (las pone el
 usuario en el juego); el resto es de equipos sin cargar o libres de 2023.
 
-**Lo que sigue:** que el usuario decida sobre la propuesta de los menores de
-19 (`propuesta-juveniles.md`, no aplicada: incluye a Jainikoski, valor fijo);
-fotos de Belgrano en el juego.
+**Lo que sigue:** fotos de Belgrano en el juego; el próximo equipo.
 Después, el resto de los equipos (de a uno o de a dos).
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
@@ -266,8 +264,8 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   Apertura + Clausura = Anual; promedios = puntos / partidos).
 - `propuesta-valores-fijos.md`: propuesta sobre valores fijos, ya resuelta
   (v2.14.3).
-- `propuesta-juveniles.md`: análisis y propuesta para los menores de 19
-  (v2.18.1, pendiente de decisión del usuario).
+- `propuesta-juveniles.md`: análisis de los menores de 19 y valores
+  aplicados en la v2.18.2 (rendimiento + plus por valor de mercado).
 - `equipos-usuario.json`: datos de equipos que el usuario editó en el juego.
 
 ## 7. Pendientes
@@ -306,7 +304,7 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    en 2025; el título es el Torneo Apertura 2026 (5.º en la zona B; en los
    playoffs eliminó a Talleres, Unión y Argentinos y le ganó la final a
    River); Morales sin draft con College "Club Atlético Paraná" (correcto).
-   **Propuesta pendiente:** menores de 19 años (`propuesta-juveniles.md`).
+   Menores de 19: resuelto en la v2.18.2 (`propuesta-juveniles.md`).
    **Propuestas de la v2.17, resueltas en la v2.17.1** (el usuario aceptó
    Ortegoza 62 y Vigo 58; rechazó bajar a Ronaldo Martínez, sigue en 69;
    Luján pasó a 60 partidos: "es un cáncer, no una lesión cualquiera"):
@@ -402,6 +400,11 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+- v2.18.2: menores de 19 normalizados (13 OVR; ver `propuesta-juveniles.md`).
+  Criterio del usuario: rendimiento (minutos, rol, goles y asistencias por
+  minuto) más un plus por valor de mercado (+1 desde 1 M€, +2 desde 2 M€, +3
+  desde 3,5 M€): "hay un motivo por el cual algunos jugadores cuestan más".
+  Jainikoski (valor fijo) 57 → 52 con su aprobación.
 - v2.18.1: correcciones del usuario a Belgrano: Cardozo 70 (se queda en el
   valor de la lista), Ricca 59, Sánchez 66, Velázquez 59; contexto con el
   título (Apertura 2026) y sin Jara. Once BEL 66,6. Propuesta para
