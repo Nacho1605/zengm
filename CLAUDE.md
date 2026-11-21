@@ -140,7 +140,9 @@ v2.14.1 → v2.14.2).
   sobre los jugadores (le quita la gracia; si algo falta, preguntar).
 - Rendimiento: guardar en el plantel todas las columnas (convocado, PJ,
   goles, asistencias, tarjetas, entró, salió, puntos por partido, minutos).
-  Comprobar que las capturas encajan (sin filas perdidas entre imágenes).
+  Comprobar que las capturas encajan (sin filas perdidas entre imágenes); si
+  el control da un hueco, preguntarle al usuario (puede ser una falsa alarma,
+  como en Belgrano).
   El comentario del usuario también se guarda: `"contexto"` del equipo y
   `"sofascore"` de cada jugador en el plantel; `"peso"` (kg) si lo da.
 - Dos equipos a la vez (cada uno es su versión: v2.16 HUR y v2.17 TAL, se

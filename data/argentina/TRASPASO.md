@@ -1,7 +1,7 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 21/11/2026. Última versión: **v2.18**
-(`data/argentina/BBGM_Argentina_2026_v.2.18_futbol.json`): 16 de 30 equipos
+Estado al 21/11/2026. Última versión: **v2.18.1**
+(`data/argentina/BBGM_Argentina_2026_v.2.18.1_futbol.json`): 16 de 30 equipos
 con plantel 2026 (último: Belgrano), con las fotos y los ajustes que el
 usuario hizo en el juego (importados de su liga sobre la v2.17.2) y la forma
 3 de los ratings. Validación con el esquema oficial: 0 errores. Auditoría: 53
@@ -9,9 +9,9 @@ controles, 9 con alertas. En los equipos cargados solo aparecen José Sosa (41
 años, real), homónimos reales y las 24 fotos de Belgrano (las pone el
 usuario en el juego); el resto es de equipos sin cargar o libres de 2023.
 
-**Lo que sigue:** respuestas pendientes de Belgrano (ver §7: filas que faltan
-en las capturas de Rendimiento, año de debut de Melano, qué título ganó) y
-sus correcciones a los OVR (parche v2.18.x); fotos de Belgrano en el juego.
+**Lo que sigue:** que el usuario decida sobre la propuesta de los menores de
+19 (`propuesta-juveniles.md`, no aplicada: incluye a Jainikoski, valor fijo);
+fotos de Belgrano en el juego.
 Después, el resto de los equipos (de a uno o de a dos).
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
@@ -266,6 +266,8 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   Apertura + Clausura = Anual; promedios = puntos / partidos).
 - `propuesta-valores-fijos.md`: propuesta sobre valores fijos, ya resuelta
   (v2.14.3).
+- `propuesta-juveniles.md`: análisis y propuesta para los menores de 19
+  (v2.18.1, pendiente de decisión del usuario).
 - `equipos-usuario.json`: datos de equipos que el usuario editó en el juego.
 
 ## 7. Pendientes
@@ -298,14 +300,13 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    desde que se fue Gill, en una defensa de 30 goles en contra). Aplicada en
    la v2.15.3.
 2. Cargar los 14 equipos restantes.
-   **Pendiente de Belgrano (v2.18):** (a) las capturas de Rendimiento tienen
-   dos huecos (filas perdidas entre Flandes y Adrián Sánchez, y entre Gastón
-   Martínez y Nicolás Fernández): solo faltan jugadores que se fueron
-   (posiblemente Franco Jara, que el usuario nombra en el contexto); pedir
-   esas filas para `salidas-2026.json`. (b) Año de debut de Melano: se supuso
-   2025. (c) Qué título ganó Belgrano. (d) Morales debutó en "Club Atlético
-   Paraná", que no está en la base (PAT, "Paraná Patrons", es Patronato): va
-   sin draft, con ese College.
+   **Belgrano, resuelto (v2.18.1):** el usuario confirmó que no faltan filas
+   de Rendimiento (el control de píxeles marcó dos huecos que no eran) y que
+   se desestima la mención de Franco Jara (sacada del contexto); Melano debutó
+   en 2025; el título es el Torneo Apertura 2026 (5.º en la zona B; en los
+   playoffs eliminó a Talleres, Unión y Argentinos y le ganó la final a
+   River); Morales sin draft con College "Club Atlético Paraná" (correcto).
+   **Propuesta pendiente:** menores de 19 años (`propuesta-juveniles.md`).
    **Propuestas de la v2.17, resueltas en la v2.17.1** (el usuario aceptó
    Ortegoza 62 y Vigo 58; rechazó bajar a Ronaldo Martínez, sigue en 69;
    Luján pasó a 60 partidos: "es un cáncer, no una lesión cualquiera"):
@@ -401,6 +402,10 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+- v2.18.1: correcciones del usuario a Belgrano: Cardozo 70 (se queda en el
+  valor de la lista), Ricca 59, Sánchez 66, Velázquez 59; contexto con el
+  título (Apertura 2026) y sin Jara. Once BEL 66,6. Propuesta para
+  normalizar a los 22 menores de 19 de los planteles (no aplicada).
 - v2.18 Belgrano (24 y Daniele como prospecto). Campeón 2026 (10.º en la
   anual), Zelarayán MVP del Apertura y en el Equipo Ideal con L. López.
   Cardozo 71 (lista 70: Sofascore 7,37, el más alto hasta ahora), Vicentini

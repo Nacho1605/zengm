@@ -1,7 +1,7 @@
 {
 	"equipo": "BEL",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 21/11/2026); debut, inferiores, reserva, Sofascore, rasgos, capitán, parientes, altura de Melano y contexto: datos del usuario. OVR: Claude.",
-	"contexto": "Belgrano coronó un año histórico con un título que validó su crecimiento de menor a mayor, aunque esa consagración no oculta que nunca terminó de resolver su fragilidad defensiva. Con una propuesta directa y vertical, encontró su mejor versión acelerando por las bandas y atacando espacios, pero sufrió en los retrocesos y le costó sostener solidez fuera de casa. Santiago Longo sostuvo el equilibrio con orden y quite en un mediocampo al que suele faltarle fluidez. La diferencia estuvo arriba: la jerarquía y pausa de Lucas Zelarayán y Franco Vázquez, la movilidad de Nicolás Fernández y el oficio goleador de Franco Jara pesaron en los momentos límite y terminaron inclinando la balanza a favor del Pirata. Torneo Apertura 2026: Lisandro López y Lucas Zelarayán en el Equipo Ideal (titulares), Zelarayán MVP; Nicolás Fernández entre los suplentes. Tabla anual 2026: 10.º (49 pts, 34-28); Apertura 5.º zona B; Clausura 6.º grupo B.",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 21/11/2026); debut, inferiores, reserva, Sofascore, rasgos, capitán, parientes, altura y año de debut (2025) de Melano y contexto: datos del usuario. OVR: Claude.",
+	"contexto": "Belgrano coronó un año histórico con un título que validó su crecimiento de menor a mayor, aunque esa consagración no oculta que nunca terminó de resolver su fragilidad defensiva. Con una propuesta directa y vertical, encontró su mejor versión acelerando por las bandas y atacando espacios, pero sufrió en los retrocesos y le costó sostener solidez fuera de casa. Santiago Longo sostuvo el equilibrio con orden y quite en un mediocampo al que suele faltarle fluidez. La diferencia estuvo arriba: la jerarquía y pausa de Lucas Zelarayán y Franco Vázquez y la movilidad de Nicolás Fernández pesaron en los momentos límite y terminaron inclinando la balanza a favor del Pirata. Campeón del Torneo Apertura 2026: 5.º en la zona B; en los playoffs eliminó a Talleres, Unión y Argentinos y le ganó la final a River. En ese torneo, Lisandro López y Lucas Zelarayán en el Equipo Ideal (titulares), Zelarayán MVP; Nicolás Fernández entre los suplentes. Tabla anual 2026: 10.º (49 pts, 34-28); Apertura 5.º zona B; Clausura 6.º grupo B.",
 	"reemplaza": [
 		{
 			"nombre": "Manuel Vicentini",
@@ -60,7 +60,7 @@
 			"ppp": 1.57,
 			"convocado": 37,
 			"fichado": "06/07/2025",
-			"ovr": 71,
+			"ovr": 70,
 			"debut": {
 				"club": null,
 				"anio": 2016
@@ -201,7 +201,7 @@
 			"ppp": 1.59,
 			"convocado": 31,
 			"fichado": "06/07/2025",
-			"ovr": 60,
+			"ovr": 59,
 			"debut": {
 				"club": null,
 				"anio": 2013
@@ -410,7 +410,7 @@
 			"ppp": 1.58,
 			"convocado": 35,
 			"fichado": "14/01/2026",
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "BOC",
 				"anio": 2020
@@ -440,7 +440,7 @@
 			"ppp": 1.76,
 			"convocado": 29,
 			"fichado": "01/07/2024",
-			"ovr": 60,
+			"ovr": 59,
 			"debut": {
 				"club": "BEL",
 				"anio": 2024
