@@ -9,7 +9,11 @@ controles, 9 con alertas. En los equipos cargados solo aparecen José Sosa (41
 años, real), homónimos reales y las 24 fotos de Belgrano (las pone el
 usuario en el juego); el resto es de equipos sin cargar o libres de 2023.
 
-**Lo que sigue:** fotos de Belgrano en el juego; el próximo equipo.
+**Lo que sigue (sesión del 22/11):** el usuario aceptó todos los cambios de
+la v2.18.2. Mañana manda su liga exportada con las fotos de Belgrano
+(importarla con `desde-juego.ts` y la v2.18.2 como base) y carga Instituto
+(INS, v2.19). Arqueros de INS en la lista: Ma. Ledesma 59, L. Maldonado 37,
+Sitaro 34 (el peor de la lista).
 Después, el resto de los equipos (de a uno o de a dos).
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
@@ -497,9 +501,10 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
-> Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la
-> v2.17. Corré la auditoría sobre ese archivo y confirmame en pocas líneas
-> que entendiste el estado, antes de seguir.
+> Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.18.2.
+> Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
+> líneas que entendiste el estado, antes de seguir.
 
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara
 con la del repositorio y se importa con `desde-juego.ts`.
