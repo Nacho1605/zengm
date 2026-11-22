@@ -292,6 +292,8 @@ export const FORMA_2: Forma = {
 		// es una vez y media el normal: el que se destaca aun entre los de su tipo
 		goleador: { ins: 10, dnk: 6 },
 		pegador: { tp: 10, fg: 6 },
+		// Remate y envíos de larga distancia (v2.20; Soñora, Alanís)
+		"larga distancia": { tp: 10, pss: 4 },
 		aereo: { jmp: 8, dnk: 5, reb: 4 },
 		gambeta: { drb: 12, spd: 2 },
 		veloz: { spd: 12, endu: 2 },

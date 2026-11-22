@@ -95,7 +95,8 @@ v2.14.1 → v2.14.2).
   suave desde 93 (cada punto cuenta la mitad), tope 95, en todo el archivo.
 - Rasgos de juego (arquetipos) en el plantel (`"rasgos"`), según el usuario:
   goleador, pegador, aereo, gambeta, veloz, pelota parada, habilidoso, pase,
-  cerebro, centrador, recuperador, potente, pulmon, tactico; arqueros:
+  cerebro, centrador, recuperador, potente, pulmon, tactico, larga distancia
+  (v2.20; significado a confirmar); arqueros:
   reflejos, achique, pies; defecto: lento. Con "+" (ej. `gambeta+`) el efecto
   es 1,5 veces. Dan forma; el OVR no cambia. Efectos en `ratings-futbol.ts`;
   la lista del usuario, en `tools/argentina/rasgos-usuario.ts`. Pedirlos con
@@ -142,6 +143,8 @@ v2.14.1 → v2.14.2).
   un nombre, buscar si otro jugador ya tiene ese College y usar el mismo.
 - Club sin localidad: el más importante (Estudiantes = La Plata, Talleres =
   Córdoba, Gimnasia = La Plata), salvo que el usuario diga otra cosa.
+  Abreviaturas: buscarlas en el archivo de liga (el usuario cambió algunas en
+  el juego; `equipos.csv` puede estar viejo: CDO es CIR).
 - Usar solo las capturas y los datos del usuario: NO buscar fuentes externas
   sobre los jugadores (le quita la gracia; si algo falta, preguntar).
 - Rendimiento: guardar en el plantel todas las columnas (convocado, PJ,

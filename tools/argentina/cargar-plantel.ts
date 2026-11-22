@@ -284,6 +284,7 @@ const NOMBRE_COMPLETO: Record<string, string> = {
 	MOR: "Club Deportivo Morón",
 	NCH: "Club Atlético Nueva Chicago",
 	NOB: "Club Atlético Newell's Old Boys",
+	OLI: "Club Olimpo",
 	PLA: "Club Atlético Platense",
 	QUI: "Quilmes Atlético Club",
 	RAC: "Racing Club",
@@ -306,6 +307,7 @@ const NOMBRE_COMPLETO: Record<string, string> = {
 	TRE: "Club Atlético Talleres (Remedios de Escalada)",
 	UNI: "Club Atlético Unión",
 	VEL: "Club Atlético Vélez Sarsfield",
+	VSC: "Club Atlético Villa San Carlos",
 };
 
 const norm = (s: string) =>

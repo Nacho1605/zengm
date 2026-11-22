@@ -68,12 +68,29 @@
 			"ppp": 2,
 			"convocado": 17,
 			"fichado": "07/07/2026",
-			"ovr": 64,
+			"ovr": 63,
 			"debut": {
 				"club": "QUI",
 				"anio": 2017
 			},
-			"college": "Asociación Atlética Estudiantes (Río Cuarto)"
+			"college": "Asociación Atlética Estudiantes (Río Cuarto)",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/344421-1621169118.jpg?lm=4711",
+			"ratings": {
+				"stre": 70,
+				"spd": 54,
+				"jmp": 78,
+				"endu": 61,
+				"ins": 0,
+				"dnk": 0,
+				"ft": 51,
+				"fg": 0,
+				"tp": 0,
+				"oiq": 49,
+				"diq": 78,
+				"drb": 48,
+				"pss": 48,
+				"reb": 80
+			}
 		},
 		{
 			"n": "35",
@@ -102,7 +119,8 @@
 			"debut": {
 				"club": "INS",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/717685-1771006783.png?lm=4711"
 		},
 		{
 			"n": "6",
@@ -135,7 +153,8 @@
 			"college": "Club Atlético Rosario Central",
 			"sofascore": 7,
 			"capitan": true,
-			"rasgos": ["aereo"]
+			"rasgos": ["aereo"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/376853-1771006860.png?lm=4711"
 		},
 		{
 			"n": "26",
@@ -165,7 +184,8 @@
 				"club": "ARG",
 				"anio": 2016
 			},
-			"sofascore": 6.95
+			"sofascore": 6.95,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/407517-1771008059.png?lm=4711"
 		},
 		{
 			"n": "30",
@@ -195,7 +215,8 @@
 				"club": "ALD",
 				"anio": 2011
 			},
-			"rasgos": ["tactico"]
+			"rasgos": ["tactico"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/216730-1771007813.png?lm=4711"
 		},
 		{
 			"n": "22",
@@ -224,7 +245,8 @@
 			"debut": {
 				"club": "INS",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1221014-1771006671.png?lm=4711"
 		},
 		{
 			"n": "32",
@@ -253,7 +275,8 @@
 			"debut": {
 				"club": "RAF",
 				"anio": 2021
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/868503-1771006600.png?lm=4711"
 		},
 		{
 			"n": "3",
@@ -278,12 +301,29 @@
 			"ppp": 1.74,
 			"convocado": 35,
 			"fichado": "14/01/2026",
-			"ovr": 64,
+			"ovr": 63,
 			"debut": {
 				"club": "TIG",
 				"anio": 2017
 			},
-			"sofascore": 6.95
+			"sofascore": 6.95,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/464365-1771006775.png?lm=4711",
+			"ratings": {
+				"stre": 54,
+				"spd": 64,
+				"jmp": 55,
+				"endu": 71,
+				"ins": 38,
+				"dnk": 38,
+				"ft": 57,
+				"fg": 46,
+				"tp": 46,
+				"oiq": 56,
+				"diq": 65,
+				"drb": 57,
+				"pss": 54,
+				"reb": 55
+			}
 		},
 		{
 			"n": "23",
@@ -312,7 +352,8 @@
 			"debut": {
 				"club": "GOD",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/935331-1692106135.JPG?lm=4711"
 		},
 		{
 			"n": "44",
@@ -337,14 +378,31 @@
 			"ppp": 1.71,
 			"convocado": 34,
 			"fichado": "01/01/2022",
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "UAI",
 				"anio": 2019
 			},
 			"college": "Club Atlético Vélez Sarsfield",
 			"sofascore": 7.14,
-			"rasgos": ["pulmon"]
+			"rasgos": ["pulmon"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/971423-1771007275.png?lm=4711",
+			"ratings": {
+				"stre": 57,
+				"spd": 70,
+				"jmp": 65,
+				"endu": 83,
+				"ins": 48,
+				"dnk": 48,
+				"ft": 61,
+				"fg": 48,
+				"tp": 50,
+				"oiq": 63,
+				"diq": 68,
+				"drb": 59,
+				"pss": 58,
+				"reb": 58
+			}
 		},
 		{
 			"n": "2",
@@ -373,7 +431,8 @@
 			"debut": {
 				"club": "VEL",
 				"anio": 2017
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/552628-1771007362.png?lm=4711"
 		},
 		{
 			"n": "55",
@@ -403,7 +462,8 @@
 				"club": "SMT",
 				"anio": 2019
 			},
-			"rasgos": ["recuperador"]
+			"rasgos": ["recuperador"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/486030-1771007353.png?lm=4711"
 		},
 		{
 			"n": "13",
@@ -432,7 +492,8 @@
 			"debut": {
 				"club": "ARG",
 				"anio": 2018
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/508134-1771007458.png?lm=4711"
 		},
 		{
 			"n": "61",
@@ -474,7 +535,8 @@
 				"club": null,
 				"anio": 2020
 			},
-			"college": "Club Cerro Porteño"
+			"college": "Club Cerro Porteño",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/661223-1772567326.PNG?lm=4711"
 		},
 		{
 			"n": "5",
@@ -503,7 +565,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2018
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/480764-1771006975.png?lm=4711"
 		},
 		{
 			"n": "10",
@@ -534,7 +597,8 @@
 				"anio": 2021
 			},
 			"sofascore": 7.09,
-			"rasgos": ["pegador", "habilidoso"]
+			"rasgos": ["pegador", "habilidoso"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/843126-1771006681.png?lm=4711"
 		},
 		{
 			"n": "15",
@@ -565,7 +629,8 @@
 				"anio": 2025
 			},
 			"college": "Club Atlético River Plate",
-			"sofascore": 7
+			"sofascore": 7,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/990785-1771008460.png?lm=4711"
 		},
 		{
 			"n": "21",
@@ -590,12 +655,29 @@
 			"ppp": 1.83,
 			"convocado": 32,
 			"fichado": "01/07/2024",
-			"ovr": 64,
+			"ovr": 63,
 			"debut": {
 				"club": "INS",
 				"anio": 2024
 			},
-			"sofascore": 6.97
+			"sofascore": 6.97,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1227286-1771007602.png?lm=4711",
+			"ratings": {
+				"stre": 51,
+				"spd": 61,
+				"jmp": 61,
+				"endu": 54,
+				"ins": 58,
+				"dnk": 59,
+				"ft": 61,
+				"fg": 67,
+				"tp": 65,
+				"oiq": 72,
+				"diq": 39,
+				"drb": 67,
+				"pss": 74,
+				"reb": 44
+			}
 		},
 		{
 			"n": "8",
@@ -625,7 +707,8 @@
 				"club": "SAN",
 				"anio": 2019
 			},
-			"college": "Club Atlético San Lorenzo de Almagro"
+			"college": "Club Atlético San Lorenzo de Almagro",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1SLHrio4bV2Mxcva3xc6N3PIkWrRgt3cQ-MSSsvQ_s8xY9ZOt6wTA0Ek&s=10"
 		},
 		{
 			"n": "72",
@@ -658,7 +741,8 @@
 			"lesion": {
 				"tipo": "Lesión en el muslo",
 				"partidos": 3
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1402952-1771008192.png?lm=4711"
 		},
 		{
 			"n": "25",
@@ -712,7 +796,8 @@
 				"anio": 2019
 			},
 			"college": "Club Deportivo Atlético Huila",
-			"rasgos": ["veloz"]
+			"rasgos": ["veloz"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/628879-1771007680.png?lm=4711"
 		},
 		{
 			"n": "19",
@@ -742,7 +827,8 @@
 				"club": null,
 				"anio": 2020
 			},
-			"college": "Club Nacional de Football"
+			"college": "Club Nacional de Football",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/970866-1720713871.jpg?lm=4711"
 		},
 		{
 			"n": "17",
@@ -767,12 +853,29 @@
 			"ppp": 1.88,
 			"convocado": 26,
 			"fichado": "03/03/2026",
-			"ovr": 63,
+			"ovr": 62,
 			"debut": {
 				"club": "QUI",
 				"anio": 2017
 			},
-			"college": "Club Atlético Newell's Old Boys"
+			"college": "Club Atlético Newell's Old Boys",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/503001-1720984447.png?lm=4711",
+			"ratings": {
+				"stre": 64,
+				"spd": 59,
+				"jmp": 70,
+				"endu": 65,
+				"ins": 66,
+				"dnk": 64,
+				"ft": 62,
+				"fg": 74,
+				"tp": 62,
+				"oiq": 70,
+				"diq": 38,
+				"drb": 60,
+				"pss": 55,
+				"reb": 52
+			}
 		},
 		{
 			"n": "7",
@@ -802,7 +905,8 @@
 				"club": null,
 				"anio": 2018
 			},
-			"college": "Universidad de Chile"
+			"college": "Universidad de Chile",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/534037-1771008368.png?lm=4711"
 		},
 		{
 			"n": "9",
@@ -832,7 +936,8 @@
 				"club": null,
 				"anio": 2014
 			},
-			"college": "Club Social y Deportivo Juventud Unida (Charata)"
+			"college": "Club Social y Deportivo Juventud Unida (Charata)",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/702259-1771006868.png?lm=4711"
 		},
 		{
 			"n": "11",
@@ -862,7 +967,8 @@
 				"club": null,
 				"anio": 2022
 			},
-			"college": "Football Club Internazionale Milano"
+			"college": "Football Club Internazionale Milano",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/538919-1771008408.png?lm=4711"
 		}
 	]
 }

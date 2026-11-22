@@ -1,6 +1,6 @@
 {
 	"equipo": "NOB",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 22/11/2026); faltan debut, inferiores, OVR, lesiones, capitán, rasgos y contexto",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 22/11/2026); debut, inferiores, Sofascore, rasgos, capitán, lesión, parientes y contexto: datos del usuario. OVR: Claude.",
 	"reemplaza": [
 		{
 			"nombre": "Gabriel Arias",
@@ -58,7 +58,14 @@
 			"salio": 0,
 			"ppp": 1.52,
 			"convocado": 26,
-			"fichado": "01/01/2024"
+			"fichado": "01/01/2024",
+			"ovr": 64,
+			"debut": {
+				"club": "NOB",
+				"anio": 2024
+			},
+			"college": "Club Atlético River Plate",
+			"sofascore": 7.37
 		},
 		{
 			"n": "21",
@@ -82,7 +89,12 @@
 			"salio": 1,
 			"ppp": 0.29,
 			"convocado": 20,
-			"fichado": "14/01/2026"
+			"fichado": "14/01/2026",
+			"ovr": 52,
+			"debut": {
+				"club": "OLI",
+				"anio": 2007
+			}
 		},
 		{
 			"n": "17",
@@ -106,7 +118,13 @@
 			"salio": 1,
 			"ppp": 1.55,
 			"convocado": 11,
-			"fichado": "01/07/2026"
+			"fichado": "01/07/2026",
+			"ovr": 61,
+			"debut": {
+				"club": "VEL",
+				"anio": 2015
+			},
+			"rasgos": ["tactico"]
 		},
 		{
 			"n": "22",
@@ -130,7 +148,12 @@
 			"salio": 2,
 			"ppp": 1.17,
 			"convocado": 23,
-			"fichado": "19/01/2026"
+			"fichado": "19/01/2026",
+			"ovr": 56,
+			"debut": {
+				"club": "BOC",
+				"anio": 2019
+			}
 		},
 		{
 			"n": "15",
@@ -154,7 +177,17 @@
 			"salio": 0,
 			"ppp": 0.86,
 			"convocado": 17,
-			"fichado": "19/07/2024"
+			"fichado": "19/07/2024",
+			"ovr": 61,
+			"debut": {
+				"club": null,
+				"anio": 2016
+			},
+			"college": "Club Olimpia",
+			"lesion": {
+				"tipo": "Fractura de tibia y peroné",
+				"partidos": 12
+			}
 		},
 		{
 			"n": "2",
@@ -171,7 +204,12 @@
 			"goles": 0,
 			"min": 0,
 			"convocado": 8,
-			"fichado": "01/01/2024"
+			"fichado": "01/01/2024",
+			"ovr": 46,
+			"debut": {
+				"club": "NOB",
+				"anio": 2024
+			}
 		},
 		{
 			"n": "16",
@@ -195,7 +233,13 @@
 			"salio": 1,
 			"ppp": 1.7,
 			"convocado": 11,
-			"fichado": "13/08/2026"
+			"fichado": "13/08/2026",
+			"ovr": 63,
+			"debut": {
+				"club": "QUI",
+				"anio": 2017
+			},
+			"sofascore": 7.28
 		},
 		{
 			"n": "25",
@@ -219,7 +263,13 @@
 			"salio": 2,
 			"ppp": 1.22,
 			"convocado": 26,
-			"fichado": "14/01/2026"
+			"fichado": "14/01/2026",
+			"ovr": 57,
+			"debut": {
+				"club": "CIR",
+				"anio": 2019
+			},
+			"college": "Club Estudiantes de La Plata"
 		},
 		{
 			"n": "23",
@@ -243,7 +293,13 @@
 			"salio": 1,
 			"ppp": 1.07,
 			"convocado": 23,
-			"fichado": "14/01/2026"
+			"fichado": "14/01/2026",
+			"ovr": 58,
+			"debut": {
+				"club": null,
+				"anio": 2016
+			},
+			"college": "Club Atlético Vélez Sarsfield (San Ramón)"
 		},
 		{
 			"n": "28",
@@ -267,7 +323,13 @@
 			"salio": 1,
 			"ppp": 1.22,
 			"convocado": 32,
-			"fichado": "01/01/2026"
+			"fichado": "01/01/2026",
+			"ovr": 61,
+			"debut": {
+				"club": "NOB",
+				"anio": 2026
+			},
+			"sofascore": 6.94
 		},
 		{
 			"n": "3",
@@ -291,7 +353,12 @@
 			"salio": 6,
 			"ppp": 0.78,
 			"convocado": 24,
-			"fichado": "01/01/2022"
+			"fichado": "01/01/2022",
+			"ovr": 52,
+			"debut": {
+				"club": "NOB",
+				"anio": 2022
+			}
 		},
 		{
 			"n": "6",
@@ -315,7 +382,12 @@
 			"salio": 2,
 			"ppp": 1.53,
 			"convocado": 20,
-			"fichado": "04/03/2026"
+			"fichado": "04/03/2026",
+			"ovr": 59,
+			"debut": {
+				"club": "QUI",
+				"anio": 2020
+			}
 		},
 		{
 			"n": "4",
@@ -339,7 +411,13 @@
 			"salio": 0,
 			"ppp": 1,
 			"convocado": 6,
-			"fichado": "25/01/2025"
+			"fichado": "25/01/2025",
+			"ovr": 47,
+			"debut": {
+				"club": "AGR",
+				"anio": 2019
+			},
+			"college": "Club Atlético Vélez Sarsfield"
 		},
 		{
 			"n": "24",
@@ -363,7 +441,12 @@
 			"salio": 3,
 			"ppp": 1.33,
 			"convocado": 11,
-			"fichado": "01/07/2026"
+			"fichado": "01/07/2026",
+			"ovr": 56,
+			"debut": {
+				"club": "NOB",
+				"anio": 2015
+			}
 		},
 		{
 			"n": "5",
@@ -387,7 +470,13 @@
 			"salio": 5,
 			"ppp": 1.22,
 			"convocado": 32,
-			"fichado": "01/01/2025"
+			"fichado": "01/01/2025",
+			"ovr": 64,
+			"debut": {
+				"club": "NOB",
+				"anio": 2025
+			},
+			"capitan": true
 		},
 		{
 			"n": "10",
@@ -411,7 +500,12 @@
 			"salio": 3,
 			"ppp": 0.29,
 			"convocado": 16,
-			"fichado": "01/01/2025"
+			"fichado": "01/01/2025",
+			"ovr": 48,
+			"debut": {
+				"club": "NOB",
+				"anio": 2025
+			}
 		},
 		{
 			"n": "26",
@@ -435,7 +529,12 @@
 			"salio": 10,
 			"ppp": 1.17,
 			"convocado": 27,
-			"fichado": "22/01/2026"
+			"fichado": "22/01/2026",
+			"ovr": 59,
+			"debut": {
+				"club": "DYJ",
+				"anio": 2021
+			}
 		},
 		{
 			"n": "29",
@@ -459,7 +558,12 @@
 			"salio": 2,
 			"ppp": 1.33,
 			"convocado": 17,
-			"fichado": "01/07/2022"
+			"fichado": "01/07/2022",
+			"ovr": 48,
+			"debut": {
+				"club": "NOB",
+				"anio": 2022
+			}
 		},
 		{
 			"n": "8",
@@ -483,7 +587,12 @@
 			"salio": 4,
 			"ppp": 0.75,
 			"convocado": 24,
-			"fichado": "01/01/2023"
+			"fichado": "01/01/2023",
+			"ovr": 51,
+			"debut": {
+				"club": "NOB",
+				"anio": 2023
+			}
 		},
 		{
 			"n": "27",
@@ -507,7 +616,12 @@
 			"salio": 2,
 			"ppp": 1.57,
 			"convocado": 14,
-			"fichado": "31/07/2026"
+			"fichado": "31/07/2026",
+			"ovr": 47,
+			"debut": {
+				"club": "ARG",
+				"anio": 2024
+			}
 		},
 		{
 			"n": "20",
@@ -531,7 +645,12 @@
 			"salio": 26,
 			"ppp": 1.23,
 			"convocado": 32,
-			"fichado": "01/07/2025"
+			"fichado": "01/07/2025",
+			"ovr": 59,
+			"debut": {
+				"club": "NOB",
+				"anio": 2025
+			}
 		},
 		{
 			"n": "19",
@@ -555,10 +674,15 @@
 			"salio": 10,
 			"ppp": 1.29,
 			"convocado": 31,
-			"fichado": "01/07/2025"
+			"fichado": "01/07/2025",
+			"ovr": 52,
+			"debut": {
+				"club": "NOB",
+				"anio": 2025
+			}
 		},
 		{
-			"n": "15",
+			"n": null,
 			"nombre": "Alan",
 			"apellido": "Soñora",
 			"pos": "Mediocentro ofensivo",
@@ -579,7 +703,20 @@
 			"salio": 1,
 			"ppp": 1,
 			"convocado": 16,
-			"fichado": "21/07/2026"
+			"fichado": "21/07/2026",
+			"ovr": 52,
+			"debut": {
+				"club": "IND",
+				"anio": 2019
+			},
+			"college": "Club Atlético Boca Juniors",
+			"parientes": [
+				{
+					"tipo": "brother",
+					"nombre": "Joel Soñora"
+				}
+			],
+			"rasgos": ["larga distancia"]
 		},
 		{
 			"n": null,
@@ -596,7 +733,12 @@
 			"goles": 0,
 			"min": 0,
 			"convocado": 0,
-			"fichado": "01/01/2025"
+			"fichado": "01/01/2025",
+			"ovr": 42,
+			"debut": {
+				"club": "NOB",
+				"anio": 2025
+			}
 		},
 		{
 			"n": "33",
@@ -620,7 +762,12 @@
 			"salio": 13,
 			"ppp": 0.92,
 			"convocado": 28,
-			"fichado": "14/01/2026"
+			"fichado": "14/01/2026",
+			"ovr": 55,
+			"debut": {
+				"club": "FCO",
+				"anio": 2022
+			}
 		},
 		{
 			"n": "39",
@@ -644,7 +791,12 @@
 			"salio": 5,
 			"ppp": 1.57,
 			"convocado": 17,
-			"fichado": "01/07/2026"
+			"fichado": "01/07/2026",
+			"ovr": 47,
+			"debut": {
+				"club": "NOB",
+				"anio": 2026
+			}
 		},
 		{
 			"n": "32",
@@ -668,7 +820,20 @@
 			"salio": 7,
 			"ppp": 1.33,
 			"convocado": 9,
-			"fichado": "02/09/2026"
+			"fichado": "02/09/2026",
+			"ovr": 60,
+			"debut": {
+				"club": "JUU",
+				"anio": 2019
+			},
+			"college": "Club Atlético Vélez Sarsfield",
+			"parientes": [
+				{
+					"tipo": "brother",
+					"nombre": "Pablo Solari"
+				}
+			],
+			"rasgos": ["pulmon"]
 		},
 		{
 			"n": "18",
@@ -692,7 +857,14 @@
 			"salio": 12,
 			"ppp": 1.44,
 			"convocado": 25,
-			"fichado": "09/03/2026"
+			"fichado": "09/03/2026",
+			"ovr": 66,
+			"debut": {
+				"club": "COM",
+				"anio": 2017
+			},
+			"college": "Club Atlético Tigre",
+			"rasgos": ["veloz+"]
 		},
 		{
 			"n": null,
@@ -716,7 +888,12 @@
 			"salio": 0,
 			"ppp": 1.6,
 			"convocado": 6,
-			"fichado": "30/07/2026"
+			"fichado": "30/07/2026",
+			"ovr": 49,
+			"debut": {
+				"club": "INS",
+				"anio": 2014
+			}
 		},
 		{
 			"n": "9",
@@ -740,7 +917,13 @@
 			"salio": 13,
 			"ppp": 1.25,
 			"convocado": 24,
-			"fichado": "12/01/2026"
+			"fichado": "12/01/2026",
+			"ovr": 63,
+			"debut": {
+				"club": null,
+				"anio": 2018
+			},
+			"college": "Rampla Juniors Fútbol Club"
 		},
 		{
 			"n": "99",
@@ -764,7 +947,13 @@
 			"salio": 7,
 			"ppp": 1.04,
 			"convocado": 31,
-			"fichado": "19/01/2024"
+			"fichado": "19/01/2024",
+			"ovr": 58,
+			"debut": {
+				"club": null,
+				"anio": 2016
+			},
+			"college": "Liverpool Fútbol Club"
 		},
 		{
 			"n": "36",
@@ -788,7 +977,13 @@
 			"salio": 1,
 			"ppp": 1.29,
 			"convocado": 25,
-			"fichado": "01/01/2026"
+			"fichado": "01/01/2026",
+			"ovr": 46,
+			"debut": {
+				"club": "NOB",
+				"anio": 2026
+			}
 		}
-	]
+	],
+	"contexto": "La temporada de Newell's tuvo dos caras irreconocibles: un arranque en llamas, hundido en crisis institucional, meses sin ganar y eliminación temprana en Copa Argentina, seguido por una reconstrucción pragmática que despejó el descenso y lo llevó a playoffs. De ser una defensa permeable pasó a un bloque compacto y paciente, duro de vencer pero atado por un plantel corto y la escasez de gol que multiplicó los empates. Walter Mazzantti fue el más determinante ganando duelos individuales, junto al empuje de Matías Cóccaro como referencia de área, el mando de Luca Regiardo en el medio y la firmeza de Josué Reinatti tras desplazar a un flojo Gabriel Arias. Sofascore: solo tres jugadores superan 6,90. Tabla anual 2026: 22.º (38 pts, 31-40); Apertura 14.º zona A; Clausura 6.º grupo A."
 }

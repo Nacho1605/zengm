@@ -66,7 +66,8 @@
 				"anio": 2016
 			},
 			"college": "Club Atlético Peñarol",
-			"sofascore": 7.37
+			"sofascore": 7.37,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/294843-1758833003.png?lm=4711"
 		},
 		{
 			"n": "23",
@@ -96,7 +97,8 @@
 				"club": "SAR",
 				"anio": 2015
 			},
-			"college": "Club Atlético Boca Juniors"
+			"college": "Club Atlético Boca Juniors",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/239697-1758832644.png?lm=4711"
 		},
 		{
 			"n": "28",
@@ -144,7 +146,8 @@
 			"debut": {
 				"club": "BAN",
 				"anio": 2017
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/444100-1758832980.png?lm=4711"
 		},
 		{
 			"n": "14",
@@ -176,7 +179,8 @@
 			},
 			"college": "Club Atlético Paraná",
 			"sofascore": 6.94,
-			"rasgos": ["potente"]
+			"rasgos": ["potente"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/457061-1758831660.png?lm=4711"
 		},
 		{
 			"n": "16",
@@ -206,7 +210,8 @@
 				"club": null,
 				"anio": 2013
 			},
-			"college": "Danubio Fútbol Club"
+			"college": "Danubio Fútbol Club",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/285322-1758832051.png?lm=4711"
 		},
 		{
 			"n": "17",
@@ -237,7 +242,8 @@
 				"anio": 2009
 			},
 			"sofascore": 7.3,
-			"rasgos": ["aereo"]
+			"rasgos": ["aereo"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/125019-1758832195.png?lm=4711"
 		},
 		{
 			"n": "13",
@@ -266,7 +272,8 @@
 			"debut": {
 				"club": "BEL",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1322673-1758835644.png?lm=4711"
 		},
 		{
 			"n": "3",
@@ -295,7 +302,8 @@
 			"debut": {
 				"club": "BAN",
 				"anio": 2017
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/440371-1758830625.png?lm=4711"
 		},
 		{
 			"n": "26",
@@ -325,7 +333,8 @@
 				"club": null,
 				"anio": 2023
 			},
-			"college": "Club Sportivo 2 de Mayo"
+			"college": "Club Sportivo 2 de Mayo",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/980793-1715523597.jpg?lm=4711"
 		},
 		{
 			"n": "45",
@@ -354,7 +363,8 @@
 			"debut": {
 				"club": "BEL",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1379586-1758834408.png?lm=4711"
 		},
 		{
 			"n": "5",
@@ -385,7 +395,8 @@
 				"anio": 2020
 			},
 			"college": "Club Atlético Unión",
-			"rasgos": ["recuperador"]
+			"rasgos": ["recuperador"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/697065-1758830909.png?lm=4711"
 		},
 		{
 			"n": "21",
@@ -415,7 +426,8 @@
 				"club": "BOC",
 				"anio": 2020
 			},
-			"sofascore": 7.14
+			"sofascore": 7.14,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/744279-1724864061.jpg?lm=4711"
 		},
 		{
 			"n": "53",
@@ -444,7 +456,8 @@
 			"debut": {
 				"club": "BEL",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1264273-1758834868.png?lm=4711"
 		},
 		{
 			"n": "10",
@@ -476,7 +489,8 @@
 			},
 			"sofascore": 7.04,
 			"capitan": true,
-			"rasgos": ["gambeta"]
+			"rasgos": ["gambeta"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/230030-1758831350.png?lm=4711"
 		},
 		{
 			"n": "11",
@@ -501,13 +515,30 @@
 			"ppp": 1.86,
 			"convocado": 38,
 			"fichado": "06/01/2024",
-			"ovr": 64,
+			"ovr": 63,
 			"debut": {
 				"club": "SAN",
 				"anio": 2017
 			},
 			"sofascore": 6.92,
-			"rasgos": ["pegador"]
+			"rasgos": ["pegador"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/442679-1758831469.png?lm=4711",
+			"ratings": {
+				"stre": 47,
+				"spd": 53,
+				"jmp": 57,
+				"endu": 58,
+				"ins": 58,
+				"dnk": 59,
+				"ft": 62,
+				"fg": 69,
+				"tp": 80,
+				"oiq": 70,
+				"diq": 42,
+				"drb": 66,
+				"pss": 75,
+				"reb": 43
+			}
 		},
 		{
 			"n": "51",
@@ -536,7 +567,8 @@
 			"debut": {
 				"club": "BEL",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1273494-1758834540.png?lm=4711"
 		},
 		{
 			"n": "20",
@@ -567,7 +599,8 @@
 				"anio": 2007
 			},
 			"sofascore": 7.04,
-			"rasgos": ["habilidoso", "pase"]
+			"rasgos": ["habilidoso", "pase"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/76163-1757676848.jpg?lm=4711"
 		},
 		{
 			"n": "15",
@@ -596,7 +629,8 @@
 			"debut": {
 				"club": "BEL",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1377440-1758835625.png?lm=4711"
 		},
 		{
 			"n": "30",
@@ -625,7 +659,8 @@
 			"debut": {
 				"club": "BEL",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1292347-1758832521.png?lm=4711"
 		},
 		{
 			"n": "24",
@@ -654,7 +689,8 @@
 			"debut": {
 				"club": "BEL",
 				"anio": 2013
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/282544-1709366982.jpg?lm=4711"
 		},
 		{
 			"n": "29",
@@ -683,7 +719,8 @@
 					"tipo": "brother",
 					"nombre": "Lucas Melano"
 				}
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1377439-1758835458.png?lm=4711"
 		},
 		{
 			"n": "22",
@@ -723,7 +760,8 @@
 					"nombre": "Brian Fernández"
 				}
 			],
-			"rasgos": ["goleador"]
+			"rasgos": ["goleador"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/333921-1758832545.png?lm=4711"
 		},
 		{
 			"n": "9",
@@ -748,10 +786,27 @@
 			"ppp": 1.58,
 			"convocado": 34,
 			"fichado": "12/08/2023",
-			"ovr": 64,
+			"ovr": 65,
 			"debut": {
 				"club": "QUI",
 				"anio": 2014
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/334586-1758831368.png?lm=4711",
+			"ratings": {
+				"stre": 70,
+				"spd": 54,
+				"jmp": 60,
+				"endu": 55,
+				"ins": 63,
+				"dnk": 60,
+				"ft": 55,
+				"fg": 67,
+				"tp": 55,
+				"oiq": 68,
+				"diq": 36,
+				"drb": 54,
+				"pss": 49,
+				"reb": 46
 			}
 		},
 		{
@@ -781,7 +836,8 @@
 			"debut": {
 				"club": "BEL",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/227259"
 		}
 	]
 }

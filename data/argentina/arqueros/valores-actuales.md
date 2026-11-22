@@ -1,10 +1,10 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.19.1_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.20_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
-## Equipos cargados (17)
+## Equipos cargados (18)
 
 | Equipo | Arquero | Lista | Hoy | Cambio | PJ 2026 | Min |
 |---|---|---|---|---|---|---|
@@ -23,13 +23,15 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | GIM | Nelson Insfrán | 64 | 66 | +2 | 30 | 2638 |
 | VEL | Tomás Marchiori | 66 | 66 | = | 19 | 1710 |
 | IND | Santiago Mele | 60 | 65 | +5 | 4 | 360 |
-| INS | Marcos Ledesma | 59 | 64 | +5 | 17 | 1530 |
+| NOB | Josué Reinatti | 52 | 64 | +12 | 21 | 1890 |
 | TAL | Ezequiel Unsaín | 63 | 64 | +1 | 16 | 1440 |
 | VEL | Facundo Sanguinetti | 62 (BAN) | 64 | +2 | 0 | 0 |
 | BOC | Agustín Marchesín | 63 | 63 | = | 13 | 1084 |
+| INS | Marcos Ledesma | 59 | 63 | +4 | 17 | 1530 |
 | SLO | José Devecchi | 43 | 60 | +17 | 15 | 1287 |
 | BOC | Leandro Brey | 55 | 55 | = | 17 | 1400 |
 | EST | Fabricio Iacovich | 57 | 55 | −2 | 13 | 1125 |
+| NOB | Gabriel Arias | 58 | 52 | −6 | 7 | 613 |
 | GIM | Harlen Castillo | 42 | 47 | +5 | 5 | 450 |
 | ROS | Axel Werner | 51 | 47 | −4 | 3 | 270 |
 | BEL | Manuel Vicentini | 45 | 46 | +1 | 3 | 270 |
@@ -67,7 +69,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | 42 | Lautaro Morales | LAN | libre |
 | 37 | Lautaro Maldonado | INS | no está en el archivo |
 
-## Equipos sin cargar: la lista es la base (24)
+## Equipos sin cargar: la lista es la base (22)
 
 | Lista | Arquero | Club en la lista | Hoy en el archivo (datos 2023) |
 |---|---|---|---|
@@ -78,13 +80,11 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | 61 | Alan Aguerre | CCO | libre |
 | 60 | Matías Mansilla | UNI | CCO |
 | 58 | Lucas Acosta | ALD | libre |
-| 58 | Gabriel Arias | NOB | libre |
 | 57 | Luis Ingolotti | ATU | no está en el archivo |
 | 56 | Iván Arboleda | SAR | no está en el archivo |
 | 55 | César Rigamonti | GEM | no está en el archivo |
 | 54 | Lucas Bruera | ERC | no está en el archivo |
 | 53 | Juan Espínola | BAR | no está en el archivo |
-| 52 | Josué Reinatti | NOB | no está en el archivo |
 | 49 | Agustín Lastra | ERC | no está en el archivo |
 | 45 | Federico Gomes Gerth | UNI | no está en el archivo |
 | 44 | Ignacio Chicco | ALD | ALD |

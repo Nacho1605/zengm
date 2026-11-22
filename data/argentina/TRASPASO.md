@@ -1,16 +1,19 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 22/11/2026. Última versión: **v2.19.2**
-(`data/argentina/BBGM_Argentina_2026_v.2.19.2_futbol.json`): 17 de 30 equipos
-con plantel 2026 (último: Instituto). Validación con el esquema oficial: 0
-errores. Auditoría: 53 controles, 9 con alertas; en los equipos cargados solo
-José Sosa (41 años, real), homónimos reales y las 50 fotos de Belgrano e
-Instituto (el usuario las pone en el juego juntas y manda la liga exportada:
-importarla con la versión sobre la que jugó como base).
+Estado al 22/11/2026. Última versión: **v2.20**
+(`data/argentina/BBGM_Argentina_2026_v.2.20_futbol.json`): 18 de 30 equipos
+con plantel 2026 (último: Newell's). v2.19.3 = liga del usuario importada
+sobre la v2.19.2 (50 fotos de BEL e INS y 7 ratings que ajustó en el juego).
+Validación: 0 errores. Auditoría: 53 controles, 9 con alertas; en los equipos
+cargados solo José Sosa, homónimos reales y las 32 fotos de NOB.
 
-**Lo que sigue:** Newell's (NOB, v2.20) y Estudiantes de Río Cuarto (ERC,
-v2.21) a la vez. Capturas de NOB transcriptas en `planteles/preparacion/`;
-falta el comentario de los dos y las capturas de ERC. Fotos de BEL e INS.
+**Lo que sigue:** Estudiantes de Río Cuarto (ERC, v2.21) está completo en
+`planteles/preparacion/ERC.json` (con OVR, rasgos y salidas; probado con una
+altura provisoria: 0 errores) pero **falta la altura de Juan Chala**: con ese
+dato, pasarlo a `planteles/`, sumar ERC a `armar-v2.sh` y sus rasgos a
+`rasgos-usuario.ts` (Maffini aereo; Rosané recuperador; A. Cabrera
+recuperador, pulmon, cerebro; Talpone pulmon; Alanís larga distancia,
+centrador). Preguntas abiertas en §7.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -19,7 +22,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 - **Fase 1 (v1.x, terminada):** esqueleto de la liga. Motor de fútbol con
   ajustes del archivo (`activar-futbol.ts`), 163 equipos (30 activos), zonas,
   premios y lesiones en español, drafts generados con norma de posición.
-- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **17 de
+- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **18 de
   30** equipos.
 - **Fase 3 (futura):** historia de la liga (temporadas pasadas, campeones,
   premios, Salón de la Fama — hay 32 retirados en el Salón, mal hechos, como
@@ -28,7 +31,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 ## 2. Equipos
 
 Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
-`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN HUR TAL BEL INS`.
+`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN HUR TAL BEL INS NOB`.
 
 | Abrev | En el juego | Zona / división | |
 |---|---|---|---|
@@ -57,7 +60,7 @@ Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
 | ERC | Río Cuarto Lions (Estudiantes RC) | Fed / Córdoba | |
 | UNI | Santa Fe Royals (Unión) | Fed / Santa Fe | |
 | ROS | Rosario Scoundrels (Central, "CARC") | Fed / Santa Fe | ✔ |
-| NOB | Rosario Lepers (Newell's) | Fed / Santa Fe | |
+| NOB | Rosario Lepers (Newell's) | Fed / Santa Fe | ✔ |
 | ATU | Tucumán Deans | Fed / Noroeste | |
 | CCO | Santiago Railroaders (Central Córdoba SdE) | Fed / Chaqueña | |
 | GEM | Mendoza 33ers (Gimnasia de Mendoza) | Fed / Cuyo | |
@@ -160,7 +163,8 @@ Once (promedio de los 11 mejores), v2.15.3: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
 EST 67,6 · VEL 67,0 · IRM 66,7 · ARG 66,6 · LAN 65,7 · GIM 65,6 · IND 65,5 ·
 RAC 65,5 · SLO 64,6 · RIE 60,5; v2.17: HUR 64,5 (15.º en la anual) y TAL 63,5
 (21.º); v2.18: BEL 66,8 (10.º en la anual y campeón), HUR 64,7 y TAL 64,3; v2.19: INS
-65,3 (8.º en la anual, 1.º de su grupo en el Clausura). Valoración de equipo del propio juego (Power
+65,3 (8.º en la anual, 1.º de su grupo en el Clausura); v2.20: NOB 61,9 (22.º;
+playoffs del Clausura). ERC (30.º, descendido) quedaría en 56,5. Valoración de equipo del propio juego (Power
 Rankings que mandó el usuario, sobre la v2.15.2, con los 17 sin cargar
 desactivados): RIV 136 · BOC 134 · ROS 127 · EST 116 · ARG 114 · IRM 114 ·
 VEL 112 · LAN 108 · GIM 106 · IND 105 · SLO 101 · RAC 99 (107 sin
@@ -225,7 +229,8 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
 Capitanes (contexto, no suman puntos): Paredes (BOC), Otamendi (RIV),
 Cambeses (RAC), Marcone (IND), Tripichio y Devecchi (SLO, comparten),
 E. Gómez (VEL), Di María (ROS), Izquierdoz (LAN), Oroz (ARG), Nacho Fernández
-(GIM), Álex Arce (IRM), Céliz (RIE), Galíndez (HUR), Lucas Zelarayán (BEL), Fernando Alarcón (INS). Estudiantes no tiene
+(GIM), Álex Arce (IRM), Céliz (RIE), Galíndez (HUR), Lucas Zelarayán (BEL), Fernando Alarcón (INS), Luca Regiardo (NOB, 20 años).
+ERC no tiene capitán fijo; suele serlo Maffini (anotado con `capitan`). Estudiantes no tiene
 capitán fijo: Carrillo 5 capitanías, Sosa 3, Núñez 3, Muslera 2, González
 Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 (los dos con `capitan`, como Tripichio y Devecchi).
@@ -309,6 +314,18 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    playoffs eliminó a Talleres, Unión y Argentinos y le ganó la final a
    River); Morales sin draft con College "Club Atlético Paraná" (correcto).
    Menores de 19: resuelto en la v2.18.2 (`propuesta-juveniles.md`).
+   **Abierto (v2.20):** (a) altura de Juan Chala (ERC). (b) Rasgo nuevo
+   "larga distancia" (Soñora, Alanís): se definió como remate de lejos y
+   envíos largos (tp +10, pss +4); confirmar qué quiere decir el usuario.
+   (c) Camisetas: Transfermarkt repite el 18 (Mazzanti y Mateo García) y el
+   15 (Salcedo y Soñora) en NOB: García y Soñora sin número (lo da el juego).
+   (d) Tirado (NOB) figura en el plantel con ícono de préstamo y sin
+   convocatorias: cargado igual. (e) Lesiones estimadas: Salcedo 12 partidos
+   (fractura de tibia y peroné por un choque el 12/06), Fenoglio y Ruiz Díaz
+   4, Lucas González 5 (cruzado, operados en enero-marzo). (f) Juan Solari
+   (RIV, reserva, 2007) no está en el archivo; Giovani Lo Celso tampoco.
+   (g) Propuesta: Olmos (TAL) 43 → 44 (jugó 3 PJ y 165' en ERC). Reinatti
+   64 (lista 52) y Gabriel Arias 52 (lista 58): avisado.
    Lodico (RAC) 63: aceptado en la v2.19.1 (con Instituto suma 28 PJ).
    Lesiones de INS sin fecha de vuelta, estimadas: Rafaelli (muslo) 3
    partidos, Albarracín (muscular) 2.
@@ -337,7 +354,9 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    Schelotto (hermanos; padres de Nicolás y de Bautista, que son primos). El
    juego solo vincula padre, hijo y hermano: los primos quedan unidos a través
    de los padres. Marcelo Barticciotto (leyenda de Colo-Colo), padre de Bruno
-   Barticciotto (HUR).
+   Barticciotto (HUR). Diego Soñora (padre de Alan y Joel) ya está como
+   retirado, pero nacido en 1967: el usuario dice 1969, draft de Boca 1988,
+   8 temporadas de GF (marcador de punta derecho) en Boca, 1988–1996.
 
 ## 8. Trampas conocidas
 
@@ -407,6 +426,16 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+- v2.20 Newell's (32). Reinatti 64 (Sofascore 7,37), Mazzanti 66 (veloz+),
+  Regiardo 64 (capitán, 20 años), Carrizo 63 (con HUR: 26 PJ). Guch 59 y
+  Gómez Mattar 52 con el criterio de juveniles. Hermanos: Soñora (Joel y el
+  padre Diego, ya existían: el cargador pasó los lazos) y Solari (Pablo).
+  Debut de Bruno Cabrera: CIR (Círculo Deportivo); en `equipos.csv` figura
+  CDO pero el usuario la cambió en el juego: buscar siempre las abreviaturas
+  en el archivo de liga. Nombres completos nuevos: OLI y VSC.
+- v2.19.3: liga del usuario importada (base v2.19.2): 50 fotos, ratings a mano
+  de G. Metilli 63, Passerini 65, Ledesma 63, Sosa 63, Cerato 65, Lázaro 63
+  y Tissera 62.
 - v2.19.2: segunda revisión de juveniles aceptada (18 OVR; Cantizano 62 → 56).
   Juveniles que casi no jugaron en Primera (< 300'): +1 si su reserva quedó
   entre las 5 primeras de la anual, −1 del 21.º para abajo.
