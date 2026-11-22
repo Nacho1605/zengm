@@ -9,9 +9,11 @@ fotos de Newell's, Estudiantes RC y Unión (las pone el usuario en el juego).
 Todas las versiones se rearman idénticas desde cero (la v2.21.1 también, con
 el cargador nuevo).
 
-**Lo que sigue:** respuesta del usuario sobre la lesión de Gomes Gerth (hoy 3
-partidos; preguntó si no son pocos: la lesión es del 10/03, pasaron 8 meses y
-medio). Después: BAR, BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO,
+**Lo que sigue:** v2.22.2 = la liga del usuario con las fotos de NOB, ERC y
+UNI (las pone sobre la v2.22.1: importarla con esa base) más Gomes Gerth 7
+partidos (ya está en `planteles/UNI.json`, aceptado por el usuario; sin
+versión armada todavía). Después, Barracas Central (BAR, v2.23), que elige
+Claude: completa la división Capital. Después: BAR, BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO,
 GEM. La liga que mandó el usuario el 22/11 (noche) era idéntica a la v2.21.1
 (misma huella): todavía no puso las fotos de NOB y ERC.
 
@@ -453,7 +455,7 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   `reemplaza`: 12 (Mansilla estaba en CCO, Menossi en TIG, Estigarribia en
   ATU, Luna Diale en UNI y 8 libres). Lesiones estimadas: Vargas 26 partidos
   (cruzado del 25/08 con dos operaciones, vuelta a fines de mayo de 2027) y
-  Gomes Gerth 3 (cruzado del 10/03). Alturas del usuario: Fagioli 1,80 y
+  Gomes Gerth 3 (cruzado del 10/03; en la v2.22.2, 7 a pedido del usuario). Alturas del usuario: Fagioli 1,80 y
   Ayala 1,74 (dijo "entre 1,72 y 1,75"). Ramírez sin número (Transfermarkt
   le da el 43, que es de Giaccone, que llegó antes). Rasgos: Pittón larga
   distancia, Menossi cerebro, Malcorra pelota parada, Estigarribia aéreo.
