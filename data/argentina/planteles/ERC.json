@@ -1,6 +1,6 @@
 {
 	"equipo": "ERC",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 22/11/2026); debut, inferiores, Sofascore, rasgos, capitán, lesiones, nacionalidad de Hesar y contexto: datos del usuario. OVR: Claude. Falta la altura de Chala.",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 22/11/2026); debut, inferiores, Sofascore, rasgos, capitán, lesiones, nacionalidad de Hesar y contexto: datos del usuario. OVR: Claude. Altura de Chala: dato del usuario (1,86).",
 	"contexto": "Estudiantes de Río Cuarto protagonizó una de las campañas más pobres del siglo en Primera División, consumando un regreso fugaz a la segunda categoría marcado por una inferioridad casi permanente. Lejos de adaptarse con el correr de las fechas, el equipo vivió desbordado entre cambios de mando, una rotación caótica en el arco —donde desfilaron varios guardametas sin afirmarse— y un plantel que nunca estuvo a la altura. Encerrado en bloques bajos y sin recursos para elaborar, dependió de envíos largos y de la poca claridad que aportaron Gabriel Alanís con su pegada y Siro Rosané en la distribución, mientras Tomás González sostuvo el ritmo desde el despliegue. La falta de gol y la fragilidad atrás lo condenaron de principio a fin. Sofascore: solo Alejandro Cabrera supera 6,90. Sin capitán fijo; suele serlo Gonzalo Maffini. Tabla anual 2026: 30.º y último (14 pts, 15-47); Apertura 15.º zona B; Clausura 15.º grupo B; descendió.",
 	"reemplaza": [
 		{
@@ -256,9 +256,7 @@
 			},
 			"sofascore": 6.84,
 			"capitan": true,
-			"rasgos": [
-				"aereo"
-			]
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": "30",
@@ -525,9 +523,7 @@
 				"anio": 2021
 			},
 			"sofascore": 6.89,
-			"rasgos": [
-				"recuperador"
-			]
+			"rasgos": ["recuperador"]
 		},
 		{
 			"n": "5",
@@ -558,11 +554,7 @@
 				"anio": 2016
 			},
 			"sofascore": 7.05,
-			"rasgos": [
-				"recuperador",
-				"pulmon",
-				"cerebro"
-			]
+			"rasgos": ["cerebro", "recuperador", "pulmon"]
 		},
 		{
 			"n": "19",
@@ -594,9 +586,7 @@
 			},
 			"college": "Club Estudiantes de La Plata",
 			"leal": true,
-			"rasgos": [
-				"pulmon"
-			]
+			"rasgos": ["pulmon"]
 		},
 		{
 			"n": "17",
@@ -626,10 +616,7 @@
 				"club": "BEL",
 				"anio": 2015
 			},
-			"rasgos": [
-				"larga distancia",
-				"centrador"
-			]
+			"rasgos": ["larga distancia", "centrador"]
 		},
 		{
 			"n": "10",
@@ -654,7 +641,7 @@
 			"ppp": 0.42,
 			"convocado": 31,
 			"fichado": "08/01/2025",
-			"ovr": 57,
+			"ovr": 56,
 			"debut": {
 				"club": "DOU",
 				"anio": 2023
@@ -684,7 +671,7 @@
 			"ppp": 0.8,
 			"convocado": 15,
 			"fichado": "23/03/2026",
-			"ovr": 46,
+			"ovr": 44,
 			"debut": {
 				"club": "ROS",
 				"anio": 2019
@@ -742,7 +729,7 @@
 			"ppp": 0.43,
 			"convocado": 16,
 			"fichado": "18/07/2026",
-			"ovr": 56,
+			"ovr": 57,
 			"debut": {
 				"club": null,
 				"anio": 2016
@@ -756,7 +743,7 @@
 			"pos": "Extremo derecho",
 			"nac": "04/03/2004",
 			"pais": "Colombia",
-			"altura": null,
+			"altura": 1.86,
 			"pie": null,
 			"contrato": "31/12/2027",
 			"valor": 300000,
@@ -772,7 +759,7 @@
 			"ppp": 0.33,
 			"convocado": 10,
 			"fichado": "01/08/2026",
-			"ovr": 45,
+			"ovr": 44,
 			"debut": {
 				"club": null,
 				"anio": 2024
@@ -889,7 +876,7 @@
 			"ppp": 0.25,
 			"convocado": 5,
 			"fichado": "01/01/2025",
-			"ovr": 46,
+			"ovr": 45,
 			"debut": {
 				"club": "SMT",
 				"anio": 2019

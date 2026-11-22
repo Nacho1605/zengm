@@ -291,9 +291,10 @@ export const FORMA_2: Forma = {
 		// Arquetipos que indica el usuario. Con "+" (ej.: "gambeta+") el efecto
 		// es una vez y media el normal: el que se destaca aun entre los de su tipo
 		goleador: { ins: 10, dnk: 6 },
+		// Remate de larga distancia ("pegador" hasta la v2.20.1: el usuario lo
+		// renombró porque "pegador" suena a que pega patadas)
+		"larga distancia": { tp: 10, fg: 6 },
 		pegador: { tp: 10, fg: 6 },
-		// Remate y envíos de larga distancia (v2.20; Soñora, Alanís)
-		"larga distancia": { tp: 10, pss: 4 },
 		aereo: { jmp: 8, dnk: 5, reb: 4 },
 		gambeta: { drb: 12, spd: 2 },
 		veloz: { spd: 12, endu: 2 },

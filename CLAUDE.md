@@ -48,6 +48,7 @@ node tools/argentina/auditar.ts ARCHIVO.json     # 53 controles
 node tools/argentina/escalera.ts ARCHIVO.json 52 EQUIPO   # OVR por posición
 node tools/argentina/ver-equipo.ts EQUIPO [...]  # plantel por línea con datos
 node tools/argentina/cruces.ts                   # jugadores con números en dos clubes
+node tools/argentina/vecinos.ts ARCHIVO.json EQUIPO  # cada jugador contra sus vecinos de la escalera
 node tools/argentina/arqueros.ts ARCHIVO.json > data/argentina/arqueros/valores-actuales.md  # lista de arqueros vs hoy
 node tools/argentina/ajustar-ovr.ts EQUIPO APELLIDO OVR  # cambia un OVR (y sus ratings a mano)
 node tools/argentina/desde-juego.ts LIGA_DEL_USUARIO.json VERSION_QUE_USÓ.json # importa fotos, camisetas, ratings, parientes y equipos
@@ -94,9 +95,8 @@ v2.14.1 → v2.14.2).
   margen: hay altos débiles y bajos fuertes). Ningún rating llega a 100: techo
   suave desde 93 (cada punto cuenta la mitad), tope 95, en todo el archivo.
 - Rasgos de juego (arquetipos) en el plantel (`"rasgos"`), según el usuario:
-  goleador, pegador, aereo, gambeta, veloz, pelota parada, habilidoso, pase,
-  cerebro, centrador, recuperador, potente, pulmon, tactico, larga distancia
-  (v2.20; significado a confirmar); arqueros:
+  goleador, larga distancia (antes "pegador"), aereo, gambeta, veloz, pelota parada, habilidoso, pase,
+  cerebro, centrador, recuperador, potente, pulmon, tactico; arqueros:
   reflejos, achique, pies; defecto: lento. Con "+" (ej. `gambeta+`) el efecto
   es 1,5 veces. Dan forma; el OVR no cambia. Efectos en `ratings-futbol.ts`;
   la lista del usuario, en `tools/argentina/rasgos-usuario.ts`. Pedirlos con
@@ -112,7 +112,8 @@ v2.14.1 → v2.14.2).
     son reglas. Escalonar el plantel según la jerarquía real; no amontonar a
     los titulares en el mismo valor ni dejar huecos sin razón.
   - Antes de dar cada valor, compararlo en la escalera con los de ese número y
-    los de arriba y abajo: ¿es mejor, igual o peor que ellos?
+    los de arriba y abajo: ¿es mejor, igual o peor que ellos? (`vecinos.ts`).
+    Cada OVR tiene que estar justificado con un par concreto de la escalera.
   - Leer más allá de los números: rol (titular fijo, rotación, revulsivo, el que
     entra a cerrar partidos), jerarquía en el club, ídolos, minutos decisivos.
     Los defensores no viven del gol; hay ofensivos que tampoco.

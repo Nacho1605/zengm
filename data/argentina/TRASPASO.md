@@ -1,19 +1,15 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 22/11/2026. Última versión: **v2.20**
-(`data/argentina/BBGM_Argentina_2026_v.2.20_futbol.json`): 18 de 30 equipos
-con plantel 2026 (último: Newell's). v2.19.3 = liga del usuario importada
-sobre la v2.19.2 (50 fotos de BEL e INS y 7 ratings que ajustó en el juego).
-Validación: 0 errores. Auditoría: 53 controles, 9 con alertas; en los equipos
-cargados solo José Sosa, homónimos reales y las 32 fotos de NOB.
+Estado al 22/11/2026. Última versión: **v2.21**
+(`data/argentina/BBGM_Argentina_2026_v.2.21_futbol.json`): 19 de 30 equipos
+con plantel 2026 (últimos: Newell's v2.20 y Estudiantes de Río Cuarto v2.21;
+v2.20.1 = segunda revisión de NOB con la escalera de vecinos). Validación: 0
+errores. Auditoría: 53 controles, 9 con alertas; en los equipos cargados solo
+José Sosa, homónimos reales y las 63 fotos de NOB y ERC.
 
-**Lo que sigue:** Estudiantes de Río Cuarto (ERC, v2.21) está completo en
-`planteles/preparacion/ERC.json` (con OVR, rasgos y salidas; probado con una
-altura provisoria: 0 errores) pero **falta la altura de Juan Chala**: con ese
-dato, pasarlo a `planteles/`, sumar ERC a `armar-v2.sh` y sus rasgos a
-`rasgos-usuario.ts` (Maffini aereo; Rosané recuperador; A. Cabrera
-recuperador, pulmon, cerebro; Talpone pulmon; Alanís larga distancia,
-centrador). Preguntas abiertas en §7.
+**Lo que sigue:** fotos de NOB y ERC en el juego; los 11 equipos restantes
+(BAR, BAN, PLA, DYJ, TIG, SAR, ALD, UNI, ATU, CCO, GEM). Pendiente de debate:
+cómo tratar a los jugadores de élite de las cinco grandes ligas (§7).
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -22,7 +18,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 - **Fase 1 (v1.x, terminada):** esqueleto de la liga. Motor de fútbol con
   ajustes del archivo (`activar-futbol.ts`), 163 equipos (30 activos), zonas,
   premios y lesiones en español, drafts generados con norma de posición.
-- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **18 de
+- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **19 de
   30** equipos.
 - **Fase 3 (futura):** historia de la liga (temporadas pasadas, campeones,
   premios, Salón de la Fama — hay 32 retirados en el Salón, mal hechos, como
@@ -31,7 +27,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 ## 2. Equipos
 
 Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
-`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN HUR TAL BEL INS NOB`.
+`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN HUR TAL BEL INS NOB ERC`.
 
 | Abrev | En el juego | Zona / división | |
 |---|---|---|---|
@@ -57,7 +53,7 @@ Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
 | BEL | Córdoba Pirates (Belgrano) | Fed / Córdoba | ✔ |
 | INS | Córdoba Glory (Instituto) | Fed / Córdoba | ✔ |
 | TAL | Córdoba Matadors (Talleres) | Fed / Córdoba | ✔ |
-| ERC | Río Cuarto Lions (Estudiantes RC) | Fed / Córdoba | |
+| ERC | Río Cuarto Lions (Estudiantes RC) | Fed / Córdoba | ✔ |
 | UNI | Santa Fe Royals (Unión) | Fed / Santa Fe | |
 | ROS | Rosario Scoundrels (Central, "CARC") | Fed / Santa Fe | ✔ |
 | NOB | Rosario Lepers (Newell's) | Fed / Santa Fe | ✔ |
@@ -163,8 +159,8 @@ Once (promedio de los 11 mejores), v2.15.3: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
 EST 67,6 · VEL 67,0 · IRM 66,7 · ARG 66,6 · LAN 65,7 · GIM 65,6 · IND 65,5 ·
 RAC 65,5 · SLO 64,6 · RIE 60,5; v2.17: HUR 64,5 (15.º en la anual) y TAL 63,5
 (21.º); v2.18: BEL 66,8 (10.º en la anual y campeón), HUR 64,7 y TAL 64,3; v2.19: INS
-65,3 (8.º en la anual, 1.º de su grupo en el Clausura); v2.20: NOB 61,9 (22.º;
-playoffs del Clausura). ERC (30.º, descendido) quedaría en 56,5. Valoración de equipo del propio juego (Power
+65,3 (8.º en la anual, 1.º de su grupo en el Clausura); v2.20.1: NOB 61,7 (22.º;
+playoffs del Clausura); v2.21: ERC 56,5 (30.º, descendido). Valoración de equipo del propio juego (Power
 Rankings que mandó el usuario, sobre la v2.15.2, con los 17 sin cargar
 desactivados): RIV 136 · BOC 134 · ROS 127 · EST 116 · ARG 114 · IRM 114 ·
 VEL 112 · LAN 108 · GIM 106 · IND 105 · SLO 101 · RAC 99 (107 sin
@@ -314,18 +310,16 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    playoffs eliminó a Talleres, Unión y Argentinos y le ganó la final a
    River); Morales sin draft con College "Club Atlético Paraná" (correcto).
    Menores de 19: resuelto en la v2.18.2 (`propuesta-juveniles.md`).
-   **Abierto (v2.20):** (a) altura de Juan Chala (ERC). (b) Rasgo nuevo
-   "larga distancia" (Soñora, Alanís): se definió como remate de lejos y
-   envíos largos (tp +10, pss +4); confirmar qué quiere decir el usuario.
-   (c) Camisetas: Transfermarkt repite el 18 (Mazzanti y Mateo García) y el
-   15 (Salcedo y Soñora) en NOB: García y Soñora sin número (lo da el juego).
-   (d) Tirado (NOB) figura en el plantel con ícono de préstamo y sin
-   convocatorias: cargado igual. (e) Lesiones estimadas: Salcedo 12 partidos
-   (fractura de tibia y peroné por un choque el 12/06), Fenoglio y Ruiz Díaz
-   4, Lucas González 5 (cruzado, operados en enero-marzo). (f) Juan Solari
-   (RIV, reserva, 2007) no está en el archivo; Giovani Lo Celso tampoco.
-   (g) Propuesta: Olmos (TAL) 43 → 44 (jugó 3 PJ y 165' en ERC). Reinatti
-   64 (lista 52) y Gabriel Arias 52 (lista 58): avisado.
+   **Resuelto (v2.20.1 y v2.21):** altura de Chala 1,86; "larga distancia"
+   es el viejo "pegador" (renombrado: "pegador" sonaba a que pega patadas;
+   mismo efecto, tp +10 y fg +6); camisetas repetidas de NOB, lesiones
+   estimadas y Tirado, aceptados; Olmos (TAL) 44.
+   **Para debatir (pedido del usuario):** jugadores de élite de las cinco
+   grandes ligas (la liga argentina es top 10, como la brasileña, la
+   holandesa o la portuguesa), sobre todo los que tienen familia en el
+   archivo (Giovani Lo Celso). Hoy no están en el archivo.
+   **Para drafts futuros:** Juan Solari (RIV, reserva, clase 2007; hermano de
+   Santiago y Pablo).
    Lodico (RAC) 63: aceptado en la v2.19.1 (con Instituto suma 28 PJ).
    Lesiones de INS sin fecha de vuelta, estimadas: Rafaelli (muslo) 3
    partidos, Albarracín (muscular) 2.
@@ -355,7 +349,7 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    juego solo vincula padre, hijo y hermano: los primos quedan unidos a través
    de los padres. Marcelo Barticciotto (leyenda de Colo-Colo), padre de Bruno
    Barticciotto (HUR). Diego Soñora (padre de Alan y Joel) ya está como
-   retirado, pero nacido en 1967: el usuario dice 1969, draft de Boca 1988,
+   retirado, pero nacido en 1967: el usuario dice 17/07/1969, draft de Boca 1988,
    8 temporadas de GF (marcador de punta derecho) en Boca, 1988–1996.
 
 ## 8. Trampas conocidas
@@ -426,6 +420,16 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+- v2.21 Estudiantes de Río Cuarto (31). Último y descendido: once 56,5, todos
+  por debajo de sus pares de Riestra (28.º). Bruera 54 (= lista), Lastra 48.
+  Hesar con nacionalidad siria; Chala 1,86 (dato del usuario).
+- v2.20.1: segunda revisión de NOB con la escalera de vecinos (nueva
+  herramienta `vecinos.ts`: para cada jugador, los de su grupo a ±1 de OVR
+  en otros equipos, con sus números): Carrizo 64, Salcedo 60, Luciano 53,
+  Regiardo 63 (como Medina, LAN: 20 años, 4 M€, titular), Sotelo 52, Mazzanti
+  65 (como Cortés, HUR), Guch 58, W. Núñez 56, M. García 46. En ERC (antes de
+  armarlo): T. González 56, Hesar 57, Lo Celso 44, Chala 44, L. González 45.
+  "pegador" pasa a llamarse "larga distancia"; Olmos (TAL) 44.
 - v2.20 Newell's (32). Reinatti 64 (Sofascore 7,37), Mazzanti 66 (veloz+),
   Regiardo 64 (capitán, 20 años), Carrizo 63 (con HUR: 26 PJ). Guch 59 y
   Gómez Mattar 52 con el criterio de juveniles. Hermanos: Soñora (Joel y el

@@ -1,10 +1,10 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.20_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.21_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
-## Equipos cargados (18)
+## Equipos cargados (19)
 
 | Equipo | Arquero | Lista | Hoy | Cambio | PJ 2026 | Min |
 |---|---|---|---|---|---|---|
@@ -31,7 +31,9 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | SLO | José Devecchi | 43 | 60 | +17 | 15 | 1287 |
 | BOC | Leandro Brey | 55 | 55 | = | 17 | 1400 |
 | EST | Fabricio Iacovich | 57 | 55 | −2 | 13 | 1125 |
+| ERC | Lucas Bruera | 54 | 54 | = | 9 | 810 |
 | NOB | Gabriel Arias | 58 | 52 | −6 | 7 | 613 |
+| ERC | Agustín Lastra | 49 | 48 | −1 | 13 | 1170 |
 | GIM | Harlen Castillo | 42 | 47 | +5 | 5 | 450 |
 | ROS | Axel Werner | 51 | 47 | −4 | 3 | 270 |
 | BEL | Manuel Vicentini | 45 | 46 | +1 | 3 | 270 |
@@ -42,8 +44,10 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | ARG | Gonzalo Siri | 39 | 44 | +5 | 1 | 90 |
 | LAN | Franco Petroli | 44 | 44 | = | 3 | 270 |
 | SLO | Facundo Altamirano | 43 | 44 | +1 | 1 | 90 |
+| ERC | Lautaro Herrera | — | 43 | no estaba | 5 | 450 |
 | IRM | Ramiro Macagno | 43 | 43 | = | 1 | 14 |
 | RIE | Marino Arzamendia | 39 | 42 | +3 | 4 | 360 |
+| ERC | Francisco Gualtieri | — | 40 | no estaba | 1 | 90 |
 | EST | Rodrigo Borzone | — | 40 | no estaba | 0 | 0 |
 | INS | Emanuel Sittaro | 34 | 40 | +6 | 1 | 90 |
 | ROS | Damián Fernández | — | 40 | no estaba | 0 | 0 |
@@ -65,11 +69,11 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | Lista | Arquero | Club en la lista | Hoy en el archivo |
 |---|---|---|---|
 | 72 | Orlando Gill | SLO | no está en el archivo |
-| 52 | Diego Rodríguez | ARG | ERC |
+| 52 | Diego Rodríguez | ARG | libre |
 | 42 | Lautaro Morales | LAN | libre |
 | 37 | Lautaro Maldonado | INS | no está en el archivo |
 
-## Equipos sin cargar: la lista es la base (22)
+## Equipos sin cargar: la lista es la base (20)
 
 | Lista | Arquero | Club en la lista | Hoy en el archivo (datos 2023) |
 |---|---|---|---|
@@ -83,9 +87,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | 57 | Luis Ingolotti | ATU | no está en el archivo |
 | 56 | Iván Arboleda | SAR | no está en el archivo |
 | 55 | César Rigamonti | GEM | no está en el archivo |
-| 54 | Lucas Bruera | ERC | no está en el archivo |
 | 53 | Juan Espínola | BAR | no está en el archivo |
-| 49 | Agustín Lastra | ERC | no está en el archivo |
 | 45 | Federico Gomes Gerth | UNI | no está en el archivo |
 | 44 | Ignacio Chicco | ALD | ALD |
 | 42 | Tomás Durso | ATU | libre |
