@@ -1,6 +1,6 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.21_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.21.1_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
@@ -31,7 +31,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | SLO | José Devecchi | 43 | 60 | +17 | 15 | 1287 |
 | BOC | Leandro Brey | 55 | 55 | = | 17 | 1400 |
 | EST | Fabricio Iacovich | 57 | 55 | −2 | 13 | 1125 |
-| ERC | Lucas Bruera | 54 | 54 | = | 9 | 810 |
+| ERC | Lucas Bruera | 54 | 53 | −1 | 9 | 810 |
 | NOB | Gabriel Arias | 58 | 52 | −6 | 7 | 613 |
 | ERC | Agustín Lastra | 49 | 48 | −1 | 13 | 1170 |
 | GIM | Harlen Castillo | 42 | 47 | +5 | 5 | 450 |
@@ -42,9 +42,9 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | IND | Joaquín Blázquez | — | 45 | no estaba | 1 | 90 |
 | RIV | Ezequiel Centurión | 48 | 45 | −3 | 0 | 0 |
 | ARG | Gonzalo Siri | 39 | 44 | +5 | 1 | 90 |
+| ERC | Lautaro Herrera | — | 44 | no estaba | 5 | 450 |
 | LAN | Franco Petroli | 44 | 44 | = | 3 | 270 |
 | SLO | Facundo Altamirano | 43 | 44 | +1 | 1 | 90 |
-| ERC | Lautaro Herrera | — | 43 | no estaba | 5 | 450 |
 | IRM | Ramiro Macagno | 43 | 43 | = | 1 | 14 |
 | RIE | Marino Arzamendia | 39 | 42 | +3 | 4 | 360 |
 | ERC | Francisco Gualtieri | — | 40 | no estaba | 1 | 90 |

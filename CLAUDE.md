@@ -180,6 +180,11 @@ v2.14.1 → v2.14.2).
   estimar por el tipo y el tiempo que ya pasó, y avisarle.
 - Contrato "-" en Transfermarkt: vence en 2027.
 - Jugadores que ya existen en el archivo con datos de 2023: van en
-  `reemplaza` (se borran y se crean de nuevo, sin historial).
+  `reemplaza` (se borran y se crean de nuevo, sin historial). Buscarlos por
+  apellido y año ±2 (ojo con los nombres de pila compuestos) y revisar
+  "Mismo nombre en dos jugadores" de la auditoría después de armar.
+- Jugadores de élite de las cinco grandes ligas (ej. Giovani Lo Celso): por
+  ahora quedan afuera del archivo (decisión del usuario, se retoma más
+  adelante); sus parientes en la liga se anotan en TRASPASO.
 - Si falta la altura en Transfermarkt, pedirla: el cargador se frena.
 - El juego solo vincula padre, hijo y hermano (no primos).

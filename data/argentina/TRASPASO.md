@@ -1,15 +1,22 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 22/11/2026. Última versión: **v2.21**
-(`data/argentina/BBGM_Argentina_2026_v.2.21_futbol.json`): 19 de 30 equipos
-con plantel 2026 (últimos: Newell's v2.20 y Estudiantes de Río Cuarto v2.21;
-v2.20.1 = segunda revisión de NOB con la escalera de vecinos). Validación: 0
-errores. Auditoría: 53 controles, 9 con alertas; en los equipos cargados solo
-José Sosa, homónimos reales y las 63 fotos de NOB y ERC.
+Estado al 22/11/2026 (cierre de la sesión del 20–22/11). Última versión:
+**v2.21.1** (`data/argentina/BBGM_Argentina_2026_v.2.21.1_futbol.json`, sha256
+`684d3bafa0f126dcc0c3da180ff2b8e49d314cfaa2c6a4918d444460d58bef62`): 19 de 30 equipos con plantel 2026. Validación con el
+esquema oficial: 0 errores. Auditoría: 53 controles, 9 con alertas; en los
+equipos cargados solo José Sosa (41 años, real), homónimos reales y las 63
+fotos de Newell's y Estudiantes RC (las pone el usuario en el juego). Todas
+las versiones se rearman idénticas desde cero.
 
-**Lo que sigue:** fotos de NOB y ERC en el juego; los 11 equipos restantes
-(BAR, BAN, PLA, DYJ, TIG, SAR, ALD, UNI, ATU, CCO, GEM). Pendiente de debate:
-cómo tratar a los jugadores de élite de las cinco grandes ligas (§7).
+**Lo que sigue:** **Unión (UNI, v2.22)** — completa la división Santa Fe con
+Central y Newell's (16.º en la anual, 42 pts, 48-44; 8.º y 9.º de su grupo en
+Apertura y Clausura; reserva 15.ª). Arqueros de la lista: Matías Mansilla 60 y
+Federico Gomes Gerth 45; hoy UNI tiene 13 jugadores con datos de 2023 (Aued,
+Zenón, Vecino, Luna Diale, Gordillo, Piris, S. Moyano, Corvalán, Gerometta,
+Comas, Roldán, Cañete, D. Juárez): buscar quiénes siguen (`reemplaza`).
+Después: BAR, BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM. Si el usuario manda
+su liga exportada (fotos de NOB y ERC), importarla con la versión sobre la que
+jugó como base.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -68,7 +75,8 @@ CSIR = IRM, GELP = GIM, SMSJ = SMJ (San Martín de San Juan, inactivo). Colón
 PVN. En las tablas, "Gimnasia y Esgrima" aparece dos veces (GIM y GEM) y
 "Estudiantes" también (EST y ERC).
 
-**Próximos:** el resto de a dos (el usuario elige cuáles).
+**Próximos:** Unión (v2.22) y después BAR, BAN, PLA, DYJ, TIG, SAR, ALD, ATU,
+CCO, GEM (de a uno o de a dos; el usuario manda las capturas).
 
 133 inactivos: Primera Nacional, Federal A, Primera B y C Metro, Patagonia y 10
 clasificados al Torneo Argentino del Interior 2027 (AHZ DES JUG CON PAC CSJ HGO
@@ -95,13 +103,16 @@ RAO HIW MSL). Sus datos editados por el usuario: `equipos-usuario.json`.
    largo, un script en el scratchpad que genere el JSON evita errores. Desde
    Huracán se guarda el Rendimiento completo de cada jugador (`convocado`,
    `asist`, `amarillas`, `dobleAmarilla`, `rojas`, `entro`, `salio`, `ppp`),
-   no solo PJ, goles y minutos. Comprobar que las capturas encajan (que no
-   falte ninguna fila entre una imagen y la siguiente) y leer los números con
-   zoom.
+   no solo PJ, goles y minutos. Leer los números con zoom (recortes
+   ampliados de las capturas). NO buscar filas perdidas entre imágenes: el
+   usuario las parte en 2 (plantel) y 3 (Rendimiento) solo porque no entran.
 2. Buscar en la liga a los que ya existen con datos de 2023 (nombre igual, o
-   apellido igual ±1 año de nacimiento) y ponerlos en `reemplaza` con el año
-   de nacimiento que tienen EN EL ARCHIVO. Cuidado con homónimos.
-3. Club de debut → abreviatura de la liga (buscar por ciudad/apodo). Si no está
+   apellido igual ±2 años de nacimiento) y ponerlos en `reemplaza` con el año
+   de nacimiento que tienen EN EL ARCHIVO. Cuidado con homónimos y con los
+   nombres de pila compuestos (Juan Ignacio Méndez se escapó así): después de
+   armar, revisar "Mismo nombre en dos jugadores" de la auditoría.
+3. Club de debut → abreviatura de la liga, buscada EN EL ARCHIVO DE LIGA (no
+   en `equipos.csv`: el usuario cambió algunas en el juego, ej. CDO → CIR). Si no está
    en la base o es del exterior: `club: null` y el club en `college`. Si un
    club de la base no tiene nombre completo en `NOMBRE_COMPLETO`, agregarlo.
 4. Los que están en Rendimiento y no en el plantel se fueron: guardar sus
@@ -109,7 +120,10 @@ RAO HIW MSL). Sus datos editados por el usuario: `equipos-usuario.json`.
    que tienen números en dos clubes cargados (valorarlos con la suma, y si
    uno ya estaba cargado en otro equipo, revisar su OVR hacia atrás) y a los
    que llegaron a mitad de año (valorar por partido).
-5. OVR a mano (ver §4), comparando cada uno en la escalera (`escalera.ts`).
+5. OVR a mano (ver §4), comparando cada uno en la escalera (`escalera.ts`) y
+   con sus vecinos (`vecinos.ts`: los de su grupo a ±1 en otros equipos, con
+   sus números). Cada OVR, justificado con un par concreto. Si el usuario lo
+   pide, segunda revisión antes de armar (se hizo con NOB y ERC).
 6. Agregar la abreviatura al final de `armar-v2.sh`, armar, validar, auditar,
    comparar la auditoría con la versión anterior. Regenerar la tabla de
    arqueros (`arqueros.ts`, ver §4).
@@ -155,12 +169,11 @@ Transfermarkt: `pie` null (un central sin pie va de #6). Sin fecha de fichaje
 
 ## 4. Escala de OVR y criterio
 
-Once (promedio de los 11 mejores), v2.15.3: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
-EST 67,6 · VEL 67,0 · IRM 66,7 · ARG 66,6 · LAN 65,7 · GIM 65,6 · IND 65,5 ·
-RAC 65,5 · SLO 64,6 · RIE 60,5; v2.17: HUR 64,5 (15.º en la anual) y TAL 63,5
-(21.º); v2.18: BEL 66,8 (10.º en la anual y campeón), HUR 64,7 y TAL 64,3; v2.19: INS
-65,3 (8.º en la anual, 1.º de su grupo en el Clausura); v2.20.1: NOB 61,7 (22.º;
-playoffs del Clausura); v2.21: ERC 56,5 (30.º, descendido). Valoración de equipo del propio juego (Power
+Once (promedio de los 11 mejores), v2.21.1: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
+EST 67,6 · VEL 67,0 · IRM 66,7 · ARG 66,6 · BEL 66,6 (campeón del Apertura,
+10.º en la anual) · LAN 65,7 · GIM 65,6 · IND 65,5 · RAC 65,5 · HUR 64,7 ·
+SLO 64,6 · INS 64,4 · TAL 64,3 · NOB 61,7 · RIE 60,5 · ERC 56,5 (último,
+descendido). Valoración de equipo del propio juego (Power
 Rankings que mandó el usuario, sobre la v2.15.2, con los 17 sin cargar
 desactivados): RIV 136 · BOC 134 · ROS 127 · EST 116 · ARG 114 · IRM 114 ·
 VEL 112 · LAN 108 · GIM 106 · IND 105 · SLO 101 · RAC 99 (107 sin
@@ -201,6 +214,15 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
   Iacovich, Centurión, Mallo) y moderó otros (Cetré 69, J. Correa 66); mantuvo
   a Ibarra, Rojo, Alario, Valdés, Marchiori, Sanguinetti, Mele y otros.
 - Escalonar por análisis, no por bandas fijas ("rotación = 60–62" no).
+- Sesión 21–22/11: baja a las figuras de equipos medianos (Luna 70 → 68,
+  Mazzanti 66 → 65) y sube a los que sostienen sin brillar (Tissera +2,
+  Méndez +1, Nervo, Pereyra, Fattori +4); en el juego ajustó a mano a 7 de
+  BEL e INS (v2.19.3). Juveniles: rendimiento + valor de mercado (v2.18.2) y
+  la reserva para los que casi no jugaron (v2.19.2); no inflar juveniles por
+  minutos sin producción (Baroni 60 → 52, Dávila 57 → 51, Cantizano 62 → 56).
+- Arqueros: la lista es base, pero el usuario sostiene su valor salvo que la
+  temporada diga otra cosa (Cardozo volvió a 70 = lista); los de equipos que
+  se desarman bajan (ERC: Bruera 53, Lastra 48).
 
 **Arqueros:** carpeta `data/argentina/arqueros/`.
 
@@ -249,14 +271,15 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 
 ## 6. Archivos de datos
 
-- `planteles/XXX.json`: los 13 planteles cargados; `planteles/preparacion/`: los
+- `planteles/XXX.json`: los 19 planteles cargados; `planteles/preparacion/`: los
   que están en preparación (hoy ninguno): solo los lee `cruces.ts`; al
   terminar se pasan a `planteles/` y se suman a `armar-v2.sh`.
 - `arqueros/`: la lista de arqueros del usuario y la comparación con hoy
   (ver §4).
-- `salidas-2026.json`: los que se fueron de IRM (8), GIM (14), LAN (12), HUR
-  (13), TAL (12) e IND (2: Fernández Cedrés y Pussetto, números que dio el
-  usuario; IND se cargó antes de que existiera este archivo) con sus números
+- `salidas-2026.json` (125): los que se fueron de IRM (8), GIM (14), LAN (12),
+  HUR (13), TAL (12), BEL (14), INS (15), NOB (15), ERC (20) e IND (2:
+  Fernández Cedrés y Pussetto, números que dio el usuario; IND y los equipos
+  anteriores se cargaron antes de que existiera este archivo) con sus números
   2026. Villa (IRM → BOC): con la suma (44 PJ, 4 g, 8 a) su 70 se sostiene.
   Dylan Aquino (LAN) se fue a Union Saint-Gilloise (Bélgica). Leonel Pérez
   (HUR → RAC): 0 PJ en Huracán, no cambia nada. Por revisar con la suma al
@@ -270,87 +293,57 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 - `propuesta-valores-fijos.md`: propuesta sobre valores fijos, ya resuelta
   (v2.14.3).
 - `propuesta-juveniles.md`: análisis de los menores de 19 y valores
-  aplicados en la v2.18.2 (rendimiento + plus por valor de mercado).
+  aplicados en la v2.18.2 (rendimiento + plus por valor de mercado) y la
+  segunda revisión con la reserva (menores de 20 y prospectos, v2.19.2).
+- Herramientas nuevas de esta sesión: `arqueros.ts` (lista vs hoy) y
+  `vecinos.ts` (cada jugador contra sus vecinos de la escalera).
 - `equipos-usuario.json`: datos de equipos que el usuario editó en el juego.
 
 ## 7. Pendientes
 
-1. **Rasgos de juego:** cargados en la v2.15.5 (83 jugadores, lista del
-   usuario en `rasgos-usuario.ts`). Ya no hay ratings a mano: los 23 se
-   generaron de cero con sus rasgos (permiso del usuario).
-   **Forma 2 pendiente** en los libres de 2023 (se normalizan al final de la
-   fase 2). Los prospectos generados ya la tienen (v2.15.7).
-   **Logos de equipos:** sin enlaces mal formados (todos https, ninguna
-   miniatura de Google). Sitios poco comunes para mirar en el juego: Pinterest
-   (ALD), pikpng (CAR), seeklogo (MOR, DPV), fundacionamigospd.com (FAD),
-   ESPN (CMN), bibliotecariodelfutbol (MSL), wikia (IND), footylogos (HUR, SLO,
-   RAC, LAN, GIM, ARG chico); Transfermarkt en RIN y HGO.
-   **Fotos:** Cena (IRM) y Zalazar (GIM) ya tienen (v2.15.8); Ramis (IRM) tiene una
-   miniatura de Google; 5 vienen de otros sitios (Tempone, Mangiaut, Kida,
-   Policella, T. Aguirre). De los 16 prospectos reales, solo Satas, Medina y
-   Ma. Martínez tienen foto: el usuario puede ponerlas en el juego (draft) y
-   vuelven con `desde-juego.ts`. Las miniaturas de Google de los primeros ocho
-   equipos (221) las corrige el usuario al final de la fase 2. Para comprobar
-   que cada foto abre hay que permitir `img.a.transfermarkt.technology` en la
-   red (hoy bloqueada).
-   **Propuesta de capitanes** (pedido del usuario: revisar su valor frente a
-   sus compañeros; aceptada y aplicada en los planteles). Coherentes: Paredes, Di María, Nacho
-   Fernández y Arce (1.º de su equipo), Cambeses e Izquierdoz (2.º), Otamendi,
-   Oroz, Tripichio, Céliz y los de Estudiantes. Propuestos: Marcone 63 → 65
-   (único volante central fijo de IND y el que más jugó; hoy debajo de un
-   arquero suplente y de un recién llegado), E. Gómez 65 → 66 (el que más
-   jugó en Vélez, lateral fijo), Devecchi 55 → 60 (arquero titular de SLO
-   desde que se fue Gill, en una defensa de 30 goles en contra). Aplicada en
-   la v2.15.3.
-2. Cargar los 14 equipos restantes.
-   **Belgrano, resuelto (v2.18.1):** el usuario confirmó que no faltan filas
-   de Rendimiento (el control de píxeles marcó dos huecos que no eran) y que
-   se desestima la mención de Franco Jara (sacada del contexto); Melano debutó
-   en 2025; el título es el Torneo Apertura 2026 (5.º en la zona B; en los
-   playoffs eliminó a Talleres, Unión y Argentinos y le ganó la final a
-   River); Morales sin draft con College "Club Atlético Paraná" (correcto).
-   Menores de 19: resuelto en la v2.18.2 (`propuesta-juveniles.md`).
-   **Resuelto (v2.20.1 y v2.21):** altura de Chala 1,86; "larga distancia"
-   es el viejo "pegador" (renombrado: "pegador" sonaba a que pega patadas;
-   mismo efecto, tp +10 y fg +6); camisetas repetidas de NOB, lesiones
-   estimadas y Tirado, aceptados; Olmos (TAL) 44.
-   **Para debatir (pedido del usuario):** jugadores de élite de las cinco
-   grandes ligas (la liga argentina es top 10, como la brasileña, la
-   holandesa o la portuguesa), sobre todo los que tienen familia en el
-   archivo (Giovani Lo Celso). Hoy no están en el archivo.
-   **Para drafts futuros:** Juan Solari (RIV, reserva, clase 2007; hermano de
-   Santiago y Pablo).
-   Lodico (RAC) 63: aceptado en la v2.19.1 (con Instituto suma 28 PJ).
-   Lesiones de INS sin fecha de vuelta, estimadas: Rafaelli (muslo) 3
-   partidos, Albarracín (muscular) 2.
-   **Propuestas de la v2.17, resueltas en la v2.17.1** (el usuario aceptó
-   Ortegoza 62 y Vigo 58; rechazó bajar a Ronaldo Martínez, sigue en 69;
-   Luján pasó a 60 partidos: "es un cáncer, no una lesión cualquiera"):
-   jugaron en Talleres y ya estaban cargados, con la temporada completa:
-   Ronaldo Martínez VEL 69 → 67 (TAL 24 PJ 4 g + VEL 10 PJ 9 g = 34 PJ, 13 g,
-   2571'; el 69 salió de sus 10 partidos en Vélez), Ortegoza RAC 61 → 62 (34
-   PJ, 1921'), Vigo IRM 57 → 58 (24 PJ, 1076'), Río SLO 54 se sostiene (17 PJ,
-   420'). Luján (HUR): linfoma, parado hace más de un año y sin fecha de
-   vuelta: se estimaron 30 partidos (unos 7 meses); confirmar.
-3. Parentescos: el usuario los va agregando en el juego (Watson y Auzmendi en
-   la v2.15.3; seguramente falten más) y vuelven con `desde-juego.ts`.
-4. **Libres (~340):** versiones viejas de 2023. Al final de la fase 2: retirar
-   a los que ya no juegan en el país y normalizar al resto con la norma.
-5. Personalidad de los ídolos de cada club (cuando estén todos los planteles).
-   Capitanes: anotados en los 13 equipos cargados (ver §4); pedirlos con
-   cada equipo nuevo.
-6. All-Star: trabajarlo más (el usuario quiere).
-7. Posible paso a 2027 (descensos Aldosivi y Estudiantes RC, ascenso Godoy
+1. **Cargar los 11 equipos restantes** (próximo: Unión, v2.22).
+2. **Fotos:** faltan las de Newell's y Estudiantes RC (63); el usuario las pone
+   en el juego y manda la liga exportada. Prospectos sin foto en varios
+   equipos (TAL, INS, BEL). Ramis (IRM) tiene una miniatura de Google; las
+   miniaturas de Google de los primeros ocho equipos (221) las corrige el
+   usuario al final de la fase 2. La red de la sesión bloquea Transfermarkt.
+3. **Jugadores de élite de las cinco grandes ligas** (ej. Giovani Lo Celso,
+   hermano de Francesco, ERC): por ahora **opción 1, quedan afuera** (el
+   juego tiene una sola liga); se retoma en el futuro. Opciones que se
+   debatieron: cargarlos como libres (algún equipo los ficharía enseguida) o
+   un "equipo del exterior" desactivado (habría que probar si el juego lo
+   acepta).
+4. **Para drafts futuros:** Juan Solari (RIV, reserva, clase 2007; hermano de
+   Santiago, NOB, y de Pablo, libre).
+5. **Libres (~420):** versiones viejas de 2023. Al final de la fase 2: retirar
+   a los que ya no juegan en el país y normalizar al resto (forma de los
+   ratings pendiente en ellos).
+6. **Parentescos:** el usuario los va dando con cada equipo o los agrega en el
+   juego (vuelven con `desde-juego.ts`).
+7. Personalidad de los ídolos de cada club (cuando estén todos los planteles).
+8. All-Star: trabajarlo más (el usuario quiere).
+9. Posible paso a 2027 (descensos Aldosivi y Estudiantes RC, ascenso Godoy
    Cruz y uno más en diciembre): el usuario decidió esperar. Plan propuesto:
    pretemporada 2027, contratos de fin de 2026 renovados un año, lesiones
    recalculadas al 24/01/2027, prospectos de reserva a la clase 2027.
-8. Fase 3: historia. Pendiente para entonces: Guillermo y Gustavo Barros
-   Schelotto (hermanos; padres de Nicolás y de Bautista, que son primos). El
-   juego solo vincula padre, hijo y hermano: los primos quedan unidos a través
-   de los padres. Marcelo Barticciotto (leyenda de Colo-Colo), padre de Bruno
-   Barticciotto (HUR). Diego Soñora (padre de Alan y Joel) ya está como
-   retirado, pero nacido en 1967: el usuario dice 17/07/1969, draft de Boca 1988,
-   8 temporadas de GF (marcador de punta derecho) en Boca, 1988–1996.
+10. **Fase 3 (historia):** Guillermo y Gustavo Barros Schelotto (hermanos;
+    padres de Nicolás y de Bautista, que son primos: el juego une a los primos
+    solo a través de los padres). Marcelo Barticciotto (leyenda de Colo-Colo),
+    padre de Bruno (HUR). Diego Soñora (padre de Alan, NOB, y de Joel, libre)
+    ya está como retirado pero con nacimiento 1967: corregir a 17/07/1969;
+    draft de Boca 1988, 8 temporadas de GF (marcador de punta derecho) en Boca,
+    1988–1996, después emigró a Estados Unidos.
+11. Logos: sitios poco comunes para mirar en el juego: Pinterest (ALD), pikpng
+    (CAR), seeklogo (MOR, DPV), fundacionamigospd.com (FAD), ESPN (CMN),
+    bibliotecariodelfutbol (MSL), wikia (IND), footylogos (HUR, SLO, RAC, LAN,
+    GIM, ARG chico); Transfermarkt en RIN y HGO.
+
+Resuelto en la sesión del 20–22/11 (para no volver a preguntar): Luján 60
+partidos (linfoma); Lodico 63; Olmos 44; Ortegoza 62 y Vigo 58 (Ronaldo
+Martínez sigue en 69); Belgrano sin filas faltantes y sin Jara; Melano debutó
+en 2025; Chala 1,86; "larga distancia" = el viejo "pegador"; camisetas
+repetidas de NOB (García y Soñora sin número); lesiones estimadas de INS, NOB
+y ERC aceptadas; Tirado (NOB) cargado igual.
 
 ## 8. Trampas conocidas
 
@@ -379,7 +372,19 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   (verificarlo jugador por jugador con una fórmula escrita aparte).
 - `desde-juego.ts` compara la liga del usuario contra el archivo armado más
   reciente salvo que se le dé la base: si se armó una versión después de la
-  que usó el usuario, darle esa base o los OVR nuevos se pisan.
+  que usó el usuario, darle esa base o los OVR nuevos se pisan. Para saber la
+  base: mirar un OVR que cambió entre versiones (ej. Cantizano 62/56).
+- Ratings que el usuario ajusta en el juego quedan "a mano" (`ratings` en el
+  plantel): sus rasgos ya no se aplican solos y su OVR no se puede cambiar sin
+  tocar los ratings (`ajustar-ovr.ts`).
+- Abreviaturas: siempre las del archivo de liga (el usuario cambió algunas en
+  el juego; `equipos.csv` puede estar viejo).
+- Transfermarkt a veces repite números de camiseta en un plantel: dejar sin
+  número (`n` null) al que llegó después; la auditoría lo marca.
+- Un jugador que está en un equipo cargado como retirado o libre con
+  parientes (Soñora): al recrearlo, el cargador le pasa los lazos solo.
+- Para armar una versión intermedia sin el último equipo (ej. v2.20.1 sin
+  ERC), usar una copia temporal de `armar-v2.sh` sin esa abreviatura.
 
 ## 9. Bitácora
 
@@ -420,6 +425,14 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**Sesión del 20–22/11/2026 (v2.15.7 → v2.21.1).** Huella de la v2.21.1:
+`684d3bafa0f126dcc0c3da180ff2b8e49d314cfaa2c6a4918d444460d58bef62`.
+
+- v2.21.1: arqueros de Estudiantes RC revisados con la escalera: Bruera 54 → 53
+  (no se afirmó en la peor defensa; entre Brey/Iacovich 55 y G. Arias 52),
+  L. Herrera 43 → 44 (5 PJ, más que Petroli, Siri y Altamirano, que tienen 44);
+  Lastra 48 y Gualtieri 40 se sostienen. Opción 1 para los jugadores de élite
+  (afuera por ahora).
 - v2.21 Estudiantes de Río Cuarto (31). Último y descendido: once 56,5, todos
   por debajo de sus pares de Riestra (28.º). Bruera 54 (= lista), Lastra 48.
   Hesar con nacionalidad siria; Chala 1,86 (dato del usuario).
@@ -557,9 +570,9 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.18.2.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.21.1.
 > Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
-> líneas que entendiste el estado, antes de seguir.
+> líneas que entendiste el estado, antes de seguir. Seguimos con Unión.
 
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara
 con la del repositorio y se importa con `desde-juego.ts`.
