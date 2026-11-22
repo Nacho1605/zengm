@@ -1,22 +1,18 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 22/11/2026 (cierre de la sesión del 20–22/11). Última versión:
-**v2.21.1** (`data/argentina/BBGM_Argentina_2026_v.2.21.1_futbol.json`, sha256
-`684d3bafa0f126dcc0c3da180ff2b8e49d314cfaa2c6a4918d444460d58bef62`): 19 de 30 equipos con plantel 2026. Validación con el
+Estado al 22/11/2026 (sesión del 22/11, noche). Última versión:
+**v2.22** (`data/argentina/BBGM_Argentina_2026_v.2.22_futbol.json`, sha256
+`454940eef903eb010dbd7f04e2f07efcbbe6f81965c38623171dfffd8520b9c7`): 20 de 30 equipos con plantel 2026. Validación con el
 esquema oficial: 0 errores. Auditoría: 53 controles, 9 con alertas; en los
-equipos cargados solo José Sosa (41 años, real), homónimos reales y las 63
-fotos de Newell's y Estudiantes RC (las pone el usuario en el juego). Todas
-las versiones se rearman idénticas desde cero.
+equipos cargados solo José Sosa (41 años, real), homónimos reales y las 89
+fotos de Newell's, Estudiantes RC y Unión (las pone el usuario en el juego).
+Todas las versiones se rearman idénticas desde cero (la v2.21.1 también, con
+el cargador nuevo).
 
-**Lo que sigue:** **Unión (UNI, v2.22)** — completa la división Santa Fe con
-Central y Newell's (16.º en la anual, 42 pts, 48-44; 8.º y 9.º de su grupo en
-Apertura y Clausura; reserva 15.ª). Arqueros de la lista: Matías Mansilla 60 y
-Federico Gomes Gerth 45; hoy UNI tiene 13 jugadores con datos de 2023 (Aued,
-Zenón, Vecino, Luna Diale, Gordillo, Piris, S. Moyano, Corvalán, Gerometta,
-Comas, Roldán, Cañete, D. Juárez): buscar quiénes siguen (`reemplaza`).
-Después: BAR, BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM. Si el usuario manda
-su liga exportada (fotos de NOB y ERC), importarla con la versión sobre la que
-jugó como base.
+**Lo que sigue:** esperar las correcciones del usuario a los OVR de Unión
+(v2.22.1 si cambia algo). Después: BAR, BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO,
+GEM. La liga que mandó el usuario el 22/11 (noche) era idéntica a la v2.21.1
+(misma huella): todavía no puso las fotos de NOB y ERC.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -25,7 +21,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 - **Fase 1 (v1.x, terminada):** esqueleto de la liga. Motor de fútbol con
   ajustes del archivo (`activar-futbol.ts`), 163 equipos (30 activos), zonas,
   premios y lesiones en español, drafts generados con norma de posición.
-- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **19 de
+- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **20 de
   30** equipos.
 - **Fase 3 (futura):** historia de la liga (temporadas pasadas, campeones,
   premios, Salón de la Fama — hay 32 retirados en el Salón, mal hechos, como
@@ -34,7 +30,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 ## 2. Equipos
 
 Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
-`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN HUR TAL BEL INS NOB ERC`.
+`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN HUR TAL BEL INS NOB ERC UNI`.
 
 | Abrev | En el juego | Zona / división | |
 |---|---|---|---|
@@ -61,7 +57,7 @@ Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
 | INS | Córdoba Glory (Instituto) | Fed / Córdoba | ✔ |
 | TAL | Córdoba Matadors (Talleres) | Fed / Córdoba | ✔ |
 | ERC | Río Cuarto Lions (Estudiantes RC) | Fed / Córdoba | ✔ |
-| UNI | Santa Fe Royals (Unión) | Fed / Santa Fe | |
+| UNI | Santa Fe Royals (Unión) | Fed / Santa Fe | ✔ |
 | ROS | Rosario Scoundrels (Central, "CARC") | Fed / Santa Fe | ✔ |
 | NOB | Rosario Lepers (Newell's) | Fed / Santa Fe | ✔ |
 | ATU | Tucumán Deans | Fed / Noroeste | |
@@ -75,8 +71,9 @@ CSIR = IRM, GELP = GIM, SMSJ = SMJ (San Martín de San Juan, inactivo). Colón
 PVN. En las tablas, "Gimnasia y Esgrima" aparece dos veces (GIM y GEM) y
 "Estudiantes" también (EST y ERC).
 
-**Próximos:** Unión (v2.22) y después BAR, BAN, PLA, DYJ, TIG, SAR, ALD, ATU,
-CCO, GEM (de a uno o de a dos; el usuario manda las capturas).
+**Próximos:** BAR, BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (de a uno o de
+a dos; el usuario manda las capturas). CCO quedó sin arquero (Mansilla, que
+estaba ahí con datos de 2023, pasó a UNI): se arregla al cargar CCO.
 
 133 inactivos: Primera Nacional, Federal A, Primera B y C Metro, Patagonia y 10
 clasificados al Torneo Argentino del Interior 2027 (AHZ DES JUG CON PAC CSJ HGO
@@ -169,11 +166,12 @@ Transfermarkt: `pie` null (un central sin pie va de #6). Sin fecha de fichaje
 
 ## 4. Escala de OVR y criterio
 
-Once (promedio de los 11 mejores), v2.21.1: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
+Once (promedio de los 11 mejores), v2.22: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
 EST 67,6 · VEL 67,0 · IRM 66,7 · ARG 66,6 · BEL 66,6 (campeón del Apertura,
 10.º en la anual) · LAN 65,7 · GIM 65,6 · IND 65,5 · RAC 65,5 · HUR 64,7 ·
-SLO 64,6 · INS 64,4 · TAL 64,3 · NOB 61,7 · RIE 60,5 · ERC 56,5 (último,
-descendido). Valoración de equipo del propio juego (Power
+SLO 64,6 · INS 64,4 · TAL 64,3 · NOB 61,7 · UNI 61,6 (16.º en la anual, pero
+desarmado a mitad de año: 17.º del Clausura, peor que NOB) · RIE 60,5 ·
+ERC 56,5 (último, descendido). Valoración de equipo del propio juego (Power
 Rankings que mandó el usuario, sobre la v2.15.2, con los 17 sin cargar
 desactivados): RIV 136 · BOC 134 · ROS 127 · EST 116 · ARG 114 · IRM 114 ·
 VEL 112 · LAN 108 · GIM 106 · IND 105 · SLO 101 · RAC 99 (107 sin
@@ -248,6 +246,7 @@ Capitanes (contexto, no suman puntos): Paredes (BOC), Otamendi (RIV),
 Cambeses (RAC), Marcone (IND), Tripichio y Devecchi (SLO, comparten),
 E. Gómez (VEL), Di María (ROS), Izquierdoz (LAN), Oroz (ARG), Nacho Fernández
 (GIM), Álex Arce (IRM), Céliz (RIE), Galíndez (HUR), Lucas Zelarayán (BEL), Fernando Alarcón (INS), Luca Regiardo (NOB, 20 años).
+Unión no tiene capitán fijo; suele serlo Cristian Tarragona (con `capitan`).
 ERC no tiene capitán fijo; suele serlo Maffini (anotado con `capitan`). Estudiantes no tiene
 capitán fijo: Carrillo 5 capitanías, Sosa 3, Núñez 3, Muslera 2, González
 Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
@@ -271,13 +270,13 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 
 ## 6. Archivos de datos
 
-- `planteles/XXX.json`: los 19 planteles cargados; `planteles/preparacion/`: los
+- `planteles/XXX.json`: los 20 planteles cargados; `planteles/preparacion/`: los
   que están en preparación (hoy ninguno): solo los lee `cruces.ts`; al
   terminar se pasan a `planteles/` y se suman a `armar-v2.sh`.
 - `arqueros/`: la lista de arqueros del usuario y la comparación con hoy
   (ver §4).
-- `salidas-2026.json` (125): los que se fueron de IRM (8), GIM (14), LAN (12),
-  HUR (13), TAL (12), BEL (14), INS (15), NOB (15), ERC (20) e IND (2:
+- `salidas-2026.json` (146): los que se fueron de IRM (8), GIM (14), LAN (12),
+  HUR (13), TAL (12), BEL (14), INS (15), NOB (15), ERC (20), UNI (21) e IND (2:
   Fernández Cedrés y Pussetto, números que dio el usuario; IND y los equipos
   anteriores se cargaron antes de que existiera este archivo) con sus números
   2026. Villa (IRM → BOC): con la suma (44 PJ, 4 g, 8 a) su 70 se sostiene.
@@ -301,8 +300,9 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 
 ## 7. Pendientes
 
-1. **Cargar los 11 equipos restantes** (próximo: Unión, v2.22).
-2. **Fotos:** faltan las de Newell's y Estudiantes RC (63); el usuario las pone
+1. **Cargar los 10 equipos restantes** (BAR, BAN, PLA, DYJ, TIG, SAR, ALD,
+   ATU, CCO, GEM).
+2. **Fotos:** faltan las de Newell's, Estudiantes RC y Unión (89); el usuario las pone
    en el juego y manda la liga exportada. Prospectos sin foto en varios
    equipos (TAL, INS, BEL). Ramis (IRM) tiene una miniatura de Google; las
    miniaturas de Google de los primeros ocho equipos (221) las corrige el
@@ -319,7 +319,14 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    a los que ya no juegan en el país y normalizar al resto (forma de los
    ratings pendiente en ellos).
 6. **Parentescos:** el usuario los va dando con cada equipo o los agrega en el
-   juego (vuelven con `desde-juego.ts`).
+   juego (vuelven con `desde-juego.ts`). Datos del usuario para corregir al
+   normalizar libres o al cargar CCO: Mauro Pittón (hermano de Bruno, UNI;
+   pivote, hoy en el CD Tenerife; en el archivo está en CCO con nacimiento
+   1995, es de 1994) y Matías Palacios (hermano de Julián, UNI; mediapunta,
+   hoy en el Al-Ain; libre con nacimiento 2003, es de 2002). Augusto Solari
+   (UNI): nieto de Jorge Solari, sobrino de Fernando Redondo y primo de
+   Santiago, Esteban y David Solari y de Fernando y Federico Redondo; ninguno
+   es pariente directo (el juego no une primos ni tíos): fase 3.
 7. Personalidad de los ídolos de cada club (cuando estén todos los planteles).
 8. All-Star: trabajarlo más (el usuario quiere).
 9. Posible paso a 2027 (descensos Aldosivi y Estudiantes RC, ascenso Godoy
@@ -425,6 +432,36 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**Sesión del 22/11/2026, noche (v2.22).** Huella de la v2.22:
+`454940eef903eb010dbd7f04e2f07efcbbe6f81965c38623171dfffd8520b9c7`.
+
+- La liga que mandó el usuario era idéntica a la v2.21.1 (misma huella): nada
+  que importar.
+- v2.22 Unión (26). 16.º en la anual (42 pts, 48-44: tercer ataque, defensa
+  frágil), 15.º del Apertura y 17.º del Clausura en la general; desarmado a
+  mitad de año (se fueron Del Blanco, Maizon Rodríguez, Profini y Mauro
+  Pittón). Once 61,6, a la par de NOB. Tarragona 68 (19 goles, = Caicedo),
+  Palacios 65 (3 g y 7 a, = Ó. Cortés), Mansilla 63 (lista 60: 36 de 36 y
+  Sofascore 7,03; = M. Ledesma), Gomes Gerth 45 (= lista; cruzado), Meuli 38.
+  `reemplaza`: 12 (Mansilla estaba en CCO, Menossi en TIG, Estigarribia en
+  ATU, Luna Diale en UNI y 8 libres). Lesiones estimadas: Vargas 26 partidos
+  (cruzado del 25/08 con dos operaciones, vuelta a fines de mayo de 2027) y
+  Gomes Gerth 3 (cruzado del 10/03). Alturas del usuario: Fagioli 1,80 y
+  Ayala 1,74 (dijo "entre 1,72 y 1,75"). Ramírez sin número (Transfermarkt
+  le da el 43, que es de Giaccone, que llegó antes). Rasgos: Pittón larga
+  distancia, Menossi cerebro, Malcorra pelota parada, Estigarribia aéreo.
+  Leales por la regla: Pittón y Luna Diale. Capitán habitual: Tarragona.
+  Nombre completo nuevo: MID (Club Ferrocarril Midland). Colleges de clubes
+  de afuera de la base: Defensor Sporting Club (Rocha), Club Atlético
+  Juventud de Las Piedras (Pintado; el usuario escribió "Club Atlético
+  Juventud (Uruguay)"), Club Sportivo Estudiantes (San Luis) (Cuello),
+  Comisión de Actividades Infantiles (Malcorra) y Club Defensores del
+  Pronunciamiento (Estigarribia). 21 salidas. Cruces: Eric Ramírez (HUR +
+  UNI: 26 PJ, 3 g, 523') valorado con la suma; Fascendini (TAL 59), Colazo
+  (GIM 60) y Tomás González (RIE 56) suman poco con Unión: sin cambios. El
+  Tomás González de ERC (1998) es otro jugador (`cruces.ts` los cruza por
+  nombre).
+
 **Sesión del 20–22/11/2026 (v2.15.7 → v2.21.1).** Huella de la v2.21.1:
 `684d3bafa0f126dcc0c3da180ff2b8e49d314cfaa2c6a4918d444460d58bef62`.
 
@@ -570,9 +607,9 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.21.1.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.22.
 > Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
-> líneas que entendiste el estado, antes de seguir. Seguimos con Unión.
+> líneas que entendiste el estado, antes de seguir.
 
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara
 con la del repositorio y se importa con `desde-juego.ts`.

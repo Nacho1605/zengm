@@ -281,6 +281,7 @@ const NOMBRE_COMPLETO: Record<string, string> = {
 	IND: "Club Atlético Independiente",
 	INS: "Instituto Atlético Central Córdoba",
 	LAN: "Club Atlético Lanús",
+	MID: "Club Ferrocarril Midland",
 	MOR: "Club Deportivo Morón",
 	NCH: "Club Atlético Nueva Chicago",
 	NOB: "Club Atlético Newell's Old Boys",
