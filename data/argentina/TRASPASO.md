@@ -1,16 +1,17 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
 Estado al 22/11/2026 (sesión del 22/11, noche). Última versión:
-**v2.22** (`data/argentina/BBGM_Argentina_2026_v.2.22_futbol.json`, sha256
-`454940eef903eb010dbd7f04e2f07efcbbe6f81965c38623171dfffd8520b9c7`): 20 de 30 equipos con plantel 2026. Validación con el
+**v2.22.1** (`data/argentina/BBGM_Argentina_2026_v.2.22.1_futbol.json`, sha256
+`f53b65b06f2e22d26477cf97b92e897c6c55553aa7c75ca7fff6ccc6d77990d1`): 20 de 30 equipos con plantel 2026. Validación con el
 esquema oficial: 0 errores. Auditoría: 53 controles, 9 con alertas; en los
 equipos cargados solo José Sosa (41 años, real), homónimos reales y las 89
 fotos de Newell's, Estudiantes RC y Unión (las pone el usuario en el juego).
 Todas las versiones se rearman idénticas desde cero (la v2.21.1 también, con
 el cargador nuevo).
 
-**Lo que sigue:** esperar las correcciones del usuario a los OVR de Unión
-(v2.22.1 si cambia algo). Después: BAR, BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO,
+**Lo que sigue:** respuesta del usuario sobre la lesión de Gomes Gerth (hoy 3
+partidos; preguntó si no son pocos: la lesión es del 10/03, pasaron 8 meses y
+medio). Después: BAR, BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO,
 GEM. La liga que mandó el usuario el 22/11 (noche) era idéntica a la v2.21.1
 (misma huella): todavía no puso las fotos de NOB y ERC.
 
@@ -166,10 +167,10 @@ Transfermarkt: `pie` null (un central sin pie va de #6). Sin fecha de fichaje
 
 ## 4. Escala de OVR y criterio
 
-Once (promedio de los 11 mejores), v2.22: RIV 70,3 · BOC 69,8 · ROS 68,5 ·
+Once (promedio de los 11 mejores), v2.22.1: RIV 70,2 · BOC 69,8 · ROS 68,5 ·
 EST 67,6 · VEL 67,0 · IRM 66,7 · ARG 66,6 · BEL 66,6 (campeón del Apertura,
 10.º en la anual) · LAN 65,7 · GIM 65,6 · IND 65,5 · RAC 65,5 · HUR 64,7 ·
-SLO 64,6 · INS 64,4 · TAL 64,3 · NOB 61,7 · UNI 61,6 (16.º en la anual, pero
+SLO 64,6 · INS 64,4 · TAL 64,3 · NOB 61,7 · UNI 61,7 (16.º en la anual, pero
 desarmado a mitad de año: 17.º del Clausura, peor que NOB) · RIE 60,5 ·
 ERC 56,5 (último, descendido). Valoración de equipo del propio juego (Power
 Rankings que mandó el usuario, sobre la v2.15.2, con los 17 sin cargar
@@ -432,8 +433,14 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
-**Sesión del 22/11/2026, noche (v2.22).** Huella de la v2.22:
-`454940eef903eb010dbd7f04e2f07efcbbe6f81965c38623171dfffd8520b9c7`.
+**Sesión del 22/11/2026, noche (v2.22 → v2.22.1).** Huella de la v2.22.1:
+`f53b65b06f2e22d26477cf97b92e897c6c55553aa7c75ca7fff6ccc6d77990d1`.
+
+- v2.22.1: correcciones del usuario: Tarragona 68 aceptado a cambio de bajar a
+  Driussi (RIV) 69 → 68; Ayala 58; Rocha 57 (+4); Mansilla 63, altura de
+  Ayala, nombres de College y camisetas aceptados; Unión sin prospectos
+  (nadie sigue en reserva). Comparada con la v2.22: solo cambian esos 3
+  jugadores (ratings y sueldo) y el orden de sus planteles.
 
 - La liga que mandó el usuario era idéntica a la v2.21.1 (misma huella): nada
   que importar.

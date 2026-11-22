@@ -197,7 +197,7 @@
 			"ppp": 1.17,
 			"convocado": 9,
 			"fichado": "31/07/2026",
-			"ovr": 53,
+			"ovr": 57,
 			"debut": {
 				"club": null,
 				"anio": 2020
@@ -256,7 +256,7 @@
 			"ppp": 1.5,
 			"convocado": 16,
 			"fichado": "01/07/2026",
-			"ovr": 57,
+			"ovr": 58,
 			"debut": {
 				"club": "UNI",
 				"anio": 2026
@@ -744,9 +744,7 @@
 				"anio": 2014
 			},
 			"college": "Club Defensores del Pronunciamiento",
-			"rasgos": [
-				"aereo"
-			]
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": null,

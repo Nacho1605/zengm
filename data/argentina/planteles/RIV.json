@@ -156,7 +156,9 @@
 			},
 			"college": "Club Mutual Crucero del Norte",
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_8-B7qmzyQKpQYzPkeEma4zvO6hPR2k6q2y-wQgGaA&s=10",
-			"rasgos": ["pulmon"]
+			"rasgos": [
+				"pulmon"
+			]
 		},
 		{
 			"n": "30",
@@ -245,7 +247,9 @@
 				"anio": 2010
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDq6bGVhIS23s_8GOesinaN1Fdv_zJrC9SRdNUipdiJA&s=10",
-			"rasgos": ["centrador"]
+			"rasgos": [
+				"centrador"
+			]
 		},
 		{
 			"n": "29",
@@ -267,7 +271,9 @@
 				"anio": 2017
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/402733-1668181612.jpg?lm=4711",
-			"rasgos": ["centrador"]
+			"rasgos": [
+				"centrador"
+			]
 		},
 		{
 			"n": "20",
@@ -403,7 +409,9 @@
 			},
 			"college": "Defensor Sporting Club",
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-OdmbVDyRRRTLLrUwfixmta04l4r_IghVeGbYNKxTLg&s=10",
-			"rasgos": ["pulmon"]
+			"rasgos": [
+				"pulmon"
+			]
 		},
 		{
 			"n": "25",
@@ -447,7 +455,11 @@
 				"anio": 2018
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/576028-1773174386.jpg?lm=4711",
-			"rasgos": ["gambeta", "habilidoso", "pase"]
+			"rasgos": [
+				"gambeta",
+				"habilidoso",
+				"pase"
+			]
 		},
 		{
 			"n": "26",
@@ -512,7 +524,9 @@
 				"anio": 2013
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Cty3OIinMB2FVrQNBLOKcFbwBoEcW6VqBBmIStPBCw&s",
-			"rasgos": ["gambeta+"]
+			"rasgos": [
+				"gambeta+"
+			]
 		},
 		{
 			"n": "18",
@@ -551,7 +565,7 @@
 			"pj": 28,
 			"goles": 9,
 			"min": 1728,
-			"ovr": 69,
+			"ovr": 68,
 			"debut": {
 				"club": "RIV",
 				"anio": 2014
