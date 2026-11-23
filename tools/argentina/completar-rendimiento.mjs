@@ -22,7 +22,11 @@ for (const [nombre, pos, edad, pais, r] of FILAS) {
 	const s = Object.fromEntries(COLS.map((c, i) => [c, r[i] ?? 0]));
 	if (r.length <= 2) s.pj = 0; // no alineado
 	if (!j) {
-		const [n, ...a] = nombre.split(" ");
+		// Nombres de pila compuestos: "Juan Pablo", "José María", etc.
+		const DOBLES = ["Juan Pablo", "Juan Cruz", "Juan Carlos", "Juan Fernando", "José María", "Juan Manuel", "Juan Ignacio", "Juan José"];
+		const doble = DOBLES.find((d) => nombre.startsWith(d + " "));
+		const n = doble ?? nombre.split(" ")[0];
+		const a = nombre.slice(n.length + 1).split(" ");
 		const o = { club: eq, nombre: n, apellido: a.join(" "), pos, edad, pais };
 		if (s.pj === 0) Object.assign(o, { convocado: s.convocado, pj: 0 });
 		else for (const c of COLS) o[c] = s[c];

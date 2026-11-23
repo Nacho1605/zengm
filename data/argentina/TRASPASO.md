@@ -19,13 +19,20 @@ valorar con la temporada entera. Se transcribe a
 tools/argentina/completar-rendimiento.mjs EQUIPO` (completa las columnas,
 usa los números nuevos si cambiaron y agrega sus salidas a
 `salidas-2026.json`). Hechos: RIE (19 salidas, números iguales), BOC (15
-salidas; números más nuevos: +1 o +2 PJ en casi todos), RIV (22 salidas).
-RAC: 1 de 3 imágenes en `rendimiento/RAC.mjs` (sin aplicar). Nuevos
+salidas; números más nuevos: +1 o +2 PJ en casi todos), RIV (22 salidas),
+RAC (22 salidas; Sofascore de S. Sosa en su salida) y SLO (12 salidas;
+Sofascore de Gill en su salida). Sigue: IND, ROS, EST, ARG, VEL, IRM, GIM,
+LAN. Nombres de pila compuestos en las salidas ("Juan Fernando" Quintero,
+"José María" Ingratti): el script los reconoce. Nuevos
 jugadores en dos clubes: Barinaga (BOC → RAC), Blondel (BOC, sin jugar →
 HUR), Brian Aguirre (BOC → EST), Janson (BOC → GIM), Galarza (RIV, sin
 jugar → TAL), Salas (RIV → IRM), Maximiliano Meza (RIV → IND) y Rubio (RAC
-→ UNI). Para revisar el OVR al terminar: Juan Cruz Meza (RIV, 18 años)
-figuraba con 0 PJ y tiene 23 (771'); Almada 3 → 5 goles; Ascacíbar 8 → 10.
+→ UNI); con RAC y SLO: Rojo (RAC 21 PJ → EST), Baltasar Rodríguez (RAC →
+EST), Santiago Solari (RAC 25 PJ → NOB), Reali (SLO 22 PJ → IRM) y Bruera
+(SLO, sin jugar → BAR). Para revisar el OVR al terminar: Juan Cruz Meza
+(RIV, 18 años) figuraba con 0 PJ y tiene 23 (771'); Almada 3 → 5 goles;
+Ascacíbar 8 → 10; Reali (IRM 49, con 1288' en el año), S. Solari (NOB 56,
+2298'), Rojo (EST 63, 2069').
 Minutos y goles le dan forma a los ratings: al terminar la tanda, armar un
 parche (v2.23.3) y regenerar la escalera.
 Ya guardados (23/11): comentario y Sofascore de los 13 en sus planteles

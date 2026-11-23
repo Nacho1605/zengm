@@ -1,4 +1,4 @@
-// Racing, Rendimiento 2026 (capturas del usuario del 23/11/2026). FALTAN 2 de 3 imágenes.
+// Racing, Rendimiento 2026 (capturas del usuario del 23/11/2026).
 // [nombre, posición, edad, país, [convocado, pj, goles, asist, amarillas, dobleAmarilla, rojas, entro, salio, ppp, min]]
 export const FECHA = "23/11/2026";
 export const FILAS = [
@@ -18,5 +18,37 @@ export const FILAS = [
 	["Alfonso Espino", "Lateral izquierdo", 34, "Uruguay", [16, 4, 0, 1, 0, 0, 0, 1, 2, 1.75, 249]],
 	["Agustín García Basso", "Defensa central", 34, "Argentina", [19, 9, 0, 0, 2, 0, 1, 2, 3, 0.78, 619]],
 	["Tobías Rubio", "Lateral derecho", 22, "Argentina", [25, 5, 0, 0, 1, 0, 0, 4, 1, 2.0, 151]],
-	// FALTAN las imágenes 2 y 3 (mediocampistas y delanteros)
+	["Marcos Rojo", "Defensa central", 36, "Argentina", [28, 21, 2, 1, 5, 0, 1, 1, 6, 1.33, 1722]],
+	["Gonzalo Escudero", "Defensa central", 19, "Argentina", [20, 12, 1, 0, 2, 0, 0, 1, 1, 1.33, 994]],
+	["Benjamín González", "Defensa central", 19, "Argentina", [4, 0]],
+	["Galo Volpe", "Lateral izquierdo", 22, "Argentina", [6, 0]],
+	["Santiago Sosa", "Pivote", 27, "Argentina", [27, 25, 3, 1, 8, 0, 0, 0, 2, 1.4, 2254]],
+	["Juan Nardoni", "Mediocentro", 24, "Argentina", [3, 2, 0, 0, 1, 0, 0, 0, 2, 0.0, 128]],
+	["Valentín Carboni", "Mediocentro ofensivo", 21, "Argentina", [7, 5, 0, 0, 1, 0, 0, 2, 3, 1.2, 204]],
+	["Leonel Pérez", "Pivote", 22, "Argentina", [14, 14, 1, 0, 3, 0, 0, 5, 2, 1.0, 885]],
+	["Baltasar Rodríguez", "Mediocentro ofensivo", 23, "Argentina", [22, 19, 0, 2, 9, 0, 0, 8, 12, 1.05, 906]],
+	["Matko Miljevic", "Mediocentro ofensivo", 25, "USA", [36, 32, 4, 1, 5, 1, 0, 12, 15, 1.19, 1550]],
+	["Gastón Lodico", "Mediocentro", 28, "Argentina", [14, 13, 1, 0, 0, 0, 0, 2, 7, 1.08, 986]],
+	["Matías Zaracho", "Mediocentro ofensivo", 28, "Argentina", [37, 35, 4, 3, 7, 0, 0, 16, 17, 1.17, 1807]],
+	["Ulises Ortegoza", "Pivote", 29, "Chile", [19, 17, 1, 3, 2, 0, 0, 5, 9, 1.06, 994]],
+	["Adrián Fernández", "Mediocentro ofensivo", 25, "Argentina", [34, 28, 2, 2, 6, 0, 1, 16, 11, 1.32, 1187]],
+	["Matías Kranevitter", "Pivote", 33, "Argentina", [19, 12, 0, 1, 4, 0, 0, 5, 6, 1.17, 579]],
+	["Alan Forneris", "Pivote", 21, "Argentina", [21, 8, 0, 1, 1, 0, 0, 3, 3, 1.88, 424]],
+	["Alejandro Tello", "Mediocentro ofensivo", 18, "Argentina", [22, 13, 0, 1, 4, 0, 0, 3, 10, 1.46, 733]],
+	["Bruno Zuculini", "Pivote", 33, "Argentina", [25, 22, 0, 1, 3, 0, 0, 12, 8, 1.45, 1064]],
+	["Gonzalo Sosa", "Mediocentro ofensivo", 21, "Argentina", [19, 7, 1, 1, 0, 0, 0, 3, 3, 1.57, 313]],
+	["Ezequiel Pérez", "Mediocentro ofensivo", 18, "Argentina", [9, 1, 0, 0, 0, 0, 0, 1, 0, 3.0, 6]],
+	["Santino Aguirre", "Mediocentro", 19, "Argentina", [7, 2, 0, 0, 0, 0, 0, 2, 0, 1.5, 17]],
+	["Felipe Schaare", "Interior izquierdo", 20, "Argentina", [2, 1, 0, 0, 0, 0, 0, 1, 0, 3.0, 16]],
+	["Gonzalo Leiva", "Mediocentro", 19, "Argentina", [2, 0]],
+	["Santiago Solari", "Extremo derecho", 28, "Argentina", [28, 25, 2, 4, 4, 0, 0, 6, 15, 1.36, 1587]],
+	["Tomás Conechny", "Extremo izquierdo", 28, "Argentina", [44, 41, 5, 4, 4, 0, 0, 17, 19, 1.29, 2225]],
+	["Adrián Martínez", "Delantero centro", 34, "Argentina", [35, 35, 13, 2, 4, 0, 2, 1, 6, 1.23, 2855]],
+	["Duván Vergara", "Extremo izquierdo", 30, "Colombia", [40, 29, 4, 0, 2, 0, 0, 22, 7, 1.03, 841]],
+	["Lautaro Díaz", "Delantero centro", 28, "Argentina", [14, 14, 0, 0, 1, 0, 0, 4, 10, 1.0, 884]],
+	["Damián Pizarro", "Delantero centro", 21, "Chile", [11, 6, 0, 1, 0, 0, 0, 4, 2, 2.33, 191]],
+	["Elías Torres", "Delantero centro", 25, "Argentina", [19, 12, 0, 0, 1, 0, 0, 10, 2, 0.75, 253]],
+	["Tomás Pérez", "Delantero centro", 20, "Argentina", [19, 6, 1, 0, 0, 0, 0, 3, 2, 1.17, 282]],
+	["Leandro Córdoba", "Extremo derecho", 21, "Argentina", [1, 0]],
+	["Francisco Fraga", "Delantero centro", 20, "Argentina", [8, 5, 0, 0, 0, 0, 0, 5, 0, 0.8, 130]],
 ];
