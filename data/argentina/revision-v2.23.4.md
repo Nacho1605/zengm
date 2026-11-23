@@ -51,6 +51,6 @@ Montones: ningún valor queda con más de 20 jugadores (antes 61: 23 y 66: 22).
 
 ## Capitanes
 
-Rasgo de personalidad W (ganador) para los 27 capitanes y, en Estudiantes
-(sin capitán fijo), para Carrillo (5 capitanías). 20 lo ganaron; 8 ya lo
+Rasgo de personalidad W (ganador) para los 22 capitanes y, en Estudiantes
+(sin capitán fijo), para Carrillo (5 capitanías). 20 lo ganaron; 3 ya lo
 tenían.
