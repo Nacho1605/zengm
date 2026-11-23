@@ -36,7 +36,9 @@
 				"anio": 2011
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwQn79iKldhM2jXRjRDlyRsCcJ7TpNaPOkM1QslO8A1A&s=10",
-			"rasgos": ["pies"]
+			"rasgos": [
+				"pies"
+			]
 		},
 		{
 			"n": "23",
@@ -145,7 +147,7 @@
 				"anio": 2015
 			},
 			"college": "Arsenal Fútbol Club",
-			"ovr": 57,
+			"ovr": 58,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhxeAiwoMhO9T7oB5JKX1YQAWmw89g133K4wjzLT39IQ&s=10"
 		},
 		{
@@ -192,7 +194,10 @@
 			},
 			"ovr": 48,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUu8_Qp404Vt7ki8mA4CZvujnGLkkv0Fcs97a-ZlxFbQ&s=10",
-			"rasgos": ["potente", "tactico"]
+			"rasgos": [
+				"potente",
+				"tactico"
+			]
 		},
 		{
 			"n": "3",
@@ -236,7 +241,9 @@
 			"college": "Club Sportivo Estudiantes",
 			"ovr": 36,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWuYnxROnsjHimTtCKKqhNzSmM4K0BE4TkhDFH05YJ5A&s=10",
-			"rasgos": ["potente"]
+			"rasgos": [
+				"potente"
+			]
 		},
 		{
 			"n": "5",
@@ -319,7 +326,7 @@
 				"club": "ALM",
 				"anio": 2017
 			},
-			"ovr": 57,
+			"ovr": 58,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMC-eY2vog-bNorYniuv2uSCmd7xxaLnQIdUXh3eLKPQ&s=10"
 		},
 		{
@@ -408,7 +415,9 @@
 			"ovr": 55,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrMFIDoHY_1uOxkVGP_DTcdrKP1yYJsCg63IgytdioiA&s=10",
 			"capitan": true,
-			"rasgos": ["pulmon"]
+			"rasgos": [
+				"pulmon"
+			]
 		},
 		{
 			"n": "10",

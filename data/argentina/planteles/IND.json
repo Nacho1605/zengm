@@ -54,7 +54,9 @@
 			},
 			"college": "Centro Atlético Fénix",
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRja3lu36qjhqiHhV4-vBYafZ8KO_UHPHYuQJtk5OWeyg&s=10",
-			"rasgos": ["pies"]
+			"rasgos": [
+				"pies"
+			]
 		},
 		{
 			"n": "33",
@@ -77,7 +79,9 @@
 			},
 			"college": "Club Atlético River Plate",
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ZT8ugcv8bBRj17DFRovfiDNpKDzqLCYAoMCkz7N3zQ&s=10",
-			"rasgos": ["achique"]
+			"rasgos": [
+				"achique"
+			]
 		},
 		{
 			"n": "1",
@@ -157,7 +161,7 @@
 			"goles": 0,
 			"min": 94,
 			"fichado": "16/08/2026",
-			"ovr": 53,
+			"ovr": 51,
 			"debut": {
 				"club": "UNI",
 				"anio": 2020
@@ -271,7 +275,9 @@
 			},
 			"college": "Club Deportivo La Equidad",
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYp7xRjPE862pLG5m-16m6bE3z4RyDoJAvEra6e7GGWQ&s=10",
-			"rasgos": ["tactico"]
+			"rasgos": [
+				"tactico"
+			]
 		},
 		{
 			"n": "29",
@@ -510,7 +516,10 @@
 			},
 			"college": "Club Atlético River Plate",
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgmSqfuGMxiUMszv_A8cHqNYlP6JR9IsNwtJ6IC0LcLw&s=10",
-			"rasgos": ["gambeta", "pelota parada"]
+			"rasgos": [
+				"gambeta",
+				"pelota parada"
+			]
 		},
 		{
 			"n": "8",
@@ -549,7 +558,7 @@
 			"goles": 0,
 			"min": 62,
 			"fichado": "31/07/2026",
-			"ovr": 52,
+			"ovr": 48,
 			"debut": {
 				"club": "UNI",
 				"anio": 2021
@@ -601,7 +610,9 @@
 			},
 			"college": "Club Atlético Tiro Federal Argentino",
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRboSGoNWo5xt-h-brwJ48jYmF2uSNYKo_U7AYrI-PYMw&s",
-			"rasgos": ["potente"]
+			"rasgos": [
+				"potente"
+			]
 		},
 		{
 			"n": "34",

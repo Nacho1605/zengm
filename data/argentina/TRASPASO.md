@@ -1,18 +1,19 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
 Estado al 22/11/2026 (sesión del 22/11, noche). Última versión:
-**v2.22.1** (`data/argentina/BBGM_Argentina_2026_v.2.22.1_futbol.json`, sha256
-`f53b65b06f2e22d26477cf97b92e897c6c55553aa7c75ca7fff6ccc6d77990d1`): 20 de 30 equipos con plantel 2026. Validación con el
+**v2.22.2** (`data/argentina/BBGM_Argentina_2026_v.2.22.2_futbol.json`, sha256
+`b6377ca11114bc064f787ec38719130e87867a4a437b51808a6782b84c7a7c7a`): 20 de 30 equipos con plantel 2026. Validación con el
 esquema oficial: 0 errores. Auditoría: 53 controles, 9 con alertas; en los
 equipos cargados solo José Sosa (41 años, real), homónimos reales y las 89
 fotos de Newell's, Estudiantes RC y Unión (las pone el usuario en el juego).
 Todas las versiones se rearman idénticas desde cero (la v2.21.1 también, con
 el cargador nuevo).
 
-**Lo que sigue:** v2.22.2 = la liga del usuario con las fotos de NOB, ERC y
-UNI (las pone sobre la v2.22.1: importarla con esa base) más Gomes Gerth 7
-partidos (ya está en `planteles/UNI.json`, aceptado por el usuario; sin
-versión armada todavía). Barracas Central (BAR, v2.23; lo eligió Claude:
+**Lo que sigue:** respuestas del usuario a la revisión general
+(`revision-general-2026-11-23.md`, v2.22.2: 52 OVR y Gomes Gerth 7 partidos),
+sobre todo la duda del rango de OVR. La liga del usuario con las fotos de NOB,
+ERC y UNI la está armando sobre la **v2.22.1**: importarla con esa base
+(`desde-juego.ts LIGA v2.22.1`) y armar la v2.22.3 sin BAR. Barracas Central (BAR, v2.23; lo eligió Claude:
 completa la división Capital) ya está en `planteles/BAR.json` y en
 `armar-v2.sh` con los OVR propuestos (once 63,5), esperando las correcciones
 del usuario. Para armar la v2.22.2 sin BAR: copia temporal de `armar-v2.sh`
@@ -227,6 +228,12 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
   BEL e INS (v2.19.3). Juveniles: rendimiento + valor de mercado (v2.18.2) y
   la reserva para los que casi no jugaron (v2.19.2); no inflar juveniles por
   minutos sin producción (Baroni 60 → 52, Dávila 57 → 51, Cantizano 62 → 56).
+- Revisión general (v2.22.2, 23/11): el usuario dio permiso para revisar
+  todos los valores (también los suyos). 52 cambios, casi todos suplentes con
+  pocos minutos que estaban arriba por el valor de mercado; los valores que
+  el usuario fijó con un motivo se dejaron y se le preguntaron. Pidió
+  "maximizar el rango posible de OVR": pendiente acordar si eso incluye
+  estirar el techo (hoy 78). Detalle: `revision-general-2026-11-23.md`.
 - Arqueros: la lista es base, pero el usuario sostiene su valor salvo que la
   temporada diga otra cosa (Cardozo volvió a 70 = lista); los de equipos que
   se desarman bajan (ERC: Bruera 53, Lastra 48).
@@ -454,6 +461,16 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**Sesión del 23/11/2026 (v2.22.2).** Huella de la v2.22.2:
+`b6377ca11114bc064f787ec38719130e87867a4a437b51808a6782b84c7a7c7a`.
+
+- Barracas transcripto (34, 11 en `reemplaza`, 3 salidas) con OVR
+  propuestos; en `armar-v2.sh` pero sin versión (espera correcciones).
+- v2.22.2: revisión general de los 21 planteles (52 OVR en 13 equipos; ver
+  `revision-general-2026-11-23.md`) y Gomes Gerth 7 partidos. Armada sin BAR
+  (copia temporal de `armar-v2.sh`). Comparada con la v2.22.1: solo esos 52
+  OVR, la lesión, el orden de los planteles y un pick (Gulli 16 → 15).
+
 **Sesión del 22/11/2026, noche (v2.22 → v2.22.1).** Huella de la v2.22.1:
 `f53b65b06f2e22d26477cf97b92e897c6c55553aa7c75ca7fff6ccc6d77990d1`.
 

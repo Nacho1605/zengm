@@ -223,7 +223,10 @@
 				"anio": 2013
 			},
 			"sofascore": 7.01,
-			"rasgos": ["pulmon", "tactico"],
+			"rasgos": [
+				"pulmon",
+				"tactico"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/237051-1719388533.jpg?lm=4711"
 		},
 		{
@@ -355,7 +358,9 @@
 				"anio": 2020
 			},
 			"capitan": true,
-			"rasgos": ["pulmon"],
+			"rasgos": [
+				"pulmon"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/670566-1771860337.jpg?lm=4711"
 		},
 		{
@@ -434,7 +439,7 @@
 			"ppp": 1.15,
 			"convocado": 34,
 			"fichado": "22/08/2024",
-			"ovr": 66,
+			"ovr": 67,
 			"debut": {
 				"club": "ARG",
 				"anio": 2022
@@ -502,7 +507,10 @@
 				"anio": 2013
 			},
 			"sofascore": 7.12,
-			"rasgos": ["cerebro", "recuperador"],
+			"rasgos": [
+				"cerebro",
+				"recuperador"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/357956-1646656039.JPG?lm=4711"
 		},
 		{
@@ -625,7 +633,9 @@
 				"anio": 2015
 			},
 			"capitan": true,
-			"rasgos": ["habilidoso"],
+			"rasgos": [
+				"habilidoso"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/332259-1684807927.jpg?lm=4711"
 		},
 		{
@@ -713,7 +723,10 @@
 				"anio": 2019
 			},
 			"college": "Ceará Sporting Club",
-			"rasgos": ["gambeta", "veloz"],
+			"rasgos": [
+				"gambeta",
+				"veloz"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/645955-1771862496.jpg?lm=4711"
 		},
 		{
@@ -775,7 +788,9 @@
 				"anio": 2015
 			},
 			"college": "Club Deportivo La Equidad",
-			"rasgos": ["veloz"],
+			"rasgos": [
+				"veloz"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/413983-1789047366.png?lm=4711"
 		},
 		{

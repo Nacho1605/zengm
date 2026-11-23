@@ -231,7 +231,9 @@
 			},
 			"ovr": 60,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgF97Nxd3cXE5WaAEl6ieotvLZcLfuD2wMBZEzKWlqaA&s=10",
-			"rasgos": ["tactico"]
+			"rasgos": [
+				"tactico"
+			]
 		},
 		{
 			"n": "46",
@@ -270,7 +272,7 @@
 				"club": "IND",
 				"anio": 2014
 			},
-			"ovr": 54,
+			"ovr": 56,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGOTaDtSSgt3Uoy-n_30t895RI-P78-uiqPdrX-WMYcA&s"
 		},
 		{
@@ -291,7 +293,7 @@
 				"club": "ROS",
 				"anio": 2021
 			},
-			"ovr": 68,
+			"ovr": 69,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwk-dvGDAqWsS20hhvp3XJ3sas_XcqhkIwKWZZnlLRpg&s=10"
 		},
 		{
@@ -400,7 +402,9 @@
 			},
 			"ovr": 68,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmbqX2qeDzUyl8o-MNNDV_1HdutWiixnJg_xlahKf0kg&s=10",
-			"rasgos": ["recuperador"]
+			"rasgos": [
+				"recuperador"
+			]
 		},
 		{
 			"n": "5",
@@ -423,7 +427,14 @@
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpSz0m8PuR99eSshpEgw9NBOusYWGFgecxvFP0U3qxQw&s=10",
 			"capitan": true,
-			"rasgos": ["pelota parada", "habilidoso", "pase+", "cerebro", "recuperador", "lento"]
+			"rasgos": [
+				"pelota parada",
+				"habilidoso",
+				"pase+",
+				"cerebro",
+				"recuperador",
+				"lento"
+			]
 		},
 		{
 			"n": "8",
@@ -596,7 +607,9 @@
 			"college": "Club Deportes Tolima",
 			"ovr": 70,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLVq3OtBEIA5Lde5I7kbVqY6ZTAc51_VZ989t1SbYmbg&s",
-			"rasgos": ["veloz+"]
+			"rasgos": [
+				"veloz+"
+			]
 		},
 		{
 			"n": "20",
@@ -639,7 +652,9 @@
 			},
 			"ovr": 71,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_gr6qqjH2a8gQGCtWvAALahod-Hkm8RCqmUmxta1sTg&s",
-			"rasgos": ["gambeta"]
+			"rasgos": [
+				"gambeta"
+			]
 		},
 		{
 			"n": "11",
@@ -664,7 +679,7 @@
 				"tipo": "Desgarro muscular",
 				"partidos": 3
 			},
-			"ovr": 53,
+			"ovr": 55,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPzGjM5lB_KnvqIQR8u6uYkiKm7wMddP5PkiC6QxLhRw&s=10"
 		},
 		{
@@ -688,7 +703,9 @@
 			"college": "Club Atlético Peñarol",
 			"ovr": 72,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8EAf1SHRT9DS63_NwMeSs92frtdjLx7QZkuTQeuQkQ&s=10",
-			"rasgos": ["goleador"]
+			"rasgos": [
+				"goleador"
+			]
 		},
 		{
 			"n": "28",
@@ -732,7 +749,9 @@
 			},
 			"ovr": 57,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR1Ey8kXIIDBrSJzlSAR9auMiJWiTHTZ6KCePjE8vnDA&s=10",
-			"rasgos": ["potente"]
+			"rasgos": [
+				"potente"
+			]
 		},
 		{
 			"n": "13",

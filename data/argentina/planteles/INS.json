@@ -179,7 +179,7 @@
 			"ppp": 1.76,
 			"convocado": 34,
 			"fichado": "24/01/2025",
-			"ovr": 66,
+			"ovr": 67,
 			"debut": {
 				"club": "ARG",
 				"anio": 2016
@@ -215,7 +215,9 @@
 				"club": "ALD",
 				"anio": 2011
 			},
-			"rasgos": ["tactico"],
+			"rasgos": [
+				"tactico"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/216730-1771007813.png?lm=4711"
 		},
 		{
@@ -385,7 +387,9 @@
 			},
 			"college": "Club Atlético Vélez Sarsfield",
 			"sofascore": 7.14,
-			"rasgos": ["pulmon"],
+			"rasgos": [
+				"pulmon"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/971423-1771007275.png?lm=4711",
 			"ratings": {
 				"stre": 57,
@@ -457,12 +461,14 @@
 			"ppp": 1.82,
 			"convocado": 34,
 			"fichado": "01/01/2026",
-			"ovr": 65,
+			"ovr": 66,
 			"debut": {
 				"club": "SMT",
 				"anio": 2019
 			},
-			"rasgos": ["recuperador"],
+			"rasgos": [
+				"recuperador"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/486030-1771007353.png?lm=4711"
 		},
 		{
@@ -530,7 +536,7 @@
 			"min": 0,
 			"convocado": 10,
 			"fichado": "25/07/2026",
-			"ovr": 50,
+			"ovr": 47,
 			"debut": {
 				"club": null,
 				"anio": 2020
@@ -597,7 +603,10 @@
 				"anio": 2021
 			},
 			"sofascore": 7.09,
-			"rasgos": ["larga distancia", "habilidoso"],
+			"rasgos": [
+				"larga distancia",
+				"habilidoso"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/843126-1771006681.png?lm=4711"
 		},
 		{
@@ -796,7 +805,9 @@
 				"anio": 2019
 			},
 			"college": "Club Deportivo Atlético Huila",
-			"rasgos": ["veloz"],
+			"rasgos": [
+				"veloz"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/628879-1771007680.png?lm=4711"
 		},
 		{
@@ -822,7 +833,7 @@
 			"ppp": 1.33,
 			"convocado": 8,
 			"fichado": "01/08/2026",
-			"ovr": 52,
+			"ovr": 48,
 			"debut": {
 				"club": null,
 				"anio": 2020

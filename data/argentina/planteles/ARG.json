@@ -145,7 +145,7 @@
 			"goles": 0,
 			"min": 207,
 			"fichado": "14/09/2026",
-			"ovr": 58,
+			"ovr": 56,
 			"debut": {
 				"club": "GOD",
 				"anio": 2024
@@ -209,7 +209,7 @@
 			"pj": 20,
 			"goles": 1,
 			"min": 1064,
-			"ovr": 64,
+			"ovr": 63,
 			"debut": {
 				"club": "TIG",
 				"anio": 2012
@@ -251,7 +251,7 @@
 			"pj": 35,
 			"goles": 3,
 			"min": 2876,
-			"ovr": 67,
+			"ovr": 68,
 			"debut": {
 				"club": "TRE",
 				"anio": 2014
@@ -295,7 +295,7 @@
 			"pj": 22,
 			"goles": 0,
 			"min": 1288,
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": "ARG",
 				"anio": 2024
@@ -359,7 +359,7 @@
 			"pj": 3,
 			"goles": 0,
 			"min": 51,
-			"ovr": 56,
+			"ovr": 49,
 			"debut": {
 				"club": "ROS",
 				"anio": 2021
@@ -381,13 +381,15 @@
 			"goles": 0,
 			"min": 0,
 			"fichado": "31/07/2026",
-			"ovr": 55,
+			"ovr": 50,
 			"debut": {
 				"club": "IND",
 				"anio": 2009
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/96313-1720465539.png?lm=4711",
-			"rasgos": ["pelota parada"]
+			"rasgos": [
+				"pelota parada"
+			]
 		},
 		{
 			"n": "28",
@@ -403,7 +405,7 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"ovr": 57,
+			"ovr": 52,
 			"debut": {
 				"club": "SAR",
 				"anio": 2023
@@ -436,7 +438,10 @@
 			},
 			"college": "Asociación Atlética Argentinos Juniors",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/665309-1740595309.jpg?lm=4711",
-			"rasgos": ["gambeta+", "habilidoso"]
+			"rasgos": [
+				"gambeta+",
+				"habilidoso"
+			]
 		},
 		{
 			"n": "11",
@@ -452,14 +457,16 @@
 			"pj": 37,
 			"goles": 2,
 			"min": 2869,
-			"ovr": 67,
+			"ovr": 68,
 			"debut": {
 				"club": "RAC",
 				"anio": 2014
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/332250-1720123236.png?lm=4711",
 			"capitan": true,
-			"rasgos": ["pulmon"]
+			"rasgos": [
+				"pulmon"
+			]
 		},
 		{
 			"n": "21",
@@ -475,7 +482,7 @@
 			"pj": 14,
 			"goles": 0,
 			"min": 306,
-			"ovr": 57,
+			"ovr": 55,
 			"debut": {
 				"club": "ARG",
 				"anio": 2019
@@ -517,7 +524,7 @@
 			"pj": 32,
 			"goles": 5,
 			"min": 2448,
-			"ovr": 66,
+			"ovr": 67,
 			"debut": {
 				"club": "ALT",
 				"anio": 2018
@@ -583,7 +590,7 @@
 			"pj": 15,
 			"goles": 3,
 			"min": 402,
-			"ovr": 64,
+			"ovr": 61,
 			"debut": {
 				"club": "SMJ",
 				"anio": 2019

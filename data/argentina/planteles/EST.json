@@ -70,7 +70,9 @@
 			"ovr": 70,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCFdgZX3bMBgCvS4Zv8JJD0trk-xAC-N255nCBNA-7VA&s=10",
 			"capitanias": 2,
-			"rasgos": ["reflejos"]
+			"rasgos": [
+				"reflejos"
+			]
 		},
 		{
 			"n": "1",
@@ -134,7 +136,10 @@
 			},
 			"college": "Club Costa Brava (General Pico)",
 			"ovr": 69,
-			"rasgos": ["aereo", "recuperador"],
+			"rasgos": [
+				"aereo",
+				"recuperador"
+			],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLUaPo7djYwsxgbmQoJOG8i5r5MsPFMAt6Lue1i6wOww&s=10"
 		},
 		{
@@ -178,7 +183,9 @@
 				"anio": 2012
 			},
 			"ovr": 67,
-			"rasgos": ["tactico"],
+			"rasgos": [
+				"tactico"
+			],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_TflhAjaPK0ZcXfqYhrMVE3qYBZDAY0GnvMLK2iBQGw&s=10",
 			"capitanias": 1
 		},
@@ -223,7 +230,10 @@
 				"anio": 2009
 			},
 			"ovr": 65,
-			"rasgos": ["aereo", "recuperador"],
+			"rasgos": [
+				"aereo",
+				"recuperador"
+			],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQex3kmtIvSjheCAB-xe7BJXcOybZX2AcARAA1Sf4y2w&s=10"
 		},
 		{
@@ -266,7 +276,7 @@
 				"anio": 2017
 			},
 			"college": "Club Cerro Porteño",
-			"ovr": 54,
+			"ovr": 51,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8n2BDSTTznWhayVWYewmhfeFdw75IGeT78qANEcR71Q&s=10"
 		},
 		{
@@ -290,7 +300,9 @@
 			"college": "Club Estudiantes de La Plata",
 			"ovr": 66,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7OjjS4YKDiV-Y1IJT0sjN3gh_Jfe1dR8_wNXxNMbjOw&s=10",
-			"rasgos": ["centrador"]
+			"rasgos": [
+				"centrador"
+			]
 		},
 		{
 			"n": "36",
@@ -355,7 +367,10 @@
 			},
 			"ovr": 65,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUn5hGg8txPmbLPA4KyJEEadi9_0p9uiJMTktf_tx4jg&s=10",
-			"rasgos": ["veloz", "centrador"]
+			"rasgos": [
+				"veloz",
+				"centrador"
+			]
 		},
 		{
 			"n": "39",
@@ -376,7 +391,7 @@
 				"club": "NOB",
 				"anio": 2015
 			},
-			"ovr": 54,
+			"ovr": 51,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9w34HUCVxYP0p8vabF6fMH-OgpNd43Cr4bHIFltaHVA&s=10"
 		},
 		{
@@ -400,7 +415,9 @@
 			"college": "Club Nacional de Football",
 			"ovr": 62,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyDjvkPjattknjOsWjAF5y7p85e55PVNK9IvqktpoRUw&s=10",
-			"rasgos": ["cerebro"]
+			"rasgos": [
+				"cerebro"
+			]
 		},
 		{
 			"n": "21",
@@ -429,7 +446,9 @@
 				}
 			],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRL2Vc_VmG3bBzAhB_kWCfbVvgT-EHquzvJY91ZzrRpA&s=10",
-			"rasgos": ["pulmon"]
+			"rasgos": [
+				"pulmon"
+			]
 		},
 		{
 			"n": "22",
@@ -515,7 +534,7 @@
 				"anio": 2022
 			},
 			"college": "Deportivo Independiente Medellín",
-			"ovr": 57,
+			"ovr": 55,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR57Hah69_9GxKUsn-bBd1jd3dVbjYnPssgsClmWkaxcQ&s=10"
 		},
 		{
@@ -539,7 +558,9 @@
 			"ovr": 58,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRukuG4GxRrHnfqB1qJWa8S79c25nIFTsLdaYxOqSIiWA&s=10",
 			"capitanias": 3,
-			"rasgos": ["habilidoso"]
+			"rasgos": [
+				"habilidoso"
+			]
 		},
 		{
 			"n": "17",
@@ -583,7 +604,10 @@
 			"college": "Rocha Fútbol Club",
 			"ovr": 69,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUFEMP6eZnWbpseZ1-gAp2i6QUp6MXhOJOQg0Z_VpQQg&s=10",
-			"rasgos": ["gambeta", "veloz"]
+			"rasgos": [
+				"gambeta",
+				"veloz"
+			]
 		},
 		{
 			"n": "28",
@@ -671,7 +695,9 @@
 			"ovr": 66,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKAGFMrFn3lnkf4250nN_bpf3Oa3a67oO_e1hWPXvt_Q&s=10",
 			"capitanias": 1,
-			"rasgos": ["gambeta"]
+			"rasgos": [
+				"gambeta"
+			]
 		},
 		{
 			"n": "19",
@@ -692,7 +718,10 @@
 				"anio": 2018
 			},
 			"ovr": 59,
-			"rasgos": ["aereo", "potente"],
+			"rasgos": [
+				"aereo",
+				"potente"
+			],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-q1WykPkXpWJbeKTAKEo14iq-NhsPsZJYeuTRiBSHbQ&s=10"
 		},
 		{
@@ -738,7 +767,9 @@
 			},
 			"ovr": 61,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQexvZfSt11fpPbwNiCt4XDxZpSLLesFKRs2uq0dXsfHQ&s=10",
-			"rasgos": ["goleador"]
+			"rasgos": [
+				"goleador"
+			]
 		}
 	]
 }

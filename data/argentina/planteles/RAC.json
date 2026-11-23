@@ -61,7 +61,9 @@
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1R0OauQ1Hn06dkc3rI8id1xmGCWMe4QsB4CsZPRRY8g&s=10",
 			"capitan": true,
-			"rasgos": ["reflejos"]
+			"rasgos": [
+				"reflejos"
+			]
 		},
 		{
 			"n": "30",
@@ -145,7 +147,7 @@
 			"goles": 0,
 			"min": 301,
 			"fichado": "28/08/2026",
-			"ovr": 58,
+			"ovr": 56,
 			"debut": {
 				"club": "LAN",
 				"anio": 2020
@@ -272,7 +274,7 @@
 			"goles": 0,
 			"min": 122,
 			"fichado": "29/08/2026",
-			"ovr": 57,
+			"ovr": 54,
 			"debut": {
 				"club": "BEL",
 				"anio": 2019
@@ -434,13 +436,15 @@
 			"pj": 32,
 			"goles": 4,
 			"min": 1550,
-			"ovr": 68,
+			"ovr": 67,
 			"debut": {
 				"club": "ARG",
 				"anio": 2019
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk5g3SN9kMUoMTatidaeez82wKXdcIf20mzXLZKaR7Og&s=10",
-			"rasgos": ["habilidoso"]
+			"rasgos": [
+				"habilidoso"
+			]
 		},
 		{
 			"n": "11",
@@ -462,7 +466,9 @@
 				"anio": 2017
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpUp7iK8STG5vckp5t3Ay7cVrjYQVu7XA09w8aeYDfvg&s=10",
-			"rasgos": ["gambeta"]
+			"rasgos": [
+				"gambeta"
+			]
 		},
 		{
 			"n": "24",
@@ -549,7 +555,9 @@
 			},
 			"college": "Envigado Fútbol Club",
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuF-GJnepa_eGjIW67kwnpxVO-gK14Sge0e2Pnao5pxg&s=10",
-			"rasgos": ["veloz"]
+			"rasgos": [
+				"veloz"
+			]
 		},
 		{
 			"n": "27",
@@ -598,7 +606,10 @@
 				"partidos": 1
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRm9PSFE4zjGJgh8DZK9qVmZ2fQTPkz1Ih48BHEnc3SA&s=10",
-			"rasgos": ["goleador", "potente"]
+			"rasgos": [
+				"goleador",
+				"potente"
+			]
 		},
 		{
 			"n": "32",
@@ -615,13 +626,15 @@
 			"goles": 0,
 			"min": 884,
 			"fichado": "21/07/2026",
-			"ovr": 58,
+			"ovr": 57,
 			"debut": {
 				"club": "EBA",
 				"anio": 2019
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9n0agTcWmWfteEyKs-0H0V3EM1YbnvA8ayJBdX7SyHQ&s=10",
-			"rasgos": ["gambeta"]
+			"rasgos": [
+				"gambeta"
+			]
 		},
 		{
 			"n": "22",

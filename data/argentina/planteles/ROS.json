@@ -134,7 +134,7 @@
 				"club": "ROS",
 				"anio": 2026
 			},
-			"ovr": 68,
+			"ovr": 70,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1297993-1742571532.png?lm=4711"
 		},
 		{
@@ -399,7 +399,10 @@
 			},
 			"ovr": 70,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ11b5EoxW1XOI4dwNVK0ZCQlpk5fOsL3qQmrZ2ErE04g&s=10",
-			"rasgos": ["recuperador", "pulmon"]
+			"rasgos": [
+				"recuperador",
+				"pulmon"
+			]
 		},
 		{
 			"n": "20",
@@ -530,7 +533,10 @@
 			"college": "Club Deportes Tolima",
 			"ovr": 71,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkugFxP_Y5FwNGrPX8ZdxTtDZkoD4HzgZnV_rSdLRTbA&s=10",
-			"rasgos": ["gambeta", "pase"]
+			"rasgos": [
+				"gambeta",
+				"pase"
+			]
 		},
 		{
 			"n": "26",
@@ -572,7 +578,7 @@
 				"club": "ROS",
 				"anio": 2014
 			},
-			"ovr": 54,
+			"ovr": 52,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQThGlaUROihVGVSR2jlMorD0aemEnti5EynqaXFWEyQ&s=10"
 		},
 		{
@@ -617,7 +623,13 @@
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1S9nMOZqdzH-Q_Faq3RgQKT8aCrVEP7j7W7qVl2XPw&s=10",
 			"capitan": true,
-			"rasgos": ["larga distancia", "gambeta", "pelota parada", "habilidoso+", "centrador"]
+			"rasgos": [
+				"larga distancia",
+				"gambeta",
+				"pelota parada",
+				"habilidoso+",
+				"centrador"
+			]
 		},
 		{
 			"n": "27",
@@ -659,7 +671,7 @@
 				"club": "GOD",
 				"anio": 2019
 			},
-			"ovr": 58,
+			"ovr": 56,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr9Nd923tO65leZJ8-5slnZFF8IbZl979Lz53YnMEzUg&s=10"
 		},
 		{
@@ -682,7 +694,9 @@
 			},
 			"ovr": 66,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ20ZK1GPA5MX7SPZXzoZAPfntMiToT1e8fNDBnIpuew&s=10",
-			"rasgos": ["pulmon"]
+			"rasgos": [
+				"pulmon"
+			]
 		},
 		{
 			"n": "9",

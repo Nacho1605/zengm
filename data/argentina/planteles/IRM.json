@@ -107,7 +107,9 @@
 				"anio": 2024
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1190390-1781278682.jpg?lm=4711",
-			"rasgos": ["recuperador"]
+			"rasgos": [
+				"recuperador"
+			]
 		},
 		{
 			"n": "13",
@@ -154,7 +156,9 @@
 			},
 			"college": "Central Español Fútbol Club",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/800720-1781277593.jpg?lm=4711",
-			"rasgos": ["potente"]
+			"rasgos": [
+				"potente"
+			]
 		},
 		{
 			"n": "40",
@@ -239,7 +243,7 @@
 			"goles": 2,
 			"min": 1611,
 			"fichado": "03/07/2024",
-			"ovr": 65,
+			"ovr": 64,
 			"debut": {
 				"club": "BAN",
 				"anio": 2016
@@ -283,7 +287,7 @@
 			"goles": 0,
 			"min": 1309,
 			"fichado": "01/07/2025",
-			"ovr": 61,
+			"ovr": 60,
 			"debut": {
 				"club": "GIM",
 				"anio": 2015
@@ -372,14 +376,17 @@
 			"goles": 10,
 			"min": 3609,
 			"fichado": "14/01/2026",
-			"ovr": 69,
+			"ovr": 70,
 			"debut": {
 				"club": null,
 				"anio": 2019
 			},
 			"college": "Club Guaraní",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/741965-1781277180.jpg?lm=4711",
-			"rasgos": ["larga distancia", "pulmon"]
+			"rasgos": [
+				"larga distancia",
+				"pulmon"
+			]
 		},
 		{
 			"n": "5",
@@ -425,7 +432,9 @@
 			},
 			"college": "Quilmes Atlético Club",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/707153-1781282905.jpg?lm=4711",
-			"rasgos": ["gambeta+"]
+			"rasgos": [
+				"gambeta+"
+			]
 		},
 		{
 			"n": "11",
@@ -532,7 +541,7 @@
 			"goles": 0,
 			"min": 200,
 			"fichado": "10/10/2026",
-			"ovr": 57,
+			"ovr": 55,
 			"debut": {
 				"club": "CDC",
 				"anio": 2019
@@ -627,7 +636,7 @@
 			"goles": 20,
 			"min": 2368,
 			"fichado": "06/07/2025",
-			"ovr": 71,
+			"ovr": 72,
 			"debut": {
 				"club": null,
 				"anio": 2017
@@ -636,7 +645,11 @@
 			"leal": true,
 			"capitan": true,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/970518-1781276813.jpg?lm=4711",
-			"rasgos": ["goleador+", "aereo", "potente"]
+			"rasgos": [
+				"goleador+",
+				"aereo",
+				"potente"
+			]
 		},
 		{
 			"n": "43",

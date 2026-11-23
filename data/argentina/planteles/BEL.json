@@ -179,7 +179,9 @@
 			},
 			"college": "Club Atlético Paraná",
 			"sofascore": 6.94,
-			"rasgos": ["potente"],
+			"rasgos": [
+				"potente"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/457061-1758831660.png?lm=4711"
 		},
 		{
@@ -389,13 +391,15 @@
 			"ppp": 2.08,
 			"convocado": 36,
 			"fichado": "06/01/2020",
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": "BEL",
 				"anio": 2020
 			},
 			"college": "Club Atlético Unión",
-			"rasgos": ["recuperador"],
+			"rasgos": [
+				"recuperador"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/697065-1758830909.png?lm=4711"
 		},
 		{
@@ -489,7 +493,9 @@
 			},
 			"sofascore": 7.04,
 			"capitan": true,
-			"rasgos": ["gambeta"],
+			"rasgos": [
+				"gambeta"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/230030-1758831350.png?lm=4711"
 		},
 		{
@@ -521,7 +527,9 @@
 				"anio": 2017
 			},
 			"sofascore": 6.92,
-			"rasgos": ["larga distancia"],
+			"rasgos": [
+				"larga distancia"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/442679-1758831469.png?lm=4711",
 			"ratings": {
 				"stre": 47,
@@ -599,7 +607,10 @@
 				"anio": 2007
 			},
 			"sofascore": 7.04,
-			"rasgos": ["habilidoso", "pase"],
+			"rasgos": [
+				"habilidoso",
+				"pase"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/76163-1757676848.jpg?lm=4711"
 		},
 		{
@@ -760,7 +771,9 @@
 					"nombre": "Brian Fernández"
 				}
 			],
-			"rasgos": ["goleador"],
+			"rasgos": [
+				"goleador"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/333921-1758832545.png?lm=4711"
 		},
 		{

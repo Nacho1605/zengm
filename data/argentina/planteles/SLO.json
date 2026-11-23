@@ -122,14 +122,16 @@
 			"pj": 9,
 			"goles": 0,
 			"min": 799,
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": "SMJ",
 				"anio": 2020
 			},
 			"college": "Club Atlético Huracán (San Rafael)",
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQHAaGKGgQgHR7_PjRPMYdcyujYHh1qr06qBfQlzTaw&s=10",
-			"rasgos": ["recuperador"]
+			"rasgos": [
+				"recuperador"
+			]
 		},
 		{
 			"n": "36",
@@ -174,7 +176,9 @@
 			},
 			"college": "Patriotas Boyacá",
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp-n11YHmzjWCQThJTfJS8ZoEVnOp-uTFyWMp520EzWA&s=10",
-			"rasgos": ["potente"]
+			"rasgos": [
+				"potente"
+			]
 		},
 		{
 			"n": "19",
@@ -276,7 +280,7 @@
 			"pj": 24,
 			"goles": 1,
 			"min": 1567,
-			"ovr": 65,
+			"ovr": 63,
 			"debut": {
 				"club": "SLO",
 				"anio": 2026
@@ -389,7 +393,9 @@
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXoI6WwvxpX9Fp4FhZLQyCOhrk5VU9p0i9tBvBMb9b1Q&s=10",
 			"capitan": true,
-			"rasgos": ["pulmon"]
+			"rasgos": [
+				"pulmon"
+			]
 		},
 		{
 			"n": "27",
@@ -406,7 +412,7 @@
 			"goles": 0,
 			"min": 223,
 			"fichado": "31/07/2026",
-			"ovr": 54,
+			"ovr": 52,
 			"debut": {
 				"club": "TRE",
 				"anio": 2021
@@ -562,7 +568,9 @@
 				"anio": 2020
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKFrpTrwJ-xyHXIRPFYrJrPgkAcH-L2MZAO-4HuqSKw&s=10",
-			"rasgos": ["gambeta"]
+			"rasgos": [
+				"gambeta"
+			]
 		},
 		{
 			"n": "28",
@@ -588,7 +596,9 @@
 				"partidos": 20
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZayjXpLh1giq1Z-44ODrIPQ6kj0MOGxWaU0virDVMjw&s=10",
-			"rasgos": ["veloz"]
+			"rasgos": [
+				"veloz"
+			]
 		},
 		{
 			"n": "14",
@@ -668,14 +678,16 @@
 			"pj": 39,
 			"goles": 8,
 			"min": 3210,
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "BAR",
 				"anio": 2019
 			},
 			"college": "Racing Club",
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJM6hTSvBVEmqZs7VKqtryMR7ssLqBgrzLfE9FMQc-Jw&s=10",
-			"rasgos": ["veloz"]
+			"rasgos": [
+				"veloz"
+			]
 		},
 		{
 			"n": "29",
@@ -691,7 +703,7 @@
 			"pj": 31,
 			"goles": 9,
 			"min": 2376,
-			"ovr": 68,
+			"ovr": 66,
 			"debut": {
 				"club": null,
 				"anio": 2019
@@ -743,7 +755,9 @@
 			},
 			"college": "Deportivo Independiente Medellín",
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbNLFHufae1utzrd7HANUGFFqbg8Sh9D6ekvgYB-sH2Q&s=10",
-			"rasgos": ["potente"]
+			"rasgos": [
+				"potente"
+			]
 		},
 		{
 			"n": "54",
