@@ -254,6 +254,8 @@ export type Forma = {
 	// ins y dnk por cada gol de más (y la mitad en fg), entre "min" y "max".
 	// Sin este campo: escala 25, entre -6 y +8 (formas 1 y 2)
 	gol?: { escala: number; min: number; max: number };
+	// Capitán (`"capitan": true` en el plantel): arquetipo según el puesto
+	capitan?: Record<string, Partial<Record<Key, number>>>;
 };
 
 export const FORMA_1: Forma = {
@@ -334,9 +336,40 @@ export const FORMA_3: Forma = {
 	rasgos: { ...FORMA_2.rasgos, goleador: { ins: 6, dnk: 3 } },
 };
 
-// Forma con la que se arma el archivo. FORMA=2 en el entorno arma con la
-// forma anterior (para comprobar que el resto del archivo no cambia)
-export const FORMA_VIGENTE: Forma = process.env.FORMA === "2" ? FORMA_2 : FORMA_3;
+// Forma 4 (desde la v2.23.6; análisis de composites del 24/11, aceptado por
+// el usuario; ver data/argentina/analisis-composites-y-capitanes.md):
+// - Laterales y pivotes marcan más en el uno contra uno (en el motor, la
+//   marca 1 contra 1 quedaba en arqueros y centrales), a costa de su remate.
+// - Los extremos pasan más (asisten como los mediapuntas y el motor les daba
+//   mucho menos pase), a costa del remate de adentro.
+// - Arquetipo del capitán según el puesto: más lectura de juego (oiq y diq)
+//   y lo propio de su línea. Como siempre, el OVR no cambia: lo que se suma
+//   se compensa bajando parejo el resto.
+export const FORMA_4: Forma = {
+	...FORMA_3,
+	contraste: {
+		...FORMA_3.contraste,
+		GF: { ...FORMA_3.contraste.GF, spd: 4, diq: 5, ins: -9, dnk: -8, fg: -6 },
+		G: { ...FORMA_3.contraste.G, diq: 5, ins: -9, dnk: -8, fg: -4 },
+		SF: { ...FORMA_3.contraste.SF, pss: 8, ins: -6 },
+	},
+	capitan: {
+		C: { diq: 4, reb: 3 },
+		FC: { diq: 4, oiq: 2, stre: 2 },
+		PF: { diq: 4, oiq: 2, stre: 2 },
+		GF: { diq: 3, endu: 3, oiq: 2 },
+		G: { oiq: 3, diq: 3, pss: 2 },
+		SG: { oiq: 3, diq: 3, pss: 2 },
+		PG: { oiq: 5, pss: 3 },
+		SF: { oiq: 5, pss: 3 },
+		F: { oiq: 3, stre: 3, ins: 2 },
+	},
+};
+
+// Forma con la que se arma el archivo. FORMA=2 o FORMA=3 en el entorno arma
+// con una forma anterior (para comprobar que el resto del archivo no cambia)
+export const FORMA_VIGENTE: Forma =
+	process.env.FORMA === "2" ? FORMA_2 : process.env.FORMA === "3" ? FORMA_3 : FORMA_4;
 
 const LINEA: Record<string, "ataque" | "defensa" | "medio"> = {
 	F: "ataque",
@@ -415,6 +448,12 @@ export const generarRatings = (
 		}
 		for (const [k, v] of Object.entries(efecto)) {
 			sumar(k as Key, v! * (mas ? 1.5 : 1));
+		}
+	}
+	// Capitán: arquetipo según el puesto (forma 4)
+	if (j.capitan && forma.capitan?.[pos]) {
+		for (const [k, v] of Object.entries(forma.capitan[pos]!)) {
+			sumar(k as Key, v!);
 		}
 	}
 	for (const k of KEYS) {

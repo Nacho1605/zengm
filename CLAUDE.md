@@ -91,7 +91,9 @@ v2.14.1 → v2.14.2).
 - Arqueros: ins, dnk, fg, tp en 0.
 - Forma de los ratings (`tools/argentina/ratings-futbol.ts`; forma 2 desde la
   v2.15.4, forma 3 desde la v2.17.2: delanteros con ins y dnk sin inflar;
-  `FORMA=2` en el entorno arma con la anterior, para comprobar): el OVR siempre da exacto con la fórmula oficial (nunca se pisa a
+  forma 4 desde la v2.23.6: laterales y pivotes con más marca 1 contra 1,
+  extremos con más pase y arquetipo del capitán según el puesto;
+  `FORMA=3` (o `FORMA=2`) en el entorno arma con una anterior, para comprobar): el OVR siempre da exacto con la fórmula oficial (nunca se pisa a
   mano); lo que cambia es cómo se reparte. Los atacantes defienden menos y los
   defensores atacan menos (nunca a cero: todo es relativo), la experiencia va
   más a la inteligencia de su línea y la fuerza acompaña a la altura (con
@@ -214,8 +216,10 @@ v2.14.1 → v2.14.2).
 - Capitán: anotarlo en el plantel (`"capitan": true`; si no hay capitán fijo,
   `"capitanias": N` con las veces que lo fue). El juego no tiene capitán; es
   contexto positivo (liderazgo, jerarquía en el club) que se tiene en cuenta
-  al valorar. Pendiente: que tenga un efecto en el archivo (ver TRASPASO
-  §7). Lista en TRASPASO §4.
+  al valorar. En el archivo (desde la v2.23.4/v2.23.6): rasgo de
+  personalidad W (ganador) y arquetipo de capitán según el puesto (más
+  lectura de juego; `capitan` en la forma 4 de `ratings-futbol.ts`). El
+  ajuste según el motivo de la capitanía no se aplicó. Lista en TRASPASO §4.
 - Solo entran al equipo los jugadores de las capturas del plantel; los
   juveniles que figuran solo en Rendimiento no se agregan (van a salidas).
 - Juveniles del plantel que siguen en reserva (el usuario lo aclara):

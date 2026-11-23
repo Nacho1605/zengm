@@ -1,33 +1,35 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
 Estado al 24/11/2026 (cierre de la sesión del 22–24/11). Última versión:
-**v2.23.5** (`data/argentina/BBGM_Argentina_2026_v.2.23.5_futbol.json`,
-sha256 `62e9d668eeb57c101ae07d7f1257a30cf3756e30cd16e4e01f5bb7ad59ee2137`): 21
+**v2.23.6** (`data/argentina/BBGM_Argentina_2026_v.2.23.6_futbol.json`,
+sha256 `7dca4d57d2321f6386bb5abb5eb5a696e9456d8c5e0a7094e321819be3929bff`): 21
 de 30 equipos con plantel 2026, todos con el Rendimiento completo; todo el
-archivo en la escala nueva de OVR (20 a 78). Validación: 0 errores.
-Auditoría: 53 controles, 9 con alertas (las de siempre). Escalera por puesto
-del usuario actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U;
-copia en `data/argentina/escalera/`). El usuario dijo que esta sesión fue
-"la más útil de todas hasta ahora".
+archivo en la escala nueva de OVR (20 a 78) y en la forma 4 de los ratings.
+Validación: 0 errores. Auditoría: 53 controles, 9 con alertas (las de
+siempre). Escalera por puesto del usuario actualizada
+(https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
+`data/argentina/escalera/`). El usuario dijo que esta sesión fue "la más
+útil de todas hasta ahora".
 
-**Lo que sigue:**
-1. Decisiones del usuario sobre `analisis-composites-y-capitanes.md`: el
-   capitán como arquetipo (efecto por puesto, motivo de cada uno de los 23)
-   y qué hacer con los cuatro problemas de los composites (robos de
-   arqueros, marca 1 contra 1, faltas, pase de los extremos). Herramienta:
-   `tools/argentina/composites.mjs`.
-2. Lo que anote en la escalera ("EQUIPO Jugador: viejo → nuevo";
-   `ajustar-ovr.ts` y un parche).
-3. Fotos de NOB, ERC, UNI y BAR: el usuario las pone sobre la última versión
-   que tenga. Al importar su liga, usar como base la versión sobre la que
-   jugó (para saberla, mirar un OVR que cambió entre versiones).
+**Lo que sigue (el usuario, 24/11: "mañana pondré las fotos que faltan y
+traeré mi lista de cambios a la Stat Ladder"):**
+1. La liga del usuario con las fotos de NOB, ERC, UNI y BAR: compararla
+   (huella) e importarla con `desde-juego.ts`, dándole como base la versión
+   sobre la que jugó (seguramente la v2.23.6; para confirmarlo, mirar un OVR
+   o un rating que cambió entre versiones).
+2. Su lista de la escalera ("EQUIPO Jugador: viejo → nuevo"): aplicarla con
+   `ajustar-ovr.ts` sobre los planteles ya con las fotos y armar el parche
+   (v2.23.7); regenerar la escalera y republicarla en el mismo link.
+3. Pendiente de analizar con el usuario: el ajuste del capitán según el
+   motivo (experiencia, juvenil, compartida; ver
+   `analisis-composites-y-capitanes.md`) y si Estudiantes (sin capitán fijo)
+   lleva el arquetipo.
 4. Después: BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM.
 5. Más adelante (el usuario: "falta bastante"): colleges, nombres y orígenes
    latinoamericanos (`playerBioInfo`, cuando estén todos los equipos y sus
    fotos, antes de los libres) y el draft (§7, 15).
 6. Sanguinetti (VEL): Sofascore 7,24 con 13 partidos según Sofascore, 0 en
-   Transfermarkt y sin partidos en Banfield; el usuario no sabe de dónde
-   sale. Queda como está.
+   Transfermarkt y sin partidos en Banfield; queda como está.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -408,14 +410,14 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
     (CAR), seeklogo (MOR, DPV), fundacionamigospd.com (FAD), ESPN (CMN),
     bibliotecariodelfutbol (MSL), wikia (IND), footylogos (HUR, SLO, RAC, LAN,
     GIM, ARG chico); Transfermarkt en RIN y HGO.
-12. **Capitán con efecto**: hecho el rasgo de personalidad W (v2.23.4, en
-    `cargar-plantel.ts`: capitanes y, sin capitán fijo, el de más
-    capitanías). Falta el "capitán" como arquetipo de juego: depende del
-    puesto (arquero, central, volante, delantero) y del motivo (nivel, edad,
-    experiencia, confianza del plantel). Analizarlo con el usuario.
-13. **Rearmar jugadores con los composites** (`sistema-ratings.md`) sin
-    cambiar su OVR: el usuario elige cuáles (propuesta: los goleadores, los
-    armadores y los arqueros del Equipo Ideal).
+12. **Capitán con efecto**: rasgo de personalidad W (v2.23.4) y arquetipo
+    de juego por puesto (v2.23.6, forma 4). Falta decidir el ajuste según
+    el motivo de la capitanía.
+13. **Composites**: analizados y corregidos en la forma 4 (v2.23.6; ver
+    `analisis-composites-y-capitanes.md`). Queda abierto: el rasgo
+    "centrador" para extremos que asisten mucho (el usuario los elige) y
+    seguir cruzando composites con los números reales
+    (`tools/argentina/composites.mjs`).
 14. **Colleges, nombres y razas para Argentina y Latinoamérica** (como
     `src/worker/data/defaultColleges.ts`): el archivo de liga lo permite con
     `playerBioInfo` (países con nombres, apellidos, colleges y razas). Sirve
@@ -547,6 +549,16 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**Sesión del 24/11/2026, cierre (v2.23.6).** Huella:
+`7dca4d57d2321f6386bb5abb5eb5a696e9456d8c5e0a7094e321819be3929bff`.
+
+- Forma 4 de los ratings (aceptada por el usuario): laterales (spd +4, diq
+  +5) y pivotes (diq +5) a costa del remate; extremos con pss +8 a costa de
+  ins; arquetipo del capitán por puesto. Con `FORMA=3` sale la v2.23.5
+  idéntica (comprobado). Comparada con la v2.23.5: ningún OVR cambia;
+  cambian los ratings de 238 jugadores de los planteles y 837 prospectos
+  generados.
+
 **Sesión del 24/11/2026, cierre (v2.23.5).** Huella:
 `62e9d668eeb57c101ae07d7f1257a30cf3756e30cd16e4e01f5bb7ad59ee2137`.
 

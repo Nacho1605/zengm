@@ -1,7 +1,12 @@
 # Análisis: composites del motor y el capitán como arquetipo (24/11/2026)
 
 Sobre la v2.23.4 (jugadores de los 21 planteles con OVR 55 o más: 293).
-Nada de esto está aplicado: son opciones para decidir. Los composites están
+**Aplicado en la v2.23.6** (el usuario aceptó, 24/11): las soluciones
+recomendadas a los cuatro problemas (1 y 3 se aceptan como están; 2 y 4 en
+la forma 4 de `ratings-futbol.ts`) y el arquetipo del capitán por puesto
+(sin el ajuste por motivo). Resultado: laterales con la letra Dp 38% → 60%,
+extremos con la letra Ps 29% → 59% (pase 62 → 65), pivotes con algo más de
+quite (61 → 63); ningún OVR cambió. Los composites están
 explicados en `sistema-ratings.md`.
 
 ## 1. Composites: cómo juega hoy cada puesto

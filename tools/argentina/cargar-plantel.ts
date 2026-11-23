@@ -867,7 +867,7 @@ console.log(
 		delete p.draft.skills;
 		n += 1;
 	}
-	console.log(`Prospectos generados con nivel base -${BAJA} y forma ${FORMA_VIGENTE === FORMA_2 ? 2 : 3}: ${n} (OVR ${(suma / n).toFixed(1)} más bajo en promedio; ${sinForma} solo con el nivel, por OVR muy bajo)`);
+	console.log(`Prospectos generados con nivel base -${BAJA} y forma ${FORMA_VIGENTE === FORMA_2 ? 2 : process.env.FORMA === "3" ? 3 : 4}: ${n} (OVR ${(suma / n).toFixed(1)} más bajo en promedio; ${sinForma} solo con el nivel, por OVR muy bajo)`);
 }
 
 // Escala nueva para los prospectos generados (drafts futuros), pedido del
