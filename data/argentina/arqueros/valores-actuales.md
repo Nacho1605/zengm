@@ -1,6 +1,6 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.23.3_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.23.4_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
@@ -11,9 +11,9 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | RIV | Santiago Beltrán | 73 | 72 | −1 | 46 | 4121 |
 | BEL | Thiago Cardozo | 70 | 70 | = | 37 | 3390 |
 | EST | Fernando Muslera | 71 | 70 | −1 | 38 | 3375 |
+| BOC | Álvaro Montero | 71 | 69 | −2 | 25 | 2250 |
 | HUR | Hernán Galíndez | 70 | 69 | −1 | 32 | 2940 |
 | ARG | Brayan Cortés | 69 | 68 | −1 | 38 | 3480 |
-| BOC | Álvaro Montero | 71 | 68 | −3 | 25 | 2250 |
 | LAN | Nahuel Losada | 69 | 68 | −1 | 43 | 3900 |
 | RAC | Facundo Cambeses | 72 | 68 | −4 | 42 | 3765 |
 | IND | Rodrigo Rey | 68 | 67 | −1 | 31 | 2790 |

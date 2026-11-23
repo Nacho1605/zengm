@@ -111,7 +111,7 @@
 			"salio": 3,
 			"ppp": 1.97,
 			"convocado": 44,
-			"ovr": 64,
+			"ovr": 66,
 			"debut": {
 				"club": "RIV",
 				"anio": 2024
@@ -141,7 +141,7 @@
 			"salio": 2,
 			"ppp": 1.73,
 			"convocado": 42,
-			"ovr": 66,
+			"ovr": 68,
 			"debut": {
 				"club": "RIV",
 				"anio": 2016
@@ -242,9 +242,7 @@
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLyaf3p-YBXuS6_dwlfwPRlBGSBOwgzuSexsNIJtyyA&s=10",
 			"capitan": true,
-			"rasgos": [
-				"aereo"
-			]
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": "31",
@@ -518,7 +516,7 @@
 			"ppp": 1.88,
 			"convocado": 16,
 			"fichado": "31/07/2026",
-			"ovr": 66,
+			"ovr": 67,
 			"debut": {
 				"club": "VEL",
 				"anio": 2025
@@ -646,7 +644,7 @@
 			"salio": 31,
 			"ppp": 1.82,
 			"convocado": 45,
-			"ovr": 66,
+			"ovr": 68,
 			"debut": {
 				"club": "RIV",
 				"anio": 2022
@@ -676,7 +674,7 @@
 			"salio": 4,
 			"ppp": 2.04,
 			"convocado": 32,
-			"ovr": 33,
+			"ovr": 45,
 			"debut": {
 				"club": "RIV",
 				"anio": 2025

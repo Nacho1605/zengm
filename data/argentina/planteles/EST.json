@@ -203,7 +203,7 @@
 				"club": "EST",
 				"anio": 2021
 			},
-			"ovr": 64,
+			"ovr": 66,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjYNn8rV0XqFjmxXKrMl8rXGmUYSDA__DmqYweIfne3Q&s=10",
 			"capitanias": 3,
 			"sofascore": 7.08
@@ -234,7 +234,7 @@
 				"club": "RIV",
 				"anio": 2012
 			},
-			"ovr": 65,
+			"ovr": 67,
 			"rasgos": [
 				"tactico"
 			],
@@ -582,7 +582,7 @@
 				"anio": 2014
 			},
 			"college": "Club Atlético Vélez Sarsfield",
-			"ovr": 65,
+			"ovr": 66,
 			"parientes": [
 				{
 					"tipo": "brother",
@@ -994,9 +994,7 @@
 				"anio": 2011
 			},
 			"ovr": 68,
-			"rasgos": [
-				"aereo"
-			],
+			"rasgos": ["aereo"],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx3Yue4b_eX4uccuO68X-hXsvxcMdUfg6PeMbbADyt_w&s=10",
 			"capitanias": 5
 		},

@@ -80,7 +80,7 @@
 			"ppp": 2.2,
 			"convocado": 25,
 			"fichado": "17/07/2026",
-			"ovr": 68,
+			"ovr": 69,
 			"debut": {
 				"club": "SLO",
 				"anio": 2015
@@ -209,9 +209,7 @@
 			},
 			"ovr": 70,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrki1a19pluSjky22mmDeTfXVk1WM4tf_UT2ydRl6jw&s=10",
-			"rasgos": [
-				"aereo"
-			],
+			"rasgos": ["aereo"],
 			"sofascore": 7.27
 		},
 		{
@@ -447,7 +445,7 @@
 				"anio": 2019
 			},
 			"college": "Club Atlético Boston River",
-			"ovr": 65,
+			"ovr": 66,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVgNRq8UT8uktIzwurCvGl6n9SUZRqveUktk_zo29pcw&s=10",
 			"sofascore": 7.3
 		},
@@ -878,7 +876,7 @@
 				"club": "BOC",
 				"anio": 2026
 			},
-			"ovr": 71,
+			"ovr": 69,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_gr6qqjH2a8gQGCtWvAALahod-Hkm8RCqmUmxta1sTg&s",
 			"rasgos": [
 				"gambeta"
@@ -1043,9 +1041,7 @@
 			"college": "Club Sport Emelec",
 			"ovr": 64,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Ony12tvhm8P8R9DUfr_eTcSitJdEQBlB4UR2_DtjWg&s=10",
-			"rasgos": [
-				"aereo"
-			]
+			"rasgos": ["aereo"]
 		}
 	]
 }

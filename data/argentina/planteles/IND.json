@@ -358,7 +358,7 @@
 			"salio": 5,
 			"ppp": 1.43,
 			"convocado": 32,
-			"ovr": 60,
+			"ovr": 61,
 			"debut": {
 				"club": null,
 				"anio": 2009
@@ -449,7 +449,7 @@
 			"salio": 6,
 			"ppp": 1.56,
 			"convocado": 36,
-			"ovr": 63,
+			"ovr": 64,
 			"debut": {
 				"club": "ARS",
 				"anio": 2009
@@ -724,7 +724,7 @@
 			"ppp": 1.47,
 			"convocado": 17,
 			"fichado": "01/07/2026",
-			"ovr": 59,
+			"ovr": 61,
 			"debut": {
 				"club": "GIM",
 				"anio": 2012
@@ -785,7 +785,7 @@
 			"ppp": 1.44,
 			"convocado": 9,
 			"fichado": "08/09/2026",
-			"ovr": 49,
+			"ovr": 54,
 			"debut": {
 				"club": null,
 				"anio": 2017

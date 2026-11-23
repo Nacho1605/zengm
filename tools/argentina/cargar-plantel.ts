@@ -506,6 +506,10 @@ const cargar = (plantel: any) => {
 	// College, o el que el usuario indique ("leal": true, ej.: ídolos que
 	// llegaron de afuera). El resto, sorteado como en el juego (uno, y la mitad
 	// de las veces un segundo), pero sin lealtad
+	const conVeces = plantel.jugadores.filter((x: any) => x.capitanias);
+	const capitanPorVeces = plantel.jugadores.some((x: any) => x.capitan)
+		? undefined
+		: conVeces.sort((x: any, y: any) => y.capitanias - x.capitanias)[0];
 	for (const { p, j } of nuevos) {
 		if (j.prospecto) {
 			continue;
@@ -521,6 +525,17 @@ const cargar = (plantel: any) => {
 		const rasgos = leal ? ["L"] : [elegir(otros)];
 		if (rand() < 0.5) {
 			rasgos.push(elegir(otros.filter((x) => !rasgos.includes(x))));
+		}
+		// Capitanes: siempre W (ganador; aceptado por el usuario, 24/11). En un
+		// plantel sin capitán fijo, el que más veces lo fue (EST: Carrillo). Si
+		// ya tenía dos rasgos, W reemplaza al que no es L
+		if (j.capitan || j === capitanPorVeces) {
+			if (!rasgos.includes("W")) {
+				if (rasgos.length === 2) {
+					rasgos.splice(rasgos.findIndex((x) => x !== "L"), 1);
+				}
+				rasgos.push("W");
+			}
 		}
 		p.moodTraits = rasgos.sort();
 	}

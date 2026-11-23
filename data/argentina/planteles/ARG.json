@@ -162,9 +162,7 @@
 				"anio": 2019
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/565766-1720122151.png?lm=4711",
-			"rasgos": [
-				"aereo"
-			],
+			"rasgos": ["aereo"],
 			"sofascore": 7.21
 		},
 		{
@@ -337,7 +335,7 @@
 			"salio": 14,
 			"ppp": 1.86,
 			"convocado": 37,
-			"ovr": 66,
+			"ovr": 67,
 			"debut": {
 				"club": "TRE",
 				"anio": 2014
@@ -457,7 +455,7 @@
 			"ppp": 1.82,
 			"convocado": 17,
 			"fichado": "17/07/2026",
-			"ovr": 66,
+			"ovr": 64,
 			"debut": {
 				"club": "RAC",
 				"anio": 2018
@@ -582,7 +580,7 @@
 			"salio": 21,
 			"ppp": 1.63,
 			"convocado": 34,
-			"ovr": 71,
+			"ovr": 69,
 			"debut": {
 				"club": "RIV",
 				"anio": 2021
@@ -708,16 +706,14 @@
 			"salio": 16,
 			"ppp": 1.85,
 			"convocado": 34,
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "ALT",
 				"anio": 2018
 			},
 			"college": "Club Atlético Huracán",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/429591-1708010672.JPG?lm=4711",
-			"rasgos": [
-				"aereo"
-			]
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": "48",

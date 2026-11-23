@@ -1,8 +1,8 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026. Última versión: **v2.23.3**
-(`data/argentina/BBGM_Argentina_2026_v.2.23.3_futbol.json`, sha256
-`cccbdbaef32d09f6d0513924ca8e4cf333efd1d6680002990e5418a9db0b091b`): 21 de 30
+Estado al 24/11/2026. Última versión: **v2.23.4**
+(`data/argentina/BBGM_Argentina_2026_v.2.23.4_futbol.json`, sha256
+`38371ad8f7637ffcd089c941885d27b51b65ce3dba01abd845ae0c0d5a55966a`): 21 de 30
 equipos con plantel 2026, todos con el Rendimiento completo; todo el archivo
 en la escala nueva de OVR (20 a 78). Validación: 0 errores. Auditoría: 53
 controles, 9 con alertas (las de siempre). Escalera por puesto del usuario
@@ -10,18 +10,23 @@ actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. Respuesta del usuario a `propuesta-ovr-v2.23.3.md` (14 OVR con el año
-   completo, sin aplicar) y a los cambios que anote en la escalera (lista
-   "EQUIPO Jugador: viejo → nuevo"; aplicarlos con `ajustar-ovr.ts` y armar
-   un parche).
-2. Respuestas pendientes del usuario (23/11): nombres completos dudosos de
-   `equipos.csv` (columna "revisar"; 5 sin nombre: CBR, BMI, CES, LEO, MSL);
-   qué efecto darle al capitán (§7, 12); el draft (§7, 15); qué jugadores rearmar
-   con los composites (§7, 13); Sanguinetti (Sofascore 7,24 sin PJ en VEL).
+1. Respuesta del usuario a la segunda revisión (`revision-v2.23.4.md`: 23
+   cambios aplicados; Villa 71 y M. Fernández 71 propuestos) y a lo que anote
+   en la escalera ("EQUIPO Jugador: viejo → nuevo"; `ajustar-ovr.ts` y un
+   parche).
+2. Decididos el 24/11: capitanes con rasgo W (hecho); el "capitán" como
+   arquetipo de juego queda para analizar (según puesto y motivo de la
+   capitanía: nivel, edad, experiencia, confianza); composites: analizar
+   las variables antes de rearmar jugadores; colleges, nombres y orígenes
+   latinoamericanos (`playerBioInfo`): cuando estén todos los equipos y sus
+   fotos, antes de trabajar con los libres; draft: más adelante.
 3. Fotos de NOB, ERC, UNI y BAR: el usuario las pone sobre la última versión
    que tenga. Al importar su liga, usar como base la versión sobre la que
    jugó (para saberla, mirar un OVR que cambió entre versiones).
 4. Después: BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM.
+5. Sanguinetti (VEL): Sofascore 7,24 con 13 partidos según Sofascore, 0 en
+   Transfermarkt y sin partidos en Banfield; el usuario no sabe de dónde
+   sale. Queda como está.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -337,8 +342,8 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   club (College), zona, división, colores, camiseta, estadio, población y
   logos. La aplica `equipos-interior.ts`; `desde-juego.ts` escribe ahí lo que
   el usuario cambia en el juego; `equipos-csv.ts` la regenera desde una
-  versión. 18 nombres completos dudosos (columna "revisar") y 5 sin nombre
-  (CBR, BMI, CES, LEO, MSL): preguntados al usuario el 23/11.
+  versión. Los 163 con nombre completo (los dudosos los confirmó el
+  usuario, 24/11).
 - `copas-2026.json`: copas 2026 de los 30 equipos (dato del usuario).
 - `rendimiento/EQUIPO.mjs`: Rendimiento completo de los 13 primeros (el
   resto lo tiene en su plantel desde que se cargó).
@@ -402,10 +407,11 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
     (CAR), seeklogo (MOR, DPV), fundacionamigospd.com (FAD), ESPN (CMN),
     bibliotecariodelfutbol (MSL), wikia (IND), footylogos (HUR, SLO, RAC, LAN,
     GIM, ARG chico); Transfermarkt en RIN y HGO.
-12. **Capitán con efecto** (pedido del usuario, 23/11: "tiene que significar
-    algo"). Propuesta de Claude: un rasgo "capitán" que dé forma (más `oiq` y
-    `diq`, la lectura del juego; algo de `endu`) sin mover el OVR, y el rasgo
-    de personalidad W (ganador) en vez del sorteo. Espera la decisión.
+12. **Capitán con efecto**: hecho el rasgo de personalidad W (v2.23.4, en
+    `cargar-plantel.ts`: capitanes y, sin capitán fijo, el de más
+    capitanías). Falta el "capitán" como arquetipo de juego: depende del
+    puesto (arquero, central, volante, delantero) y del motivo (nivel, edad,
+    experiencia, confianza del plantel). Analizarlo con el usuario.
 13. **Rearmar jugadores con los composites** (`sistema-ratings.md`) sin
     cambiar su OVR: el usuario elige cuáles (propuesta: los goleadores, los
     armadores y los arqueros del Equipo Ideal).
@@ -417,7 +423,9 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
     de 2026, 94): de cada clase quedan sin elegir 40 a 64, que pasan a ser
     libres. Propuesta: 2 rondas (60 picks, como la proporción del juego:
     clase = 7/6 de los picks) o achicar las clases a 35. Espera la decisión.
-16. Nombres completos dudosos en `equipos.csv` (ver "revisar").
+16. Nombres completos de `equipos.csv`: completos (el usuario dio los 23 que
+    faltaban o eran dudosos, 24/11). CES = Centro Social y Recreativo
+    Español (draft de Smarra, RIE).
 
 **Datos que faltan (inventario del 23/11/2026; se le pidieron al usuario):**
 
@@ -538,6 +546,18 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**Sesión del 24/11/2026 (v2.23.4).** Huella de la v2.23.4:
+`38371ad8f7637ffcd089c941885d27b51b65ce3dba01abd845ae0c0d5a55966a`.
+
+- Aceptadas las 14 propuestas de `propuesta-ovr-v2.23.3.md`.
+- Segunda revisión de la escalera con el Rendimiento completo y el
+  Sofascore de los 13 primeros: 23 cambios (`revision-v2.23.4.md`); ningún
+  valor con más de 20 jugadores.
+- Capitanes con rasgo W (ganador). Nombres completos de los 163 clubes en
+  `equipos.csv`.
+- Comparada con la v2.23.3: solo cambian 37 OVR (con sus sueldos, orden y
+  picks) y el rasgo de 20 capitanes.
+
 **Sesión del 23–24/11/2026 (v2.23.3).** Huella de la v2.23.3:
 `cccbdbaef32d09f6d0513924ca8e4cf333efd1d6680002990e5418a9db0b091b`.
 
