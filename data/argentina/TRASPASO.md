@@ -1,17 +1,18 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 23/11/2026. Última versión: **v2.23.1**
-(`data/argentina/BBGM_Argentina_2026_v.2.23.1_futbol.json`, sha256
-`2f9773a5271de31621b165de51b5aea44abbfdcf07af17ef7c96bee177b9500d`): 21 de 30
-equipos con plantel 2026 (Barracas en la v2.23) y la **escala nueva de OVR**
-(20 a 78, sin montones; ver `revision-escala-2026-11-23.md`). Validación: 0
-errores. Auditoría: 53 controles, 9 con alertas (las de siempre: equipos sin
-cargar, José Sosa 41 años, homónimos y 123 fotos de NOB, ERC, UNI y BAR).
+Estado al 23/11/2026. Última versión: **v2.23.2**
+(`data/argentina/BBGM_Argentina_2026_v.2.23.2_futbol.json`, sha256
+`6123fb70d6aa348825d13b11720d13e0ce6b99d63cfb52f6b4717d165f12ece0`): 21 de 30
+equipos con plantel 2026 y **todo el archivo en la escala nueva de OVR** (20 a
+78). Validación: 0 errores. Auditoría: 53 controles, 9 con alertas (las de
+siempre). Escalera por puesto publicada para el usuario
+(https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
+`data/argentina/escalera/`), con una columna para que anote sus OVR.
 
-**Lo que sigue:** respuestas del usuario a la segunda revisión (dudas en
-`revision-escala-2026-11-23.md`: distancia entre equipos, prospectos
-generados, sueldos debajo del mínimo). La liga del usuario con las fotos de
-NOB, ERC y UNI la está armando sobre la **v2.22.1**: importarla con esa base
+**Lo que sigue:** los cambios exactos que mande el usuario desde la escalera
+(lista "EQUIPO Jugador: viejo → nuevo"; aplicarlos con `ajustar-ovr.ts` y
+armar un parche). La liga del usuario con las fotos de NOB, ERC y UNI la está
+armando sobre la **v2.22.1**: importarla con esa base
 (`desde-juego.ts LIGA BBGM_..._v.2.22.1_futbol.json`). OJO: los OVR cambiaron
 mucho desde la v2.22.1; si `desde-juego.ts` marcara ratings "a mano" en
 jugadores que el usuario no tocó, es porque se usó otra base. Después: BAN,
@@ -236,8 +237,7 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
   escala hacia abajo (33 era arbitrario) y sin montones. No hay criterio de
   "no inflar a los medianos": cada equipo tiene lo que se merece y las tablas
   no son la única medida (River, año flojo con estrellas; Racing, año malo).
-  Recomendaciones aceptadas a revisar por el usuario: Fattori, Mele, Farías,
-  Carboni, Sanguinetti y E. Ávila.
+  Respuesta del usuario en la v2.23.2 (ver bitácora).
 - Revisión general (v2.22.2, 23/11): el usuario dio permiso para revisar
   todos los valores (también los suyos). 52 cambios, casi todos suplentes con
   pocos minutos que estaban arriba por el valor de mercado; los valores que
@@ -471,6 +471,27 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**Sesión del 23/11/2026 (v2.23.2).** Huella de la v2.23.2:
+`6123fb70d6aa348825d13b11720d13e0ce6b99d63cfb52f6b4717d165f12ece0`.
+
+- Decisiones del usuario sobre la v2.23.1: acepta Mele, Carboni,
+  Sanguinetti, Instituto y Racing; a medias Farías (66) y E. Ávila (58);
+  A. Martínez 70 ("si va a ser nerfeado, 70"); rechaza lo de Fattori (66, donde
+  habría caído su 68); Boca: Ascacíbar 68 (+1), Lozano 65 (+3), Merentiel 71
+  (−1), Blanco 68 (−1). La lista de arqueros queda intacta (no está seguro de
+  la conversión 60 → 55-56): no se convierte.
+- Escala nueva en todo el archivo (`cargar-plantel.ts`): libres y equipos
+  sin cargar (530, OVR medio 47,3 → 39,5) y prospectos generados (2100, 27,9
+  → 17,8, máximo 49), bajando sus ratings parejo (menos la altura); el juego
+  recalcula su potencial. Motivo: el juego valora a cada jugador contra el
+  promedio y el desvío de todos (`player/value.ts`), así que todos tienen que
+  estar en la misma escala; con eso valora a los nuestros como antes (±1).
+- Sueldos: el sueldo inicial se calcula con el OVR equivalente de la escala
+  vieja: planillas como en la v2.23 (BOC 139,8 M ... RIE 63,5 M, ERC 54,8 M,
+  apenas debajo del mínimo de 55 M, como antes).
+- Con `ESCALA=1` el cargador nuevo arma la v2.23.1 idéntica (comprobado).
+- Escalera por puesto publicada (artifact) con columna para anotar OVR.
+
 **Sesión del 23/11/2026 (v2.22.2 → v2.23.1).** Huella de la v2.23.1:
 `2f9773a5271de31621b165de51b5aea44abbfdcf07af17ef7c96bee177b9500d`.
 

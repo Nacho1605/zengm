@@ -1,0 +1,380 @@
+<title>Escalera por puesto</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+/* Layout: cabecera con los onces, pestañas por puesto y una tabla-escalera
+   con peldaños por valor de OVR; columna final para anotar el OVR propio. */
+:root {
+	--bg: #f4f6f3;
+	--surface: #ffffff;
+	--fg: #18211c;
+	--muted: #5b6960;
+	--line: #dde3dd;
+	--rung: #e9efe9;
+	--accent: #1d6b47;
+	--accent-soft: #dcefe4;
+	--up: #1d6b47;
+	--down: #b4442f;
+	--warn: #9a6a00;
+	--display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+	--body: "Barlow", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) {
+		--bg: #0f1411; --surface: #161d19; --fg: #e4ebe6; --muted: #95a39a; --line: #27322b;
+		--rung: #1b241f; --accent: #63c28f; --accent-soft: #1d3327; --up: #63c28f; --down: #ec8a74; --warn: #e0b54a;
+		color-scheme: dark;
+	}
+}
+:root[data-theme="dark"] {
+	--bg: #0f1411; --surface: #161d19; --fg: #e4ebe6; --muted: #95a39a; --line: #27322b;
+	--rung: #1b241f; --accent: #63c28f; --accent-soft: #1d3327; --up: #63c28f; --down: #ec8a74; --warn: #e0b54a;
+	color-scheme: dark;
+}
+body {
+	background: var(--bg);
+	color: var(--fg);
+	font-family: var(--body);
+	font-size: 15px;
+	line-height: 1.4;
+	padding-left: max(16px, env(safe-area-inset-left, 0px));
+	padding-right: max(16px, env(safe-area-inset-right, 0px));
+	padding-block: 20px 48px;
+}
+.wrap { max-width: 1400px; margin: 0 auto; display: grid; gap: 18px; }
+h1 { font-family: var(--display); font-weight: 700; font-size: 2.2rem; letter-spacing: 0.01em; margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); margin: 2px 0 0; max-width: 70ch; }
+.label { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; color: var(--muted); }
+.onces { display: flex; flex-wrap: wrap; gap: 6px; }
+.once {
+	display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--surface);
+	border-radius: 999px; padding: 3px 10px 3px 4px; cursor: pointer; font: inherit; color: inherit;
+	font-variant-numeric: tabular-nums;
+}
+.once[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.once b { font-family: var(--display); font-weight: 700; font-size: 1rem; }
+.once small { color: var(--muted); }
+.escudo { width: 18px; height: 18px; border-radius: 50%; flex: none; border: 1px solid var(--line); }
+.tabs { display: flex; flex-wrap: wrap; gap: 4px; border-bottom: 2px solid var(--line); }
+.tab {
+	font-family: var(--display); font-weight: 600; font-size: 1.05rem; letter-spacing: 0.02em; background: none; border: 0;
+	color: var(--muted); padding: 8px 12px; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px;
+}
+.tab[aria-selected="true"] { color: var(--fg); border-bottom-color: var(--accent); }
+.tab span { font-family: var(--body); font-size: 0.8rem; color: var(--muted); margin-left: 4px; }
+.controles { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+.controles input[type="search"], .controles select {
+	font: inherit; padding: 6px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--fg); min-width: 0;
+}
+.controles label.chk { display: inline-flex; gap: 6px; align-items: center; color: var(--muted); cursor: pointer; }
+.tabla-caja { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th {
+	position: sticky; top: 0; background: var(--surface); z-index: 1; text-align: right; font-family: var(--display); font-weight: 600;
+	text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.78rem; color: var(--muted); padding: 8px 8px; border-bottom: 1px solid var(--line);
+	white-space: nowrap; cursor: pointer; user-select: none;
+}
+th.izq, td.izq { text-align: left; }
+th[aria-sort="descending"]::after { content: " ▼"; color: var(--accent); }
+th[aria-sort="ascending"]::after { content: " ▲"; color: var(--accent); }
+td { padding: 6px 8px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; vertical-align: middle; }
+tr.peldano td { background: var(--rung); padding: 4px 8px; border-bottom: 1px solid var(--line); text-align: left; }
+tr.peldano b { font-family: var(--display); font-size: 1.25rem; font-weight: 700; margin-right: 8px; }
+tr.peldano small { color: var(--muted); }
+td.ovr { font-family: var(--display); font-weight: 700; font-size: 1.2rem; }
+.delta { font-size: 0.8rem; color: var(--muted); margin-left: 4px; }
+.delta.sube { color: var(--up); }
+.delta.baja { color: var(--down); }
+.nombre { font-weight: 600; }
+.pos { color: var(--muted); font-size: 0.82rem; }
+.marca {
+	display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 0 5px; border-radius: 4px; margin-left: 4px;
+	border: 1px solid var(--line); color: var(--muted); vertical-align: 1px;
+}
+.marca.les { color: var(--down); border-color: var(--down); }
+.marca.medio { color: var(--warn); border-color: var(--warn); }
+.marca.cap { color: var(--accent); border-color: var(--accent); }
+.equipo { display: inline-flex; align-items: center; gap: 6px; }
+.rasgos { color: var(--muted); font-size: 0.82rem; text-align: left; white-space: normal; min-width: 120px; }
+.vacio { color: var(--muted); }
+td.tuyo input {
+	width: 4.2em; font: inherit; font-family: var(--display); font-weight: 700; font-size: 1.05rem; text-align: center; padding: 3px 4px;
+	border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg);
+}
+td.tuyo input.cambiado { border-color: var(--accent); background: var(--accent-soft); }
+input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.panel { display: grid; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.panel-cab { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
+.panel h2 { font-family: var(--display); font-weight: 700; font-size: 1.25rem; margin: 0; }
+.botones { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn {
+	font: inherit; font-weight: 600; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent);
+	color: var(--surface); cursor: pointer;
+}
+.btn.sec { background: transparent; color: var(--accent); }
+#lista { margin: 0; font-family: var(--body); white-space: pre-wrap; color: var(--fg); font-size: 0.92rem; max-height: 220px; overflow: auto; }
+.nota { color: var(--muted); font-size: 0.85rem; max-width: 80ch; }
+.leyenda { display: flex; flex-wrap: wrap; gap: 6px 14px; color: var(--muted); font-size: 0.85rem; }
+@media (max-width: 640px) {
+	h1 { font-size: 1.8rem; }
+	td, th { padding: 5px 6px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+	<header>
+		<div class="label">Liga Profesional 2026 · <span id="version">v2.23.2</span></div>
+		<h1>Escalera por puesto</h1>
+		<p class="sub">Los 615 jugadores de los 21 planteles cargados con la escala nueva (20 a 78), con sus números de 2026. Anotá tu OVR en la última columna y copiá la lista para mandármela.</p>
+	</header>
+
+	<section aria-label="Once de cada equipo">
+		<div class="label" style="margin-bottom:6px">Once (promedio de los 11 mejores) · tocá un equipo para filtrar</div>
+		<div class="onces" id="onces"></div>
+	</section>
+
+	<div class="tabs" role="tablist" id="tabs"></div>
+
+	<div class="controles">
+		<input type="search" id="buscar" placeholder="Buscar jugador" aria-label="Buscar jugador">
+		<select id="equipo" aria-label="Equipo"><option value="">Todos los equipos</option></select>
+		<label class="chk"><input type="checkbox" id="prospectos" checked> Prospectos</label>
+		<label class="chk"><input type="checkbox" id="solo"> Solo los que anoté</label>
+	</div>
+
+	<div class="leyenda">
+		<span><b>Δ</b> cambio contra la v2.23</span>
+		<span><span class="marca medio">jul</span> llegó en julio o después</span>
+		<span><span class="marca les">L7</span> lesionado (partidos)</span>
+		<span><span class="marca">P</span> prospecto</span>
+		<span><span class="marca cap">C</span> capitán</span>
+		<span><span class="marca">ª</span> ratings tuyos</span>
+		<span>Tit. = partidos de titular · % = de los minutos de su equipo</span>
+	</div>
+
+	<div class="tabla-caja">
+		<table>
+			<thead><tr id="cab"></tr></thead>
+			<tbody id="cuerpo"><tr><td class="izq vacio" colspan="18">Cargando la escalera…</td></tr></tbody>
+		</table>
+	</div>
+
+	<section class="panel" aria-label="Tus cambios">
+		<div class="panel-cab">
+			<h2>Tus cambios <span id="cuantos" class="label"></span></h2>
+			<div class="botones">
+				<button class="btn" id="copiar" type="button">Copiar la lista</button>
+				<button class="btn sec" id="borrar" type="button">Borrar todo</button>
+			</div>
+		</div>
+		<pre id="lista">Todavía no anotaste ningún cambio.</pre>
+		<p class="nota" id="aviso">Lo que anotás queda guardado en este navegador mientras no lo borres.</p>
+	</section>
+</div>
+
+<script>
+const GRUPOS = [
+	["ARQ", "Arqueros"], ["CEN", "Centrales"], ["LAT", "Laterales"],
+	["MED", "Volantes"], ["OFE", "Ofensivos"], ["DEL", "Delanteros"], ["TODOS", "Todos"],
+];
+const COLS = [
+	{ k: "ovr", t: "OVR", d: -1 },
+	{ k: "nombre", t: "Jugador", izq: true, d: 1 },
+	{ k: "eq", t: "Equipo", izq: true, d: 1 },
+	{ k: "edad", t: "Edad", d: -1 },
+	{ k: "pj", t: "PJ", d: -1 },
+	{ k: "tit", t: "Tit.", d: -1 },
+	{ k: "min", t: "Min", d: -1 },
+	{ k: "pct", t: "%", d: -1 },
+	{ k: "gol", t: "G", d: -1 },
+	{ k: "as", t: "A", d: -1 },
+	{ k: "ga90", t: "G+A/90", d: -1 },
+	{ k: "ppp", t: "PPP", d: -1 },
+	{ k: "val", t: "Valor", d: -1 },
+	{ k: "sofa", t: "Sofa", d: -1 },
+	{ k: "rasgos", t: "Rasgos", izq: true, d: 1 },
+	{ k: "tuyo", t: "Tu OVR", d: -1 },
+];
+let DATOS = null;
+let estado = { grupo: "ARQ", orden: "ovr", dir: -1, buscar: "", equipo: "", prospectos: true, solo: false };
+let anotados = {};
+const CLAVE = "escalera-anotados-v1";
+try { anotados = JSON.parse(localStorage.getItem(CLAVE) || "{}") || {}; } catch { anotados = {}; }
+const guardar = () => { try { localStorage.setItem(CLAVE, JSON.stringify(anotados)); } catch {} };
+const id = (j) => `${j.eq}|${j.n}|${j.a}`;
+const nombreCorto = (j) => (j.n ? `${j.n} ${j.a}` : j.a);
+const valor = (v) => v == null ? "–" : v >= 1e6 ? `${(v / 1e6).toLocaleString("es-AR", { maximumFractionDigits: 2 })} M€` : `${Math.round(v / 1000)} mil €`;
+const num = (v, dec = 0) => v == null ? "–" : v.toFixed(dec).replace(".", ",");
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+
+const equipoDe = (eq) => DATOS.equipos.find((e) => e.eq === eq);
+const escudo = (e) => {
+	const [a, b] = e.colores || ["#888", "#ccc"];
+	return `<span class="escudo" style="background:linear-gradient(135deg, ${esc(a)} 0 50%, ${esc(b)} 50% 100%)" aria-hidden="true"></span>`;
+};
+
+function filas() {
+	let xs = DATOS.jugadores.slice();
+	if (estado.grupo !== "TODOS") xs = xs.filter((j) => j.g === estado.grupo);
+	if (estado.equipo) xs = xs.filter((j) => j.eq === estado.equipo);
+	if (!estado.prospectos) xs = xs.filter((j) => !j.pros);
+	if (estado.solo) xs = xs.filter((j) => anotados[id(j)] != null);
+	if (estado.buscar) {
+		const q = estado.buscar.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+		xs = xs.filter((j) => nombreCorto(j).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().includes(q));
+	}
+	const clave = (j) => {
+		switch (estado.orden) {
+			case "nombre": return j.a + " " + j.n;
+			case "eq": return equipoDe(j.eq).pos;
+			case "ga90": return j.min >= 90 ? ((j.gol + (j.as ?? 0)) / j.min) * 90 : -1;
+			case "rasgos": return j.r.join(",");
+			case "tuyo": return anotados[id(j)] ?? -1;
+			default: return j[estado.orden] ?? -1;
+		}
+	};
+	xs.sort((a, b) => {
+		const x = clave(a), y = clave(b);
+		const c = typeof x === "string" ? x.localeCompare(y) : x - y;
+		return c * estado.dir || b.ovr - a.ovr || b.min - a.min;
+	});
+	return xs;
+}
+
+function render() {
+	// Pestañas
+	document.getElementById("tabs").innerHTML = GRUPOS.map(([k, t]) => {
+		const n = k === "TODOS" ? DATOS.jugadores.length : DATOS.jugadores.filter((j) => j.g === k).length;
+		return `<button class="tab" role="tab" aria-selected="${estado.grupo === k}" data-g="${k}">${t}<span>${n}</span></button>`;
+	}).join("");
+	// Onces
+	document.getElementById("onces").innerHTML = DATOS.equipos.map((e) =>
+		`<button class="once" type="button" aria-pressed="${estado.equipo === e.eq}" data-eq="${e.eq}" title="${esc(e.nombre)} · ${e.pos}.º en la anual (${e.pts} pts)">${escudo(e)}<span>${e.eq}</span><b>${num(e.once, 1)}</b><small>${e.pos}.º</small></button>`
+	).join("");
+	// Cabecera
+	document.getElementById("cab").innerHTML = COLS.map((c) =>
+		`<th class="${c.izq ? "izq" : ""}" data-k="${c.k}" ${estado.orden === c.k ? `aria-sort="${estado.dir < 0 ? "descending" : "ascending"}"` : ""}>${c.t}</th>`
+	).join("");
+	// Cuerpo
+	const xs = filas();
+	const porOvr = estado.orden === "ovr";
+	let html = "";
+	let ultimo = null;
+	const cuenta = {};
+	if (porOvr) for (const j of xs) cuenta[j.ovr] = (cuenta[j.ovr] || 0) + 1;
+	for (const j of xs) {
+		if (porOvr && j.ovr !== ultimo) {
+			ultimo = j.ovr;
+			html += `<tr class="peldano"><td colspan="${COLS.length}"><b>${j.ovr}</b><small>${cuenta[j.ovr]} ${cuenta[j.ovr] === 1 ? "jugador" : "jugadores"}</small></td></tr>`;
+		}
+		const e = equipoDe(j.eq);
+		const d = j.antes == null ? "" : j.ovr - j.antes;
+		const delta = d === "" ? `<span class="delta">nuevo</span>` : d === 0 ? "" : `<span class="delta ${d > 0 ? "sube" : "baja"}">${d > 0 ? "+" : "−"}${Math.abs(d)}</span>`;
+		const marcas = [
+			j.medio ? `<span class="marca medio" title="Llegó en julio o después">jul</span>` : "",
+			j.les ? `<span class="marca les" title="Lesionado: ${j.les} partidos">L${j.les}</span>` : "",
+			j.pros ? `<span class="marca" title="Prospecto (sigue en reserva)">P</span>` : "",
+			j.cap ? `<span class="marca cap" title="Capitán">C</span>` : "",
+			j.mano ? `<span class="marca" title="Ratings ajustados por vos en el juego">ª</span>` : "",
+		].join("");
+		const ga90 = j.min >= 90 && j.g !== "ARQ" ? num(((j.gol + (j.as ?? 0)) / j.min) * 90, 2) : "–";
+		const tuyo = anotados[id(j)];
+		html += `<tr>
+			<td class="ovr">${j.ovr}${delta}</td>
+			<td class="izq"><span class="nombre">${esc(nombreCorto(j))}</span>${marcas}<br><span class="pos">${esc(j.pos)}${j.pie && j.g === "CEN" ? " · " + esc(j.pie.toLowerCase()) : ""}</span></td>
+			<td class="izq"><span class="equipo">${escudo(e)}${j.eq}<span class="pos">${e.pos}.º</span></span></td>
+			<td>${j.edad}</td>
+			<td>${j.pj}</td>
+			<td>${j.tit ?? "–"}</td>
+			<td>${j.min.toLocaleString("es-AR")}</td>
+			<td>${j.pct}</td>
+			<td>${j.gol}</td>
+			<td>${j.as ?? "–"}</td>
+			<td>${ga90}</td>
+			<td>${num(j.ppp, 2)}</td>
+			<td>${valor(j.val)}</td>
+			<td>${j.sofa ? num(j.sofa, 2) : "–"}</td>
+			<td class="rasgos">${esc(j.r.join(", "))}</td>
+			<td class="tuyo"><input type="number" inputmode="numeric" min="1" max="99" id="t-${esc(id(j)).replace(/[^\w-]/g, "_")}" data-id="${esc(id(j))}" value="${tuyo ?? ""}" placeholder="${j.ovr}" class="${tuyo != null && tuyo !== j.ovr ? "cambiado" : ""}" aria-label="Tu OVR para ${esc(nombreCorto(j))}"></td>
+		</tr>`;
+	}
+	if (!xs.length) html = `<tr><td class="izq vacio" colspan="${COLS.length}">No hay jugadores con ese filtro.</td></tr>`;
+	document.getElementById("cuerpo").innerHTML = html;
+	renderLista();
+}
+
+function renderLista() {
+	const cambios = DATOS.jugadores
+		.filter((j) => anotados[id(j)] != null && anotados[id(j)] !== j.ovr)
+		.sort((a, b) => a.eq.localeCompare(b.eq) || b.ovr - a.ovr);
+	document.getElementById("cuantos").textContent = cambios.length ? `· ${cambios.length}` : "";
+	document.getElementById("lista").textContent = cambios.length
+		? cambios.map((j) => `${j.eq} ${nombreCorto(j)}: ${j.ovr} → ${anotados[id(j)]}`).join("\n")
+		: "Todavía no anotaste ningún cambio.";
+}
+
+document.addEventListener("click", (ev) => {
+	const tab = ev.target.closest(".tab");
+	if (tab) { estado.grupo = tab.dataset.g; render(); return; }
+	const once = ev.target.closest(".once");
+	if (once) {
+		estado.equipo = estado.equipo === once.dataset.eq ? "" : once.dataset.eq;
+		document.getElementById("equipo").value = estado.equipo;
+		render();
+		return;
+	}
+	const th = ev.target.closest("th[data-k]");
+	if (th) {
+		const c = COLS.find((x) => x.k === th.dataset.k);
+		if (estado.orden === c.k) estado.dir *= -1; else { estado.orden = c.k; estado.dir = c.d; }
+		render();
+	}
+});
+document.getElementById("cuerpo").addEventListener("change", (ev) => {
+	const inp = ev.target.closest("input[data-id]");
+	if (!inp) return;
+	const v = inp.value.trim() === "" ? null : Math.round(Number(inp.value));
+	const j = DATOS.jugadores.find((x) => id(x) === inp.dataset.id);
+	if (v == null || Number.isNaN(v) || v === j.ovr) delete anotados[inp.dataset.id];
+	else anotados[inp.dataset.id] = Math.max(1, Math.min(99, v));
+	inp.classList.toggle("cambiado", anotados[inp.dataset.id] != null);
+	guardar();
+	renderLista();
+});
+document.getElementById("buscar").addEventListener("input", (ev) => { estado.buscar = ev.target.value; render(); });
+document.getElementById("equipo").addEventListener("change", (ev) => { estado.equipo = ev.target.value; render(); });
+document.getElementById("prospectos").addEventListener("change", (ev) => { estado.prospectos = ev.target.checked; render(); });
+document.getElementById("solo").addEventListener("change", (ev) => { estado.solo = ev.target.checked; render(); });
+document.getElementById("borrar").addEventListener("click", () => {
+	const b = document.getElementById("borrar");
+	if (b.dataset.confirmar !== "1") { b.dataset.confirmar = "1"; b.textContent = "¿Seguro? Tocá de nuevo"; setTimeout(() => { b.dataset.confirmar = ""; b.textContent = "Borrar todo"; }, 3000); return; }
+	anotados = {}; guardar(); b.dataset.confirmar = ""; b.textContent = "Borrar todo"; render();
+});
+document.getElementById("copiar").addEventListener("click", () => {
+	const texto = document.getElementById("lista").textContent;
+	const aviso = document.getElementById("aviso");
+	navigator.clipboard.writeText(texto).then(
+		() => { aviso.textContent = "Lista copiada. Pegala en el chat."; },
+		() => {
+			const r = document.createRange(); r.selectNodeContents(document.getElementById("lista"));
+			const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+			aviso.textContent = "No se pudo copiar solo: la lista quedó seleccionada, copiala a mano.";
+		},
+	);
+});
+
+fetch("escalera.json").then((r) => r.json()).then((d) => {
+	DATOS = d;
+	document.getElementById("version").textContent = `${d.version} · ${d.fecha}`;
+	const sel = document.getElementById("equipo");
+	for (const e of d.equipos.slice().sort((a, b) => a.pos - b.pos)) {
+		const o = document.createElement("option");
+		o.value = e.eq; o.textContent = `${e.eq} · ${e.nombre} (${e.pos}.º)`;
+		sel.appendChild(o);
+	}
+	render();
+}).catch(() => {
+	document.getElementById("cuerpo").innerHTML = `<tr><td class="izq vacio" colspan="16">No se pudo cargar la escalera. Recargá la página.</td></tr>`;
+});
+</script>

@@ -107,11 +107,19 @@ v2.14.1 → v2.14.2).
   bien separados del resto) y se abre hacia abajo (piso 20: arqueros y
   juveniles que no jugaron), sin montones (como mucho unos 20 jugadores por
   valor). Correspondencia con la escala vieja en
-  `data/argentina/revision-escala-2026-11-23.md`. Arqueros: la
+  `data/argentina/revision-escala-2026-11-23.md`. Desde la v2.23.2 todo el
+  archivo está en la escala nueva (libres, equipos sin cargar y prospectos
+  generados: `cargar-plantel.ts` los baja con esa correspondencia) y el
+  sueldo inicial se calcula con el OVR equivalente de la escala vieja (la
+  economía queda como antes). `ESCALA=1` arma como la v2.23.1. Escalera por
+  puesto para el usuario (página con columna para anotar cambios):
+  `data/argentina/escalera/` (publicada como artifact). Arqueros: la
   lista del usuario en `data/argentina/arqueros/lista-apertura-2026.md`
   (hecha en el Apertura, antes del Mundial 2026: DESACTUALIZADA, es una base
-  de comparación no estricta; ajustar con la temporada y avisar; está en la
-  escala vieja: un 60 de la lista equivale hoy a 55–56); los valores
+  de comparación no estricta; ajustar con la temporada y avisar). La lista
+  queda intacta, sin convertir a la escala nueva: para valorar un arquero
+  nuevo, compararlo con la escalera de arqueros de hoy (no convertir
+  mecánicamente); los valores
   de hoy, en `arqueros/valores-actuales.md` (regenerarlo con cada equipo).
   Método:
   - Análisis propio de cada jugador; los rangos de TRASPASO §4 orientan, no

@@ -293,7 +293,7 @@
 				"club": "ROS",
 				"anio": 2021
 			},
-			"ovr": 69,
+			"ovr": 68,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwk-dvGDAqWsS20hhvp3XJ3sas_XcqhkIwKWZZnlLRpg&s=10"
 		},
 		{
@@ -337,7 +337,7 @@
 				"anio": 2019
 			},
 			"college": "Club Atlético Boston River",
-			"ovr": 62,
+			"ovr": 65,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVgNRq8UT8uktIzwurCvGl6n9SUZRqveUktk_zo29pcw&s=10"
 		},
 		{
@@ -400,7 +400,7 @@
 				"club": "EST",
 				"anio": 2016
 			},
-			"ovr": 67,
+			"ovr": 68,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmbqX2qeDzUyl8o-MNNDV_1HdutWiixnJg_xlahKf0kg&s=10",
 			"rasgos": [
 				"recuperador"
@@ -701,7 +701,7 @@
 				"anio": 2017
 			},
 			"college": "Club Atlético Peñarol",
-			"ovr": 72,
+			"ovr": 71,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8EAf1SHRT9DS63_NwMeSs92frtdjLx7QZkuTQeuQkQ&s=10",
 			"rasgos": [
 				"goleador"

@@ -193,6 +193,79 @@ const sueldoJuego = (ovr: number) => {
 		? ga.minContract
 		: Math.min(ga.maxContract, amount);
 };
+// Escala nueva de OVR (v2.23.1): los planteles pasaron de la escala vieja
+// (piso 33, montones de 60 a 66) a una de 20 a 78 sin montones.
+// Correspondencia promedio entre las dos, sacada de esa revisión: de 70 para
+// arriba no cambia y debajo de 33 es proporcional. Desde la v2.23.2 se usa
+// para (1) pasar a la escala nueva al resto del archivo (libres, equipos sin
+// cargar y prospectos generados): el juego valora a cada jugador comparándolo
+// con todos (promedio y desvío del OVR), así que todos tienen que estar en la
+// misma escala; y (2) calcular el sueldo inicial con el OVR equivalente de la
+// escala vieja, para que la economía quede como estaba. ESCALA=1 en el
+// entorno arma como la v2.23.1 (sin esto), para comprobar.
+const ESCALA_TODO = process.env.ESCALA !== "1";
+const ESCALA_NUEVA: Record<number, number> = {
+	33: 20, 34: 21, 35: 21.5, 36: 23, 37: 25.11, 38: 27.5, 39: 29, 40: 30,
+	41: 31, 42: 32.1, 43: 33.38, 44: 34.62, 45: 36.44, 46: 37.92, 47: 39.5,
+	48: 41.21, 49: 42.4, 50: 43.38, 51: 44.56, 52: 45.95, 53: 47.29,
+	54: 48.08, 55: 49.44, 56: 50.79, 57: 51.94, 58: 53.17, 59: 54.37,
+	60: 55.54, 61: 57.03, 62: 58.61, 63: 60.41, 64: 61.93, 65: 63.38,
+	66: 64.62, 67: 65.81, 68: 66.89, 69: 68.41, 70: 70,
+};
+export const aEscalaNueva = (viejo: number) =>
+	viejo >= 70
+		? viejo
+		: viejo >= 33
+			? ESCALA_NUEVA[Math.round(viejo)]!
+			: (viejo * ESCALA_NUEVA[33]!) / 33;
+export const aEscalaVieja = (nuevo: number) => {
+	if (nuevo >= 70) {
+		return nuevo;
+	}
+	if (nuevo < ESCALA_NUEVA[33]!) {
+		return (nuevo * 33) / ESCALA_NUEVA[33]!;
+	}
+	for (let v = 33; v < 70; v++) {
+		const a = ESCALA_NUEVA[v]!;
+		const b = ESCALA_NUEVA[v + 1]!;
+		if (nuevo <= b) {
+			return v + (nuevo - a) / (b - a);
+		}
+	}
+	return nuevo;
+};
+// Baja los ratings actuales de un jugador de la base (todos menos la altura,
+// parejo, para conservar su forma) hasta el OVR de la escala nueva. El
+// potencial y las habilidades los recalcula el juego al importar
+const aLaEscalaNueva = (p: any) => {
+	const r = p.ratings.at(-1);
+	const meta = Math.round(aEscalaNueva(r.ovr));
+	if (meta >= r.ovr) {
+		return false;
+	}
+	const ks = KEYS.filter((k) => k !== "hgt");
+	for (let i = 0; i < 100 && ovrOficial(r) > meta; i++) {
+		for (const k of ks) {
+			r[k] = Math.max(0, r[k] - 1);
+		}
+	}
+	const llave: Key = ["C", "PF", "FC", "G", "GF"].includes(r.pos ?? p.pos)
+		? "diq"
+		: "oiq";
+	for (let i = 0; i < 30 && ovrOficial(r) !== meta; i++) {
+		r[llave] = Math.max(0, Math.min(100, r[llave] + (ovrOficial(r) < meta ? 1 : -1)));
+	}
+	r.ovr = ovrOficial(r);
+	delete r.pot;
+	delete r.skills;
+	if (p.draft?.year === r.season) {
+		delete p.draft.pot;
+		delete p.draft.ovr;
+		delete p.draft.skills;
+	}
+	return true;
+};
+
 const sueldo = (valor: number | null, ovr: number) => {
 	const c = ga.maxContract / Math.sqrt(15_000_000);
 	const mercado = Math.min(
@@ -380,7 +453,10 @@ const cargar = (plantel: any) => {
 		}
 		// Contrato sin fecha en Transfermarkt ("-"): hasta 2027
 		const exp = j.contrato ? parseFecha(j.contrato).y : SEASON + 1;
-		const amount = sueldo(j.valor, ovrMeta);
+		const amount = sueldo(
+			j.valor,
+			ESCALA_TODO ? aEscalaVieja(ovrMeta) : ovrMeta,
+		);
 		const cm = j.altura * 100;
 
 		const clubDebut = j.debut?.club
@@ -707,6 +783,27 @@ console.log(
 	"\n* OVR indicado en el plantel; el resto, sugerido por la fórmula",
 );
 
+// Escala nueva para el resto del archivo: libres y equipos sin cargar
+if (ESCALA_TODO) {
+	let n = 0;
+	let antes = 0;
+	let despues = 0;
+	for (const p of league.players) {
+		if (creados.has(p.pid) || p.tid < -1) {
+			continue;
+		}
+		const viejo = p.ratings.at(-1).ovr;
+		if (aLaEscalaNueva(p)) {
+			n += 1;
+			antes += viejo;
+			despues += p.ratings.at(-1).ovr;
+		}
+	}
+	console.log(
+		`\nEscala nueva para libres y equipos sin cargar: ${n} jugadores (OVR medio ${(antes / n).toFixed(1)} -> ${(despues / n).toFixed(1)})`,
+	);
+}
+
 const planillas = league.teams
 	.filter((t: any) => !t.disabled)
 	.map((t: any) => {
@@ -799,6 +896,29 @@ console.log(
 		n += 1;
 	}
 	console.log(`Prospectos generados con nivel base -${BAJA} y forma ${FORMA_VIGENTE === FORMA_2 ? 2 : 3}: ${n} (OVR ${(suma / n).toFixed(1)} más bajo en promedio; ${sinForma} solo con el nivel, por OVR muy bajo)`);
+}
+
+// Escala nueva para los prospectos generados (drafts futuros), pedido del
+// usuario: misma correspondencia que el resto
+if (ESCALA_TODO) {
+	let n = 0;
+	let antes = 0;
+	let despues = 0;
+	let max = 0;
+	for (const p of league.players) {
+		if (p.tid !== -2 || creados.has(p.pid)) {
+			continue;
+		}
+		const viejo = p.ratings.at(-1).ovr;
+		aLaEscalaNueva(p);
+		n += 1;
+		antes += viejo;
+		despues += p.ratings.at(-1).ovr;
+		max = Math.max(max, p.ratings.at(-1).ovr);
+	}
+	console.log(
+		`Escala nueva para los prospectos generados: ${n} (OVR medio ${(antes / n).toFixed(1)} -> ${(despues / n).toFixed(1)}, máximo ${max})`,
+	);
 }
 
 // Techo para el resto de los jugadores (prospectos generados, libres y
