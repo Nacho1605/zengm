@@ -147,6 +147,10 @@
 			"jersey": "jersey",
 			"pop": 0.019303,
 			"stadiumCapacity": 1000
+		},
+		"54": {
+			"_equipo": "INR (Independiente Rivadavia)",
+			"abbrev": "INR"
 		}
 	}
 }

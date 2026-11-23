@@ -1,6 +1,6 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.23.2_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.23.3_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
@@ -8,28 +8,28 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
 | Equipo | Arquero | Lista | Hoy | Cambio | PJ 2026 | Min |
 |---|---|---|---|---|---|---|
-| RIV | Santiago Beltrán | 73 | 72 | −1 | 45 | 4031 |
+| RIV | Santiago Beltrán | 73 | 72 | −1 | 46 | 4121 |
 | BEL | Thiago Cardozo | 70 | 70 | = | 37 | 3390 |
 | EST | Fernando Muslera | 71 | 70 | −1 | 38 | 3375 |
 | HUR | Hernán Galíndez | 70 | 69 | −1 | 32 | 2940 |
-| ARG | Brayan Cortés | 69 | 68 | −1 | 37 | 3390 |
-| BOC | Álvaro Montero | 71 | 68 | −3 | 23 | 2070 |
-| LAN | Nahuel Losada | 69 | 68 | −1 | 42 | 3810 |
+| ARG | Brayan Cortés | 69 | 68 | −1 | 38 | 3480 |
+| BOC | Álvaro Montero | 71 | 68 | −3 | 25 | 2250 |
+| LAN | Nahuel Losada | 69 | 68 | −1 | 43 | 3900 |
 | RAC | Facundo Cambeses | 72 | 68 | −4 | 42 | 3765 |
 | IND | Rodrigo Rey | 68 | 67 | −1 | 31 | 2790 |
 | RIE | Ignacio Arce | 68 | 67 | −1 | 37 | 3330 |
-| ROS | Conan Ledesma | 67 | 67 | = | 38 | 3450 |
+| ROS | Conan Ledesma | 67 | 67 | = | 39 | 3540 |
 | BAR | Marcelo Miño | 65 | 66 | +1 | 30 | 2690 |
-| IRM | Nicolás Bolcato | 67 | 66 | −1 | 43 | 3856 |
+| INR | Nicolás Bolcato | 67 | 66 | −1 | 43 | 3856 |
 | GIM | Nelson Insfrán | 64 | 65 | +1 | 30 | 2638 |
-| VEL | Tomás Marchiori | 66 | 64 | −2 | 19 | 1710 |
+| VEL | Tomás Marchiori | 66 | 64 | −2 | 20 | 1830 |
 | NOB | Josué Reinatti | 52 | 63 | +11 | 21 | 1890 |
 | INS | Marcos Ledesma | 59 | 62 | +3 | 17 | 1530 |
 | TAL | Ezequiel Unsaín | 63 | 62 | −1 | 16 | 1440 |
 | UNI | Matías Mansilla | 60 | 61 | +1 | 36 | 3240 |
 | BOC | Agustín Marchesín | 63 | 60 | −3 | 13 | 1084 |
 | VEL | Facundo Sanguinetti | 62 (BAN) | 58 | −4 | 0 | 0 |
-| IND | Santiago Mele | 60 | 56 | −4 | 4 | 360 |
+| IND | Santiago Mele | 60 | 56 | −4 | 5 | 450 |
 | SLO | José Devecchi | 43 | 55 | +12 | 15 | 1287 |
 | BAR | Juan Espínola | 53 | 51 | −2 | 13 | 1069 |
 | BOC | Leandro Brey | 55 | 50 | −5 | 17 | 1400 |
@@ -49,7 +49,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | ERC | Lautaro Herrera | — | 35 | no estaba | 5 | 450 |
 | LAN | Franco Petroli | 44 | 35 | −9 | 3 | 270 |
 | SLO | Facundo Altamirano | 43 | 35 | −8 | 1 | 90 |
-| IRM | Ramiro Macagno | 43 | 34 | −9 | 1 | 14 |
+| INR | Ramiro Macagno | 43 | 34 | −9 | 1 | 14 |
 | RIE | Marino Arzamendia | 39 | 32 | −7 | 4 | 360 |
 | INS | Emanuel Sittaro | 34 | 31 | −3 | 1 | 90 |
 | BAR | Juan Pablo Insúa | — | 30 | no estaba | 1 | 21 |
@@ -57,7 +57,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | VEL | Álvaro Busso | 40 | 30 | −10 | 0 | 0 |
 | ERC | Francisco Gualtieri | — | 29 | no estaba | 1 | 90 |
 | EST | Rodrigo Borzone | — | 29 | no estaba | 0 | 0 |
-| IRM | Emmanuel Gómez Riga | 38 | 29 | −9 | 2 | 180 |
+| INR | Emmanuel Gómez Riga | 38 | 29 | −9 | 2 | 180 |
 | BOC | Javier García | 40 | 28 | −12 | 1 | 66 |
 | GIM | Julián Kadijevic | — | 28 | no estaba | 2 | 152 |
 | UNI | Lucas Meuli | — | 28 | no estaba | 0 | 0 |

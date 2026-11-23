@@ -39,8 +39,8 @@ forma que les dio el usuario.
 | RIV | Centurión | 48 | 45 | No jugó en el año; Tagliamonte (46) jugó 225'. |
 | IND | Mele | 65 | 60 | 360' desde julio. Era el valor de la lista original. |
 | RIE | Arzamendia | 39 | 42 | 360' desde julio: jugó más que Kadijevic y Gómez Riga (38). |
-| IRM | Macagno | 43 | 40 | 14' en el año. |
-| IRM | Gómez Riga | 38 | 40 | Fue el suplente todo el año (36 convocatorias) y jugó 180'. |
+| INR | Macagno | 43 | 40 | 14' en el año. |
+| INR | Gómez Riga | 38 | 40 | Fue el suplente todo el año (36 convocatorias) y jugó 180'. |
 
 ## De acuerdo con el valor fijo (41)
 

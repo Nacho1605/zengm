@@ -1,5 +1,5 @@
 {
-	"_nota": "Copas 2026, datos del usuario (23/11/2026). El 3.º de la fase de grupos de la Libertadores pasa a los dieciseisavos de la Sudamericana. Copa Argentina: ronda en la que quedó afuera cada equipo (BOC y PLA, finalistas). Títulos: los que el usuario menciona en sus comentarios. IRM = INR en la lista del usuario. La Sudamericana de Barracas también figura en su comentario; la de Racing, en la captura de sus competiciones (planteles/RAC.json).",
+	"_nota": "Copas 2026, datos del usuario (23/11/2026). El 3.º de la fase de grupos de la Libertadores pasa a los dieciseisavos de la Sudamericana. Copa Argentina: ronda en la que quedó afuera cada equipo (BOC y PLA, finalistas). Títulos: los que el usuario menciona en sus comentarios. La Sudamericana de Barracas también figura en su comentario; la de Racing, en la captura de sus competiciones (planteles/RAC.json).",
 	"equipos": {
 		"ALD": {
 			"internacional": null,
@@ -90,7 +90,7 @@
 			"copaArgentina": "eliminado en octavos",
 			"titulos": []
 		},
-		"IRM": {
+		"INR": {
 			"internacional": "Libertadores: octavos de final (invicto, eliminado por penales)",
 			"copaArgentina": "eliminado en cuartos",
 			"titulos": [

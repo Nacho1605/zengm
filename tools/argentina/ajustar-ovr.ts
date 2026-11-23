@@ -51,7 +51,7 @@ const ruta = `data/argentina/planteles/${equipo}.json`;
 const texto = readFileSync(ruta, "utf8");
 const d = JSON.parse(texto);
 const js = d.jugadores.filter(
-	(j: any) => j.apellido === apellido && (!nombre || j.nombre === nombre),
+	(j: any) => (j.apellido === apellido || (!j.apellido && j.nombre === apellido)) && (!nombre || j.nombre === nombre),
 );
 if (js.length !== 1) {
 	throw new Error(`${equipo} ${apellido}: ${js.length} coincidencias`);

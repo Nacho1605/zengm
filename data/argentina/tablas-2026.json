@@ -25,7 +25,7 @@
 			{ "pos": 4, "equipo": "RIV", "pts": 26, "j": 16, "gf": 21, "gc": 14, "g": 8, "e": 2, "p": 6 },
 			{ "pos": 5, "equipo": "BAR", "pts": 26, "j": 16, "gf": 17, "gc": 13, "g": 7, "e": 5, "p": 4 },
 			{ "pos": 6, "equipo": "BEL", "pts": 23, "j": 16, "gf": 17, "gc": 15, "g": 6, "e": 5, "p": 5 },
-			{ "pos": 7, "equipo": "IRM", "pts": 23, "j": 16, "gf": 21, "gc": 24, "g": 6, "e": 5, "p": 5 },
+			{ "pos": 7, "equipo": "INR", "pts": 23, "j": 16, "gf": 21, "gc": 24, "g": 6, "e": 5, "p": 5 },
 			{ "pos": 8, "equipo": "HUR", "pts": 22, "j": 16, "gf": 14, "gc": 16, "g": 6, "e": 4, "p": 6 },
 			{ "pos": 9, "equipo": "SAR", "pts": 21, "j": 16, "gf": 23, "gc": 24, "g": 6, "e": 3, "p": 7 },
 			{ "pos": 10, "equipo": "TIG", "pts": 19, "j": 16, "gf": 16, "gc": 16, "g": 5, "e": 4, "p": 7 },
@@ -55,7 +55,7 @@
 			{ "pos": 15, "equipo": "RIE", "pts": 11, "j": 16, "gf": 5, "gc": 12, "g": 1, "e": 8, "p": 7 }
 		],
 		"zonaB": [
-			{ "pos": 1, "equipo": "IRM", "pts": 34, "j": 16, "gf": 29, "gc": 15, "g": 10, "e": 4, "p": 2 },
+			{ "pos": 1, "equipo": "INR", "pts": 34, "j": 16, "gf": 29, "gc": 15, "g": 10, "e": 4, "p": 2 },
 			{ "pos": 2, "equipo": "RIV", "pts": 29, "j": 16, "gf": 22, "gc": 12, "g": 9, "e": 2, "p": 5 },
 			{ "pos": 3, "equipo": "ARG", "pts": 29, "j": 16, "gf": 17, "gc": 13, "g": 8, "e": 5, "p": 3 },
 			{ "pos": 4, "equipo": "ROS", "pts": 28, "j": 16, "gf": 20, "gc": 16, "g": 8, "e": 4, "p": 4 },
@@ -76,7 +76,7 @@
 		{ "pos": 1, "equipo": "BOC", "pts": 63, "j": 32, "gf": 46, "gc": 23, "g": 17, "e": 12, "p": 3 },
 		{ "pos": 2, "equipo": "ROS", "pts": 62, "j": 32, "gf": 46, "gc": 28, "g": 18, "e": 8, "p": 6 },
 		{ "pos": 3, "equipo": "ARG", "pts": 60, "j": 32, "gf": 37, "gc": 27, "g": 17, "e": 9, "p": 6 },
-		{ "pos": 4, "equipo": "IRM", "pts": 57, "j": 32, "gf": 50, "gc": 39, "g": 16, "e": 9, "p": 7 },
+		{ "pos": 4, "equipo": "INR", "pts": 57, "j": 32, "gf": 50, "gc": 39, "g": 16, "e": 9, "p": 7 },
 		{ "pos": 5, "equipo": "GIM", "pts": 57, "j": 32, "gf": 44, "gc": 39, "g": 17, "e": 6, "p": 9 },
 		{ "pos": 6, "equipo": "VEL", "pts": 56, "j": 32, "gf": 43, "gc": 29, "g": 14, "e": 14, "p": 4 },
 		{ "pos": 7, "equipo": "RIV", "pts": 55, "j": 32, "gf": 43, "gc": 26, "g": 17, "e": 4, "p": 11 },
@@ -210,7 +210,7 @@
 			"2025": 43,
 			"2026": 57,
 			"pos": 11,
-			"equipo": "IRM",
+			"equipo": "INR",
 			"prom": 1.39,
 			"pts": 146,
 			"pj": 105
@@ -420,14 +420,14 @@
 		]
 	},
 	"equipoIdealApertura": {
-		"_nota": "Equipo Ideal del Torneo Apertura 2026, dato del usuario (23/11/2026). Formación 4-4-1-1 con 9 suplentes. Equipos de cuando jugaban el Apertura (INR = IRM). El central de EST es Tomás Palacios (el usuario había escrito Tiago por error).",
+		"_nota": "Equipo Ideal del Torneo Apertura 2026, dato del usuario (23/11/2026). Formación 4-4-1-1 con 9 suplentes. Equipos de cuando jugaban el Apertura. El central de EST es Tomás Palacios (el usuario había escrito Tiago por error).",
 		"titulares": [
 			{ "pos": "GK", "jugador": "Álvaro Montero", "equipo": "VEL" },
 			{ "pos": "CB", "jugador": "Tomás Palacios", "equipo": "EST" },
 			{ "pos": "CB", "jugador": "Lisandro López", "equipo": "BEL" },
 			{ "pos": "RB", "jugador": "Leandro Lozano", "equipo": "ARG" },
 			{ "pos": "LB", "jugador": "Marcos Acuña", "equipo": "RIV" },
-			{ "pos": "MF", "jugador": "Matías Fernández", "equipo": "IRM" },
+			{ "pos": "MF", "jugador": "Matías Fernández", "equipo": "INR" },
 			{ "pos": "MF", "jugador": "Federico Fattori", "equipo": "ARG" },
 			{ "pos": "MF", "jugador": "Leandro Paredes", "equipo": "BOC" },
 			{ "pos": "MF", "jugador": "Ángel Di María", "equipo": "ROS" },
@@ -436,7 +436,7 @@
 		],
 		"suplentes": [
 			{ "jugador": "Santiago Beltrán", "equipo": "RIV" },
-			{ "jugador": "Sheyko Studer", "equipo": "IRM" },
+			{ "jugador": "Sheyko Studer", "equipo": "INR" },
 			{ "jugador": "Francisco Álvarez", "equipo": "ARG" },
 			{ "jugador": "Mateo Del Blanco", "equipo": "UNI" },
 			{ "jugador": "Santiago Arias", "equipo": "IND" },

@@ -1,5 +1,5 @@
 {
-	"equipo": "IRM",
+	"equipo": "INR",
 	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario; rendimiento completo del 23/11/2026); debut e inferiores, datos del usuario. Comentario, Sofascore y copas: datos del usuario (23/11/2026)",
 	"contexto": "Independiente Rivadavia pasó de una mitad de año soñada a perder solidez tras el receso. Dominó su zona del Apertura —aunque cayó rápido en cruces— y firmó un debut invicto en Libertadores solo frenado por penales, pero la venta de Sebastián Villa partió su año: perdió la Supercopa, cedió la Copa Argentina y en el Clausura se volvió frágil atrás y de visitante. Aun así, ya aseguró otra Libertadores y sigue en playoffs. Sin necesitar la pelota, espera en bloque, impone rigor aéreo y lastima con ataques verticales. Álex Arce sostuvo el gol, José Florentín sumó despliegue y llegada goleadora, Matías Fernández dio último pase y Tomás Bottari ordenó el medio, sin que Maximiliano Salas tapara la ausencia de Villa. Sofascore: José Florentín (7,02), Luciano Gómez (6,97), Alejo Osella (6,91). Tabla anual 2026: 4.º (57 pts, 50-39); Apertura 1.º de la zona B (34 pts, 29-15); Clausura 7.º del grupo B (23 pts, 21-24); promedios 11.º. Copas 2026 (dato del usuario, 23/11): Libertadores: octavos de final (invicto, eliminado por penales). Copa Argentina: eliminado en cuartos. Títulos y finales: Perdió la Supercopa.",
 	"reemplaza": [
@@ -42,7 +42,7 @@
 			"fichado": "01/01/2026",
 			"ovr": 66,
 			"debut": {
-				"club": "IRM",
+				"club": "INR",
 				"anio": 2026
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1301353-1781278529.jpg?lm=4711"
@@ -896,7 +896,7 @@
 			"fichado": "01/01/2025",
 			"ovr": 65,
 			"debut": {
-				"club": "IRM",
+				"club": "INR",
 				"anio": 2025
 			},
 			"college": "Club Atlético Newell's Old Boys",

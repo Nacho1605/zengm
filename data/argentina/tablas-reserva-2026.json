@@ -255,7 +255,7 @@
 		},
 		{
 			"pos": 22,
-			"equipo": "IRM",
+			"equipo": "INR",
 			"pts": 45,
 			"j": 36,
 			"gf": 47,
@@ -788,7 +788,7 @@
 			},
 			{
 				"pos": 12,
-				"equipo": "IRM",
+				"equipo": "INR",
 				"pts": 24,
 				"j": 18,
 				"gf": 23,
@@ -1238,7 +1238,7 @@
 			},
 			{
 				"pos": 13,
-				"equipo": "IRM",
+				"equipo": "INR",
 				"pts": 21,
 				"j": 18,
 				"gf": 24,

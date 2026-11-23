@@ -10,7 +10,7 @@ siempre). Escalera por puesto publicada para el usuario
 `data/argentina/escalera/`), con una columna para que anote sus OVR.
 
 **En curso (23/11):** el usuario manda el Rendimiento completo de los 13
-primeros (RIE, BOC, RIV, RAC, SLO, IND, ROS, EST, ARG, VEL, IRM, GIM, LAN; 3
+primeros (RIE, BOC, RIV, RAC, SLO, IND, ROS, EST, ARG, VEL, INR, GIM, LAN; 3
 imágenes cada uno, en ese orden). Para qué: tener los números completos de
 cada jugador y de los que se fueron, para después (fase 3) poder separar el
 año de los que cambiaron de club (Apertura en uno, Clausura en otro) y
@@ -26,7 +26,7 @@ había dado el usuario, con su nota; Ávalos con Sofascore 7,03; "Walter
 Mazzantti" de Transfermarkt = Mazzanti de NOB), ROS (22 salidas; Marco
 Ruben dado en texto), EST (16 salidas), ARG (15 salidas; Lescano con
 Sofascore 7,10; "Matías Giménez" de la captura = Giménez Rojas) y VEL (15
-salidas; Montero con su mitad en Vélez: 17 PJ, 1530'), IRM (8 salidas,
+salidas; Montero con su mitad en Vélez: 17 PJ, 1530'), INR (8 salidas,
 las mismas que ya estaban; números iguales). GIM: 2 de 3 imágenes en
 `rendimiento/GIM.mjs` (sin aplicar). Sigue: GIM y LAN. Equipo Ideal del
 Apertura 2026 (dato del usuario) en `tablas-2026.json`
@@ -40,12 +40,12 @@ se valoró solo con SLO; revisar). Nombres de pila compuestos en las salidas ("J
 "José María" Ingratti): el script los reconoce. Nuevos
 jugadores en dos clubes: Barinaga (BOC → RAC), Blondel (BOC, sin jugar →
 HUR), Brian Aguirre (BOC → EST), Janson (BOC → GIM), Galarza (RIV, sin
-jugar → TAL), Salas (RIV → IRM), Maximiliano Meza (RIV → IND) y Rubio (RAC
+jugar → TAL), Salas (RIV → INR), Maximiliano Meza (RIV → IND) y Rubio (RAC
 → UNI); con RAC y SLO: Rojo (RAC 21 PJ → EST), Baltasar Rodríguez (RAC →
-EST), Santiago Solari (RAC 25 PJ → NOB), Reali (SLO 22 PJ → IRM) y Bruera
+EST), Santiago Solari (RAC 25 PJ → NOB), Reali (SLO 22 PJ → INR) y Bruera
 (SLO, sin jugar → BAR). Para revisar el OVR al terminar: Juan Cruz Meza
 (RIV, 18 años) figuraba con 0 PJ y tiene 23 (771'); Almada 3 → 5 goles;
-Ascacíbar 8 → 10; Reali (IRM 49, con 1288' en el año), S. Solari (NOB 56,
+Ascacíbar 8 → 10; Reali (INR 49, con 1288' en el año), S. Solari (NOB 56,
 2298'), Rojo (EST 63, 2069').
 Minutos y goles le dan forma a los ratings: al terminar la tanda, armar un
 parche (v2.23.3) y regenerar la escalera.
@@ -81,7 +81,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 ## 2. Equipos
 
 Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
-`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN HUR TAL BEL INS NOB ERC UNI BAR`.
+`RIE BOC RIV RAC SLO IND ROS EST ARG VEL INR GIM LAN HUR TAL BEL INS NOB ERC UNI BAR`.
 
 | Abrev | En el juego | Zona / división | |
 |---|---|---|---|
@@ -114,10 +114,10 @@ Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
 | ATU | Tucumán Deans | Fed / Noroeste | |
 | CCO | Santiago Railroaders (Central Córdoba SdE) | Fed / Chaqueña | |
 | GEM | Mendoza 33ers (Gimnasia de Mendoza) | Fed / Cuyo | |
-| IRM | Mendoza Blues (Independiente Rivadavia, "CSIR") | Fed / Cuyo | ✔ |
+| INR | Mendoza Blues (Independiente Rivadavia, "CSIR") | Fed / Cuyo | ✔ |
 
 Siglas que usa el usuario: AAAJ = ARG, CASLA = SLO, EDLP = EST, CARC = ROS,
-CSIR = IRM, GELP = GIM, SMSJ = SMJ (San Martín de San Juan, inactivo). Colón
+CSIR = INR, GELP = GIM, SMSJ = SMJ (San Martín de San Juan, inactivo). Colón
 (COL) es inactivo, es el club del usuario: "Santa Fe Fishermen". El Porvenir =
 PVN. En las tablas, "Gimnasia y Esgrima" aparece dos veces (GIM y GEM) y
 "Estudiantes" también (EST y ERC).
@@ -218,18 +218,18 @@ Transfermarkt: `pie` null (un central sin pie va de #6). Sin fecha de fichaje
 ## 4. Escala de OVR y criterio
 
 Once (promedio de los 11 mejores), **v2.23.1 (escala nueva)**: RIV 69,5 ·
-BOC 69,3 · ROS 67,9 · EST 66,5 · BEL 65,6 · VEL 65,6 · IRM 65,5 · ARG 64,9 ·
+BOC 69,3 · ROS 67,9 · EST 66,5 · BEL 65,6 · VEL 65,6 · INR 65,5 · ARG 64,9 ·
 GIM 64,2 · LAN 64,1 · INS 63,5 · HUR 63,2 · IND 62,9 · RAC 62,1 · TAL 62,0 ·
 BAR 61,5 · SLO 61,0 · NOB 58,9 · UNI 58,7 · RIE 56,8 · ERC 51,6.
 
 Once en la escala vieja (v2.22.1, como referencia): RIV 70,2 · BOC 69,8 · ROS 68,5 ·
-EST 67,6 · VEL 67,0 · IRM 66,7 · ARG 66,6 · BEL 66,6 (campeón del Apertura,
+EST 67,6 · VEL 67,0 · INR 66,7 · ARG 66,6 · BEL 66,6 (campeón del Apertura,
 10.º en la anual) · LAN 65,7 · GIM 65,6 · IND 65,5 · RAC 65,5 · HUR 64,7 ·
 SLO 64,6 · INS 64,4 · TAL 64,3 · NOB 61,7 · UNI 61,7 (16.º en la anual, pero
 desarmado a mitad de año: 17.º del Clausura, peor que NOB) · RIE 60,5 ·
 ERC 56,5 (último, descendido). Valoración de equipo del propio juego (Power
 Rankings que mandó el usuario, sobre la v2.15.2, con los 17 sin cargar
-desactivados): RIV 136 · BOC 134 · ROS 127 · EST 116 · ARG 114 · IRM 114 ·
+desactivados): RIV 136 · BOC 134 · ROS 127 · EST 116 · ARG 114 · INR 114 ·
 VEL 112 · LAN 108 · GIM 106 · IND 105 · SLO 101 · RAC 99 (107 sin
 lesionados) · RIE 78. Estudiantes queda alto siendo 11.º porque está por jugar
 la final de la Libertadores 2026. Los 17 sin cargar tienen datos de 2023
@@ -262,7 +262,7 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
   (Nacho Fernández 70, M. Torres 67, E. Martínez 66, Ag. Auzmendi 64): un
   equipo mediano no se infla por una buena temporada.
 - Ídolos y figuras con trayectoria se sostienen: Carrillo 69, Arce 71 (leal a
-  mano), Farías 69, Ascacíbar 68, Mammana 67, Studer 68 (la promesa de IRM).
+  mano), Farías 69, Ascacíbar 68, Mammana 67, Studer 68 (la promesa de INR).
 - Recién llegados: se valoran por lo que jugaron, con algo de peso para el
   talento (E. Ávila 65, Carboni 63, Salas 61).
 - Lanús (v2.15.1): −1 a todos los mediocampistas, a Guidara y a G. Pérez, y
@@ -302,7 +302,8 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
   **Desactualizada**: es una base de comparación entre arqueros, no un valor
   fijo. Ejemplos del usuario: Montero 71 por su Apertura en Vélez, bajó en el
   Clausura ya en Boca (69); Gill 72 por su Mundial, vendido al Lille en agosto.
-  Siglas: INR = IRM, AAE = ERC (Estudiantes de Río Cuarto).
+  Siglas: AAE = ERC (Estudiantes de Río Cuarto). Independiente Rivadavia es
+  INR en la liga desde la v2.23.3 (antes IRM).
 - `valores-actuales.md`: la lista contra los OVR de hoy en los planteles
   cargados (cambio, PJ y minutos 2026), los de la lista que ya no están en su
   equipo y los de equipos sin cargar. Se genera con
@@ -318,7 +319,7 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
 Capitanes (contexto, no suman puntos): Paredes (BOC), Otamendi (RIV),
 Cambeses (RAC), Marcone (IND), Tripichio y Devecchi (SLO, comparten),
 E. Gómez (VEL), Di María (ROS), Izquierdoz (LAN), Oroz (ARG), Nacho Fernández
-(GIM), Álex Arce (IRM), Céliz (RIE), Galíndez (HUR), Lucas Zelarayán (BEL), Fernando Alarcón (INS), Luca Regiardo (NOB, 20 años).
+(GIM), Álex Arce (INR), Céliz (RIE), Galíndez (HUR), Lucas Zelarayán (BEL), Fernando Alarcón (INS), Luca Regiardo (NOB, 20 años).
 Unión no tiene capitán fijo; suele serlo Cristian Tarragona (con `capitan`).
 Barracas: sin capitán fijo, suele serlo Iván Tapia (con `capitan`); Carlos
 Arce es el capitán histórico (más presencias en la historia del club).
@@ -350,14 +351,14 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   terminar se pasan a `planteles/` y se suman a `armar-v2.sh`.
 - `arqueros/`: la lista de arqueros del usuario y la comparación con hoy
   (ver §4).
-- `salidas-2026.json` (149): los que se fueron de IRM (8), GIM (14), LAN (12),
+- `salidas-2026.json` (149): los que se fueron de INR (8), GIM (14), LAN (12),
   HUR (13), TAL (12), BEL (14), INS (15), NOB (15), ERC (20), UNI (21), BAR (3) e IND (2:
   Fernández Cedrés y Pussetto, números que dio el usuario; IND y los equipos
   anteriores se cargaron antes de que existiera este archivo) con sus números
-  2026. Villa (IRM → BOC): con la suma (44 PJ, 4 g, 8 a) su 70 se sostiene.
+  2026. Villa (INR → BOC): con la suma (44 PJ, 4 g, 8 a) su 70 se sostiene.
   Dylan Aquino (LAN) se fue a Union Saint-Gilloise (Bélgica). Leonel Pérez
   (HUR → RAC): 0 PJ en Huracán, no cambia nada. Por revisar con la suma al
-  cargar TAL (ya están en equipos cargados): Vigo (TAL → IRM, 57), Ortegoza
+  cargar TAL (ya están en equipos cargados): Vigo (TAL → INR, 57), Ortegoza
   (TAL → RAC, 61), Río (TAL → SLO, 54) y Ronaldo Martínez (TAL → VEL, 69).
 - `tablas-reserva-2026.json`: Torneo de Reserva 2026 (Anual, Apertura y
   Clausura; sin promedios). Sirve para valorar a los juveniles que casi no
@@ -379,7 +380,7 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    ATU, CCO, GEM).
 2. **Fotos:** faltan las de Newell's, Estudiantes RC, Unión y Barracas (123); el usuario las pone
    en el juego y manda la liga exportada. Prospectos sin foto en varios
-   equipos (TAL, INS, BEL). Ramis (IRM) tiene una miniatura de Google; las
+   equipos (TAL, INS, BEL). Ramis (INR) tiene una miniatura de Google; las
    miniaturas de Google de los primeros ocho equipos (221) las corrige el
    usuario al final de la fase 2. La red de la sesión bloquea Transfermarkt.
 3. **Jugadores de élite de las cinco grandes ligas** (ej. Giovani Lo Celso,
@@ -434,10 +435,10 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 **Datos que faltan (inventario del 23/11/2026; se le pidieron al usuario):**
 
 - Hay dos épocas de carga. Los 13 primeros (RIE, BOC, RIV, RAC, SLO, IND,
-  ROS, EST, ARG, VEL, IRM, GIM, LAN) tienen del Rendimiento solo PJ, goles y
+  ROS, EST, ARG, VEL, INR, GIM, LAN) tienen del Rendimiento solo PJ, goles y
   minutos; desde HUR, todas las columnas (convocado, entró, salió,
   asistencias, tarjetas, ppp). Pedido: el Rendimiento de esos 13 (3 imágenes
-  cada uno; el plantel "Ampliado" no hace falta). De IRM, GIM y LAN las
+  cada uno; el plantel "Ampliado" no hace falta). De INR, GIM y LAN las
   salidas sí están completas; de los 10 primeros no hay salidas (salvo 2 de
   IND que dio el usuario): por eso a Montero (VEL → BOC) le falta su mitad
   en Vélez. Si los números cambiaron desde la primera captura, usar los
@@ -523,7 +524,7 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
 - v2.14.1: descuento a Gimnasia pedido por el usuario y revisión general de 11
   equipos (39 cambios); `tablas-2026.json`.
 - v2.14.2: correcciones del usuario (Ascacíbar 68, Carrillo 69, Carboni 63,
-  E. Ávila 65, Mammana 67, Salas 61) y revisión de IRM, River y Riestra (24
+  E. Ávila 65, Mammana 67, Salas 61) y revisión de INR, River y Riestra (24
   cambios).
 - Reglas nuevas (en CLAUDE.md): draft = año de promoción; College oficial;
   club sin localidad = el más importante; sin fuentes externas; versiones
@@ -548,7 +549,7 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   mano pasados con `forma2-a-mano.ts` (conservan sus retoques). Rasgos nuevos:
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
-  (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+  (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
 **Sesión del 23/11/2026 (v2.23.2).** Huella de la v2.23.2:
 `6123fb70d6aa348825d13b11720d13e0ce6b99d63cfb52f6b4717d165f12ece0`.
 
@@ -725,9 +726,9 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
 - v2.17.1: correcciones del usuario: Nervo 64, Pereyra 65, Caicedo 68,
   Pussetto 62, Catalán 66, Unsaín 64, Depietri 65, Fattori 68, Riquelme 62,
   G. Baroni 55 y Dávila 54 (revisados contra los juveniles de su nivel);
-  Ortegoza 62 (RAC), Vigo 58 (IRM); Luján 60 partidos; Marchiori "reflejos".
+  Ortegoza 62 (RAC), Vigo 58 (INR); Luján 60 partidos; Marchiori "reflejos".
   El usuario corrió una simulación con los 15 equipos (Power Rankings: RIV 136,
-  BOC 134, ROS 127, EST 116, ARG 114, IRM 114, VEL 112, RAC 99 (107 sano),
+  BOC 134, ROS 127, EST 116, ARG 114, INR 114, VEL 112, RAC 99 (107 sano),
   LAN 107, IND 106, GIM 106, SLO 101, HUR 98, TAL 91, RIE 78; campeón Boca).
 - v2.17 Talleres (24 en el plantel y 5 prospectos de reserva: Thiago Baroni,
   Nuccio, Trey, Ortiz, Alastra). v2.16 Huracán (27). Comentario del usuario
@@ -758,7 +759,7 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   Catalán (1993), Sforza (NOB), Fattori (estaba en HUR), Cristaldo (ALD,
   1997), Depietri (2001) y Valoyes (1997). 12 salidas; 4 de ellas ya están
   en equipos cargados (ver §6).
-- v2.15.8 (sesión del 20/11, noche): fotos de Cena (IRM) y Zalazar (GIM),
+- v2.15.8 (sesión del 20/11, noche): fotos de Cena (INR) y Zalazar (GIM),
   enlaces que dio el usuario. Comparada con la v2.15.7 campo por campo: esas 2
   diferencias y nada más.
 - v2.15.7: prospectos generados de los drafts 2026–2055 (2100): nivel base

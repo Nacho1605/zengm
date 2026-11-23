@@ -697,8 +697,8 @@
 		},
 		{
 			"n": "37",
-			"nombre": "",
-			"apellido": "Rick",
+			"nombre": "Rick",
+			"apellido": "",
 			"pos": "Extremo izquierdo",
 			"nac": "02/09/1999",
 			"pais": "Brazil",

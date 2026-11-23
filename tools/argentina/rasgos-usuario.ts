@@ -10,19 +10,19 @@ import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 
 // rasgo -> [equipo, apellido, nombre (si hace falta)]
 const LISTA: Record<string, [string, string, string?][]> = {
-	goleador: [["BOC", "Merentiel"], ["RAC", "Martínez", "Adrián"], ["VEL", "Martínez", "Ronaldo"], ["EST", "Alario"], ["IRM", "Arce", "+"], ["HUR", "Pussetto"], ["BEL", "Fernández"]],
-	"larga distancia": [["VEL", "Lanzini"], ["ROS", "Di María"], ["IRM", "Florentín"], ["BEL", "González Metilli"], ["INS", "Luna"], ["NOB", "Soñora"], ["ERC", "Alanís"], ["UNI", "Pittón"], ["BAR", "Insúa", "Rodrigo"]],
-	aereo: [["EST", "Palacios", "Tomás"], ["EST", "Rojo"], ["EST", "Gaich"], ["BOC", "Di Lollo"], ["BOC", "Valencia"], ["RIV", "Otamendi"], ["VEL", "Martínez", "Ronaldo"], ["EST", "Carrillo"], ["ARG", "Álvarez"], ["IRM", "Arce"], ["LAN", "Canale"], ["ARG", "Molina"], ["SLO", "Auzmendi"], ["HUR", "Caicedo"], ["BEL", "López"], ["INS", "Alarcón"], ["ERC", "Maffini"], ["UNI", "Estigarribia"], ["BAR", "Jappert"], ["BAR", "Campi"], ["BAR", "Bruera"]],
-	gambeta: [["BOC", "Flores"], ["RIV", "Almada"], ["RIV", "Correa", "+"], ["RAC", "Zaracho"], ["SLO", "Farías"], ["EST", "Cetré"], ["EST", "Correa"], ["ROS", "Campaz"], ["ROS", "Di María"], ["ARG", "López Muñoz", "+"], ["IRM", "Fernández", "+"], ["LAN", "Moreno"], ["IND", "Montiel"], ["RAC", "Díaz"], ["TAL", "Rick"], ["BEL", "Zelarayán", "Lucas"]],
+	goleador: [["BOC", "Merentiel"], ["RAC", "Martínez", "Adrián"], ["VEL", "Martínez", "Ronaldo"], ["EST", "Alario"], ["INR", "Arce", "+"], ["HUR", "Pussetto"], ["BEL", "Fernández"]],
+	"larga distancia": [["VEL", "Lanzini"], ["ROS", "Di María"], ["INR", "Florentín"], ["BEL", "González Metilli"], ["INS", "Luna"], ["NOB", "Soñora"], ["ERC", "Alanís"], ["UNI", "Pittón"], ["BAR", "Insúa", "Rodrigo"]],
+	aereo: [["EST", "Palacios", "Tomás"], ["EST", "Rojo"], ["EST", "Gaich"], ["BOC", "Di Lollo"], ["BOC", "Valencia"], ["RIV", "Otamendi"], ["VEL", "Martínez", "Ronaldo"], ["EST", "Carrillo"], ["ARG", "Álvarez"], ["INR", "Arce"], ["LAN", "Canale"], ["ARG", "Molina"], ["SLO", "Auzmendi"], ["HUR", "Caicedo"], ["BEL", "López"], ["INS", "Alarcón"], ["ERC", "Maffini"], ["UNI", "Estigarribia"], ["BAR", "Jappert"], ["BAR", "Campi"], ["BAR", "Bruera"]],
+	gambeta: [["BOC", "Flores"], ["RIV", "Almada"], ["RIV", "Correa", "+"], ["RAC", "Zaracho"], ["SLO", "Farías"], ["EST", "Cetré"], ["EST", "Correa"], ["ROS", "Campaz"], ["ROS", "Di María"], ["ARG", "López Muñoz", "+"], ["INR", "Fernández", "+"], ["LAN", "Moreno"], ["IND", "Montiel"], ["RAC", "Díaz"], ["TAL", "Rick"], ["BEL", "Zelarayán", "Lucas"]],
 	veloz: [["BOC", "Villa", "+"], ["RAC", "Vergara"], ["SLO", "Barrios"], ["EST", "Meza"], ["EST", "Cetré"], ["SLO", "Cuello"], ["TAL", "Rick"], ["TAL", "Valoyes"], ["INS", "Córdoba"], ["NOB", "Mazzanti", "+"]],
 	"pelota parada": [["ROS", "Di María"], ["ARG", "Mancuello"], ["IND", "Montiel"], ["BOC", "Paredes"], ["LAN", "Moreno"], ["VEL", "Valdés"], ["UNI", "Malcorra"], ["BAR", "Tapia"]],
 	habilidoso: [["BOC", "Paredes"], ["RIV", "Almada"], ["RAC", "Miljevic"], ["EST", "Sosa"], ["ROS", "Di María", "+"], ["ARG", "López Muñoz"], ["GIM", "Fernández"], ["HUR", "Barticciotto"], ["TAL", "Cristaldo"], ["BEL", "Vázquez"], ["INS", "Luna"]],
 	pase: [["BOC", "Paredes", "+"], ["VEL", "Valdés"], ["GIM", "Fernández"], ["RIV", "Almada"], ["ROS", "Campaz"], ["HUR", "Romero"], ["BEL", "Vázquez"]],
 	cerebro: [["BOC", "Paredes"], ["VEL", "Robertone"], ["VEL", "Aliendro"], ["EST", "Neves"], ["GIM", "Barros Schelotto", "Nicolás"], ["TAL", "Fattori"], ["ERC", "Cabrera"], ["UNI", "Menossi"], ["BAR", "Rolón"]],
 	centrador: [["RIV", "Montiel"], ["RIV", "Acuña"], ["VEL", "Gómez"], ["EST", "Benedetti"], ["EST", "Meza"], ["ROS", "Di María"], ["GIM", "Steimbach"], ["LAN", "Salvio"], ["ERC", "Alanís"], ["BAR", "Insúa", "Rodrigo"]],
-	recuperador: [["BOC", "Ascacíbar"], ["BOC", "Paredes"], ["SLO", "Hernández"], ["EST", "Palacios", "Tomás"], ["EST", "Rojo"], ["ROS", "Ibarra"], ["IRM", "Studer"], ["GIM", "Barros Schelotto", "Nicolás"], ["LAN", "Canale"], ["HUR", "Pereyra"], ["TAL", "Fattori"], ["BEL", "Longo"], ["INS", "Abregú"], ["ERC", "Rosané"], ["ERC", "Cabrera"], ["BAR", "Gordillo"]],
-	potente: [["BOC", "Giménez"], ["RAC", "Martínez", "Adrián"], ["IND", "Ávila"], ["SLO", "Arboleda"], ["SLO", "Herazo"], ["EST", "Gaich"], ["IRM", "Costa"], ["IRM", "Arce"], ["LAN", "Izquierdoz"], ["LAN", "Wlk"], ["RIE", "Quintana"], ["RIE", "Murillo"], ["HUR", "Nervo"], ["HUR", "Caicedo"], ["BEL", "Morales"], ["BAR", "Jappert"], ["BAR", "Rak"], ["BAR", "Tobio"], ["BAR", "Bruera"]],
-	pulmon: [["RIV", "Portillo"], ["RIV", "Arambarri"], ["SLO", "Tripichio"], ["EST", "Piovi"], ["ROS", "Ibarra"], ["ROS", "Copetti"], ["ARG", "Oroz"], ["IRM", "Florentín"], ["GIM", "Steimbach"], ["GIM", "Miramón"], ["LAN", "Marcich"], ["RIE", "Céliz"], ["HUR", "Gil"], ["TAL", "Catalán"], ["TAL", "Schott"], ["INS", "Cerato"], ["NOB", "Solari"], ["ERC", "Cabrera"], ["ERC", "Talpone"]],
+	recuperador: [["BOC", "Ascacíbar"], ["BOC", "Paredes"], ["SLO", "Hernández"], ["EST", "Palacios", "Tomás"], ["EST", "Rojo"], ["ROS", "Ibarra"], ["INR", "Studer"], ["GIM", "Barros Schelotto", "Nicolás"], ["LAN", "Canale"], ["HUR", "Pereyra"], ["TAL", "Fattori"], ["BEL", "Longo"], ["INS", "Abregú"], ["ERC", "Rosané"], ["ERC", "Cabrera"], ["BAR", "Gordillo"]],
+	potente: [["BOC", "Giménez"], ["RAC", "Martínez", "Adrián"], ["IND", "Ávila"], ["SLO", "Arboleda"], ["SLO", "Herazo"], ["EST", "Gaich"], ["INR", "Costa"], ["INR", "Arce"], ["LAN", "Izquierdoz"], ["LAN", "Wlk"], ["RIE", "Quintana"], ["RIE", "Murillo"], ["HUR", "Nervo"], ["HUR", "Caicedo"], ["BEL", "Morales"], ["BAR", "Jappert"], ["BAR", "Rak"], ["BAR", "Tobio"], ["BAR", "Bruera"]],
+	pulmon: [["RIV", "Portillo"], ["RIV", "Arambarri"], ["SLO", "Tripichio"], ["EST", "Piovi"], ["ROS", "Ibarra"], ["ROS", "Copetti"], ["ARG", "Oroz"], ["INR", "Florentín"], ["GIM", "Steimbach"], ["GIM", "Miramón"], ["LAN", "Marcich"], ["RIE", "Céliz"], ["HUR", "Gil"], ["TAL", "Catalán"], ["TAL", "Schott"], ["INS", "Cerato"], ["NOB", "Solari"], ["ERC", "Cabrera"], ["ERC", "Talpone"]],
 	tactico: [["BOC", "Pellegrino"], ["IND", "Arias"], ["EST", "González Pírez"], ["LAN", "Izquierdoz"], ["RIE", "Quintana"], ["HUR", "Blondel"], ["TAL", "Catalán"], ["INS", "Galván"], ["NOB", "Giannetti"]],
 	reflejos: [["RAC", "Cambeses"], ["EST", "Muslera"], ["VEL", "Marchiori"]],
 	achique: [["IND", "Rey"], ["HUR", "Galíndez"]],
@@ -43,7 +43,7 @@ for (const [rasgo, xs] of Object.entries(LISTA)) {
 		const nombre = mas ? undefined : extra;
 		const a = archivos.find((x) => x.d.equipo === equipo);
 		if (!a) throw new Error(`No existe el plantel ${equipo}`);
-		const m = a.d.jugadores.filter((j: any) => j.apellido === apellido && (!nombre || j.nombre === nombre) && !j.prospecto);
+		const m = a.d.jugadores.filter((j: any) => (j.apellido === apellido || (!j.apellido && j.nombre === apellido)) && (!nombre || j.nombre === nombre) && !j.prospecto);
 		if (m.length !== 1) throw new Error(`${equipo} ${nombre ?? ""} ${apellido}: ${m.length} coincidencias`);
 		nuevos.set(m[0], [...(nuevos.get(m[0]) ?? []), rasgo + (mas ? "+" : "")]);
 	}

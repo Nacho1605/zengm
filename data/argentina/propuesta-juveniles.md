@@ -96,7 +96,7 @@ Torneo de Reserva 2026 como complemento (`tablas-reserva-2026.json`). Son 51:
 **Cómo entra la reserva.** Para el que casi no jugó en Primera (menos de
 300'), su nivel se ve sobre todo en la reserva: +1 si su reserva quedó entre
 las 5 primeras de la anual (IND, VEL, LAN, BOC, RIV), −1 si quedó del 21.º para
-abajo (ARG, IRM, GIM y otros sin cargar), 0 el resto. El que ya juega en Primera
+abajo (ARG, INR, GIM y otros sin cargar), 0 el resto. El que ya juega en Primera
 se valora por Primera (criterio de la v2.18.2: rendimiento + valor de mercado).
 Los arqueros no se tocan (van por la lista del usuario). Dávila (51) y Baroni
 (52) quedan como los fijó el usuario.

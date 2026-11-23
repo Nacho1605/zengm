@@ -13,8 +13,7 @@ lado de este archivo). Dos ejemplos que dio el usuario:
 - Orlando Gill: 72 por un Mundial excelentísimo; no figura en la liga porque
   en agosto lo vendieron al LOSC Lille de Francia.
 
-Siglas de la lista que no son las de la liga: INR = Independiente Rivadavia
-(IRM en la liga) y AAE = Asociación Atlética Estudiantes de Río Cuarto (ERC en
+Siglas de la lista que no son las de la liga: AAE = Asociación Atlética Estudiantes de Río Cuarto (ERC en
 la liga).
 
 ## Lista

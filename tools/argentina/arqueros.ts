@@ -22,7 +22,7 @@ const norm = (s: string) =>
 		.toLowerCase()
 		.trim();
 // Siglas de la lista que en la liga son otras
-const SIGLA: Record<string, string> = { INR: "IRM", AAE: "ERC" };
+const SIGLA: Record<string, string> = { AAE: "ERC" };
 
 // 1. La lista
 const texto = readFileSync(new URL("arqueros/lista-apertura-2026.md", dir), "utf8");

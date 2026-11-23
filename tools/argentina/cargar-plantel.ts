@@ -75,6 +75,28 @@ const ECONOMIA = {
 };
 Object.assign(ga, ECONOMIA);
 
+// Premios con sus nombres originales del juego (pedido del usuario, 23/11:
+// "momentáneamente"; las fórmulas de fútbol se mantienen). Clave: el nombre
+// en español que tenían desde la fase 1
+const PREMIOS_ORIGINALES: Record<string, [string, string]> = {
+	"Jugador Más Valioso": ["Most Valuable Player", "MVP"],
+	"Mejor Defensor": ["Defensive Player of the Year", "DPOY"],
+	"Revelación del Año": ["Rookie of the Year", "ROY"],
+	"Mejor Suplente": ["Sixth Man of the Year", "SMOY"],
+	"Jugador de Mayor Progreso": ["Most Improved Player", "MIP"],
+	"Figura de la Final": ["Finals MVP", "FMVP"],
+	"Figura de Semifinal": ["Semifinals MVP", "SFMVP"],
+	"Equipo Ideal": ["All-League", "ALL"],
+	"Equipo Ideal Defensivo": ["All-Defensive", "DEF"],
+	"Equipo Ideal de Revelaciones": ["All-Rookie", "ALR"],
+};
+for (const a of ga.awards ?? []) {
+	const o = PREMIOS_ORIGINALES[a.name];
+	if (o) {
+		[a.name, a.shortName] = o;
+	}
+}
+
 // Ajustes de liga decididos en la fase 2
 Object.assign(ga, {
 	// Muertes trágicas, pero la mitad de frecuentes que en el juego
@@ -319,7 +341,7 @@ const ULTIMO_ANIO_LEALTAD = 2021;
 
 const NOMBRE_COMPLETO: Record<string, string> = {
 	CHA: "Club Atlético Chacarita Juniors",
-	IRM: "Club Sportivo Independiente Rivadavia",
+	INR: "Club Sportivo Independiente Rivadavia",
 	GEM: "Club Atlético Gimnasia y Esgrima (Mendoza)",
 	ERC: "Asociación Atlética Estudiantes (Río Cuarto)",
 	CCO: "Club Atlético Central Córdoba (Santiago del Estero)",
@@ -630,7 +652,7 @@ const TABLA_ANUAL_2026: Record<string, number> = {
 	BOC: 63,
 	ROS: 62,
 	ARG: 60,
-	IRM: 57,
+	INR: 57,
 	GIM: 57,
 	VEL: 56,
 	RIV: 55,

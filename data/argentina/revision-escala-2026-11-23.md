@@ -71,7 +71,7 @@ reserva (prospectos) quedan entre 23 y 45, a la altura de los prospectos que
 genera el juego (promedio 28).
 
 **Fuerza de los equipos (once):** RIV 69,5 · BOC 69,3 · ROS 67,9 · EST 66,5 ·
-BEL 65,6 · VEL 65,6 · IRM 65,5 · ARG 64,9 · GIM 64,2 · LAN 64,1 · INS 63,5 ·
+BEL 65,6 · VEL 65,6 · INR 65,5 · ARG 64,9 · GIM 64,2 · LAN 64,1 · INS 63,5 ·
 HUR 63,2 · IND 62,9 · RAC 62,1 · TAL 62,0 · BAR 61,5 · SLO 61,0 · NOB 58,9 ·
 UNI 58,7 · RIE 56,8 · ERC 51,6. La distancia entre el primero y el último
 pasa de 13,7 a 17,9.
@@ -102,7 +102,7 @@ Antes = v2.23. Un solo número: no cambió.
 
 **ARG** (3.º; once 66,5 → 64,9): H. López Muñoz 71, F. Álvarez 70, B. Cortés 69→68, N. Oroz 68→67, S. Prieto 68→66, K. Gutiérrez 67→66, T. Molina 67→66, G. Verón 65→63, É. Godoy 63→60, D. Porcel 62→59, F. Vázquez 62→58, M. Giménez Rojas 61→58, K. Coronel 61→57, E. Viveros 61→57, F. Paredes 58→53, C. Bravo 57→51, M. Mendoza 56→51, G. Florentín 55→49, J. Gho 52→46, F. Jainikoski 52→46, A. Núñez 52→45, F. Mancuello 50→43, R. Kida 50→43, G. Infantino 49→42, F. Carrizo 47→39, L. Sánchez 45→36, G. Siri 44→35, A. Alcaraz 42→32, S. Gianini 41→31, S. Silveira 37→26, G. Bouhier 37→25, B. Rey 36→23, A. Mangiaut 33→20.
 
-**IRM** (4.º; once 66,8 → 65,5): Á. Arce 72, J. Florentín 70, M. Fernández 70, S. Studer 68→67, N. Bolcato 67→66, F. Sartori 66→65, L. Costa 65→63, G. Ríos 65→63, T. Bottari 64→62, I. Villalba 64→61, J. Elordi 64→61, L. Gómez 64→61, A. Osella 63→60, L. Bucca 62→58, M. Salas 61→57, E. Bonifacio 60→55, R. Atencio 60→55, A. Vigo 58→53, M. Reali 55→49, D. Crego 53→47, L. Sequeira 52→46, K. Vázquez 52→45, V. Ramis 49→42, S. Moreyra 48→41, A. Riep 48→41, L. Díaz 46→38, R. Macagno 43→34, E. Gómez Riga 38→29, S. Cena 38→27.
+**INR** (4.º; once 66,8 → 65,5): Á. Arce 72, J. Florentín 70, M. Fernández 70, S. Studer 68→67, N. Bolcato 67→66, F. Sartori 66→65, L. Costa 65→63, G. Ríos 65→63, T. Bottari 64→62, I. Villalba 64→61, J. Elordi 64→61, L. Gómez 64→61, A. Osella 63→60, L. Bucca 62→58, M. Salas 61→57, E. Bonifacio 60→55, R. Atencio 60→55, A. Vigo 58→53, M. Reali 55→49, D. Crego 53→47, L. Sequeira 52→46, K. Vázquez 52→45, V. Ramis 49→42, S. Moreyra 48→41, A. Riep 48→41, L. Díaz 46→38, R. Macagno 43→34, E. Gómez Riga 38→29, S. Cena 38→27.
 
 **GIM** (5.º; once 65,6 → 64,2): N. Fernández 70, N. Barros Schelotto 68→67, A. Steimbach 67→66, I. Miramón 67→66, N. Insfrán 66→65, M. Torres 66→65, E. Martínez 65→64, A. Auzmendi 64→62, P. Silva Torrejón 63→61, R. Giampaoli 63→60, M. Seoane 63→60, G. Conti 62→58, A. Max 62→58, L. Janson 61→57, F. Torres 61→57, M. Panaro 60→56, A. Colazo 60→56, B. Barros Schelotto 58→53, M. Zalazar 57→52, M. Melluso 56→50, J. Cortazzo 51→45, J. Merlo 49→42, G. Errecalde 48→41, J. Pérez 48→41, H. Castillo 47→40, P. Aguiar 45→37, F. Di Biasi 44→35, S. Villarreal 42→32, J. Kadijevic 38→28, F. Corbalán 37→26, L. Mamut 36→23.
 
