@@ -23,7 +23,7 @@ for (const [nombre, pos, edad, pais, r] of FILAS) {
 	if (r.length <= 2) s.pj = 0; // no alineado
 	if (!j) {
 		// Nombres de pila compuestos: "Juan Pablo", "José María", etc.
-		const DOBLES = ["Juan Pablo", "Juan Cruz", "Juan Carlos", "Juan Fernando", "José María", "Juan Manuel", "Juan Ignacio", "Juan José"];
+		const DOBLES = ["Juan Miguel", "Juan Pablo", "Juan Cruz", "Juan Carlos", "Juan Fernando", "José María", "Juan Manuel", "Juan Ignacio", "Juan José"];
 		const doble = DOBLES.find((d) => nombre.startsWith(d + " "));
 		const n = doble ?? nombre.split(" ")[0];
 		const a = nombre.slice(n.length + 1).split(" ");
@@ -56,10 +56,20 @@ writeFileSync(f, JSON.stringify(p, null, "\t") + "\n");
 const sf = `${base}salidas-2026.json`;
 const txt = readFileSync(sf, "utf8");
 const previas = JSON.parse(txt).jugadores.filter((s) => s.club === eq);
-if (previas.length) throw new Error(`Ya hay salidas de ${eq}`);
+// Salidas que ya estaban (dadas a mano antes, ej. IND): se reemplazan por
+// las de la captura, conservando sus notas y su Sofascore
+const extra = (o) => {
+	const p = previas.find((x) => norm(`${x.nombre} ${x.apellido}`) === norm(`${o.nombre} ${o.apellido}`));
+	if (p?.nota) o.nota = p.nota;
+	if (p?.sofascore) o.sofascore = p.sofascore;
+	return o;
+};
+for (const o of salidas) extra(o);
 const fmt = (o) => "\t\t{ " + Object.entries(o).map(([k, v]) => `${JSON.stringify(k)}: ${JSON.stringify(v)}`).join(", ") + " }";
 const i = txt.lastIndexOf("]");
-const nuevoTxt = txt.slice(0, i).trimEnd() + ",\n" + salidas.map(fmt).join(",\n") + "\n\t]\n}\n";
+const sinPrevias = previas.length ? txt.split("\n").filter((l) => !l.includes(`"club": "${eq}"`)).join("\n").replace(/,\n\t\]/, "\n\t]") : txt;
+const i2 = sinPrevias.lastIndexOf("]");
+const nuevoTxt = sinPrevias.slice(0, i2).trimEnd() + ",\n" + salidas.map(fmt).join(",\n") + "\n\t]\n}\n";
 JSON.parse(nuevoTxt);
 writeFileSync(sf, nuevoTxt);
 console.log(`${eq}: ${usados.size} del plantel actualizados, ${salidas.length} salidas`);

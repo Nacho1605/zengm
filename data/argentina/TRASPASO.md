@@ -21,7 +21,10 @@ usa los números nuevos si cambiaron y agrega sus salidas a
 `salidas-2026.json`). Hechos: RIE (19 salidas, números iguales), BOC (15
 salidas; números más nuevos: +1 o +2 PJ en casi todos), RIV (22 salidas),
 RAC (22 salidas; Sofascore de S. Sosa en su salida) y SLO (12 salidas;
-Sofascore de Gill en su salida). Sigue: IND, ROS, EST, ARG, VEL, IRM, GIM,
+Sofascore de Gill en su salida), IND (22 salidas; reemplazan a las 2 que
+había dado el usuario, con su nota; Ávalos con Sofascore 7,03; "Walter
+Mazzantti" de Transfermarkt = Mazzanti de NOB). ROS: 2 de 3 imágenes en
+`rendimiento/ROS.mjs` (sin aplicar). Sigue: ROS, EST, ARG, VEL, IRM, GIM,
 LAN. Nombres de pila compuestos en las salidas ("Juan Fernando" Quintero,
 "José María" Ingratti): el script los reconoce. Nuevos
 jugadores en dos clubes: Barinaga (BOC → RAC), Blondel (BOC, sin jugar →
