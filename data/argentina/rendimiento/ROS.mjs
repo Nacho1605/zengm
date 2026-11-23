@@ -1,4 +1,4 @@
-// Rosario Central, Rendimiento 2026 (capturas del usuario del 23/11/2026). FALTA la tercera imagen.
+// Rosario Central, Rendimiento 2026 (capturas del usuario del 23/11/2026).
 // [nombre, posición, edad, país, [convocado, pj, goles, asist, amarillas, dobleAmarilla, rojas, entro, salio, ppp, min]]
 export const FECHA = "23/11/2026";
 export const FILAS = [
@@ -35,5 +35,24 @@ export const FILAS = [
 	["Santiago Segovia", "Mediocentro ofensivo", 19, "Argentina", [23, 3, 0, 0, 0, 0, 0, 2, 1, 1.67, 78]],
 	["Lucas Ramos", "Mediocentro", 20, "Argentina", [12, 2, 0, 0, 0, 0, 0, 1, 1, 2.0, 94]],
 	["Marcelo Cabrera", "Mediocentro ofensivo", 20, "Argentina", [16, 2, 0, 0, 0, 0, 0, 2, 0, 2.0, 31]],
-	// FALTA la tercera imagen (ofensivos y delanteros)
+	["Kevin Gutiérrez", "Mediocentro", 20, "Argentina", [1, 1, 0, 0, 0, 0, 0, 1, 0, 1.0, 13]],
+	["Paolo Giaccone", "Mediocentro", 19, "Argentina", [6, 1, 0, 0, 0, 0, 0, 1, 0, 3.0, 7]],
+	["Bautista Cantero", "Mediocentro ofensivo", 18, "Argentina", [2, 0]],
+	["Alejo Veliz", "Delantero centro", 23, "Argentina", [26, 24, 6, 0, 2, 0, 0, 4, 13, 1.92, 1682]],
+	["Agustín Módica", "Delantero centro", 23, "Italy", [2, 0]],
+	["Jáminton Campaz", "Extremo izquierdo", 26, "Colombia", [35, 35, 5, 7, 1, 0, 0, 7, 16, 1.97, 2498]],
+	["Tomás Badaloni", "Delantero centro", 26, "Argentina", [20, 10, 0, 1, 0, 0, 0, 7, 1, 1.5, 300]],
+	["Julián Fernández", "Extremo derecho", 22, "Argentina", [33, 30, 6, 3, 3, 0, 0, 12, 16, 2.03, 1590]],
+	["Giovanni Cantizano", "Extremo izquierdo", 19, "Argentina", [41, 22, 2, 4, 3, 0, 0, 12, 6, 1.77, 1074]],
+	["Enzo Giménez", "Extremo derecho", 28, "Paraguay", [25, 25, 1, 2, 5, 0, 0, 4, 6, 1.84, 1928]],
+	["Enzo Copetti", "Delantero centro", 30, "Argentina", [43, 43, 9, 2, 6, 0, 0, 15, 19, 1.95, 2612]],
+	["Ángel Di María", "Extremo derecho", 38, "Argentina", [40, 39, 15, 5, 8, 0, 0, 4, 20, 1.97, 3077]],
+	["Gaspar Duarte", "Extremo derecho", 23, "Argentina", [19, 15, 0, 0, 1, 0, 0, 8, 7, 2.07, 486]],
+	["Franco Cervi", "Extremo izquierdo", 32, "Argentina", [14, 7, 0, 0, 1, 0, 0, 5, 2, 2.71, 169]],
+	["Maximiliano Lovera", "Extremo izquierdo", 27, "Argentina", [5, 0]],
+	["Franco Frías", "Delantero centro", 24, "Argentina", [1, 0]],
+	["Fabricio Oviedo", "Delantero centro", 22, "Argentina", [28, 3, 0, 0, 0, 0, 0, 2, 1, 1.33, 73]],
+	["Lisandro Duarte", "Extremo derecho", 19, "Argentina", [2, 2, 0, 0, 0, 0, 0, 1, 1, 0.5, 65]],
+	// Marco Ruben: dato del usuario en texto (no entró en la captura)
+	["Marco Ruben", "Delantero centro", 40, "Argentina", [21, 14, 2, 0, 0, 0, 0, 13, 1, 1.93, 235]],
 ];

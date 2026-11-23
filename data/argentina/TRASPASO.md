@@ -23,9 +23,11 @@ salidas; números más nuevos: +1 o +2 PJ en casi todos), RIV (22 salidas),
 RAC (22 salidas; Sofascore de S. Sosa en su salida) y SLO (12 salidas;
 Sofascore de Gill en su salida), IND (22 salidas; reemplazan a las 2 que
 había dado el usuario, con su nota; Ávalos con Sofascore 7,03; "Walter
-Mazzantti" de Transfermarkt = Mazzanti de NOB). ROS: 2 de 3 imágenes en
-`rendimiento/ROS.mjs` (sin aplicar). Sigue: ROS, EST, ARG, VEL, IRM, GIM,
-LAN. Nombres de pila compuestos en las salidas ("Juan Fernando" Quintero,
+Mazzantti" de Transfermarkt = Mazzanti de NOB), ROS (22 salidas; Marco
+Ruben dado en texto), EST (16 salidas). ARG: 1 de 3 imágenes en
+`rendimiento/ARG.mjs` (sin aplicar). Sigue: ARG, VEL, IRM, GIM, LAN. Con EST
+aparecen Ascacíbar (EST 2 PJ → BOC) y Farías (EST 19 PJ, 857' → SLO: su 66
+se valoró solo con SLO; revisar). Nombres de pila compuestos en las salidas ("Juan Fernando" Quintero,
 "José María" Ingratti): el script los reconoce. Nuevos
 jugadores en dos clubes: Barinaga (BOC → RAC), Blondel (BOC, sin jugar →
 HUR), Brian Aguirre (BOC → EST), Janson (BOC → GIM), Galarza (RIV, sin
