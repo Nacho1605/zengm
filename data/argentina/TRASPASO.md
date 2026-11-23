@@ -1,30 +1,31 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026. Última versión: **v2.23.4**
-(`data/argentina/BBGM_Argentina_2026_v.2.23.4_futbol.json`, sha256
-`38371ad8f7637ffcd089c941885d27b51b65ce3dba01abd845ae0c0d5a55966a`): 21 de 30
-equipos con plantel 2026, todos con el Rendimiento completo; todo el archivo
-en la escala nueva de OVR (20 a 78). Validación: 0 errores. Auditoría: 53
-controles, 9 con alertas (las de siempre). Escalera por puesto del usuario
-actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
-`data/argentina/escalera/`).
+Estado al 24/11/2026 (cierre de la sesión del 22–24/11). Última versión:
+**v2.23.5** (`data/argentina/BBGM_Argentina_2026_v.2.23.5_futbol.json`,
+sha256 `62e9d668eeb57c101ae07d7f1257a30cf3756e30cd16e4e01f5bb7ad59ee2137`): 21
+de 30 equipos con plantel 2026, todos con el Rendimiento completo; todo el
+archivo en la escala nueva de OVR (20 a 78). Validación: 0 errores.
+Auditoría: 53 controles, 9 con alertas (las de siempre). Escalera por puesto
+del usuario actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U;
+copia en `data/argentina/escalera/`). El usuario dijo que esta sesión fue
+"la más útil de todas hasta ahora".
 
 **Lo que sigue:**
-1. Respuesta del usuario a la segunda revisión (`revision-v2.23.4.md`: 23
-   cambios aplicados; Villa 71 y M. Fernández 71 propuestos) y a lo que anote
-   en la escalera ("EQUIPO Jugador: viejo → nuevo"; `ajustar-ovr.ts` y un
-   parche).
-2. Decididos el 24/11: capitanes con rasgo W (hecho); el "capitán" como
-   arquetipo de juego queda para analizar (según puesto y motivo de la
-   capitanía: nivel, edad, experiencia, confianza); composites: analizar
-   las variables antes de rearmar jugadores; colleges, nombres y orígenes
-   latinoamericanos (`playerBioInfo`): cuando estén todos los equipos y sus
-   fotos, antes de trabajar con los libres; draft: más adelante.
+1. Decisiones del usuario sobre `analisis-composites-y-capitanes.md`: el
+   capitán como arquetipo (efecto por puesto, motivo de cada uno de los 23)
+   y qué hacer con los cuatro problemas de los composites (robos de
+   arqueros, marca 1 contra 1, faltas, pase de los extremos). Herramienta:
+   `tools/argentina/composites.mjs`.
+2. Lo que anote en la escalera ("EQUIPO Jugador: viejo → nuevo";
+   `ajustar-ovr.ts` y un parche).
 3. Fotos de NOB, ERC, UNI y BAR: el usuario las pone sobre la última versión
    que tenga. Al importar su liga, usar como base la versión sobre la que
    jugó (para saberla, mirar un OVR que cambió entre versiones).
 4. Después: BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM.
-5. Sanguinetti (VEL): Sofascore 7,24 con 13 partidos según Sofascore, 0 en
+5. Más adelante (el usuario: "falta bastante"): colleges, nombres y orígenes
+   latinoamericanos (`playerBioInfo`, cuando estén todos los equipos y sus
+   fotos, antes de los libres) y el draft (§7, 15).
+6. Sanguinetti (VEL): Sofascore 7,24 con 13 partidos según Sofascore, 0 en
    Transfermarkt y sin partidos en Banfield; el usuario no sabe de dónde
    sale. Queda como está.
 
@@ -546,6 +547,16 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**Sesión del 24/11/2026, cierre (v2.23.5).** Huella:
+`62e9d668eeb57c101ae07d7f1257a30cf3756e30cd16e4e01f5bb7ad59ee2137`.
+
+- v2.23.5: Villa 71 y Matías Fernández 71 (aceptados). Comparada con la
+  v2.23.4: solo esos dos jugadores (y el orden de sus planteles).
+- Análisis de composites y del capitán como arquetipo
+  (`analisis-composites-y-capitanes.md`, sin aplicar): el motor acierta con
+  los goles (0,69 con usage), a medias con las asistencias (0,47) y nada con
+  las tarjetas (−0,01).
+
 **Sesión del 24/11/2026 (v2.23.4).** Huella de la v2.23.4:
 `38371ad8f7637ffcd089c941885d27b51b65ce3dba01abd845ae0c0d5a55966a`.
 
