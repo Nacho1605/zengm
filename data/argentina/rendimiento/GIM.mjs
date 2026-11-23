@@ -1,4 +1,4 @@
-// Gimnasia LP, Rendimiento 2026 (capturas del usuario del 23/11/2026). FALTA la tercera imagen.
+// Gimnasia LP, Rendimiento 2026 (capturas del usuario del 23/11/2026).
 // [nombre, posición, edad, país, [convocado, pj, goles, asist, amarillas, dobleAmarilla, rojas, entro, salio, ppp, min]]
 export const FECHA = "23/11/2026";
 export const FILAS = [
@@ -28,11 +28,23 @@ export const FILAS = [
 	["Mateo Seoane", "Pivote", 22, "Argentina", [28, 22, 1, 0, 3, 0, 0, 4, 12, 2.32, 1543]],
 	["Facundo Di Biasi", "Pivote", 21, "Argentina", [3, 3, 0, 0, 1, 0, 0, 3, 0, 3.0, 56]],
 	["Nacho Fernández", "Mediocentro ofensivo", 36, "Argentina", [35, 34, 6, 7, 15, 0, 0, 0, 17, 1.68, 2831]],
-	["Juan Pérez", "Mediocentro ofensivo", 22, "Colombia", [20, 7, 0, 0, 0, 0, 0, 5, 2, 1.0, 222]],
+	["Juan José Pérez", "Mediocentro ofensivo", 22, "Colombia", [20, 7, 0, 0, 0, 0, 0, 5, 2, 1.0, 222]],
 	["Lucas Castro", "Mediocentro ofensivo", 37, "Argentina", [18, 13, 0, 0, 0, 0, 0, 9, 4, 1.77, 370]],
 	["Augusto Max", "Mediocentro", 34, "Argentina", [35, 25, 0, 1, 8, 0, 1, 6, 8, 1.88, 1635]],
 	["Pablo Aguiar", "Pivote", 20, "Argentina", [32, 7, 0, 0, 0, 0, 0, 4, 2, 2.14, 268]],
 	["Leandro Mamut", "Mediocentro ofensivo", 22, "Argentina", [0, 0]],
 	["Santiago Villarreal", "Mediocentro ofensivo", 21, "Argentina", [9, 2, 0, 0, 0, 0, 0, 2, 1, 1.5, 51]],
-	// FALTA la tercera imagen
+	["Leonel Troncoso", "Mediocentro ofensivo", 20, "Argentina", [4, 1, 0, 0, 0, 0, 0, 1, 0, 3.0, 3]],
+	["Marcelo Torres", "Delantero centro", 29, "Argentina", [30, 30, 11, 4, 1, 0, 0, 5, 21, 1.8, 1996]],
+	["Manuel Panaro", "Extremo derecho", 23, "Argentina", [35, 25, 1, 1, 3, 0, 1, 15, 5, 1.8, 961]],
+	["Agustín Auzmendi", "Delantero centro", 29, "Argentina", [37, 37, 8, 4, 3, 0, 0, 13, 12, 1.78, 2256]],
+	["Jeremías Merlo", "Extremo izquierdo", 20, "Argentina", [15, 8, 0, 0, 0, 0, 0, 4, 4, 1.5, 230]],
+	["Maximiliano Zalazar", "Extremo derecho", 25, "Argentina", [30, 17, 2, 1, 3, 0, 0, 11, 6, 1.53, 725]],
+	["Agustín Colazo", "Delantero centro", 26, "Argentina", [11, 10, 3, 0, 1, 0, 0, 6, 3, 1.6, 488]],
+	["Franco Torres", "Extremo derecho", 27, "Argentina", [37, 27, 5, 0, 4, 0, 0, 21, 5, 1.74, 869]],
+	["Lucas Janson", "Extremo izquierdo", 32, "Argentina", [16, 14, 1, 1, 0, 0, 0, 4, 10, 2.0, 804]],
+	["Ivo Mammini", "Delantero centro", 23, "Argentina", [0, 0]],
+	["Cayetano Bolzán", "Delantero centro", 20, "Argentina", [9, 3, 0, 0, 0, 0, 0, 3, 0, 2.0, 36]],
+	["Jorge de Asís", "Delantero centro", 20, "Argentina", [10, 2, 0, 0, 0, 0, 1, 2, 0, 0.0, 22]],
+	["Agustín Martínez", "Delantero", 18, "Argentina", [1, 0]],
 ];

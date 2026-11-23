@@ -420,10 +420,10 @@
 		]
 	},
 	"equipoIdealApertura": {
-		"_nota": "Equipo Ideal del Torneo Apertura 2026, dato del usuario (23/11/2026). Formación 4-4-1-1 con 9 suplentes. Equipos de cuando jugaban el Apertura (INR = IRM). \"Tiago Palacios\" como central, tal como lo escribió el usuario (el central de EST es Tomás Palacios).",
+		"_nota": "Equipo Ideal del Torneo Apertura 2026, dato del usuario (23/11/2026). Formación 4-4-1-1 con 9 suplentes. Equipos de cuando jugaban el Apertura (INR = IRM). El central de EST es Tomás Palacios (el usuario había escrito Tiago por error).",
 		"titulares": [
 			{ "pos": "GK", "jugador": "Álvaro Montero", "equipo": "VEL" },
-			{ "pos": "CB", "jugador": "Tiago Palacios", "equipo": "EST" },
+			{ "pos": "CB", "jugador": "Tomás Palacios", "equipo": "EST" },
 			{ "pos": "CB", "jugador": "Lisandro López", "equipo": "BEL" },
 			{ "pos": "RB", "jugador": "Leandro Lozano", "equipo": "ARG" },
 			{ "pos": "LB", "jugador": "Marcos Acuña", "equipo": "RIV" },
