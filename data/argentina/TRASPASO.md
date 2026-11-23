@@ -12,8 +12,12 @@ el cargador nuevo).
 **Lo que sigue:** v2.22.2 = la liga del usuario con las fotos de NOB, ERC y
 UNI (las pone sobre la v2.22.1: importarla con esa base) más Gomes Gerth 7
 partidos (ya está en `planteles/UNI.json`, aceptado por el usuario; sin
-versión armada todavía). Después, Barracas Central (BAR, v2.23), que elige
-Claude: completa la división Capital. Después: BAR, BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO,
+versión armada todavía). Barracas Central (BAR, v2.23; lo eligió Claude:
+completa la división Capital) ya está en `planteles/BAR.json` y en
+`armar-v2.sh` con los OVR propuestos (once 63,5), esperando las correcciones
+del usuario. Para armar la v2.22.2 sin BAR: copia temporal de `armar-v2.sh`
+sin esa abreviatura (ver §8). Después de BAR: BAN, PLA, DYJ, TIG, SAR, ALD,
+ATU, CCO, GEM. Después: BAR, BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO,
 GEM. La liga que mandó el usuario el 22/11 (noche) era idéntica a la v2.21.1
 (misma huella): todavía no puso las fotos de NOB y ERC.
 
@@ -198,6 +202,8 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
 
 - No temerle a la edad (Muslera 70 a los 40, Otamendi 71, Rojo 65) y valorar a
   los que no viven del gol (Cetré 70).
+- Sofascore: el usuario usa **6,90 como barrera** (en su comentario de cada
+  equipo da solo los que la superan; "ningún otro supera 6,90").
 - Rendimiento por partido; Sofascore ≥ 7 es señal de los mejores, pero no
   alcanza solo: a Gimnasia le bajó a los de Sofascore alto y a los goleadores
   (Nacho Fernández 70, M. Torres 67, E. Martínez 66, Ag. Auzmendi 64): un
@@ -250,6 +256,8 @@ Cambeses (RAC), Marcone (IND), Tripichio y Devecchi (SLO, comparten),
 E. Gómez (VEL), Di María (ROS), Izquierdoz (LAN), Oroz (ARG), Nacho Fernández
 (GIM), Álex Arce (IRM), Céliz (RIE), Galíndez (HUR), Lucas Zelarayán (BEL), Fernando Alarcón (INS), Luca Regiardo (NOB, 20 años).
 Unión no tiene capitán fijo; suele serlo Cristian Tarragona (con `capitan`).
+Barracas: sin capitán fijo, suele serlo Iván Tapia (con `capitan`); Carlos
+Arce es el capitán histórico (más presencias en la historia del club).
 ERC no tiene capitán fijo; suele serlo Maffini (anotado con `capitan`). Estudiantes no tiene
 capitán fijo: Carrillo 5 capitanías, Sosa 3, Núñez 3, Muslera 2, González
 Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
@@ -330,6 +338,17 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    (UNI): nieto de Jorge Solari, sobrino de Fernando Redondo y primo de
    Santiago, Esteban y David Solari y de Fernando y Federico Redondo; ninguno
    es pariente directo (el juego no une primos ni tíos): fase 3.
+   Barracas (datos del usuario, 23/11; ninguno está en el archivo, para la
+   fase 3): Rodrigo Insúa es hermano de Robertino Insúa (PG, 1994; inferiores
+   en San Lorenzo y Unión 2014–2017, sin debut en la liga; Ecuador 2017–2021,
+   hoy Miami United, UPSL) e hijos los dos de Rubén Darío Insúa (SG, 1961;
+   draft SLO 1978, ídolo de San Lorenzo 1978–1985; después EST, IND, QUI,
+   España, Ecuador y Colombia). Iván Tapia es hijo de Claudio Tapia (F, 1967;
+   Barracas 1986–1990, después presidente del club y de la AFA) y hermano de
+   Matías Tapia (PF/FC, 1996; Barracas, draft 2019 y retirado ese año, hoy
+   presidente del club). Tomás Lavezzi es hijo de Ezequiel Lavezzi (1985;
+   draft 2003 de Estudiantes de Buenos Aires (EBA), College Boca; Italia,
+   Francia, China y SLO).
 7. Personalidad de los ídolos de cada club (cuando estén todos los planteles).
 8. All-Star: trabajarlo más (el usuario quiere).
 9. Posible paso a 2027 (descensos Aldosivi y Estudiantes RC, ascenso Godoy

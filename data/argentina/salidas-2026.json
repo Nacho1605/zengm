@@ -146,6 +146,9 @@
 		{ "club": "UNI", "nombre": "Agustín", "apellido": "Colazo", "pos": "Delantero centro", "edad": 26, "pais": "Argentina", "convocado": 15, "pj": 9, "goles": 1, "asist": 0, "amarillas": 1, "dobleAmarilla": 0, "rojas": 0, "entro": 5, "salio": 4, "ppp": 1.33, "min": 289 },
 		{ "club": "UNI", "nombre": "Diego", "apellido": "Díaz", "pos": "Delantero centro", "edad": 24, "pais": "Argentina", "convocado": 17, "pj": 8, "goles": 1, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 8, "salio": 0, "ppp": 1.38, "min": 101 },
 		{ "club": "UNI", "nombre": "José", "apellido": "Vanetta", "pos": "Extremo izquierdo", "edad": 24, "pais": "Argentina", "convocado": 0, "pj": 0, "nota": "No estuvo en la plantilla en 2026 (cedido)" },
-		{ "club": "UNI", "nombre": "Ricardo", "apellido": "Solbes", "pos": "Delantero centro", "edad": 20, "pais": "Argentina", "convocado": 2, "pj": 0 }
+		{ "club": "UNI", "nombre": "Ricardo", "apellido": "Solbes", "pos": "Delantero centro", "edad": 20, "pais": "Argentina", "convocado": 2, "pj": 0 },
+		{ "club": "BAR", "nombre": "Luca", "apellido": "Fernández", "pos": "Portero", "edad": 21, "pais": "Argentina", "convocado": 2, "pj": 0 },
+		{ "club": "BAR", "nombre": "Valentino", "apellido": "Gandín", "pos": "Delantero centro", "edad": 19, "pais": "Argentina", "convocado": 9, "pj": 0 },
+		{ "club": "BAR", "nombre": "Bruno", "apellido": "Váldez", "pos": "Extremo derecho", "edad": 20, "pais": "Argentina", "convocado": 1, "pj": 0 }
 	]
 }
