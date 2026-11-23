@@ -55,7 +55,7 @@
 			"ppp": 0.81,
 			"convocado": 16,
 			"fichado": "01/07/2026",
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": "NOB",
 				"anio": 2013
@@ -78,27 +78,27 @@
 			"min": 0,
 			"convocado": 34,
 			"fichado": "01/01/2026",
-			"ovr": 36,
+			"ovr": 24,
 			"debut": {
 				"club": "TAL",
 				"anio": 2026
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1197308-1758546950.jpg?lm=4711",
 			"ratings": {
-				"stre": 48,
-				"spd": 40,
-				"jmp": 57,
-				"endu": 36,
+				"stre": 38,
+				"spd": 30,
+				"jmp": 47,
+				"endu": 26,
+				"ft": 20,
+				"oiq": 15,
+				"diq": 42,
+				"drb": 14,
+				"pss": 19,
+				"reb": 49,
 				"ins": 0,
 				"dnk": 0,
-				"ft": 30,
 				"fg": 0,
-				"tp": 0,
-				"oiq": 25,
-				"diq": 52,
-				"drb": 24,
-				"pss": 29,
-				"reb": 59
+				"tp": 0
 			}
 		},
 		{
@@ -124,7 +124,7 @@
 			"ppp": 1.5,
 			"convocado": 33,
 			"fichado": "01/01/2025",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": "TAL",
 				"anio": 2025
@@ -154,7 +154,7 @@
 			"ppp": 0.92,
 			"convocado": 12,
 			"fichado": "11/07/2026",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": "GBR",
 				"anio": 2024
@@ -186,7 +186,7 @@
 			"ppp": 0.89,
 			"convocado": 15,
 			"fichado": "23/07/2026",
-			"ovr": 59,
+			"ovr": 54,
 			"debut": {
 				"club": "UNI",
 				"anio": 2024
@@ -217,7 +217,7 @@
 			"ppp": 1.32,
 			"convocado": 29,
 			"fichado": "20/01/2023",
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "SLO",
 				"anio": 2013
@@ -244,7 +244,7 @@
 			"goles": 0,
 			"min": 0,
 			"convocado": 13,
-			"ovr": 38,
+			"ovr": 26,
 			"college": "Club Atlético Talleres (Córdoba)",
 			"prospecto": true,
 			"peso": 75
@@ -264,7 +264,7 @@
 			"goles": 0,
 			"min": 0,
 			"convocado": 4,
-			"ovr": 37,
+			"ovr": 25,
 			"college": "Club Atlético Talleres (Córdoba)",
 			"prospecto": true
 		},
@@ -291,7 +291,7 @@
 			"ppp": 1.26,
 			"convocado": 23,
 			"fichado": "09/03/2026",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": null,
 				"anio": 2023
@@ -322,7 +322,7 @@
 			"ppp": 1,
 			"convocado": 30,
 			"fichado": "24/07/2025",
-			"ovr": 59,
+			"ovr": 55,
 			"debut": {
 				"club": "NOB",
 				"anio": 2015
@@ -352,7 +352,7 @@
 			"ppp": 1.21,
 			"convocado": 34,
 			"fichado": "10/08/2020",
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": "TAL",
 				"anio": 2020
@@ -386,7 +386,7 @@
 			"ppp": 0.75,
 			"convocado": 30,
 			"fichado": "01/07/2026",
-			"ovr": 54,
+			"ovr": 48,
 			"debut": {
 				"club": "TAL",
 				"anio": 2026
@@ -409,7 +409,7 @@
 			"min": 0,
 			"convocado": 0,
 			"fichado": "01/01/2025",
-			"ovr": 44,
+			"ovr": 34,
 			"debut": {
 				"club": "TAL",
 				"anio": 2025
@@ -439,7 +439,7 @@
 			"ppp": 1.15,
 			"convocado": 34,
 			"fichado": "22/08/2024",
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "ARG",
 				"anio": 2022
@@ -470,7 +470,7 @@
 			"ppp": 1.46,
 			"convocado": 27,
 			"fichado": "20/01/2026",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": "NOB",
 				"anio": 2021
@@ -501,7 +501,7 @@
 			"ppp": 0.92,
 			"convocado": 14,
 			"fichado": "11/07/2026",
-			"ovr": 68,
+			"ovr": 63,
 			"debut": {
 				"club": "NCH",
 				"anio": 2013
@@ -535,7 +535,7 @@
 			"salio": 0,
 			"ppp": 0,
 			"convocado": 12,
-			"ovr": 40,
+			"ovr": 30,
 			"college": "Club Atlético Talleres (Córdoba)",
 			"prospecto": true
 		},
@@ -562,7 +562,7 @@
 			"ppp": 1.43,
 			"convocado": 24,
 			"fichado": "20/07/2025",
-			"ovr": 57,
+			"ovr": 52,
 			"debut": {
 				"club": "TIG",
 				"anio": 2024
@@ -592,7 +592,7 @@
 			"ppp": 1.5,
 			"convocado": 3,
 			"fichado": "01/01/2025",
-			"ovr": 44,
+			"ovr": 34,
 			"debut": {
 				"club": "TAL",
 				"anio": 2025
@@ -627,7 +627,7 @@
 			"ppp": 1.09,
 			"convocado": 22,
 			"fichado": "02/03/2026",
-			"ovr": 63,
+			"ovr": 60,
 			"debut": {
 				"club": "BOC",
 				"anio": 2015
@@ -661,7 +661,7 @@
 			"ppp": 1.04,
 			"convocado": 32,
 			"fichado": "23/01/2026",
-			"ovr": 52,
+			"ovr": 47,
 			"debut": {
 				"club": "TAL",
 				"anio": 2026
@@ -690,7 +690,7 @@
 			"salio": 1,
 			"ppp": 1.5,
 			"convocado": 17,
-			"ovr": 44,
+			"ovr": 35,
 			"college": "Club Atlético Talleres (Córdoba)",
 			"prospecto": true
 		},
@@ -717,7 +717,7 @@
 			"ppp": 1.15,
 			"convocado": 35,
 			"fichado": "18/01/2025",
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": null,
 				"anio": 2019
@@ -752,7 +752,7 @@
 			"ppp": 1,
 			"convocado": 28,
 			"fichado": "18/01/2023",
-			"ovr": 65,
+			"ovr": 63,
 			"debut": {
 				"club": "SAN",
 				"anio": 2019
@@ -782,7 +782,7 @@
 			"ppp": 1.53,
 			"convocado": 19,
 			"fichado": "19/01/2026",
-			"ovr": 55,
+			"ovr": 49,
 			"debut": {
 				"club": null,
 				"anio": 2015
@@ -808,7 +808,7 @@
 			"goles": 0,
 			"min": 0,
 			"convocado": 3,
-			"ovr": 37,
+			"ovr": 25,
 			"college": "Club Atlético Talleres (Córdoba)",
 			"prospecto": true
 		},
@@ -835,7 +835,7 @@
 			"ppp": 0.69,
 			"convocado": 23,
 			"fichado": "01/01/2026",
-			"ovr": 47,
+			"ovr": 39,
 			"debut": {
 				"club": "TAL",
 				"anio": 2026
@@ -865,7 +865,7 @@
 			"ppp": 1,
 			"convocado": 9,
 			"fichado": "14/08/2026",
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": null,
 				"anio": 2020
@@ -896,7 +896,7 @@
 			"ppp": 1.16,
 			"convocado": 35,
 			"fichado": "01/01/2026",
-			"ovr": 51,
+			"ovr": 45,
 			"debut": {
 				"club": "TAL",
 				"anio": 2026

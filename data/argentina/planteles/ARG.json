@@ -58,7 +58,7 @@
 			"pj": 37,
 			"goles": 0,
 			"min": 3390,
-			"ovr": 69,
+			"ovr": 68,
 			"debut": {
 				"club": null,
 				"anio": 2013
@@ -80,7 +80,7 @@
 			"pj": 1,
 			"goles": 0,
 			"min": 90,
-			"ovr": 44,
+			"ovr": 35,
 			"debut": {
 				"club": "ARG",
 				"anio": 2024
@@ -101,7 +101,7 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"ovr": 33,
+			"ovr": 20,
 			"debut": {
 				"club": "ARG",
 				"anio": 2026
@@ -145,7 +145,7 @@
 			"goles": 0,
 			"min": 207,
 			"fichado": "14/09/2026",
-			"ovr": 56,
+			"ovr": 51,
 			"debut": {
 				"club": "GOD",
 				"anio": 2024
@@ -166,7 +166,7 @@
 			"pj": 12,
 			"goles": 0,
 			"min": 942,
-			"ovr": 62,
+			"ovr": 58,
 			"debut": {
 				"club": "ARG",
 				"anio": 2025
@@ -187,7 +187,7 @@
 			"pj": 10,
 			"goles": 0,
 			"min": 641,
-			"ovr": 58,
+			"ovr": 53,
 			"debut": {
 				"club": "DYJ",
 				"anio": 2020
@@ -209,7 +209,7 @@
 			"pj": 20,
 			"goles": 1,
 			"min": 1064,
-			"ovr": 63,
+			"ovr": 60,
 			"debut": {
 				"club": "TIG",
 				"anio": 2012
@@ -230,7 +230,7 @@
 			"pj": 13,
 			"goles": 0,
 			"min": 414,
-			"ovr": 57,
+			"ovr": 51,
 			"debut": {
 				"club": "BAN",
 				"anio": 2015
@@ -251,7 +251,7 @@
 			"pj": 35,
 			"goles": 3,
 			"min": 2876,
-			"ovr": 68,
+			"ovr": 66,
 			"debut": {
 				"club": "TRE",
 				"anio": 2014
@@ -273,7 +273,7 @@
 			"goles": 0,
 			"min": 0,
 			"fichado": "06/08/2026",
-			"ovr": 52,
+			"ovr": 45,
 			"debut": {
 				"club": null,
 				"anio": 2022
@@ -295,7 +295,7 @@
 			"pj": 22,
 			"goles": 0,
 			"min": 1288,
-			"ovr": 61,
+			"ovr": 57,
 			"debut": {
 				"club": "ARG",
 				"anio": 2024
@@ -316,7 +316,7 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"ovr": 45,
+			"ovr": 36,
 			"debut": {
 				"club": "IRM",
 				"anio": 2015
@@ -338,7 +338,7 @@
 			"goles": 1,
 			"min": 1296,
 			"fichado": "17/07/2026",
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "RAC",
 				"anio": 2018
@@ -359,7 +359,7 @@
 			"pj": 3,
 			"goles": 0,
 			"min": 51,
-			"ovr": 49,
+			"ovr": 42,
 			"debut": {
 				"club": "ROS",
 				"anio": 2021
@@ -381,7 +381,7 @@
 			"goles": 0,
 			"min": 0,
 			"fichado": "31/07/2026",
-			"ovr": 50,
+			"ovr": 43,
 			"debut": {
 				"club": "IND",
 				"anio": 2009
@@ -405,7 +405,7 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"ovr": 52,
+			"ovr": 46,
 			"debut": {
 				"club": "SAR",
 				"anio": 2023
@@ -457,7 +457,7 @@
 			"pj": 37,
 			"goles": 2,
 			"min": 2869,
-			"ovr": 68,
+			"ovr": 67,
 			"debut": {
 				"club": "RAC",
 				"anio": 2014
@@ -482,7 +482,7 @@
 			"pj": 14,
 			"goles": 0,
 			"min": 306,
-			"ovr": 55,
+			"ovr": 49,
 			"debut": {
 				"club": "ARG",
 				"anio": 2019
@@ -503,7 +503,7 @@
 			"pj": 20,
 			"goles": 1,
 			"min": 1079,
-			"ovr": 61,
+			"ovr": 57,
 			"debut": {
 				"club": "ARS",
 				"anio": 2023
@@ -524,7 +524,7 @@
 			"pj": 32,
 			"goles": 5,
 			"min": 2448,
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "ALT",
 				"anio": 2018
@@ -547,7 +547,7 @@
 			"pj": 26,
 			"goles": 1,
 			"min": 933,
-			"ovr": 52,
+			"ovr": 46,
 			"debut": {
 				"club": "ARG",
 				"anio": 2026
@@ -568,7 +568,7 @@
 			"pj": 16,
 			"goles": 5,
 			"min": 1081,
-			"ovr": 65,
+			"ovr": 63,
 			"debut": {
 				"club": "EBA",
 				"anio": 2020
@@ -590,7 +590,7 @@
 			"pj": 15,
 			"goles": 3,
 			"min": 402,
-			"ovr": 61,
+			"ovr": 58,
 			"debut": {
 				"club": "SMJ",
 				"anio": 2019
@@ -611,7 +611,7 @@
 			"pj": 32,
 			"goles": 3,
 			"min": 1222,
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": "ARG",
 				"anio": 2025
@@ -632,7 +632,7 @@
 			"pj": 5,
 			"goles": 1,
 			"min": 89,
-			"ovr": 50,
+			"ovr": 43,
 			"debut": {
 				"club": null,
 				"anio": 2024
@@ -654,7 +654,7 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"ovr": 37,
+			"ovr": 26,
 			"prospecto": true,
 			"college": "Asociación Atlética Argentinos Juniors"
 		},
@@ -672,7 +672,7 @@
 			"pj": 9,
 			"goles": 0,
 			"min": 489,
-			"ovr": 47,
+			"ovr": 39,
 			"prospecto": true,
 			"college": "Asociación Atlética Argentinos Juniors"
 		},
@@ -690,7 +690,7 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"ovr": 37,
+			"ovr": 25,
 			"prospecto": true,
 			"college": "Asociación Atlética Argentinos Juniors"
 		},
@@ -708,7 +708,7 @@
 			"pj": 4,
 			"goles": 0,
 			"min": 88,
-			"ovr": 42,
+			"ovr": 32,
 			"prospecto": true,
 			"college": "Asociación Atlética Argentinos Juniors"
 		},
@@ -726,7 +726,7 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"ovr": 36,
+			"ovr": 23,
 			"prospecto": true,
 			"college": "Asociación Atlética Argentinos Juniors"
 		},
@@ -744,7 +744,7 @@
 			"pj": 1,
 			"goles": 0,
 			"min": 71,
-			"ovr": 41,
+			"ovr": 31,
 			"prospecto": true,
 			"college": "Asociación Atlética Argentinos Juniors"
 		}

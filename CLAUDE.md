@@ -102,10 +102,16 @@ v2.14.1 → v2.14.2).
   la lista del usuario, en `tools/argentina/rasgos-usuario.ts`. Pedirlos con
   cada equipo nuevo. A un jugador con ratings a mano no se le aplican solos.
 - OVR: valor a mano en el plantel (`ovr`), escala amplia, top sin repetir
-  (Paredes 78, Di María 77, Montiel 75, Almada 74, Correa 73). Arqueros: la
+  (Paredes 78, Di María 77, Montiel 75, Almada 74, Correa 73). Desde la
+  v2.23.1 la escala va de 20 a 78: el techo queda en 78 (Paredes y Di María
+  bien separados del resto) y se abre hacia abajo (piso 20: arqueros y
+  juveniles que no jugaron), sin montones (como mucho unos 20 jugadores por
+  valor). Correspondencia con la escala vieja en
+  `data/argentina/revision-escala-2026-11-23.md`. Arqueros: la
   lista del usuario en `data/argentina/arqueros/lista-apertura-2026.md`
   (hecha en el Apertura, antes del Mundial 2026: DESACTUALIZADA, es una base
-  de comparación no estricta; ajustar con la temporada y avisar); los valores
+  de comparación no estricta; ajustar con la temporada y avisar; está en la
+  escala vieja: un 60 de la lista equivale hoy a 55–56); los valores
   de hoy, en `arqueros/valores-actuales.md` (regenerarlo con cada equipo).
   Método:
   - Análisis propio de cada jugador; los rangos de TRASPASO §4 orientan, no
@@ -117,9 +123,12 @@ v2.14.1 → v2.14.2).
   - Leer más allá de los números: rol (titular fijo, rotación, revulsivo, el que
     entra a cerrar partidos), jerarquía en el club, ídolos, minutos decisivos.
     Los defensores no viven del gol; hay ofensivos que tampoco.
-  - No inflar: un goleador o una figura de un equipo mediano no vale lo mismo
-    que la de un grande por los mismos números; el recién llegado se valora por
-    lo que jugó, no por el nombre (con algo de peso para el talento probado).
+  - Cada equipo tiene lo que se merece: no hay descuento por ser "mediano"
+    (el usuario, 23/11). Las tablas no son la única medida de la fuerza:
+    también el plantel, el valor y las copas (River 2026: año flojo pero
+    plagado de estrellas; Racing: año malo y sin estrellas). El recién llegado
+    se valora por lo que jugó, no por el nombre (con algo de peso para el
+    talento probado).
   - Juveniles (menores de 19): rendimiento (minutos, rol, producción por
     minuto) más un plus por valor de mercado (+1 desde 1 M€, +2 desde 2 M€,
     +3 desde 3,5 M€): el precio también dice algo. Vale para menores de 20 y

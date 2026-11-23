@@ -72,7 +72,7 @@
 			"ppp": 1.37,
 			"convocado": 39,
 			"fichado": "01/01/2025",
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "ROS",
 				"anio": 2019
@@ -102,7 +102,7 @@
 			"ppp": 1.62,
 			"convocado": 39,
 			"fichado": "22/01/2026",
-			"ovr": 56,
+			"ovr": 51,
 			"debut": {
 				"club": null,
 				"anio": 2017
@@ -132,7 +132,7 @@
 			"ppp": 3,
 			"convocado": 4,
 			"fichado": "01/01/2025",
-			"ovr": 40,
+			"ovr": 30,
 			"debut": {
 				"club": "BAR",
 				"anio": 2025
@@ -162,13 +162,16 @@
 			"ppp": 1.38,
 			"convocado": 31,
 			"fichado": "18/01/2025",
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": "RAF",
 				"anio": 2024
 			},
 			"sofascore": 6.97,
-			"rasgos": ["aereo", "potente"]
+			"rasgos": [
+				"aereo",
+				"potente"
+			]
 		},
 		{
 			"n": "31",
@@ -193,7 +196,7 @@
 			"ppp": 1.4,
 			"convocado": 37,
 			"fichado": "01/01/2025",
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": "TEM",
 				"anio": 2018
@@ -222,7 +225,7 @@
 			"ppp": 1.41,
 			"convocado": 41,
 			"fichado": "01/01/2025",
-			"ovr": 61,
+			"ovr": 57,
 			"debut": {
 				"club": "OLI",
 				"anio": 2019
@@ -252,14 +255,16 @@
 			"ppp": 1.71,
 			"convocado": 40,
 			"fichado": "08/01/2025",
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": null,
 				"anio": 2012
 			},
 			"college": "Club Sportivo Miramar Misiones",
 			"sofascore": 7.19,
-			"rasgos": ["potente"]
+			"rasgos": [
+				"potente"
+			]
 		},
 		{
 			"n": "32",
@@ -284,7 +289,7 @@
 			"ppp": 1.28,
 			"convocado": 30,
 			"fichado": "07/01/2025",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": "VEL",
 				"anio": 2008
@@ -293,7 +298,9 @@
 				"tipo": "Desgarro muscular",
 				"partidos": 3
 			},
-			"rasgos": ["potente"]
+			"rasgos": [
+				"potente"
+			]
 		},
 		{
 			"n": "37",
@@ -318,7 +325,7 @@
 			"ppp": 1.29,
 			"convocado": 42,
 			"fichado": "21/01/2026",
-			"ovr": 59,
+			"ovr": 54,
 			"debut": {
 				"club": "RAC",
 				"anio": 2011
@@ -348,13 +355,16 @@
 			"ppp": 1.41,
 			"convocado": 42,
 			"fichado": "01/01/2023",
-			"ovr": 64,
+			"ovr": 63,
 			"debut": {
 				"club": "CHA",
 				"anio": 2019
 			},
 			"college": "Club Atlético Aldosivi",
-			"rasgos": ["larga distancia", "centrador"]
+			"rasgos": [
+				"larga distancia",
+				"centrador"
+			]
 		},
 		{
 			"n": "17",
@@ -379,7 +389,7 @@
 			"ppp": 1.64,
 			"convocado": 18,
 			"fichado": "14/07/2026",
-			"ovr": 57,
+			"ovr": 52,
 			"debut": {
 				"club": "SLO",
 				"anio": 2018
@@ -408,7 +418,7 @@
 			"ppp": 1.19,
 			"convocado": 28,
 			"fichado": "18/02/2026",
-			"ovr": 59,
+			"ovr": 54,
 			"debut": {
 				"club": "IRM",
 				"anio": 2011
@@ -438,7 +448,7 @@
 			"ppp": 1.47,
 			"convocado": 37,
 			"fichado": "08/01/2025",
-			"ovr": 61,
+			"ovr": 57,
 			"debut": {
 				"club": "IND",
 				"anio": 2016
@@ -467,12 +477,14 @@
 			"ppp": 1.5,
 			"convocado": 14,
 			"fichado": "05/08/2026",
-			"ovr": 58,
+			"ovr": 53,
 			"debut": {
 				"club": "ARG",
 				"anio": 2016
 			},
-			"rasgos": ["cerebro"]
+			"rasgos": [
+				"cerebro"
+			]
 		},
 		{
 			"n": "25",
@@ -497,13 +509,15 @@
 			"ppp": 0,
 			"convocado": 8,
 			"fichado": "29/01/2026",
-			"ovr": 46,
+			"ovr": 38,
 			"debut": {
 				"club": null,
 				"anio": 2010
 			},
 			"college": "Boyacá Chicó Fútbol Club",
-			"rasgos": ["recuperador"]
+			"rasgos": [
+				"recuperador"
+			]
 		},
 		{
 			"n": "5",
@@ -528,7 +542,7 @@
 			"ppp": 1.42,
 			"convocado": 39,
 			"fichado": "01/07/2024",
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": "GIM",
 				"anio": 2010
@@ -558,7 +572,7 @@
 			"ppp": 2,
 			"convocado": 6,
 			"fichado": "01/07/2009",
-			"ovr": 46,
+			"ovr": 37,
 			"debut": {
 				"club": "BAR",
 				"anio": 2009
@@ -588,7 +602,7 @@
 			"ppp": 1.29,
 			"convocado": 42,
 			"fichado": "01/01/2025",
-			"ovr": 52,
+			"ovr": 46,
 			"debut": {
 				"club": "BAR",
 				"anio": 2025
@@ -617,7 +631,7 @@
 			"ppp": 2,
 			"convocado": 22,
 			"fichado": "01/07/2021",
-			"ovr": 43,
+			"ovr": 33,
 			"debut": {
 				"club": "BAR",
 				"anio": 2021
@@ -646,7 +660,7 @@
 			"ppp": 1.37,
 			"convocado": 39,
 			"fichado": "08/01/2025",
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": "BAR",
 				"anio": 2025
@@ -676,7 +690,7 @@
 			"ppp": 1.23,
 			"convocado": 37,
 			"fichado": "26/01/2026",
-			"ovr": 61,
+			"ovr": 58,
 			"debut": {
 				"club": "BOC",
 				"anio": 2017
@@ -706,13 +720,15 @@
 			"ppp": 1.4,
 			"convocado": 42,
 			"fichado": "28/07/2024",
-			"ovr": 65,
+			"ovr": 64,
 			"debut": {
 				"club": "BAR",
 				"anio": 2015
 			},
 			"capitan": true,
-			"rasgos": ["pelota parada"]
+			"rasgos": [
+				"pelota parada"
+			]
 		},
 		{
 			"n": "28",
@@ -737,7 +753,7 @@
 			"ppp": 1.42,
 			"convocado": 37,
 			"fichado": "21/01/2026",
-			"ovr": 58,
+			"ovr": 53,
 			"debut": {
 				"club": null,
 				"anio": 2015
@@ -767,7 +783,7 @@
 			"ppp": 0.5,
 			"convocado": 22,
 			"fichado": "14/01/2026",
-			"ovr": 51,
+			"ovr": 44,
 			"debut": {
 				"club": "DYJ",
 				"anio": 2022
@@ -800,7 +816,7 @@
 			"ppp": 2.33,
 			"convocado": 10,
 			"fichado": "08/07/2025",
-			"ovr": 45,
+			"ovr": 37,
 			"debut": {
 				"club": "BAR",
 				"anio": 2025
@@ -830,7 +846,7 @@
 			"ppp": 1.52,
 			"convocado": 38,
 			"fichado": "16/01/2026",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": "HUR",
 				"anio": 2016
@@ -859,7 +875,7 @@
 			"ppp": 1.2,
 			"convocado": 33,
 			"fichado": "22/01/2026",
-			"ovr": 54,
+			"ovr": 48,
 			"debut": {
 				"club": "IND",
 				"anio": 2026
@@ -888,13 +904,16 @@
 			"ppp": 1.26,
 			"convocado": 37,
 			"fichado": "31/07/2026",
-			"ovr": 60,
+			"ovr": 56,
 			"debut": {
 				"club": "IRM",
 				"anio": 2017
 			},
 			"college": "Club Estudiantes de La Plata",
-			"rasgos": ["aereo", "potente"]
+			"rasgos": [
+				"aereo",
+				"potente"
+			]
 		},
 		{
 			"n": "9",
@@ -919,7 +938,7 @@
 			"ppp": 1.42,
 			"convocado": 24,
 			"fichado": "06/01/2025",
-			"ovr": 57,
+			"ovr": 52,
 			"debut": {
 				"club": "BOC",
 				"anio": 2023
@@ -948,7 +967,7 @@
 			"ppp": 1.21,
 			"convocado": 38,
 			"fichado": "15/01/2024",
-			"ovr": 54,
+			"ovr": 49,
 			"debut": {
 				"club": null,
 				"anio": 2015
@@ -978,7 +997,7 @@
 			"ppp": 2.13,
 			"convocado": 9,
 			"fichado": "31/07/2026",
-			"ovr": 58,
+			"ovr": 54,
 			"debut": {
 				"club": "RAF",
 				"anio": 2013
@@ -1008,7 +1027,7 @@
 			"ppp": 2,
 			"convocado": 7,
 			"fichado": "13/07/2026",
-			"ovr": 46,
+			"ovr": 38,
 			"debut": {
 				"club": null,
 				"anio": 2015
@@ -1038,7 +1057,7 @@
 			"ppp": 0,
 			"convocado": 8,
 			"fichado": "14/01/2026",
-			"ovr": 40,
+			"ovr": 31,
 			"debut": {
 				"club": null,
 				"anio": 2021
@@ -1068,7 +1087,7 @@
 			"ppp": 1,
 			"convocado": 13,
 			"fichado": "21/01/2026",
-			"ovr": 49,
+			"ovr": 43,
 			"debut": {
 				"club": "GYT",
 				"anio": 2006

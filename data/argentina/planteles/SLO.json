@@ -58,7 +58,7 @@
 			"pj": 15,
 			"goles": 0,
 			"min": 1287,
-			"ovr": 60,
+			"ovr": 55,
 			"debut": {
 				"club": "SLO",
 				"anio": 2018
@@ -80,7 +80,7 @@
 			"pj": 1,
 			"goles": 0,
 			"min": 90,
-			"ovr": 44,
+			"ovr": 35,
 			"debut": {
 				"club": "BAN",
 				"anio": 2017
@@ -101,7 +101,7 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"ovr": 37,
+			"ovr": 24,
 			"debut": {
 				"club": "SLO",
 				"anio": 2018
@@ -122,7 +122,7 @@
 			"pj": 9,
 			"goles": 0,
 			"min": 799,
-			"ovr": 61,
+			"ovr": 56,
 			"debut": {
 				"club": "SMJ",
 				"anio": 2020
@@ -147,7 +147,7 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"ovr": 41,
+			"ovr": 31,
 			"debut": {
 				"club": "SLO",
 				"anio": 2024
@@ -169,7 +169,7 @@
 			"goles": 0,
 			"min": 1170,
 			"fichado": "31/07/2026",
-			"ovr": 61,
+			"ovr": 57,
 			"debut": {
 				"club": null,
 				"anio": 2017
@@ -195,7 +195,7 @@
 			"goles": 0,
 			"min": 1080,
 			"fichado": "30/07/2026",
-			"ovr": 60,
+			"ovr": 55,
 			"debut": {
 				"club": "VEL",
 				"anio": 2015
@@ -216,7 +216,7 @@
 			"pj": 5,
 			"goles": 0,
 			"min": 377,
-			"ovr": 51,
+			"ovr": 44,
 			"debut": {
 				"club": "SLO",
 				"anio": 2022
@@ -237,7 +237,7 @@
 			"pj": 15,
 			"goles": 2,
 			"min": 966,
-			"ovr": 60,
+			"ovr": 55,
 			"debut": {
 				"club": null,
 				"anio": 2017
@@ -259,7 +259,7 @@
 			"pj": 7,
 			"goles": 0,
 			"min": 630,
-			"ovr": 51,
+			"ovr": 44,
 			"debut": {
 				"club": "SLO",
 				"anio": 2026
@@ -280,7 +280,7 @@
 			"pj": 24,
 			"goles": 1,
 			"min": 1567,
-			"ovr": 63,
+			"ovr": 60,
 			"debut": {
 				"club": "SLO",
 				"anio": 2026
@@ -301,7 +301,7 @@
 			"pj": 31,
 			"goles": 1,
 			"min": 2044,
-			"ovr": 64,
+			"ovr": 61,
 			"debut": {
 				"club": "BAN",
 				"anio": 2024
@@ -323,7 +323,7 @@
 			"pj": 34,
 			"goles": 1,
 			"min": 2797,
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": "SLO",
 				"anio": 2024
@@ -344,7 +344,7 @@
 			"pj": 2,
 			"goles": 0,
 			"min": 98,
-			"ovr": 45,
+			"ovr": 36,
 			"debut": {
 				"club": "SLO",
 				"anio": 2024
@@ -365,7 +365,7 @@
 			"pj": 23,
 			"goles": 0,
 			"min": 1467,
-			"ovr": 61,
+			"ovr": 57,
 			"debut": {
 				"club": "SLO",
 				"anio": 2025
@@ -386,7 +386,7 @@
 			"pj": 40,
 			"goles": 1,
 			"min": 3447,
-			"ovr": 65,
+			"ovr": 63,
 			"debut": {
 				"club": "VEL",
 				"anio": 2015
@@ -412,7 +412,7 @@
 			"goles": 0,
 			"min": 223,
 			"fichado": "31/07/2026",
-			"ovr": 52,
+			"ovr": 46,
 			"debut": {
 				"club": "TRE",
 				"anio": 2021
@@ -434,7 +434,7 @@
 			"pj": 16,
 			"goles": 0,
 			"min": 761,
-			"ovr": 57,
+			"ovr": 52,
 			"debut": {
 				"club": "GOD",
 				"anio": 2020
@@ -455,7 +455,7 @@
 			"pj": 19,
 			"goles": 1,
 			"min": 1399,
-			"ovr": 60,
+			"ovr": 55,
 			"debut": {
 				"club": "SLO",
 				"anio": 2018
@@ -476,7 +476,7 @@
 			"pj": 11,
 			"goles": 0,
 			"min": 421,
-			"ovr": 53,
+			"ovr": 47,
 			"debut": {
 				"club": "IRM",
 				"anio": 2024
@@ -498,7 +498,7 @@
 			"pj": 12,
 			"goles": 0,
 			"min": 418,
-			"ovr": 49,
+			"ovr": 42,
 			"debut": {
 				"club": "SLO",
 				"anio": 2025
@@ -519,7 +519,7 @@
 			"pj": 4,
 			"goles": 0,
 			"min": 180,
-			"ovr": 44,
+			"ovr": 34,
 			"debut": {
 				"club": "RAF",
 				"anio": 2022
@@ -540,7 +540,7 @@
 			"pj": 37,
 			"goles": 1,
 			"min": 2011,
-			"ovr": 64,
+			"ovr": 61,
 			"debut": {
 				"club": "SLO",
 				"anio": 2025
@@ -562,7 +562,7 @@
 			"goles": 1,
 			"min": 721,
 			"fichado": "28/08/2026",
-			"ovr": 69,
+			"ovr": 64,
 			"debut": {
 				"club": "COL",
 				"anio": 2020
@@ -586,7 +586,7 @@
 			"pj": 16,
 			"goles": 0,
 			"min": 756,
-			"ovr": 61,
+			"ovr": 56,
 			"debut": {
 				"club": "SLO",
 				"anio": 2018
@@ -614,7 +614,7 @@
 			"pj": 23,
 			"goles": 0,
 			"min": 842,
-			"ovr": 55,
+			"ovr": 49,
 			"debut": {
 				"club": "SLO",
 				"anio": 2025
@@ -636,7 +636,7 @@
 			"goles": 0,
 			"min": 274,
 			"fichado": "20/07/2026",
-			"ovr": 53,
+			"ovr": 47,
 			"debut": {
 				"club": "BAN",
 				"anio": 2017
@@ -657,7 +657,7 @@
 			"pj": 7,
 			"goles": 0,
 			"min": 432,
-			"ovr": 55,
+			"ovr": 49,
 			"debut": {
 				"club": "SAR",
 				"anio": 2012
@@ -678,7 +678,7 @@
 			"pj": 39,
 			"goles": 8,
 			"min": 3210,
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "BAR",
 				"anio": 2019
@@ -703,7 +703,7 @@
 			"pj": 31,
 			"goles": 9,
 			"min": 2376,
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": null,
 				"anio": 2019
@@ -727,7 +727,7 @@
 			"goles": 0,
 			"min": 277,
 			"fichado": "28/07/2026",
-			"ovr": 55,
+			"ovr": 49,
 			"debut": {
 				"club": "CIP",
 				"anio": 2014
@@ -748,7 +748,7 @@
 			"pj": 13,
 			"goles": 1,
 			"min": 181,
-			"ovr": 51,
+			"ovr": 45,
 			"debut": {
 				"club": null,
 				"anio": 2015
@@ -773,7 +773,7 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"ovr": 38,
+			"ovr": 28,
 			"debut": {
 				"club": "SLO",
 				"anio": 2025

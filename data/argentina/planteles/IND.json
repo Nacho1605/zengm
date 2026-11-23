@@ -47,7 +47,7 @@
 			"goles": 0,
 			"min": 360,
 			"fichado": "28/07/2026",
-			"ovr": 65,
+			"ovr": 56,
 			"debut": {
 				"club": null,
 				"anio": 2014
@@ -72,7 +72,7 @@
 			"pj": 31,
 			"goles": 0,
 			"min": 2790,
-			"ovr": 68,
+			"ovr": 67,
 			"debut": {
 				"club": "NOB",
 				"anio": 2013
@@ -97,7 +97,7 @@
 			"pj": 1,
 			"goles": 0,
 			"min": 90,
-			"ovr": 45,
+			"ovr": 36,
 			"debut": {
 				"club": "TAL",
 				"anio": 2020
@@ -118,7 +118,7 @@
 			"pj": 12,
 			"goles": 1,
 			"min": 1006,
-			"ovr": 55,
+			"ovr": 50,
 			"debut": {
 				"club": "IND",
 				"anio": 2026
@@ -139,7 +139,7 @@
 			"pj": 22,
 			"goles": 0,
 			"min": 1866,
-			"ovr": 66,
+			"ovr": 64,
 			"debut": {
 				"club": "AND",
 				"anio": 2018
@@ -161,7 +161,7 @@
 			"goles": 0,
 			"min": 94,
 			"fichado": "16/08/2026",
-			"ovr": 51,
+			"ovr": 44,
 			"debut": {
 				"club": "UNI",
 				"anio": 2020
@@ -182,7 +182,7 @@
 			"pj": 23,
 			"goles": 1,
 			"min": 1541,
-			"ovr": 62,
+			"ovr": 58,
 			"debut": {
 				"club": "SDM",
 				"anio": 2019
@@ -203,7 +203,7 @@
 			"pj": 29,
 			"goles": 0,
 			"min": 2189,
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": "ROS",
 				"anio": 2019
@@ -225,7 +225,7 @@
 			"goles": 0,
 			"min": 462,
 			"fichado": "01/10/2026",
-			"ovr": 55,
+			"ovr": 49,
 			"debut": {
 				"club": "PNU",
 				"anio": 2018
@@ -247,7 +247,7 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"ovr": 40,
+			"ovr": 30,
 			"debut": {
 				"club": "IND",
 				"anio": 2025
@@ -268,7 +268,7 @@
 			"pj": 27,
 			"goles": 0,
 			"min": 1886,
-			"ovr": 63,
+			"ovr": 60,
 			"debut": {
 				"club": null,
 				"anio": 2009
@@ -293,7 +293,7 @@
 			"pj": 21,
 			"goles": 1,
 			"min": 1338,
-			"ovr": 62,
+			"ovr": 58,
 			"debut": {
 				"club": "RAF",
 				"anio": 2015
@@ -314,7 +314,7 @@
 			"pj": 7,
 			"goles": 0,
 			"min": 113,
-			"ovr": 47,
+			"ovr": 39,
 			"debut": {
 				"club": "IND",
 				"anio": 2025
@@ -335,7 +335,7 @@
 			"pj": 33,
 			"goles": 1,
 			"min": 2802,
-			"ovr": 65,
+			"ovr": 63,
 			"debut": {
 				"club": "ARS",
 				"anio": 2009
@@ -357,7 +357,7 @@
 			"pj": 1,
 			"goles": 0,
 			"min": 22,
-			"ovr": 41,
+			"ovr": 31,
 			"prospecto": true,
 			"college": "Club Atlético Independiente",
 			"lesion": {
@@ -380,7 +380,7 @@
 			"pj": 28,
 			"goles": 3,
 			"min": 1201,
-			"ovr": 63,
+			"ovr": 60,
 			"debut": {
 				"club": "IND",
 				"anio": 2024
@@ -401,7 +401,7 @@
 			"pj": 27,
 			"goles": 1,
 			"min": 1864,
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": "IND",
 				"anio": 2026
@@ -423,7 +423,7 @@
 			"pj": 17,
 			"goles": 2,
 			"min": 503,
-			"ovr": 59,
+			"ovr": 54,
 			"debut": {
 				"club": "ARG",
 				"anio": 2014
@@ -445,7 +445,7 @@
 			"pj": 11,
 			"goles": 0,
 			"min": 525,
-			"ovr": 49,
+			"ovr": 42,
 			"debut": {
 				"club": "IND",
 				"anio": 2026
@@ -466,7 +466,7 @@
 			"pj": 33,
 			"goles": 5,
 			"min": 2225,
-			"ovr": 68,
+			"ovr": 67,
 			"debut": {
 				"club": null,
 				"anio": 2022
@@ -488,7 +488,7 @@
 			"pj": 0,
 			"goles": 0,
 			"min": 0,
-			"ovr": 38,
+			"ovr": 27,
 			"debut": {
 				"club": "IND",
 				"anio": 2021
@@ -536,7 +536,7 @@
 			"goles": 4,
 			"min": 819,
 			"fichado": "01/07/2026",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": "GIM",
 				"anio": 2012
@@ -558,7 +558,7 @@
 			"goles": 0,
 			"min": 62,
 			"fichado": "31/07/2026",
-			"ovr": 48,
+			"ovr": 40,
 			"debut": {
 				"club": "UNI",
 				"anio": 2021
@@ -580,7 +580,7 @@
 			"goles": 0,
 			"min": 216,
 			"fichado": "08/09/2026",
-			"ovr": 55,
+			"ovr": 49,
 			"debut": {
 				"club": null,
 				"anio": 2017
@@ -603,7 +603,7 @@
 			"goles": 0,
 			"min": 542,
 			"fichado": "18/08/2026",
-			"ovr": 65,
+			"ovr": 54,
 			"debut": {
 				"club": null,
 				"anio": 2011
@@ -628,7 +628,7 @@
 			"pj": 16,
 			"goles": 2,
 			"min": 344,
-			"ovr": 50,
+			"ovr": 44,
 			"debut": {
 				"club": "IND",
 				"anio": 2026

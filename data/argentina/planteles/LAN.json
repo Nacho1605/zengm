@@ -55,7 +55,7 @@
 			"goles": 0,
 			"min": 3810,
 			"fichado": "22/07/2024",
-			"ovr": 69,
+			"ovr": 68,
 			"debut": {
 				"club": "EST",
 				"anio": 2013
@@ -77,7 +77,7 @@
 			"goles": 0,
 			"min": 270,
 			"fichado": "15/01/2026",
-			"ovr": 44,
+			"ovr": 35,
 			"debut": {
 				"club": "RIV",
 				"anio": 2022
@@ -99,14 +99,17 @@
 			"goles": 4,
 			"min": 3583,
 			"fichado": "01/07/2024",
-			"ovr": 68,
+			"ovr": 67,
 			"debut": {
 				"club": "LAN",
 				"anio": 2009
 			},
 			"capitan": true,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/116968-1721933804.png?lm=4711",
-			"rasgos": ["potente", "tactico"]
+			"rasgos": [
+				"potente",
+				"tactico"
+			]
 		},
 		{
 			"n": "13",
@@ -123,14 +126,17 @@
 			"goles": 1,
 			"min": 2872,
 			"fichado": "01/01/2023",
-			"ovr": 68,
+			"ovr": 67,
 			"debut": {
 				"club": null,
 				"anio": 2016
 			},
 			"college": "Club Libertad",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/402627-1782800694.jpg?lm=4711",
-			"rasgos": ["aereo", "recuperador"]
+			"rasgos": [
+				"aereo",
+				"recuperador"
+			]
 		},
 		{
 			"n": "35",
@@ -147,7 +153,7 @@
 			"goles": 0,
 			"min": 1552,
 			"fichado": "21/01/2025",
-			"ovr": 63,
+			"ovr": 60,
 			"debut": {
 				"club": null,
 				"anio": 2022
@@ -170,7 +176,7 @@
 			"goles": 0,
 			"min": 1086,
 			"fichado": "02/08/2023",
-			"ovr": 60,
+			"ovr": 55,
 			"debut": {
 				"club": null,
 				"anio": 2020
@@ -193,7 +199,7 @@
 			"goles": 0,
 			"min": 80,
 			"fichado": "01/01/2026",
-			"ovr": 44,
+			"ovr": 35,
 			"debut": {
 				"club": "LAN",
 				"anio": 2026
@@ -215,13 +221,15 @@
 			"goles": 2,
 			"min": 3838,
 			"fichado": "13/01/2025",
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "PLA",
 				"anio": 2021
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/867621-1724877200.jpg?lm=4711",
-			"rasgos": ["pulmon"]
+			"rasgos": [
+				"pulmon"
+			]
 		},
 		{
 			"n": "33",
@@ -238,7 +246,7 @@
 			"goles": 0,
 			"min": 3134,
 			"fichado": "14/01/2026",
-			"ovr": 63,
+			"ovr": 60,
 			"debut": {
 				"club": "BEL",
 				"anio": 2017
@@ -260,7 +268,7 @@
 			"goles": 0,
 			"min": 256,
 			"fichado": "16/01/2020",
-			"ovr": 55,
+			"ovr": 49,
 			"debut": {
 				"club": "PLA",
 				"anio": 2013
@@ -282,7 +290,7 @@
 			"goles": 1,
 			"min": 3357,
 			"fichado": "01/01/2025",
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "TIG",
 				"anio": 2017
@@ -304,7 +312,7 @@
 			"goles": 1,
 			"min": 2183,
 			"fichado": "01/01/2025",
-			"ovr": 63,
+			"ovr": 60,
 			"debut": {
 				"club": "LAN",
 				"anio": 2025
@@ -326,7 +334,7 @@
 			"goles": 3,
 			"min": 1993,
 			"fichado": "22/08/2024",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": "RIV",
 				"anio": 2021
@@ -348,7 +356,7 @@
 			"goles": 0,
 			"min": 110,
 			"fichado": "21/06/2022",
-			"ovr": 51,
+			"ovr": 44,
 			"debut": {
 				"club": null,
 				"anio": 2013
@@ -375,7 +383,7 @@
 			"goles": 3,
 			"min": 2266,
 			"fichado": "02/01/2024",
-			"ovr": 63,
+			"ovr": 60,
 			"debut": {
 				"club": "ARS",
 				"anio": 2013
@@ -397,7 +405,7 @@
 			"goles": 0,
 			"min": 1457,
 			"fichado": "15/01/2026",
-			"ovr": 60,
+			"ovr": 55,
 			"debut": {
 				"club": null,
 				"anio": 2017
@@ -420,7 +428,7 @@
 			"goles": 0,
 			"min": 203,
 			"fichado": "01/07/2025",
-			"ovr": 46,
+			"ovr": 38,
 			"debut": {
 				"club": "LAN",
 				"anio": 2025
@@ -442,13 +450,16 @@
 			"goles": 5,
 			"min": 1326,
 			"fichado": "19/01/2024",
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "LAN",
 				"anio": 2016
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/456617-1721935774.png?lm=4711",
-			"rasgos": ["gambeta", "pelota parada"]
+			"rasgos": [
+				"gambeta",
+				"pelota parada"
+			]
 		},
 		{
 			"n": "8",
@@ -465,7 +476,7 @@
 			"goles": 1,
 			"min": 1002,
 			"fichado": "04/09/2023",
-			"ovr": 59,
+			"ovr": 54,
 			"debut": {
 				"club": "INS",
 				"anio": 2019
@@ -493,13 +504,15 @@
 			"goles": 3,
 			"min": 3138,
 			"fichado": "01/07/2024",
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "LAN",
 				"anio": 2008
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/84535-1721935987.png?lm=4711",
-			"rasgos": ["centrador"]
+			"rasgos": [
+				"centrador"
+			]
 		},
 		{
 			"n": "77",
@@ -516,7 +529,7 @@
 			"goles": 1,
 			"min": 1491,
 			"fichado": "01/01/2022",
-			"ovr": 60,
+			"ovr": 55,
 			"debut": {
 				"club": "LAN",
 				"anio": 2022
@@ -538,7 +551,7 @@
 			"goles": 0,
 			"min": 104,
 			"fichado": "01/07/2025",
-			"ovr": 45,
+			"ovr": 36,
 			"debut": {
 				"club": "LAN",
 				"anio": 2025
@@ -560,14 +573,16 @@
 			"goles": 4,
 			"min": 1101,
 			"fichado": "16/07/2026",
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": null,
 				"anio": 2023
 			},
 			"college": "Club Olimpia",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1065388-1788275650.jpeg?lm=4711",
-			"rasgos": ["potente"]
+			"rasgos": [
+				"potente"
+			]
 		},
 		{
 			"n": "19",
@@ -584,7 +599,7 @@
 			"goles": 5,
 			"min": 1182,
 			"fichado": "16/03/2026",
-			"ovr": 61,
+			"ovr": 58,
 			"debut": {
 				"club": null,
 				"anio": 2024
@@ -606,7 +621,7 @@
 			"pj": 3,
 			"goles": 0,
 			"min": 14,
-			"ovr": 39,
+			"ovr": 29,
 			"prospecto": true,
 			"college": "Club Atlético Lanús"
 		}

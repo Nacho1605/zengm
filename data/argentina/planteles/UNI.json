@@ -76,7 +76,7 @@
 			"ppp": 1.33,
 			"convocado": 36,
 			"fichado": "14/01/2026",
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": "MID",
 				"anio": 2017
@@ -106,7 +106,7 @@
 			"ppp": 0,
 			"convocado": 6,
 			"fichado": "01/08/2025",
-			"ovr": 45,
+			"ovr": 36,
 			"debut": {
 				"club": "TIG",
 				"anio": 2023
@@ -139,7 +139,7 @@
 			"ppp": 0,
 			"convocado": 29,
 			"fichado": "01/07/2023",
-			"ovr": 38,
+			"ovr": 28,
 			"debut": {
 				"club": "UNI",
 				"anio": 2023
@@ -168,7 +168,7 @@
 			"ppp": 1.34,
 			"convocado": 36,
 			"fichado": "01/01/2023",
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": "UNI",
 				"anio": 2023
@@ -197,7 +197,7 @@
 			"ppp": 1.17,
 			"convocado": 9,
 			"fichado": "31/07/2026",
-			"ovr": 57,
+			"ovr": 52,
 			"debut": {
 				"club": null,
 				"anio": 2020
@@ -227,7 +227,7 @@
 			"ppp": 1,
 			"convocado": 14,
 			"fichado": "01/07/2026",
-			"ovr": 48,
+			"ovr": 41,
 			"debut": {
 				"club": "UNI",
 				"anio": 2026
@@ -256,7 +256,7 @@
 			"ppp": 1.5,
 			"convocado": 16,
 			"fichado": "01/07/2026",
-			"ovr": 58,
+			"ovr": 53,
 			"debut": {
 				"club": "UNI",
 				"anio": 2026
@@ -285,7 +285,7 @@
 			"ppp": 1.1,
 			"convocado": 32,
 			"fichado": "01/01/2024",
-			"ovr": 56,
+			"ovr": 51,
 			"debut": {
 				"club": "UNI",
 				"anio": 2015
@@ -317,7 +317,7 @@
 			"ppp": 1.29,
 			"convocado": 24,
 			"fichado": "01/07/2024",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": "UNI",
 				"anio": 2024
@@ -350,7 +350,7 @@
 			"ppp": 1.46,
 			"convocado": 15,
 			"fichado": "23/07/2026",
-			"ovr": 57,
+			"ovr": 52,
 			"debut": {
 				"club": null,
 				"anio": 2015
@@ -380,7 +380,7 @@
 			"ppp": 1.6,
 			"convocado": 7,
 			"fichado": "08/09/2026",
-			"ovr": 54,
+			"ovr": 48,
 			"debut": {
 				"club": "RAC",
 				"anio": 2023
@@ -409,7 +409,7 @@
 			"ppp": 1.17,
 			"convocado": 13,
 			"fichado": "31/07/2026",
-			"ovr": 59,
+			"ovr": 54,
 			"debut": {
 				"club": "UNI",
 				"anio": 2023
@@ -438,7 +438,7 @@
 			"ppp": 1.9,
 			"convocado": 36,
 			"fichado": "01/01/2025",
-			"ovr": 53,
+			"ovr": 47,
 			"debut": {
 				"club": "UNI",
 				"anio": 2025
@@ -467,7 +467,7 @@
 			"ppp": 1.17,
 			"convocado": 27,
 			"fichado": "27/01/2026",
-			"ovr": 60,
+			"ovr": 56,
 			"debut": {
 				"club": "TIG",
 				"anio": 2015
@@ -499,7 +499,7 @@
 			"ppp": 1.46,
 			"convocado": 33,
 			"fichado": "22/01/2026",
-			"ovr": 61,
+			"ovr": 57,
 			"debut": {
 				"club": null,
 				"anio": 2016
@@ -529,7 +529,7 @@
 			"ppp": 1.77,
 			"convocado": 22,
 			"fichado": "24/07/2025",
-			"ovr": 52,
+			"ovr": 45,
 			"debut": {
 				"club": "RIV",
 				"anio": 2012
@@ -558,7 +558,7 @@
 			"ppp": 1.27,
 			"convocado": 33,
 			"fichado": "22/01/2025",
-			"ovr": 65,
+			"ovr": 64,
 			"debut": {
 				"club": "SLO",
 				"anio": 2020
@@ -587,7 +587,7 @@
 			"ppp": 1.31,
 			"convocado": 13,
 			"fichado": "17/07/2026",
-			"ovr": 55,
+			"ovr": 50,
 			"debut": {
 				"club": "UNI",
 				"anio": 2019
@@ -617,7 +617,7 @@
 			"ppp": 1.23,
 			"convocado": 13,
 			"fichado": "21/07/2026",
-			"ovr": 57,
+			"ovr": 52,
 			"debut": {
 				"club": null,
 				"anio": 2008
@@ -650,7 +650,7 @@
 			"ppp": 0.8,
 			"convocado": 22,
 			"fichado": "01/01/2026",
-			"ovr": 43,
+			"ovr": 33,
 			"debut": {
 				"club": "UNI",
 				"anio": 2026
@@ -679,7 +679,7 @@
 			"ppp": 0.86,
 			"convocado": 22,
 			"fichado": "06/01/2025",
-			"ovr": 51,
+			"ovr": 44,
 			"debut": {
 				"club": "ARS",
 				"anio": 2016
@@ -709,7 +709,7 @@
 			"ppp": 1.15,
 			"convocado": 30,
 			"fichado": "01/01/2026",
-			"ovr": 49,
+			"ovr": 43,
 			"debut": {
 				"club": "UNI",
 				"anio": 2026
@@ -738,15 +738,13 @@
 			"ppp": 1.39,
 			"convocado": 33,
 			"fichado": "30/01/2025",
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": null,
 				"anio": 2014
 			},
 			"college": "Club Defensores del Pronunciamiento",
-			"rasgos": [
-				"aereo"
-			]
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": null,
@@ -771,7 +769,7 @@
 			"ppp": 1.21,
 			"convocado": 15,
 			"fichado": "20/07/2026",
-			"ovr": 55,
+			"ovr": 50,
 			"debut": {
 				"club": "QUI",
 				"anio": 2018
@@ -832,7 +830,7 @@
 			"ppp": 0.5,
 			"convocado": 12,
 			"fichado": "01/07/2026",
-			"ovr": 42,
+			"ovr": 32,
 			"debut": {
 				"club": "UNI",
 				"anio": 2026

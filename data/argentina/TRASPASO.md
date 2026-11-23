@@ -1,26 +1,21 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 22/11/2026 (sesión del 22/11, noche). Última versión:
-**v2.22.2** (`data/argentina/BBGM_Argentina_2026_v.2.22.2_futbol.json`, sha256
-`b6377ca11114bc064f787ec38719130e87867a4a437b51808a6782b84c7a7c7a`): 20 de 30 equipos con plantel 2026. Validación con el
-esquema oficial: 0 errores. Auditoría: 53 controles, 9 con alertas; en los
-equipos cargados solo José Sosa (41 años, real), homónimos reales y las 89
-fotos de Newell's, Estudiantes RC y Unión (las pone el usuario en el juego).
-Todas las versiones se rearman idénticas desde cero (la v2.21.1 también, con
-el cargador nuevo).
+Estado al 23/11/2026. Última versión: **v2.23.1**
+(`data/argentina/BBGM_Argentina_2026_v.2.23.1_futbol.json`, sha256
+`2f9773a5271de31621b165de51b5aea44abbfdcf07af17ef7c96bee177b9500d`): 21 de 30
+equipos con plantel 2026 (Barracas en la v2.23) y la **escala nueva de OVR**
+(20 a 78, sin montones; ver `revision-escala-2026-11-23.md`). Validación: 0
+errores. Auditoría: 53 controles, 9 con alertas (las de siempre: equipos sin
+cargar, José Sosa 41 años, homónimos y 123 fotos de NOB, ERC, UNI y BAR).
 
-**Lo que sigue:** respuestas del usuario a la revisión general
-(`revision-general-2026-11-23.md`, v2.22.2: 52 OVR y Gomes Gerth 7 partidos),
-sobre todo la duda del rango de OVR. La liga del usuario con las fotos de NOB,
-ERC y UNI la está armando sobre la **v2.22.1**: importarla con esa base
-(`desde-juego.ts LIGA v2.22.1`) y armar la v2.22.3 sin BAR. Barracas Central (BAR, v2.23; lo eligió Claude:
-completa la división Capital) ya está en `planteles/BAR.json` y en
-`armar-v2.sh` con los OVR propuestos (once 63,5), esperando las correcciones
-del usuario. Para armar la v2.22.2 sin BAR: copia temporal de `armar-v2.sh`
-sin esa abreviatura (ver §8). Después de BAR: BAN, PLA, DYJ, TIG, SAR, ALD,
-ATU, CCO, GEM. Después: BAR, BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO,
-GEM. La liga que mandó el usuario el 22/11 (noche) era idéntica a la v2.21.1
-(misma huella): todavía no puso las fotos de NOB y ERC.
+**Lo que sigue:** respuestas del usuario a la segunda revisión (dudas en
+`revision-escala-2026-11-23.md`: distancia entre equipos, prospectos
+generados, sueldos debajo del mínimo). La liga del usuario con las fotos de
+NOB, ERC y UNI la está armando sobre la **v2.22.1**: importarla con esa base
+(`desde-juego.ts LIGA BBGM_..._v.2.22.1_futbol.json`). OJO: los OVR cambiaron
+mucho desde la v2.22.1; si `desde-juego.ts` marcara ratings "a mano" en
+jugadores que el usuario no tocó, es porque se usó otra base. Después: BAN,
+PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -29,7 +24,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 - **Fase 1 (v1.x, terminada):** esqueleto de la liga. Motor de fútbol con
   ajustes del archivo (`activar-futbol.ts`), 163 equipos (30 activos), zonas,
   premios y lesiones en español, drafts generados con norma de posición.
-- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **20 de
+- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **21 de
   30** equipos.
 - **Fase 3 (futura):** historia de la liga (temporadas pasadas, campeones,
   premios, Salón de la Fama — hay 32 retirados en el Salón, mal hechos, como
@@ -38,12 +33,12 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 ## 2. Equipos
 
 Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
-`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN HUR TAL BEL INS NOB ERC UNI`.
+`RIE BOC RIV RAC SLO IND ROS EST ARG VEL IRM GIM LAN HUR TAL BEL INS NOB ERC UNI BAR`.
 
 | Abrev | En el juego | Zona / división | |
 |---|---|---|---|
 | ARG | La Paternal Firebugs (Argentinos) | Met / Capital | ✔ |
-| BAR | Barracas Braves (Barracas Central) | Met / Capital | |
+| BAR | Barracas Braves (Barracas Central) | Met / Capital | ✔ |
 | BOC | La Boca 12ers | Met / Capital | ✔ |
 | HUR | La Quema Hurricanes (Huracán) | Met / Capital | ✔ |
 | RIV | Núñez Millionaires | Met / Capital | ✔ |
@@ -79,7 +74,7 @@ CSIR = IRM, GELP = GIM, SMSJ = SMJ (San Martín de San Juan, inactivo). Colón
 PVN. En las tablas, "Gimnasia y Esgrima" aparece dos veces (GIM y GEM) y
 "Estudiantes" también (EST y ERC).
 
-**Próximos:** BAR, BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (de a uno o de
+**Próximos:** BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (de a uno o de
 a dos; el usuario manda las capturas). CCO quedó sin arquero (Mansilla, que
 estaba ahí con datos de 2023, pasó a UNI): se arregla al cargar CCO.
 
@@ -174,7 +169,12 @@ Transfermarkt: `pie` null (un central sin pie va de #6). Sin fecha de fichaje
 
 ## 4. Escala de OVR y criterio
 
-Once (promedio de los 11 mejores), v2.22.1: RIV 70,2 · BOC 69,8 · ROS 68,5 ·
+Once (promedio de los 11 mejores), **v2.23.1 (escala nueva)**: RIV 69,5 ·
+BOC 69,3 · ROS 67,9 · EST 66,5 · BEL 65,6 · VEL 65,6 · IRM 65,5 · ARG 64,9 ·
+GIM 64,2 · LAN 64,1 · INS 63,5 · HUR 63,2 · IND 62,9 · RAC 62,1 · TAL 62,0 ·
+BAR 61,5 · SLO 61,0 · NOB 58,9 · UNI 58,7 · RIE 56,8 · ERC 51,6.
+
+Once en la escala vieja (v2.22.1, como referencia): RIV 70,2 · BOC 69,8 · ROS 68,5 ·
 EST 67,6 · VEL 67,0 · IRM 66,7 · ARG 66,6 · BEL 66,6 (campeón del Apertura,
 10.º en la anual) · LAN 65,7 · GIM 65,6 · IND 65,5 · RAC 65,5 · HUR 64,7 ·
 SLO 64,6 · INS 64,4 · TAL 64,3 · NOB 61,7 · UNI 61,7 (16.º en la anual, pero
@@ -188,9 +188,13 @@ la final de la Libertadores 2026. Los 17 sin cargar tienen datos de 2023
 (47–60).
 
 Techo: Paredes 78, Di María 77, Montiel 75, Almada 74, Correa 73. Orientación
-(no son reglas): pocos por encima de 70; titulares de grandes 66–72, de
-medianos 62–68, suplentes 50–60, juveniles con pocos minutos 38–48, sin
-minutos 30–40. El usuario prefiere el análisis propio de cada jugador.
+en la escala nueva (v2.23.1; no son reglas): pocos por encima de 70;
+titulares de los de arriba 64–72, del resto 56–66; suplentes con minutos
+45–57; pocos minutos 32–45; sin minutos 20–30. Como mucho unos 20 jugadores
+por valor. El usuario prefiere el análisis propio de cada jugador. Los
+valores citados más abajo (lecciones, bitácora) están en la escala vieja: ver
+la correspondencia en `revision-escala-2026-11-23.md` (63 → 60–61, 60 →
+55–56, 50 → 43–44, 40 → 29–31).
 
 **Revisión general (v2.14.1 y v2.14.2).** El usuario notó inflación (Gimnasia)
 y amontonamiento. Se bajaron titulares por encima de sus pares, recién
@@ -228,6 +232,12 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
   BEL e INS (v2.19.3). Juveniles: rendimiento + valor de mercado (v2.18.2) y
   la reserva para los que casi no jugaron (v2.19.2); no inflar juveniles por
   minutos sin producción (Baroni 60 → 52, Dávila 57 → 51, Cantizano 62 → 56).
+- Segunda revisión (v2.23.1, 23/11): el techo de 78 está bien; abrir la
+  escala hacia abajo (33 era arbitrario) y sin montones. No hay criterio de
+  "no inflar a los medianos": cada equipo tiene lo que se merece y las tablas
+  no son la única medida (River, año flojo con estrellas; Racing, año malo).
+  Recomendaciones aceptadas a revisar por el usuario: Fattori, Mele, Farías,
+  Carboni, Sanguinetti y E. Ávila.
 - Revisión general (v2.22.2, 23/11): el usuario dio permiso para revisar
   todos los valores (también los suyos). 52 cambios, casi todos suplentes con
   pocos minutos que estaban arriba por el valor de mercado; los valores que
@@ -288,13 +298,13 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 
 ## 6. Archivos de datos
 
-- `planteles/XXX.json`: los 20 planteles cargados; `planteles/preparacion/`: los
+- `planteles/XXX.json`: los 21 planteles cargados; `planteles/preparacion/`: los
   que están en preparación (hoy ninguno): solo los lee `cruces.ts`; al
   terminar se pasan a `planteles/` y se suman a `armar-v2.sh`.
 - `arqueros/`: la lista de arqueros del usuario y la comparación con hoy
   (ver §4).
-- `salidas-2026.json` (146): los que se fueron de IRM (8), GIM (14), LAN (12),
-  HUR (13), TAL (12), BEL (14), INS (15), NOB (15), ERC (20), UNI (21) e IND (2:
+- `salidas-2026.json` (149): los que se fueron de IRM (8), GIM (14), LAN (12),
+  HUR (13), TAL (12), BEL (14), INS (15), NOB (15), ERC (20), UNI (21), BAR (3) e IND (2:
   Fernández Cedrés y Pussetto, números que dio el usuario; IND y los equipos
   anteriores se cargaron antes de que existiera este archivo) con sus números
   2026. Villa (IRM → BOC): con la suma (44 PJ, 4 g, 8 a) su 70 se sostiene.
@@ -318,9 +328,9 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 
 ## 7. Pendientes
 
-1. **Cargar los 10 equipos restantes** (BAR, BAN, PLA, DYJ, TIG, SAR, ALD,
+1. **Cargar los 9 equipos restantes** (BAN, PLA, DYJ, TIG, SAR, ALD,
    ATU, CCO, GEM).
-2. **Fotos:** faltan las de Newell's, Estudiantes RC y Unión (89); el usuario las pone
+2. **Fotos:** faltan las de Newell's, Estudiantes RC, Unión y Barracas (123); el usuario las pone
    en el juego y manda la liga exportada. Prospectos sin foto en varios
    equipos (TAL, INS, BEL). Ramis (IRM) tiene una miniatura de Google; las
    miniaturas de Google de los primeros ocho equipos (221) las corrige el
@@ -461,6 +471,20 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (IRM, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**Sesión del 23/11/2026 (v2.22.2 → v2.23.1).** Huella de la v2.23.1:
+`2f9773a5271de31621b165de51b5aea44abbfdcf07af17ef7c96bee177b9500d`.
+
+- v2.23 Barracas (34) con los OVR propuestos (once 63,5), sobre la v2.22.2.
+- v2.23.1: segunda revisión. Puntuales: los seis valores fijados por el
+  usuario (recomendación de Claude), Racing −1/−2 (mal año: captura de sus
+  competiciones guardada en `planteles/RAC.json`), Instituto +1 (Luna 69,
+  Cerato, Sosa, Lázaro, Ledesma, Gallardo). Escala nueva: mismo orden,
+  desempate por números entre iguales, repartida de 20 a 78 sin montones
+  (582 de 615 cambian; los de 70 o más quedan igual). Comparada con la v2.23:
+  solo cambian ratings, sueldos, orden de los planteles y números de pick de
+  los jugadores de los planteles; "OVR guardado = OVR oficial" en todos.
+  Sueldos más bajos: RIE (53,6 M) y ERC (42,1 M) debajo del mínimo de 55 M.
+
 **Sesión del 23/11/2026 (v2.22.2).** Huella de la v2.22.2:
 `b6377ca11114bc064f787ec38719130e87867a4a437b51808a6782b84c7a7c7a`.
 

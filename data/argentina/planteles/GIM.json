@@ -47,7 +47,7 @@
 			"goles": 0,
 			"min": 2638,
 			"fichado": "01/07/2019",
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "CDC",
 				"anio": 2016
@@ -70,7 +70,7 @@
 			"goles": 0,
 			"min": 450,
 			"fichado": "14/07/2026",
-			"ovr": 47,
+			"ovr": 40,
 			"debut": {
 				"club": null,
 				"anio": 2015
@@ -93,7 +93,7 @@
 			"goles": 0,
 			"min": 152,
 			"fichado": "06/01/2024",
-			"ovr": 38,
+			"ovr": 28,
 			"debut": {
 				"club": "COM",
 				"anio": 2022
@@ -115,7 +115,7 @@
 			"goles": 1,
 			"min": 1783,
 			"fichado": "16/01/2025",
-			"ovr": 63,
+			"ovr": 60,
 			"debut": {
 				"club": "BOC",
 				"anio": 2022
@@ -137,7 +137,7 @@
 			"goles": 2,
 			"min": 2935,
 			"fichado": "03/09/2024",
-			"ovr": 65,
+			"ovr": 64,
 			"debut": {
 				"club": null,
 				"anio": 2018
@@ -160,7 +160,7 @@
 			"goles": 0,
 			"min": 446,
 			"fichado": "01/01/2026",
-			"ovr": 51,
+			"ovr": 45,
 			"debut": {
 				"club": "GIM",
 				"anio": 2026
@@ -186,7 +186,7 @@
 			"goles": 0,
 			"min": 230,
 			"fichado": "23/01/2026",
-			"ovr": 48,
+			"ovr": 41,
 			"debut": {
 				"club": "SAC",
 				"anio": 2021
@@ -209,7 +209,7 @@
 			"goles": 2,
 			"min": 1411,
 			"fichado": "24/07/2025",
-			"ovr": 62,
+			"ovr": 58,
 			"debut": {
 				"club": "COL",
 				"anio": 2013
@@ -231,7 +231,7 @@
 			"goles": 1,
 			"min": 2930,
 			"fichado": "23/01/2025",
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": "OLI",
 				"anio": 2017
@@ -254,7 +254,7 @@
 			"goles": 0,
 			"min": 358,
 			"fichado": "24/01/2025",
-			"ovr": 56,
+			"ovr": 50,
 			"debut": {
 				"club": "GIM",
 				"anio": 2018
@@ -276,13 +276,16 @@
 			"goles": 2,
 			"min": 2353,
 			"fichado": "01/07/2022",
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "GIM",
 				"anio": 2022
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1046802-1699915063.jpg?lm=4711",
-			"rasgos": ["centrador", "pulmon"]
+			"rasgos": [
+				"centrador",
+				"pulmon"
+			]
 		},
 		{
 			"n": "31",
@@ -299,7 +302,7 @@
 			"goles": 1,
 			"min": 1059,
 			"fichado": "01/01/2022",
-			"ovr": 58,
+			"ovr": 53,
 			"debut": {
 				"club": "GIM",
 				"anio": 2022
@@ -321,7 +324,7 @@
 			"goles": 0,
 			"min": 0,
 			"fichado": "01/01/2025",
-			"ovr": 37,
+			"ovr": 26,
 			"debut": {
 				"club": "GIM",
 				"anio": 2025
@@ -343,13 +346,16 @@
 			"goles": 4,
 			"min": 1712,
 			"fichado": "01/07/2025",
-			"ovr": 68,
+			"ovr": 67,
 			"debut": {
 				"club": "GIM",
 				"anio": 2025
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1123309-1770216831.jpg?lm=4711",
-			"rasgos": ["cerebro", "recuperador"]
+			"rasgos": [
+				"cerebro",
+				"recuperador"
+			]
 		},
 		{
 			"n": "5",
@@ -366,13 +372,15 @@
 			"goles": 1,
 			"min": 2347,
 			"fichado": "14/01/2026",
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "GIM",
 				"anio": 2023
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/836518-1739897521.jpg?lm=4711",
-			"rasgos": ["pulmon"]
+			"rasgos": [
+				"pulmon"
+			]
 		},
 		{
 			"n": "18",
@@ -389,7 +397,7 @@
 			"goles": 1,
 			"min": 1543,
 			"fichado": "06/07/2025",
-			"ovr": 63,
+			"ovr": 60,
 			"debut": {
 				"club": "VEL",
 				"anio": 2022
@@ -411,7 +419,7 @@
 			"goles": 0,
 			"min": 56,
 			"fichado": "01/01/2025",
-			"ovr": 44,
+			"ovr": 35,
 			"debut": {
 				"club": "GIM",
 				"anio": 2025
@@ -437,7 +445,7 @@
 			"goles": 0,
 			"min": 1635,
 			"fichado": "03/09/2024",
-			"ovr": 62,
+			"ovr": 58,
 			"debut": {
 				"club": "SMT",
 				"anio": 2010
@@ -466,7 +474,10 @@
 			},
 			"capitan": true,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/50669-1693315048.png?lm=4711",
-			"rasgos": ["habilidoso", "pase"]
+			"rasgos": [
+				"habilidoso",
+				"pase"
+			]
 		},
 		{
 			"n": "20",
@@ -483,7 +494,7 @@
 			"goles": 0,
 			"min": 222,
 			"fichado": "04/07/2025",
-			"ovr": 48,
+			"ovr": 41,
 			"debut": {
 				"club": null,
 				"anio": 2022
@@ -506,7 +517,7 @@
 			"goles": 0,
 			"min": 0,
 			"fichado": "01/01/2023",
-			"ovr": 36,
+			"ovr": 23,
 			"debut": {
 				"club": "GIM",
 				"anio": 2023
@@ -528,7 +539,7 @@
 			"goles": 0,
 			"min": 51,
 			"fichado": "01/01/2026",
-			"ovr": 42,
+			"ovr": 32,
 			"debut": {
 				"club": "GIM",
 				"anio": 2026
@@ -550,7 +561,7 @@
 			"goles": 0,
 			"min": 230,
 			"fichado": "01/01/2025",
-			"ovr": 49,
+			"ovr": 42,
 			"debut": {
 				"club": "GIM",
 				"anio": 2025
@@ -576,7 +587,7 @@
 			"goles": 1,
 			"min": 804,
 			"fichado": "28/07/2026",
-			"ovr": 61,
+			"ovr": 57,
 			"debut": {
 				"club": "TIG",
 				"anio": 2012
@@ -598,7 +609,7 @@
 			"goles": 1,
 			"min": 961,
 			"fichado": "13/08/2024",
-			"ovr": 60,
+			"ovr": 56,
 			"debut": {
 				"club": "ALD",
 				"anio": 2023
@@ -620,7 +631,7 @@
 			"goles": 2,
 			"min": 725,
 			"fichado": "06/07/2025",
-			"ovr": 57,
+			"ovr": 52,
 			"debut": {
 				"club": "BOC",
 				"anio": 2023
@@ -642,7 +653,7 @@
 			"goles": 5,
 			"min": 869,
 			"fichado": "01/01/2022",
-			"ovr": 61,
+			"ovr": 57,
 			"debut": {
 				"club": "GIM",
 				"anio": 2022
@@ -665,7 +676,7 @@
 			"goles": 11,
 			"min": 1996,
 			"fichado": "08/07/2025",
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "TAL",
 				"anio": 2017
@@ -688,7 +699,7 @@
 			"goles": 8,
 			"min": 2256,
 			"fichado": "15/01/2026",
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": "ACA",
 				"anio": 2017
@@ -716,7 +727,7 @@
 			"goles": 3,
 			"min": 488,
 			"fichado": "31/07/2026",
-			"ovr": 60,
+			"ovr": 56,
 			"debut": {
 				"club": "BEL",
 				"anio": 2022
@@ -737,7 +748,7 @@
 			"pj": 7,
 			"goles": 0,
 			"min": 268,
-			"ovr": 45,
+			"ovr": 37,
 			"prospecto": true,
 			"college": "Club de Gimnasia y Esgrima La Plata"
 		}

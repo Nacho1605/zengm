@@ -1,6 +1,7 @@
 {
 	"equipo": "RAC",
 	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"contexto": "Competiciones 2026 (captura del usuario, 23/11/2026): Torneo Apertura, de la fase de grupos a cuartos de final (18 PJ, 6-6-6, 19-17); Torneo Clausura, fase de grupos (16 PJ, 4-3-9, 16-24); Copa Argentina, de treintaidosavos a cuartos de final (4 PJ, 3-0-1, 8-4); Copa Sudamericana, fase de grupos (6 PJ, 2-2-2, 11-9). Total: 44 PJ, 15-11-18, 54-54. El usuario: \"tuvieron un mal año\".",
 	"reemplaza": [
 		{
 			"nombre": "Facundo Cambeses",
@@ -54,7 +55,7 @@
 			"pj": 42,
 			"goles": 0,
 			"min": 3765,
-			"ovr": 69,
+			"ovr": 68,
 			"debut": {
 				"club": "BAN",
 				"anio": 2019
@@ -79,7 +80,7 @@
 			"pj": 3,
 			"goles": 0,
 			"min": 225,
-			"ovr": 46,
+			"ovr": 38,
 			"debut": {
 				"club": "RAF",
 				"anio": 2019
@@ -100,7 +101,7 @@
 			"pj": 20,
 			"goles": 2,
 			"min": 1629,
-			"ovr": 65,
+			"ovr": 61,
 			"debut": {
 				"club": "ARG",
 				"anio": 2021
@@ -125,7 +126,7 @@
 			"pj": 18,
 			"goles": 1,
 			"min": 1068,
-			"ovr": 61,
+			"ovr": 56,
 			"debut": {
 				"club": "EST",
 				"anio": 2019
@@ -147,7 +148,7 @@
 			"goles": 0,
 			"min": 301,
 			"fichado": "28/08/2026",
-			"ovr": 56,
+			"ovr": 50,
 			"debut": {
 				"club": "LAN",
 				"anio": 2020
@@ -168,7 +169,7 @@
 			"pj": 11,
 			"goles": 0,
 			"min": 959,
-			"ovr": 51,
+			"ovr": 45,
 			"prospecto": true,
 			"college": "Racing Club",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1231193-1762504543.jpg?lm=4711"
@@ -187,7 +188,7 @@
 			"pj": 12,
 			"goles": 1,
 			"min": 994,
-			"ovr": 53,
+			"ovr": 47,
 			"debut": {
 				"club": "RAC",
 				"anio": 2025
@@ -208,7 +209,7 @@
 			"pj": 25,
 			"goles": 2,
 			"min": 1830,
-			"ovr": 63,
+			"ovr": 58,
 			"debut": {
 				"club": "BAN",
 				"anio": 2023
@@ -230,7 +231,7 @@
 			"goles": 0,
 			"min": 249,
 			"fichado": "02/07/2026",
-			"ovr": 55,
+			"ovr": 49,
 			"debut": {
 				"club": null,
 				"anio": 2014
@@ -252,7 +253,7 @@
 			"pj": 35,
 			"goles": 1,
 			"min": 2770,
-			"ovr": 64,
+			"ovr": 60,
 			"debut": {
 				"club": "DYJ",
 				"anio": 2024
@@ -274,7 +275,7 @@
 			"goles": 0,
 			"min": 122,
 			"fichado": "29/08/2026",
-			"ovr": 54,
+			"ovr": 48,
 			"debut": {
 				"club": "BEL",
 				"anio": 2019
@@ -296,7 +297,7 @@
 			"goles": 1,
 			"min": 885,
 			"fichado": "10/08/2026",
-			"ovr": 63,
+			"ovr": 59,
 			"debut": {
 				"club": "HUR",
 				"anio": 2025
@@ -318,7 +319,7 @@
 			"goles": 1,
 			"min": 994,
 			"fichado": "01/07/2026",
-			"ovr": 62,
+			"ovr": 58,
 			"debut": {
 				"club": "AND",
 				"anio": 2019
@@ -340,7 +341,7 @@
 			"goles": 0,
 			"min": 579,
 			"fichado": "06/07/2026",
-			"ovr": 59,
+			"ovr": 54,
 			"debut": {
 				"club": "RIV",
 				"anio": 2012
@@ -361,7 +362,7 @@
 			"pj": 8,
 			"goles": 0,
 			"min": 424,
-			"ovr": 50,
+			"ovr": 43,
 			"debut": {
 				"club": "COL",
 				"anio": 2024
@@ -387,7 +388,7 @@
 			"goles": 1,
 			"min": 986,
 			"fichado": "13/08/2026",
-			"ovr": 63,
+			"ovr": 60,
 			"debut": {
 				"club": "LAN",
 				"anio": 2018
@@ -408,7 +409,7 @@
 			"pj": 5,
 			"goles": 0,
 			"min": 204,
-			"ovr": 63,
+			"ovr": 53,
 			"debut": {
 				"club": null,
 				"anio": 2022
@@ -436,7 +437,7 @@
 			"pj": 32,
 			"goles": 4,
 			"min": 1550,
-			"ovr": 67,
+			"ovr": 64,
 			"debut": {
 				"club": "ARG",
 				"anio": 2019
@@ -460,7 +461,7 @@
 			"pj": 35,
 			"goles": 4,
 			"min": 1807,
-			"ovr": 66,
+			"ovr": 63,
 			"debut": {
 				"club": "RAC",
 				"anio": 2017
@@ -484,7 +485,7 @@
 			"pj": 28,
 			"goles": 2,
 			"min": 1187,
-			"ovr": 60,
+			"ovr": 55,
 			"debut": {
 				"club": "STE",
 				"anio": 2021
@@ -505,7 +506,7 @@
 			"pj": 13,
 			"goles": 0,
 			"min": 733,
-			"ovr": 47,
+			"ovr": 39,
 			"debut": {
 				"club": "RAC",
 				"anio": 2026
@@ -526,7 +527,7 @@
 			"pj": 41,
 			"goles": 5,
 			"min": 2225,
-			"ovr": 66,
+			"ovr": 63,
 			"debut": {
 				"club": null,
 				"anio": 2018
@@ -548,7 +549,7 @@
 			"pj": 29,
 			"goles": 4,
 			"min": 841,
-			"ovr": 61,
+			"ovr": 57,
 			"debut": {
 				"club": null,
 				"anio": 2016
@@ -574,7 +575,7 @@
 			"goles": 0,
 			"min": 0,
 			"fichado": "03/09/2026",
-			"ovr": 38,
+			"ovr": 28,
 			"debut": {
 				"club": null,
 				"anio": 2020
@@ -596,7 +597,7 @@
 			"pj": 35,
 			"goles": 13,
 			"min": 2855,
-			"ovr": 71,
+			"ovr": 69,
 			"debut": {
 				"club": "DUN",
 				"anio": 2015
@@ -626,7 +627,7 @@
 			"goles": 0,
 			"min": 884,
 			"fichado": "21/07/2026",
-			"ovr": 57,
+			"ovr": 52,
 			"debut": {
 				"club": "EBA",
 				"anio": 2019
@@ -650,7 +651,7 @@
 			"pj": 12,
 			"goles": 0,
 			"min": 253,
-			"ovr": 50,
+			"ovr": 43,
 			"debut": {
 				"club": "ALD",
 				"anio": 2023

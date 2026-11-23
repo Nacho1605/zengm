@@ -44,7 +44,7 @@
 			"ppp": 0.67,
 			"convocado": 10,
 			"fichado": "01/07/2026",
-			"ovr": 53,
+			"ovr": 48,
 			"debut": {
 				"club": "IRM",
 				"anio": 2017
@@ -74,7 +74,7 @@
 			"ppp": 0.31,
 			"convocado": 27,
 			"fichado": "16/01/2026",
-			"ovr": 48,
+			"ovr": 42,
 			"debut": {
 				"club": "BOC",
 				"anio": 2022
@@ -103,7 +103,7 @@
 			"ppp": 0.6,
 			"convocado": 10,
 			"fichado": "27/01/2026",
-			"ovr": 44,
+			"ovr": 35,
 			"debut": {
 				"club": "QUI",
 				"anio": 2025
@@ -132,7 +132,7 @@
 			"ppp": 0,
 			"convocado": 6,
 			"fichado": "22/01/2025",
-			"ovr": 40,
+			"ovr": 29,
 			"debut": {
 				"club": null,
 				"anio": 2022
@@ -162,7 +162,7 @@
 			"ppp": 0.78,
 			"convocado": 16,
 			"fichado": "01/07/2026",
-			"ovr": 54,
+			"ovr": 48,
 			"debut": {
 				"club": "IND",
 				"anio": 2024
@@ -191,7 +191,7 @@
 			"ppp": 0.4,
 			"convocado": 29,
 			"fichado": "10/01/2025",
-			"ovr": 53,
+			"ovr": 48,
 			"debut": {
 				"club": "SAR",
 				"anio": 2019
@@ -220,7 +220,7 @@
 			"ppp": 0.39,
 			"convocado": 29,
 			"fichado": "14/01/2026",
-			"ovr": 55,
+			"ovr": 50,
 			"debut": {
 				"club": "VSC",
 				"anio": 2023
@@ -249,7 +249,7 @@
 			"ppp": 0.44,
 			"convocado": 27,
 			"fichado": "01/01/2016",
-			"ovr": 58,
+			"ovr": 54,
 			"debut": {
 				"club": "ERC",
 				"anio": 2016
@@ -281,7 +281,7 @@
 			"ppp": 0.5,
 			"convocado": 28,
 			"fichado": "01/01/2025",
-			"ovr": 56,
+			"ovr": 51,
 			"debut": {
 				"club": "IND",
 				"anio": 2013
@@ -310,7 +310,7 @@
 			"ppp": 0,
 			"convocado": 9,
 			"fichado": "27/07/2026",
-			"ovr": 42,
+			"ovr": 31,
 			"debut": {
 				"club": "ERC",
 				"anio": 2026
@@ -340,7 +340,7 @@
 			"ppp": 0.56,
 			"convocado": 23,
 			"fichado": "14/01/2025",
-			"ovr": 52,
+			"ovr": 46,
 			"debut": {
 				"club": "GOD",
 				"anio": 2016
@@ -369,7 +369,7 @@
 			"ppp": 0.67,
 			"convocado": 15,
 			"fichado": "01/07/2026",
-			"ovr": 53,
+			"ovr": 48,
 			"debut": {
 				"club": "ALT",
 				"anio": 2024
@@ -399,7 +399,7 @@
 			"ppp": 0.46,
 			"convocado": 15,
 			"fichado": "01/07/2026",
-			"ovr": 54,
+			"ovr": 48,
 			"debut": {
 				"club": "GIM",
 				"anio": 2025
@@ -421,7 +421,7 @@
 			"min": 0,
 			"convocado": 3,
 			"fichado": "01/01/2024",
-			"ovr": 42,
+			"ovr": 32,
 			"debut": {
 				"club": "ERC",
 				"anio": 2024
@@ -454,7 +454,7 @@
 			"ppp": 0,
 			"convocado": 20,
 			"fichado": "27/01/2026",
-			"ovr": 50,
+			"ovr": 44,
 			"debut": {
 				"club": "QUI",
 				"anio": 2018
@@ -483,7 +483,7 @@
 			"ppp": 0.33,
 			"convocado": 3,
 			"fichado": "20/01/2025",
-			"ovr": 47,
+			"ovr": 39,
 			"debut": {
 				"club": "GBR",
 				"anio": 2019
@@ -517,13 +517,15 @@
 			"ppp": 0.5,
 			"convocado": 29,
 			"fichado": "14/01/2026",
-			"ovr": 58,
+			"ovr": 53,
 			"debut": {
 				"club": "SLO",
 				"anio": 2021
 			},
 			"sofascore": 6.89,
-			"rasgos": ["recuperador"]
+			"rasgos": [
+				"recuperador"
+			]
 		},
 		{
 			"n": "5",
@@ -548,13 +550,17 @@
 			"ppp": 0.32,
 			"convocado": 25,
 			"fichado": "01/01/2025",
-			"ovr": 60,
+			"ovr": 56,
 			"debut": {
 				"club": "ERC",
 				"anio": 2016
 			},
 			"sofascore": 7.05,
-			"rasgos": ["cerebro", "recuperador", "pulmon"]
+			"rasgos": [
+				"cerebro",
+				"recuperador",
+				"pulmon"
+			]
 		},
 		{
 			"n": "19",
@@ -579,14 +585,16 @@
 			"ppp": 0.52,
 			"convocado": 24,
 			"fichado": "20/01/2026",
-			"ovr": 55,
+			"ovr": 50,
 			"debut": {
 				"club": "AGR",
 				"anio": 2018
 			},
 			"college": "Club Estudiantes de La Plata",
 			"leal": true,
-			"rasgos": ["pulmon"]
+			"rasgos": [
+				"pulmon"
+			]
 		},
 		{
 			"n": "17",
@@ -611,12 +619,15 @@
 			"ppp": 0.39,
 			"convocado": 29,
 			"fichado": "14/01/2026",
-			"ovr": 59,
+			"ovr": 55,
 			"debut": {
 				"club": "BEL",
 				"anio": 2015
 			},
-			"rasgos": ["larga distancia", "centrador"]
+			"rasgos": [
+				"larga distancia",
+				"centrador"
+			]
 		},
 		{
 			"n": "10",
@@ -641,7 +652,7 @@
 			"ppp": 0.42,
 			"convocado": 31,
 			"fichado": "08/01/2025",
-			"ovr": 56,
+			"ovr": 51,
 			"debut": {
 				"club": "DOU",
 				"anio": 2023
@@ -671,7 +682,7 @@
 			"ppp": 0.8,
 			"convocado": 15,
 			"fichado": "23/03/2026",
-			"ovr": 44,
+			"ovr": 34,
 			"debut": {
 				"club": "ROS",
 				"anio": 2019
@@ -700,7 +711,7 @@
 			"ppp": 0.57,
 			"convocado": 29,
 			"fichado": "01/01/2023",
-			"ovr": 54,
+			"ovr": 48,
 			"debut": {
 				"club": "TAL",
 				"anio": 2019
@@ -729,7 +740,7 @@
 			"ppp": 0.43,
 			"convocado": 16,
 			"fichado": "18/07/2026",
-			"ovr": 57,
+			"ovr": 52,
 			"debut": {
 				"club": null,
 				"anio": 2016
@@ -759,7 +770,7 @@
 			"ppp": 0.33,
 			"convocado": 10,
 			"fichado": "01/08/2026",
-			"ovr": 44,
+			"ovr": 35,
 			"debut": {
 				"club": null,
 				"anio": 2024
@@ -789,7 +800,7 @@
 			"ppp": 1,
 			"convocado": 10,
 			"fichado": "01/07/2026",
-			"ovr": 48,
+			"ovr": 41,
 			"debut": {
 				"club": "GOD",
 				"anio": 2011
@@ -818,7 +829,7 @@
 			"ppp": 0.3,
 			"convocado": 24,
 			"fichado": "14/01/2026",
-			"ovr": 52,
+			"ovr": 46,
 			"debut": {
 				"club": "INS",
 				"anio": 2019
@@ -847,7 +858,7 @@
 			"ppp": 0.33,
 			"convocado": 25,
 			"fichado": "02/01/2025",
-			"ovr": 53,
+			"ovr": 48,
 			"debut": {
 				"club": "BEL",
 				"anio": 2021
@@ -876,7 +887,7 @@
 			"ppp": 0.25,
 			"convocado": 5,
 			"fichado": "01/01/2025",
-			"ovr": 45,
+			"ovr": 36,
 			"debut": {
 				"club": "SMT",
 				"anio": 2019
@@ -909,7 +920,7 @@
 			"ppp": 0.63,
 			"convocado": 9,
 			"fichado": "01/07/2026",
-			"ovr": 48,
+			"ovr": 42,
 			"debut": {
 				"club": null,
 				"anio": 2017
@@ -939,7 +950,7 @@
 			"ppp": 0.37,
 			"convocado": 26,
 			"fichado": "13/02/2025",
-			"ovr": 47,
+			"ovr": 40,
 			"debut": {
 				"club": "CCO",
 				"anio": 2014

@@ -68,7 +68,7 @@
 			"ppp": 2,
 			"convocado": 17,
 			"fichado": "07/07/2026",
-			"ovr": 63,
+			"ovr": 62,
 			"debut": {
 				"club": "QUI",
 				"anio": 2017
@@ -76,20 +76,20 @@
 			"college": "Asociación Atlética Estudiantes (Río Cuarto)",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/344421-1621169118.jpg?lm=4711",
 			"ratings": {
-				"stre": 70,
-				"spd": 54,
-				"jmp": 78,
-				"endu": 61,
+				"stre": 69,
+				"spd": 53,
+				"jmp": 77,
+				"endu": 60,
+				"ft": 50,
+				"oiq": 48,
+				"diq": 77,
+				"drb": 47,
+				"pss": 47,
+				"reb": 79,
 				"ins": 0,
 				"dnk": 0,
-				"ft": 51,
 				"fg": 0,
-				"tp": 0,
-				"oiq": 49,
-				"diq": 78,
-				"drb": 48,
-				"pss": 48,
-				"reb": 80
+				"tp": 0
 			}
 		},
 		{
@@ -115,7 +115,7 @@
 			"ppp": 3,
 			"convocado": 33,
 			"fichado": "01/07/2019",
-			"ovr": 40,
+			"ovr": 31,
 			"debut": {
 				"club": "INS",
 				"anio": 2019
@@ -145,7 +145,7 @@
 			"ppp": 1.9,
 			"convocado": 32,
 			"fichado": "04/01/2022",
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "TAL",
 				"anio": 2016
@@ -179,7 +179,7 @@
 			"ppp": 1.76,
 			"convocado": 34,
 			"fichado": "24/01/2025",
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "ARG",
 				"anio": 2016
@@ -210,7 +210,7 @@
 			"ppp": 1.94,
 			"convocado": 33,
 			"fichado": "14/01/2026",
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": "ALD",
 				"anio": 2011
@@ -243,7 +243,7 @@
 			"ppp": 2.2,
 			"convocado": 32,
 			"fichado": "01/01/2024",
-			"ovr": 57,
+			"ovr": 52,
 			"debut": {
 				"club": "INS",
 				"anio": 2024
@@ -273,7 +273,7 @@
 			"ppp": 0.67,
 			"convocado": 31,
 			"fichado": "01/07/2025",
-			"ovr": 50,
+			"ovr": 43,
 			"debut": {
 				"club": "RAF",
 				"anio": 2021
@@ -350,7 +350,7 @@
 			"ppp": 2,
 			"convocado": 18,
 			"fichado": "07/02/2026",
-			"ovr": 49,
+			"ovr": 43,
 			"debut": {
 				"club": "GOD",
 				"anio": 2023
@@ -431,7 +431,7 @@
 			"ppp": 1.89,
 			"convocado": 33,
 			"fichado": "14/01/2026",
-			"ovr": 54,
+			"ovr": 48,
 			"debut": {
 				"club": "VEL",
 				"anio": 2017
@@ -461,7 +461,7 @@
 			"ppp": 1.82,
 			"convocado": 34,
 			"fichado": "01/01/2026",
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "SMT",
 				"anio": 2019
@@ -494,7 +494,7 @@
 			"ppp": 1.64,
 			"convocado": 31,
 			"fichado": "01/07/2026",
-			"ovr": 58,
+			"ovr": 53,
 			"debut": {
 				"club": "ARG",
 				"anio": 2018
@@ -516,7 +516,7 @@
 			"goles": 0,
 			"min": 0,
 			"convocado": 9,
-			"ovr": 38,
+			"ovr": 27,
 			"prospecto": true,
 			"college": "Instituto Atlético Central Córdoba"
 		},
@@ -536,7 +536,7 @@
 			"min": 0,
 			"convocado": 10,
 			"fichado": "25/07/2026",
-			"ovr": 47,
+			"ovr": 40,
 			"debut": {
 				"club": null,
 				"anio": 2020
@@ -567,7 +567,7 @@
 			"ppp": 0,
 			"convocado": 10,
 			"fichado": "14/01/2026",
-			"ovr": 51,
+			"ovr": 45,
 			"debut": {
 				"club": "SLO",
 				"anio": 2018
@@ -597,7 +597,7 @@
 			"ppp": 1.69,
 			"convocado": 33,
 			"fichado": "14/01/2026",
-			"ovr": 68,
+			"ovr": 69,
 			"debut": {
 				"club": "RAF",
 				"anio": 2021
@@ -632,7 +632,7 @@
 			"ppp": 1.73,
 			"convocado": 34,
 			"fichado": "02/01/2025",
-			"ovr": 61,
+			"ovr": 59,
 			"debut": {
 				"club": "INS",
 				"anio": 2025
@@ -664,7 +664,7 @@
 			"ppp": 1.83,
 			"convocado": 32,
 			"fichado": "01/07/2024",
-			"ovr": 63,
+			"ovr": 62,
 			"debut": {
 				"club": "INS",
 				"anio": 2024
@@ -672,20 +672,20 @@
 			"sofascore": 6.97,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1227286-1771007602.png?lm=4711",
 			"ratings": {
-				"stre": 51,
-				"spd": 61,
-				"jmp": 61,
-				"endu": 54,
-				"ins": 58,
-				"dnk": 59,
-				"ft": 61,
-				"fg": 67,
-				"tp": 65,
-				"oiq": 72,
-				"diq": 39,
-				"drb": 67,
-				"pss": 74,
-				"reb": 44
+				"stre": 50,
+				"spd": 60,
+				"jmp": 60,
+				"endu": 53,
+				"ins": 57,
+				"dnk": 58,
+				"ft": 60,
+				"fg": 66,
+				"tp": 64,
+				"oiq": 71,
+				"diq": 38,
+				"drb": 66,
+				"pss": 73,
+				"reb": 43
 			}
 		},
 		{
@@ -711,7 +711,7 @@
 			"ppp": 1.94,
 			"convocado": 34,
 			"fichado": "01/01/2025",
-			"ovr": 52,
+			"ovr": 46,
 			"debut": {
 				"club": "SAN",
 				"anio": 2019
@@ -742,7 +742,7 @@
 			"ppp": 1.3,
 			"convocado": 10,
 			"fichado": "01/01/2026",
-			"ovr": 46,
+			"ovr": 39,
 			"debut": {
 				"club": "INS",
 				"anio": 2026
@@ -768,7 +768,7 @@
 			"goles": 0,
 			"min": 0,
 			"convocado": 1,
-			"ovr": 37,
+			"ovr": 26,
 			"prospecto": true,
 			"college": "Instituto Atlético Central Córdoba",
 			"lesion": {
@@ -799,7 +799,7 @@
 			"ppp": 1.9,
 			"convocado": 30,
 			"fichado": "20/07/2026",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": null,
 				"anio": 2019
@@ -833,7 +833,7 @@
 			"ppp": 1.33,
 			"convocado": 8,
 			"fichado": "01/08/2026",
-			"ovr": 48,
+			"ovr": 41,
 			"debut": {
 				"club": null,
 				"anio": 2020
@@ -864,7 +864,7 @@
 			"ppp": 1.88,
 			"convocado": 26,
 			"fichado": "03/03/2026",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": "QUI",
 				"anio": 2017
@@ -872,20 +872,20 @@
 			"college": "Club Atlético Newell's Old Boys",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/503001-1720984447.png?lm=4711",
 			"ratings": {
-				"stre": 64,
-				"spd": 59,
-				"jmp": 70,
-				"endu": 65,
-				"ins": 66,
-				"dnk": 64,
-				"ft": 62,
-				"fg": 74,
-				"tp": 62,
-				"oiq": 70,
-				"diq": 38,
-				"drb": 60,
-				"pss": 55,
-				"reb": 52
+				"stre": 61,
+				"spd": 56,
+				"jmp": 67,
+				"endu": 62,
+				"ins": 63,
+				"dnk": 61,
+				"ft": 59,
+				"fg": 71,
+				"tp": 59,
+				"oiq": 67,
+				"diq": 35,
+				"drb": 57,
+				"pss": 52,
+				"reb": 49
 			}
 		},
 		{
@@ -911,7 +911,7 @@
 			"ppp": 1.78,
 			"convocado": 34,
 			"fichado": "15/01/2026",
-			"ovr": 56,
+			"ovr": 51,
 			"debut": {
 				"club": null,
 				"anio": 2018
@@ -942,7 +942,7 @@
 			"ppp": 1.79,
 			"convocado": 17,
 			"fichado": "13/01/2024",
-			"ovr": 55,
+			"ovr": 50,
 			"debut": {
 				"club": null,
 				"anio": 2014
@@ -973,7 +973,7 @@
 			"ppp": 1.79,
 			"convocado": 33,
 			"fichado": "06/07/2025",
-			"ovr": 54,
+			"ovr": 48,
 			"debut": {
 				"club": null,
 				"anio": 2022

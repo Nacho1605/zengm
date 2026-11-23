@@ -92,7 +92,7 @@
 			"ppp": 3,
 			"convocado": 27,
 			"fichado": "02/01/2023",
-			"ovr": 46,
+			"ovr": 38,
 			"debut": {
 				"club": "SAR",
 				"anio": 2015
@@ -115,7 +115,7 @@
 			"goles": 0,
 			"min": 0,
 			"convocado": 11,
-			"ovr": 38,
+			"ovr": 27,
 			"prospecto": true,
 			"college": "Club Atlético Belgrano"
 		},
@@ -142,7 +142,7 @@
 			"ppp": 1.85,
 			"convocado": 34,
 			"fichado": "31/08/2025",
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": "BAN",
 				"anio": 2017
@@ -172,7 +172,7 @@
 			"ppp": 1.68,
 			"convocado": 37,
 			"fichado": "06/07/2025",
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": null,
 				"anio": 2016
@@ -207,7 +207,7 @@
 			"ppp": 1.59,
 			"convocado": 31,
 			"fichado": "06/07/2025",
-			"ovr": 59,
+			"ovr": 54,
 			"debut": {
 				"club": null,
 				"anio": 2013
@@ -270,7 +270,7 @@
 			"ppp": 1.64,
 			"convocado": 27,
 			"fichado": "01/01/2026",
-			"ovr": 53,
+			"ovr": 47,
 			"debut": {
 				"club": "BEL",
 				"anio": 2026
@@ -300,7 +300,7 @@
 			"ppp": 1.66,
 			"convocado": 33,
 			"fichado": "06/07/2025",
-			"ovr": 63,
+			"ovr": 60,
 			"debut": {
 				"club": "BAN",
 				"anio": 2017
@@ -330,7 +330,7 @@
 			"ppp": 1.45,
 			"convocado": 36,
 			"fichado": "09/01/2026",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": null,
 				"anio": 2023
@@ -361,7 +361,7 @@
 			"ppp": 2.15,
 			"convocado": 28,
 			"fichado": "01/01/2026",
-			"ovr": 54,
+			"ovr": 48,
 			"debut": {
 				"club": "BEL",
 				"anio": 2026
@@ -391,7 +391,7 @@
 			"ppp": 2.08,
 			"convocado": 36,
 			"fichado": "06/01/2020",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": "BEL",
 				"anio": 2020
@@ -425,7 +425,7 @@
 			"ppp": 1.58,
 			"convocado": 35,
 			"fichado": "14/01/2026",
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "BOC",
 				"anio": 2020
@@ -456,7 +456,7 @@
 			"ppp": 1.76,
 			"convocado": 29,
 			"fichado": "01/07/2024",
-			"ovr": 59,
+			"ovr": 55,
 			"debut": {
 				"club": "BEL",
 				"anio": 2024
@@ -521,7 +521,7 @@
 			"ppp": 1.86,
 			"convocado": 38,
 			"fichado": "06/01/2024",
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": "SAN",
 				"anio": 2017
@@ -532,20 +532,20 @@
 			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/442679-1758831469.png?lm=4711",
 			"ratings": {
-				"stre": 47,
-				"spd": 53,
-				"jmp": 57,
-				"endu": 58,
-				"ins": 58,
-				"dnk": 59,
-				"ft": 62,
-				"fg": 69,
-				"tp": 80,
-				"oiq": 70,
-				"diq": 42,
-				"drb": 66,
-				"pss": 75,
-				"reb": 43
+				"stre": 45,
+				"spd": 51,
+				"jmp": 55,
+				"endu": 56,
+				"ins": 56,
+				"dnk": 57,
+				"ft": 60,
+				"fg": 67,
+				"tp": 78,
+				"oiq": 68,
+				"diq": 40,
+				"drb": 64,
+				"pss": 73,
+				"reb": 41
 			}
 		},
 		{
@@ -571,7 +571,7 @@
 			"ppp": 1.62,
 			"convocado": 39,
 			"fichado": "01/01/2025",
-			"ovr": 61,
+			"ovr": 58,
 			"debut": {
 				"club": "BEL",
 				"anio": 2025
@@ -601,7 +601,7 @@
 			"ppp": 1.62,
 			"convocado": 36,
 			"fichado": "26/01/2026",
-			"ovr": 68,
+			"ovr": 67,
 			"debut": {
 				"club": "BEL",
 				"anio": 2007
@@ -636,7 +636,7 @@
 			"ppp": 1.38,
 			"convocado": 34,
 			"fichado": "01/01/2026",
-			"ovr": 43,
+			"ovr": 34,
 			"debut": {
 				"club": "BEL",
 				"anio": 2026
@@ -666,7 +666,7 @@
 			"ppp": 3,
 			"convocado": 39,
 			"fichado": "01/01/2025",
-			"ovr": 42,
+			"ovr": 33,
 			"debut": {
 				"club": "BEL",
 				"anio": 2025
@@ -696,7 +696,7 @@
 			"ppp": 1.7,
 			"convocado": 36,
 			"fichado": "14/01/2026",
-			"ovr": 64,
+			"ovr": 63,
 			"debut": {
 				"club": "BEL",
 				"anio": 2013
@@ -719,7 +719,7 @@
 			"min": 0,
 			"convocado": 0,
 			"fichado": "01/07/2025",
-			"ovr": 43,
+			"ovr": 33,
 			"debut": {
 				"club": "BEL",
 				"anio": 2025
@@ -756,7 +756,7 @@
 			"ppp": 1.59,
 			"convocado": 36,
 			"fichado": "15/07/2024",
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "DYJ",
 				"anio": 2017
@@ -799,27 +799,27 @@
 			"ppp": 1.58,
 			"convocado": 34,
 			"fichado": "12/08/2023",
-			"ovr": 65,
+			"ovr": 64,
 			"debut": {
 				"club": "QUI",
 				"anio": 2014
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/334586-1758831368.png?lm=4711",
 			"ratings": {
-				"stre": 70,
-				"spd": 54,
-				"jmp": 60,
-				"endu": 55,
-				"ins": 63,
-				"dnk": 60,
-				"ft": 55,
-				"fg": 67,
-				"tp": 55,
-				"oiq": 68,
-				"diq": 36,
-				"drb": 54,
-				"pss": 49,
-				"reb": 46
+				"stre": 69,
+				"spd": 53,
+				"jmp": 59,
+				"endu": 54,
+				"ins": 62,
+				"dnk": 59,
+				"ft": 54,
+				"fg": 66,
+				"tp": 54,
+				"oiq": 67,
+				"diq": 35,
+				"drb": 53,
+				"pss": 48,
+				"reb": 45
 			}
 		},
 		{
@@ -845,7 +845,7 @@
 			"ppp": 1.5,
 			"convocado": 39,
 			"fichado": "01/01/2026",
-			"ovr": 52,
+			"ovr": 47,
 			"debut": {
 				"club": "BEL",
 				"anio": 2026

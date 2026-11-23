@@ -55,7 +55,7 @@
 			"ppp": 1.75,
 			"convocado": 36,
 			"fichado": "01/07/2021",
-			"ovr": 45,
+			"ovr": 37,
 			"debut": {
 				"club": "HUR",
 				"anio": 2021
@@ -92,7 +92,9 @@
 				"anio": 2008
 			},
 			"sofascore": 7.1,
-			"rasgos": ["achique"],
+			"rasgos": [
+				"achique"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/77127-1755533077.jpg?lm=4711"
 		},
 		{
@@ -111,27 +113,27 @@
 			"min": 0,
 			"convocado": 4,
 			"fichado": "01/01/2025",
-			"ovr": 35,
+			"ovr": 22,
 			"debut": {
 				"club": "HUR",
 				"anio": 2025
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1157436-1755534231.jpg?lm=4711",
 			"ratings": {
-				"stre": 48,
-				"spd": 42,
-				"jmp": 54,
-				"endu": 37,
+				"stre": 36,
+				"spd": 30,
+				"jmp": 42,
+				"endu": 25,
+				"ft": 18,
+				"oiq": 13,
+				"diq": 43,
+				"drb": 14,
+				"pss": 16,
+				"reb": 53,
 				"ins": 0,
 				"dnk": 0,
-				"ft": 30,
 				"fg": 0,
-				"tp": 0,
-				"oiq": 25,
-				"diq": 55,
-				"drb": 26,
-				"pss": 28,
-				"reb": 65
+				"tp": 0
 			}
 		},
 		{
@@ -157,7 +159,7 @@
 			"ppp": 1.48,
 			"convocado": 29,
 			"fichado": "01/01/2026",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": "HUR",
 				"anio": 2026
@@ -187,14 +189,16 @@
 			"ppp": 1.86,
 			"convocado": 36,
 			"fichado": "23/07/2025",
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": "ARS",
 				"anio": 2009
 			},
 			"sofascore": 6.96,
 			"leal": true,
-			"rasgos": ["potente"],
+			"rasgos": [
+				"potente"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/107503-1755534508.png?lm=4711"
 		},
 		{
@@ -220,14 +224,16 @@
 			"ppp": 1.43,
 			"convocado": 34,
 			"fichado": "15/08/2023",
-			"ovr": 65,
+			"ovr": 64,
 			"debut": {
 				"club": null,
 				"anio": 2011
 			},
 			"college": "Comisión de Actividades Infantiles",
 			"sofascore": 6.93,
-			"rasgos": ["recuperador"],
+			"rasgos": [
+				"recuperador"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/610248-1755534929.jpg?lm=4711"
 		},
 		{
@@ -246,7 +252,7 @@
 			"min": 0,
 			"convocado": 0,
 			"fichado": "16/01/2025",
-			"ovr": 45,
+			"ovr": 36,
 			"debut": {
 				"club": "RIV",
 				"anio": 2024
@@ -276,7 +282,7 @@
 			"ppp": 1.4,
 			"convocado": 30,
 			"fichado": "01/07/2021",
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": "HUR",
 				"anio": 2021
@@ -306,7 +312,7 @@
 			"ppp": 1.14,
 			"convocado": 34,
 			"fichado": "01/01/2025",
-			"ovr": 55,
+			"ovr": 50,
 			"debut": {
 				"club": "HUR",
 				"anio": 2025
@@ -336,12 +342,14 @@
 			"ppp": 1.36,
 			"convocado": 28,
 			"fichado": "06/03/2026",
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": "RAF",
 				"anio": 2016
 			},
-			"rasgos": ["tactico"],
+			"rasgos": [
+				"tactico"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/503348-1739896937.jpg?lm=4711"
 		},
 		{
@@ -367,7 +375,7 @@
 			"ppp": 2,
 			"convocado": 28,
 			"fichado": "14/01/2026",
-			"ovr": 56,
+			"ovr": 51,
 			"debut": {
 				"club": "UNI",
 				"anio": 2019
@@ -397,7 +405,7 @@
 			"ppp": 1.47,
 			"convocado": 33,
 			"fichado": "01/01/2026",
-			"ovr": 58,
+			"ovr": 53,
 			"debut": {
 				"club": "HUR",
 				"anio": 2026
@@ -427,7 +435,7 @@
 			"ppp": 1.5,
 			"convocado": 12,
 			"fichado": "01/08/2026",
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": null,
 				"anio": 2016
@@ -459,7 +467,7 @@
 			"ppp": 1.43,
 			"convocado": 32,
 			"fichado": "14/01/2026",
-			"ovr": 61,
+			"ovr": 57,
 			"debut": {
 				"club": "ROS",
 				"anio": 2019
@@ -489,7 +497,7 @@
 			"ppp": 1.77,
 			"convocado": 27,
 			"fichado": "01/01/2026",
-			"ovr": 49,
+			"ovr": 42,
 			"debut": {
 				"club": "HUR",
 				"anio": 2026
@@ -519,14 +527,16 @@
 			"ppp": 1.4,
 			"convocado": 35,
 			"fichado": "11/01/2025",
-			"ovr": 64,
+			"ovr": 62,
 			"debut": {
 				"club": null,
 				"anio": 2009
 			},
 			"college": "Comisión de Actividades Infantiles",
 			"sofascore": 6.92,
-			"rasgos": ["pulmon"],
+			"rasgos": [
+				"pulmon"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/125907-1755536204.jpg?lm=4711"
 		},
 		{
@@ -552,7 +562,7 @@
 			"ppp": 1.65,
 			"convocado": 34,
 			"fichado": "01/01/2026",
-			"ovr": 60,
+			"ovr": 56,
 			"debut": {
 				"club": "HUR",
 				"anio": 2025
@@ -575,7 +585,7 @@
 			"min": 0,
 			"convocado": 0,
 			"fichado": "01/01/2023",
-			"ovr": 46,
+			"ovr": 37,
 			"debut": {
 				"club": "HUR",
 				"anio": 2023
@@ -609,7 +619,7 @@
 			"ppp": 1.48,
 			"convocado": 31,
 			"fichado": "24/07/2025",
-			"ovr": 65,
+			"ovr": 64,
 			"debut": {
 				"club": null,
 				"anio": 2014
@@ -641,7 +651,7 @@
 			"ppp": 0.95,
 			"convocado": 34,
 			"fichado": "01/01/2026",
-			"ovr": 51,
+			"ovr": 45,
 			"debut": {
 				"club": "HUR",
 				"anio": 2026
@@ -671,7 +681,7 @@
 			"ppp": 1.45,
 			"convocado": 31,
 			"fichado": "18/02/2026",
-			"ovr": 58,
+			"ovr": 54,
 			"debut": {
 				"club": null,
 				"anio": 2012
@@ -683,7 +693,9 @@
 					"nombre": "Ángel Romero"
 				}
 			],
-			"rasgos": ["pase"],
+			"rasgos": [
+				"pase"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/217886-1646343469.JPG?lm=4711"
 		},
 		{
@@ -709,7 +721,7 @@
 			"ppp": 1.44,
 			"convocado": 34,
 			"fichado": "14/01/2026",
-			"ovr": 65,
+			"ovr": 64,
 			"debut": {
 				"club": null,
 				"anio": 2022
@@ -740,7 +752,7 @@
 			"ppp": 1.42,
 			"convocado": 36,
 			"fichado": "01/07/2025",
-			"ovr": 59,
+			"ovr": 55,
 			"debut": {
 				"club": "ATL",
 				"anio": 2021
@@ -770,7 +782,7 @@
 			"ppp": 1,
 			"convocado": 12,
 			"fichado": "30/06/2026",
-			"ovr": 43,
+			"ovr": 33,
 			"debut": {
 				"club": "HUR",
 				"anio": 2026
@@ -800,13 +812,16 @@
 			"ppp": 1.41,
 			"convocado": 29,
 			"fichado": "14/01/2026",
-			"ovr": 68,
+			"ovr": 67,
 			"debut": {
 				"club": null,
 				"anio": 2012
 			},
 			"college": "Club Sport Norte América",
-			"rasgos": ["aereo", "potente"],
+			"rasgos": [
+				"aereo",
+				"potente"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/360412-1760543461.jpg?lm=4711"
 		},
 		{
@@ -832,13 +847,15 @@
 			"ppp": 1,
 			"convocado": 7,
 			"fichado": "02/09/2026",
-			"ovr": 57,
+			"ovr": 52,
 			"debut": {
 				"club": null,
 				"anio": 2021
 			},
 			"college": "Club Deportivo Universidad Católica",
-			"rasgos": ["habilidoso"],
+			"rasgos": [
+				"habilidoso"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/737920-1771862665.jpg?lm=4711"
 		},
 		{
@@ -864,13 +881,15 @@
 			"ppp": 1.1,
 			"convocado": 10,
 			"fichado": "31/07/2026",
-			"ovr": 62,
+			"ovr": 59,
 			"debut": {
 				"club": "RAF",
 				"anio": 2013
 			},
 			"leal": true,
-			"rasgos": ["goleador"],
+			"rasgos": [
+				"goleador"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/283528-1630653500.jpg?lm=4711"
 		}
 	],

@@ -71,7 +71,7 @@
 			"goles": 0,
 			"min": 2070,
 			"fichado": "17/07/2026",
-			"ovr": 69,
+			"ovr": 68,
 			"debut": {
 				"club": "SLO",
 				"anio": 2015
@@ -93,7 +93,7 @@
 			"pj": 17,
 			"goles": 0,
 			"min": 1400,
-			"ovr": 55,
+			"ovr": 50,
 			"debut": {
 				"club": "AND",
 				"anio": 2021
@@ -114,7 +114,7 @@
 			"pj": 13,
 			"goles": 0,
 			"min": 1084,
-			"ovr": 63,
+			"ovr": 60,
 			"debut": {
 				"club": "LAN",
 				"anio": 2008
@@ -140,7 +140,7 @@
 			"pj": 1,
 			"goles": 0,
 			"min": 66,
-			"ovr": 38,
+			"ovr": 28,
 			"debut": {
 				"club": "BOC",
 				"anio": 2008
@@ -187,7 +187,7 @@
 				"club": "IND",
 				"anio": 2020
 			},
-			"ovr": 67,
+			"ovr": 65,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEbqPjwwbEFZJNc5KOVCIEOFx0v-AKe9kCOjjciGuww&s=10"
 		},
 		{
@@ -208,7 +208,7 @@
 				"club": "BOC",
 				"anio": 2026
 			},
-			"ovr": 62,
+			"ovr": 58,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Mz7V-ezUajKPQHOPvkDoQOqXqWZwur83dGCIlbF-iw&s"
 		},
 		{
@@ -229,7 +229,7 @@
 				"club": "PLA",
 				"anio": 2023
 			},
-			"ovr": 60,
+			"ovr": 55,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgF97Nxd3cXE5WaAEl6ieotvLZcLfuD2wMBZEzKWlqaA&s=10",
 			"rasgos": [
 				"tactico"
@@ -251,7 +251,7 @@
 			"min": 91,
 			"prospecto": true,
 			"college": "Club Atlético Boca Juniors",
-			"ovr": 45,
+			"ovr": 37,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1243852-1762504967.jpg?lm=4711"
 		},
 		{
@@ -272,7 +272,7 @@
 				"club": "IND",
 				"anio": 2014
 			},
-			"ovr": 56,
+			"ovr": 50,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGOTaDtSSgt3Uoy-n_30t895RI-P78-uiqPdrX-WMYcA&s"
 		},
 		{
@@ -314,7 +314,7 @@
 				"club": "INS",
 				"anio": 2018
 			},
-			"ovr": 58,
+			"ovr": 53,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStTiukQWP_GXXy9zbWdqgb2azPnuMHWxVrfUWhcJ2CMg&s=10"
 		},
 		{
@@ -337,7 +337,7 @@
 				"anio": 2019
 			},
 			"college": "Club Atlético Boston River",
-			"ovr": 64,
+			"ovr": 62,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVgNRq8UT8uktIzwurCvGl6n9SUZRqveUktk_zo29pcw&s=10"
 		},
 		{
@@ -358,7 +358,7 @@
 				"club": "BOC",
 				"anio": 2026
 			},
-			"ovr": 56,
+			"ovr": 51,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_uwl_wl6LdEtY93XjikRzWzAHw5h94je_kRVomghYAg&s"
 		},
 		{
@@ -379,7 +379,7 @@
 				"club": "BOC",
 				"anio": 2024
 			},
-			"ovr": 69,
+			"ovr": 68,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCa8Vej5aAmzf1141WFwzcssJDVhncxwZ_6DAZUy5h4Q&s=10"
 		},
 		{
@@ -400,7 +400,7 @@
 				"club": "EST",
 				"anio": 2016
 			},
-			"ovr": 68,
+			"ovr": 67,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmbqX2qeDzUyl8o-MNNDV_1HdutWiixnJg_xlahKf0kg&s=10",
 			"rasgos": [
 				"recuperador"
@@ -454,7 +454,7 @@
 				"club": "LAN",
 				"anio": 2018
 			},
-			"ovr": 62,
+			"ovr": 58,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfP76n8W3zyzHLUZnurwHbwspaw8oMSnb9U-o4gzhz_Q&s"
 		},
 		{
@@ -475,7 +475,7 @@
 				"club": "BOC",
 				"anio": 2025
 			},
-			"ovr": 50,
+			"ovr": 44,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdeMX-Px8d8AwhJH0XJqsI_8KKetQAn6jVI5yr8nU2JA&s"
 		},
 		{
@@ -496,7 +496,7 @@
 				"club": "HUR",
 				"anio": 2011
 			},
-			"ovr": 51,
+			"ovr": 44,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhOfgv_yokSMuvp-yyfa2GEdZ6gPlXXBPaZa64xf9iLg&s=10"
 		},
 		{
@@ -518,7 +518,7 @@
 				"anio": 2019
 			},
 			"college": "Club Social y Deportivo Colo-Colo",
-			"ovr": 55,
+			"ovr": 50,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRN_mBvmPGlb7P3iSvto2hSWqpMvgMbxony4BaNUGXDg&s=10"
 		},
 		{
@@ -539,7 +539,7 @@
 				"club": "ARG",
 				"anio": 2012
 			},
-			"ovr": 42,
+			"ovr": 32,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuXYHKMH1rWvUyx-lYmt6O2nIL5PEPTTdtvdJr5kkANQ&s=10"
 		},
 		{
@@ -560,7 +560,7 @@
 				"club": "BOC",
 				"anio": 2026
 			},
-			"ovr": 66,
+			"ovr": 64,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa68gtERiXK_eVn6F3HCcK6nK-e4zMIMF0WYbJOHAYuw&s=10"
 		},
 		{
@@ -582,7 +582,7 @@
 				"anio": 2018
 			},
 			"college": "Unión Española",
-			"ovr": 55,
+			"ovr": 49,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTREygJjSel69MiIKSvai38GRfxCXqBXMjTHsnkiMXAZg&s=10"
 		},
 		{
@@ -629,7 +629,7 @@
 				"club": "IND",
 				"anio": 2020
 			},
-			"ovr": 62,
+			"ovr": 59,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5wdX2XYdxaIyqblazYF9Y6FzDOsnoyL7cqa3QPCToQ&s=10"
 		},
 		{
@@ -679,7 +679,7 @@
 				"tipo": "Desgarro muscular",
 				"partidos": 3
 			},
-			"ovr": 55,
+			"ovr": 50,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPzGjM5lB_KnvqIQR8u6uYkiKm7wMddP5PkiC6QxLhRw&s=10"
 		},
 		{
@@ -726,7 +726,7 @@
 				"anio": 2015
 			},
 			"college": "Club Olimpia",
-			"ovr": 61,
+			"ovr": 58,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSClRSoesmOycWolp_bcxMOj6yUYPPuCW_ooTWjLoXRtA&s=10"
 		},
 		{
@@ -747,7 +747,7 @@
 				"club": "ATL",
 				"anio": 2015
 			},
-			"ovr": 57,
+			"ovr": 52,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR1Ey8kXIIDBrSJzlSAR9auMiJWiTHTZ6KCePjE8vnDA&s=10",
 			"rasgos": [
 				"potente"
@@ -773,7 +773,7 @@
 				"anio": 2010
 			},
 			"college": "Club Sport Emelec",
-			"ovr": 65,
+			"ovr": 64,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Ony12tvhm8P8R9DUfr_eTcSitJdEQBlB4UR2_DtjWg&s=10",
 			"rasgos": ["aereo"]
 		}
