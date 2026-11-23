@@ -24,8 +24,14 @@ RAC (22 salidas; Sofascore de S. Sosa en su salida) y SLO (12 salidas;
 Sofascore de Gill en su salida), IND (22 salidas; reemplazan a las 2 que
 había dado el usuario, con su nota; Ávalos con Sofascore 7,03; "Walter
 Mazzantti" de Transfermarkt = Mazzanti de NOB), ROS (22 salidas; Marco
-Ruben dado en texto), EST (16 salidas). ARG: 1 de 3 imágenes en
-`rendimiento/ARG.mjs` (sin aplicar). Sigue: ARG, VEL, IRM, GIM, LAN. Con EST
+Ruben dado en texto), EST (16 salidas), ARG (15 salidas; Lescano con
+Sofascore 7,10; "Matías Giménez" de la captura = Giménez Rojas) y VEL (15
+salidas; Montero con su mitad en Vélez: 17 PJ, 1530'). Sigue: IRM, GIM,
+LAN. Los +1 PJ de casi todos son los playoffs del Clausura en curso (el
+usuario, 23/11: primera ronda; Central 3-1 a Gimnasia de Mendoza). Con ARG
+aparece Fattori (ARG 21 PJ, 1861' → TAL: su 66 se valoró solo con TAL;
+revisar), Lucas Gómez (ARG → NOB), Iván Morales (ARG → IND) y Kevin
+Gutiérrez figura en ARG (17 PJ). Con EST
 aparecen Ascacíbar (EST 2 PJ → BOC) y Farías (EST 19 PJ, 857' → SLO: su 66
 se valoró solo con SLO; revisar). Nombres de pila compuestos en las salidas ("Juan Fernando" Quintero,
 "José María" Ingratti): el script los reconoce. Nuevos

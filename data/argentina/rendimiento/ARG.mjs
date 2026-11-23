@@ -1,4 +1,4 @@
-// Argentinos Juniors, Rendimiento 2026 (capturas del usuario del 23/11/2026). FALTAN 2 de 3 imágenes.
+// Argentinos Juniors, Rendimiento 2026 (capturas del usuario del 23/11/2026).
 // [nombre, posición, edad, país, [convocado, pj, goles, asist, amarillas, dobleAmarilla, rojas, entro, salio, ppp, min]]
 export const FECHA = "23/11/2026";
 export const FILAS = [
@@ -19,5 +19,36 @@ export const FILAS = [
 	["Érik Godoy", "Defensa central", 33, "Argentina", [30, 20, 1, 0, 1, 0, 0, 9, 1, 1.9, 1064]],
 	["Sebastián Prieto", "Lateral izquierdo", 33, "Argentina", [37, 36, 3, 3, 9, 0, 1, 1, 14, 1.86, 2966]],
 	["Luciano Sánchez", "Lateral derecho", 32, "Argentina", [0, 0]],
-	// FALTAN las imágenes 2 y 3
+	["Santino Gianini", "Defensa central", 18, "Argentina", [9, 1, 0, 0, 0, 0, 0, 1, 0, 3.0, 71]],
+	["Thiago Gómez", "Defensa central", 20, "Argentina", [5, 1, 0, 0, 0, 0, 0, 1, 0, 3.0, 3]],
+	["Thiago Yánez", "Defensa central", 18, "Argentina", [1, 0]],
+	["Santiago Silveira", "Lateral derecho", 18, "Argentina", [0, 0]],
+	["Alan Lescano", "Mediocentro ofensivo", 25, "Argentina", [28, 28, 6, 0, 6, 0, 0, 0, 15, 1.82, 2369]],
+	["Hernán López Muñoz", "Mediocentro ofensivo", 26, "Argentina", [34, 32, 4, 3, 0, 0, 1, 8, 21, 1.63, 1881]],
+	["Kevin Gutiérrez", "Pivote", 29, "Argentina", [17, 17, 1, 0, 1, 0, 0, 1, 4, 1.82, 1376]],
+	["Joaquín Gho", "Interior derecho", 23, "Argentina", [6, 0]],
+	["Nicolás Oroz", "Mediocentro ofensivo", 32, "Argentina", [39, 38, 2, 4, 4, 0, 0, 2, 24, 1.79, 2959]],
+	["Federico Fattori", "Pivote", 34, "Argentina", [21, 21, 0, 0, 6, 0, 0, 0, 4, 1.81, 1861]],
+	["Gabriel Florentín", "Mediocentro ofensivo", 27, "Argentina", [24, 14, 0, 1, 2, 0, 0, 12, 2, 1.29, 306]],
+	["Francis Mac Allister", "Pivote", 31, "Argentina", [1, 1, 0, 0, 0, 0, 0, 1, 0, 0.0, 39]],
+	["Gino Infantino", "Mediocentro", 23, "Argentina", [22, 3, 0, 0, 0, 0, 0, 3, 0, 1.33, 51]],
+	["Lucas Gómez", "Mediocentro", 22, "Argentina", [24, 11, 0, 0, 0, 0, 0, 9, 1, 2.0, 325]],
+	["Enzo Pérez", "Pivote", 40, "Argentina", [15, 10, 0, 0, 0, 0, 0, 8, 2, 1.7, 236]],
+	["Federico Mancuello", "Mediocentro", 37, "Argentina", [3, 0]],
+	["Facundo Carrizo", "Mediocentro ofensivo", 19, "Argentina", [21, 10, 0, 0, 2, 0, 0, 4, 4, 1.5, 534]],
+	["Gastón Bouhier", "Mediocentro ofensivo", 18, "Argentina", [5, 0]],
+	["Tomás Molina", "Delantero centro", 31, "Argentina", [34, 33, 5, 3, 4, 0, 0, 7, 16, 1.85, 2493]],
+	["Facundo Jainikoski", "Delantero centro", 18, "Argentina", [38, 27, 1, 2, 0, 0, 0, 19, 7, 1.78, 943]],
+	["Gastón Verón", "Delantero centro", 25, "Argentina", [18, 17, 5, 2, 2, 0, 0, 2, 11, 1.82, 1171]],
+	["Iván Morales", "Delantero centro", 27, "Chile", [24, 18, 2, 2, 2, 0, 0, 7, 10, 1.83, 1019]],
+	// "Matías Giménez" en la captura
+	["Matías Giménez Rojas", "Delantero centro", 27, "Argentina", [16, 15, 3, 1, 1, 0, 0, 11, 4, 1.87, 402]],
+	["Lautaro Giaccone", "Extremo derecho", 25, "Argentina", [19, 14, 0, 0, 0, 0, 0, 10, 3, 1.86, 542]],
+	["Emiliano Viveros", "Extremo izquierdo", 24, "Argentina", [27, 21, 1, 3, 1, 0, 0, 6, 15, 1.52, 1155]],
+	["Diego Porcel", "Delantero centro", 21, "Argentina", [38, 33, 4, 0, 5, 1, 0, 20, 9, 1.64, 1312]],
+	["Leandro Fernández", "Delantero centro", 35, "Argentina", [18, 10, 0, 1, 1, 0, 0, 9, 1, 1.2, 231]],
+	["Alan Alcaraz", "Delantero centro", 17, "Argentina", [14, 4, 0, 0, 0, 0, 0, 4, 0, 1.0, 88]],
+	["Ryoga Kida", "Delantero centro", 21, "Japan", [12, 5, 1, 0, 0, 0, 0, 5, 0, 1.2, 89]],
+	["Rodrigo Fernández", "Extremo izquierdo", 19, "Argentina", [1, 0]],
+	["Benjamín Rey", "Delantero centro", 19, "Argentina", [1, 0]],
 ];
