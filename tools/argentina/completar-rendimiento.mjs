@@ -65,6 +65,10 @@ const extra = (o) => {
 	return o;
 };
 for (const o of salidas) extra(o);
+// Las que estaban y no figuran en la captura nueva se conservan
+for (const p of previas) {
+	if (!salidas.some((o) => norm(`${o.nombre} ${o.apellido}`) === norm(`${p.nombre} ${p.apellido}`))) salidas.push(p);
+}
 const fmt = (o) => "\t\t{ " + Object.entries(o).map(([k, v]) => `${JSON.stringify(k)}: ${JSON.stringify(v)}`).join(", ") + " }";
 const i = txt.lastIndexOf("]");
 const sinPrevias = previas.length ? txt.split("\n").filter((l) => !l.includes(`"club": "${eq}"`)).join("\n").replace(/,\n\t\]/, "\n\t]") : txt;

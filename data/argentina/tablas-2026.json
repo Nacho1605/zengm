@@ -418,5 +418,32 @@
 			{ "jugador": "Gabriel Ávalos", "equipo": "IND", "goles": 11 },
 			{ "jugador": "Miguel Merentiel", "equipo": "BOC", "goles": 10 }
 		]
+	},
+	"equipoIdealApertura": {
+		"_nota": "Equipo Ideal del Torneo Apertura 2026, dato del usuario (23/11/2026). Formación 4-4-1-1 con 9 suplentes. Equipos de cuando jugaban el Apertura (INR = IRM). \"Tiago Palacios\" como central, tal como lo escribió el usuario (el central de EST es Tomás Palacios).",
+		"titulares": [
+			{ "pos": "GK", "jugador": "Álvaro Montero", "equipo": "VEL" },
+			{ "pos": "CB", "jugador": "Tiago Palacios", "equipo": "EST" },
+			{ "pos": "CB", "jugador": "Lisandro López", "equipo": "BEL" },
+			{ "pos": "RB", "jugador": "Leandro Lozano", "equipo": "ARG" },
+			{ "pos": "LB", "jugador": "Marcos Acuña", "equipo": "RIV" },
+			{ "pos": "MF", "jugador": "Matías Fernández", "equipo": "IRM" },
+			{ "pos": "MF", "jugador": "Federico Fattori", "equipo": "ARG" },
+			{ "pos": "MF", "jugador": "Leandro Paredes", "equipo": "BOC" },
+			{ "pos": "MF", "jugador": "Ángel Di María", "equipo": "ROS" },
+			{ "pos": "AM", "jugador": "Lucas Zelarayán", "equipo": "BEL", "mvp": true },
+			{ "pos": "CF", "jugador": "Gabriel Ávalos", "equipo": "IND" }
+		],
+		"suplentes": [
+			{ "jugador": "Santiago Beltrán", "equipo": "RIV" },
+			{ "jugador": "Sheyko Studer", "equipo": "IRM" },
+			{ "jugador": "Francisco Álvarez", "equipo": "ARG" },
+			{ "jugador": "Mateo Del Blanco", "equipo": "UNI" },
+			{ "jugador": "Santiago Arias", "equipo": "IND" },
+			{ "jugador": "Aníbal Moreno", "equipo": "RIV" },
+			{ "jugador": "Julián Palacios", "equipo": "UNI" },
+			{ "jugador": "Nicolás Fernández", "equipo": "BEL" },
+			{ "jugador": "Cristian Tarragona", "equipo": "UNI" }
+		]
 	}
 }

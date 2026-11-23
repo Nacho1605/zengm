@@ -1,0 +1,38 @@
+// Gimnasia LP, Rendimiento 2026 (capturas del usuario del 23/11/2026). FALTA la tercera imagen.
+// [nombre, posición, edad, país, [convocado, pj, goles, asist, amarillas, dobleAmarilla, rojas, entro, salio, ppp, min]]
+export const FECHA = "23/11/2026";
+export const FILAS = [
+	["Nelson Insfrán", "Portero", 31, "Argentina", [35, 30, 0, 0, 2, 0, 0, 0, 1, 1.8, 2638]],
+	["Harlen Castillo", "Portero", 33, "Colombia", [12, 5, 0, 0, 2, 0, 0, 0, 0, 2.4, 450]],
+	["Julián Kadijevic", "Portero", 22, "Argentina", [24, 2, 0, 0, 0, 0, 0, 1, 0, 1.5, 152]],
+	["Máximo Cabrera", "Portero", 20, "Argentina", [2, 1, 0, 0, 0, 0, 0, 0, 0, 0.0, 90]],
+	["Patricio Schroeder", "Portero", 19, "Argentina", [1, 0]],
+	["Alexis Steimbach", "Lateral derecho", 24, "Argentina", [33, 32, 2, 5, 9, 1, 1, 6, 2, 1.78, 2353]],
+	["Renzo Giampaoli", "Defensa central", 26, "Argentina", [32, 27, 1, 0, 5, 0, 0, 9, 4, 1.74, 1783]],
+	["Enzo Martínez", "Defensa central", 28, "Uruguay", [35, 33, 2, 0, 5, 0, 1, 0, 0, 1.82, 2935]],
+	["Pedro Silva Torrejón", "Lateral izquierdo", 29, "Argentina", [35, 35, 1, 4, 2, 0, 0, 0, 11, 1.77, 2930]],
+	["Juan Cortazzo", "Defensa central", 21, "Argentina", [28, 13, 0, 0, 1, 0, 0, 10, 1, 1.54, 446]],
+	["Bautista Barros Schelotto", "Lateral derecho", 26, "Argentina", [23, 16, 1, 1, 3, 0, 0, 4, 6, 1.75, 1059]],
+	["Gonzalo González", "Lateral derecho", 23, "Argentina", [11, 1, 0, 0, 0, 0, 0, 1, 0, 0.0, 2]],
+	["Matías Melluso", "Lateral izquierdo", 28, "Argentina", [28, 11, 0, 1, 0, 0, 0, 9, 1, 1.55, 358]],
+	["Gonzalo Errecalde", "Defensa central", 26, "Argentina", [16, 5, 0, 1, 1, 0, 0, 1, 3, 1.2, 230]],
+	["Germán Conti", "Defensa central", 32, "Argentina", [20, 17, 2, 0, 3, 1, 0, 1, 1, 2.12, 1411]],
+	["Diego Mastrángelo", "Defensa central", 24, "Argentina", [12, 5, 0, 0, 1, 0, 0, 5, 0, 0.8, 84]],
+	["Fabricio Corbalán", "Lateral derecho", 23, "Argentina", [0, 0]],
+	["Alejo Gelsomino", "Lateral izquierdo", 21, "Argentina", [5, 1, 0, 0, 0, 0, 0, 1, 0, 3.0, 45]],
+	["Mariano Ojeda", "Lateral izquierdo", 19, "Argentina", [6, 1, 0, 0, 0, 0, 0, 1, 0, 1.0, 2]],
+	["Lucas Lamella", "Defensa central", 16, "Argentina", [8, 1, 0, 0, 0, 0, 0, 1, 0, 3.0, 3]],
+	["Jeremías Langa", "Defensa central", 21, "Argentina", [4, 0]],
+	["Nicolás Barros Schelotto", "Pivote", 20, "Argentina", [36, 27, 4, 4, 7, 0, 0, 3, 22, 1.78, 1712]],
+	["Ignacio Miramón", "Pivote", 23, "Argentina", [30, 30, 1, 0, 14, 0, 0, 2, 9, 1.87, 2347]],
+	["Mateo Seoane", "Pivote", 22, "Argentina", [28, 22, 1, 0, 3, 0, 0, 4, 12, 2.32, 1543]],
+	["Facundo Di Biasi", "Pivote", 21, "Argentina", [3, 3, 0, 0, 1, 0, 0, 3, 0, 3.0, 56]],
+	["Nacho Fernández", "Mediocentro ofensivo", 36, "Argentina", [35, 34, 6, 7, 15, 0, 0, 0, 17, 1.68, 2831]],
+	["Juan Pérez", "Mediocentro ofensivo", 22, "Colombia", [20, 7, 0, 0, 0, 0, 0, 5, 2, 1.0, 222]],
+	["Lucas Castro", "Mediocentro ofensivo", 37, "Argentina", [18, 13, 0, 0, 0, 0, 0, 9, 4, 1.77, 370]],
+	["Augusto Max", "Mediocentro", 34, "Argentina", [35, 25, 0, 1, 8, 0, 1, 6, 8, 1.88, 1635]],
+	["Pablo Aguiar", "Pivote", 20, "Argentina", [32, 7, 0, 0, 0, 0, 0, 4, 2, 2.14, 268]],
+	["Leandro Mamut", "Mediocentro ofensivo", 22, "Argentina", [0, 0]],
+	["Santiago Villarreal", "Mediocentro ofensivo", 21, "Argentina", [9, 2, 0, 0, 0, 0, 0, 2, 1, 1.5, 51]],
+	// FALTA la tercera imagen
+];

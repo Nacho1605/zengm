@@ -1,14 +1,6 @@
 {
 	"_nota": "Jugadores que figuran en el Rendimiento 2026 de un club pero ya no están en su plantel (se fueron). Se guardan sus números por si aparecen en otro equipo. Columnas de Transfermarkt: convocado, pj, goles, asist, amarillas, doble amarilla, rojas, entro (ingresó desde el banco), salio (fue reemplazado), ppp (puntos por partido) y min.",
 	"jugadores": [
-		{ "club": "IRM", "nombre": "Nahuel", "apellido": "Arena", "pos": "Defensa central", "edad": 28, "pais": "Argentina", "convocado": 10, "pj": 0 },
-		{ "club": "IRM", "nombre": "Matías", "apellido": "Salvo", "pos": "Lateral izquierdo", "edad": 22, "pais": "Argentina", "convocado": 4, "pj": 1, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 1, "salio": 0, "ppp": 1, "min": 6 },
-		{ "club": "IRM", "nombre": "Luciano", "apellido": "Suárez", "pos": "Defensa central", "edad": 22, "pais": "Argentina", "convocado": 1, "pj": 0 },
-		{ "club": "IRM", "nombre": "Tomás", "apellido": "Muro", "pos": "Mediocentro", "edad": 24, "pais": "Argentina", "convocado": 2, "pj": 0 },
-		{ "club": "IRM", "nombre": "Facundo", "apellido": "Ortiz", "pos": "Mediocentro", "edad": 20, "pais": "Argentina", "convocado": 1, "pj": 0 },
-		{ "club": "IRM", "nombre": "Sebastián", "apellido": "Villa", "pos": "Extremo izquierdo", "edad": 30, "pais": "Colombia", "convocado": 20, "pj": 20, "goles": 3, "asist": 8, "amarillas": 2, "dobleAmarilla": 0, "rojas": 0, "entro": 3, "salio": 0, "ppp": 2.15, "min": 1611 },
-		{ "club": "IRM", "nombre": "Bautista", "apellido": "Dadín", "pos": "Delantero centro", "edad": 20, "pais": "Argentina", "convocado": 15, "pj": 7, "goles": 0, "asist": 0, "amarillas": 1, "dobleAmarilla": 0, "rojas": 0, "entro": 7, "salio": 0, "ppp": 1.71, "min": 100 },
-		{ "club": "IRM", "nombre": "Luciano", "apellido": "Sábato", "pos": "Delantero centro", "edad": 18, "pais": "Argentina", "convocado": 14, "pj": 3, "goles": 0, "asist": 0, "amarillas": 2, "dobleAmarilla": 0, "rojas": 0, "entro": 2, "salio": 1, "ppp": 0.33, "min": 93 },
 		{ "club": "GIM", "nombre": "Máximo", "apellido": "Cabrera", "pos": "Portero", "edad": 20, "pais": "Argentina", "convocado": 2, "pj": 1, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 0, "salio": 0, "ppp": 0, "min": 90 },
 		{ "club": "GIM", "nombre": "Patricio", "apellido": "Schroeder", "pos": "Portero", "edad": 19, "pais": "Ireland", "convocado": 1, "pj": 0 },
 		{ "club": "GIM", "nombre": "Gonzalo", "apellido": "González", "pos": "Lateral derecho", "edad": 23, "pais": "Argentina", "convocado": 11, "pj": 1, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 1, "salio": 0, "ppp": 0, "min": 2 },
@@ -327,6 +319,14 @@
 		{ "club": "VEL", "nombre": "Michael", "apellido": "Santos", "pos": "Delantero centro", "edad": 33, "pais": "Uruguay", "convocado": 1, "pj": 1, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 1, "salio": 0, "ppp": 3, "min": 4 },
 		{ "club": "VEL", "nombre": "Rodrigo", "apellido": "Piñeiro", "pos": "Extremo derecho", "edad": 27, "pais": "Uruguay", "convocado": 11, "pj": 1, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 1, "salio": 0, "ppp": 3, "min": 25 },
 		{ "club": "VEL", "nombre": "Lautaro", "apellido": "Piola", "pos": "Delantero centro", "edad": 18, "pais": "Argentina", "convocado": 18, "pj": 2, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 2, "salio": 0, "ppp": 0.5, "min": 2 },
-		{ "club": "VEL", "nombre": "Imanol", "apellido": "Machuca", "pos": "Extremo derecho", "edad": 26, "pais": "Malaysia", "convocado": 6, "pj": 4, "goles": 0, "asist": 0, "amarillas": 1, "dobleAmarilla": 0, "rojas": 0, "entro": 2, "salio": 2, "ppp": 2, "min": 154 }
+		{ "club": "VEL", "nombre": "Imanol", "apellido": "Machuca", "pos": "Extremo derecho", "edad": 26, "pais": "Malaysia", "convocado": 6, "pj": 4, "goles": 0, "asist": 0, "amarillas": 1, "dobleAmarilla": 0, "rojas": 0, "entro": 2, "salio": 2, "ppp": 2, "min": 154 },
+		{ "club": "IRM", "nombre": "Nahuel", "apellido": "Arena", "pos": "Defensa central", "edad": 28, "pais": "Argentina", "convocado": 10, "pj": 0 },
+		{ "club": "IRM", "nombre": "Matías", "apellido": "Salvo", "pos": "Lateral izquierdo", "edad": 22, "pais": "Argentina", "convocado": 4, "pj": 1, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 1, "salio": 0, "ppp": 1, "min": 6 },
+		{ "club": "IRM", "nombre": "Luciano", "apellido": "Suárez", "pos": "Defensa central", "edad": 22, "pais": "Argentina", "convocado": 1, "pj": 0 },
+		{ "club": "IRM", "nombre": "Tomás", "apellido": "Muro", "pos": "Mediocentro", "edad": 24, "pais": "Argentina", "convocado": 2, "pj": 0 },
+		{ "club": "IRM", "nombre": "Facundo", "apellido": "Ortiz", "pos": "Mediocentro", "edad": 20, "pais": "Argentina", "convocado": 1, "pj": 0 },
+		{ "club": "IRM", "nombre": "Sebastián", "apellido": "Villa", "pos": "Extremo izquierdo", "edad": 30, "pais": "Colombia", "convocado": 20, "pj": 20, "goles": 3, "asist": 8, "amarillas": 2, "dobleAmarilla": 0, "rojas": 0, "entro": 3, "salio": 0, "ppp": 2.15, "min": 1611 },
+		{ "club": "IRM", "nombre": "Bautista", "apellido": "Dadín", "pos": "Delantero centro", "edad": 20, "pais": "Argentina", "convocado": 15, "pj": 7, "goles": 0, "asist": 0, "amarillas": 1, "dobleAmarilla": 0, "rojas": 0, "entro": 7, "salio": 0, "ppp": 1.71, "min": 100 },
+		{ "club": "IRM", "nombre": "Luciano", "apellido": "Sábato", "pos": "Delantero centro", "edad": 18, "pais": "Argentina", "convocado": 14, "pj": 3, "goles": 0, "asist": 0, "amarillas": 2, "dobleAmarilla": 0, "rojas": 0, "entro": 2, "salio": 1, "ppp": 0.33, "min": 93 }
 	]
 }

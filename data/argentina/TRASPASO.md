@@ -26,8 +26,11 @@ había dado el usuario, con su nota; Ávalos con Sofascore 7,03; "Walter
 Mazzantti" de Transfermarkt = Mazzanti de NOB), ROS (22 salidas; Marco
 Ruben dado en texto), EST (16 salidas), ARG (15 salidas; Lescano con
 Sofascore 7,10; "Matías Giménez" de la captura = Giménez Rojas) y VEL (15
-salidas; Montero con su mitad en Vélez: 17 PJ, 1530'). Sigue: IRM, GIM,
-LAN. Los +1 PJ de casi todos son los playoffs del Clausura en curso (el
+salidas; Montero con su mitad en Vélez: 17 PJ, 1530'), IRM (8 salidas,
+las mismas que ya estaban; números iguales). GIM: 2 de 3 imágenes en
+`rendimiento/GIM.mjs` (sin aplicar). Sigue: GIM y LAN. Equipo Ideal del
+Apertura 2026 (dato del usuario) en `tablas-2026.json`
+(`equipoIdealApertura`; MVP Zelarayán; Fattori titular con ARG). Los +1 PJ de casi todos son los playoffs del Clausura en curso (el
 usuario, 23/11: primera ronda; Central 3-1 a Gimnasia de Mendoza). Con ARG
 aparece Fattori (ARG 21 PJ, 1861' → TAL: su 66 se valoró solo con TAL;
 revisar), Lucas Gómez (ARG → NOB), Iván Morales (ARG → IND) y Kevin
