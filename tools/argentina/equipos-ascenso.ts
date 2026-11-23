@@ -1,3 +1,5 @@
+// OBSOLETO (fase 1): usaba el formato viejo de equipos.csv. Desde la v2.23.3
+// equipos.csv tiene otro formato (ver equipos-csv.ts); no correr.
 // Agrega como equipos inactivos a los clubes del ascenso 2026 (Primera
 // Nacional, Federal A, Primera B Metropolitana y Primera C Metropolitana),
 // elimina los inactivos que no juegan en esas categorías y crea la división

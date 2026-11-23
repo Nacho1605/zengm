@@ -6,11 +6,12 @@
 //
 // Cada club va a la división regional de su provincia. Los datos de cada club
 // (apodo, logo, colores, estadio, población) los completa el usuario en el
-// juego y se guardan en data/argentina/equipos-usuario.json.
+// juego y se guardan en data/argentina/equipos.csv.
 //
 // También: Colón vuelve a ser "Santa Fe Fishermen", porque Huracán de Goya usa
 // "Shads".
 
+import { CAMPOS, leerEquipos, valorJuego } from "./equipos-csv.ts";
 import { readFileSync, writeFileSync } from "node:fs";
 
 const [input, output] = process.argv.slice(2);
@@ -89,33 +90,28 @@ for (const [abbrev, region, name, club, ref] of EQUIPOS) {
 	tid += 1;
 }
 
-// Datos que el usuario editó en el juego (data/argentina/equipos-usuario.json,
-// por tid): nombres, logos, colores, camisetas, población y estadio
-const usuario = JSON.parse(
-	readFileSync(
-		new URL("../../data/argentina/equipos-usuario.json", import.meta.url),
-		"utf8",
-	),
-);
-for (const [tidStr, datos] of Object.entries<any>(usuario.equipos)) {
-	const t = league.teams.find((t2: any) => t2.tid === Number(tidStr));
-	if (!t) {
-		throw new Error(`equipos-usuario.json: no existe el tid ${tidStr}`);
-	}
-	const { _equipo, ...campos } = datos;
-	Object.assign(t, campos);
-	for (const s of t.seasons ?? []) {
-		for (const k of [
-			"region",
-			"name",
-			"abbrev",
-			"imgURL",
-			"imgURLSmall",
-			"colors",
-			"jersey",
-		]) {
-			if (k in campos) {
-				s[k] = campos[k];
+// Datos de los equipos (data/argentina/equipos.csv, por tid): abreviatura,
+// ciudad, apodo, logos, colores, camiseta, población y estadio. Es la fuente
+// única desde la v2.23.3 (antes, equipos-usuario.json con solo lo que el
+// usuario había editado en el juego). Se aplica solo lo que difiere del
+// archivo, también en las temporadas guardadas de cada equipo
+{
+	const EN_TEMPORADAS = ["region", "name", "abbrev", "imgURL", "imgURLSmall", "colors", "jersey"];
+	for (const f of leerEquipos()) {
+		const t = league.teams.find((t2: any) => t2.tid === Number(f.tid));
+		if (!t) {
+			throw new Error(`equipos.csv: no existe el tid ${f.tid}`);
+		}
+		for (const [campo, col, tipo] of CAMPOS) {
+			const v = valorJuego(f, col, tipo);
+			if (v === undefined || JSON.stringify(v) === JSON.stringify(t[campo])) {
+				continue;
+			}
+			t[campo] = v;
+			if (EN_TEMPORADAS.includes(campo)) {
+				for (const s of t.seasons ?? []) {
+					s[campo] = v;
+				}
 			}
 		}
 	}

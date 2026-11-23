@@ -13,10 +13,11 @@
 //   el juego, ratings ajustados a mano (se guardan exactos en "ratings") y
 //   parientes nuevos (en "parientes", de un solo lado: el cargador los une en
 //   los dos sentidos).
-// - Equipos (data/argentina/equipos-usuario.json): ciudad, apodo,
+// - Equipos (data/argentina/equipos.csv): ciudad, apodo,
 //   abreviatura, logos, colores, camiseta, población y estadio.
 // Imprime todo lo que cambió. No toca la configuración de la liga.
 
+import { CAMPOS, escribirEquipos, leerEquipos } from "./equipos-csv.ts";
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const [exportada, versionBase] = process.argv.slice(2);
@@ -155,36 +156,25 @@ for (const { ruta, texto, d, cambios } of planteles) {
 }
 
 // ---------------------------------------------------------------- Equipos
-const rutaEquipos = new URL("equipos-usuario.json", dir);
-const usuario = JSON.parse(readFileSync(rutaEquipos, "utf8"));
-const CAMPOS = [
-	"region",
-	"name",
-	"abbrev",
-	"imgURL",
-	"imgURLSmall",
-	"colors",
-	"jersey",
-	"pop",
-	"stadiumCapacity",
-];
+// Se escriben en data/argentina/equipos.csv (fuente única de los equipos)
+const filasEquipos = leerEquipos();
 const equipos: string[] = [];
 for (const t of U.teams) {
 	const o = base.teams.find((x: any) => x.tid === t.tid);
-	if (!o) {
+	const f = filasEquipos.find((x) => x.tid === String(t.tid));
+	if (!o || !f) {
 		continue;
 	}
-	for (const f of CAMPOS) {
-		const nuevo = f.startsWith("img") ? limpiar(t[f] ?? "") : t[f];
-		if (JSON.stringify(nuevo) !== JSON.stringify(o[f])) {
-			usuario.equipos[t.tid] ??= { _equipo: o.abbrev };
-			usuario.equipos[t.tid][f] = nuevo;
-			equipos.push(`${o.abbrev}.${f}`);
+	for (const [campo, col, tipo] of CAMPOS) {
+		const nuevo = campo.startsWith("img") ? limpiar(t[campo] ?? "") : t[campo];
+		if (JSON.stringify(nuevo) !== JSON.stringify(o[campo])) {
+			f[col] = nuevo === undefined ? "" : tipo === "colores" ? nuevo.join(" ") : String(nuevo);
+			equipos.push(`${o.abbrev}.${campo}`);
 		}
 	}
 }
 if (equipos.length > 0) {
-	writeFileSync(rutaEquipos, JSON.stringify(usuario, null, "\t"));
+	escribirEquipos(filasEquipos);
 }
 
 console.log(`Comparado contra ${versionBase ?? armados.at(-1)}`);

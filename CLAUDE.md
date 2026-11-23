@@ -51,7 +51,10 @@ node tools/argentina/cruces.ts                   # jugadores con números en dos
 node tools/argentina/vecinos.ts ARCHIVO.json EQUIPO  # cada jugador contra sus vecinos de la escalera
 node tools/argentina/arqueros.ts ARCHIVO.json > data/argentina/arqueros/valores-actuales.md  # lista de arqueros vs hoy
 node tools/argentina/ajustar-ovr.ts EQUIPO APELLIDO OVR  # cambia un OVR (y sus ratings a mano)
-node tools/argentina/desde-juego.ts LIGA_DEL_USUARIO.json VERSION_QUE_USÓ.json # importa fotos, camisetas, ratings, parientes y equipos
+node tools/argentina/desde-juego.ts LIGA_DEL_USUARIO.json VERSION_QUE_USÓ.json # importa fotos, camisetas, ratings, parientes y equipos (a equipos.csv)
+node tools/argentina/equipos-csv.ts ARCHIVO.json # regenera equipos.csv desde una versión (conserva "club" y "revisar")
+node tools/argentina/completar-rendimiento.mjs EQUIPO  # Rendimiento completo de un plantel ya cargado (datos en data/argentina/rendimiento/)
+node tools/argentina/escalera-web.ts ARCHIVO.json ANTERIOR.json  # datos de la escalera del usuario
 ```
 
 En una máquina nueva, `validar.ts` necesita la librería `ajv` (no instalar
@@ -163,8 +166,10 @@ v2.14.1 → v2.14.2).
     la Liga.
   - Mirar también las copas: hay equipos que priorizan la copa sobre la liga
     (Estudiantes 2026: 11.º en la tabla y finalista de la Libertadores).
-  - No tocar sin permiso los valores que fijó el usuario ni los jugadores con
-    `ratings` a mano; si hay que proponer cambios, proponerlos aparte.
+  - Los valores que fijó el usuario se proponen aparte antes de cambiarlos.
+    Los jugadores con `ratings` a mano SÍ se pueden cambiar (OVR o forma),
+    justificando el cambio (el usuario, 23/11): `ajustar-ovr.ts` los mueve
+    parejo y conserva su forma.
   - Mostrarlos en cuadros (N.º, jugador, OVR, por qué), uno por sección:
     Arqueros, Centrales, Laterales, Mediocampistas, Ofensivos y Delanteros.
 - Draft = club y año en que fue promovido al primer equipo (el usuario lo anota
@@ -177,8 +182,10 @@ v2.14.1 → v2.14.2).
   un nombre, buscar si otro jugador ya tiene ese College y usar el mismo.
 - Club sin localidad: el más importante (Estudiantes = La Plata, Talleres =
   Córdoba, Gimnasia = La Plata), salvo que el usuario diga otra cosa.
-  Abreviaturas: buscarlas en el archivo de liga (el usuario cambió algunas en
-  el juego; `equipos.csv` puede estar viejo: CDO es CIR).
+  Abreviaturas y nombres completos de los clubes: en `data/argentina/equipos.csv`
+  (fuente única de los equipos desde la v2.23.3, al día con el juego; columna
+  "club" = nombre oficial para el College; "revisar" marca los dudosos).
+  Independiente Rivadavia es INR (antes IRM).
 - Usar solo las capturas y los datos del usuario: NO buscar fuentes externas
   sobre los jugadores (le quita la gracia; si algo falta, preguntar).
 - Rendimiento: guardar en el plantel todas las columnas (convocado, PJ,
@@ -188,6 +195,10 @@ v2.14.1 → v2.14.2).
   buscar filas perdidas entre imágenes.
   El comentario del usuario también se guarda: `"contexto"` del equipo y
   `"sofascore"` de cada jugador en el plantel; `"peso"` (kg) si lo da.
+- Un solo nombre (Rick, TAL): el nombre en `nombre` y `apellido` vacío (así
+  no queda un espacio al principio). Las herramientas lo buscan por ese nombre.
+- Premios: con sus nombres originales del juego (en inglés), por pedido del
+  usuario ("momentáneamente"); las fórmulas de fútbol siguen.
 - Fotos: el usuario las pone en el juego cuando le conviene (a veces de
   varios equipos juntos) y manda la liga exportada; recién ahí se importan.
 - Dos equipos a la vez (cada uno es su versión: v2.16 HUR y v2.17 TAL, se
@@ -201,8 +212,10 @@ v2.14.1 → v2.14.2).
   equipo, correr `cruces.ts` y valorarlos con la temporada completa (también
   hacia atrás: si uno que se fue ya está en un equipo cargado, revisar su OVR).
 - Capitán: anotarlo en el plantel (`"capitan": true`; si no hay capitán fijo,
-  `"capitanias": N` con las veces que lo fue). No suma puntos ni entra al
-  archivo del juego (no tiene capitán): es contexto. Lista en TRASPASO §4.
+  `"capitanias": N` con las veces que lo fue). El juego no tiene capitán; es
+  contexto positivo (liderazgo, jerarquía en el club) que se tiene en cuenta
+  al valorar. Pendiente: que tenga un efecto en el archivo (ver TRASPASO
+  §7). Lista en TRASPASO §4.
 - Solo entran al equipo los jugadores de las capturas del plantel; los
   juveniles que figuran solo en Rendimiento no se agregan (van a salidas).
 - Juveniles del plantel que siguen en reserva (el usuario lo aclara):

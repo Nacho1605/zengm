@@ -25,6 +25,7 @@
 // OVR buscado: el que diga el plantel ("ovr") o, si no hay, la fórmula de
 // ovrSugerido() (valor de mercado, minutos jugados y edad).
 
+import { nombresCompletos } from "./equipos-csv.ts";
 import { readFileSync, writeFileSync } from "node:fs";
 import {
 	azar,
@@ -339,74 +340,8 @@ const PICKS_POR_RONDA = 30;
 // Lealtad: debut (draft) o College hasta esta temporada inclusive
 const ULTIMO_ANIO_LEALTAD = 2021;
 
-const NOMBRE_COMPLETO: Record<string, string> = {
-	CHA: "Club Atlético Chacarita Juniors",
-	INR: "Club Sportivo Independiente Rivadavia",
-	GEM: "Club Atlético Gimnasia y Esgrima (Mendoza)",
-	ERC: "Asociación Atlética Estudiantes (Río Cuarto)",
-	CCO: "Club Atlético Central Córdoba (Santiago del Estero)",
-	BAR: "Club Atlético Barracas Central",
-	ATU: "Club Atlético Tucumán",
-	ACA: "Club Atlético Acassuso",
-	ALD: "Club Atlético Aldosivi",
-	ALL: "Club Atlético All Boys",
-	ALM: "Club Almagro",
-	ALT: "Club Atlético Almirante Brown",
-	AND: "Club Atlético Los Andes",
-	ARG: "Asociación Atlética Argentinos Juniors",
-	ARS: "Arsenal Fútbol Club",
-	ATL: "Club Atlético Atlanta",
-	BAN: "Club Atlético Banfield",
-	BEL: "Club Atlético Belgrano",
-	BOC: "Club Atlético Boca Juniors",
-	CIP: "Club Cipolletti",
-	COM: "Club Comunicaciones",
-	COL: "Club Atlético Colón",
-	DME: "Club Social y Deportivo Merlo",
-	DOC: "Club Atlético Dock Sud",
-	DUN: "Club Atlético Defensores Unidos",
-	DYJ: "Club Social y Deportivo Defensa y Justicia",
-	EBA: "Club Atlético Estudiantes (Caseros)",
-	EST: "Club Estudiantes de La Plata",
-	FCO: "Club Ferro Carril Oeste",
-	FEN: "Club Atlético Fénix",
-	GIM: "Club de Gimnasia y Esgrima La Plata",
-	GOD: "Club Deportivo Godoy Cruz Antonio Tomba",
-	GYT: "Club de Gimnasia y Tiro",
-	HUR: "Club Atlético Huracán",
-	IND: "Club Atlético Independiente",
-	INS: "Instituto Atlético Central Córdoba",
-	LAN: "Club Atlético Lanús",
-	MID: "Club Ferrocarril Midland",
-	MOR: "Club Deportivo Morón",
-	NCH: "Club Atlético Nueva Chicago",
-	NOB: "Club Atlético Newell's Old Boys",
-	OLI: "Club Olimpo",
-	PLA: "Club Atlético Platense",
-	QUI: "Quilmes Atlético Club",
-	RAC: "Racing Club",
-	RAF: "Asociación Mutual Social y Deportiva Atlético de Rafaela",
-	RIE: "Club Deportivo Riestra",
-	RIV: "Club Atlético River Plate",
-	ROS: "Club Atlético Rosario Central",
-	RPI: "Real Pilar Fútbol Club",
-	SAC: "Sacachispas Fútbol Club",
-	SAN: "Club y Biblioteca Ramón Santamarina",
-	SAR: "Club Atlético Sarmiento (Junín)",
-	SDM: "Club Social y Deportivo Sol de Mayo",
-	SLO: "Club Atlético San Lorenzo de Almagro",
-	SMG: "Club Atlético San Miguel",
-	SMJ: "Club Atlético San Martín (San Juan)",
-	SMT: "Club Atlético San Martín (Tucumán)",
-	STE: "Club Atlético San Telmo",
-	TEM: "Club Atlético Temperley",
-	TAL: "Club Atlético Talleres (Córdoba)",
-	TIG: "Club Atlético Tigre",
-	TRE: "Club Atlético Talleres (Remedios de Escalada)",
-	UNI: "Club Atlético Unión",
-	VEL: "Club Atlético Vélez Sarsfield",
-	VSC: "Club Atlético Villa San Carlos",
-};
+// Nombre completo de cada club (columna "club" de data/argentina/equipos.csv)
+const NOMBRE_COMPLETO: Record<string, string> = nombresCompletos();
 
 const norm = (s: string) =>
 	s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();

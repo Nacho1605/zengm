@@ -1,69 +1,27 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 23/11/2026. Última versión: **v2.23.2**
-(`data/argentina/BBGM_Argentina_2026_v.2.23.2_futbol.json`, sha256
-`6123fb70d6aa348825d13b11720d13e0ce6b99d63cfb52f6b4717d165f12ece0`): 21 de 30
-equipos con plantel 2026 y **todo el archivo en la escala nueva de OVR** (20 a
-78). Validación: 0 errores. Auditoría: 53 controles, 9 con alertas (las de
-siempre). Escalera por puesto publicada para el usuario
-(https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
-`data/argentina/escalera/`), con una columna para que anote sus OVR.
+Estado al 24/11/2026. Última versión: **v2.23.3**
+(`data/argentina/BBGM_Argentina_2026_v.2.23.3_futbol.json`, sha256
+`cccbdbaef32d09f6d0513924ca8e4cf333efd1d6680002990e5418a9db0b091b`): 21 de 30
+equipos con plantel 2026, todos con el Rendimiento completo; todo el archivo
+en la escala nueva de OVR (20 a 78). Validación: 0 errores. Auditoría: 53
+controles, 9 con alertas (las de siempre). Escalera por puesto del usuario
+actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
+`data/argentina/escalera/`).
 
-**En curso (23/11):** el usuario manda el Rendimiento completo de los 13
-primeros (RIE, BOC, RIV, RAC, SLO, IND, ROS, EST, ARG, VEL, INR, GIM, LAN; 3
-imágenes cada uno, en ese orden). Para qué: tener los números completos de
-cada jugador y de los que se fueron, para después (fase 3) poder separar el
-año de los que cambiaron de club (Apertura en uno, Clausura en otro) y
-valorar con la temporada entera. Se transcribe a
-`data/argentina/rendimiento/EQUIPO.mjs` y se aplica con `node
-tools/argentina/completar-rendimiento.mjs EQUIPO` (completa las columnas,
-usa los números nuevos si cambiaron y agrega sus salidas a
-`salidas-2026.json`). Hechos: RIE (19 salidas, números iguales), BOC (15
-salidas; números más nuevos: +1 o +2 PJ en casi todos), RIV (22 salidas),
-RAC (22 salidas; Sofascore de S. Sosa en su salida) y SLO (12 salidas;
-Sofascore de Gill en su salida), IND (22 salidas; reemplazan a las 2 que
-había dado el usuario, con su nota; Ávalos con Sofascore 7,03; "Walter
-Mazzantti" de Transfermarkt = Mazzanti de NOB), ROS (22 salidas; Marco
-Ruben dado en texto), EST (16 salidas), ARG (15 salidas; Lescano con
-Sofascore 7,10; "Matías Giménez" de la captura = Giménez Rojas) y VEL (15
-salidas; Montero con su mitad en Vélez: 17 PJ, 1530'), INR (8 salidas,
-las mismas que ya estaban; números iguales). GIM: 2 de 3 imágenes en
-`rendimiento/GIM.mjs` (sin aplicar). Sigue: GIM y LAN. Equipo Ideal del
-Apertura 2026 (dato del usuario) en `tablas-2026.json`
-(`equipoIdealApertura`; MVP Zelarayán; Fattori titular con ARG). Los +1 PJ de casi todos son los playoffs del Clausura en curso (el
-usuario, 23/11: primera ronda; Central 3-1 a Gimnasia de Mendoza). Con ARG
-aparece Fattori (ARG 21 PJ, 1861' → TAL: su 66 se valoró solo con TAL;
-revisar), Lucas Gómez (ARG → NOB), Iván Morales (ARG → IND) y Kevin
-Gutiérrez figura en ARG (17 PJ). Con EST
-aparecen Ascacíbar (EST 2 PJ → BOC) y Farías (EST 19 PJ, 857' → SLO: su 66
-se valoró solo con SLO; revisar). Nombres de pila compuestos en las salidas ("Juan Fernando" Quintero,
-"José María" Ingratti): el script los reconoce. Nuevos
-jugadores en dos clubes: Barinaga (BOC → RAC), Blondel (BOC, sin jugar →
-HUR), Brian Aguirre (BOC → EST), Janson (BOC → GIM), Galarza (RIV, sin
-jugar → TAL), Salas (RIV → INR), Maximiliano Meza (RIV → IND) y Rubio (RAC
-→ UNI); con RAC y SLO: Rojo (RAC 21 PJ → EST), Baltasar Rodríguez (RAC →
-EST), Santiago Solari (RAC 25 PJ → NOB), Reali (SLO 22 PJ → INR) y Bruera
-(SLO, sin jugar → BAR). Para revisar el OVR al terminar: Juan Cruz Meza
-(RIV, 18 años) figuraba con 0 PJ y tiene 23 (771'); Almada 3 → 5 goles;
-Ascacíbar 8 → 10; Reali (INR 49, con 1288' en el año), S. Solari (NOB 56,
-2298'), Rojo (EST 63, 2069').
-Minutos y goles le dan forma a los ratings: al terminar la tanda, armar un
-parche (v2.23.3) y regenerar la escalera.
-Ya guardados (23/11): comentario y Sofascore de los 13 en sus planteles
-(con tablas y copas), `copas-2026.json` (internacionales, Copa Argentina y
-títulos de los 30) y los goleadores (≥10, solo Liga) en `tablas-2026.json`.
-Las lesiones de esos 13 no hacen falta (el usuario). Sofascore: es solo lo
-del jugador en ese club; el criterio del 50% no es seguro (Sanguinetti y
-Rojo figuran con Sofascore con pocos o ningún partido en su club actual).
-
-**Lo que sigue:** los cambios exactos que mande el usuario desde la escalera
-(lista "EQUIPO Jugador: viejo → nuevo"; aplicarlos con `ajustar-ovr.ts` y
-armar un parche). Fotos de NOB, ERC, UNI y BAR: el usuario todavía no
-empezó; las va a poner sobre la última versión que tenga. Al importar su
-liga, usar como base la versión sobre la que jugó (si hay una más nueva, sin
-esa base los OVR cambiados después volverían al valor viejo; para saberla,
-mirar un OVR que cambió entre versiones). Después: BAN,
-PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM.
+**Lo que sigue:**
+1. Respuesta del usuario a `propuesta-ovr-v2.23.3.md` (14 OVR con el año
+   completo, sin aplicar) y a los cambios que anote en la escalera (lista
+   "EQUIPO Jugador: viejo → nuevo"; aplicarlos con `ajustar-ovr.ts` y armar
+   un parche).
+2. Respuestas pendientes del usuario (23/11): nombres completos dudosos de
+   `equipos.csv` (columna "revisar"; 5 sin nombre: CBR, BMI, CES, LEO, MSL);
+   qué efecto darle al capitán (§7, 12); el draft (§7, 15); qué jugadores rearmar
+   con los composites (§7, 13); Sanguinetti (Sofascore 7,24 sin PJ en VEL).
+3. Fotos de NOB, ERC, UNI y BAR: el usuario las pone sobre la última versión
+   que tenga. Al importar su liga, usar como base la versión sobre la que
+   jugó (para saberla, mirar un OVR que cambió entre versiones).
+4. Después: BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -128,7 +86,8 @@ estaba ahí con datos de 2023, pasó a UNI): se arregla al cargar CCO.
 
 133 inactivos: Primera Nacional, Federal A, Primera B y C Metro, Patagonia y 10
 clasificados al Torneo Argentino del Interior 2027 (AHZ DES JUG CON PAC CSJ HGO
-RAO HIW MSL). Sus datos editados por el usuario: `equipos-usuario.json`.
+RAO HIW MSL). Los datos de los 163 equipos (también lo que el usuario edita en
+el juego) están en `equipos.csv`.
 
 ## 3. Proceso para cargar un equipo
 
@@ -159,10 +118,11 @@ RAO HIW MSL). Sus datos editados por el usuario: `equipos-usuario.json`.
    de nacimiento que tienen EN EL ARCHIVO. Cuidado con homónimos y con los
    nombres de pila compuestos (Juan Ignacio Méndez se escapó así): después de
    armar, revisar "Mismo nombre en dos jugadores" de la auditoría.
-3. Club de debut → abreviatura de la liga, buscada EN EL ARCHIVO DE LIGA (no
-   en `equipos.csv`: el usuario cambió algunas en el juego, ej. CDO → CIR). Si no está
-   en la base o es del exterior: `club: null` y el club en `college`. Si un
-   club de la base no tiene nombre completo en `NOMBRE_COMPLETO`, agregarlo.
+3. Club de debut → abreviatura de la liga, buscada en `equipos.csv` (al día
+   con el juego desde la v2.23.3). Si no está en la base o es del exterior:
+   `club: null` y el club en `college`. El nombre completo (College) sale de
+   la columna "club" de `equipos.csv`; si falta o está marcado en "revisar",
+   preguntar.
 4. Los que están en Rendimiento y no en el plantel se fueron: guardar sus
    números en `salidas-2026.json`. Después correr `cruces.ts`: muestra a los
    que tienen números en dos clubes cargados (valorarlos con la suma, y si
@@ -210,8 +170,8 @@ primera bandera); `ratings` solo si el usuario los ajustó a mano (los guarda
 `desde-juego.ts`); `n` null deja que el juego asigne camiseta. Nombres como
 los escribe el usuario cuando los da (ej.: "Juan José" Pérez, "Unsaín" con
 tilde como en su lista de arqueros); si no, como Transfermarkt. Un solo
-nombre (Rick, TAL): `nombre` vacío y el nombre en `apellido`, para que el
-juego muestre "Rick" (con el nombre de pila lo abreviaría "R."). Sin pie en
+nombre (Rick, TAL): el nombre en `nombre` y `apellido` vacío (corrección del
+usuario, v2.23.3: así no queda un espacio al principio). Sin pie en
 Transfermarkt: `pie` null (un central sin pie va de #6). Sin fecha de fichaje
 (juveniles de la casa): sin `fichado`.
 
@@ -316,7 +276,7 @@ de River). La franja 58–59, casi vacía, pasó de 10 a 16 jugadores.
 - Para los equipos que faltan, la lista es el punto de partida, ajustado con
   la temporada (PJ, minutos, contexto) y avisándole al usuario.
 
-Capitanes (contexto, no suman puntos): Paredes (BOC), Otamendi (RIV),
+Capitanes (contexto positivo; el juego no tiene capitán): Paredes (BOC), Otamendi (RIV),
 Cambeses (RAC), Marcone (IND), Tripichio y Devecchi (SLO, comparten),
 E. Gómez (VEL), Di María (ROS), Izquierdoz (LAN), Oroz (ARG), Nacho Fernández
 (GIM), Álex Arce (INR), Céliz (RIE), Galíndez (HUR), Lucas Zelarayán (BEL), Fernando Alarcón (INS), Luca Regiardo (NOB, 20 años).
@@ -372,7 +332,18 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   segunda revisión con la reserva (menores de 20 y prospectos, v2.19.2).
 - Herramientas nuevas de esta sesión: `arqueros.ts` (lista vs hoy) y
   `vecinos.ts` (cada jugador contra sus vecinos de la escalera).
-- `equipos-usuario.json`: datos de equipos que el usuario editó en el juego.
+- `equipos.csv`: fuente única de los 163 equipos (desde la v2.23.3; reemplazó
+  a `equipos-usuario.json`): abreviatura, ciudad, apodo, nombre completo del
+  club (College), zona, división, colores, camiseta, estadio, población y
+  logos. La aplica `equipos-interior.ts`; `desde-juego.ts` escribe ahí lo que
+  el usuario cambia en el juego; `equipos-csv.ts` la regenera desde una
+  versión. 18 nombres completos dudosos (columna "revisar") y 5 sin nombre
+  (CBR, BMI, CES, LEO, MSL): preguntados al usuario el 23/11.
+- `copas-2026.json`: copas 2026 de los 30 equipos (dato del usuario).
+- `rendimiento/EQUIPO.mjs`: Rendimiento completo de los 13 primeros (el
+  resto lo tiene en su plantel desde que se cargó).
+- `propuesta-ovr-v2.23.3.md`: revisiones de OVR con el año completo (sin
+  aplicar).
 
 ## 7. Pendientes
 
@@ -431,6 +402,22 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
     (CAR), seeklogo (MOR, DPV), fundacionamigospd.com (FAD), ESPN (CMN),
     bibliotecariodelfutbol (MSL), wikia (IND), footylogos (HUR, SLO, RAC, LAN,
     GIM, ARG chico); Transfermarkt en RIN y HGO.
+12. **Capitán con efecto** (pedido del usuario, 23/11: "tiene que significar
+    algo"). Propuesta de Claude: un rasgo "capitán" que dé forma (más `oiq` y
+    `diq`, la lectura del juego; algo de `endu`) sin mover el OVR, y el rasgo
+    de personalidad W (ganador) en vez del sorteo. Espera la decisión.
+13. **Rearmar jugadores con los composites** (`sistema-ratings.md`) sin
+    cambiar su OVR: el usuario elige cuáles (propuesta: los goleadores, los
+    armadores y los arqueros del Equipo Ideal).
+14. **Colleges, nombres y razas para Argentina y Latinoamérica** (como
+    `src/worker/data/defaultColleges.ts`): el archivo de liga lo permite con
+    `playerBioInfo` (países con nombres, apellidos, colleges y razas). Sirve
+    para los prospectos que genera el juego cada año. Para más adelante.
+15. **Draft**: hoy es de 1 ronda (30 picks) con clases de 70 prospectos (la
+    de 2026, 94): de cada clase quedan sin elegir 40 a 64, que pasan a ser
+    libres. Propuesta: 2 rondas (60 picks, como la proporción del juego:
+    clase = 7/6 de los picks) o achicar las clases a 35. Espera la decisión.
+16. Nombres completos dudosos en `equipos.csv` (ver "revisar").
 
 **Datos que faltan (inventario del 23/11/2026; se le pidieron al usuario):**
 
@@ -482,7 +469,8 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
 - La red de la sesión bloquea Wikimedia y Transfermarkt: no se pueden
   comprobar logos ni fotos desde acá.
 - No leer los JSON de liga enteros (4–9 MB): usar scripts de node.
-- Un jugador con `ratings` a mano no puede cambiar de OVR sin cambiar sus
+- Un jugador con `ratings` a mano SE PUEDE cambiar (el usuario, 23/11),
+  justificándolo; pero no puede cambiar de OVR sin cambiar sus
   ratings: el cargador se frena si no coinciden.
 - `validar.ts` necesita `ajv` (ver CLAUDE.md); sin eso falla al arrancar.
 - La bienvenida ("Welcome to your new league!") solo la escribe el juego si
@@ -502,8 +490,8 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
 - Ratings que el usuario ajusta en el juego quedan "a mano" (`ratings` en el
   plantel): sus rasgos ya no se aplican solos y su OVR no se puede cambiar sin
   tocar los ratings (`ajustar-ovr.ts`).
-- Abreviaturas: siempre las del archivo de liga (el usuario cambió algunas en
-  el juego; `equipos.csv` puede estar viejo).
+- Abreviaturas: las de `equipos.csv` (al día con el juego). Si el usuario
+  cambia una en el juego, `desde-juego.ts` la pasa al CSV.
 - Transfermarkt a veces repite números de camiseta en un plantel: dejar sin
   número (`n` null) al que llegó después; la auditoría lo marca.
 - Un jugador que está en un equipo cargado como retirado o libre con
@@ -550,6 +538,30 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**Sesión del 23–24/11/2026 (v2.23.3).** Huella de la v2.23.3:
+`cccbdbaef32d09f6d0513924ca8e4cf333efd1d6680002990e5418a9db0b091b`.
+
+- Datos del usuario (23/11): comentario y Sofascore de los 13 primeros (en
+  sus planteles), copas 2026 de los 30 (`copas-2026.json`), goleadores de la
+  Liga (≥10) y Equipo Ideal del Apertura (MVP Zelarayán) en
+  `tablas-2026.json`.
+- Rendimiento completo de los 13 primeros (39 capturas), con
+  `completar-rendimiento.mjs` y los datos en `rendimiento/EQUIPO.mjs`. Los
+  números eran 1 o 2 PJ más nuevos (playoffs del Clausura en curso). 327
+  salidas en total; 41 jugadores con números en dos clubes cargados (Montero:
+  VEL 17 + BOC 25). Nombres de Transfermarkt distintos: "Walter Mazzantti"
+  (IND) = Mazzanti (NOB); "Matías Giménez" = Giménez Rojas; "Juan Pérez" =
+  Juan José Pérez (GIM). Marco Ruben (ROS) dado en texto.
+- v2.23.3: lo anterior más los pedidos del usuario: Independiente Rivadavia
+  pasa a INR (en el juego y en todo el repositorio), Rick con el nombre en
+  `nombre`, premios con sus nombres originales (inglés). Ningún OVR cambió;
+  32 jugadores con ratings reacomodados por minutos y goles nuevos.
+- Repositorio: `equipos.csv` es la fuente única de los equipos (con nombre
+  completo para el College; reemplazó a `equipos-usuario.json`, y el armado
+  da la misma huella); composites del motor en `sistema-ratings.md`;
+  ratings a mano se pueden tocar con justificación; capitán = contexto
+  positivo.
+
 **Sesión del 23/11/2026 (v2.23.2).** Huella de la v2.23.2:
 `6123fb70d6aa348825d13b11720d13e0ce6b99d63cfb52f6b4717d165f12ece0`.
 
