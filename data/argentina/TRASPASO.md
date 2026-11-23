@@ -384,6 +384,37 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
     bibliotecariodelfutbol (MSL), wikia (IND), footylogos (HUR, SLO, RAC, LAN,
     GIM, ARG chico); Transfermarkt en RIN y HGO.
 
+**Datos que faltan (inventario del 23/11/2026; se le pidieron al usuario):**
+
+- Hay dos épocas de carga. Los 13 primeros (RIE, BOC, RIV, RAC, SLO, IND,
+  ROS, EST, ARG, VEL, IRM, GIM, LAN) tienen del Rendimiento solo PJ, goles y
+  minutos; desde HUR, todas las columnas (convocado, entró, salió,
+  asistencias, tarjetas, ppp). Pedido: el Rendimiento de esos 13 (3 imágenes
+  cada uno; el plantel "Ampliado" no hace falta). De IRM, GIM y LAN las
+  salidas sí están completas; de los 10 primeros no hay salidas (salvo 2 de
+  IND que dio el usuario): por eso a Montero (VEL → BOC) le falta su mitad
+  en Vélez. Si los números cambiaron desde la primera captura, usar los
+  nuevos y avisar.
+- Comentario del equipo (`contexto`) solo en los 8 últimos; RAC tiene solo
+  sus competiciones (captura del usuario). Pedido, en texto: comentario y
+  Sofascore ≥ 6,90 de los 13 primeros (los de GIM se dieron en su momento
+  pero no se guardaron) y las copas 2026 de todos (Copa Argentina,
+  Libertadores/Sudamericana); si ya se definió el Clausura. La posición en
+  las tablas la agrega Claude desde `tablas-2026.json` (INS no la tiene).
+- La final de la Libertadores de EST está solo en estas notas, no en su
+  plantel.
+- Nunca se transcribió la columna "antes" (club anterior, con ícono de
+  préstamo) del plantel Ampliado: no se sabe de dónde vino cada uno de los
+  112 que llegaron desde julio ni quién está a préstamo. Propuesta: anotarla
+  desde ahora en los equipos nuevos (`antes`, `prestamo`).
+- Otros detalles fuera de lo común (no son errores): EST, único con
+  `capitanias` (6 jugadores); SLO y TAL con dos capitanes; lealtad a mano en
+  Arce, Nervo, Pussetto y Talpone; `peso` solo en Thiago Baroni; ratings a
+  mano en 9 (5 de INS); rasgos muy desparejos (EST 14 jugadores, el resto
+  4–9); prospectos solo en 10 equipos (ARG 6, VEL 5, TAL 5).
+- El más completo: UNI (y BAR a la par, con su copa). Ninguno tiene fotos
+  todavía.
+
 Resuelto en la sesión del 20–22/11 (para no volver a preguntar): Luján 60
 partidos (linfoma); Lodico 63; Olmos 44; Ortegoza 62 y Vigo 58 (Ronaldo
 Martínez sigue en 69); Belgrano sin filas faltantes y sin Jara; Melano debutó
