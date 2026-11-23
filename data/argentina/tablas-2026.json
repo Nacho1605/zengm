@@ -405,5 +405,18 @@
 			"pts": 14,
 			"pj": 32
 		}
-	]
+	],
+	"goleadores": {
+		"_nota": "Jugadores con diez o más goles a lo largo del año, dato del usuario (23/11/2026).",
+		"lista": [
+			{ "jugador": "Cristian Tarragona", "equipo": "UNI", "goles": 17 },
+			{ "jugador": "Jordy Caicedo", "equipo": "HUR", "goles": 15 },
+			{ "jugador": "Junior Marabel", "equipo": "SAR", "goles": 14 },
+			{ "jugador": "Ronaldo Martínez", "equipo": "VEL", "goles": 14 },
+			{ "jugador": "Agustín Módica", "equipo": "GEM", "goles": 14 },
+			{ "jugador": "Ángel Di María", "equipo": "ROS", "goles": 11 },
+			{ "jugador": "Gabriel Ávalos", "equipo": "IND", "goles": 11 },
+			{ "jugador": "Miguel Merentiel", "equipo": "BOC", "goles": 10 }
+		]
+	}
 }

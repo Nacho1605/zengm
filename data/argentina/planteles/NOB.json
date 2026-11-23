@@ -1,6 +1,7 @@
 {
 	"equipo": "NOB",
 	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 22/11/2026); debut, inferiores, Sofascore, rasgos, capitán, lesión, parientes y contexto: datos del usuario. OVR: Claude.",
+	"contexto": "La temporada de Newell's tuvo dos caras irreconocibles: un arranque en llamas, hundido en crisis institucional, meses sin ganar y eliminación temprana en Copa Argentina, seguido por una reconstrucción pragmática que despejó el descenso y lo llevó a playoffs. De ser una defensa permeable pasó a un bloque compacto y paciente, duro de vencer pero atado por un plantel corto y la escasez de gol que multiplicó los empates. Walter Mazzantti fue el más determinante ganando duelos individuales, junto al empuje de Matías Cóccaro como referencia de área, el mando de Luca Regiardo en el medio y la firmeza de Josué Reinatti tras desplazar a un flojo Gabriel Arias. Sofascore: solo tres jugadores superan 6,90. Tabla anual 2026: 22.º (38 pts, 31-40); Apertura 14.º zona A; Clausura 6.º grupo A. Copas 2026 (dato del usuario, 23/11): sin copa internacional. Copa Argentina: eliminado en treintaidosavos.",
 	"reemplaza": [
 		{
 			"nombre": "Gabriel Arias",
@@ -992,6 +993,5 @@
 				"anio": 2026
 			}
 		}
-	],
-	"contexto": "La temporada de Newell's tuvo dos caras irreconocibles: un arranque en llamas, hundido en crisis institucional, meses sin ganar y eliminación temprana en Copa Argentina, seguido por una reconstrucción pragmática que despejó el descenso y lo llevó a playoffs. De ser una defensa permeable pasó a un bloque compacto y paciente, duro de vencer pero atado por un plantel corto y la escasez de gol que multiplicó los empates. Walter Mazzantti fue el más determinante ganando duelos individuales, junto al empuje de Matías Cóccaro como referencia de área, el mando de Luca Regiardo en el medio y la firmeza de Josué Reinatti tras desplazar a un flojo Gabriel Arias. Sofascore: solo tres jugadores superan 6,90. Tabla anual 2026: 22.º (38 pts, 31-40); Apertura 14.º zona A; Clausura 6.º grupo A."
+	]
 }

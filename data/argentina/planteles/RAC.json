@@ -1,7 +1,7 @@
 {
 	"equipo": "RAC",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
-	"contexto": "Competiciones 2026 (captura del usuario, 23/11/2026): Torneo Apertura, de la fase de grupos a cuartos de final (18 PJ, 6-6-6, 19-17); Torneo Clausura, fase de grupos (16 PJ, 4-3-9, 16-24); Copa Argentina, de treintaidosavos a cuartos de final (4 PJ, 3-0-1, 8-4); Copa Sudamericana, fase de grupos (6 PJ, 2-2-2, 11-9). Total: 44 PJ, 15-11-18, 54-54. El usuario: \"tuvieron un mal año\".",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario. Comentario, Sofascore y copas: datos del usuario (23/11/2026)",
+	"contexto": "Racing protagonizó un derrumbe rotundo que cortó más de una década seguida en copas internacionales y lo hundió en el tramo bajo del año. Tras un comienzo discreto —afuera en grupos de la Sudamericana y eliminado en los cruces del Apertura y la Copa Argentina—, el equipo se desmoronó en el cierre entre cambios de ciclo, una reestructuración a mitad de camino que no ensambló y una fragilidad anímica alarmante. Perdió la intensidad vertical de temporadas previas, quedó partido en defensa y acumuló expulsiones costosas. Facundo Cambeses atajó exigido detrás de una zaga permeable, mientras el bajón del gran goleador Adrián Martínez secó al ataque pese a los intentos aislados de Matko Miljevic y Duván Vergara. Sofascore: Santiago Sosa (7,17), Gastón Lodico (7,10) – nadie más. El top 3 sin contar a Sosa, que se fue, lo completan Ezequiel Cannavo (6,83) y Facundo Cambeses (6,82). Tabla anual 2026: 23.º (36 pts, 33-39); Apertura 8.º de la zona B (21 pts, 17-15); Clausura 13.º del grupo B (15 pts, 16-24); promedios 7.º. Copas 2026 (dato del usuario, 23/11): Sudamericana: 3.º en la fase de grupos. Copa Argentina: eliminado en cuartos. Competiciones 2026 (captura del usuario, 23/11/2026): Torneo Apertura, de la fase de grupos a cuartos de final (18 PJ, 6-6-6, 19-17); Torneo Clausura, fase de grupos (16 PJ, 4-3-9, 16-24); Copa Argentina, de treintaidosavos a cuartos de final (4 PJ, 3-0-1, 8-4); Copa Sudamericana, fase de grupos (6 PJ, 2-2-2, 11-9). Total: 44 PJ, 15-11-18, 54-54. El usuario: \"tuvieron un mal año\".",
 	"reemplaza": [
 		{
 			"nombre": "Facundo Cambeses",
@@ -64,7 +64,8 @@
 			"capitan": true,
 			"rasgos": [
 				"reflejos"
-			]
+			],
+			"sofascore": 6.82
 		},
 		{
 			"n": "30",
@@ -258,7 +259,8 @@
 				"club": "DYJ",
 				"anio": 2024
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkaqc_1nwB-TROmXREDXCQj0KbHP7tsdxqSKLNDrIimg&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkaqc_1nwB-TROmXREDXCQj0KbHP7tsdxqSKLNDrIimg&s=10",
+			"sofascore": 6.83
 		},
 		{
 			"n": "14",
@@ -393,7 +395,8 @@
 				"club": "LAN",
 				"anio": 2018
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFo_l9NcWDA_pqVosm5hCjPHL5_5ejHiN36Fx2HXln4Q&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFo_l9NcWDA_pqVosm5hCjPHL5_5ejHiN36Fx2HXln4Q&s=10",
+			"sofascore": 7.1
 		},
 		{
 			"n": "21",

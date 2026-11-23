@@ -1,6 +1,7 @@
 {
 	"equipo": "IND",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario. Comentario, Sofascore y copas: datos del usuario (23/11/2026)",
+	"contexto": "Independiente vivió un año contradictorio, sin competencia internacional y condicionado por urgencias económicas. Frenado temprano en el Apertura y golpeado fuerte en la Copa Argentina, quedó sin copas por la tabla general, pero resistió un cambio de mando y sigue vivo en los playoffs del Clausura como última chance. Paradójicamente vulnerable en Avellaneda cuando debió protagonizar, rindió mejor de visitante explotando espacios. La venta obligada de su goleador Gabriel Ávalos en pleno torneo dejó un vacío que cubrieron la llegada decisiva de Maximiliano Meza, el desequilibrio sostenido de Santiago Montiel y el oficio de Iván Marcone, mientras Santiago Mele desplazó en el cierre a Rodrigo Rey. Sofascore: Iván Marcone (7,04), Maxi Meza (7,03), Gabriel Ávalos (7,03), Juan Fedorco (6,90), Santiago Montiel (6,90). Tabla anual 2026: 13.º (47 pts, 39-36); Apertura 5.º de la zona A (24 pts, 24-20); Clausura 7.º del grupo A (23 pts, 15-16); promedios 8.º. Copas 2026 (dato del usuario, 23/11): sin copa internacional. Copa Argentina: eliminado en octavos.",
 	"reemplaza": [
 		{
 			"nombre": "Santiago Mele",
@@ -187,7 +188,8 @@
 				"club": "SDM",
 				"anio": 2019
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/997070-1707925618.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/997070-1707925618.JPG?lm=4711",
+			"sofascore": 6.9
 		},
 		{
 			"n": "22",
@@ -341,7 +343,8 @@
 				"anio": 2009
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9hxQeND1Fz6-Y_Wx4rKpR4GaKzJA7AngbdB3Tf9EFBQ&s=10",
-			"capitan": true
+			"capitan": true,
+			"sofascore": 7.04
 		},
 		{
 			"n": "37",
@@ -519,7 +522,8 @@
 			"rasgos": [
 				"gambeta",
 				"pelota parada"
-			]
+			],
+			"sofascore": 6.9
 		},
 		{
 			"n": "8",
@@ -541,7 +545,8 @@
 				"club": "GIM",
 				"anio": 2012
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyX37r-9YFz1Xsc7NOq3x2bYr5VeIlXQE4U4U6-RSh9g&s"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyX37r-9YFz1Xsc7NOq3x2bYr5VeIlXQE4U4U6-RSh9g&s",
+			"sofascore": 7.03
 		},
 		{
 			"n": "15",

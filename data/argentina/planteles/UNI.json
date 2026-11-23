@@ -1,7 +1,7 @@
 {
 	"equipo": "UNI",
 	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 22/11/2026); debut, inferiores, Sofascore, rasgos, capitán, lesiones, parientes, alturas de Fagioli (1,80) y Ayala (entre 1,72 y 1,75: 1,74) y contexto: datos del usuario. OVR: Claude.",
-	"contexto": "Unión vivió un año partido a la mitad por el desarme de su plantel: tras alcanzar los playoffs del arranque, vendió piezas clave de su defensa y mediocampo en el receso y se desinfló hasta quedarse sin definición ni copas. Su sello fue el desequilibrio: exhibió uno de los ataques más voraces del torneo con juego directo y vertical, pero quedó expuesto atrás y se cayó cada vez que salió de Santa Fe. Cristian Tarragona cargó al equipo con una eficacia goleadora histórica, apoyado en el desgaste aéreo y las descargas de Marcelo Estigarribia. Julián Palacios aportó ritmo y desborde, y Lucas Ayala irrumpió con peso propio por izquierda, sin que bastara para tapar tanta fragilidad defensiva. Sofascore: Mateo del Blanco (7,20), Matías Mansilla (7,03), Rafael Profini (6,96), Maizon Rodríguez (6,93), Cristian Tarragona (6,93); Del Blanco, Profini y Maizon Rodríguez se fueron. Sin capitán fijo; suele serlo Cristian Tarragona. Lesiones: Lautaro Vargas (25/08/2026, dos operaciones) y Federico Gomes Gerth (10/03/2026), rotura de ligamento cruzado, vuelta desconocida (estimadas: Vargas 26 partidos, a fines de mayo de 2027; Gomes Gerth 7, a mediados de enero de 2027). Tabla anual 2026: 16.º (42 pts, 48-44); Apertura 8.º de su grupo (21 pts, 24-20, playoffs); Clausura 9.º grupo A (21 pts, 24-24); promedios 17.º; reserva 15.ª en la anual.",
+	"contexto": "Unión vivió un año partido a la mitad por el desarme de su plantel: tras alcanzar los playoffs del arranque, vendió piezas clave de su defensa y mediocampo en el receso y se desinfló hasta quedarse sin definición ni copas. Su sello fue el desequilibrio: exhibió uno de los ataques más voraces del torneo con juego directo y vertical, pero quedó expuesto atrás y se cayó cada vez que salió de Santa Fe. Cristian Tarragona cargó al equipo con una eficacia goleadora histórica, apoyado en el desgaste aéreo y las descargas de Marcelo Estigarribia. Julián Palacios aportó ritmo y desborde, y Lucas Ayala irrumpió con peso propio por izquierda, sin que bastara para tapar tanta fragilidad defensiva. Sofascore: Mateo del Blanco (7,20), Matías Mansilla (7,03), Rafael Profini (6,96), Maizon Rodríguez (6,93), Cristian Tarragona (6,93); Del Blanco, Profini y Maizon Rodríguez se fueron. Sin capitán fijo; suele serlo Cristian Tarragona. Lesiones: Lautaro Vargas (25/08/2026, dos operaciones) y Federico Gomes Gerth (10/03/2026), rotura de ligamento cruzado, vuelta desconocida (estimadas: Vargas 26 partidos, a fines de mayo de 2027; Gomes Gerth 7, a mediados de enero de 2027). Tabla anual 2026: 16.º (42 pts, 48-44); Apertura 8.º de su grupo (21 pts, 24-20, playoffs); Clausura 9.º grupo A (21 pts, 24-24); promedios 17.º; reserva 15.ª en la anual. Copas 2026 (dato del usuario, 23/11): sin copa internacional. Copa Argentina: eliminado en dieciseisavos.",
 	"reemplaza": [
 		{
 			"nombre": "Matías Mansilla",
@@ -744,7 +744,9 @@
 				"anio": 2014
 			},
 			"college": "Club Defensores del Pronunciamiento",
-			"rasgos": ["aereo"]
+			"rasgos": [
+				"aereo"
+			]
 		},
 		{
 			"n": null,

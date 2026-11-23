@@ -9,6 +9,23 @@ siempre). Escalera por puesto publicada para el usuario
 (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`), con una columna para que anote sus OVR.
 
+**En curso (23/11):** el usuario manda el Rendimiento completo de los 13
+primeros (RIE, BOC, RIV, RAC, SLO, IND, ROS, EST, ARG, VEL, IRM, GIM, LAN; 3
+imágenes cada uno, en ese orden). Se transcribe a
+`data/argentina/rendimiento/EQUIPO.mjs` y se aplica con `node
+tools/argentina/completar-rendimiento.mjs EQUIPO` (completa las columnas y
+agrega sus salidas a `salidas-2026.json`). Hecho: RIE (19 salidas; números
+iguales a los guardados). BOC: 2 de 3 imágenes en `rendimiento/BOC.mjs`
+(falta la de los delanteros); sus números son más nuevos que los guardados
+(Montero 23 → 25 PJ). Minutos y goles le dan forma a los ratings: al
+terminar la tanda, armar un parche (v2.23.3) y regenerar la escalera.
+Ya guardados (23/11): comentario y Sofascore de los 13 en sus planteles
+(con tablas y copas), `copas-2026.json` (internacionales, Copa Argentina y
+títulos de los 30) y los goleadores (≥10) en `tablas-2026.json`. Pendiente
+del usuario: lesiones actuales de esos 13 (con fecha). Dudas: Sanguinetti
+(VEL, 0 PJ guardados) y Rojo (EST, 4 PJ) figuran con Sofascore, que pide más
+del 50% de los minutos: revisar con su Rendimiento nuevo.
+
 **Lo que sigue:** los cambios exactos que mande el usuario desde la escalera
 (lista "EQUIPO Jugador: viejo → nuevo"; aplicarlos con `ajustar-ovr.ts` y
 armar un parche). Fotos de NOB, ERC, UNI y BAR: el usuario todavía no

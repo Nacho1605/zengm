@@ -1,7 +1,7 @@
 {
 	"equipo": "BEL",
 	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 21/11/2026); debut, inferiores, reserva, Sofascore, rasgos, capitán, parientes, altura y año de debut (2025) de Melano y contexto: datos del usuario. OVR: Claude.",
-	"contexto": "Belgrano coronó un año histórico con un título que validó su crecimiento de menor a mayor, aunque esa consagración no oculta que nunca terminó de resolver su fragilidad defensiva. Con una propuesta directa y vertical, encontró su mejor versión acelerando por las bandas y atacando espacios, pero sufrió en los retrocesos y le costó sostener solidez fuera de casa. Santiago Longo sostuvo el equilibrio con orden y quite en un mediocampo al que suele faltarle fluidez. La diferencia estuvo arriba: la jerarquía y pausa de Lucas Zelarayán y Franco Vázquez y la movilidad de Nicolás Fernández pesaron en los momentos límite y terminaron inclinando la balanza a favor del Pirata. Campeón del Torneo Apertura 2026: 5.º en la zona B; en los playoffs eliminó a Talleres, Unión y Argentinos y le ganó la final a River. En ese torneo, Lisandro López y Lucas Zelarayán en el Equipo Ideal (titulares), Zelarayán MVP; Nicolás Fernández entre los suplentes. Tabla anual 2026: 10.º (49 pts, 34-28); Apertura 5.º zona B; Clausura 6.º grupo B.",
+	"contexto": "Belgrano coronó un año histórico con un título que validó su crecimiento de menor a mayor, aunque esa consagración no oculta que nunca terminó de resolver su fragilidad defensiva. Con una propuesta directa y vertical, encontró su mejor versión acelerando por las bandas y atacando espacios, pero sufrió en los retrocesos y le costó sostener solidez fuera de casa. Santiago Longo sostuvo el equilibrio con orden y quite en un mediocampo al que suele faltarle fluidez. La diferencia estuvo arriba: la jerarquía y pausa de Lucas Zelarayán y Franco Vázquez y la movilidad de Nicolás Fernández pesaron en los momentos límite y terminaron inclinando la balanza a favor del Pirata. Campeón del Torneo Apertura 2026: 5.º en la zona B; en los playoffs eliminó a Talleres, Unión y Argentinos y le ganó la final a River. En ese torneo, Lisandro López y Lucas Zelarayán en el Equipo Ideal (titulares), Zelarayán MVP; Nicolás Fernández entre los suplentes. Tabla anual 2026: 10.º (49 pts, 34-28); Apertura 5.º zona B; Clausura 6.º grupo B. Copas 2026 (dato del usuario, 23/11): sin copa internacional. Copa Argentina: eliminado en octavos. Títulos y finales: Campeón del Torneo Apertura 2026.",
 	"reemplaza": [
 		{
 			"nombre": "Manuel Vicentini",
@@ -244,7 +244,9 @@
 				"anio": 2009
 			},
 			"sofascore": 7.3,
-			"rasgos": ["aereo"],
+			"rasgos": [
+				"aereo"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/125019-1758832195.png?lm=4711"
 		},
 		{

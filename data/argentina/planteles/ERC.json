@@ -1,7 +1,7 @@
 {
 	"equipo": "ERC",
 	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 22/11/2026); debut, inferiores, Sofascore, rasgos, capitán, lesiones, nacionalidad de Hesar y contexto: datos del usuario. OVR: Claude. Altura de Chala: dato del usuario (1,86).",
-	"contexto": "Estudiantes de Río Cuarto protagonizó una de las campañas más pobres del siglo en Primera División, consumando un regreso fugaz a la segunda categoría marcado por una inferioridad casi permanente. Lejos de adaptarse con el correr de las fechas, el equipo vivió desbordado entre cambios de mando, una rotación caótica en el arco —donde desfilaron varios guardametas sin afirmarse— y un plantel que nunca estuvo a la altura. Encerrado en bloques bajos y sin recursos para elaborar, dependió de envíos largos y de la poca claridad que aportaron Gabriel Alanís con su pegada y Siro Rosané en la distribución, mientras Tomás González sostuvo el ritmo desde el despliegue. La falta de gol y la fragilidad atrás lo condenaron de principio a fin. Sofascore: solo Alejandro Cabrera supera 6,90. Sin capitán fijo; suele serlo Gonzalo Maffini. Tabla anual 2026: 30.º y último (14 pts, 15-47); Apertura 15.º zona B; Clausura 15.º grupo B; descendió.",
+	"contexto": "Estudiantes de Río Cuarto protagonizó una de las campañas más pobres del siglo en Primera División, consumando un regreso fugaz a la segunda categoría marcado por una inferioridad casi permanente. Lejos de adaptarse con el correr de las fechas, el equipo vivió desbordado entre cambios de mando, una rotación caótica en el arco —donde desfilaron varios guardametas sin afirmarse— y un plantel que nunca estuvo a la altura. Encerrado en bloques bajos y sin recursos para elaborar, dependió de envíos largos y de la poca claridad que aportaron Gabriel Alanís con su pegada y Siro Rosané en la distribución, mientras Tomás González sostuvo el ritmo desde el despliegue. La falta de gol y la fragilidad atrás lo condenaron de principio a fin. Sofascore: solo Alejandro Cabrera supera 6,90. Sin capitán fijo; suele serlo Gonzalo Maffini. Tabla anual 2026: 30.º y último (14 pts, 15-47); Apertura 15.º zona B; Clausura 15.º grupo B; descendió. Copas 2026 (dato del usuario, 23/11): sin copa internacional. Copa Argentina: eliminado en treintaidosavos.",
 	"reemplaza": [
 		{
 			"nombre": "Raúl Lozano",
@@ -256,7 +256,9 @@
 			},
 			"sofascore": 6.84,
 			"capitan": true,
-			"rasgos": ["aereo"]
+			"rasgos": [
+				"aereo"
+			]
 		},
 		{
 			"n": "30",

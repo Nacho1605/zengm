@@ -1,6 +1,7 @@
 {
 	"equipo": "BOC",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario. Comentario, Sofascore y copas: datos del usuario (23/11/2026)",
+	"contexto": "Boca dio vuelta un semestre inicial muy duro —afuera en grupos de la Libertadores y rápido del Apertura— hasta firmar un cierre arrollador: ganó la Liga, cortó su larga sequía internacional con la Sudamericana y sigue vivo en el Clausura y la Copa Argentina. El recambio de ciclo transformó un equipo tenso e indisciplinado en uno protagonista, compacto y punzante por afuera, aunque todavía deja puntos evitables de visitante. Leandro Paredes ordenó el juego, Santiago Ascacíbar contagió despliegue y llegada, y Lautaro Di Lollo afirmó el fondo. Arriba, el desequilibrio de Sebastián Villa, las proyecciones de Lautaro Blanco y la voracidad goleadora de Miguel Merentiel terminaron inclinando casi todo. Sofascore: Leandro Paredes (7,74), Leandro Lozano (7,30), Lautaro Di Lollo (7,27), Sebastián Villa (7,18), Álvaro Montero (7,09), Lautaro Blanco (7,04), Alan Velasco (7,01), Tomás Aranda (6,99), Milton Delgado (6,94). Tabla anual 2026: 1.º (63 pts, 46-23); Apertura 2.º de la zona A (30 pts, 22-9); Clausura 2.º del grupo A (33 pts, 24-14); promedios 1.º. Copas 2026 (dato del usuario, 23/11): Libertadores: 3.º en la fase de grupos, pasó a la Sudamericana y la ganó (campeón de la Copa Sudamericana 2026). Copa Argentina: finalista (la final aún no se jugó). Títulos y finales: Campeón de la Liga 2026 (tabla anual); Campeón de la Copa Sudamericana 2026.",
 	"reemplaza": [
 		{
 			"nombre": "Leandro Brey",
@@ -77,7 +78,8 @@
 				"anio": 2015
 			},
 			"college": "Associação Desportiva São Caetano",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5v1NoJxqfI-IIXABWXJPd4qW-ra0-5xu2kDWuCKUENw&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5v1NoJxqfI-IIXABWXJPd4qW-ra0-5xu2kDWuCKUENw&s=10",
+			"sofascore": 7.09
 		},
 		{
 			"n": "12",
@@ -167,7 +169,10 @@
 			},
 			"ovr": 70,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrki1a19pluSjky22mmDeTfXVk1WM4tf_UT2ydRl6jw&s=10",
-			"rasgos": ["aereo"]
+			"rasgos": [
+				"aereo"
+			],
+			"sofascore": 7.27
 		},
 		{
 			"n": "32",
@@ -294,7 +299,8 @@
 				"anio": 2021
 			},
 			"ovr": 68,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwk-dvGDAqWsS20hhvp3XJ3sas_XcqhkIwKWZZnlLRpg&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwk-dvGDAqWsS20hhvp3XJ3sas_XcqhkIwKWZZnlLRpg&s=10",
+			"sofascore": 7.04
 		},
 		{
 			"n": "27",
@@ -338,7 +344,8 @@
 			},
 			"college": "Club Atlético Boston River",
 			"ovr": 65,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVgNRq8UT8uktIzwurCvGl6n9SUZRqveUktk_zo29pcw&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVgNRq8UT8uktIzwurCvGl6n9SUZRqveUktk_zo29pcw&s=10",
+			"sofascore": 7.3
 		},
 		{
 			"n": "24",
@@ -380,7 +387,8 @@
 				"anio": 2024
 			},
 			"ovr": 68,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCa8Vej5aAmzf1141WFwzcssJDVhncxwZ_6DAZUy5h4Q&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCa8Vej5aAmzf1141WFwzcssJDVhncxwZ_6DAZUy5h4Q&s=10",
+			"sofascore": 6.94
 		},
 		{
 			"n": "25",
@@ -434,7 +442,8 @@
 				"cerebro",
 				"recuperador",
 				"lento"
-			]
+			],
+			"sofascore": 7.74
 		},
 		{
 			"n": "8",
@@ -561,7 +570,8 @@
 				"anio": 2026
 			},
 			"ovr": 64,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa68gtERiXK_eVn6F3HCcK6nK-e4zMIMF0WYbJOHAYuw&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa68gtERiXK_eVn6F3HCcK6nK-e4zMIMF0WYbJOHAYuw&s=10",
+			"sofascore": 6.99
 		},
 		{
 			"n": "7",
@@ -609,7 +619,8 @@
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLVq3OtBEIA5Lde5I7kbVqY6ZTAc51_VZ989t1SbYmbg&s",
 			"rasgos": [
 				"veloz+"
-			]
+			],
+			"sofascore": 7.18
 		},
 		{
 			"n": "20",
@@ -630,7 +641,8 @@
 				"anio": 2020
 			},
 			"ovr": 59,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5wdX2XYdxaIyqblazYF9Y6FzDOsnoyL7cqa3QPCToQ&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5wdX2XYdxaIyqblazYF9Y6FzDOsnoyL7cqa3QPCToQ&s=10",
+			"sofascore": 7.01
 		},
 		{
 			"n": "19",
@@ -775,7 +787,9 @@
 			"college": "Club Sport Emelec",
 			"ovr": 64,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Ony12tvhm8P8R9DUfr_eTcSitJdEQBlB4UR2_DtjWg&s=10",
-			"rasgos": ["aereo"]
+			"rasgos": [
+				"aereo"
+			]
 		}
 	]
 }

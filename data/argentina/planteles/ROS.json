@@ -1,6 +1,7 @@
 {
 	"equipo": "ROS",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario. Comentario, Sofascore y copas: datos del usuario (23/11/2026)",
+	"contexto": "Rosario Central sostuvo una regularidad envidiable y alcanzó su techo en el cierre: pese a frenarse en semifinales del Apertura y despedirse antes de lo esperado en Copa Argentina y Libertadores, levantó la Supercopa Internacional, aseguró Libertadores directa y sigue firme en los playoffs del Clausura. Ni las salidas de Alejo Véliz e Ignacio Malcorra quebraron su identidad de posesión, presión alta y solidez atrás, aunque en cruces cerrados fuera de Arroyito le costó traducir ese control. Ángel Di María cargó la creación y el gol, sostenido por el eje de Vicente Pizarro y Franco Ibarra, el vértigo de Jáminton Campaz, el empuje de Enzo Copetti y el insólito aporte goleador del zaguero Gastón Ávila. Sofascore: Gastón Ávila (7,43), Ángel Di María (7,39), Franco Ibarra (7,37), Jaminton Campaz (7,29), Ignacio Ovando (7,08), Vicente Pizarro (6,91). Tabla anual 2026: 2.º (62 pts, 46-28); Apertura 4.º de la zona B (28 pts, 20-16); Clausura 1.º del grupo B (34 pts, 26-12); promedios 3.º. Copas 2026 (dato del usuario, 23/11): Libertadores: octavos de final. Copa Argentina: eliminado en dieciseisavos. Títulos y finales: Campeón de la Supercopa Internacional.",
 	"reemplaza": [
 		{
 			"nombre": "Axel Werner",
@@ -135,7 +136,8 @@
 				"anio": 2026
 			},
 			"ovr": 70,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1297993-1742571532.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1297993-1742571532.png?lm=4711",
+			"sofascore": 7.08
 		},
 		{
 			"n": "13",
@@ -163,7 +165,8 @@
 					"nombre": "Ezequiel Ávila"
 				}
 			],
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl4Np9vwt_BbdqgoS2VJAMm8lKUUqNhdRt5fxbrlT07Q&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl4Np9vwt_BbdqgoS2VJAMm8lKUUqNhdRt5fxbrlT07Q&s=10",
+			"sofascore": 7.43
 		},
 		{
 			"n": "24",
@@ -402,7 +405,8 @@
 			"rasgos": [
 				"recuperador",
 				"pulmon"
-			]
+			],
+			"sofascore": 7.37
 		},
 		{
 			"n": "20",
@@ -424,7 +428,8 @@
 			},
 			"college": "Club Social y Deportivo Colo-Colo",
 			"ovr": 66,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/662740-1709827857.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/662740-1709827857.jpg?lm=4711",
+			"sofascore": 6.91
 		},
 		{
 			"n": "31",
@@ -536,7 +541,8 @@
 			"rasgos": [
 				"gambeta",
 				"pase"
-			]
+			],
+			"sofascore": 7.29
 		},
 		{
 			"n": "26",
@@ -629,7 +635,8 @@
 				"pelota parada",
 				"habilidoso+",
 				"centrador"
-			]
+			],
+			"sofascore": 7.39
 		},
 		{
 			"n": "27",

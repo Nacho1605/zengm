@@ -1,6 +1,7 @@
 {
 	"equipo": "GIM",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario. Comentario, Sofascore y copas: datos del usuario (23/11/2026)",
+	"contexto": "Sin copas internacionales, Gimnasia sostuvo un año competitivo que le aseguró la Sudamericana y aún lo deja con chances de Libertadores. Absorbió un cambio de ciclo, un golpe duro en el clásico y la salida por penales en Copa Argentina para cerrar el Clausura en racha invicta y repetir presencia en playoffs. Cómodo sin la pelota, lastima con ataques directos y empuje sobre la hora, pero arrastra una fragilidad defensiva que rara vez le permite cerrar el arco —incluso relegando a Nelson Insfrán por Harlen Castillo—. Ignacio Fernández ordenó el juego con gol y último pase, Alexis Steimbach pesó desde el lateral derecho, y Marcelo Torres junto a Agustín Auzmendi sostuvieron la eficacia arriba. Sofascore: Nacho Fernández (7,37), Nicolás Barros Schelotto (7,10), Ignacio Miramón (7,05), Enzo Martínez (7,02), Nelson Insfrán (6,99). Tabla anual 2026: 5.º (57 pts, 44-39); Apertura 6.º de la zona B (26 pts, 19-19); Clausura 3.º del grupo B (31 pts, 25-20); promedios 14.º. Copas 2026 (dato del usuario, 23/11): sin copa internacional. Copa Argentina: eliminado en octavos.",
 	"reemplaza": [
 		{
 			"nombre": "Germán Conti",
@@ -53,7 +54,8 @@
 				"anio": 2016
 			},
 			"college": "Club de Gimnasia y Esgrima La Plata",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/660280-1699913821.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/660280-1699913821.jpg?lm=4711",
+			"sofascore": 6.99
 		},
 		{
 			"n": "15",
@@ -143,7 +145,8 @@
 				"anio": 2018
 			},
 			"college": "Club Atlético Peñarol",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/578737-1739197041.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/578737-1739197041.jpg?lm=4711",
+			"sofascore": 7.02
 		},
 		{
 			"n": "35",
@@ -355,7 +358,8 @@
 			"rasgos": [
 				"cerebro",
 				"recuperador"
-			]
+			],
+			"sofascore": 7.1
 		},
 		{
 			"n": "5",
@@ -380,7 +384,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/836518-1739897521.jpg?lm=4711",
 			"rasgos": [
 				"pulmon"
-			]
+			],
+			"sofascore": 7.05
 		},
 		{
 			"n": "18",
@@ -477,7 +482,8 @@
 			"rasgos": [
 				"habilidoso",
 				"pase"
-			]
+			],
+			"sofascore": 7.37
 		},
 		{
 			"n": "20",

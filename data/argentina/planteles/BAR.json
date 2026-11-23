@@ -1,7 +1,7 @@
 {
 	"equipo": "BAR",
 	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 23/11/2026); debut, inferiores, Sofascore, rasgos, capitán, lesiones, parientes, valor de Gamba (50 mil €) y contexto: datos del usuario. OVR: Claude.",
-	"contexto": "Barracas Central pagó el salto de su estreno internacional: en la Sudamericana quedó afuera sin triunfos, superado en jerarquía y castigado por expulsiones, mientras el arranque local se le escurrió por falta de peso ofensivo. El cambio de rumbo y de esquema tras el receso lo volvió más rocoso hasta meterlo en la pelea de los playoffs del cierre. Pragmático y fuerte cerca de su área, concede poco y lastima de contra o en la pelota parada, aunque le falta profundidad elaborada y sufre cuando le encaran a los centrales. Sin un delantero letal, dependió de la pegada de Iván Tapia, la claridad de Tomás Porra, la presión y oficio de Norberto Briasco y el insólito aporte goleador del lateral Rodrigo Insúa. Sofascore: Marcelo Miño (7,41), Yonatthan Rak (7,19), Kevin Jappert (6,97); ningún otro supera 6,90. Sin capitán fijo; suele serlo Iván Tapia. Carlos Arce es el capitán histórico y el jugador con más presencias en la historia del club, pero ya no juega tan seguido. Lesiones sin fecha (estimadas): Manuel Duarte, rotura del ligamento cruzado (20 partidos); Lucas Gamba, tendinitis (2); Fernando Tobio, desgarro muscular (3). Tabla anual 2026: 12.º (47 pts, 32-28); Apertura 9.º de su grupo (21 pts, 15-15); Clausura 5.º de su grupo (26 pts, 17-13).",
+	"contexto": "Barracas Central pagó el salto de su estreno internacional: en la Sudamericana quedó afuera sin triunfos, superado en jerarquía y castigado por expulsiones, mientras el arranque local se le escurrió por falta de peso ofensivo. El cambio de rumbo y de esquema tras el receso lo volvió más rocoso hasta meterlo en la pelea de los playoffs del cierre. Pragmático y fuerte cerca de su área, concede poco y lastima de contra o en la pelota parada, aunque le falta profundidad elaborada y sufre cuando le encaran a los centrales. Sin un delantero letal, dependió de la pegada de Iván Tapia, la claridad de Tomás Porra, la presión y oficio de Norberto Briasco y el insólito aporte goleador del lateral Rodrigo Insúa. Sofascore: Marcelo Miño (7,41), Yonatthan Rak (7,19), Kevin Jappert (6,97); ningún otro supera 6,90. Sin capitán fijo; suele serlo Iván Tapia. Carlos Arce es el capitán histórico y el jugador con más presencias en la historia del club, pero ya no juega tan seguido. Lesiones sin fecha (estimadas): Manuel Duarte, rotura del ligamento cruzado (20 partidos); Lucas Gamba, tendinitis (2); Fernando Tobio, desgarro muscular (3). Tabla anual 2026: 12.º (47 pts, 32-28); Apertura 9.º de su grupo (21 pts, 15-15); Clausura 5.º de su grupo (26 pts, 17-13). Copas 2026 (dato del usuario, 23/11): Sudamericana: 4.º en la fase de grupos. Copa Argentina: eliminado en octavos.",
 	"reemplaza": [
 		{
 			"nombre": "Nicolás Capraro",
@@ -330,7 +330,9 @@
 				"club": "RAC",
 				"anio": 2011
 			},
-			"rasgos": ["aereo"]
+			"rasgos": [
+				"aereo"
+			]
 		},
 		{
 			"n": "6",

@@ -1,6 +1,7 @@
 {
 	"equipo": "RIV",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario. Comentario, Sofascore y copas: datos del usuario (23/11/2026)",
+	"contexto": "River vivió un año convulsionado y por debajo de su inversión, sacudido por la inestabilidad en el banco y un recambio masivo que tardó en ensamblarse. Subcampeón del Apertura y eliminado rápido de Sudamericana y Copa Argentina, quedó obligado a pelear el Clausura para salvar la temporada y volver a la Libertadores. Aunque impone peso individual y posesión, le costó sostener el funcionamiento colectivo, pagó caro las lesiones en el medio y flaqueó en duelos decisivos. Entre tantos vaivenes se afirmaron el joven arquero Santiago Beltrán y el despliegue goleador de Tomás Galván, mientras la chispa de Ángel Correa, la jerarquía de Thiago Almada y el peso de Sebastián Driussi sostuvieron el ataque a ráfagas. Sofascore: Lautaro Rivero (7,15), Aníbal Moreno (7,07), Gonzalo Montiel (7,05), Lucas Martínez Quarta (7,03), Tomás Galván (7,03), Marcos Acuña (7,03), Tobías Andrada (6,96), Fausto Vera (6,95), Santiago Beltrán (6,93). Tabla anual 2026: 7.º (55 pts, 43-26); Apertura 2.º de la zona B (29 pts, 22-12); Clausura 4.º del grupo B (26 pts, 21-14); promedios 2.º. Copas 2026 (dato del usuario, 23/11): Sudamericana: octavos de final. Copa Argentina: eliminado en dieciseisavos. Títulos y finales: Subcampeón del Torneo Apertura 2026.",
 	"reemplaza": [
 		{
 			"nombre": "Juan Carlos Portillo",
@@ -47,7 +48,8 @@
 				"club": "RIV",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1138089-1762437740.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1138089-1762437740.png?lm=4711",
+			"sofascore": 6.93
 		},
 		{
 			"n": "33",
@@ -90,7 +92,8 @@
 				"club": "RIV",
 				"anio": 2024
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoGc4KBTYG_lHBZQ6Sy-kvInDyZBQ3MSQxBtuNvzgM9Q&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoGc4KBTYG_lHBZQ6Sy-kvInDyZBQ3MSQxBtuNvzgM9Q&s=10",
+			"sofascore": 7.15
 		},
 		{
 			"n": "28",
@@ -112,7 +115,8 @@
 				"anio": 2016
 			},
 			"college": "Club Atlético Kimberley (Mar del Plata)",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ra81k99SXrdllKI8eUT6ROpwoRWAL8cGurPRUqGcrg&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ra81k99SXrdllKI8eUT6ROpwoRWAL8cGurPRUqGcrg&s=10",
+			"sofascore": 7.03
 		},
 		{
 			"n": "2",
@@ -182,7 +186,9 @@
 			},
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLyaf3p-YBXuS6_dwlfwPRlBGSBOwgzuSexsNIJtyyA&s=10",
 			"capitan": true,
-			"rasgos": ["aereo"]
+			"rasgos": [
+				"aereo"
+			]
 		},
 		{
 			"n": "31",
@@ -249,7 +255,8 @@
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDq6bGVhIS23s_8GOesinaN1Fdv_zJrC9SRdNUipdiJA&s=10",
 			"rasgos": [
 				"centrador"
-			]
+			],
+			"sofascore": 7.03
 		},
 		{
 			"n": "29",
@@ -273,7 +280,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/402733-1668181612.jpg?lm=4711",
 			"rasgos": [
 				"centrador"
-			]
+			],
+			"sofascore": 7.05
 		},
 		{
 			"n": "20",
@@ -321,7 +329,8 @@
 				"tipo": "Molestias en el gemelo",
 				"partidos": 2
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQARAaXVE1cvtnumFvUk6FhHveCyZ7_GoZ_BrDyk5Ktyg&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQARAaXVE1cvtnumFvUk6FhHveCyZ7_GoZ_BrDyk5Ktyg&s=10",
+			"sofascore": 7.07
 		},
 		{
 			"n": "15",
@@ -342,7 +351,8 @@
 				"club": "ARG",
 				"anio": 2019
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvSD0pl_6QOmqlupQg-FaN3qjS51d4WH9yKy_wmFp6uQ&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvSD0pl_6QOmqlupQg-FaN3qjS51d4WH9yKy_wmFp6uQ&s=10",
+			"sofascore": 6.95
 		},
 		{
 			"n": "44",
@@ -385,7 +395,8 @@
 				"club": "VEL",
 				"anio": 2025
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT527NyiRYz3Dk_E7kqCo0TLHK7v3H_HAK_3JBgc1EQ-g&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT527NyiRYz3Dk_E7kqCo0TLHK7v3H_HAK_3JBgc1EQ-g&s=10",
+			"sofascore": 6.96
 		},
 		{
 			"n": "8",
@@ -480,7 +491,8 @@
 				"club": "RIV",
 				"anio": 2022
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1iIf55Vf3Wp87Y6HdFZFMBGJ8fMqc9kNhJrntv7o2DA&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1iIf55Vf3Wp87Y6HdFZFMBGJ8fMqc9kNhJrntv7o2DA&s=10",
+			"sofascore": 7.03
 		},
 		{
 			"n": "24",

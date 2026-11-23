@@ -1,6 +1,7 @@
 {
 	"equipo": "LAN",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario. Comentario, Sofascore y copas: datos del usuario (23/11/2026)",
+	"contexto": "Lanús arrancó tocando el cielo con una Recopa Sudamericana histórica, pero el año perdió vuelo entre el desgaste copero y el éxodo de sus atacantes. Fuerte en La Fortaleza, las visitas a la altura lo desarmaron en Libertadores y Sudamericana, y a nivel local cayó rápido en Copa Argentina y en los cruces iniciales de ambos torneos. Sin doble competencia, recuperó orden, disciplina y solidez atrás para asegurar otra Sudamericana, aunque sufrió goles sobre la hora. Las ventas de Rodrigo Castillo y Dylan Aquino vaciaron el ataque y recargaron el peso en Carlos Izquierdoz en ambas áreas, las asistencias de Eduardo Salvio, el despliegue de Ramiro Carrera, el ingenio de Marcelino Moreno y los goles de Allan Wlk. Sofascore: Carlos Izquierdoz (7,23), Nahuel Losada (7,08), Agustín Cardozo (7,08), Dylan Aquino (7,06), José Canale (7,01), Felipe Peña Biafore (6,91), Ronaldo Dejesús (6,90), Tomás Guidara (6,90). Tabla anual 2026: 9.º (50 pts, 37-27); Apertura 6.º de la zona A (24 pts, 18-15); Clausura 5.º del grupo A (26 pts, 19-12); promedios 6.º. Copas 2026 (dato del usuario, 23/11): Libertadores: 3.º en la fase de grupos, pasó a la Sudamericana y quedó en dieciseisavos. Copa Argentina: eliminado en dieciseisavos. Títulos y finales: Campeón de la Recopa Sudamericana.",
 	"reemplaza": [
 		{
 			"nombre": "Nahuel Losada",
@@ -60,7 +61,8 @@
 				"club": "EST",
 				"anio": 2013
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/323918-1721933353.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/323918-1721933353.png?lm=4711",
+			"sofascore": 7.08
 		},
 		{
 			"n": "1",
@@ -109,7 +111,8 @@
 			"rasgos": [
 				"potente",
 				"tactico"
-			]
+			],
+			"sofascore": 7.23
 		},
 		{
 			"n": "13",
@@ -136,7 +139,8 @@
 			"rasgos": [
 				"aereo",
 				"recuperador"
-			]
+			],
+			"sofascore": 7.01
 		},
 		{
 			"n": "35",
@@ -159,7 +163,8 @@
 				"anio": 2022
 			},
 			"college": "Club River Plate (Paraguay)",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/847074-1755012394.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/847074-1755012394.png?lm=4711",
+			"sofascore": 6.9
 		},
 		{
 			"n": "4",
@@ -251,7 +256,8 @@
 				"club": "BEL",
 				"anio": 2017
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/355900-1755535002.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/355900-1755535002.jpg?lm=4711",
+			"sofascore": 6.9
 		},
 		{
 			"n": "3",
@@ -295,7 +301,8 @@
 				"club": "TIG",
 				"anio": 2017
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/469762-1727449491.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/469762-1727449491.jpg?lm=4711",
+			"sofascore": 7.08
 		},
 		{
 			"n": "17",
@@ -339,7 +346,8 @@
 				"club": "RIV",
 				"anio": 2021
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/894194-1644878091.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/894194-1644878091.png?lm=4711",
+			"sofascore": 6.91
 		},
 		{
 			"n": "15",

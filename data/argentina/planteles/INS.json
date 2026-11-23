@@ -1,7 +1,7 @@
 {
 	"equipo": "INS",
 	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 22/11/2026); debut, inferiores, reserva, Sofascore, rasgos, capitán, lesiones, altura de Rafaelli y contexto: datos del usuario. OVR: Claude.",
-	"contexto": "Instituto fue de menor a mayor y firmó un salto notable: arrancó el año a los tumbos, pero explotó en el segundo semestre hasta consolidarse como protagonista y asegurar boleto internacional. Sin necesitar la pelota —es de los equipos con menor tenencia—, apuesta a un bloque ordenado con carrileros profundos y transiciones directas. Esa eficacia disimula que sus centrodelanteros aportaron poco gol y que, cuando cede metros de más, queda expuesto. Marcos Ledesma dio firmeza tras el cambio en el arco, respaldado por la solidez de Fernando Alarcón y Leonel Mosevich. Giuliano Cerato y Diego Sosa empujan por afuera, Gustavo Abregú equilibra el medio y arriba desequilibran Alex Luna y Jeremías Lázaro.",
+	"contexto": "Instituto fue de menor a mayor y firmó un salto notable: arrancó el año a los tumbos, pero explotó en el segundo semestre hasta consolidarse como protagonista y asegurar boleto internacional. Sin necesitar la pelota —es de los equipos con menor tenencia—, apuesta a un bloque ordenado con carrileros profundos y transiciones directas. Esa eficacia disimula que sus centrodelanteros aportaron poco gol y que, cuando cede metros de más, queda expuesto. Marcos Ledesma dio firmeza tras el cambio en el arco, respaldado por la solidez de Fernando Alarcón y Leonel Mosevich. Giuliano Cerato y Diego Sosa empujan por afuera, Gustavo Abregú equilibra el medio y arriba desequilibran Alex Luna y Jeremías Lázaro. Tabla anual 2026: 8.º (55 pts, 43-32); Apertura 9.º de la zona A (21 pts, 17-17); Clausura 1.º del grupo A (34 pts, 26-15); promedios 16.º. Copas 2026 (dato del usuario, 23/11): sin copa internacional. Copa Argentina: eliminado en octavos.",
 	"reemplaza": [
 		{
 			"nombre": "Marcos Ledesma",
@@ -153,7 +153,9 @@
 			"college": "Club Atlético Rosario Central",
 			"sofascore": 7,
 			"capitan": true,
-			"rasgos": ["aereo"],
+			"rasgos": [
+				"aereo"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/376853-1771006860.png?lm=4711"
 		},
 		{

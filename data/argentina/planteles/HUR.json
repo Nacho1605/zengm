@@ -1,6 +1,7 @@
 {
 	"equipo": "HUR",
 	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 20/11/2026); altura de Uribe, capitán, debut, inferiores (= club de debut en todos), lesión, Sofascore, rasgos y contexto: datos del usuario (21/11/2026). OVR: Claude.",
+	"contexto": "Huracán transitó un año de vaivenes, sin lograr consolidarse: empezó con intensidad y empuje, perdió aire por el desgaste físico y recién recuperó algo de firmeza en el tramo final. Su presión alta y las transiciones rápidas lastiman con campo abierto, pero el equipo se traba ante defensas cerradas y se desordena fácil cuando pierde la pelota. Hernán Galíndez respondió con oficio en un arco muchas veces desprotegido. Arriba, el peso físico de Jordy Caicedo, el desequilibrio intermitente de Óscar Cortés y la movilidad de Bruno Barticciotto sostuvieron la amenaza, aunque con demasiados altibajos. Tabla anual 2026: 15.º (44 pts, 31-29); Apertura 7.º zona B; Clausura 8.º grupo B. Copas 2026 (dato del usuario, 23/11): sin copa internacional. Copa Argentina: eliminado en dieciseisavos.",
 	"reemplaza": [
 		{
 			"nombre": "Sebastián Meza",
@@ -892,6 +893,5 @@
 			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/283528-1630653500.jpg?lm=4711"
 		}
-	],
-	"contexto": "Huracán transitó un año de vaivenes, sin lograr consolidarse: empezó con intensidad y empuje, perdió aire por el desgaste físico y recién recuperó algo de firmeza en el tramo final. Su presión alta y las transiciones rápidas lastiman con campo abierto, pero el equipo se traba ante defensas cerradas y se desordena fácil cuando pierde la pelota. Hernán Galíndez respondió con oficio en un arco muchas veces desprotegido. Arriba, el peso físico de Jordy Caicedo, el desequilibrio intermitente de Óscar Cortés y la movilidad de Bruno Barticciotto sostuvieron la amenaza, aunque con demasiados altibajos. Tabla anual 2026: 15.º (44 pts, 31-29); Apertura 7.º zona B; Clausura 8.º grupo B."
+	]
 }

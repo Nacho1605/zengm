@@ -1,6 +1,7 @@
 {
 	"equipo": "EST",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario. Comentario, Sofascore y copas: datos del usuario (23/11/2026)",
+	"contexto": "Estudiantes partió su año en dos al apostar todo a la Copa Libertadores: alcanzó la final continental y ganó la Supercopa Argentina, pero perdió la Supercopa Internacional y se derrumbó en el Clausura hasta quedarse sin playoffs, entrando a la próxima Sudamericana solo por liberación de cupos si no levanta la copa. Tras un gran Apertura frustrado rápido en los cruces, abrazó un juego áspero y pragmático, temible en duelos cerrados pero previsible y permeable al rotar en la liga. Fernando Muslera sostuvo la épica en el arco, Guido Carrillo aportó oficio y peso aéreo, Tiago Palacios desequilibró entre líneas, Alexis Castro pesó en noches límite y Fabricio Pérez lideró el gol local. Sofascore: Tomás Palacios (7,25), Leandro González Pirez (7,20), Tiago Palacios (7,10), Ezequiel Piovi (7,09), Santiago Núñez (7,08), Fernando Muslera (7,07), Gabriel Neves (7,02), Marcos Rojo (6,94), Alexis Castro (6,90), Gastón Benedetti (6,90). En la Copa Libertadores, el top 5 lo componen Fernando Muslera (7,30), Santiago Núñez (7,14), Tiago Palacios (7,08), Guido Carrillo (6,93) y Alexis Castro (6,93). Tabla anual 2026: 11.º (47 pts, 40-29); Apertura 1.º de la zona A (31 pts, 19-7); Clausura 12.º del grupo A (16 pts, 21-22); promedios 10.º. Copas 2026 (dato del usuario, 23/11): Libertadores: finalista (la final aún no se jugó). Copa Argentina: eliminado en cuartos. Títulos y finales: Campeón de la Supercopa Argentina; Perdió la Supercopa Internacional; Finalista de la Libertadores (por jugar).",
 	"reemplaza": [
 		{
 			"nombre": "Tomás Palacios",
@@ -72,7 +73,8 @@
 			"capitanias": 2,
 			"rasgos": [
 				"reflejos"
-			]
+			],
+			"sofascore": 7.07
 		},
 		{
 			"n": "1",
@@ -140,7 +142,8 @@
 				"aereo",
 				"recuperador"
 			],
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLUaPo7djYwsxgbmQoJOG8i5r5MsPFMAt6Lue1i6wOww&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLUaPo7djYwsxgbmQoJOG8i5r5MsPFMAt6Lue1i6wOww&s=10",
+			"sofascore": 7.25
 		},
 		{
 			"n": "4",
@@ -162,7 +165,8 @@
 			},
 			"ovr": 64,
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjYNn8rV0XqFjmxXKrMl8rXGmUYSDA__DmqYweIfne3Q&s=10",
-			"capitanias": 3
+			"capitanias": 3,
+			"sofascore": 7.08
 		},
 		{
 			"n": "14",
@@ -187,7 +191,8 @@
 				"tactico"
 			],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_TflhAjaPK0ZcXfqYhrMVE3qYBZDAY0GnvMLK2iBQGw&s=10",
-			"capitanias": 1
+			"capitanias": 1,
+			"sofascore": 7.2
 		},
 		{
 			"n": "35",
@@ -234,7 +239,8 @@
 				"aereo",
 				"recuperador"
 			],
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQex3kmtIvSjheCAB-xe7BJXcOybZX2AcARAA1Sf4y2w&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQex3kmtIvSjheCAB-xe7BJXcOybZX2AcARAA1Sf4y2w&s=10",
+			"sofascore": 6.94
 		},
 		{
 			"n": "26",
@@ -302,7 +308,8 @@
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7OjjS4YKDiV-Y1IJT0sjN3gh_Jfe1dR8_wNXxNMbjOw&s=10",
 			"rasgos": [
 				"centrador"
-			]
+			],
+			"sofascore": 6.9
 		},
 		{
 			"n": "36",
@@ -417,7 +424,8 @@
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyDjvkPjattknjOsWjAF5y7p85e55PVNK9IvqktpoRUw&s=10",
 			"rasgos": [
 				"cerebro"
-			]
+			],
+			"sofascore": 7.02
 		},
 		{
 			"n": "21",
@@ -448,7 +456,8 @@
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRL2Vc_VmG3bBzAhB_kWCfbVvgT-EHquzvJY91ZzrRpA&s=10",
 			"rasgos": [
 				"pulmon"
-			]
+			],
+			"sofascore": 7.09
 		},
 		{
 			"n": "22",
@@ -469,7 +478,8 @@
 				"anio": 2015
 			},
 			"ovr": 66,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlI9A2bgPtMLaddJCtdpqEPuzo7Ka7dU2bG9QJTlJidg&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlI9A2bgPtMLaddJCtdpqEPuzo7Ka7dU2bG9QJTlJidg&s=10",
+			"sofascore": 6.9
 		},
 		{
 			"n": "52",
@@ -650,7 +660,8 @@
 			},
 			"college": "Club Atlético River Plate",
 			"ovr": 69,
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRDXd7fxKPSJG2PU8TXrDuCG3PdWGCwhj4Uffsba7R8w&s=10"
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRDXd7fxKPSJG2PU8TXrDuCG3PdWGCwhj4Uffsba7R8w&s=10",
+			"sofascore": 7.1
 		},
 		{
 			"n": "29",
@@ -743,7 +754,9 @@
 				"anio": 2011
 			},
 			"ovr": 68,
-			"rasgos": ["aereo"],
+			"rasgos": [
+				"aereo"
+			],
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx3Yue4b_eX4uccuO68X-hXsvxcMdUfg6PeMbbADyt_w&s=10",
 			"capitanias": 5
 		},

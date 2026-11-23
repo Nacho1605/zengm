@@ -1,6 +1,7 @@
 {
 	"equipo": "VEL",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario. Comentario, Sofascore y copas: datos del usuario (23/11/2026)",
+	"contexto": "Sin copas internacionales, Vélez sostuvo una regularidad pareja todo el año, aunque con techo esquivo: perdió muy poco y aseguró cupo en la Sudamericana, pero salió rápido en los cruces del Apertura y la Copa Argentina antes de avanzar en el Clausura. Ni las ventas de Tobías Andrada y Florián Monzón quebraron un libreto de presión alta tras pérdida y juego asociado; su lastre fue empatar demasiado por bajo volumen de remates y ser muy frágil en el juego aéreo. Elías Gómez fue una fija por izquierda, Rodrigo Aliendro y Lucas Robertone equilibraron el medio, Diego Valdés y Manuel Lanzini aportaron pausa y último pase, y Ronaldo Martínez, el goleador del Torneo Clausura, llegó en el cierre para dar el gol letal que le faltaba. Sofascore: Facundo Sanguinetti (7,24), Manuel Lanzini (7,11), Lucas Robertone (7,03), Diego Valdés (6,99), Rodrigo Aliendro (6,95), Emanuel Mammana (6,95), Elías Gómez (6,94), Claudio Baeza (6,90), Joaquín García (6,90). Tabla anual 2026: 6.º (56 pts, 43-29); Apertura 3.º de la zona A (28 pts, 18-12); Clausura 3.º del grupo A (28 pts, 25-17); promedios 5.º. Copas 2026 (dato del usuario, 23/11): sin copa internacional. Copa Argentina: eliminado en octavos.",
 	"reemplaza": [
 		{
 			"nombre": "Tomás Marchiori",
@@ -40,7 +41,8 @@
 				"club": "BAN",
 				"anio": 2020
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/870032-1755785095.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/870032-1755785095.jpg?lm=4711",
+			"sofascore": 7.24
 		},
 		{
 			"n": "1",
@@ -106,7 +108,8 @@
 				"club": "RIV",
 				"anio": 2015
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/275512-1720645007.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/275512-1720645007.jpg?lm=4711",
+			"sofascore": 6.95
 		},
 		{
 			"n": "16",
@@ -174,7 +177,8 @@
 			"capitan": true,
 			"rasgos": [
 				"centrador"
-			]
+			],
+			"sofascore": 6.94
 		},
 		{
 			"n": "20",
@@ -216,7 +220,8 @@
 				"club": "VEL",
 				"anio": 2023
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/829433-1720645206.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/829433-1720645206.jpg?lm=4711",
+			"sofascore": 6.9
 		},
 		{
 			"n": "21",
@@ -263,7 +268,8 @@
 				"anio": 2012
 			},
 			"college": "Club Social y Deportivo Colo-Colo",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/248346-1579704061.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/248346-1579704061.png?lm=4711",
+			"sofascore": 6.9
 		},
 		{
 			"n": "8",
@@ -287,7 +293,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/457221-1732735211.jpg?lm=4711",
 			"rasgos": [
 				"cerebro"
-			]
+			],
+			"sofascore": 7.03
 		},
 		{
 			"n": "29",
@@ -311,7 +318,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/424045-1693315106.png?lm=4711",
 			"rasgos": [
 				"cerebro"
-			]
+			],
+			"sofascore": 6.95
 		},
 		{
 			"n": "10",
@@ -337,7 +345,8 @@
 			"rasgos": [
 				"pelota parada",
 				"pase"
-			]
+			],
+			"sofascore": 6.99
 		},
 		{
 			"n": "22",
@@ -362,7 +371,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/135853-1694001401.png?lm=4711",
 			"rasgos": [
 				"larga distancia"
-			]
+			],
+			"sofascore": 7.11
 		},
 		{
 			"n": "48",

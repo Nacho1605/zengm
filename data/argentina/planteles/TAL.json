@@ -1,6 +1,7 @@
 {
 	"equipo": "TAL",
 	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 20/11/2026); debut, inferiores, reserva, lesión, Sofascore, rasgos, capitanes, altura y peso de Thiago Baroni y contexto: datos del usuario (21/11/2026). OVR: Claude.",
+	"contexto": "Talleres fue de mayor a menor: arrancó competitivo, pero el recambio le quitó jerarquía y regularidad. Aunque sostuvo una idea de tenencia y pase corto, le faltó profundidad para romper defensas y abusó del remate lejano; atrás, quedó expuesto en las contras y pagó caro varias expulsiones. Ezequiel Unsain respondió en un arco muy exigido y Matías Catalán aportó oficio pese a la fragilidad colectiva. Federico Fattori dio orden en el medio y Matías Galarza sumó buen pie, aunque intermitente. Arriba, Rick y Valentín Depietri desequilibraron a ráfagas, dejando a un Agustín Álvarez sacrificado pero aislado. Giovanni Baroni juega el Mundial Sub-17 con Argentina (noviembre de 2026). Tabla anual 2026: 21.º (39 pts, 34-36); Apertura 4.º zona A; Clausura 13.º grupo A. Copas 2026 (dato del usuario, 23/11): sin copa internacional. Copa Argentina: eliminado en dieciseisavos.",
 	"reemplaza": [
 		{
 			"nombre": "Ezequiel Unsaín",
@@ -903,6 +904,5 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1280274-1771862678.jpg?lm=4711"
 		}
-	],
-	"contexto": "Talleres fue de mayor a menor: arrancó competitivo, pero el recambio le quitó jerarquía y regularidad. Aunque sostuvo una idea de tenencia y pase corto, le faltó profundidad para romper defensas y abusó del remate lejano; atrás, quedó expuesto en las contras y pagó caro varias expulsiones. Ezequiel Unsain respondió en un arco muy exigido y Matías Catalán aportó oficio pese a la fragilidad colectiva. Federico Fattori dio orden en el medio y Matías Galarza sumó buen pie, aunque intermitente. Arriba, Rick y Valentín Depietri desequilibraron a ráfagas, dejando a un Agustín Álvarez sacrificado pero aislado. Giovanni Baroni juega el Mundial Sub-17 con Argentina (noviembre de 2026). Tabla anual 2026: 21.º (39 pts, 34-36); Apertura 4.º zona A; Clausura 13.º grupo A."
+	]
 }

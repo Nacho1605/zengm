@@ -1,0 +1,172 @@
+{
+	"_nota": "Copas 2026, datos del usuario (23/11/2026). El 3.º de la fase de grupos de la Libertadores pasa a los dieciseisavos de la Sudamericana. Copa Argentina: ronda en la que quedó afuera cada equipo (BOC y PLA, finalistas). Títulos: los que el usuario menciona en sus comentarios. IRM = INR en la lista del usuario. La Sudamericana de Barracas también figura en su comentario; la de Racing, en la captura de sus competiciones (planteles/RAC.json).",
+	"equipos": {
+		"ALD": {
+			"internacional": null,
+			"copaArgentina": "eliminado en octavos",
+			"titulos": []
+		},
+		"ARG": {
+			"internacional": "Libertadores: eliminado en la Fase 2 (repechaje)",
+			"copaArgentina": "eliminado en treintaidosavos",
+			"titulos": []
+		},
+		"ATU": {
+			"internacional": null,
+			"copaArgentina": "eliminado en semifinales",
+			"titulos": []
+		},
+		"BAN": {
+			"internacional": null,
+			"copaArgentina": "eliminado en semifinales",
+			"titulos": []
+		},
+		"BAR": {
+			"internacional": "Sudamericana: 4.º en la fase de grupos",
+			"copaArgentina": "eliminado en octavos",
+			"titulos": []
+		},
+		"BEL": {
+			"internacional": null,
+			"copaArgentina": "eliminado en octavos",
+			"titulos": [
+				"Campeón del Torneo Apertura 2026"
+			]
+		},
+		"BOC": {
+			"internacional": "Libertadores: 3.º en la fase de grupos, pasó a la Sudamericana y la ganó (campeón de la Copa Sudamericana 2026)",
+			"copaArgentina": "finalista (la final aún no se jugó)",
+			"titulos": [
+				"Campeón de la Liga 2026 (tabla anual)",
+				"Campeón de la Copa Sudamericana 2026"
+			]
+		},
+		"CCO": {
+			"internacional": null,
+			"copaArgentina": "eliminado en treintaidosavos",
+			"titulos": []
+		},
+		"DYJ": {
+			"internacional": null,
+			"copaArgentina": "eliminado en dieciseisavos",
+			"titulos": []
+		},
+		"ERC": {
+			"internacional": null,
+			"copaArgentina": "eliminado en treintaidosavos",
+			"titulos": []
+		},
+		"EST": {
+			"internacional": "Libertadores: finalista (la final aún no se jugó)",
+			"copaArgentina": "eliminado en cuartos",
+			"titulos": [
+				"Campeón de la Supercopa Argentina",
+				"Perdió la Supercopa Internacional",
+				"Finalista de la Libertadores (por jugar)"
+			]
+		},
+		"GEM": {
+			"internacional": null,
+			"copaArgentina": "eliminado en treintaidosavos",
+			"titulos": []
+		},
+		"GIM": {
+			"internacional": null,
+			"copaArgentina": "eliminado en octavos",
+			"titulos": []
+		},
+		"HUR": {
+			"internacional": null,
+			"copaArgentina": "eliminado en dieciseisavos",
+			"titulos": []
+		},
+		"IND": {
+			"internacional": null,
+			"copaArgentina": "eliminado en octavos",
+			"titulos": []
+		},
+		"INS": {
+			"internacional": null,
+			"copaArgentina": "eliminado en octavos",
+			"titulos": []
+		},
+		"IRM": {
+			"internacional": "Libertadores: octavos de final (invicto, eliminado por penales)",
+			"copaArgentina": "eliminado en cuartos",
+			"titulos": [
+				"Perdió la Supercopa"
+			]
+		},
+		"LAN": {
+			"internacional": "Libertadores: 3.º en la fase de grupos, pasó a la Sudamericana y quedó en dieciseisavos",
+			"copaArgentina": "eliminado en dieciseisavos",
+			"titulos": [
+				"Campeón de la Recopa Sudamericana"
+			]
+		},
+		"NOB": {
+			"internacional": null,
+			"copaArgentina": "eliminado en treintaidosavos",
+			"titulos": []
+		},
+		"PLA": {
+			"internacional": "Libertadores: cuartos de final",
+			"copaArgentina": "finalista (la final aún no se jugó)",
+			"titulos": []
+		},
+		"RAC": {
+			"internacional": "Sudamericana: 3.º en la fase de grupos",
+			"copaArgentina": "eliminado en cuartos",
+			"titulos": []
+		},
+		"RIE": {
+			"internacional": "Sudamericana: 3.º en la fase de grupos",
+			"copaArgentina": "eliminado en cuartos",
+			"titulos": []
+		},
+		"RIV": {
+			"internacional": "Sudamericana: octavos de final",
+			"copaArgentina": "eliminado en dieciseisavos",
+			"titulos": [
+				"Subcampeón del Torneo Apertura 2026"
+			]
+		},
+		"ROS": {
+			"internacional": "Libertadores: octavos de final",
+			"copaArgentina": "eliminado en dieciseisavos",
+			"titulos": [
+				"Campeón de la Supercopa Internacional"
+			]
+		},
+		"SAR": {
+			"internacional": null,
+			"copaArgentina": "eliminado en dieciseisavos",
+			"titulos": []
+		},
+		"SLO": {
+			"internacional": "Sudamericana: 3.º en la fase de grupos",
+			"copaArgentina": "eliminado en dieciseisavos",
+			"titulos": []
+		},
+		"TAL": {
+			"internacional": null,
+			"copaArgentina": "eliminado en dieciseisavos",
+			"titulos": []
+		},
+		"TIG": {
+			"internacional": "Sudamericana: octavos de final",
+			"copaArgentina": "eliminado en dieciseisavos",
+			"titulos": []
+		},
+		"UNI": {
+			"internacional": null,
+			"copaArgentina": "eliminado en dieciseisavos",
+			"titulos": []
+		},
+		"VEL": {
+			"internacional": null,
+			"copaArgentina": "eliminado en octavos",
+			"titulos": []
+		}
+	}
+}

@@ -1,6 +1,7 @@
 {
 	"equipo": "ARG",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario. Comentario, Sofascore y copas: datos del usuario (23/11/2026)",
+	"contexto": "Argentinos Juniors encarnó la paradoja de ser uno de los equipos más regulares del año y, a la vez, quebrarse en cada mata-mata: clasificó al repechaje de la próxima Libertadores por la tabla anual, pero acumuló golpes tempranos en Copa Argentina y Libertadores, cayó en semifinales del Apertura y se despidió apenas iniciados los playoffs del Clausura. Ni la salida a mitad de año de su gran figura Alan Lescano alteró una propuesta de posesión alta, pase corto y dominio territorial, aunque le faltó colmillo ante bloques cerrados y sufrió una maldición en los penales. Nicolás Oroz condujo el juego, Brayan Cortés dio garantías en el arco y Diego Porcel asumió protagonismo ofensivo cuando bajaron Tomás Molina y Hernán López Muñoz. Sofascore: Francisco Álvarez (7,21), Alan Lescano (7,10), Brayan Cortés (7,07), Erik Godoy (6,98), Nicolás Oroz (6,97), Sebastián Prieto (6,96). Tabla anual 2026: 3.º (60 pts, 37-27); Apertura 3.º de la zona B (29 pts, 17-13); Clausura 2.º del grupo B (31 pts, 20-14); promedios 4.º. Copas 2026 (dato del usuario, 23/11): Libertadores: eliminado en la Fase 2 (repechaje). Copa Argentina: eliminado en treintaidosavos.",
 	"reemplaza": [
 		{
 			"nombre": "Francisco Álvarez",
@@ -64,7 +65,8 @@
 				"anio": 2013
 			},
 			"college": "Club de Deportes Iquique",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/248352-1613738423.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/248352-1613738423.jpg?lm=4711",
+			"sofascore": 7.07
 		},
 		{
 			"n": "12",
@@ -128,7 +130,10 @@
 				"anio": 2019
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/565766-1720122151.png?lm=4711",
-			"rasgos": ["aereo"]
+			"rasgos": [
+				"aereo"
+			],
+			"sofascore": 7.21
 		},
 		{
 			"n": "23",
@@ -214,7 +219,8 @@
 				"club": "TIG",
 				"anio": 2012
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/225479-1720122281.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/225479-1720122281.png?lm=4711",
+			"sofascore": 6.98
 		},
 		{
 			"n": "26",
@@ -256,7 +262,8 @@
 				"club": "TRE",
 				"anio": 2014
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/613708-1720122570.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/613708-1720122570.png?lm=4711",
+			"sofascore": 6.96
 		},
 		{
 			"n": "30",
@@ -466,7 +473,8 @@
 			"capitan": true,
 			"rasgos": [
 				"pulmon"
-			]
+			],
+			"sofascore": 6.97
 		},
 		{
 			"n": "21",
@@ -531,7 +539,9 @@
 			},
 			"college": "Club Atlético Huracán",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/429591-1708010672.JPG?lm=4711",
-			"rasgos": ["aereo"]
+			"rasgos": [
+				"aereo"
+			]
 		},
 		{
 			"n": "48",

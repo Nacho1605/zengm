@@ -1,6 +1,7 @@
 {
 	"equipo": "SLO",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario); debut e inferiores, datos del usuario. Comentario, Sofascore y copas: datos del usuario (23/11/2026)",
+	"contexto": "San Lorenzo atravesó una temporada gris y austera que lo dejó sin playoffs en el cierre ni copas internacionales. Tras alcanzar la fase decisiva del Apertura, chocó en grupos de la Sudamericana y salió rápido de la Copa Argentina, para luego hundirse entre cambios en el banco y una sequía goleadora feroz que lo ubicó entre los ataques más pobres del torneo. Equipo áspero y replegado, resistió desde el rigor defensivo pero le faltó elaboración y contundencia. La venta de Orlando Gill a mitad de año dejó un vacío sensible en el arco y recargó el sostén en el oficio de Nicolás Tripichio, la entrega constante de Alexis Cuello, el aporte aislado de Rodrigo Auzmendi y las chispas de Facundo Gulli. La compra de Facundo Farías desde el Inter Miami levantó el nivel del equipo. Sofascore: Orlando Gill (7,36), Danilo Arboleda (7,03), Facundo Farías (7,00) – nadie más. El top 3, sin contar a Gill, que se fue, lo completa Nicolás Tripichio (6,88). Tabla anual 2026: 18.º (41 pts, 23-30); Apertura 7.º de la zona A (22 pts, 14-14); Clausura 11.º del grupo A (19 pts, 9-16); promedios 18.º. Copas 2026 (dato del usuario, 23/11): Sudamericana: 3.º en la fase de grupos. Copa Argentina: eliminado en dieciseisavos.",
 	"reemplaza": [
 		{
 			"nombre": "José Devecchi",
@@ -178,7 +179,8 @@
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp-n11YHmzjWCQThJTfJS8ZoEVnOp-uTFyWMp520EzWA&s=10",
 			"rasgos": [
 				"potente"
-			]
+			],
+			"sofascore": 7.03
 		},
 		{
 			"n": "19",
@@ -395,7 +397,8 @@
 			"capitan": true,
 			"rasgos": [
 				"pulmon"
-			]
+			],
+			"sofascore": 6.88
 		},
 		{
 			"n": "27",
@@ -570,7 +573,8 @@
 			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKFrpTrwJ-xyHXIRPFYrJrPgkAcH-L2MZAO-4HuqSKw&s=10",
 			"rasgos": [
 				"gambeta"
-			]
+			],
+			"sofascore": 7
 		},
 		{
 			"n": "28",
@@ -710,7 +714,9 @@
 			},
 			"college": "Club Plaza Colonia de Deportes",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/690727-1755788528.jpg?lm=4711",
-			"rasgos": ["aereo"]
+			"rasgos": [
+				"aereo"
+			]
 		},
 		{
 			"n": "21",
