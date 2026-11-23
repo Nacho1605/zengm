@@ -94,6 +94,7 @@ td.ovr { font-family: var(--display); font-weight: 700; font-size: 1.2rem; }
 .marca.les { color: var(--down); border-color: var(--down); }
 .marca.medio { color: var(--warn); border-color: var(--warn); }
 .marca.cap { color: var(--accent); border-color: var(--accent); }
+.marca.dos { color: var(--fg); border-color: var(--muted); background: var(--rung); }
 .equipo { display: inline-flex; align-items: center; gap: 6px; }
 .rasgos { color: var(--muted); font-size: 0.82rem; text-align: left; white-space: normal; min-width: 120px; }
 .vacio { color: var(--muted); }
@@ -126,7 +127,7 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 	<header>
 		<div class="label">Liga Profesional 2026 · <span id="version">v2.23.2</span></div>
 		<h1>Escalera por puesto</h1>
-		<p class="sub">Los 615 jugadores de los 21 planteles cargados con la escala nueva (20 a 78), con sus números de 2026. Anotá tu OVR en la última columna y copiá la lista para mandármela.</p>
+		<p class="sub">Los 615 jugadores de los 21 planteles cargados con la escala nueva (20 a 78), con sus números de 2026 (los que jugaron en dos clubes cargados, con el año completo). Anotá tu OVR en la última columna y copiá la lista para mandármela.</p>
 	</header>
 
 	<section aria-label="Once de cada equipo">
@@ -144,13 +145,14 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 	</div>
 
 	<div class="leyenda">
-		<span><b>Δ</b> cambio contra la v2.23</span>
-		<span><span class="marca medio">jul</span> llegó en julio o después</span>
+		<span><b>Δ</b> cambio contra la <span id="base">v2.23</span></span>
+		<span><span class="marca medio">jul</span> llegó en julio o después (números solo de la segunda mitad, salvo que tenga otro club)</span>
+		<span><span class="marca dos">+IRM</span> también jugó en ese club en 2026: PJ, Min, G y A suman los dos</span>
 		<span><span class="marca les">L7</span> lesionado (partidos)</span>
 		<span><span class="marca">P</span> prospecto</span>
 		<span><span class="marca cap">C</span> capitán</span>
 		<span><span class="marca">ª</span> ratings tuyos</span>
-		<span>Tit. = partidos de titular · % = de los minutos de su equipo</span>
+		<span>Tit. = partidos de titular · % = de los minutos de su equipo actual</span>
 	</div>
 
 	<div class="tabla-caja">
@@ -273,6 +275,7 @@ function render() {
 		const delta = d === "" ? `<span class="delta">nuevo</span>` : d === 0 ? "" : `<span class="delta ${d > 0 ? "sube" : "baja"}">${d > 0 ? "+" : "−"}${Math.abs(d)}</span>`;
 		const marcas = [
 			j.medio ? `<span class="marca medio" title="Llegó en julio o después">jul</span>` : "",
+			...j.otros.map((o) => `<span class="marca dos" title="También jugó en ${o.club}: ${o.pj} PJ, ${o.min.toLocaleString("es-AR")}', ${o.gol} goles${o.as != null ? ", " + o.as + " asistencias" : ""}">+${o.club}</span>`),
 			j.les ? `<span class="marca les" title="Lesionado: ${j.les} partidos">L${j.les}</span>` : "",
 			j.pros ? `<span class="marca" title="Prospecto (sigue en reserva)">P</span>` : "",
 			j.cap ? `<span class="marca cap" title="Capitán">C</span>` : "",
@@ -285,9 +288,9 @@ function render() {
 			<td class="izq"><span class="nombre">${esc(nombreCorto(j))}</span>${marcas}<br><span class="pos">${esc(j.pos)}${j.pie && j.g === "CEN" ? " · " + esc(j.pie.toLowerCase()) : ""}</span></td>
 			<td class="izq"><span class="equipo">${escudo(e)}${j.eq}<span class="pos">${e.pos}.º</span></span></td>
 			<td>${j.edad}</td>
-			<td>${j.pj}</td>
+			<td>${j.pj}${j.otros.length ? `<br><span class="pos">${j.pjClub} + ${j.otros.map((o) => o.pj).join(" + ")}</span>` : ""}</td>
 			<td>${j.tit ?? "–"}</td>
-			<td>${j.min.toLocaleString("es-AR")}</td>
+			<td>${j.min.toLocaleString("es-AR")}${j.otros.length ? `<br><span class="pos">${j.minClub.toLocaleString("es-AR")} + ${j.otros.map((o) => o.min.toLocaleString("es-AR")).join(" + ")}</span>` : ""}</td>
 			<td>${j.pct}</td>
 			<td>${j.gol}</td>
 			<td>${j.as ?? "–"}</td>
@@ -367,6 +370,7 @@ document.getElementById("copiar").addEventListener("click", () => {
 fetch("escalera.json").then((r) => r.json()).then((d) => {
 	DATOS = d;
 	document.getElementById("version").textContent = `${d.version} · ${d.fecha}`;
+	document.getElementById("base").textContent = d.versionBase || "la versión anterior";
 	const sel = document.getElementById("equipo");
 	for (const e of d.equipos.slice().sort((a, b) => a.pos - b.pos)) {
 		const o = document.createElement("option");

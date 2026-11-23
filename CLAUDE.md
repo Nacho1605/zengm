@@ -111,9 +111,19 @@ v2.14.1 → v2.14.2).
   archivo está en la escala nueva (libres, equipos sin cargar y prospectos
   generados: `cargar-plantel.ts` los baja con esa correspondencia) y el
   sueldo inicial se calcula con el OVR equivalente de la escala vieja (la
-  economía queda como antes). `ESCALA=1` arma como la v2.23.1. Escalera por
-  puesto para el usuario (página con columna para anotar cambios):
-  `data/argentina/escalera/` (publicada como artifact). Arqueros: la
+  economía queda como antes). `ESCALA=1` arma como la v2.23.1.
+- **Escalera por puesto del usuario** (página con todos los jugadores, sus
+  números y una columna "Tu OVR" para anotar cambios):
+  https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U (copia en
+  `data/argentina/escalera/`). Con cada versión nueva: `node
+  tools/argentina/escalera-web.ts ARCHIVO.json VERSION_ANTERIOR.json` (escribe
+  `escalera/escalera.json`) y republicar en ESE MISMO link (Artifact:
+  primero `action: "read"` con esa url, después publish con `url` y
+  `files: {"escalera.json": ...}`). Si se publica en otro link, el usuario
+  pierde lo que anotó (queda guardado en su navegador, por link). Lo que
+  anota no lo ve Claude: el usuario copia la lista y la pega en el chat
+  ("EQUIPO Jugador: viejo → nuevo"). Los que jugaron en dos clubes cargados
+  (salidas-2026.json, mismo nombre y edad ±1) aparecen con el año completo. Arqueros: la
   lista del usuario en `data/argentina/arqueros/lista-apertura-2026.md`
   (hecha en el Apertura, antes del Mundial 2026: DESACTUALIZADA, es una base
   de comparación no estricta; ajustar con la temporada y avisar). La lista

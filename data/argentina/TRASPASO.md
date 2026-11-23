@@ -11,11 +11,11 @@ siempre). Escalera por puesto publicada para el usuario
 
 **Lo que sigue:** los cambios exactos que mande el usuario desde la escalera
 (lista "EQUIPO Jugador: viejo → nuevo"; aplicarlos con `ajustar-ovr.ts` y
-armar un parche). La liga del usuario con las fotos de NOB, ERC y UNI la está
-armando sobre la **v2.22.1**: importarla con esa base
-(`desde-juego.ts LIGA BBGM_..._v.2.22.1_futbol.json`). OJO: los OVR cambiaron
-mucho desde la v2.22.1; si `desde-juego.ts` marcara ratings "a mano" en
-jugadores que el usuario no tocó, es porque se usó otra base. Después: BAN,
+armar un parche). Fotos de NOB, ERC, UNI y BAR: el usuario todavía no
+empezó; las va a poner sobre la última versión que tenga. Al importar su
+liga, usar como base la versión sobre la que jugó (si hay una más nueva, sin
+esa base los OVR cambiados después volverían al valor viejo; para saberla,
+mirar un OVR que cambió entre versiones). Después: BAN,
 PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
@@ -490,7 +490,15 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   vieja: planillas como en la v2.23 (BOC 139,8 M ... RIE 63,5 M, ERC 54,8 M,
   apenas debajo del mínimo de 55 M, como antes).
 - Con `ESCALA=1` el cargador nuevo arma la v2.23.1 idéntica (comprobado).
-- Escalera por puesto publicada (artifact) con columna para anotar OVR.
+- Escalera por puesto publicada (artifact) con columna para anotar OVR;
+  datos con `escalera-web.ts` (incluye a los que jugaron en dos clubes
+  cargados, con el año completo: 16 hoy). Los que llegaron desde julio sin
+  su primer club en `salidas-2026.json` (Montero, de VEL, cargado antes de
+  que existiera ese archivo; o de clubes sin cargar o del exterior) muestran
+  solo la segunda mitad: si el usuario da sus números, van a
+  `salidas-2026.json` y aparecen solos.
+- `cruces.ts` exige la misma edad (±1): sumaba homónimos (Bruno Cabrera, 23
+  años, LAN, con el de NOB, 29; Tomás González de UNI con el de ERC).
 
 **Sesión del 23/11/2026 (v2.22.2 → v2.23.1).** Huella de la v2.23.1:
 `2f9773a5271de31621b165de51b5aea44abbfdcf07af17ef7c96bee177b9500d`.

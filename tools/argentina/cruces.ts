@@ -41,6 +41,12 @@ for (const s of salidas) {
 			if (norm(`${j.nombre} ${j.apellido}`) !== norm(`${s.nombre} ${s.apellido}`)) {
 				continue;
 			}
+			// Homónimos (Bruno Cabrera LAN/NOB, Tomás González ERC/UNI): la edad
+			// de Transfermarkt tiene que coincidir (±1)
+			const edad = 2026 - Number(j.nac.split("/")[2]);
+			if (s.edad !== undefined && Math.abs(s.edad - edad) > 1) {
+				continue;
+			}
 			n += 1;
 			console.log(
 				`  ${j.nombre} ${j.apellido}: ${s.club} (${linea(s)}) + ${p.equipo} (${linea(j)}) = ${(s.pj ?? 0) + j.pj} PJ, ${(s.goles ?? 0) + j.goles} g, ${(s.min ?? 0) + j.min}' | OVR actual ${j.ovr}`,
