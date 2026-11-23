@@ -405,8 +405,8 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   plantel.
 - Nunca se transcribió la columna "antes" (club anterior, con ícono de
   préstamo) del plantel Ampliado: no se sabe de dónde vino cada uno de los
-  112 que llegaron desde julio ni quién está a préstamo. Propuesta: anotarla
-  desde ahora en los equipos nuevos (`antes`, `prestamo`).
+  112 que llegaron desde julio ni quién está a préstamo. El usuario decidió
+  que no hace falta anotarla.
 - Otros detalles fuera de lo común (no son errores): EST, único con
   `capitanias` (6 jugadores); SLO y TAL con dos capitanes; lealtad a mano en
   Arce, Nervo, Pussetto y Talpone; `peso` solo en Thiago Baroni; ratings a
