@@ -1,4 +1,4 @@
-// Boca, Rendimiento 2026 (capturas del usuario del 23/11/2026). FALTA la tercera imagen (delanteros).
+// Boca, Rendimiento 2026 (capturas del usuario del 23/11/2026). 
 export const FECHA = "23/11/2026";
 export const FILAS = [
 	["Álvaro Montero", "Portero", 31, "Colombia", [25, 25, 0, 0, 1, 0, 0, 0, 0, 2.2, 2250]],
@@ -33,5 +33,19 @@ export const FILAS = [
 	["Rodrigo Battaglia", "Pivote", 35, "Argentina", [7, 3, 0, 0, 0, 0, 0, 1, 1, 3.0, 160]],
 	["Ander Herrera", "Mediocentro", 37, "Spain", [16, 12, 1, 0, 1, 0, 0, 6, 6, 2.0, 537]],
 	["Juan Ramírez", "Mediocentro", 33, "Argentina", [0, 0]],
-	// FALTA la tercera imagen: Villa, Velasco, Flores, Romero, Merentiel, Bareiro, Giménez, Valencia y los que se fueron
+	["Leonel Flores", "Extremo derecho", 19, "Argentina", [32, 27, 5, 3, 3, 0, 0, 6, 15, 2.26, 1805]],
+	["Exequiel Zeballos", "Extremo derecho", 24, "Argentina", [13, 13, 1, 3, 1, 0, 0, 7, 2, 1.54, 698]],
+	["Sebastián Villa", "Extremo izquierdo", 30, "Colombia", [27, 26, 2, 9, 0, 0, 0, 12, 12, 2.31, 1407]],
+	["Kevin Zenón", "Extremo izquierdo", 25, "Argentina", [33, 13, 1, 1, 1, 0, 0, 9, 4, 2.0, 429]],
+	["Miguel Merentiel", "Delantero centro", 30, "Uruguay", [50, 48, 16, 3, 2, 0, 0, 9, 27, 2.02, 3230]],
+	["Adam Bareiro", "Delantero centro", 30, "Paraguay", [16, 14, 6, 1, 5, 1, 0, 2, 9, 2.0, 979]],
+	["Brian Aguirre", "Extremo izquierdo", 23, "Argentina", [1, 1, 0, 0, 0, 0, 0, 1, 0, 3.0, 21]],
+	["Alan Velasco", "Extremo izquierdo", 24, "Argentina", [41, 32, 6, 2, 4, 0, 0, 15, 16, 2.22, 1463]],
+	["Milton Giménez", "Delantero centro", 30, "Argentina", [30, 14, 4, 0, 1, 0, 0, 8, 5, 1.79, 634]],
+	["Enner Valencia", "Delantero centro", 37, "Ecuador", [19, 19, 6, 2, 3, 0, 0, 15, 2, 2.42, 623]],
+	["Edinson Cavani", "Delantero centro", 39, "Uruguay", [2, 2, 0, 0, 0, 0, 0, 1, 1, 1.0, 104]],
+	["Ángel Romero", "Extremo derecho", 34, "Paraguay", [41, 23, 3, 0, 1, 0, 0, 16, 7, 1.7, 694]],
+	["Gonzalo Gelini", "Extremo derecho", 19, "Argentina", [12, 5, 0, 1, 0, 0, 0, 3, 2, 1.0, 184]],
+	["Lucas Janson", "Extremo izquierdo", 32, "Argentina", [13, 4, 0, 1, 1, 0, 0, 0, 4, 2.0, 260]],
+	["Iker Zufiaurre", "Extremo derecho", 21, "Argentina", [12, 10, 1, 0, 1, 0, 0, 8, 1, 1.8, 236]],
 ];

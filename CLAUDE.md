@@ -155,9 +155,12 @@ v2.14.1 → v2.14.2).
     (`tablas-reserva-2026.json`). Ver propuesta-juveniles.md.
   - NO castigar la edad; los de media temporada, por partido; las tablas
     (`tablas-2026.json`) y Sofascore son guías, no verdad absoluta.
-    Sofascore: el usuario usa 6,90 como barrera (da solo los que la superan)
-    y, para figurar, el jugador tiene que haber jugado más del 50% del
-    tiempo de la Liga Profesional.
+    Sofascore: el usuario usa 6,90 como barrera (da solo los que la superan);
+    es el promedio del jugador solo en el club que se evalúa (el criterio del
+    50% de los minutos no es seguro, 23/11). El Rendimiento de Transfermarkt
+    suma todas las competencias (Liga, Copa Argentina y copas
+    internacionales); la tabla de goleadores (`tablas-2026.json`) es solo de
+    la Liga.
   - Mirar también las copas: hay equipos que priorizan la copa sobre la liga
     (Estudiantes 2026: 11.º en la tabla y finalista de la Libertadores).
   - No tocar sin permiso los valores que fijó el usuario ni los jugadores con

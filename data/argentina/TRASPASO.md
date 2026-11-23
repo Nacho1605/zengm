@@ -11,20 +11,29 @@ siempre). Escalera por puesto publicada para el usuario
 
 **En curso (23/11):** el usuario manda el Rendimiento completo de los 13
 primeros (RIE, BOC, RIV, RAC, SLO, IND, ROS, EST, ARG, VEL, IRM, GIM, LAN; 3
-imágenes cada uno, en ese orden). Se transcribe a
+imágenes cada uno, en ese orden). Para qué: tener los números completos de
+cada jugador y de los que se fueron, para después (fase 3) poder separar el
+año de los que cambiaron de club (Apertura en uno, Clausura en otro) y
+valorar con la temporada entera. Se transcribe a
 `data/argentina/rendimiento/EQUIPO.mjs` y se aplica con `node
-tools/argentina/completar-rendimiento.mjs EQUIPO` (completa las columnas y
-agrega sus salidas a `salidas-2026.json`). Hecho: RIE (19 salidas; números
-iguales a los guardados). BOC: 2 de 3 imágenes en `rendimiento/BOC.mjs`
-(falta la de los delanteros); sus números son más nuevos que los guardados
-(Montero 23 → 25 PJ). Minutos y goles le dan forma a los ratings: al
-terminar la tanda, armar un parche (v2.23.3) y regenerar la escalera.
+tools/argentina/completar-rendimiento.mjs EQUIPO` (completa las columnas,
+usa los números nuevos si cambiaron y agrega sus salidas a
+`salidas-2026.json`). Hechos: RIE (19 salidas, números iguales), BOC (15
+salidas; números más nuevos: +1 o +2 PJ en casi todos), RIV (22 salidas).
+RAC: 1 de 3 imágenes en `rendimiento/RAC.mjs` (sin aplicar). Nuevos
+jugadores en dos clubes: Barinaga (BOC → RAC), Blondel (BOC, sin jugar →
+HUR), Brian Aguirre (BOC → EST), Janson (BOC → GIM), Galarza (RIV, sin
+jugar → TAL), Salas (RIV → IRM), Maximiliano Meza (RIV → IND) y Rubio (RAC
+→ UNI). Para revisar el OVR al terminar: Juan Cruz Meza (RIV, 18 años)
+figuraba con 0 PJ y tiene 23 (771'); Almada 3 → 5 goles; Ascacíbar 8 → 10.
+Minutos y goles le dan forma a los ratings: al terminar la tanda, armar un
+parche (v2.23.3) y regenerar la escalera.
 Ya guardados (23/11): comentario y Sofascore de los 13 en sus planteles
 (con tablas y copas), `copas-2026.json` (internacionales, Copa Argentina y
-títulos de los 30) y los goleadores (≥10) en `tablas-2026.json`. Pendiente
-del usuario: lesiones actuales de esos 13 (con fecha). Dudas: Sanguinetti
-(VEL, 0 PJ guardados) y Rojo (EST, 4 PJ) figuran con Sofascore, que pide más
-del 50% de los minutos: revisar con su Rendimiento nuevo.
+títulos de los 30) y los goleadores (≥10, solo Liga) en `tablas-2026.json`.
+Las lesiones de esos 13 no hacen falta (el usuario). Sofascore: es solo lo
+del jugador en ese club; el criterio del 50% no es seguro (Sanguinetti y
+Rojo figuran con Sofascore con pocos o ningún partido en su club actual).
 
 **Lo que sigue:** los cambios exactos que mande el usuario desde la escalera
 (lista "EQUIPO Jugador: viejo → nuevo"; aplicarlos con `ajustar-ovr.ts` y
