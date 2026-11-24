@@ -1,0 +1,1192 @@
+{
+	"nota": "Posiciones secundarias de Transfermarkt (captura \"Composición de la plantilla según posiciones\") de los equipos que todavía no están cargados. Al cargar cada equipo, pasar sus \"secundarias\" al plantel (planteles/EQUIPO.json). Nombres de posición como en el plantel.",
+	"capturas": {
+		"PLA": "24/11/2026 (sin los 3 arqueros: ninguno tiene secundaria)",
+		"BAN": "24/11/2026",
+		"DYJ": "24/11/2026",
+		"TIG": "24/11/2026",
+		"SAR": "24/11/2026"
+	},
+	"equipos": {
+		"PLA": [
+			{
+				"n": "13",
+				"jugador": "Ignacio Vázquez",
+				"principal": "Defensa central",
+				"secundarias": []
+			},
+			{
+				"n": "6",
+				"jugador": "Eugenio Raggio",
+				"principal": "Defensa central",
+				"secundarias": [
+					"Lateral derecho"
+				]
+			},
+			{
+				"n": "32",
+				"jugador": "Santiago Quirós",
+				"principal": "Defensa central",
+				"secundarias": []
+			},
+			{
+				"n": "34",
+				"jugador": "Mateo Mendía",
+				"principal": "Defensa central",
+				"secundarias": []
+			},
+			{
+				"n": "42",
+				"jugador": "Gonzalo Goñi",
+				"principal": "Defensa central",
+				"secundarias": []
+			},
+			{
+				"n": "31",
+				"jugador": "Víctor Cuesta",
+				"principal": "Defensa central",
+				"secundarias": [
+					"Lateral derecho"
+				]
+			},
+			{
+				"n": "3",
+				"jugador": "Tomás Silva",
+				"principal": "Lateral izquierdo",
+				"secundarias": []
+			},
+			{
+				"n": "38",
+				"jugador": "Celías Ingenthron",
+				"principal": "Lateral izquierdo",
+				"secundarias": []
+			},
+			{
+				"n": "25",
+				"jugador": "Juan Ignacio Saborido",
+				"principal": "Lateral derecho",
+				"secundarias": [
+					"Extremo derecho"
+				]
+			},
+			{
+				"n": "4",
+				"jugador": "Agustín Lagos",
+				"principal": "Lateral derecho",
+				"secundarias": [
+					"Defensa central"
+				]
+			},
+			{
+				"n": null,
+				"jugador": "Fabricio López",
+				"principal": "Lateral derecho",
+				"secundarias": []
+			},
+			{
+				"n": "15",
+				"jugador": "Maximiliano Amarfil",
+				"principal": "Pivote",
+				"secundarias": [
+					"Mediocentro",
+					"Interior derecho"
+				]
+			},
+			{
+				"n": "5",
+				"jugador": "Iván Gómez",
+				"principal": "Pivote",
+				"secundarias": [
+					"Mediocentro"
+				]
+			},
+			{
+				"n": "17",
+				"jugador": "Felipe Bussio",
+				"principal": "Pivote",
+				"secundarias": [
+					"Mediocentro"
+				]
+			},
+			{
+				"n": "26",
+				"jugador": "Pablo Ferreira",
+				"principal": "Mediocentro",
+				"secundarias": [
+					"Pivote"
+				]
+			},
+			{
+				"n": "24",
+				"jugador": "Martín Barrios",
+				"principal": "Mediocentro",
+				"secundarias": [
+					"Pivote",
+					"Interior izquierdo"
+				]
+			},
+			{
+				"n": "27",
+				"jugador": "Santiago Dalmasso",
+				"principal": "Mediocentro",
+				"secundarias": [
+					"Pivote",
+					"Interior derecho"
+				]
+			},
+			{
+				"n": "10",
+				"jugador": "Franco Zapiola",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": [
+					"Mediocentro"
+				]
+			},
+			{
+				"n": "23",
+				"jugador": "Leonardo Heredia",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": [
+					"Interior derecho",
+					"Delantero centro"
+				]
+			},
+			{
+				"n": "16",
+				"jugador": "Gastón Togni",
+				"principal": "Extremo izquierdo",
+				"secundarias": [
+					"Lateral izquierdo",
+					"Interior izquierdo"
+				]
+			},
+			{
+				"n": "18",
+				"jugador": "Bautista Merlini",
+				"principal": "Extremo izquierdo",
+				"secundarias": [
+					"Mediocentro ofensivo",
+					"Extremo derecho"
+				]
+			},
+			{
+				"n": "29",
+				"jugador": "Franco Minerva",
+				"principal": "Extremo izquierdo",
+				"secundarias": [
+					"Interior izquierdo"
+				]
+			},
+			{
+				"n": "7",
+				"jugador": "Guido Mainero",
+				"principal": "Extremo derecho",
+				"secundarias": [
+					"Interior derecho"
+				]
+			},
+			{
+				"n": "43",
+				"jugador": "Nicolás Retamar",
+				"principal": "Extremo derecho",
+				"secundarias": [
+					"Delantero centro"
+				]
+			},
+			{
+				"n": "33",
+				"jugador": "Juan Carlos Gauto",
+				"principal": "Extremo derecho",
+				"secundarias": [
+					"Extremo izquierdo",
+					"Mediapunta"
+				]
+			},
+			{
+				"n": "28",
+				"jugador": "Manuel Tucker",
+				"principal": "Extremo derecho",
+				"secundarias": [
+					"Extremo izquierdo"
+				]
+			},
+			{
+				"n": "9",
+				"jugador": "Tomás Nasif",
+				"principal": "Delantero centro",
+				"secundarias": [
+					"Mediocentro ofensivo"
+				]
+			},
+			{
+				"n": "11",
+				"jugador": "Nicolás López",
+				"principal": "Delantero centro",
+				"secundarias": [
+					"Extremo derecho",
+					"Mediapunta"
+				]
+			},
+			{
+				"n": "99",
+				"jugador": "Gonzalo Lencina",
+				"principal": "Delantero centro",
+				"secundarias": []
+			},
+			{
+				"n": "21",
+				"jugador": "Augusto Lotti",
+				"principal": "Delantero centro",
+				"secundarias": [
+					"Extremo derecho",
+					"Mediapunta"
+				]
+			},
+			{
+				"n": "19",
+				"jugador": "Héctor Bobadilla",
+				"principal": "Delantero centro",
+				"secundarias": []
+			},
+			{
+				"n": "20",
+				"jugador": "Luciano Giménez",
+				"principal": "Delantero centro",
+				"secundarias": [
+					"Mediocentro ofensivo"
+				]
+			},
+			{
+				"n": null,
+				"jugador": "Bruno Sepúlveda",
+				"principal": "Delantero centro",
+				"secundarias": []
+			}
+		],
+		"BAN": [
+			{
+				"n": "25",
+				"jugador": "Gino Santilli",
+				"principal": "Portero",
+				"secundarias": []
+			},
+			{
+				"n": "50",
+				"jugador": "Diego Rodríguez",
+				"principal": "Portero",
+				"secundarias": []
+			},
+			{
+				"n": "31",
+				"jugador": "Joaquín Molina",
+				"principal": "Portero",
+				"secundarias": []
+			},
+			{
+				"n": "6",
+				"jugador": "Nicolás Meriano",
+				"principal": "Defensa central",
+				"secundarias": [
+					"Lateral izquierdo"
+				]
+			},
+			{
+				"n": "37",
+				"jugador": "Renzo Malanca",
+				"principal": "Defensa central",
+				"secundarias": [
+					"Lateral derecho"
+				]
+			},
+			{
+				"n": "13",
+				"jugador": "Brandon Oviedo",
+				"principal": "Defensa central",
+				"secundarias": [
+					"Pivote",
+					"Mediocentro"
+				]
+			},
+			{
+				"n": "34",
+				"jugador": "Santiago Daniele",
+				"principal": "Defensa central",
+				"secundarias": []
+			},
+			{
+				"n": "14",
+				"jugador": "Nehuén Paz",
+				"principal": "Defensa central",
+				"secundarias": [
+					"Lateral izquierdo"
+				]
+			},
+			{
+				"n": "27",
+				"jugador": "Ignacio Abraham",
+				"principal": "Lateral izquierdo",
+				"secundarias": [
+					"Interior izquierdo"
+				]
+			},
+			{
+				"n": "19",
+				"jugador": "Lautaro Cano",
+				"principal": "Lateral izquierdo",
+				"secundarias": [
+					"Interior izquierdo",
+					"Extremo izquierdo"
+				]
+			},
+			{
+				"n": "4",
+				"jugador": "Juan Luis Alfaro",
+				"principal": "Lateral derecho",
+				"secundarias": [
+					"Lateral izquierdo",
+					"Interior derecho"
+				]
+			},
+			{
+				"n": "8",
+				"jugador": "Lautaro Ríos",
+				"principal": "Pivote",
+				"secundarias": []
+			},
+			{
+				"n": "35",
+				"jugador": "Ignacio Pais",
+				"principal": "Mediocentro",
+				"secundarias": [
+					"Pivote"
+				]
+			},
+			{
+				"n": "15",
+				"jugador": "Santiago Esquivel",
+				"principal": "Mediocentro",
+				"secundarias": [
+					"Pivote"
+				]
+			},
+			{
+				"n": "21",
+				"jugador": "Lautaro Villegas",
+				"principal": "Mediocentro",
+				"secundarias": []
+			},
+			{
+				"n": "23",
+				"jugador": "Lucas Palavecino",
+				"principal": "Mediocentro",
+				"secundarias": []
+			},
+			{
+				"n": "24",
+				"jugador": "Santiago López García",
+				"principal": "Interior derecho",
+				"secundarias": [
+					"Lateral derecho",
+					"Mediocentro"
+				]
+			},
+			{
+				"n": "20",
+				"jugador": "Tomás Adoryán",
+				"principal": "Interior derecho",
+				"secundarias": [
+					"Extremo derecho"
+				]
+			},
+			{
+				"n": "33",
+				"jugador": "Neyder Moreno",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": [
+					"Extremo izquierdo",
+					"Extremo derecho"
+				]
+			},
+			{
+				"n": "10",
+				"jugador": "Lautaro Gómez",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": [
+					"Interior izquierdo",
+					"Extremo izquierdo"
+				]
+			},
+			{
+				"n": "11",
+				"jugador": "Favio Álvarez",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": [
+					"Extremo izquierdo",
+					"Extremo derecho"
+				]
+			},
+			{
+				"n": "70",
+				"jugador": "Manuel Arteaga",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": []
+			},
+			{
+				"n": "7",
+				"jugador": "Lisandro Piñero",
+				"principal": "Extremo izquierdo",
+				"secundarias": [
+					"Extremo derecho",
+					"Delantero centro"
+				]
+			},
+			{
+				"n": "40",
+				"jugador": "David Zalazar",
+				"principal": "Extremo izquierdo",
+				"secundarias": [
+					"Interior izquierdo"
+				]
+			},
+			{
+				"n": "18",
+				"jugador": "Federico Medina",
+				"principal": "Extremo derecho",
+				"secundarias": []
+			},
+			{
+				"n": "77",
+				"jugador": "Thomas Rodríguez",
+				"principal": "Extremo derecho",
+				"secundarias": [
+					"Extremo izquierdo"
+				]
+			},
+			{
+				"n": "9",
+				"jugador": "Adrián Balboa",
+				"principal": "Delantero centro",
+				"secundarias": [
+					"Extremo izquierdo"
+				]
+			},
+			{
+				"n": "22",
+				"jugador": "Alexander Machado",
+				"principal": "Delantero centro",
+				"secundarias": [
+					"Interior izquierdo",
+					"Extremo izquierdo"
+				]
+			},
+			{
+				"n": "30",
+				"jugador": "Federico Anselmo",
+				"principal": "Delantero centro",
+				"secundarias": []
+			},
+			{
+				"n": "28",
+				"jugador": "Matías Hernández",
+				"principal": "Delantero centro",
+				"secundarias": [
+					"Extremo izquierdo",
+					"Extremo derecho"
+				]
+			}
+		],
+		"DYJ": [
+			{
+				"n": "1",
+				"jugador": "Matías Borgogno",
+				"principal": "Portero",
+				"secundarias": []
+			},
+			{
+				"n": "36",
+				"jugador": "Lautaro Amadé",
+				"principal": "Portero",
+				"secundarias": []
+			},
+			{
+				"n": "29",
+				"jugador": "Damián Fernández",
+				"principal": "Defensa central",
+				"secundarias": []
+			},
+			{
+				"n": "21",
+				"jugador": "David Martínez",
+				"principal": "Defensa central",
+				"secundarias": [
+					"Lateral izquierdo"
+				]
+			},
+			{
+				"n": "6",
+				"jugador": "Ezequiel Burdín",
+				"principal": "Defensa central",
+				"secundarias": []
+			},
+			{
+				"n": "2",
+				"jugador": "Samuel Lucero",
+				"principal": "Defensa central",
+				"secundarias": [
+					"Lateral izquierdo"
+				]
+			},
+			{
+				"n": "32",
+				"jugador": "Nazareno Roselli",
+				"principal": "Defensa central",
+				"secundarias": []
+			},
+			{
+				"n": "3",
+				"jugador": "Fernando Román",
+				"principal": "Lateral izquierdo",
+				"secundarias": [
+					"Defensa central"
+				]
+			},
+			{
+				"n": "40",
+				"jugador": "Máximo Rodríguez",
+				"principal": "Lateral izquierdo",
+				"secundarias": [
+					"Pivote",
+					"Mediocentro"
+				]
+			},
+			{
+				"n": "30",
+				"jugador": "Demián Domínguez",
+				"principal": "Lateral izquierdo",
+				"secundarias": [
+					"Defensa central"
+				]
+			},
+			{
+				"n": "16",
+				"jugador": "Ayrton Portillo",
+				"principal": "Lateral derecho",
+				"secundarias": [
+					"Interior derecho",
+					"Extremo derecho"
+				]
+			},
+			{
+				"n": "33",
+				"jugador": "Lucas Souto",
+				"principal": "Lateral derecho",
+				"secundarias": [
+					"Defensa central",
+					"Lateral izquierdo"
+				]
+			},
+			{
+				"n": "28",
+				"jugador": "Valentín Loza",
+				"principal": "Lateral derecho",
+				"secundarias": [
+					"Defensa central"
+				]
+			},
+			{
+				"n": "5",
+				"jugador": "Julián López",
+				"principal": "Pivote",
+				"secundarias": [
+					"Mediocentro"
+				]
+			},
+			{
+				"n": "15",
+				"jugador": "Santiago Sosa",
+				"principal": "Mediocentro",
+				"secundarias": [
+					"Pivote"
+				]
+			},
+			{
+				"n": "8",
+				"jugador": "César Pérez",
+				"principal": "Mediocentro",
+				"secundarias": [
+					"Pivote",
+					"Mediocentro ofensivo"
+				]
+			},
+			{
+				"n": "10",
+				"jugador": "Aarón Molinas",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": [
+					"Mediocentro",
+					"Extremo derecho"
+				]
+			},
+			{
+				"n": "19",
+				"jugador": "David Barbona",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": [
+					"Extremo izquierdo",
+					"Extremo derecho"
+				]
+			},
+			{
+				"n": "23",
+				"jugador": "Mateo Aguiar",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": []
+			},
+			{
+				"n": "20",
+				"jugador": "Nicolás Palavecino",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": []
+			},
+			{
+				"n": "26",
+				"jugador": "Jeremías Lucco",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": [
+					"Mediocentro",
+					"Interior derecho"
+				]
+			},
+			{
+				"n": "22",
+				"jugador": "Maximiliano Porcel",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": [
+					"Mediocentro",
+					"Interior derecho"
+				]
+			},
+			{
+				"n": "24",
+				"jugador": "Juan Gutiérrez",
+				"principal": "Extremo izquierdo",
+				"secundarias": [
+					"Extremo derecho",
+					"Delantero centro"
+				]
+			},
+			{
+				"n": "27",
+				"jugador": "Domingo Blanco",
+				"principal": "Extremo derecho",
+				"secundarias": [
+					"Mediocentro ofensivo",
+					"Extremo izquierdo"
+				]
+			},
+			{
+				"n": "25",
+				"jugador": "Facundo Altamira",
+				"principal": "Extremo derecho",
+				"secundarias": [
+					"Extremo izquierdo"
+				]
+			},
+			{
+				"n": "17",
+				"jugador": "Agustín Hausch",
+				"principal": "Extremo derecho",
+				"secundarias": [
+					"Interior derecho",
+					"Delantero centro"
+				]
+			},
+			{
+				"n": "11",
+				"jugador": "Tiziano Perrotta",
+				"principal": "Delantero centro",
+				"secundarias": [
+					"Mediocentro ofensivo"
+				]
+			},
+			{
+				"n": "7",
+				"jugador": "Tomás Pérez",
+				"principal": "Delantero centro",
+				"secundarias": []
+			},
+			{
+				"n": "9",
+				"jugador": "Leandro Fernández",
+				"principal": "Delantero centro",
+				"secundarias": [
+					"Extremo izquierdo",
+					"Extremo derecho"
+				]
+			}
+		],
+		"TIG": [
+			{
+				"n": "12",
+				"jugador": "Felipe Zenobio",
+				"principal": "Portero",
+				"secundarias": []
+			},
+			{
+				"n": "26",
+				"jugador": "Lautaro Morales",
+				"principal": "Portero",
+				"secundarias": []
+			},
+			{
+				"n": "20",
+				"jugador": "Alan Barrionuevo",
+				"principal": "Defensa central",
+				"secundarias": []
+			},
+			{
+				"n": "23",
+				"jugador": "Gonzalo Requena",
+				"principal": "Defensa central",
+				"secundarias": []
+			},
+			{
+				"n": "32",
+				"jugador": "Juan Villalba",
+				"principal": "Defensa central",
+				"secundarias": [
+					"Lateral izquierdo",
+					"Pivote"
+				]
+			},
+			{
+				"n": "2",
+				"jugador": "Joaquín Laso",
+				"principal": "Defensa central",
+				"secundarias": [
+					"Lateral derecho"
+				]
+			},
+			{
+				"n": "42",
+				"jugador": "Ramón Arias",
+				"principal": "Defensa central",
+				"secundarias": [
+					"Lateral izquierdo",
+					"Lateral derecho"
+				]
+			},
+			{
+				"n": "38",
+				"jugador": "Tomás Fernández",
+				"principal": "Defensa central",
+				"secundarias": []
+			},
+			{
+				"n": "24",
+				"jugador": "Federico Álvarez",
+				"principal": "Lateral izquierdo",
+				"secundarias": []
+			},
+			{
+				"n": "15",
+				"jugador": "Ángelo Marchese",
+				"principal": "Lateral izquierdo",
+				"secundarias": []
+			},
+			{
+				"n": "4",
+				"jugador": "Valentín Moreno",
+				"principal": "Lateral derecho",
+				"secundarias": [
+					"Lateral izquierdo"
+				]
+			},
+			{
+				"n": "8",
+				"jugador": "Martín Garay",
+				"principal": "Lateral derecho",
+				"secundarias": [
+					"Interior derecho",
+					"Extremo derecho"
+				]
+			},
+			{
+				"n": "17",
+				"jugador": "Guillermo Soto",
+				"principal": "Lateral derecho",
+				"secundarias": [
+					"Interior derecho"
+				]
+			},
+			{
+				"n": "40",
+				"jugador": "Luciano Minniti",
+				"principal": "Lateral derecho",
+				"secundarias": []
+			},
+			{
+				"n": "5",
+				"jugador": "Bruno Leyes",
+				"principal": "Pivote",
+				"secundarias": [
+					"Mediocentro",
+					"Interior izquierdo"
+				]
+			},
+			{
+				"n": "10",
+				"jugador": "Jabes Saralegui",
+				"principal": "Mediocentro",
+				"secundarias": [
+					"Interior derecho",
+					"Interior izquierdo"
+				]
+			},
+			{
+				"n": "27",
+				"jugador": "Santiago González",
+				"principal": "Mediocentro",
+				"secundarias": []
+			},
+			{
+				"n": "16",
+				"jugador": "Nicolás Dubersarsky",
+				"principal": "Mediocentro",
+				"secundarias": [
+					"Pivote"
+				]
+			},
+			{
+				"n": "7",
+				"jugador": "Simón Rivero",
+				"principal": "Mediocentro",
+				"secundarias": [
+					"Extremo izquierdo"
+				]
+			},
+			{
+				"n": "50",
+				"jugador": "Ignacio Peluffo",
+				"principal": "Interior derecho",
+				"secundarias": [
+					"Lateral derecho",
+					"Extremo derecho"
+				]
+			},
+			{
+				"n": "21",
+				"jugador": "Sebastián Medina",
+				"principal": "Interior izquierdo",
+				"secundarias": [
+					"Interior derecho",
+					"Mediocentro ofensivo"
+				]
+			},
+			{
+				"n": "11",
+				"jugador": "Tiago Serrago",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": []
+			},
+			{
+				"n": "28",
+				"jugador": "Gonzalo Martínez",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": [
+					"Extremo izquierdo",
+					"Extremo derecho"
+				]
+			},
+			{
+				"n": "22",
+				"jugador": "Santiago López",
+				"principal": "Extremo izquierdo",
+				"secundarias": [
+					"Delantero centro"
+				]
+			},
+			{
+				"n": "25",
+				"jugador": "Ian Subiabre",
+				"principal": "Extremo derecho",
+				"secundarias": [
+					"Extremo izquierdo",
+					"Delantero centro"
+				]
+			},
+			{
+				"n": "18",
+				"jugador": "Manuel Fernández",
+				"principal": "Extremo derecho",
+				"secundarias": [
+					"Lateral derecho"
+				]
+			},
+			{
+				"n": "29",
+				"jugador": "Ignacio Russo",
+				"principal": "Delantero centro",
+				"secundarias": []
+			},
+			{
+				"n": "33",
+				"jugador": "Mauro Méndez",
+				"principal": "Delantero centro",
+				"secundarias": []
+			},
+			{
+				"n": null,
+				"jugador": "Jerónimo Dómina",
+				"principal": "Delantero centro",
+				"secundarias": [
+					"Extremo derecho"
+				]
+			},
+			{
+				"n": "19",
+				"jugador": "Alfio Oviedo",
+				"principal": "Delantero centro",
+				"secundarias": []
+			}
+		],
+		"SAR": [
+			{
+				"n": "12",
+				"jugador": "Thyago Ayala",
+				"principal": "Portero",
+				"secundarias": []
+			},
+			{
+				"n": "1",
+				"jugador": "Iván Arboleda",
+				"principal": "Portero",
+				"secundarias": []
+			},
+			{
+				"n": "44",
+				"jugador": "Renzo Orihuela",
+				"principal": "Defensa central",
+				"secundarias": [
+					"Lateral derecho"
+				]
+			},
+			{
+				"n": "3",
+				"jugador": "Lucas Suárez",
+				"principal": "Defensa central",
+				"secundarias": [
+					"Lateral izquierdo"
+				]
+			},
+			{
+				"n": "20",
+				"jugador": "Ulises Giménez",
+				"principal": "Defensa central",
+				"secundarias": [
+					"Lateral derecho"
+				]
+			},
+			{
+				"n": "6",
+				"jugador": "Gastón Arturia",
+				"principal": "Defensa central",
+				"secundarias": []
+			},
+			{
+				"n": "34",
+				"jugador": "Agustín Seyral",
+				"principal": "Defensa central",
+				"secundarias": []
+			},
+			{
+				"n": "2",
+				"jugador": "Juan Manuel Insaurralde",
+				"principal": "Defensa central",
+				"secundarias": []
+			},
+			{
+				"n": "39",
+				"jugador": "Joel Godoy",
+				"principal": "Lateral izquierdo",
+				"secundarias": [
+					"Defensa central"
+				]
+			},
+			{
+				"n": "33",
+				"jugador": "Gabriel Díaz",
+				"principal": "Lateral izquierdo",
+				"secundarias": [
+					"Interior izquierdo",
+					"Extremo izquierdo"
+				]
+			},
+			{
+				"n": "77",
+				"jugador": "Nicolás Pasquini",
+				"principal": "Lateral izquierdo",
+				"secundarias": [
+					"Mediocentro",
+					"Interior izquierdo"
+				]
+			},
+			{
+				"n": "29",
+				"jugador": "Thiago Santamaría",
+				"principal": "Lateral derecho",
+				"secundarias": []
+			},
+			{
+				"n": "4",
+				"jugador": "Juan Manuel Cabrera",
+				"principal": "Lateral derecho",
+				"secundarias": []
+			},
+			{
+				"n": "17",
+				"jugador": "Jeremías Vallejos",
+				"principal": "Lateral derecho",
+				"secundarias": []
+			},
+			{
+				"n": "5",
+				"jugador": "Manuel García",
+				"principal": "Pivote",
+				"secundarias": []
+			},
+			{
+				"n": "17",
+				"jugador": "Agustín Nadruz",
+				"principal": "Pivote",
+				"secundarias": [
+					"Defensa central"
+				]
+			},
+			{
+				"n": "25",
+				"jugador": "Carlos Villalba",
+				"principal": "Pivote",
+				"secundarias": [
+					"Mediocentro"
+				]
+			},
+			{
+				"n": "23",
+				"jugador": "Elián Giménez",
+				"principal": "Pivote",
+				"secundarias": [
+					"Mediocentro"
+				]
+			},
+			{
+				"n": "14",
+				"jugador": "Mauricio Martínez",
+				"principal": "Pivote",
+				"secundarias": [
+					"Defensa central"
+				]
+			},
+			{
+				"n": "15",
+				"jugador": "Cristian Zabala",
+				"principal": "Mediocentro",
+				"secundarias": [
+					"Interior derecho"
+				]
+			},
+			{
+				"n": "8",
+				"jugador": "Santiago Salle",
+				"principal": "Interior derecho",
+				"secundarias": [
+					"Lateral derecho",
+					"Extremo derecho"
+				]
+			},
+			{
+				"n": "21",
+				"jugador": "Julián Mavilla",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": []
+			},
+			{
+				"n": "18",
+				"jugador": "Osmar Giménez",
+				"principal": "Mediocentro ofensivo",
+				"secundarias": [
+					"Interior derecho",
+					"Interior izquierdo"
+				]
+			},
+			{
+				"n": "22",
+				"jugador": "Gastón González",
+				"principal": "Extremo izquierdo",
+				"secundarias": [
+					"Extremo derecho"
+				]
+			},
+			{
+				"n": "26",
+				"jugador": "Yair Arismendi",
+				"principal": "Extremo izquierdo",
+				"secundarias": [
+					"Extremo derecho",
+					"Delantero centro"
+				]
+			},
+			{
+				"n": "10",
+				"jugador": "Jhon Rentería",
+				"principal": null,
+				"secundarias": [
+					"Mediocentro ofensivo",
+					"Extremo derecho"
+				],
+				"nota": "La captura no marca su puesto principal: figura con MCO y ED en claro. Por los totales sería extremo derecho; confirmar con el plantel."
+			},
+			{
+				"n": "19",
+				"jugador": "Julián Contrera",
+				"principal": "Extremo derecho",
+				"secundarias": [
+					"Extremo izquierdo",
+					"Mediapunta"
+				]
+			},
+			{
+				"n": "27",
+				"jugador": "Junior Marabel",
+				"principal": "Delantero centro",
+				"secundarias": []
+			},
+			{
+				"n": "24",
+				"jugador": "Jonathan Herrera",
+				"principal": "Delantero centro",
+				"secundarias": []
+			},
+			{
+				"n": "7",
+				"jugador": "Pablo Magnin",
+				"principal": "Delantero centro",
+				"secundarias": []
+			},
+			{
+				"n": "9",
+				"jugador": "Diego Churín",
+				"principal": "Delantero centro",
+				"secundarias": []
+			},
+			{
+				"n": "40",
+				"jugador": "Brandon Márquez",
+				"principal": "Delantero centro",
+				"secundarias": [
+					"Extremo izquierdo"
+				]
+			}
+		]
+	}
+}

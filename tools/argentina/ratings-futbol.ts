@@ -256,6 +256,11 @@ export type Forma = {
 	gol?: { escala: number; min: number; max: number };
 	// Capitán (`"capitan": true` en el plantel): arquetipo según el puesto
 	capitan?: Record<string, Partial<Record<Key, number>>>;
+	// Posiciones secundarias (`"secundarias"` en el plantel, de Transfermarkt):
+	// la norma del puesto (con su contraste) se mezcla con la de las
+	// secundarias. "una": peso de una sola secundaria; "varias": peso total de
+	// dos o más, repartido parejo (el resto queda para el puesto principal)
+	secundarias?: { una: number; varias: number };
 };
 
 export const FORMA_1: Forma = {
@@ -366,10 +371,66 @@ export const FORMA_4: Forma = {
 	},
 };
 
-// Forma con la que se arma el archivo. FORMA=2 o FORMA=3 en el entorno arma
-// con una forma anterior (para comprobar que el resto del archivo no cambia)
-export const FORMA_VIGENTE: Forma =
-	process.env.FORMA === "2" ? FORMA_2 : process.env.FORMA === "3" ? FORMA_3 : FORMA_4;
+// Forma 5 (desde la v2.23.9; idea del usuario, 24/11):
+// - Posiciones secundarias: un volante que también juega de pivote o de
+//   central no juega igual que uno que también juega de mediapunta. La norma
+//   de su puesto se mezcla con la de sus secundarias: 20% con una sola, 25%
+//   con dos o más (mismo peso cada una). El OVR no cambia.
+// - Defectos nuevos (el usuario dio libertad creativa): lo contrario de los
+//   rasgos de juego. Restan donde los rasgos suman, y el resto sube parejo
+//   para que el OVR no cambie. Con "+" también valen una vez y media.
+export const FORMA_5: Forma = {
+	...FORMA_4,
+	secundarias: { una: 0.2, varias: 0.25 },
+	rasgos: {
+		...FORMA_4.rasgos,
+		// Falla frente al arco (lo contrario de goleador)
+		erratico: { ins: -6, fg: -6, tp: -3 },
+		// Poca técnica: le cuesta gambetear y pasar (lo contrario de habilidoso;
+		// en un arquero, malo con los pies)
+		patadura: { drb: -8, pss: -6 },
+		// Individualista: juega solo, pasa poco y remata más
+		morfon: { pss: -8, oiq: -4, ins: 3, drb: 3 },
+		// Pierde en el choque (lo contrario de potente)
+		liviano: { stre: -10 },
+		// No gana de arriba (lo contrario de aereo)
+		"flojo de arriba": { jmp: -8, reb: -4, dnk: -3 },
+		// Se apaga en los segundos tiempos (lo contrario de pulmon)
+		"sin aire": { endu: -12 },
+		// Pierde la marca y la posición (lo contrario de tactico)
+		desordenado: { diq: -6, oiq: -4 },
+		// Llega tarde y comete faltas: en el motor, las faltas suben cuando baja
+		// la lectura defensiva; es fuerte en el choque
+		faltero: { diq: -8, stre: 4 },
+		// Arqueros: no sale del arco (lo contrario de achique) y da rebotes o
+		// le cuesta reaccionar (lo contrario de reflejos)
+		estatico: { reb: -8, stre: -3 },
+		inseguro: { jmp: -8, diq: -3 },
+	},
+};
+
+// Para la página de la escalera: rasgos solo de arqueros, de los dos (arqueros
+// y jugadores de campo) y defectos
+export const RASGOS_ARQUERO = ["reflejos", "achique", "pies", "estatico", "inseguro"];
+export const RASGOS_AMBOS = ["lento", "patadura", "liviano", "flojo de arriba"];
+export const DEFECTOS = [
+	"lento",
+	"erratico",
+	"patadura",
+	"morfon",
+	"liviano",
+	"flojo de arriba",
+	"sin aire",
+	"desordenado",
+	"faltero",
+	"estatico",
+	"inseguro",
+];
+
+// Forma con la que se arma el archivo. FORMA=2, 3 o 4 en el entorno arma con
+// una forma anterior (para comprobar que el resto del archivo no cambia)
+export const NUMERO_FORMA = ["2", "3", "4"].includes(process.env.FORMA ?? "") ? Number(process.env.FORMA) : 5;
+export const FORMA_VIGENTE: Forma = { 2: FORMA_2, 3: FORMA_3, 4: FORMA_4, 5: FORMA_5 }[NUMERO_FORMA]!;
 
 const LINEA: Record<string, "ataque" | "defensa" | "medio"> = {
 	F: "ataque",
@@ -394,6 +455,18 @@ export const generarRatings = (
 	const cm = Math.round(j.altura * 100);
 	const norma = NORMA[pos]!;
 	const contraste = forma.contraste[pos] ?? {};
+	// Perfil del puesto: norma más contraste; con secundarias (forma 5), mezcla
+	// del puesto principal con los de las secundarias
+	const perfilDe = (p: string, k: Key) =>
+		ESCALA_NORMA * ((NORMA[p]![k] ?? 1) - 1) + (forma.contraste[p]?.[k] ?? 0);
+	const secundarias: string[] =
+		forma.secundarias && pos !== "C"
+			? (j.secundarias ?? []).map((tm: string) => posicion(tm, j.pie ?? null))
+			: [];
+	const pesoSec = secundarias.length === 0 ? 0 : secundarias.length === 1 ? forma.secundarias!.una : forma.secundarias!.varias;
+	const perfilMezcla = (k: Key) =>
+		(1 - pesoSec) * perfilDe(pos, k) +
+		secundarias.reduce((a, p) => a + (pesoSec / secundarias.length) * perfilDe(p, k), 0);
 
 	// Ajustes individuales, sobre la norma de la posición
 	const ajuste: Partial<Record<Key, number>> = {};
@@ -474,11 +547,11 @@ export const generarRatings = (
 			}
 			// La norma suma o resta respecto del nivel base (1,5 -> +15; 0,6 ->
 			// -12), así los ratings fuertes de la posición no se clavan en 100
+			// (sin secundarias, la misma cuenta de siempre: mismo archivo)
 			const v =
-				base +
-				ESCALA_NORMA * ((norma[k] ?? 1) - 1) +
-				(contraste[k] ?? 0) +
-				(ajuste[k] ?? 0);
+				secundarias.length === 0
+					? base + ESCALA_NORMA * ((norma[k] ?? 1) - 1) + (contraste[k] ?? 0) + (ajuste[k] ?? 0)
+					: base + perfilMezcla(k) + (ajuste[k] ?? 0);
 			const t = forma.techo;
 			const w = t && v > t.desde ? Math.min(t.max, t.desde + (v - t.desde) * t.factor) : v;
 			r[k] = Math.max(0, Math.min(100, Math.round(w)));

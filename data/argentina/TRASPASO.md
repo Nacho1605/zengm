@@ -1,13 +1,14 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026. Última versión: **v2.23.8**
-(`data/argentina/BBGM_Argentina_2026_v.2.23.8_futbol.json`, sha256
-`c3f23048f6433502f0ea9b98aa8680e7d46a15b47ae353798a3ce05881ccb3eb`): 21 de 30
+Estado al 24/11/2026. Última versión: **v2.23.9**
+(`data/argentina/BBGM_Argentina_2026_v.2.23.9_futbol.json`, sha256
+`13d10e555d5a9ec1dc9bebc3014fb88c2b1d61efb86f9f54a9407bf5a5a4d794`): 21 de 30
 equipos con plantel 2026, Rendimiento completo y fotos (las del usuario,
 corregidas el 24/11); todo el archivo en la escala nueva de OVR (20 a 78) y
-en la forma 4. Validación: 0 errores. Auditoría: 53 controles, 8 con alertas
-(las de siempre; fotos: 696 de 696). Escalera por puesto del usuario
-actualizada, ahora también para anotar rasgos
+en la forma 5 (posiciones secundarias, por ahora solo de BEL; defectos
+nuevos para elegir). Validación: 0 errores. Auditoría: 53 controles, 8 con
+alertas (las de siempre; fotos: 696 de 696). Escalera por puesto del usuario
+actualizada, para anotar OVR y rasgos (con los defectos en rojo)
 (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
@@ -17,15 +18,16 @@ actualizada, ahora también para anotar rasgos
    `"rasgos"` del plantel; ojo: a un jugador con ratings a mano los rasgos no
    se le aplican solos). Armar la versión, regenerar la escalera y
    republicarla en el mismo link.
-2. **Posiciones secundarias** (idea del usuario, 24/11): un volante con
-   secundarias de pivote o central no debería jugar igual que uno con
-   secundaria de mediapunta. Se guardan en el plantel (`"secundarias"`, con
-   los nombres de Transfermarkt en español; la captura "Composición de la
-   plantilla según posiciones"). Cargadas: BEL (25 jugadores). Faltan las
-   capturas de los otros 20 equipos. Propuesta (sin aplicar, espera al
-   usuario): en el generador, mezclar la norma del puesto con la de las
-   secundarias (cerca de un 20–25% en total), sin tocar el OVR. La página
-   de la escalera ya las muestra ("también EI, ED").
+2. **Posiciones secundarias** (idea del usuario, 24/11; aceptado: 20–25% sin
+   cambiar el OVR, mismo peso para cada secundaria): aplicadas a BEL en la
+   v2.23.9 (16 jugadores; González Metilli tiene ratings a mano y no se le
+   aplicaron: se le preguntó al usuario). Si el usuario aprueba cómo quedó
+   Belgrano, pedir las de los otros 20 equipos cargados en cuatro tandas de
+   cinco (van directo a cada plantel). Las de los 9 sin cargar van a
+   `secundarias-2026.json`: ya están PLA, BAN, DYJ, TIG y SAR (24/11); faltan
+   ALD, ATU, CCO y GEM (el usuario las manda en un mensaje de 4). Duda: Jhon
+   Rentería (SAR) figura sin puesto principal marcado (MCO y ED en claro;
+   por los totales, extremo derecho): confirmar con su plantel.
 3. Pendiente de analizar con el usuario: el ajuste del capitán según el
    motivo y si Estudiantes (sin capitán fijo) lleva el arquetipo.
 4. Equipos que faltan: BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (el orden
@@ -360,6 +362,9 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   resto lo tiene en su plantel desde que se cargó).
 - `propuesta-ovr-v2.23.3.md`: revisiones de OVR con el año completo (sin
   aplicar).
+- `secundarias-2026.json`: posiciones secundarias de los equipos sin cargar
+  (captura "Composición de la plantilla según posiciones"; nombres como en el
+  plantel). Al cargar el equipo, pasarlas a su plantel.
 
 ## 7. Pendientes
 
@@ -559,6 +564,20 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**24/11/2026 (v2.23.9).** Huella:
+`13d10e555d5a9ec1dc9bebc3014fb88c2b1d61efb86f9f54a9407bf5a5a4d794`.
+
+- Forma 5 (`ratings-futbol.ts`): posiciones secundarias (20% con una, 25%
+  con dos o más, parejo) y defectos nuevos (erratico, patadura, morfon,
+  liviano, flojo de arriba, sin aire, desordenado, faltero; arqueros:
+  estatico, inseguro), que nadie tiene todavía. `FORMA=4` arma la v2.23.8
+  idéntica (misma huella). Contra la v2.23.8: cambian los ratings de 16
+  jugadores de BEL (los de secundarias sin ratings a mano), ningún OVR, y el
+  resto del archivo es igual.
+- `secundarias-2026.json`: secundarias de PLA, BAN, DYJ, TIG y SAR (154
+  jugadores; cada captura coincide con su fila de totales).
+- Escalera: defectos en un grupo aparte del menú y en rojo.
+
 **24/11/2026 (v2.23.8).** Huella:
 `c3f23048f6433502f0ea9b98aa8680e7d46a15b47ae353798a3ce05881ccb3eb`.
 
@@ -877,7 +896,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.23.8.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.23.9.
 > Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
 > líneas que entendiste el estado, antes de seguir.
 

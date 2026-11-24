@@ -92,8 +92,9 @@ v2.14.1 → v2.14.2).
 - Forma de los ratings (`tools/argentina/ratings-futbol.ts`; forma 2 desde la
   v2.15.4, forma 3 desde la v2.17.2: delanteros con ins y dnk sin inflar;
   forma 4 desde la v2.23.6: laterales y pivotes con más marca 1 contra 1,
-  extremos con más pase y arquetipo del capitán según el puesto;
-  `FORMA=3` (o `FORMA=2`) en el entorno arma con una anterior, para comprobar): el OVR siempre da exacto con la fórmula oficial (nunca se pisa a
+  extremos con más pase y arquetipo del capitán según el puesto; forma 5
+  desde la v2.23.9: posiciones secundarias y defectos nuevos;
+  `FORMA=4` (o 3, o 2) en el entorno arma con una anterior, para comprobar): el OVR siempre da exacto con la fórmula oficial (nunca se pisa a
   mano); lo que cambia es cómo se reparte. Los atacantes defienden menos y los
   defensores atacan menos (nunca a cero: todo es relativo), la experiencia va
   más a la inteligencia de su línea y la fuerza acompaña a la altura (con
@@ -102,7 +103,10 @@ v2.14.1 → v2.14.2).
 - Rasgos de juego (arquetipos) en el plantel (`"rasgos"`), según el usuario:
   goleador, larga distancia (antes "pegador"), aereo, gambeta, veloz, pelota parada, habilidoso, pase,
   cerebro, centrador, recuperador, potente, pulmon, tactico; arqueros:
-  reflejos, achique, pies; defecto: lento. Con "+" (ej. `gambeta+`) el efecto
+  reflejos, achique, pies; defectos (forma 5, libertad creativa que dio el
+  usuario): lento, erratico, patadura, morfon, liviano, flojo de arriba, sin
+  aire, desordenado, faltero; de arqueros: estatico, inseguro (lento,
+  patadura, liviano y flojo de arriba valen para los dos). Con "+" (ej. `gambeta+`) el efecto
   es 1,5 veces. Dan forma; el OVR no cambia. Efectos en `ratings-futbol.ts`;
   la lista del usuario, en `tools/argentina/rasgos-usuario.ts`. Pedirlos con
   cada equipo nuevo. A un jugador con ratings a mano no se le aplican solos.
@@ -201,8 +205,12 @@ v2.14.1 → v2.14.2).
   `"sofascore"` de cada jugador en el plantel; `"peso"` (kg) si lo da.
 - Posiciones secundarias (captura "Composición de la plantilla según
   posiciones" de Transfermarkt): `"secundarias"` en el plantel, con los
-  nombres en español. Hoy solo BEL; todavía no cambian el juego (propuesta en
-  TRASPASO, "Lo que sigue").
+  nombres en español. Desde la v2.23.9 (forma 5) dan forma: la norma del
+  puesto se mezcla con la de las secundarias (20% con una, 25% con dos o
+  más, mismo peso cada una); el OVR no cambia. A un jugador con ratings a
+  mano no se le aplican solas. Hoy solo BEL. Las de los equipos sin cargar
+  van a `data/argentina/secundarias-2026.json` (control: la fila "Total" de
+  la captura) y pasan al plantel al cargar el equipo.
 - Un solo nombre (Rick, TAL): el nombre en `nombre` y `apellido` vacío (así
   no queda un espacio al principio). Las herramientas lo buscan por ese nombre.
 - Premios: con sus nombres originales del juego (en inglés), por pedido del

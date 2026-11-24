@@ -139,3 +139,12 @@ Alto = por encima del promedio del plantel; bajo = por debajo; 0 = nada.
 
 Es la misma norma que usan los prospectos generados para los drafts futuros
 (`src/worker/core/player/genRatingsFutbol.ts`).
+
+**Posiciones secundarias (forma 5, desde la v2.23.9).** Si el plantel trae
+las secundarias de Transfermarkt, la norma del puesto (con el contraste de la
+forma) se mezcla con la de cada secundaria: 20% con una sola, 25% con dos o
+más, repartido parejo. Una secundaria del mismo grupo del juego (un mediapunta
+que también es extremo izquierdo y derecho cuenta las dos como extremo; un
+extremo derecho que también es extremo izquierdo no cambia por eso) pesa
+igual. Un central secundario es #2 o #6 según el pie, como el principal. El
+capitán, la experiencia y los goles siguen el puesto principal.

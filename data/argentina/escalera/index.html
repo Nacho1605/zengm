@@ -101,6 +101,8 @@ td.ovr { font-family: var(--display); font-weight: 700; font-size: 1.2rem; }
 .chips { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
 .chip { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; padding: 0 0 0 7px; font-size: 0.8rem; color: var(--fg); background: var(--surface); white-space: nowrap; }
 .chip.nuevo { border-color: var(--accent); }
+.chip.defecto { color: var(--down); }
+.chip.defecto.nuevo { border-color: var(--down); }
 .chip .nom { font: inherit; border: 0; background: none; color: inherit; cursor: pointer; padding: 1px 0; }
 .chip .x { font: inherit; border: 0; background: none; color: var(--muted); cursor: pointer; padding: 1px 6px; }
 .quitado { text-decoration: line-through; color: var(--muted); font-size: 0.8rem; }
@@ -161,7 +163,7 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 		<span><span class="marca cap">C</span> capitán</span>
 		<span><span class="marca">ª</span> ratings tuyos</span>
 		<span>Tit. = partidos de titular · % = de los minutos de su equipo actual</span>
-		<span>Rasgos: tocá el nombre para alternar la versión fuerte (+), la × para quitarlo y el menú para agregar</span>
+		<span>Rasgos: tocá el nombre para alternar la versión fuerte (+), la × para quitarlo y el menú para agregar · <span style="color:var(--down)">en rojo, los defectos</span></span>
 	</div>
 
 	<div class="tabla-caja">
@@ -236,13 +238,16 @@ function setRasgos(rid, lista) {
 	guardarR();
 	render();
 }
+const esDefecto = (r) => (DATOS.rasgos || []).some((x) => x.defecto && x.k === base(r));
 function celdaRasgos(j) {
 	const fin = rasgosDe(j);
 	const rid = esc(id(j));
-	const chips = fin.map((r) => `<span class="chip${j.r.includes(r) ? "" : " nuevo"}"><button class="nom" type="button" data-alternar="${esc(r)}" data-rid="${rid}" title="Alternar la versión fuerte (+)">${esc(r)}</button><button class="x" type="button" data-quitar="${esc(r)}" data-rid="${rid}" aria-label="Quitar ${esc(r)}">×</button></span>`).join("");
+	const chips = fin.map((r) => `<span class="chip${j.r.includes(r) ? "" : " nuevo"}${esDefecto(r) ? " defecto" : ""}"><button class="nom" type="button" data-alternar="${esc(r)}" data-rid="${rid}" title="Alternar la versión fuerte (+)">${esc(r)}</button><button class="x" type="button" data-quitar="${esc(r)}" data-rid="${rid}" aria-label="Quitar ${esc(r)}">×</button></span>`).join("");
 	const quitados = j.r.filter((r) => !fin.includes(r)).map((r) => `<span class="quitado">${esc(r)}</span>`).join("");
 	const usados = new Set(fin.map(base));
-	const opciones = (DATOS.rasgos || []).filter((x) => (j.g === "ARQ" ? x.arquero !== false : !x.arquero) && !usados.has(x.k)).map((x) => `<option value="${esc(x.k)}">${esc(x.k)}</option>`).join("");
+	const posibles = (DATOS.rasgos || []).filter((x) => (j.g === "ARQ" ? x.arquero !== false : !x.arquero) && !usados.has(x.k));
+	const grupo = (xs, t) => xs.length ? `<optgroup label="${t}">${xs.map((x) => `<option value="${esc(x.k)}">${esc(x.k)}</option>`).join("")}</optgroup>` : "";
+	const opciones = grupo(posibles.filter((x) => !x.defecto), "Rasgos") + grupo(posibles.filter((x) => x.defecto), "Defectos");
 	const sel = opciones ? `<select class="add-rasgo" data-agregar="1" data-rid="${rid}" aria-label="Agregar rasgo a ${esc(nombreCorto(j))}"><option value="">+ rasgo</option>${opciones}</select>` : "";
 	return `<td class="rasgos${anotRasgos[id(j)] ? " cambiado" : ""}"><div class="chips">${chips}${quitados}${sel}</div></td>`;
 }

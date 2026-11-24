@@ -12,7 +12,7 @@
 // y se guarda el detalle ("otros").
 
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { FORMA_VIGENTE } from "./ratings-futbol.ts";
+import { DEFECTOS, FORMA_VIGENTE, RASGOS_AMBOS, RASGOS_ARQUERO } from "./ratings-futbol.ts";
 
 const [archivo, baseArchivo] = process.argv.slice(2);
 if (!archivo) {
@@ -142,10 +142,16 @@ writeFileSync(
 		fecha: `${hoy.getDate()}/${hoy.getMonth() + 1}/${hoy.getFullYear()}`,
 		equipos,
 		jugadores,
-		// Rasgos que se pueden elegir en la página (los de la forma vigente)
+		// Rasgos que se pueden elegir en la página (los de la forma vigente).
+		// arquero: true solo arqueros, false solo jugadores de campo, sin dato
+		// los dos; defecto: va en el grupo "Defectos"
 		rasgos: Object.keys(FORMA_VIGENTE.rasgos)
 			.filter((k) => k !== "pegador")
-			.map((k) => ({ k, arquero: ["reflejos", "achique", "pies"].includes(k) ? true : k === "lento" ? undefined : false })),
+			.map((k) => ({
+				k,
+				arquero: RASGOS_ARQUERO.includes(k) ? true : RASGOS_AMBOS.includes(k) ? undefined : false,
+				defecto: DEFECTOS.includes(k),
+			})),
 	}),
 );
 const dos = jugadores.filter((j) => j.otros.length);
