@@ -137,7 +137,7 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 	<header>
 		<div class="label">Liga Profesional 2026 · <span id="version">v2.23.2</span></div>
 		<h1>Escalera por puesto</h1>
-		<p class="sub">Los 615 jugadores de los 21 planteles cargados con la escala nueva (20 a 78), con sus números de 2026 (los que jugaron en dos clubes cargados, con el año completo). Anotá tu OVR en la última columna y copiá la lista para mandármela.</p>
+		<p class="sub">Los <span id="n-jug">615</span> jugadores de los <span id="n-eq">21</span> planteles cargados con la escala nueva (20 a 78), con sus números de 2026 (los que jugaron en dos clubes cargados, con el año completo). Anotá tu OVR en la última columna y copiá la lista para mandármela.</p>
 	</header>
 
 	<section aria-label="Once de cada equipo">
@@ -459,6 +459,8 @@ fetch("escalera.json").then((r) => r.json()).then((d) => {
 	guardar();
 	guardarR();
 	document.getElementById("version").textContent = `${d.version} · ${d.fecha}`;
+	document.getElementById("n-jug").textContent = d.jugadores.length;
+	document.getElementById("n-eq").textContent = d.equipos.length;
 	document.getElementById("base").textContent = d.versionBase || "la versión anterior";
 	const sel = document.getElementById("equipo");
 	for (const e of d.equipos.slice().sort((a, b) => a.pos - b.pos)) {

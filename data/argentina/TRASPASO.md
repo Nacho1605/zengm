@@ -1,44 +1,45 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026. Última versión: **v2.23.13**
-(`data/argentina/BBGM_Argentina_2026_v.2.23.13_futbol.json`, sha256
-`36bb31121234957ab95289e2865d94ce8f8bf6bb0417c14ad7a0accdf2a2ec8d`): 21 de 30
-equipos con plantel 2026, Rendimiento completo y fotos (las del usuario,
-corregidas el 24/11); todo el archivo en la escala nueva de OVR (20 a 78) y
-en la forma 5 (posiciones secundarias de los 21 planteles; defectos);
-aplicadas las listas de la escalera del usuario del 24/11 y lo que aceptó
-de `revision-v2.23.12.md`. Validación: 0 errores. Auditoría: 53 controles,
-8 con alertas (las de siempre; fotos: 696 de 696). Escalera por puesto del
-usuario actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U;
-copia en `data/argentina/escalera/`).
+Estado al 24/11/2026. Última versión: **v2.24**
+(`data/argentina/BBGM_Argentina_2026_v.2.24_futbol.json`, sha256
+`42475c70d5ed0b42837f76f49e856ab6e6e8e094c887a9ff54ec5ee27dec6757`): 22 de 30
+equipos con plantel 2026 (el último, Platense, 36 jugadores), Rendimiento
+completo; fotos de los 21 primeros (las de Platense, pendientes: las pone el
+usuario en el juego); todo el archivo en la escala nueva de OVR (20 a 78) y
+en la forma 5 (posiciones secundarias de los 22 planteles; defectos).
+Validación: 0 errores. Auditoría: 53 controles, 9 con alertas (las de
+siempre más "Foto": los 36 de Platense). Escalera por puesto del usuario
+actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
+`data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. **v2.24: Platense** (plan propuesto al usuario, 24/11; espera su
-   confirmación). Es el que más contexto tiene entre los 9 que faltan
-   (cuartos de la Libertadores y finalista de la Copa Argentina, 24.º en la
-   anual: otro equipo que priorizó las copas, como EST) y sus secundarias ya
-   están guardadas. Alternativa: Defensa y Justicia (14.º, el mejor de la
-   tabla entre los que faltan). Lo que tiene que mandar el usuario: plantel
-   "Ampliado" y Rendimiento 2026 de Transfermarkt (Platense tiene 36: puede
-   necesitar más capturas), debut e inferiores de cada uno, los que siguen
-   en reserva, lesiones, parientes, capitán, comentario del equipo,
-   Sofascore ≥ 6,90 y rasgos (con los defectos nuevos). Copas y
-   secundarias ya están. Al cargarlo: secundarias desde
-   `secundarias-2026.json`, `cruces.ts`, OVR con la escalera y `vecinos.ts`.
-2. Cabos sueltos (para una v2.23.x si el usuario prefiere cerrarlos antes):
+1. **Respuesta del usuario a los OVR de Platense** (propuestos por Claude en
+   la v2.24, en cuadros por sección; sus cambios van como parche v2.24.1).
+   Dudas que se le hicieron: rasgos que su comentario sugiere y no anotó
+   (Cuesta: recuperador y aereo por "anticipo y juego aéreo"; Zapiola: larga
+   distancia por "la pegada"; Cozzani: reflejos por las tandas de penales);
+   la lesión de Luciano Giménez (hombro, sin fecha: 4 partidos estimados).
+   Fotos de Platense: el usuario las pone en el juego y manda la liga.
+2. **Próximo equipo (v2.25):** quedan BAN, DYJ, TIG, SAR, ALD, ATU, CCO y GEM;
+   el orden lo decide el usuario (Claude sugirió Defensa y Justicia, 14.º,
+   el mejor de la tabla entre los que faltan). Las secundarias de los 8 ya
+   están en `secundarias-2026.json`; las copas, en `copas-2026.json`.
+   Matías Borgogno (arquero de DYJ) jugó la primera mitad en Platense (22
+   PJ, 1980'; está en `salidas-2026.json`).
+3. Cabos sueltos (para una v2.24.x si el usuario prefiere cerrarlos antes):
    el ajuste del capitán según el motivo y si Estudiantes (sin capitán fijo)
    lleva el arquetipo; fotos de 21 de los 24 prospectos de los planteles.
 2. **Posiciones secundarias** (idea del usuario, 24/11; aceptado: 20–25% sin
    cambiar el OVR, mismo peso para cada secundaria): completas en los 21
-   planteles (v2.23.11: 394 de 615 jugadores tienen alguna) y en
-   `secundarias-2026.json` para los 9 sin cargar (pasarlas al plantel al
-   cargar cada uno). Dudas: Jhon Rentería (SAR) figura sin puesto principal
+   planteles (v2.23.11: 394 de 615 jugadores tienen alguna; Platense, 23 de
+   36, desde la v2.24) y en `secundarias-2026.json` para los 8 sin cargar
+   (pasarlas al plantel al cargar cada uno). Dudas: Jhon Rentería (SAR) figura sin puesto principal
    marcado (MCO y ED en claro; por los totales, extremo derecho): confirmar
    con su plantel. Sebastián Moyano, el libre con la foto de Mele, es el
    tercer arquero de ALD: al cargar Aldosivi va en `reemplaza` y recibe su
    foto. Mazzanti (NOB): Transfermarkt y el comentario del usuario escriben
    "Mazzantti": corregido en la v2.23.12 (con `semilla`).
-4. Equipos que faltan: BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (el orden
+4. Equipos que faltan: BAN, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (el orden
    no está fijado; en el archivo CCO no tiene arquero desde que Mansilla
    pasó a UNI: su captura de secundarias trae a Aguerre y Vallejos).
 5. Más adelante (el usuario: "falta bastante"): colleges, nombres y orígenes
@@ -54,7 +55,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 - **Fase 1 (v1.x, terminada):** esqueleto de la liga. Motor de fútbol con
   ajustes del archivo (`activar-futbol.ts`), 163 equipos (30 activos), zonas,
   premios y lesiones en español, drafts generados con norma de posición.
-- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **21 de
+- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **22 de
   30** equipos.
 - **Fase 3 (futura):** historia de la liga (temporadas pasadas, campeones,
   premios, Salón de la Fama — hay 32 retirados en el Salón, mal hechos, como
@@ -78,7 +79,7 @@ Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
 | IND | Avellaneda Red Devils | Met / Conurbano | ✔ |
 | RAC | Avellaneda Academics | Met / Conurbano | ✔ |
 | BAN | Banfield Drillers | Met / Conurbano | |
-| PLA | Florida Squids (Platense) | Met / Conurbano | |
+| PLA | Florida Squids (Platense) | Met / Conurbano | ✔ |
 | DYJ | Varela Falcons (Defensa y Justicia) | Met / Conurbano | |
 | LAN | Lanús Garnets | Met / Conurbano | ✔ |
 | TIG | Victoria Tigers | Met / Conurbano | |
@@ -104,7 +105,7 @@ CSIR = INR, GELP = GIM, SMSJ = SMJ (San Martín de San Juan, inactivo). Colón
 PVN. En las tablas, "Gimnasia y Esgrima" aparece dos veces (GIM y GEM) y
 "Estudiantes" también (EST y ERC).
 
-**Próximos:** BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (de a uno o de
+**Próximos:** BAN, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (de a uno o de
 a dos; el usuario manda las capturas). CCO quedó sin arquero (Mansilla, que
 estaba ahí con datos de 2023, pasó a UNI): se arregla al cargar CCO.
 
@@ -333,7 +334,7 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 
 ## 6. Archivos de datos
 
-- `planteles/XXX.json`: los 21 planteles cargados; `planteles/preparacion/`: los
+- `planteles/XXX.json`: los 22 planteles cargados; `planteles/preparacion/`: los
   que están en preparación (hoy ninguno): solo los lee `cruces.ts`; al
   terminar se pasan a `planteles/` y se suman a `armar-v2.sh`.
 - `arqueros/`: la lista de arqueros del usuario y la comparación con hoy
@@ -574,6 +575,31 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**24/11/2026 (v2.24): Platense.** Huella:
+`42475c70d5ed0b42837f76f49e856ab6e6e8e094c887a9ff54ec5ee27dec6757`.
+
+- Platense (36 jugadores, el plantel más grande): capturas del usuario
+  (plantel Ampliado y Rendimiento, revisadas con zoom), debut e inferiores,
+  rasgos, capitán (Ignacio Vázquez: W y arquetipo), lesiones (Nasif,
+  cruzado, vuelve el 31/12: 5 partidos; Luciano Giménez, hombro sin fecha: 4
+  estimados), Sofascore de la Liga (`sofascore`) y de la Libertadores
+  (`sofascoreLibertadores`, campo nuevo, solo dato) y el comentario
+  (`contexto`, con tablas y copas). Secundarias desde
+  `secundarias-2026.json`. `reemplaza`: 10 que estaban con datos de 2023
+  (entre ellos Gastón Togni, en el archivo con nacimiento 2000, y Víctor
+  Cuesta, "Victor"). Los 11 que tenía Platense en el archivo pasan a libres.
+  Salidas (6): Borgogno (DYJ), Cambiasso, Currado, Luna Diale (UNI: sus
+  73' se suman), Troya y Bosch. En dos clubes: Luciano Giménez (HUR + PLA) y
+  Fabricio López (SLO + PLA).
+- OVR (Claude, a corregir por el usuario): once 61,7, entre los de Barracas
+  y San Lorenzo; Cuesta y Zapiola 65, Vázquez 64, Cozzani 63 (como en la
+  lista de arqueros). Merlini y Lagos en 59 y no en 58 (58 ya tenía 24
+  jugadores; sus pares de 59, Gallardo y Benítez, tienen los mismos números).
+- `arqueros.ts` reconoce nombres de pila compuestos (Juan Pablo Cozzani). La
+  escalera cuenta sola jugadores y equipos en el título.
+- Contra la v2.23.13: 36 jugadores nuevos, 10 borrados (los de `reemplaza`),
+  11 ex Platense a libres; el resto del archivo es igual.
+
 **24/11/2026 (v2.23.13).** Huella:
 `36bb31121234957ab95289e2865d94ce8f8bf6bb0417c14ad7a0accdf2a2ec8d`.
 
@@ -991,7 +1017,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.23.13.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.24.
 > Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
 > líneas que entendiste el estado, antes de seguir.
 

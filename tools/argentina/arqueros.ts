@@ -62,6 +62,10 @@ const mismo = (nombreLista: string, nombre: string, apellido: string) => {
 	const simple = (x: string) => x.replace(/(.)\1/g, "$1");
 	const a = simple(norm(resto.join(" ")));
 	const b = simple(norm(apellido));
+	// Nombre de pila compuesto ("Juan Pablo Cozzani"): nombre completo igual
+	if (simple(norm(nombreLista)) === simple(norm(`${nombre} ${apellido}`))) {
+		return true;
+	}
 	return (
 		norm(pila) === norm(nombre.split(" ")[0]) &&
 		(a === b || b.startsWith(a) || a.startsWith(b))

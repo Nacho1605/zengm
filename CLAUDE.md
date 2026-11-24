@@ -209,15 +209,16 @@ v2.14.1 → v2.14.2).
   Rendimiento solo porque no entran en pantalla, y es muy cuidadoso): NO
   buscar filas perdidas entre imágenes.
   El comentario del usuario también se guarda: `"contexto"` del equipo y
-  `"sofascore"` de cada jugador en el plantel; `"peso"` (kg) si lo da.
+  `"sofascore"` de cada jugador en el plantel (el de la Liga; si da el de
+  una copa, aparte: `"sofascoreLibertadores"`); `"peso"` (kg) si lo da.
 - Posiciones secundarias (captura "Composición de la plantilla según
   posiciones" de Transfermarkt): `"secundarias"` en el plantel, con los
   nombres en español. Desde la v2.23.9 (forma 5) dan forma: la norma del
   puesto se mezcla con la de las secundarias (20% con una, 25% con dos o
   más, mismo peso cada una); el OVR no cambia. A un jugador con ratings a
   mano se le suma el mismo corrimiento (el usuario: la consistencia del
-  archivo pesa más que sus retoques). Desde la v2.23.11, en los 21
-  planteles cargados; las de los 9 sin cargar, en secundarias-2026.json.
+  archivo pesa más que sus retoques). Desde la v2.23.11, en todos los
+  planteles cargados; las de los equipos sin cargar, en secundarias-2026.json.
   Se transcriben a
   `data/argentina/secundarias/tanda-N.txt` (formato en `secundarias.ts`) y
   se pasan con esa herramienta. Las tandas se guardan en los planteles sin

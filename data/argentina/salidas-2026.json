@@ -327,6 +327,12 @@
 		{ "club": "GIM", "nombre": "Ivo", "apellido": "Mammini", "pos": "Delantero centro", "edad": 23, "pais": "Argentina", "convocado": 0, "pj": 0 },
 		{ "club": "GIM", "nombre": "Cayetano", "apellido": "Bolzán", "pos": "Delantero centro", "edad": 20, "pais": "Argentina", "convocado": 9, "pj": 3, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 3, "salio": 0, "ppp": 2, "min": 36 },
 		{ "club": "GIM", "nombre": "Jorge", "apellido": "de Asís", "pos": "Delantero centro", "edad": 20, "pais": "Argentina", "convocado": 10, "pj": 2, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 1, "entro": 2, "salio": 0, "ppp": 0, "min": 22 },
-		{ "club": "GIM", "nombre": "Agustín", "apellido": "Martínez", "pos": "Delantero", "edad": 18, "pais": "Argentina", "convocado": 1, "pj": 0 }
+		{ "club": "GIM", "nombre": "Agustín", "apellido": "Martínez", "pos": "Delantero", "edad": 18, "pais": "Argentina", "convocado": 1, "pj": 0 },
+		{ "club": "PLA", "nombre": "Matías", "apellido": "Borgogno", "pos": "Portero", "edad": 28, "pais": "Argentina", "convocado": 23, "pj": 22, "goles": 0, "asist": 0, "amarillas": 2, "dobleAmarilla": 0, "rojas": 0, "entro": 0, "salio": 0, "ppp": 1.18, "min": 1980 },
+		{ "club": "PLA", "nombre": "Santino", "apellido": "Cambiasso", "pos": "Portero", "edad": 19, "pais": "Argentina", "convocado": 1, "pj": 0 },
+		{ "club": "PLA", "nombre": "Thiago", "apellido": "Currado", "pos": "Defensa central", "edad": 20, "pais": "Argentina", "convocado": 4, "pj": 0 },
+		{ "club": "PLA", "nombre": "Mauro", "apellido": "Luna Diale", "pos": "Mediocentro ofensivo", "edad": 27, "pais": "Argentina", "convocado": 5, "pj": 2, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 1, "salio": 1, "ppp": 2, "min": 73 },
+		{ "club": "PLA", "nombre": "Demian", "apellido": "Troya", "pos": "Pivote", "edad": 21, "pais": "Argentina", "convocado": 1, "pj": 0 },
+		{ "club": "PLA", "nombre": "Benjamín", "apellido": "Bosch", "pos": "Extremo derecho", "edad": 21, "pais": "Argentina", "convocado": 9, "pj": 3, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 3, "salio": 0, "ppp": 1, "min": 48 }
 	]
 }

@@ -1,10 +1,10 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.23.13_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.24_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
-## Equipos cargados (21)
+## Equipos cargados (22)
 
 | Equipo | Arquero | Lista | Hoy | Cambio | PJ 2026 | Min |
 |---|---|---|---|---|---|---|
@@ -24,6 +24,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | GIM | Nelson Insfrán | 64 | 65 | +1 | 30 | 2638 |
 | VEL | Tomás Marchiori | 66 | 64 | −2 | 20 | 1830 |
 | NOB | Josué Reinatti | 52 | 63 | +11 | 21 | 1890 |
+| PLA | Juan Pablo Cozzani | 63 | 63 | = | 22 | 1980 |
 | INS | Marcos Ledesma | 59 | 62 | +3 | 17 | 1530 |
 | TAL | Ezequiel Unsaín | 63 | 62 | −1 | 16 | 1440 |
 | UNI | Matías Mansilla | 60 | 61 | +1 | 36 | 3240 |
@@ -50,9 +51,11 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | LAN | Franco Petroli | 44 | 35 | −9 | 3 | 270 |
 | SLO | Facundo Altamirano | 43 | 35 | −8 | 1 | 90 |
 | INR | Ramiro Macagno | 43 | 34 | −9 | 1 | 14 |
+| PLA | Nicolás Sumavil | 38 | 32 | −6 | 3 | 270 |
 | RIE | Marino Arzamendia | 39 | 32 | −7 | 4 | 360 |
 | INS | Emanuel Sittaro | 34 | 31 | −3 | 1 | 90 |
 | BAR | Juan Pablo Insúa | — | 30 | no estaba | 1 | 21 |
+| PLA | Brian Bustos | 41 | 30 | −11 | 0 | 0 |
 | ROS | Damián Fernández | — | 30 | no estaba | 0 | 0 |
 | VEL | Álvaro Busso | 40 | 30 | −10 | 0 | 0 |
 | ERC | Francisco Gualtieri | — | 29 | no estaba | 1 | 90 |
@@ -79,13 +82,12 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | 42 | Lautaro Morales | LAN | libre |
 | 37 | Lautaro Maldonado | INS | no está en el archivo |
 
-## Equipos sin cargar: la lista es la base (16)
+## Equipos sin cargar: la lista es la base (13)
 
 | Lista | Arquero | Club en la lista | Hoy en el archivo (datos 2023) |
 |---|---|---|---|
 | 67 | Matías Borgogno | DYJ | no está en el archivo |
 | 64 | Felipe Zenobio | TIG | no está en el archivo |
-| 63 | Juan Pablo Cozzani | PLA | no está en el archivo |
 | 61 | Alan Aguerre | CCO | libre |
 | 58 | Lucas Acosta | ALD | libre |
 | 57 | Luis Ingolotti | ATU | no está en el archivo |
@@ -93,10 +95,8 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | 55 | César Rigamonti | GEM | no está en el archivo |
 | 44 | Ignacio Chicco | ALD | ALD |
 | 42 | Tomás Durso | ATU | libre |
-| 41 | Brian Bustos | PLA | no está en el archivo |
 | 41 | Gino Santilli | BAN | no está en el archivo |
 | 41 | Lautaro Amadé | DYJ | no está en el archivo |
 | 39 | Lautaro Petrucci | GEM | no está en el archivo |
-| 38 | Nicolás Sumavil | PLA | no está en el archivo |
 | 38 | Sebastián Moyano | ALD | libre |
 
