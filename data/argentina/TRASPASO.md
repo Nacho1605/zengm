@@ -1,8 +1,8 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026. Última versión: **v2.24**
-(`data/argentina/BBGM_Argentina_2026_v.2.24_futbol.json`, sha256
-`42475c70d5ed0b42837f76f49e856ab6e6e8e094c887a9ff54ec5ee27dec6757`): 22 de 30
+Estado al 24/11/2026. Última versión: **v2.24.1**
+(`data/argentina/BBGM_Argentina_2026_v.2.24.1_futbol.json`, sha256
+`3537a48931f2a1c431f2a983b1339312d9d773e28d5ffbbb759a1a53dfd7c962`): 22 de 30
 equipos con plantel 2026 (el último, Platense, 36 jugadores), Rendimiento
 completo; fotos de los 21 primeros (las de Platense, pendientes: las pone el
 usuario en el juego); todo el archivo en la escala nueva de OVR (20 a 78) y
@@ -13,7 +13,12 @@ actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. **Respuesta del usuario a los OVR de Platense** (propuestos por Claude en
+1. v2.24.1: el usuario aceptó los rasgos sugeridos (Cuesta recuperador y
+   aereo, Zapiola larga distancia, Cozzani reflejos) y la lesión estimada de
+   Luciano Giménez; segunda revisión breve de los OVR de Platense: se
+   sostienen todos (pedido de ahorrar mensajes). Falta que el usuario
+   corrija los OVR si quiere y ponga las fotos.
+   **Respuesta del usuario a los OVR de Platense** (propuestos por Claude en
    la v2.24, en cuadros por sección; sus cambios van como parche v2.24.1).
    Dudas que se le hicieron: rasgos que su comentario sugiere y no anotó
    (Cuesta: recuperador y aereo por "anticipo y juego aéreo"; Zapiola: larga
@@ -575,6 +580,11 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**24/11/2026 (v2.24.1).** Huella:
+`3537a48931f2a1c431f2a983b1339312d9d773e28d5ffbbb759a1a53dfd7c962`. Rasgos
+aceptados de Platense (`escalera/listas/2026-11-24-c.txt`); contra la v2.24
+solo cambian los ratings de Cuesta, Zapiola y Cozzani.
+
 **24/11/2026 (v2.24): Platense.** Huella:
 `42475c70d5ed0b42837f76f49e856ab6e6e8e094c887a9ff54ec5ee27dec6757`.
 
@@ -1017,7 +1027,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.24.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.24.1.
 > Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
 > líneas que entendiste el estado, antes de seguir.
 

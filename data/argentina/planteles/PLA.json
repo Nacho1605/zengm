@@ -74,7 +74,10 @@
 				"anio": 2020
 			},
 			"college": "Club Atlético Lanús",
-			"secundarias": []
+			"secundarias": [],
+			"rasgos": [
+				"reflejos"
+			]
 		},
 		{
 			"n": "22",
@@ -322,6 +325,10 @@
 			"sofascoreLibertadores": 6.94,
 			"secundarias": [
 				"Lateral derecho"
+			],
+			"rasgos": [
+				"recuperador",
+				"aereo"
 			]
 		},
 		{
@@ -711,7 +718,8 @@
 			},
 			"college": "Club Estudiantes de La Plata",
 			"rasgos": [
-				"liviano"
+				"liviano",
+				"larga distancia"
 			],
 			"sofascore": 6.92,
 			"sofascoreLibertadores": 7.08,
