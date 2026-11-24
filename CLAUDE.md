@@ -210,7 +210,9 @@ v2.14.1 → v2.14.2).
   puesto se mezcla con la de las secundarias (20% con una, 25% con dos o
   más, mismo peso cada una); el OVR no cambia. A un jugador con ratings a
   mano se le suma el mismo corrimiento (el usuario: la consistencia del
-  archivo pesa más que sus retoques). Se transcriben a
+  archivo pesa más que sus retoques). Desde la v2.23.11, en los 21
+  planteles cargados; las de los 9 sin cargar, en secundarias-2026.json.
+  Se transcriben a
   `data/argentina/secundarias/tanda-N.txt` (formato en `secundarias.ts`) y
   se pasan con esa herramienta. Las tandas se guardan en los planteles sin
   armar versión; se arma una sola al final (superparche, pedido del

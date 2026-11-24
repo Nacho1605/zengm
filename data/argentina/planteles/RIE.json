@@ -48,7 +48,8 @@
 			"rasgos": [
 				"pies"
 			],
-			"sofascore": 7.28
+			"sofascore": 7.28,
+			"secundarias": []
 		},
 		{
 			"n": "23",
@@ -79,7 +80,8 @@
 				"anio": 2017
 			},
 			"college": "Club Olimpia",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/480417-1773350548.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/480417-1773350548.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "12",
@@ -108,7 +110,8 @@
 				"club": "FCO",
 				"anio": 2017
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/486236-1771009270.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/486236-1771009270.JPG?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "24",
@@ -138,7 +141,11 @@
 			},
 			"college": "Asociación Atlética Argentinos Juniors",
 			"ovr": 60,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/865442-1771009731.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/865442-1771009731.JPG?lm=4711",
+			"secundarias": [
+				"Lateral izquierdo",
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "22",
@@ -168,7 +175,10 @@
 			},
 			"college": "Club Atlético Temperley",
 			"ovr": 59,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/357338-1771009739.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/357338-1771009739.JPG?lm=4711",
+			"secundarias": [
+				"Lateral izquierdo"
+			]
 		},
 		{
 			"n": "19",
@@ -198,7 +208,8 @@
 			},
 			"college": "Arsenal Fútbol Club",
 			"ovr": 53,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/283398-1771009796.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/283398-1771009796.JPG?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "6",
@@ -229,7 +240,8 @@
 			},
 			"college": "Club Estudiantes de La Plata",
 			"ovr": 43,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/830848-1757625524.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/830848-1757625524.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "2",
@@ -263,7 +275,8 @@
 			"rasgos": [
 				"potente",
 				"tactico"
-			]
+			],
+			"secundarias": []
 		},
 		{
 			"n": "3",
@@ -292,7 +305,8 @@
 				"anio": 2013
 			},
 			"ovr": 29,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/697418-1771009805.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/697418-1771009805.JPG?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "4",
@@ -325,6 +339,9 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/439088-1771010498.JPG?lm=4711",
 			"rasgos": [
 				"potente"
+			],
+			"secundarias": [
+				"Lateral derecho"
 			]
 		},
 		{
@@ -354,7 +371,11 @@
 				"anio": 2021
 			},
 			"ovr": 57,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/832088-1771011401.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/832088-1771011401.JPG?lm=4711",
+			"secundarias": [
+				"Lateral derecho",
+				"Interior derecho"
+			]
 		},
 		{
 			"n": "13",
@@ -383,7 +404,11 @@
 				"anio": 2021
 			},
 			"ovr": 43,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/852747-1771010512.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/852747-1771010512.JPG?lm=4711",
+			"secundarias": [
+				"Defensa central",
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "36",
@@ -413,7 +438,8 @@
 			},
 			"ovr": 53,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/662756-1771010221.JPG?lm=4711",
-			"sofascore": 6.77
+			"sofascore": 6.77,
+			"secundarias": []
 		},
 		{
 			"n": "15",
@@ -442,7 +468,11 @@
 				"anio": 2017
 			},
 			"ovr": 53,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/441341-1771010179.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/441341-1771010179.JPG?lm=4711",
+			"secundarias": [
+				"Interior derecho",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "16",
@@ -471,7 +501,10 @@
 				"anio": 2022
 			},
 			"ovr": 54,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/697045-1771011330.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/697045-1771011330.JPG?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "27",
@@ -501,7 +534,11 @@
 			},
 			"college": "Club Atlético Atlas",
 			"ovr": 52,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/553854-1771010944.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/553854-1771010944.JPG?lm=4711",
+			"secundarias": [
+				"Lateral derecho",
+				"Interior derecho"
+			]
 		},
 		{
 			"n": "14",
@@ -532,7 +569,11 @@
 			"college": "Club Atlético Vélez Sarsfield",
 			"ovr": 56,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/992605-1771011542.JPG?lm=4711",
-			"sofascore": 6.77
+			"sofascore": 6.77,
+			"secundarias": [
+				"Pivote",
+				"Mediocentro ofensivo"
+			]
 		},
 		{
 			"n": "8",
@@ -565,6 +606,10 @@
 			"capitan": true,
 			"rasgos": [
 				"pulmon"
+			],
+			"secundarias": [
+				"Interior izquierdo",
+				"Delantero centro"
 			]
 		},
 		{
@@ -595,7 +640,10 @@
 			},
 			"college": "Club Atlético San Miguel",
 			"ovr": 41,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/540163-1645363467.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/540163-1645363467.JPG?lm=4711",
+			"secundarias": [
+				"Mediapunta"
+			]
 		},
 		{
 			"n": "31",
@@ -625,7 +673,8 @@
 			},
 			"college": "Club Atlético Huracán",
 			"ovr": 36,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1169692-1771012184.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1169692-1771012184.JPG?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "20",
@@ -656,7 +705,8 @@
 			},
 			"college": "Club Defensores de Cambaceres",
 			"ovr": 21,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1246521-1775063790.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1246521-1775063790.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "33",
@@ -685,7 +735,8 @@
 				"anio": 2014
 			},
 			"ovr": 21,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/464349-1720211501.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/464349-1720211501.JPG?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "17",
@@ -715,7 +766,11 @@
 				"anio": 2021
 			},
 			"ovr": 34,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/996005-1777561756.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/996005-1777561756.JPG?lm=4711",
+			"secundarias": [
+				"Extremo derecho",
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "35",
@@ -744,7 +799,10 @@
 				"anio": 2018
 			},
 			"ovr": 40,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/988734-1771011136.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/988734-1771011136.JPG?lm=4711",
+			"secundarias": [
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "40",
@@ -774,7 +832,11 @@
 			},
 			"college": "Club Atlético Huracán (Trelew)",
 			"ovr": 47,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1118715-1771011876.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1118715-1771011876.JPG?lm=4711",
+			"secundarias": [
+				"Interior derecho",
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "11",
@@ -803,7 +865,10 @@
 				"anio": 2020
 			},
 			"ovr": 57,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/618986-1771011906.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/618986-1771011906.JPG?lm=4711",
+			"secundarias": [
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "7",
@@ -833,7 +898,11 @@
 			},
 			"college": "Club Atlético Atlas",
 			"ovr": 56,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/844800-1771011945.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/844800-1771011945.JPG?lm=4711",
+			"secundarias": [
+				"Interior izquierdo",
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "21",
@@ -863,7 +932,11 @@
 				"anio": 2022
 			},
 			"ovr": 51,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/989579-1787795045.PNG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/989579-1787795045.PNG?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "9",
@@ -893,7 +966,8 @@
 			},
 			"college": "Club Atlético Boca Juniors",
 			"ovr": 47,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/438926-1771012200.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/438926-1771012200.JPG?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "29",
@@ -923,7 +997,11 @@
 				"anio": 2016
 			},
 			"ovr": 43,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/851121-1763871931.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/851121-1763871931.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "32",
@@ -952,7 +1030,10 @@
 				"anio": 2023
 			},
 			"ovr": 36,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/843243-1757518861.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/843243-1757518861.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo"
+			]
 		}
 	]
 }

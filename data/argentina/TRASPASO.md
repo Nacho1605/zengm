@@ -1,13 +1,13 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026. Última versión: **v2.23.10**
-(`data/argentina/BBGM_Argentina_2026_v.2.23.10_futbol.json`, sha256
-`02d45e2db43eea81cebfd6be2ec5ab23cc53877515e571d56e64bfdbe645758d`): 21 de 30
+Estado al 24/11/2026. Última versión: **v2.23.11**
+(`data/argentina/BBGM_Argentina_2026_v.2.23.11_futbol.json`, sha256
+`56985b8450af116e70e6d1f0d72a945e4a7880e30228c3753b50e63e8082bc27`): 21 de 30
 equipos con plantel 2026, Rendimiento completo y fotos (las del usuario,
 corregidas el 24/11); todo el archivo en la escala nueva de OVR (20 a 78) y
-en la forma 5 (posiciones secundarias de BEL y RIV; defectos nuevos para
-elegir). Validación: 0 errores. Auditoría: 53 controles, 8 con alertas (las
-de siempre; fotos: 696 de 696). Escalera por puesto del usuario
+en la forma 5 (posiciones secundarias de los 21 planteles; defectos nuevos
+para elegir). Validación: 0 errores. Auditoría: 53 controles, 8 con alertas
+(las de siempre; fotos: 696 de 696). Escalera por puesto del usuario
 actualizada, para anotar OVR y rasgos (con los defectos en rojo)
 (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
@@ -20,23 +20,15 @@ actualizada, para anotar OVR y rasgos (con los defectos en rojo)
    las secundarias: la consistencia pesa más que sus retoques). Armar la
    versión, regenerar la escalera y republicarla en el mismo link.
 2. **Posiciones secundarias** (idea del usuario, 24/11; aceptado: 20–25% sin
-   cambiar el OVR, mismo peso para cada secundaria; Belgrano "funcionó de
-   maravilla"): en la v2.23.10, BEL y RIV. **Tanda 1 (BOC, ROS, EST, INR,
-   VEL), tanda 2 (ARG, LAN, GIM, INS, IND) y tanda 3 (HUR, TAL, RAC, BAR,
-   SLO) ya están en los planteles, sin versión armada** (el usuario:
-   guardar las tandas y armar un superparche al final). Falta la tanda 4:
-   NOB, UNI, RIE, ERC. Duda: Peralta (HUR) es "Thiael" en el plantel y
-   "Thaiel" en la captura de secundarias (se le preguntó al usuario). Cada tanda:
-   transcribir a `secundarias/tanda-N.txt`, `secundarias.ts`, revisar los
-   avisos, commit. Al terminar: armar la versión (superparche), comparar
-   con la v2.23.10 (ningún OVR cambia), regenerar la escalera y mandarla.
-   Las de los 9 sin cargar están completas en
-   `secundarias-2026.json` (pasarlas al plantel al cargar cada uno). Duda:
-   Jhon Rentería (SAR) figura sin puesto principal marcado (MCO y ED en
-   claro; por los totales, extremo derecho): confirmar con su plantel.
-   Sebastián Moyano, el libre con la foto de Mele, es el tercer arquero de
-   ALD (captura del 24/11): al cargar Aldosivi va en `reemplaza` y recibe
-   su foto.
+   cambiar el OVR, mismo peso para cada secundaria): completas en los 21
+   planteles (v2.23.11: 394 de 615 jugadores tienen alguna) y en
+   `secundarias-2026.json` para los 9 sin cargar (pasarlas al plantel al
+   cargar cada uno). Dudas: Jhon Rentería (SAR) figura sin puesto principal
+   marcado (MCO y ED en claro; por los totales, extremo derecho): confirmar
+   con su plantel. Sebastián Moyano, el libre con la foto de Mele, es el
+   tercer arquero de ALD: al cargar Aldosivi va en `reemplaza` y recibe su
+   foto. Mazzanti (NOB): Transfermarkt y el comentario del usuario escriben
+   "Mazzantti"; en el plantel, "Mazzanti" (se le preguntó al usuario).
 3. Pendiente de analizar con el usuario: el ajuste del capitán según el
    motivo y si Estudiantes (sin capitán fijo) lleva el arquetipo.
 4. Equipos que faltan: BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (el orden
@@ -574,6 +566,21 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**24/11/2026 (v2.23.11, superparche de secundarias).** Huella:
+`56985b8450af116e70e6d1f0d72a945e4a7880e30228c3753b50e63e8082bc27`.
+
+- Tanda 4: NOB, UNI, RIE y ERC (`secundarias/tanda-4.txt`). ERC: la fila
+  "Total" cuenta 3 interiores derechos secundarios y se ven 2 (como
+  Rentería en SAR: Transfermarkt cuenta alguno dos veces); se transcribió lo
+  que se ve. Camisetas distintas de las que puso el juego (Soñora, García,
+  Eric Ramírez): no se tocaron. `secundarias.ts` acepta
+  "Nombre en la captura=Nombre en el plantel".
+- Thaiel Peralta (HUR): así se llama (el usuario); estaba "Thiael".
+- Contra la v2.23.10: cambian los ratings de 330 jugadores (las tandas 1 a 4
+  y Peralta, cuyo azar depende del nombre), ningún OVR; el único otro dato
+  distinto es el nombre de Peralta; el resto del archivo es igual. `FORMA=4`
+  da la v2.23.8 salvo Peralta (por el nombre).
+
 **24/11/2026 (sin versión): tanda 3 de secundarias.** HUR, TAL, RAC, BAR y
 SLO (`secundarias/tanda-3.txt`; las cinco coinciden con su fila "Total";
 nadie falta y los puestos coinciden). Prueba de armado con las tandas 1 a 3:
@@ -942,7 +949,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.23.10.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.23.11.
 > Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
 > líneas que entendiste el estado, antes de seguir.
 

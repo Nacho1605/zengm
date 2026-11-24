@@ -50,7 +50,8 @@
 				"anio": 2017
 			},
 			"college": "Club Estudiantes de La Plata",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/469761-1732809156.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/469761-1732809156.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "43",
@@ -80,7 +81,8 @@
 				"club": "BOC",
 				"anio": 2022
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/911960-1724872026.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/911960-1724872026.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "33",
@@ -110,7 +112,8 @@
 				"club": "QUI",
 				"anio": 2025
 			},
-			"imgURL": "https://cdn.soccerwiki.org/images/player/175746.png"
+			"imgURL": "https://cdn.soccerwiki.org/images/player/175746.png",
+			"secundarias": []
 		},
 		{
 			"n": "12",
@@ -141,7 +144,8 @@
 				"anio": 2022
 			},
 			"college": "Club Atlético Atenas",
-			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/128665"
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/128665",
+			"secundarias": []
 		},
 		{
 			"n": "29",
@@ -171,7 +175,10 @@
 				"club": "IND",
 				"anio": 2024
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1126191-1724876824.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1126191-1724876824.jpg?lm=4711",
+			"secundarias": [
+				"Lateral izquierdo"
+			]
 		},
 		{
 			"n": "6",
@@ -201,7 +208,10 @@
 				"club": "SAR",
 				"anio": 2019
 			},
-			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/69701"
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/69701",
+			"secundarias": [
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "31",
@@ -231,7 +241,10 @@
 				"club": "VSC",
 				"anio": 2023
 			},
-			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/150761"
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/150761",
+			"secundarias": [
+				"Lateral izquierdo"
+			]
 		},
 		{
 			"n": "2",
@@ -264,7 +277,8 @@
 			"sofascore": 6.84,
 			"capitan": true,
 			"rasgos": ["aereo"],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/844242-1639162999.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/844242-1639162999.JPG?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "30",
@@ -294,7 +308,10 @@
 				"club": "IND",
 				"anio": 2013
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/261240-1710427310.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/261240-1710427310.jpg?lm=4711",
+			"secundarias": [
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "3",
@@ -325,7 +342,8 @@
 				"anio": 2026
 			},
 			"college": "Club Atlético Newell's Old Boys",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1230924-1775750329.jpeg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1230924-1775750329.jpeg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "28",
@@ -355,7 +373,11 @@
 				"club": "GOD",
 				"anio": 2016
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/440146-1734109867.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/440146-1734109867.jpg?lm=4711",
+			"secundarias": [
+				"Lateral derecho",
+				"Interior izquierdo"
+			]
 		},
 		{
 			"n": "23",
@@ -386,7 +408,10 @@
 				"anio": 2024
 			},
 			"college": "Club Atlético Rosario Central",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/951909-1692106977.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/951909-1692106977.JPG?lm=4711",
+			"secundarias": [
+				"Defensa central"
+			]
 		},
 		{
 			"n": "14",
@@ -416,7 +441,8 @@
 				"club": "GIM",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1029299-1699913751.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1029299-1699913751.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "4",
@@ -443,7 +469,11 @@
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 4
 			},
-			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/133104"
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/133104",
+			"secundarias": [
+				"Interior derecho",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "45",
@@ -473,7 +503,10 @@
 				"club": "QUI",
 				"anio": 2018
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/613093-1724876914.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/613093-1724876914.jpg?lm=4711",
+			"secundarias": [
+				"Lateral izquierdo"
+			]
 		},
 		{
 			"n": "21",
@@ -508,7 +541,10 @@
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 4
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/535029-1724872599.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/535029-1724872599.jpg?lm=4711",
+			"secundarias": [
+				"Interior derecho"
+			]
 		},
 		{
 			"n": "8",
@@ -542,7 +578,10 @@
 			"rasgos": [
 				"recuperador"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/836253-1706803594.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/836253-1706803594.JPG?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "5",
@@ -578,7 +617,10 @@
 				"recuperador",
 				"pulmon"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/671895-1724427442.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/671895-1724427442.png?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "19",
@@ -613,7 +655,11 @@
 			"rasgos": [
 				"pulmon"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/440865-1717764779.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/440865-1717764779.JPG?lm=4711",
+			"secundarias": [
+				"Mediocentro",
+				"Mediocentro ofensivo"
+			]
 		},
 		{
 			"n": "17",
@@ -647,7 +693,10 @@
 				"larga distancia",
 				"centrador"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/342149-1755537157.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/342149-1755537157.jpg?lm=4711",
+			"secundarias": [
+				"Lateral izquierdo"
+			]
 		},
 		{
 			"n": "10",
@@ -678,7 +727,11 @@
 				"anio": 2023
 			},
 			"college": "Rivadavia de Lincoln",
-			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_64,h_64,c_limit,q_auto:eco,dpr_3,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/151973"
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_64,h_64,c_limit,q_auto:eco,dpr_3,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/151973",
+			"secundarias": [
+				"Mediocentro",
+				"Interior izquierdo"
+			]
 		},
 		{
 			"n": "40",
@@ -708,7 +761,10 @@
 				"club": "ROS",
 				"anio": 2019
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/642757-1638750271.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/642757-1638750271.JPG?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "22",
@@ -738,7 +794,11 @@
 				"club": "TAL",
 				"anio": 2019
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/621403-1556630641.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/621403-1556630641.png?lm=4711",
+			"secundarias": [
+				"Interior izquierdo",
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "77",
@@ -769,7 +829,11 @@
 				"anio": 2016
 			},
 			"college": "Club Tiro Federal y Deportivo Morteros",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/695346-1705702536.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/695346-1705702536.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro ofensivo",
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "99",
@@ -800,7 +864,8 @@
 				"anio": 2024
 			},
 			"college": "Deportes Quindío",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1289809-1775076151.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1289809-1775076151.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "27",
@@ -830,7 +895,11 @@
 				"club": "GOD",
 				"anio": 2011
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/174042-1638379158.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/174042-1638379158.JPG?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "32",
@@ -860,7 +929,11 @@
 				"club": "INS",
 				"anio": 2019
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/610228-1724864572.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/610228-1724864572.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "11",
@@ -890,7 +963,11 @@
 				"club": "BEL",
 				"anio": 2021
 			},
-			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/84878"
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/84878",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "7",
@@ -924,7 +1001,10 @@
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 5
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/660198-1659015950.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/660198-1659015950.JPG?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "16",
@@ -955,7 +1035,8 @@
 				"anio": 2017
 			},
 			"college": "Club Llaneros",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/655431-1682276064.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/655431-1682276064.JPG?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "9",
@@ -985,7 +1066,8 @@
 				"club": "CCO",
 				"anio": 2014
 			},
-			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/69189"
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/69189",
+			"secundarias": []
 		}
 	]
 }

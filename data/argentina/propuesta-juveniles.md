@@ -36,7 +36,7 @@ para normalizarlas. Son 22: 13 del primer equipo y 9 prospectos de reserva (P).
 | VEL | Simón Escobar | Lat. izq. | 17 | 668' (15 PJ) | 0 / – | 57 | 51 | El de más talento (4 M€), pero menos minutos que Baroni. |
 | ARG | Facundo Jainikoski | Delantero | 18 | 933' (26 PJ) | 1 / – | 57 | 50 | **Valor fijo del usuario.** Un gol en 933' como delantero; Dávila (4 goles en 920') tiene 51. |
 | VEL | Juan Cruz Policella | Extremo | 17 | 555' (11 PJ) | 2 / – | 56 | 50 | Dos goles en la mitad de minutos que Baroni. |
-| HUR | Thiael Peralta | MCO | 18 | 693' (21 PJ) | 2 / 1 | 54 | 50 | Números parecidos a Policella; con él, 0,95 puntos por partido y una roja. |
+| HUR | Thaiel Peralta | MCO | 18 | 693' (21 PJ) | 2 / 1 | 54 | 50 | Números parecidos a Policella; con él, 0,95 puntos por partido y una roja. |
 | RAC | Alejandro Tello | MCO | 18 | 733' (13 PJ) | 0 / – | 47 | 47 | Minutos de rotación sin goles: se sostiene. |
 | RIV | Lautaro Pereyra | Mediocentro | 18 | 428' (16 PJ) | 1 / – | 47 | 47 | Se sostiene. |
 | VEL | Álex Verón | Extremo | 18 | 444' (17 PJ) | 0 / – | 53 | 46 | Menos minutos que Tello y sin goles. |

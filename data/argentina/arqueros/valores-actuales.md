@@ -1,6 +1,6 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.23.10_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.23.11_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 

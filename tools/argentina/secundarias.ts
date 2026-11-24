@@ -10,6 +10,8 @@
 //                                          "?" si el botón de la página la tapa)
 //   1|Álvaro Montero|POR|
 //   2|Lautaro Di Lollo|CEN|LD
+//   18|Walter Mazzantti=Walter Mazzanti|ED|ID DEL   (como figura en el plantel,
+//                                                  si la captura lo escribe distinto)
 //
 // Controla cada bloque contra su fila de totales. Si el equipo está cargado
 // (planteles/EQUIPO.json), escribe "secundarias" en cada jugador (avisa si el
@@ -66,8 +68,9 @@ for (const b of bloques) {
 	const filas = lineas
 		.filter((l) => l.includes("|"))
 		.map((l) => {
-			const [n, jugador, p, s] = l.split("|").map((x) => x.trim());
-			return { n: n === "-" ? null : n!, jugador: jugador!, p: p!, s: s ? s.split(/\s+/) : [] };
+			const [n, nombres, p, s] = l.split("|").map((x) => x.trim());
+			const [jugador, enPlantel] = nombres!.split("=").map((x) => x.trim());
+			return { n: n === "-" ? null : n!, jugador: enPlantel ?? jugador!, p: p!, s: s ? s.split(/\s+/) : [] };
 		});
 	for (const f of filas) {
 		for (const x of [f.p, ...f.s]) {

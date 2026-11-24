@@ -1,0 +1,136 @@
+Capturas del usuario del 24/11/2026 ("Composición de la plantilla según
+posiciones" de Transfermarkt). Orden de la escalera: NOB, UNI, RIE, ERC.
+ERC: la fila "Total" cuenta 3 interiores derechos secundarios y en la tabla
+se ven 2 (Fenoglio y Ruiz Díaz); se transcribió lo que se ve.
+
+# NOB
+TOTAL POR 2/0 LIB 0/0 CEN 7/2 LI 2/2 LD 3/2 PIV 4/3 MC 2/6 ID 0/4 II 0/2 MCO 4/2 EI 2/4 ED 3/3 MP 0/? DEL ?/2
+30|Josué Reinatti|POR|
+21|Gabriel Arias|POR|
+17|Lautaro Giannetti|CEN|
+22|Oscar Salomón|CEN|LD
+15|Saúl Salcedo|CEN|
+2|Ian Glavinovich|CEN|
+16|Lucas Carrizo|CEN|LI PIV
+25|Bruno Cabrera|CEN|LD
+23|Nicolás Goitea|CEN|PIV
+28|Jeronimo Russo|LI|II EI
+3|Martín Luciano|LI|II
+6|Martín Ortega|LD|CEN ID
+4|Alejo Montero|LD|LI ID
+24|Franco Escobar|LD|CEN
+5|Luca Regiardo|PIV|MC
+10|Valentino Acuña|PIV|MC MCO
+26|Rodrigo Herrera|PIV|MC
+29|Marcelo Esponda|PIV|MC MCO
+8|David Sotelo|MC|
+27|Lucas Gómez|MC|
+20|Facundo Guch|MCO|EI ED
+19|Jerónimo Gómez Mattar|MCO|PIV MC
+15|Alan Soñora|MCO|MC
+-|Fabricio Tirado|MCO|ID
+33|Walter Núñez|EI|ED DEL
+39|Thomas Rios|EI|ED
+32|Santiago Solari|ED|EI
+18|Walter Mazzantti=Walter Mazzanti|ED|ID DEL
+18|Mateo García|ED|EI
+9|Matías Cóccaro|DEL|
+99|Ignacio Ramírez|DEL|
+36|Francisco Scarpeccio|DEL|
+
+# UNI
+TOTAL POR 3/0 LIB 0/0 CEN 3/2 LI 2/1 LD 3/2 PIV 1/1 MC 2/2 ID 2/2 II 0/3 MCO 4/1 EI 1/5 ED 1/6 MP 0/2 DEL 4/1
+21|Matías Mansilla|POR|
+28|Federico Gomes Gerth|POR|
+40|Lucas Meuli|POR|
+26|Juan Pablo Ludueña|CEN|
+4|Matías Rocha|CEN|LD
+44|Tomas Fagioli|CEN|
+18|Lucas Ayala|LI|EI
+12|Bruno Pittón|LI|II
+35|Lautaro Vargas|LD|ID
+15|Juan Pintado|LD|LI ID
+27|Tobías Rubio|LD|CEN
+17|Joaquín Mosqueira|PIV|MC
+43|Emilio Giaccone|MC|CEN
+5|Lucas Menossi|MC|PIV
+22|Brahian Cuello|ID|MC II
+23|Augusto Solari|ID|LD ED
+20|Julián Palacios|MCO|EI ED
+11|Mauro Luna Diale|MCO|ED DEL
+10|Ignacio Malcorra|MCO|II EI
+46|Santiago Grella|MCO|EI ED
+7|Franco Fragapane|EI|ED MP
+31|Misael Aguirre|ED|EI
+19|Marcelo Estigarribia|DEL|
+43|Eric Ramírez|DEL|MCO ED
+25|Cristian Tarragona|DEL|
+38|Valentín Cerrudo|DEL|MP
+
+# RIE
+TOTAL POR 3/0 LIB 0/0 CEN 7/1 LI 2/2 LD 2/5 PIV 2/1 MC 2/1 ID 0/4 II 0/2 MCO 4/1 EI 2/5 ED 1/6 MP 0/1 DEL ?/2
+1|Ignacio Arce|POR|
+23|Marino Arzamendia|POR|
+12|Iván López|POR|
+24|Facundo Miño|CEN|LI LD
+22|Cristian Paz|CEN|LI
+19|Juan Randazzo|CEN|
+6|Ignacio Gariglio|CEN|
+2|Carlos Quintana|CEN|
+3|Eric Tovo|CEN|
+4|Yeison Murillo|CEN|LD
+5|Pedro Ramírez|LI|LD ID
+13|Rodrigo Gallo|LI|CEN LD
+36|Mariano Bracamonte|LD|
+15|Nicolás Sansotre|LD|ID ED
+16|Nicolás Watson|PIV|MC
+27|Yonatan Goitía|PIV|LD ID
+14|Pablo Monje|MC|PIV MCO
+8|Milton Céliz|MC|II DEL
+10|Braian Sánchez|MCO|MP
+31|Mauro Smarra|MCO|
+20|Thiago Lauro|MCO|
+-|Gonzalo Bravo|MCO|
+17|Ángel Almada|EI|ED DEL
+35|Ángel Stringa|EI|ED
+40|Gabriel Obredor|ED|ID EI
+11|Alexander Díaz|DEL|ED
+7|Antony Alonso|DEL|II EI
+21|Tomás González|DEL|EI ED
+9|Nicolás Benegas|DEL|
+29|Agustín Graneros|DEL|EI ED
+32|Gonzalo Flores|DEL|EI
+
+# ERC
+TOTAL POR 4/0 LIB 0/0 CEN 6/1 LI 2/4 LD 4/3 PIV 2/0 MC 0/5 ID 1/3 II 1/3 MCO 2/2 EI 2/4 ED 2/3 MP 0/0 DEL 5/3
+1|Lucas Bruera|POR|
+43|Agustín Lastra|POR|
+-|Lautaro Herrera|POR|
+12|Francisco Gualtieri|POR|
+29|Agustín Quiroga|CEN|LI
+6|Juan Antonini|CEN|LD
+31|Matías Valenti|CEN|LI
+2|Gonzalo Maffini|CEN|
+30|Sergio Ojeda|CEN|LD
+3|Lucas Baños|CEN|
+28|Facundo Cobos|LI|LD II
+23|Fernando Rodríguez|LI|CEN
+14|Gonzalo González|LD|
+4|Valentín Fenoglio|LD|ID ED
+45|Raúl Lozano|LD|LI
+21|Matías Ruiz Díaz|LD|ID
+8|Siro Rosané|PIV|MC
+5|Alejandro Cabrera|PIV|MC
+19|Nicolás Talpone|ID|MC MCO
+17|Gabriel Alanís|II|LI
+10|Tomás González|MCO|MC II
+40|Francesco Lo Celso|MCO|MC
+22|Mauro Valiente|EI|II DEL
+77|Ibrahim Hesar|EI|MCO DEL
+99|Juan Chala|ED|
+27|Juan Garro|ED|EI DEL
+32|Mateo Bajamich|DEL|EI ED
+11|Martín Garnerone|DEL|EI ED
+7|Lucas González|DEL|EI
+16|Yeison Moreno|DEL|
+9|Javier Ferreira|DEL|
