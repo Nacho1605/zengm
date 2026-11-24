@@ -26,6 +26,7 @@
 // ovrSugerido() (valor de mercado, minutos jugados y edad).
 
 import { nombresCompletos } from "./equipos-csv.ts";
+import { PREMIOS } from "./premios.ts";
 import { readFileSync, writeFileSync } from "node:fs";
 import {
 	azar,
@@ -97,6 +98,11 @@ for (const a of ga.awards ?? []) {
 	if (o) {
 		[a.name, a.shortName] = o;
 	}
+}
+// Premios propios de la liga (desde la v2.24.2, ver premios.ts).
+// PREMIOS=viejos arma con los anteriores (nombres originales en inglés)
+if (process.env.PREMIOS !== "viejos") {
+	ga.awards = PREMIOS;
 }
 
 // Ajustes de liga decididos en la fase 2

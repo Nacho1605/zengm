@@ -232,8 +232,10 @@ v2.14.1 → v2.14.2).
   `"semilla"` con el nombre viejo en el plantel, así el azar del jugador
   (ratings y personalidad) no cambia. En `reemplaza` va el nombre que tiene
   el jugador viejo en el archivo.
-- Premios: con sus nombres originales del juego (en inglés), por pedido del
-  usuario ("momentáneamente"); las fórmulas de fútbol siguen.
+- Premios: propios desde la v2.24.2 (`tools/argentina/premios.ts`, en
+  español, explicados en `data/argentina/premios.md`). Nunca usar WS en una
+  fórmula (el motor las dispara con 11 en cancha). Calibrarlos con una
+  temporada simulada por el usuario, no con simulaciones propias.
 - Fotos: el usuario las pone en el juego cuando le conviene (a veces de
   varios equipos juntos) y manda la liga exportada; recién ahí se importan.
 - Dos equipos a la vez (cada uno es su versión: v2.16 HUR y v2.17 TAL, se
