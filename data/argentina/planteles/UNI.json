@@ -50,6 +50,10 @@
 		{
 			"nombre": "Cristian Tarragona",
 			"nacimiento": 1992
+		},
+		{
+			"nombre": "Federico Gomez Gerth",
+			"nacimiento": 2005
 		}
 	],
 	"jugadores": [
@@ -81,7 +85,8 @@
 				"club": "MID",
 				"anio": 2017
 			},
-			"sofascore": 7.03
+			"sofascore": 7.03,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/731722-1739826308.jpg?lm=4711"
 		},
 		{
 			"n": "28",
@@ -114,7 +119,8 @@
 			"lesion": {
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 7
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/826528-1684910778.jpg?lm=4711"
 		},
 		{
 			"n": "40",
@@ -143,7 +149,8 @@
 			"debut": {
 				"club": "UNI",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1118707-1721137487.png?lm=4711"
 		},
 		{
 			"n": "26",
@@ -172,7 +179,8 @@
 			"debut": {
 				"club": "UNI",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1103988-1721140292.png?lm=4711"
 		},
 		{
 			"n": "4",
@@ -202,7 +210,8 @@
 				"club": null,
 				"anio": 2020
 			},
-			"college": "Defensor Sporting Club"
+			"college": "Defensor Sporting Club",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/821824-1785531432.jpg?lm=4711"
 		},
 		{
 			"n": "44",
@@ -231,7 +240,8 @@
 			"debut": {
 				"club": "UNI",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/236638"
 		},
 		{
 			"n": "18",
@@ -260,7 +270,8 @@
 			"debut": {
 				"club": "UNI",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1305781-1744303154.png?lm=4711"
 		},
 		{
 			"n": "12",
@@ -292,7 +303,8 @@
 			},
 			"rasgos": [
 				"larga distancia"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/395216-1721143230.png?lm=4711"
 		},
 		{
 			"n": "35",
@@ -325,7 +337,8 @@
 			"lesion": {
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 26
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1159650-1744728756.png?lm=4711"
 		},
 		{
 			"n": "15",
@@ -355,7 +368,8 @@
 				"club": null,
 				"anio": 2015
 			},
-			"college": "Club Atlético Juventud de Las Piedras"
+			"college": "Club Atlético Juventud de Las Piedras",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/410456-1739197283.jpg?lm=4711"
 		},
 		{
 			"n": "27",
@@ -384,7 +398,8 @@
 			"debut": {
 				"club": "RAC",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8kNIeIhXQN-5GG9-whqJvv12MW3dC1NuuTQ0-Wihh3w&s=10"
 		},
 		{
 			"n": "17",
@@ -413,7 +428,8 @@
 			"debut": {
 				"club": "UNI",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1118712-1721143592.png?lm=4711"
 		},
 		{
 			"n": "43",
@@ -442,7 +458,8 @@
 			"debut": {
 				"club": "UNI",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1305779-1752765566.png?lm=4711"
 		},
 		{
 			"n": "5",
@@ -474,7 +491,8 @@
 			},
 			"rasgos": [
 				"cerebro"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/225481-1758832085.png?lm=4711"
 		},
 		{
 			"n": "22",
@@ -504,7 +522,8 @@
 				"club": null,
 				"anio": 2016
 			},
-			"college": "Club Sportivo Estudiantes (San Luis)"
+			"college": "Club Sportivo Estudiantes (San Luis)",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/494219-1717078676.jpeg?lm=4711"
 		},
 		{
 			"n": "23",
@@ -533,7 +552,8 @@
 			"debut": {
 				"club": "RIV",
 				"anio": 2012
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/282694-1742570892.png?lm=4711"
 		},
 		{
 			"n": "20",
@@ -562,7 +582,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2020
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/728262-1727786742.jpg?lm=4711"
 		},
 		{
 			"n": "11",
@@ -592,7 +613,8 @@
 				"club": "UNI",
 				"anio": 2019
 			},
-			"college": "Club Atlético Boca Juniors"
+			"college": "Club Atlético Boca Juniors",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiTqefjd1Pa5KYzU2ni7_AEKjOfA-70PfyAkGWDcg99k38fyY77T3y8igV&s=10"
 		},
 		{
 			"n": "10",
@@ -625,7 +647,8 @@
 			"college": "Comisión de Actividades Infantiles",
 			"rasgos": [
 				"pelota parada"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/87518-1742570974.png?lm=4711"
 		},
 		{
 			"n": "46",
@@ -654,7 +677,8 @@
 			"debut": {
 				"club": "UNI",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/223358"
 		},
 		{
 			"n": "7",
@@ -684,7 +708,8 @@
 				"club": "ARS",
 				"anio": 2016
 			},
-			"college": "Club Atlético Boca Juniors"
+			"college": "Club Atlético Boca Juniors",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl5DlpY17PZFUmWeadUKPnsoEPJKKTRf6r-qchkshRAw6aQ3PldB8p0Nw&s=10"
 		},
 		{
 			"n": "31",
@@ -713,7 +738,8 @@
 			"debut": {
 				"club": "UNI",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/224416"
 		},
 		{
 			"n": "19",
@@ -744,10 +770,13 @@
 				"anio": 2014
 			},
 			"college": "Club Defensores del Pronunciamiento",
-			"rasgos": ["aereo"]
+			"rasgos": [
+				"aereo"
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/610266-1724864721.jpg?lm=4711"
 		},
 		{
-			"n": null,
+			"n": "9",
 			"nombre": "Eric",
 			"apellido": "Ramírez",
 			"pos": "Delantero centro",
@@ -774,7 +803,8 @@
 				"club": "QUI",
 				"anio": 2018
 			},
-			"college": "Club de Gimnasia y Esgrima La Plata"
+			"college": "Club de Gimnasia y Esgrima La Plata",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/364945-1755537072.jpg?lm=4711"
 		},
 		{
 			"n": "25",
@@ -805,7 +835,8 @@
 				"anio": 2011
 			},
 			"sofascore": 6.93,
-			"capitan": true
+			"capitan": true,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/422698-1699915095.jpg?lm=4711"
 		},
 		{
 			"n": "38",
@@ -835,7 +866,8 @@
 				"club": "UNI",
 				"anio": 2026
 			},
-			"college": "Club Atlético River Plate"
+			"college": "Club Atlético River Plate",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1161766-1739820484.jpg?lm=4711"
 		}
 	]
 }

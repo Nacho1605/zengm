@@ -49,7 +49,8 @@
 				"club": "INR",
 				"anio": 2017
 			},
-			"college": "Club Estudiantes de La Plata"
+			"college": "Club Estudiantes de La Plata",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/469761-1732809156.png?lm=4711"
 		},
 		{
 			"n": "43",
@@ -78,10 +79,11 @@
 			"debut": {
 				"club": "BOC",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/911960-1724872026.jpg?lm=4711"
 		},
 		{
-			"n": null,
+			"n": "33",
 			"nombre": "Lautaro",
 			"apellido": "Herrera",
 			"pos": "Portero",
@@ -107,7 +109,8 @@
 			"debut": {
 				"club": "QUI",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://cdn.soccerwiki.org/images/player/175746.png"
 		},
 		{
 			"n": "12",
@@ -137,7 +140,8 @@
 				"club": null,
 				"anio": 2022
 			},
-			"college": "Club Atlético Atenas"
+			"college": "Club Atlético Atenas",
+			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCv6GqFmxsYEQlNjKM524hqgikAAF5ecFDmeuzM6P6VQ&s=10"
 		},
 		{
 			"n": "29",
@@ -166,7 +170,8 @@
 			"debut": {
 				"club": "IND",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1126191-1724876824.jpg?lm=4711"
 		},
 		{
 			"n": "6",
@@ -195,7 +200,8 @@
 			"debut": {
 				"club": "SAR",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/69701"
 		},
 		{
 			"n": "31",
@@ -224,7 +230,8 @@
 			"debut": {
 				"club": "VSC",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/150761"
 		},
 		{
 			"n": "2",
@@ -256,9 +263,8 @@
 			},
 			"sofascore": 6.84,
 			"capitan": true,
-			"rasgos": [
-				"aereo"
-			]
+			"rasgos": ["aereo"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/844242-1639162999.JPG?lm=4711"
 		},
 		{
 			"n": "30",
@@ -287,7 +293,8 @@
 			"debut": {
 				"club": "IND",
 				"anio": 2013
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/261240-1710427310.jpg?lm=4711"
 		},
 		{
 			"n": "3",
@@ -317,7 +324,8 @@
 				"club": "ERC",
 				"anio": 2026
 			},
-			"college": "Club Atlético Newell's Old Boys"
+			"college": "Club Atlético Newell's Old Boys",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1230924-1775750329.jpeg?lm=4711"
 		},
 		{
 			"n": "28",
@@ -346,7 +354,8 @@
 			"debut": {
 				"club": "GOD",
 				"anio": 2016
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/440146-1734109867.jpg?lm=4711"
 		},
 		{
 			"n": "23",
@@ -376,7 +385,8 @@
 				"club": "ALT",
 				"anio": 2024
 			},
-			"college": "Club Atlético Rosario Central"
+			"college": "Club Atlético Rosario Central",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/951909-1692106977.JPG?lm=4711"
 		},
 		{
 			"n": "14",
@@ -405,7 +415,8 @@
 			"debut": {
 				"club": "GIM",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1029299-1699913751.jpg?lm=4711"
 		},
 		{
 			"n": "4",
@@ -431,7 +442,8 @@
 			"lesion": {
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 4
-			}
+			},
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/133104"
 		},
 		{
 			"n": "45",
@@ -460,7 +472,8 @@
 			"debut": {
 				"club": "QUI",
 				"anio": 2018
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/613093-1724876914.jpg?lm=4711"
 		},
 		{
 			"n": "21",
@@ -494,7 +507,8 @@
 			"lesion": {
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 4
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/535029-1724872599.jpg?lm=4711"
 		},
 		{
 			"n": "8",
@@ -527,7 +541,8 @@
 			"sofascore": 6.89,
 			"rasgos": [
 				"recuperador"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/836253-1706803594.JPG?lm=4711"
 		},
 		{
 			"n": "5",
@@ -562,7 +577,8 @@
 				"cerebro",
 				"recuperador",
 				"pulmon"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/671895-1724427442.png?lm=4711"
 		},
 		{
 			"n": "19",
@@ -596,7 +612,8 @@
 			"leal": true,
 			"rasgos": [
 				"pulmon"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/440865-1717764779.JPG?lm=4711"
 		},
 		{
 			"n": "17",
@@ -629,7 +646,8 @@
 			"rasgos": [
 				"larga distancia",
 				"centrador"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/342149-1755537157.jpg?lm=4711"
 		},
 		{
 			"n": "10",
@@ -659,7 +677,8 @@
 				"club": "DOU",
 				"anio": 2023
 			},
-			"college": "Rivadavia de Lincoln"
+			"college": "Rivadavia de Lincoln",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/989579-1787795045.PNG?lm=4711"
 		},
 		{
 			"n": "40",
@@ -688,7 +707,8 @@
 			"debut": {
 				"club": "ROS",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/642757-1638750271.JPG?lm=4711"
 		},
 		{
 			"n": "22",
@@ -717,7 +737,8 @@
 			"debut": {
 				"club": "TAL",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/621403-1556630641.png?lm=4711"
 		},
 		{
 			"n": "77",
@@ -747,7 +768,8 @@
 				"club": null,
 				"anio": 2016
 			},
-			"college": "Club Tiro Federal y Deportivo Morteros"
+			"college": "Club Tiro Federal y Deportivo Morteros",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/695346-1705702536.jpg?lm=4711"
 		},
 		{
 			"n": "99",
@@ -777,7 +799,8 @@
 				"club": null,
 				"anio": 2024
 			},
-			"college": "Deportes Quindío"
+			"college": "Deportes Quindío",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1289809-1775076151.jpg?lm=4711"
 		},
 		{
 			"n": "27",
@@ -806,7 +829,8 @@
 			"debut": {
 				"club": "GOD",
 				"anio": 2011
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/174042-1638379158.JPG?lm=4711"
 		},
 		{
 			"n": "32",
@@ -835,7 +859,8 @@
 			"debut": {
 				"club": "INS",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/610228-1724864572.jpg?lm=4711"
 		},
 		{
 			"n": "11",
@@ -864,7 +889,8 @@
 			"debut": {
 				"club": "BEL",
 				"anio": 2021
-			}
+			},
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/84878"
 		},
 		{
 			"n": "7",
@@ -897,7 +923,8 @@
 			"lesion": {
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 5
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/660198-1659015950.JPG?lm=4711"
 		},
 		{
 			"n": "16",
@@ -927,7 +954,8 @@
 				"club": null,
 				"anio": 2017
 			},
-			"college": "Club Llaneros"
+			"college": "Club Llaneros",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/655431-1682276064.JPG?lm=4711"
 		},
 		{
 			"n": "9",
@@ -956,7 +984,8 @@
 			"debut": {
 				"club": "CCO",
 				"anio": 2014
-			}
+			},
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/69189"
 		}
 	]
 }

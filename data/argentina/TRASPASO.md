@@ -1,30 +1,32 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026 (cierre de la sesión del 22–24/11). Última versión:
-**v2.23.6** (`data/argentina/BBGM_Argentina_2026_v.2.23.6_futbol.json`,
-sha256 `7dca4d57d2321f6386bb5abb5eb5a696e9456d8c5e0a7094e321819be3929bff`): 21
-de 30 equipos con plantel 2026, todos con el Rendimiento completo; todo el
-archivo en la escala nueva de OVR (20 a 78) y en la forma 4 de los ratings.
+Estado al 24/11/2026. Última versión: **v2.23.7**
+(`data/argentina/BBGM_Argentina_2026_v.2.23.7_futbol.json`, sha256
+`e52f1e4c4936c1e3b8599ed30fe005a0aef0d099ae02991d492dd559ce0d6cd3`): 21 de 30
+equipos con plantel 2026, Rendimiento completo y fotos (las del usuario, 24/11);
+todo el archivo en la escala nueva de OVR (20 a 78) y en la forma 4.
 Validación: 0 errores. Auditoría: 53 controles, 9 con alertas (las de
-siempre). Escalera por puesto del usuario actualizada
+siempre; fotos: solo faltan 2). Escalera por puesto del usuario actualizada
 (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
-`data/argentina/escalera/`). El usuario dijo que esta sesión fue "la más
-útil de todas hasta ahora".
+`data/argentina/escalera/`).
 
-**Lo que sigue (el usuario, 24/11: "mañana pondré las fotos que faltan y
-traeré mi lista de cambios a la Stat Ladder"):**
-1. La liga del usuario con las fotos de NOB, ERC, UNI y BAR: compararla
-   (huella) e importarla con `desde-juego.ts`, dándole como base la versión
-   sobre la que jugó (seguramente la v2.23.6; para confirmarlo, mirar un OVR
-   o un rating que cambió entre versiones).
-2. Su lista de la escalera ("EQUIPO Jugador: viejo → nuevo"): aplicarla con
-   `ajustar-ovr.ts` sobre los planteles ya con las fotos y armar el parche
-   (v2.23.7); regenerar la escalera y republicarla en el mismo link.
+**Lo que sigue:**
+1. Lista del usuario de la escalera ("EQUIPO Jugador: viejo → nuevo"):
+   aplicarla con `ajustar-ovr.ts` y armar la v2.23.8; regenerar la escalera
+   y republicarla en el mismo link.
+2. Fotos a corregir por el usuario (revisión del 24/11 sobre su liga): 3
+   fotos repetidas entre jugadores distintos (Santiago Mele = Sebastián
+   Moyano libre, mismo número de Transfermarkt 320739; Tomás González RIE =
+   Tomás González ERC, 989579; Baltasar Rodríguez = Fabricio Pérez, ambos
+   EST, 1298374); 7 miniaturas de Google (Salinardi SLO, Komar ROS, Acevedo
+   INS, Gualtieri ERC, Rubio, Luna Diale y Fragapane UNI); sin foto: Santiago
+   Solari (NOB) y Rafael Barrios (BAR); 21 de los 24 prospectos de los
+   planteles sin foto. 23 fotos son de otros sitios (365scores, futbin,
+   zerozero, imgur, soccerwiki, fotmob): links directos, válidos.
 3. Pendiente de analizar con el usuario: el ajuste del capitán según el
-   motivo (experiencia, juvenil, compartida; ver
-   `analisis-composites-y-capitanes.md`) y si Estudiantes (sin capitán fijo)
-   lleva el arquetipo.
-4. Después: BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM.
+   motivo y si Estudiantes (sin capitán fijo) lleva el arquetipo.
+4. Equipos que faltan: BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (el orden
+   no está fijado; CCO no tiene arquero desde que Mansilla pasó a UNI).
 5. Más adelante (el usuario: "falta bastante"): colleges, nombres y orígenes
    latinoamericanos (`playerBioInfo`, cuando estén todos los equipos y sus
    fotos, antes de los libres) y el draft (§7, 15).
@@ -549,6 +551,18 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**24/11/2026 (v2.23.7).** Huella:
+`e52f1e4c4936c1e3b8599ed30fe005a0aef0d099ae02991d492dd559ce0d6cd3`.
+
+- Liga del usuario con las fotos de todos los clubes (base v2.23.6,
+  reconocida por Villa 71 y la marca de Paredes en la forma 4): 343 fotos,
+  5 camisetas asignadas por el juego (Herrera, Soñora, Tirado, García,
+  Ramírez) y un parentesco nuevo: Facundo Bruera (BAR) y Lucas Bruera (ERC),
+  hermanos. Duplicado escondido: "Federico Gomez Gerth" (libre, 2005) era
+  Gomes Gerth (UNI), mismo número de Transfermarkt: va en `reemplaza` de UNI.
+  Comprobado: las 3308 fotos son las de la liga del usuario; contra la
+  v2.23.6 solo cambian fotos, camisetas, parientes y el duplicado borrado.
+
 **Sesión del 24/11/2026, cierre (v2.23.6).** Huella:
 `7dca4d57d2321f6386bb5abb5eb5a696e9456d8c5e0a7094e321819be3929bff`.
 

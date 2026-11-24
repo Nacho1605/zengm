@@ -77,7 +77,8 @@
 				"club": "ROS",
 				"anio": 2019
 			},
-			"sofascore": 7.41
+			"sofascore": 7.41,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/508135-1723469706.JPG?lm=4711"
 		},
 		{
 			"n": "1",
@@ -107,7 +108,8 @@
 				"club": null,
 				"anio": 2017
 			},
-			"college": "Club Nacional"
+			"college": "Club Nacional",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/532557-1715628550.JPG?lm=4711"
 		},
 		{
 			"n": "38",
@@ -137,7 +139,8 @@
 				"club": "BAR",
 				"anio": 2025
 			},
-			"college": "Club Ferro Carril Oeste"
+			"college": "Club Ferro Carril Oeste",
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_64,h_64,c_limit,q_auto:eco,dpr_3,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/196123"
 		},
 		{
 			"n": "14",
@@ -171,7 +174,8 @@
 			"rasgos": [
 				"aereo",
 				"potente"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1020837-1751483391.jpg?lm=4711"
 		},
 		{
 			"n": "31",
@@ -200,7 +204,8 @@
 			"debut": {
 				"club": "TEM",
 				"anio": 2018
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/537257-1706803525.JPG?lm=4711"
 		},
 		{
 			"n": "2",
@@ -230,7 +235,8 @@
 				"club": "OLI",
 				"anio": 2019
 			},
-			"college": "Club Atlético Vélez Sarsfield"
+			"college": "Club Atlético Vélez Sarsfield",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/992818-1675176296.JPG?lm=4711"
 		},
 		{
 			"n": "15",
@@ -264,7 +270,8 @@
 			"sofascore": 7.19,
 			"rasgos": [
 				"potente"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/227781-1625134507.jpg?lm=4711"
 		},
 		{
 			"n": "32",
@@ -300,7 +307,8 @@
 			},
 			"rasgos": [
 				"potente"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/69802-1636410574.JPG?lm=4711"
 		},
 		{
 			"n": "37",
@@ -330,9 +338,8 @@
 				"club": "RAC",
 				"anio": 2011
 			},
-			"rasgos": [
-				"aereo"
-			]
+			"rasgos": ["aereo"],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/292174-1739571119.JPG?lm=4711"
 		},
 		{
 			"n": "6",
@@ -366,7 +373,8 @@
 			"rasgos": [
 				"larga distancia",
 				"centrador"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/721235-1692106274.JPG?lm=4711"
 		},
 		{
 			"n": "17",
@@ -395,7 +403,8 @@
 			"debut": {
 				"club": "SLO",
 				"anio": 2018
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/576027-1770653905.png?lm=4711"
 		},
 		{
 			"n": "4",
@@ -425,7 +434,8 @@
 				"club": "INR",
 				"anio": 2011
 			},
-			"college": "Club Atlético San Lorenzo de Almagro"
+			"college": "Club Atlético San Lorenzo de Almagro",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/107282-1637535257.JPG?lm=4711"
 		},
 		{
 			"n": "13",
@@ -486,7 +496,8 @@
 			},
 			"rasgos": [
 				"cerebro"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/399887-1771937412.jpg?lm=4711"
 		},
 		{
 			"n": "25",
@@ -519,7 +530,8 @@
 			"college": "Boyacá Chicó Fútbol Club",
 			"rasgos": [
 				"recuperador"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/147670-1720647262.jpg?lm=4711"
 		},
 		{
 			"n": "5",
@@ -549,7 +561,8 @@
 				"club": "GIM",
 				"anio": 2010
 			},
-			"college": "Club Defensores de Cambaceres"
+			"college": "Club Defensores de Cambaceres",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/118375-1708009838.JPG?lm=4711"
 		},
 		{
 			"n": "19",
@@ -579,7 +592,8 @@
 				"club": "BAR",
 				"anio": 2009
 			},
-			"college": "Club Atlético Huracán"
+			"college": "Club Atlético Huracán",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/697402-1677584297.JPG?lm=4711"
 		},
 		{
 			"n": "16",
@@ -608,7 +622,8 @@
 			"debut": {
 				"club": "BAR",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1306829-1746048045.png?lm=4711"
 		},
 		{
 			"n": "79",
@@ -637,7 +652,8 @@
 			"debut": {
 				"club": "BAR",
 				"anio": 2021
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/888453-1677162756.JPG?lm=4711"
 		},
 		{
 			"n": "8",
@@ -667,7 +683,8 @@
 				"club": "BAR",
 				"anio": 2025
 			},
-			"college": "Club Atlético San Lorenzo de Almagro"
+			"college": "Club Atlético San Lorenzo de Almagro",
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/150422"
 		},
 		{
 			"n": "33",
@@ -697,7 +714,8 @@
 				"club": "BOC",
 				"anio": 2017
 			},
-			"college": "Instituto Atlético Central Córdoba"
+			"college": "Instituto Atlético Central Córdoba",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/441385-1727450254.jpg?lm=4711"
 		},
 		{
 			"n": "10",
@@ -730,7 +748,8 @@
 			"capitan": true,
 			"rasgos": [
 				"pelota parada"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/697405-1646482665.JPG?lm=4711"
 		},
 		{
 			"n": "28",
@@ -760,7 +779,8 @@
 				"club": null,
 				"anio": 2015
 			},
-			"college": "Club Guaraní"
+			"college": "Club Guaraní",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/418859-1677163723.JPG?lm=4711"
 		},
 		{
 			"n": "18",
@@ -793,7 +813,8 @@
 			"lesion": {
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 20
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/891804-1658413628.JPG?lm=4711"
 		},
 		{
 			"n": "36",
@@ -823,7 +844,8 @@
 				"club": "BAR",
 				"anio": 2025
 			},
-			"college": "Club Atlético Unión"
+			"college": "Club Atlético Unión",
+			"imgURL": "https://images.fotmob.com/image_resources/playerimages/1757413.png"
 		},
 		{
 			"n": "11",
@@ -852,7 +874,8 @@
 			"debut": {
 				"club": "HUR",
 				"anio": 2016
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/457218-1739197667.jpg?lm=4711"
 		},
 		{
 			"n": "24",
@@ -881,7 +904,8 @@
 			"debut": {
 				"club": "IND",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/148034"
 		},
 		{
 			"n": "77",
@@ -915,6 +939,13 @@
 			"rasgos": [
 				"aereo",
 				"potente"
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/538880-1715627909.JPG?lm=4711",
+			"parientes": [
+				{
+					"tipo": "brother",
+					"nombre": "Lucas Bruera"
+				}
 			]
 		},
 		{
@@ -944,7 +975,8 @@
 			"debut": {
 				"club": "BOC",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1064936-1721144270.png?lm=4711"
 		},
 		{
 			"n": "20",
@@ -974,7 +1006,8 @@
 				"club": null,
 				"anio": 2015
 			},
-			"college": "Liverpool Fútbol Club"
+			"college": "Liverpool Fútbol Club",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/259917-1633621368.JPG?lm=4711"
 		},
 		{
 			"n": "34",
@@ -1004,7 +1037,8 @@
 				"club": "RAF",
 				"anio": 2013
 			},
-			"college": "Club Tiro Federal y Deportivo Morteros"
+			"college": "Club Tiro Federal y Deportivo Morteros",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/289149-1721144407.png?lm=4711"
 		},
 		{
 			"n": "7",
@@ -1034,7 +1068,8 @@
 				"club": null,
 				"anio": 2015
 			},
-			"college": "Club Ferro Carril Sud (Olavarría)"
+			"college": "Club Ferro Carril Sud (Olavarría)",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/984675-1743799649.jpeg?lm=4711"
 		},
 		{
 			"n": "23",
@@ -1064,7 +1099,8 @@
 				"club": null,
 				"anio": 2021
 			},
-			"college": "Orlando City Soccer Club"
+			"college": "Orlando City Soccer Club",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/750537-1678694783.jpg?lm=4711"
 		},
 		{
 			"n": "21",
@@ -1098,7 +1134,8 @@
 			"lesion": {
 				"tipo": "Tendinitis",
 				"partidos": 2
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/125906-1721144476.png?lm=4711"
 		}
 	]
 }

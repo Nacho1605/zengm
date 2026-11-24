@@ -66,7 +66,8 @@
 				"anio": 2024
 			},
 			"college": "Club Atlético River Plate",
-			"sofascore": 7.37
+			"sofascore": 7.37,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1229028-1721743621.jpg?lm=4711"
 		},
 		{
 			"n": "21",
@@ -95,7 +96,8 @@
 			"debut": {
 				"club": "OLI",
 				"anio": 2007
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/54330-1724348686.png?lm=4711"
 		},
 		{
 			"n": "17",
@@ -127,7 +129,8 @@
 			},
 			"rasgos": [
 				"tactico"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/225963-1757670028.jpg?lm=4711"
 		},
 		{
 			"n": "22",
@@ -156,7 +159,8 @@
 			"debut": {
 				"club": "BOC",
 				"anio": 2019
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/698323-1724876939.jpg?lm=4711"
 		},
 		{
 			"n": "15",
@@ -190,7 +194,8 @@
 			"lesion": {
 				"tipo": "Fractura de tibia y peroné",
 				"partidos": 12
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/353035-1715629857.JPG?lm=4711"
 		},
 		{
 			"n": "2",
@@ -212,7 +217,8 @@
 			"debut": {
 				"club": "NOB",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1027881-1740839432.jpg?lm=4711"
 		},
 		{
 			"n": "16",
@@ -242,7 +248,8 @@
 				"club": "QUI",
 				"anio": 2017
 			},
-			"sofascore": 7.28
+			"sofascore": 7.28,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/522204-1755535394.jpg?lm=4711"
 		},
 		{
 			"n": "25",
@@ -272,7 +279,8 @@
 				"club": "CIR",
 				"anio": 2019
 			},
-			"college": "Club Estudiantes de La Plata"
+			"college": "Club Estudiantes de La Plata",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/840764-1757518940.jpg?lm=4711"
 		},
 		{
 			"n": "23",
@@ -302,7 +310,8 @@
 				"club": null,
 				"anio": 2016
 			},
-			"college": "Club Atlético Vélez Sarsfield (San Ramón)"
+			"college": "Club Atlético Vélez Sarsfield (San Ramón)",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/840768-1755534920.jpg?lm=4711"
 		},
 		{
 			"n": "28",
@@ -332,7 +341,8 @@
 				"club": "NOB",
 				"anio": 2026
 			},
-			"sofascore": 6.94
+			"sofascore": 6.94,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1139402-1771512898.png?lm=4711"
 		},
 		{
 			"n": "3",
@@ -361,7 +371,8 @@
 			"debut": {
 				"club": "NOB",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/883670-1739448962.JPG?lm=4711"
 		},
 		{
 			"n": "6",
@@ -390,7 +401,8 @@
 			"debut": {
 				"club": "QUI",
 				"anio": 2020
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/663118-1727449122.jpg?lm=4711"
 		},
 		{
 			"n": "4",
@@ -420,7 +432,8 @@
 				"club": "AGR",
 				"anio": 2019
 			},
-			"college": "Club Atlético Vélez Sarsfield"
+			"college": "Club Atlético Vélez Sarsfield",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/649998-1710507782.JPG?lm=4711"
 		},
 		{
 			"n": "24",
@@ -449,7 +462,8 @@
 			"debut": {
 				"club": "NOB",
 				"anio": 2015
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/338169-1740864166.jpg?lm=4711"
 		},
 		{
 			"n": "5",
@@ -479,7 +493,8 @@
 				"club": "NOB",
 				"anio": 2025
 			},
-			"capitan": true
+			"capitan": true,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1328380-1754068588.png?lm=4711"
 		},
 		{
 			"n": "10",
@@ -508,7 +523,8 @@
 			"debut": {
 				"club": "NOB",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1074966-1681413882.jpg?lm=4711"
 		},
 		{
 			"n": "26",
@@ -537,7 +553,8 @@
 			"debut": {
 				"club": "DYJ",
 				"anio": 2021
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/842141-1621169719.jpg?lm=4711"
 		},
 		{
 			"n": "29",
@@ -566,7 +583,8 @@
 			"debut": {
 				"club": "NOB",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/978973-1732812550.JPG?lm=4711"
 		},
 		{
 			"n": "8",
@@ -595,7 +613,8 @@
 			"debut": {
 				"club": "NOB",
 				"anio": 2023
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1061839-1721743668.jpg?lm=4711"
 		},
 		{
 			"n": "27",
@@ -624,7 +643,8 @@
 			"debut": {
 				"club": "ARG",
 				"anio": 2024
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1225293-1720124419.png?lm=4711"
 		},
 		{
 			"n": "20",
@@ -653,7 +673,8 @@
 			"debut": {
 				"club": "NOB",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1377866-1771512957.png?lm=4711"
 		},
 		{
 			"n": "19",
@@ -682,10 +703,11 @@
 			"debut": {
 				"club": "NOB",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1241453-1762504765.jpg?lm=4711"
 		},
 		{
-			"n": null,
+			"n": "34",
 			"nombre": "Alan",
 			"apellido": "Soñora",
 			"pos": "Mediocentro ofensivo",
@@ -721,10 +743,11 @@
 			],
 			"rasgos": [
 				"larga distancia"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/688779-1772563904.PNG?lm=4711"
 		},
 		{
-			"n": null,
+			"n": "11",
 			"nombre": "Fabricio",
 			"apellido": "Tirado",
 			"pos": "Mediocentro ofensivo",
@@ -743,7 +766,8 @@
 			"debut": {
 				"club": "NOB",
 				"anio": 2025
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1248383-1781551993.jpg?lm=4711"
 		},
 		{
 			"n": "33",
@@ -772,7 +796,8 @@
 			"debut": {
 				"club": "FCO",
 				"anio": 2022
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1020838-1742575962.png?lm=4711"
 		},
 		{
 			"n": "39",
@@ -801,7 +826,8 @@
 			"debut": {
 				"club": "NOB",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/237729"
 		},
 		{
 			"n": "32",
@@ -873,10 +899,11 @@
 			"college": "Club Atlético Tigre",
 			"rasgos": [
 				"veloz+"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/477458-1685381324.JPG?lm=4711"
 		},
 		{
-			"n": null,
+			"n": "52",
 			"nombre": "Mateo",
 			"apellido": "García",
 			"pos": "Extremo derecho",
@@ -902,7 +929,8 @@
 			"debut": {
 				"club": "INS",
 				"anio": 2014
-			}
+			},
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/441287-1566224914.jpg?lm=4711"
 		},
 		{
 			"n": "9",
@@ -932,7 +960,8 @@
 				"club": null,
 				"anio": 2018
 			},
-			"college": "Rampla Juniors Fútbol Club"
+			"college": "Rampla Juniors Fútbol Club",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/454625-1710100418.jpg?lm=4711"
 		},
 		{
 			"n": "99",
@@ -962,7 +991,8 @@
 				"club": null,
 				"anio": 2016
 			},
-			"college": "Liverpool Fútbol Club"
+			"college": "Liverpool Fútbol Club",
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/402079-1721743097.jpg?lm=4711"
 		},
 		{
 			"n": "36",
@@ -991,7 +1021,8 @@
 			"debut": {
 				"club": "NOB",
 				"anio": 2026
-			}
+			},
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_64,h_64,c_limit,q_auto:eco,dpr_3,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/200505"
 		}
 	]
 }
