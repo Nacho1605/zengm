@@ -637,7 +637,7 @@
 			"ppp": 1.69,
 			"convocado": 33,
 			"fichado": "14/01/2026",
-			"ovr": 69,
+			"ovr": 68,
 			"debut": {
 				"club": "RAF",
 				"anio": 2021
@@ -709,7 +709,7 @@
 			"ppp": 1.83,
 			"convocado": 32,
 			"fichado": "01/07/2024",
-			"ovr": 62,
+			"ovr": 61,
 			"debut": {
 				"club": "INS",
 				"anio": 2024
@@ -717,20 +717,20 @@
 			"sofascore": 6.97,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1227286-1771007602.png?lm=4711",
 			"ratings": {
-				"stre": 50,
-				"spd": 60,
-				"jmp": 60,
-				"endu": 53,
-				"ins": 57,
-				"dnk": 58,
-				"ft": 60,
-				"fg": 66,
-				"tp": 64,
+				"stre": 49,
+				"spd": 59,
+				"jmp": 59,
+				"endu": 52,
+				"ins": 56,
+				"dnk": 57,
+				"ft": 59,
+				"fg": 65,
+				"tp": 63,
 				"oiq": 71,
-				"diq": 38,
-				"drb": 66,
-				"pss": 73,
-				"reb": 43
+				"diq": 37,
+				"drb": 65,
+				"pss": 72,
+				"reb": 42
 			},
 			"secundarias": [
 				"Interior izquierdo",

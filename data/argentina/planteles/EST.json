@@ -80,7 +80,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/58088-1671035581.png?lm=4711",
 			"capitanias": 2,
 			"rasgos": [
-				"reflejos"
+				"reflejos",
+				"inseguro"
 			],
 			"sofascore": 7.07,
 			"secundarias": []
@@ -172,7 +173,7 @@
 				"anio": 2024
 			},
 			"college": "Club Costa Brava (General Pico)",
-			"ovr": 68,
+			"ovr": 69,
 			"rasgos": [
 				"aereo",
 				"recuperador"
@@ -241,7 +242,8 @@
 			},
 			"ovr": 67,
 			"rasgos": [
-				"tactico"
+				"tactico",
+				"desordenado"
 			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/113130-1644878036.png?lm=4711",
 			"capitanias": 1,
@@ -308,7 +310,9 @@
 			"ovr": 63,
 			"rasgos": [
 				"aereo",
-				"recuperador"
+				"recuperador",
+				"faltero+",
+				"sin aire"
 			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/93176-1739889892.jpg?lm=4711",
 			"sofascore": 6.94,
@@ -510,8 +514,8 @@
 			"ovr": 63,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/830857-1739826759.jpg?lm=4711",
 			"rasgos": [
-				"veloz",
-				"centrador"
+				"centrador",
+				"veloz+"
 			],
 			"secundarias": [
 				"Interior derecho"
@@ -729,6 +733,9 @@
 			"secundarias": [
 				"Mediocentro",
 				"Extremo izquierdo"
+			],
+			"rasgos": [
+				"desordenado"
 			]
 		},
 		{
@@ -795,7 +802,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/20137-1739827277.jpg?lm=4711",
 			"capitanias": 3,
 			"rasgos": [
-				"habilidoso"
+				"habilidoso",
+				"lento+"
 			],
 			"secundarias": [
 				"Mediocentro"
@@ -864,7 +872,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/470390-1739827349.jpg?lm=4711",
 			"rasgos": [
 				"gambeta",
-				"veloz"
+				"veloz",
+				"liviano"
 			],
 			"secundarias": [
 				"Interior izquierdo",
@@ -998,7 +1007,7 @@
 				"club": "EST",
 				"anio": 2013
 			},
-			"ovr": 64,
+			"ovr": 65,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/227081-1724826843.jpg?lm=4711",
 			"capitanias": 1,
 			"rasgos": [
@@ -1070,7 +1079,12 @@
 				"anio": 2011
 			},
 			"ovr": 68,
-			"rasgos": ["aereo"],
+			"rasgos": [
+				"aereo+",
+				"lento",
+				"patadura",
+				"potente"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/184672-1739829310.jpg?lm=4711",
 			"capitanias": 5,
 			"secundarias": []
@@ -1101,7 +1115,7 @@
 				"club": "COL",
 				"anio": 2011
 			},
-			"ovr": 56,
+			"ovr": 57,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/193782-1739829234.jpg?lm=4711",
 			"rasgos": [
 				"goleador"

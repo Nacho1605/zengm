@@ -1,6 +1,6 @@
 // Independiente, Rendimiento 2026 (capturas del usuario del 23/11/2026).
 // [nombre, posición, edad, país, [convocado, pj, goles, asist, amarillas, dobleAmarilla, rojas, entro, salio, ppp, min]]
-// "Chimy" Ávila = Ezequiel Ávila; "Walter Mazzantti" en Transfermarkt = Walter Mazzanti (NOB)
+// "Chimy" Ávila = Ezequiel Ávila; Walter Mazzantti (NOB; antes escrito Mazzanti, corregido por el usuario el 24/11)
 export const FECHA = "23/11/2026";
 export const FILAS = [
 	["Santiago Mele", "Portero", 29, "Uruguay", [14, 5, 0, 0, 0, 0, 0, 0, 0, 1.4, 450]],
@@ -39,7 +39,7 @@ export const FILAS = [
 	["Matías Abaldo", "Extremo izquierdo", 22, "Uruguay", [35, 34, 5, 4, 3, 0, 1, 8, 19, 1.44, 2231]],
 	["Santiago Montiel", "Extremo derecho", 26, "Argentina", [31, 31, 5, 5, 7, 0, 1, 5, 15, 1.61, 2211]],
 	["Diego Tarzia", "Extremo izquierdo", 23, "Argentina", [2, 1, 0, 0, 0, 0, 0, 1, 0, 1.0, 23]],
-	["Walter Mazzanti", "Extremo derecho", 30, "Argentina", [8, 6, 0, 0, 0, 0, 0, 5, 1, 1.5, 137]],
+	["Walter Mazzantti", "Extremo derecho", 30, "Argentina", [8, 6, 0, 0, 0, 0, 0, 5, 1, 1.5, 137]],
 	["Iván Morales", "Delantero centro", 27, "Chile", [9, 9, 0, 0, 1, 0, 0, 8, 1, 1.44, 222]],
 	["Ignacio Pussetto", "Delantero centro", 30, "Argentina", [14, 11, 2, 0, 1, 0, 0, 5, 6, 1.55, 489]],
 	["Ezequiel Ávila", "Delantero centro", 32, "Argentina", [10, 9, 0, 0, 1, 0, 0, 2, 7, 1.11, 542]],

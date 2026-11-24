@@ -10,7 +10,7 @@
 //                                          "?" si el botón de la página la tapa)
 //   1|Álvaro Montero|POR|
 //   2|Lautaro Di Lollo|CEN|LD
-//   18|Walter Mazzantti=Walter Mazzanti|ED|ID DEL   (como figura en el plantel,
+//   11|Thaiel Peralta=Thiael Peralta|MCO|ED      (como figura en el plantel,
 //                                                  si la captura lo escribe distinto)
 //
 // Controla cada bloque contra su fila de totales. Si el equipo está cargado

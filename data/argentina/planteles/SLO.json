@@ -158,7 +158,7 @@
 			"salio": 1,
 			"ppp": 1.44,
 			"convocado": 9,
-			"ovr": 56,
+			"ovr": 58,
 			"debut": {
 				"club": "SMJ",
 				"anio": 2020
@@ -805,14 +805,15 @@
 			"ppp": 1.33,
 			"convocado": 9,
 			"fichado": "28/08/2026",
-			"ovr": 66,
+			"ovr": 67,
 			"debut": {
 				"club": "COL",
 				"anio": 2020
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/728221-1710079951.jpg?lm=4711",
 			"rasgos": [
-				"gambeta"
+				"gambeta",
+				"flojo de arriba"
 			],
 			"sofascore": 7,
 			"secundarias": [
@@ -842,7 +843,7 @@
 			"salio": 8,
 			"ppp": 1.19,
 			"convocado": 21,
-			"ovr": 56,
+			"ovr": 57,
 			"debut": {
 				"club": "SLO",
 				"anio": 2018
@@ -853,7 +854,9 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/503377-1770562582.jpg?lm=4711",
 			"rasgos": [
-				"veloz"
+				"veloz+",
+				"liviano+",
+				"flojo de arriba+"
 			],
 			"secundarias": [
 				"Mediocentro ofensivo"
@@ -957,6 +960,9 @@
 			"secundarias": [
 				"Extremo izquierdo",
 				"Mediapunta"
+			],
+			"rasgos": [
+				"veloz"
 			]
 		},
 		{
@@ -1091,7 +1097,7 @@
 			"college": "Deportivo Independiente Medellín",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/384580-1770562734.jpg?lm=4711",
 			"rasgos": [
-				"potente"
+				"potente+"
 			],
 			"secundarias": []
 		},

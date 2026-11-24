@@ -144,7 +144,7 @@
 			"salio": 2,
 			"ppp": 1.73,
 			"convocado": 42,
-			"ovr": 68,
+			"ovr": 67,
 			"debut": {
 				"club": "RIV",
 				"anio": 2016
@@ -154,6 +154,10 @@
 			"sofascore": 7.03,
 			"secundarias": [
 				"Pivote"
+			],
+			"rasgos": [
+				"faltero",
+				"desordenado"
 			]
 		},
 		{
@@ -253,7 +257,10 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/54781-1669835534.jpg?lm=4711",
 			"capitan": true,
-			"rasgos": ["aereo"],
+			"rasgos": [
+				"aereo",
+				"faltero"
+			],
 			"secundarias": []
 		},
 		{
@@ -341,7 +348,7 @@
 			"salio": 14,
 			"ppp": 1.7,
 			"convocado": 32,
-			"ovr": 68,
+			"ovr": 69,
 			"debut": {
 				"club": "FCO",
 				"anio": 2010
@@ -460,6 +467,10 @@
 			"sofascore": 7.07,
 			"secundarias": [
 				"Mediocentro"
+			],
+			"rasgos": [
+				"larga distancia",
+				"faltero"
 			]
 		},
 		{
@@ -694,7 +705,7 @@
 			"salio": 31,
 			"ppp": 1.82,
 			"convocado": 45,
-			"ovr": 68,
+			"ovr": 67,
 			"debut": {
 				"club": "RIV",
 				"anio": 2022
@@ -704,6 +715,9 @@
 			"secundarias": [
 				"Mediocentro",
 				"Extremo derecho"
+			],
+			"rasgos": [
+				"pulmon"
 			]
 		},
 		{
@@ -769,7 +783,7 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/266807-1701212448.jpg?lm=4711",
 			"rasgos": [
-				"gambeta+"
+				"gambeta"
 			],
 			"secundarias": [
 				"Extremo derecho",
@@ -799,7 +813,7 @@
 			"ppp": 1.53,
 			"convocado": 18,
 			"fichado": "02/07/2026",
-			"ovr": 57,
+			"ovr": 58,
 			"debut": {
 				"club": "RIV",
 				"anio": 2021
@@ -841,6 +855,11 @@
 			"secundarias": [
 				"Mediocentro ofensivo",
 				"Extremo izquierdo"
+			],
+			"rasgos": [
+				"gambeta",
+				"liviano",
+				"flojo de arriba"
 			]
 		},
 		{

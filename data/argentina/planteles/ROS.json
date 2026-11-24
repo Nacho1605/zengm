@@ -202,7 +202,7 @@
 				"anio": 2020
 			},
 			"college": "Club Atlético Rosario Central",
-			"ovr": 71,
+			"ovr": 70,
 			"parientes": [
 				{
 					"tipo": "brother",
@@ -560,7 +560,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/741685-1742570749.png?lm=4711",
 			"rasgos": [
 				"recuperador",
-				"pulmon"
+				"pulmon",
+				"flojo de arriba"
 			],
 			"sofascore": 7.37,
 			"secundarias": []
@@ -696,6 +697,9 @@
 			"secundarias": [
 				"Pivote",
 				"Mediocentro ofensivo"
+			],
+			"rasgos": [
+				"lento"
 			]
 		},
 		{
@@ -893,11 +897,10 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/45320-1700648952.jpg?lm=4711",
 			"capitan": true,
 			"rasgos": [
-				"larga distancia",
 				"gambeta",
 				"pelota parada",
-				"habilidoso+",
-				"centrador"
+				"centrador",
+				"habilidoso"
 			],
 			"sofascore": 7.39,
 			"secundarias": [
@@ -997,7 +1000,9 @@
 			"ovr": 66,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/504254-1742571191.png?lm=4711",
 			"rasgos": [
-				"pulmon"
+				"pulmon",
+				"erratico+",
+				"patadura"
 			],
 			"secundarias": [
 				"Interior derecho",

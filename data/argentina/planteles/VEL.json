@@ -82,7 +82,8 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/596909-1720644730.jpg?lm=4711",
 			"rasgos": [
-				"reflejos"
+				"reflejos",
+				"liviano"
 			],
 			"secundarias": []
 		},
@@ -451,7 +452,8 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/424045-1693315106.png?lm=4711",
 			"rasgos": [
-				"cerebro"
+				"cerebro+",
+				"lento"
 			],
 			"sofascore": 6.95,
 			"secundarias": [
@@ -724,7 +726,8 @@
 			"college": "Club Deportivo Capiatá",
 			"rasgos": [
 				"goleador",
-				"aereo"
+				"aereo+",
+				"liviano"
 			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/567736-1724876503.jpg?lm=4711",
 			"secundarias": [

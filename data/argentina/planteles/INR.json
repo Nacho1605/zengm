@@ -137,7 +137,7 @@
 			"ppp": 2.03,
 			"convocado": 41,
 			"fichado": "01/01/2026",
-			"ovr": 67,
+			"ovr": 68,
 			"debut": {
 				"club": "TAL",
 				"anio": 2024
@@ -545,7 +545,7 @@
 			"ppp": 1.88,
 			"convocado": 44,
 			"fichado": "14/01/2026",
-			"ovr": 70,
+			"ovr": 69,
 			"debut": {
 				"club": null,
 				"anio": 2019
@@ -618,7 +618,7 @@
 			"ppp": 1.93,
 			"convocado": 42,
 			"fichado": "14/01/2026",
-			"ovr": 71,
+			"ovr": 70,
 			"debut": {
 				"club": "VSC",
 				"anio": 2021
@@ -626,7 +626,7 @@
 			"college": "Quilmes Atlético Club",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/707153-1781282905.jpg?lm=4711",
 			"rasgos": [
-				"gambeta+"
+				"gambeta"
 			],
 			"secundarias": [
 				"Interior derecho",

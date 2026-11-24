@@ -98,7 +98,8 @@
 			"college": "Club Atlético River Plate",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/166591-1720466412.png?lm=4711",
 			"rasgos": [
-				"achique"
+				"achique",
+				"lento"
 			],
 			"secundarias": []
 		},
@@ -476,6 +477,10 @@
 			"sofascore": 7.04,
 			"secundarias": [
 				"Mediocentro"
+			],
+			"rasgos": [
+				"recuperador",
+				"lento"
 			]
 		},
 		{
@@ -727,7 +732,7 @@
 			"salio": 15,
 			"ppp": 1.61,
 			"convocado": 31,
-			"ovr": 70,
+			"ovr": 69,
 			"debut": {
 				"club": "ARG",
 				"anio": 2023
@@ -767,7 +772,7 @@
 			"ppp": 1.47,
 			"convocado": 17,
 			"fichado": "01/07/2026",
-			"ovr": 61,
+			"ovr": 62,
 			"debut": {
 				"club": "GIM",
 				"anio": 2012
@@ -870,7 +875,7 @@
 			"ppp": 1.11,
 			"convocado": 10,
 			"fichado": "18/08/2026",
-			"ovr": 58,
+			"ovr": 60,
 			"debut": {
 				"club": null,
 				"anio": 2011
@@ -878,7 +883,8 @@
 			"college": "Club Atlético Tiro Federal Argentino",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/167721-1773344627.jpg?lm=4711",
 			"rasgos": [
-				"potente"
+				"potente",
+				"lento"
 			],
 			"secundarias": [
 				"Extremo izquierdo",

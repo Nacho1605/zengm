@@ -88,7 +88,10 @@
 			"college": "Associação Desportiva São Caetano",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/292985-1785758895.png?lm=4711",
 			"sofascore": 7.09,
-			"secundarias": []
+			"secundarias": [],
+			"rasgos": [
+				"achique"
+			]
 		},
 		{
 			"n": "12",
@@ -368,10 +371,13 @@
 				"club": "IND",
 				"anio": 2014
 			},
-			"ovr": 50,
+			"ovr": 52,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/334055-1739889062.jpg?lm=4711",
 			"secundarias": [
 				"Lateral derecho"
+			],
+			"rasgos": [
+				"tactico"
 			]
 		},
 		{
@@ -405,6 +411,9 @@
 			"sofascore": 7.04,
 			"secundarias": [
 				"Extremo izquierdo"
+			],
+			"rasgos": [
+				"tactico"
 			]
 		},
 		{
@@ -468,7 +477,7 @@
 				"anio": 2019
 			},
 			"college": "Club Atlético Boston River",
-			"ovr": 66,
+			"ovr": 67,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/665101-1719942158.png?lm=4711",
 			"sofascore": 7.3,
 			"secundarias": [
@@ -534,7 +543,7 @@
 				"club": "BOC",
 				"anio": 2024
 			},
-			"ovr": 68,
+			"ovr": 67,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1236677-1739899248.jpg?lm=4711",
 			"sofascore": 6.94,
 			"secundarias": [
@@ -570,7 +579,8 @@
 			"ovr": 68,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/423436-1739827128.jpg?lm=4711",
 			"rasgos": [
-				"recuperador"
+				"recuperador",
+				"pulmon"
 			],
 			"secundarias": [
 				"Mediocentro",
@@ -607,12 +617,13 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/166237-1692881087.jpg?lm=4711",
 			"capitan": true,
 			"rasgos": [
-				"pelota parada",
 				"habilidoso",
 				"pase+",
-				"cerebro",
 				"recuperador",
-				"lento"
+				"lento",
+				"cerebro+",
+				"sin aire",
+				"larga distancia"
 			],
 			"sofascore": 7.74,
 			"secundarias": [
@@ -994,6 +1005,10 @@
 			"secundarias": [
 				"Extremo izquierdo",
 				"Delantero centro"
+			],
+			"rasgos": [
+				"gambeta",
+				"morfon"
 			]
 		},
 		{
@@ -1026,7 +1041,8 @@
 			"ovr": 71,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/481367-1739899560.jpg?lm=4711",
 			"rasgos": [
-				"goleador"
+				"goleador",
+				"erratico"
 			],
 			"secundarias": [
 				"Extremo derecho"
@@ -1126,7 +1142,10 @@
 			"college": "Club Sport Emelec",
 			"ovr": 64,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/139503-1781508325.jpg?lm=4711",
-			"rasgos": ["aereo"],
+			"rasgos": [
+				"aereo+",
+				"erratico+"
+			],
 			"secundarias": [
 				"Extremo izquierdo",
 				"Extremo derecho"

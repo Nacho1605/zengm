@@ -1,24 +1,25 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026. Última versión: **v2.23.11**
-(`data/argentina/BBGM_Argentina_2026_v.2.23.11_futbol.json`, sha256
-`56985b8450af116e70e6d1f0d72a945e4a7880e30228c3753b50e63e8082bc27`): 21 de 30
+Estado al 24/11/2026. Última versión: **v2.23.12**
+(`data/argentina/BBGM_Argentina_2026_v.2.23.12_futbol.json`, sha256
+`b3196b8408077b7c8f399cda946503be93010c11e4193f2c726340ce88125aae`): 21 de 30
 equipos con plantel 2026, Rendimiento completo y fotos (las del usuario,
 corregidas el 24/11); todo el archivo en la escala nueva de OVR (20 a 78) y
-en la forma 5 (posiciones secundarias de los 21 planteles; defectos nuevos
-para elegir). Validación: 0 errores. Auditoría: 53 controles, 8 con alertas
-(las de siempre; fotos: 696 de 696). Escalera por puesto del usuario
-actualizada, para anotar OVR y rasgos (con los defectos en rojo)
-(https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
+en la forma 5 (posiciones secundarias de los 21 planteles; defectos);
+aplicadas las listas de la escalera del usuario del 24/11 (45 OVR y 56
+jugadores con rasgos). Validación: 0 errores. Auditoría: 53 controles, 8 con
+alertas (las de siempre; fotos: 696 de 696). Escalera por puesto del usuario
+actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. Listas del usuario de la escalera: OVR ("EQUIPO Jugador: viejo → nuevo",
-   con `ajustar-ovr.ts`) y rasgos ("EQUIPO Jugador: + gambeta+, − pase", en
-   `"rasgos"` del plantel). A un jugador con ratings a mano, un rasgo nuevo
-   no se le aplica solo: sumarle el corrimiento a mano (mismo criterio que
-   las secundarias: la consistencia pesa más que sus retoques). Armar la
-   versión, regenerar la escalera y republicarla en el mismo link.
+1. Respuesta del usuario a `revision-v2.23.12.md` (sin aplicar): dudas
+   sobre 4 OVR de su lista (Farías, Galván, E. Ávila, J. Correa) y 3 rasgos
+   (Arias, José Sosa, Martínez Quarta); 5 OVR nuevos (Velasco, Depietri y
+   Nervo, estos dos valores suyos; Sansotre, Bracamonte) y rasgos sugeridos
+   por los números. Lo que acepte va como parche (v2.23.13). Las próximas
+   listas de la escalera: guardarlas en `escalera/listas/` y aplicarlas con
+   `aplicar-listas.ts`.
 2. **Posiciones secundarias** (idea del usuario, 24/11; aceptado: 20–25% sin
    cambiar el OVR, mismo peso para cada secundaria): completas en los 21
    planteles (v2.23.11: 394 de 615 jugadores tienen alguna) y en
@@ -28,7 +29,7 @@ actualizada, para anotar OVR y rasgos (con los defectos en rojo)
    con su plantel. Sebastián Moyano, el libre con la foto de Mele, es el
    tercer arquero de ALD: al cargar Aldosivi va en `reemplaza` y recibe su
    foto. Mazzanti (NOB): Transfermarkt y el comentario del usuario escriben
-   "Mazzantti"; en el plantel, "Mazzanti" (se le preguntó al usuario).
+   "Mazzantti": corregido en la v2.23.12 (con `semilla`).
 3. Pendiente de analizar con el usuario: el ajuste del capitán según el
    motivo y si Estudiantes (sin capitán fijo) lleva el arquetipo.
 4. Equipos que faltan: BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (el orden
@@ -566,6 +567,26 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**24/11/2026 (v2.23.12).** Huella:
+`b3196b8408077b7c8f399cda946503be93010c11e4193f2c726340ce88125aae`.
+
+- Listas del usuario copiadas de la escalera (`escalera/listas/2026-11-24.txt`):
+  45 OVR y 56 jugadores con rasgos, aplicadas con la herramienta nueva
+  `aplicar-listas.ts` (0 avisos: todos los OVR viejos coincidían). Passerini
+  (ratings a mano) recibió el corrimiento de goleador y morfon; Lázaro (a
+  mano) bajó parejo a 61. `rasgos-usuario.ts` quedó al día con los
+  planteles (acepta nombre y "+" juntos).
+- Walter Mazzantti (NOB; el usuario: con dos t) y Thaiel Peralta llevan
+  `"semilla"` con el nombre viejo: así la corrección no cambia sus ratings
+  ni su personalidad (Mazzantti había perdido el rasgo F; Peralta vuelve a
+  sus ratings de antes de la corrección).
+- Contra la v2.23.11: 45 OVR distintos (los de la lista), 46 jugadores con
+  otros ratings (los rasgos y Peralta), el apellido de Mazzantti y lo que
+  depende del OVR (sueldo, orden del plantel y orden de 4 picks de draft);
+  el resto del archivo es igual.
+- La escalera borra sola de las listas del usuario lo que ya está aplicado.
+- Revisión devuelta al usuario: `revision-v2.23.12.md`.
+
 **24/11/2026 (v2.23.11, superparche de secundarias).** Huella:
 `56985b8450af116e70e6d1f0d72a945e4a7880e30228c3753b50e63e8082bc27`.
 
@@ -949,7 +970,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.23.11.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.23.12.
 > Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
 > líneas que entendiste el estado, antes de seguir.
 

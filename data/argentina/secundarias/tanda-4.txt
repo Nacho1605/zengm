@@ -32,7 +32,7 @@ TOTAL POR 2/0 LIB 0/0 CEN 7/2 LI 2/2 LD 3/2 PIV 4/3 MC 2/6 ID 0/4 II 0/2 MCO 4/2
 33|Walter Núñez|EI|ED DEL
 39|Thomas Rios|EI|ED
 32|Santiago Solari|ED|EI
-18|Walter Mazzantti=Walter Mazzanti|ED|ID DEL
+18|Walter Mazzantti|ED|ID DEL
 18|Mateo García|ED|EI
 9|Matías Cóccaro|DEL|
 99|Ignacio Ramírez|DEL|

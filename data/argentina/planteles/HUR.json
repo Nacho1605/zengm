@@ -568,7 +568,9 @@
 			"college": "Comisión de Actividades Infantiles",
 			"sofascore": 6.92,
 			"rasgos": [
-				"pulmon"
+				"pulmon+",
+				"desordenado",
+				"patadura"
 			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/125907-1755536204.jpg?lm=4711",
 			"secundarias": [
@@ -681,6 +683,7 @@
 			"n": "11",
 			"nombre": "Thaiel",
 			"apellido": "Peralta",
+			"semilla": "Thiael Peralta",
 			"pos": "Mediocentro ofensivo",
 			"nac": "21/09/2008",
 			"pais": "Argentina",
@@ -954,7 +957,7 @@
 			"ppp": 1.1,
 			"convocado": 10,
 			"fichado": "31/07/2026",
-			"ovr": 59,
+			"ovr": 60,
 			"debut": {
 				"club": "RAF",
 				"anio": 2013

@@ -449,6 +449,15 @@ for (const boton of ["copiar", "copiarR"]) document.getElementById(boton).addEve
 
 fetch("escalera.json").then((r) => r.json()).then((d) => {
 	DATOS = d;
+	// Lo que ya se aplicó en esta versión deja de figurar como cambio
+	const orden = (xs) => xs.slice().sort().join("|");
+	for (const j of d.jugadores) {
+		const k = id(j);
+		if (anotados[k] === j.ovr) delete anotados[k];
+		if (anotRasgos[k] && orden(anotRasgos[k]) === orden(j.r)) delete anotRasgos[k];
+	}
+	guardar();
+	guardarR();
 	document.getElementById("version").textContent = `${d.version} · ${d.fecha}`;
 	document.getElementById("base").textContent = d.versionBase || "la versión anterior";
 	const sel = document.getElementById("equipo");

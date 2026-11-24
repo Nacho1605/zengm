@@ -99,7 +99,12 @@
 				"anio": 2007
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/54330-1724348686.png?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"rasgos": [
+				"flojo de arriba",
+				"reflejos",
+				"estatico"
+			]
 		},
 		{
 			"n": "17",
@@ -191,7 +196,7 @@
 			"ppp": 0.86,
 			"convocado": 17,
 			"fichado": "19/07/2024",
-			"ovr": 56,
+			"ovr": 58,
 			"debut": {
 				"club": null,
 				"anio": 2016
@@ -948,7 +953,8 @@
 		{
 			"n": "18",
 			"nombre": "Walter",
-			"apellido": "Mazzanti",
+			"apellido": "Mazzantti",
+			"semilla": "Walter Mazzanti",
 			"pos": "Extremo derecho",
 			"nac": "05/09/1996",
 			"pais": "Argentina",
@@ -975,7 +981,8 @@
 			},
 			"college": "Club Atlético Tigre",
 			"rasgos": [
-				"veloz+"
+				"veloz+",
+				"erratico"
 			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/477458-1685381324.JPG?lm=4711",
 			"secundarias": [

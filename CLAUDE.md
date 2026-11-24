@@ -56,6 +56,7 @@ node tools/argentina/equipos-csv.ts ARCHIVO.json # regenera equipos.csv desde un
 node tools/argentina/completar-rendimiento.mjs EQUIPO  # Rendimiento completo de un plantel ya cargado (datos en data/argentina/rendimiento/)
 node tools/argentina/escalera-web.ts ARCHIVO.json ANTERIOR.json  # datos de la escalera del usuario
 node tools/argentina/secundarias.ts data/argentina/secundarias/TANDA.txt  # posiciones secundarias: controla la fila "Total" y las pasa a los planteles
+node tools/argentina/aplicar-listas.ts data/argentina/escalera/listas/FECHA.txt  # aplica las listas de OVR y rasgos que el usuario copia de la escalera
 ```
 
 En una máquina nueva, `validar.ts` necesita la librería `ajv` (no instalar
@@ -110,7 +111,8 @@ v2.14.1 → v2.14.2).
   patadura, liviano y flojo de arriba valen para los dos). Con "+" (ej. `gambeta+`) el efecto
   es 1,5 veces. Dan forma; el OVR no cambia. Efectos en `ratings-futbol.ts`;
   la lista del usuario, en `tools/argentina/rasgos-usuario.ts`. Pedirlos con
-  cada equipo nuevo. A un jugador con ratings a mano no se le aplican solos.
+  cada equipo nuevo. A un jugador con ratings a mano, `aplicar-listas.ts` le
+  suma el corrimiento del rasgo (el usuario prefiere la consistencia).
 - OVR: valor a mano en el plantel (`ovr`), escala amplia, top sin repetir
   (Paredes 78, Di María 77, Montiel 75, Almada 74, Correa 73). Desde la
   v2.23.1 la escala va de 20 a 78: el techo queda en 78 (Paredes y Di María
@@ -134,7 +136,11 @@ v2.14.1 → v2.14.2).
   anota no lo ve Claude: el usuario copia la lista y la pega en el chat
   ("EQUIPO Jugador: viejo → nuevo"). También anota rasgos (desde la
   v2.23.8), con su propia lista: "EQUIPO Jugador: + gambeta+, + pase, −
-  gambeta" (+ agrega, − quita; van a `"rasgos"` del plantel). Los que jugaron en dos clubes cargados
+  gambeta" (+ agrega, − quita; van a `"rasgos"` del plantel). Las listas se
+  guardan tal cual en `escalera/listas/FECHA.txt` y se aplican con
+  `aplicar-listas.ts` (a los de ratings a mano les suma el corrimiento del
+  rasgo, como a los demás); la página borra sola de sus listas lo que ya está
+  aplicado. Los que jugaron en dos clubes cargados
   (salidas-2026.json, mismo nombre y edad ±1) aparecen con el año completo. Arqueros: la
   lista del usuario en `data/argentina/arqueros/lista-apertura-2026.md`
   (hecha en el Apertura, antes del Mundial 2026: DESACTUALIZADA, es una base
@@ -221,6 +227,10 @@ v2.14.1 → v2.14.2).
   la captura) y pasan al plantel al cargar el equipo.
 - Un solo nombre (Rick, TAL): el nombre en `nombre` y `apellido` vacío (así
   no queda un espacio al principio). Las herramientas lo buscan por ese nombre.
+- Nombre corregido después de cargado (Thaiel Peralta, Walter Mazzantti):
+  `"semilla"` con el nombre viejo en el plantel, así el azar del jugador
+  (ratings y personalidad) no cambia. En `reemplaza` va el nombre que tiene
+  el jugador viejo en el archivo.
 - Premios: con sus nombres originales del juego (en inglés), por pedido del
   usuario ("momentáneamente"); las fórmulas de fútbol siguen.
 - Fotos: el usuario las pone en el juego cuando le conviene (a veces de

@@ -51,7 +51,10 @@
 			},
 			"college": "Club Estudiantes de La Plata",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/469761-1732809156.png?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"rasgos": [
+				"patadura"
+			]
 		},
 		{
 			"n": "43",
@@ -269,7 +272,7 @@
 			"ppp": 0.44,
 			"convocado": 27,
 			"fichado": "01/01/2016",
-			"ovr": 54,
+			"ovr": 55,
 			"debut": {
 				"club": "ERC",
 				"anio": 2016
@@ -684,7 +687,7 @@
 			"ppp": 0.39,
 			"convocado": 29,
 			"fichado": "14/01/2026",
-			"ovr": 55,
+			"ovr": 57,
 			"debut": {
 				"club": "BEL",
 				"anio": 2015

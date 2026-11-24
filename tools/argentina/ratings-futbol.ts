@@ -452,7 +452,9 @@ export const generarRatings = (
 	ovrMeta: number,
 	forma: Forma = FORMA_2,
 ) => {
-	const rand = azar(`${j.nombre} ${j.apellido} ${j.nac}`);
+	// "semilla": el nombre con el que se generó, si después se corrigió (así una
+	// corrección de nombre no cambia al jugador)
+	const rand = azar(`${j.semilla ?? `${j.nombre} ${j.apellido}`} ${j.nac}`);
 	const cm = Math.round(j.altura * 100);
 	const norma = NORMA[pos]!;
 	const contraste = forma.contraste[pos] ?? {};

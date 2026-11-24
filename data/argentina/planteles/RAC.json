@@ -164,7 +164,7 @@
 			"salio": 5,
 			"ppp": 1.39,
 			"convocado": 36,
-			"ovr": 56,
+			"ovr": 58,
 			"debut": {
 				"club": "EST",
 				"anio": 2019
@@ -418,7 +418,7 @@
 			"ppp": 1,
 			"convocado": 14,
 			"fichado": "10/08/2026",
-			"ovr": 59,
+			"ovr": 58,
 			"debut": {
 				"club": "HUR",
 				"anio": 2025
@@ -494,6 +494,9 @@
 			"secundarias": [
 				"Defensa central",
 				"Mediocentro"
+			],
+			"rasgos": [
+				"lento"
 			]
 		},
 		{
@@ -553,7 +556,7 @@
 			"ppp": 1.08,
 			"convocado": 14,
 			"fichado": "13/08/2026",
-			"ovr": 61,
+			"ovr": 62,
 			"debut": {
 				"club": "LAN",
 				"anio": 2018
@@ -627,7 +630,7 @@
 			"salio": 15,
 			"ppp": 1.19,
 			"convocado": 36,
-			"ovr": 64,
+			"ovr": 65,
 			"debut": {
 				"club": "ARG",
 				"anio": 2019
@@ -882,7 +885,9 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/598769-1724351256.png?lm=4711",
 			"rasgos": [
 				"goleador",
-				"potente"
+				"potente",
+				"aereo",
+				"morfon"
 			],
 			"secundarias": []
 		},

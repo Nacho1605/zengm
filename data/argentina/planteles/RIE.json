@@ -46,7 +46,8 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/131206-1771009261.JPG?lm=4711",
 			"rasgos": [
-				"pies"
+				"pies",
+				"inseguro"
 			],
 			"sofascore": 7.28,
 			"secundarias": []
@@ -538,6 +539,9 @@
 			"secundarias": [
 				"Lateral derecho",
 				"Interior derecho"
+			],
+			"rasgos": [
+				"pulmon"
 			]
 		},
 		{
@@ -601,7 +605,7 @@
 				"club": "ARS",
 				"anio": 2012
 			},
-			"ovr": 49,
+			"ovr": 50,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/260652-1720462376.JPG?lm=4711",
 			"capitan": true,
 			"rasgos": [

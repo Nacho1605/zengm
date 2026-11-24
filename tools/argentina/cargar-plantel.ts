@@ -539,7 +539,7 @@ const cargar = (plantel: any) => {
 			((j.debut?.anio ?? Infinity) <= ULTIMO_ANIO_LEALTAD &&
 				(p.draft.tid === team.tid ||
 					p.college === NOMBRE_COMPLETO[team.abbrev]));
-		const rand = azar(`rasgos ${j.nombre} ${j.apellido} ${j.nac}`);
+		const rand = azar(`rasgos ${j.semilla ?? `${j.nombre} ${j.apellido}`} ${j.nac}`);
 		const otros = ["F", "$", "W"];
 		const elegir = (xs: string[]) => xs[Math.floor(rand() * xs.length)]!;
 		const rasgos = leal ? ["L"] : [elegir(otros)];

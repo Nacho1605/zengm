@@ -1,0 +1,113 @@
+Listas del usuario copiadas de la escalera (24/11/2026, sobre la v2.23.11).
+"En efecto, Mazzantti se escribe con dos t. Con la mayoría de los jugadores
+sub-60 me costó encontrarles arquetipos, defectos o incluso compararlos con
+el resto de sus pares. Esto es lo mejor que pude hacer. De igual manera,
+revísalo: acepto críticas constructivas e incluso acepto cambios nuevos a la
+Stat Ladder que no estén en mi lista."
+
+## OVR
+
+ARG Francisco Álvarez: 70 → 69
+ARG Hernán López Muñoz: 69 → 70
+ARG Sebastián Prieto: 67 → 66
+ARG Matías Giménez Rojas: 58 → 59
+BAR Tomás Porra: 62 → 61
+BAR Norberto Briasco: 59 → 58
+BAR Nicolás Capraro: 57 → 56
+BEL Lisandro López: 69 → 68
+BEL Santiago Longo: 59 → 60
+BOC Milton Delgado: 68 → 67
+BOC Leandro Lozano: 66 → 67
+BOC Nicolás Figal: 50 → 52
+ERC Gabriel Alanís: 55 → 57
+ERC Gonzalo Maffini: 54 → 55
+EST Tomás Palacios: 68 → 69
+EST Joaquín Correa: 64 → 65
+EST Lucas Alario: 56 → 57
+GIM Nacho Fernández: 70 → 69
+GIM Germán Conti: 58 → 57
+HUR Ignacio Pussetto: 59 → 60
+IND Santiago Montiel: 70 → 69
+IND Maximiliano Meza: 61 → 62
+IND Ezequiel Ávila: 58 → 60
+INR Matías Fernández: 71 → 70
+INR José Florentín: 70 → 69
+INR Sheyko Studer: 67 → 68
+INS Alex Luna: 69 → 68
+INS Jeremías Lázaro: 62 → 61
+NOB Saúl Salcedo: 56 → 58
+RAC Matko Miljevic: 64 → 65
+RAC Gastón Lodico: 61 → 62
+RAC Leonel Pérez: 59 → 58
+RAC Nazareno Colombo: 56 → 58
+RIE Milton Céliz: 49 → 50
+RIV Lucas Martínez Quarta: 68 → 67
+RIV Marcos Acuña: 68 → 69
+RIV Tomás Galván: 68 → 67
+RIV Lucas Beltrán: 57 → 58
+ROS Gastón Ávila: 71 → 70
+SLO Facundo Farías: 66 → 67
+SLO Gastón Hernández: 56 → 58
+SLO Nahuel Barrios: 56 → 57
+TAL Matías Galarza: 67 → 66
+TAL Federico Fattori: 66 → 67
+UNI Ignacio Malcorra: 56 → 59
+
+## Rasgos
+
+BAR Nicolás Orsini: + erratico
+BEL Franco Vázquez: + lento
+BEL Lucas Passerini: + goleador, + morfon
+BOC Leandro Paredes: + cerebro+, + sin aire, + larga distancia, − pelota parada, − cerebro
+BOC Miguel Merentiel: + erratico
+BOC Álvaro Montero: + achique
+BOC Lautaro Blanco: + tactico
+BOC Santiago Ascacíbar: + pulmon
+BOC Enner Valencia: + aereo+, + erratico+, − aereo
+BOC Nicolás Figal: + tactico
+BOC Ángel Romero: + gambeta, + morfon
+ERC Lucas Bruera: + patadura
+EST Fernando Muslera: + inseguro
+EST Edwuin Cetré: + liviano
+EST Guido Carrillo: + aereo+, + lento, + patadura, + potente, − aereo
+EST Leandro González Pírez: + desordenado
+EST Marcos Rojo: + faltero+, + sin aire
+EST Eric Meza: + veloz+, − veloz
+EST Baltasar Rodríguez: + desordenado
+EST José Sosa: + lento+
+GIM Nacho Fernández: + lento+, + cerebro
+GIM Germán Conti: + aereo
+HUR Leonardo Gil: + pulmon+, + desordenado, + patadura, − pulmon
+IND Rodrigo Rey: + lento
+IND Iván Marcone: + recuperador, + lento
+IND Ezequiel Ávila: + lento
+INR Matías Fernández: + gambeta, − gambeta+
+LAN Tomás Guidara: + recuperador
+NOB Walter Mazzanti: + erratico
+NOB Gabriel Arias: + flojo de arriba, + reflejos, + estatico
+RAC Adrián Martínez: + aereo, + morfon
+RAC Matías Kranevitter: + lento
+RIE Ignacio Arce: + inseguro
+RIE Yonatan Goitía: + pulmon
+RIV Ángel Correa: + gambeta, − gambeta+
+RIV Nicolás Otamendi: + faltero
+RIV Lucas Martínez Quarta: + faltero, + desordenado
+RIV Tomás Galván: + pulmon
+RIV Aníbal Moreno: + larga distancia, + faltero
+RIV Sebastián Driussi: + gambeta, + liviano, + flojo de arriba
+ROS Ángel Di María: + habilidoso, − larga distancia, − habilidoso+
+ROS Franco Ibarra: + flojo de arriba
+ROS Enzo Copetti: + erratico+, + patadura
+ROS Pol Fernández: + lento
+SLO Facundo Farías: + flojo de arriba
+SLO Nahuel Barrios: + veloz+, + liviano+, + flojo de arriba+, − veloz
+SLO Ezequiel Cerutti: + veloz
+SLO Diego Herazo: + potente+, − potente
+TAL Federico Fattori: + cerebro+, + recuperador+, + lento+, − cerebro, − recuperador
+UNI Cristian Tarragona: + patadura
+UNI Lucas Menossi: + lento, + liviano
+UNI Ignacio Malcorra: + pelota parada+, + gambeta, + lento, − pelota parada
+UNI Federico Gomes Gerth: + estatico
+VEL Ronaldo Martínez: + aereo+, + liviano, − aereo
+VEL Rodrigo Aliendro: + cerebro+, + lento, − cerebro
+VEL Tomás Marchiori: + liviano

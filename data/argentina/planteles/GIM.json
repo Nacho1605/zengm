@@ -287,13 +287,16 @@
 			"ppp": 2.12,
 			"convocado": 20,
 			"fichado": "24/07/2025",
-			"ovr": 58,
+			"ovr": 57,
 			"debut": {
 				"club": "COL",
 				"anio": 2013
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/284321-1724348811.png?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"rasgos": [
+				"aereo"
+			]
 		},
 		{
 			"n": "24",
@@ -662,7 +665,7 @@
 			"ppp": 1.68,
 			"convocado": 35,
 			"fichado": "14/01/2026",
-			"ovr": 70,
+			"ovr": 69,
 			"debut": {
 				"club": "GIM",
 				"anio": 2011
@@ -671,7 +674,9 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/50669-1693315048.png?lm=4711",
 			"rasgos": [
 				"habilidoso",
-				"pase"
+				"pase",
+				"lento+",
+				"cerebro"
 			],
 			"sofascore": 7.37,
 			"secundarias": [

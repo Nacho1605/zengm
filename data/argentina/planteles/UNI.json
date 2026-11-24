@@ -122,7 +122,10 @@
 				"partidos": 7
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/826528-1684910778.jpg?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"rasgos": [
+				"estatico"
+			]
 		},
 		{
 			"n": "40",
@@ -520,7 +523,9 @@
 				"anio": 2015
 			},
 			"rasgos": [
-				"cerebro"
+				"cerebro",
+				"lento",
+				"liviano"
 			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/225481-1758832085.png?lm=4711",
 			"secundarias": [
@@ -688,14 +693,16 @@
 			"ppp": 1.23,
 			"convocado": 13,
 			"fichado": "21/07/2026",
-			"ovr": 56,
+			"ovr": 59,
 			"debut": {
 				"club": null,
 				"anio": 2008
 			},
 			"college": "Comisión de Actividades Infantiles",
 			"rasgos": [
-				"pelota parada"
+				"pelota parada+",
+				"gambeta",
+				"lento"
 			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/87518-1742570974.png?lm=4711",
 			"secundarias": [
@@ -904,7 +911,10 @@
 			"sofascore": 6.93,
 			"capitan": true,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/422698-1699915095.jpg?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"rasgos": [
+				"patadura"
+			]
 		},
 		{
 			"n": "38",

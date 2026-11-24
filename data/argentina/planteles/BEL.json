@@ -248,15 +248,13 @@
 			"ppp": 1.64,
 			"convocado": 32,
 			"fichado": "06/07/2025",
-			"ovr": 69,
+			"ovr": 68,
 			"debut": {
 				"club": "CHA",
 				"anio": 2009
 			},
 			"sofascore": 7.3,
-			"rasgos": [
-				"aereo"
-			],
+			"rasgos": ["aereo"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/125019-1758832195.png?lm=4711",
 			"secundarias": []
 		},
@@ -416,7 +414,7 @@
 			"ppp": 2.08,
 			"convocado": 36,
 			"fichado": "06/01/2020",
-			"ovr": 59,
+			"ovr": 60,
 			"debut": {
 				"club": "BEL",
 				"anio": 2020
@@ -656,7 +654,8 @@
 			"sofascore": 7.04,
 			"rasgos": [
 				"habilidoso",
-				"pase"
+				"pase",
+				"lento"
 			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/76163-1757676848.jpg?lm=4711",
 			"secundarias": [
@@ -872,22 +871,26 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/334586-1758831368.png?lm=4711",
 			"ratings": {
-				"stre": 69,
-				"spd": 53,
-				"jmp": 59,
-				"endu": 54,
-				"ins": 62,
-				"dnk": 59,
-				"ft": 54,
-				"fg": 66,
-				"tp": 54,
-				"oiq": 67,
-				"diq": 35,
-				"drb": 53,
-				"pss": 48,
-				"reb": 45
+				"stre": 70,
+				"spd": 54,
+				"jmp": 60,
+				"endu": 55,
+				"ins": 72,
+				"dnk": 62,
+				"ft": 55,
+				"fg": 67,
+				"tp": 55,
+				"oiq": 63,
+				"diq": 36,
+				"drb": 56,
+				"pss": 41,
+				"reb": 46
 			},
-			"secundarias": []
+			"secundarias": [],
+			"rasgos": [
+				"goleador",
+				"morfon"
+			]
 		},
 		{
 			"n": "37",
