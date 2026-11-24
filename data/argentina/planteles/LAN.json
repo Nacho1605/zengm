@@ -70,7 +70,8 @@
 				"anio": 2013
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/323918-1721933353.png?lm=4711",
-			"sofascore": 7.08
+			"sofascore": 7.08,
+			"secundarias": []
 		},
 		{
 			"n": "1",
@@ -100,7 +101,8 @@
 				"club": "RIV",
 				"anio": 2022
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/401587-1625773256.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/401587-1625773256.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "24",
@@ -136,7 +138,8 @@
 				"potente",
 				"tactico"
 			],
-			"sofascore": 7.23
+			"sofascore": 7.23,
+			"secundarias": []
 		},
 		{
 			"n": "13",
@@ -172,7 +175,10 @@
 				"aereo",
 				"recuperador"
 			],
-			"sofascore": 7.01
+			"sofascore": 7.01,
+			"secundarias": [
+				"Lateral izquierdo"
+			]
 		},
 		{
 			"n": "35",
@@ -204,7 +210,8 @@
 			},
 			"college": "Club River Plate (Paraguay)",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/847074-1755012394.png?lm=4711",
-			"sofascore": 6.9
+			"sofascore": 6.9,
+			"secundarias": []
 		},
 		{
 			"n": "4",
@@ -235,7 +242,10 @@
 				"anio": 2020
 			},
 			"college": "Liverpool Fútbol Club",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/799594-1721933872.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/799594-1721933872.png?lm=4711",
+			"secundarias": [
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "2",
@@ -265,7 +275,8 @@
 				"club": "LAN",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1005803-1778273670.jpeg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1005803-1778273670.jpeg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "6",
@@ -298,6 +309,10 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/867621-1724877200.jpg?lm=4711",
 			"rasgos": [
 				"pulmon"
+			],
+			"secundarias": [
+				"Interior izquierdo",
+				"Extremo izquierdo"
 			]
 		},
 		{
@@ -329,7 +344,10 @@
 				"anio": 2017
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/355900-1755535002.jpg?lm=4711",
-			"sofascore": 6.9
+			"sofascore": 6.9,
+			"secundarias": [
+				"Defensa central"
+			]
 		},
 		{
 			"n": "3",
@@ -359,7 +377,8 @@
 				"club": "PLA",
 				"anio": 2013
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/615253-1721935501.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/615253-1721935501.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "30",
@@ -390,7 +409,10 @@
 				"anio": 2017
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/469762-1727449491.jpg?lm=4711",
-			"sofascore": 7.08
+			"sofascore": 7.08,
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "17",
@@ -420,7 +442,10 @@
 				"club": "LAN",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1294453-1776351125.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1294453-1776351125.png?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "5",
@@ -451,7 +476,10 @@
 				"anio": 2021
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/894194-1644878091.png?lm=4711",
-			"sofascore": 6.91
+			"sofascore": 6.91,
+			"secundarias": [
+				"Defensa central"
+			]
 		},
 		{
 			"n": "15",
@@ -486,7 +514,10 @@
 				"tipo": "Lesión muscular",
 				"partidos": 3
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/260898-1721935536.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/260898-1721935536.png?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "23",
@@ -516,7 +547,11 @@
 				"club": "ARS",
 				"anio": 2013
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/282283-1721935700.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/282283-1721935700.png?lm=4711",
+			"secundarias": [
+				"Mediocentro",
+				"Interior izquierdo"
+			]
 		},
 		{
 			"n": "16",
@@ -547,7 +582,11 @@
 				"anio": 2017
 			},
 			"college": "Club Deportivo O'Higgins",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/511436-1776351175.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/511436-1776351175.png?lm=4711",
+			"secundarias": [
+				"Lateral izquierdo",
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "27",
@@ -577,7 +616,10 @@
 				"club": "LAN",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1240378-1771512430.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1240378-1771512430.png?lm=4711",
+			"secundarias": [
+				"Pivote"
+			]
 		},
 		{
 			"n": "10",
@@ -611,6 +653,10 @@
 			"rasgos": [
 				"gambeta",
 				"pelota parada"
+			],
+			"secundarias": [
+				"Mediocentro",
+				"Extremo izquierdo"
 			]
 		},
 		{
@@ -647,6 +693,9 @@
 					"tipo": "brother",
 					"nombre": "Nicolás Watson"
 				}
+			],
+			"secundarias": [
+				"Delantero centro"
 			]
 		},
 		{
@@ -680,6 +729,10 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/84535-1721935987.png?lm=4711",
 			"rasgos": [
 				"centrador"
+			],
+			"secundarias": [
+				"Interior derecho",
+				"Delantero centro"
 			]
 		},
 		{
@@ -710,7 +763,11 @@
 				"club": "LAN",
 				"anio": 2022
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/829381-1721935796.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/829381-1721935796.png?lm=4711",
+			"secundarias": [
+				"Mediocentro ofensivo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "38",
@@ -740,7 +797,11 @@
 				"club": "LAN",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1119045-1778273775.jpeg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1119045-1778273775.jpeg?lm=4711",
+			"secundarias": [
+				"Mediapunta",
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "20",
@@ -774,7 +835,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1065388-1788275650.jpeg?lm=4711",
 			"rasgos": [
 				"potente"
-			]
+			],
+			"secundarias": []
 		},
 		{
 			"n": "19",
@@ -805,7 +867,10 @@
 				"anio": 2024
 			},
 			"college": "Internacional Fútbol Club de Palmira",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1258292-1759370576.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1258292-1759370576.jpg?lm=4711",
+			"secundarias": [
+				"Mediapunta"
+			]
 		},
 		{
 			"n": "39",
@@ -831,7 +896,10 @@
 			"convocado": 14,
 			"ovr": 29,
 			"prospecto": true,
-			"college": "Club Atlético Lanús"
+			"college": "Club Atlético Lanús",
+			"secundarias": [
+				"Pivote"
+			]
 		}
 	]
 }

@@ -63,7 +63,8 @@
 			},
 			"college": "Club de Gimnasia y Esgrima La Plata",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/660280-1699913821.jpg?lm=4711",
-			"sofascore": 6.99
+			"sofascore": 6.99,
+			"secundarias": []
 		},
 		{
 			"n": "15",
@@ -94,7 +95,8 @@
 				"anio": 2015
 			},
 			"college": "Deportivo Pereira",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/652707-1708969692.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/652707-1708969692.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "27",
@@ -124,7 +126,8 @@
 				"club": "COM",
 				"anio": 2022
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1085432-1739197951.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1085432-1739197951.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "4",
@@ -154,7 +157,10 @@
 				"club": "BOC",
 				"anio": 2022
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/838405-1739197009.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/838405-1739197009.jpg?lm=4711",
+			"secundarias": [
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "21",
@@ -186,7 +192,10 @@
 			},
 			"college": "Club Atlético Peñarol",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/578737-1739197041.jpg?lm=4711",
-			"sofascore": 7.02
+			"sofascore": 7.02,
+			"secundarias": [
+				"Lateral izquierdo"
+			]
 		},
 		{
 			"n": "35",
@@ -220,7 +229,8 @@
 				"tipo": "Lesión muscular",
 				"partidos": 2
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1224924-1739197138.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1224924-1739197138.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "14",
@@ -251,7 +261,8 @@
 				"anio": 2021
 			},
 			"college": "Racing Club",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/909170-1748281103.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/909170-1748281103.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "13",
@@ -281,7 +292,8 @@
 				"club": "COL",
 				"anio": 2013
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/284321-1724348811.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/284321-1724348811.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "24",
@@ -312,7 +324,10 @@
 				"anio": 2017
 			},
 			"college": "Club Atlético Boca Juniors",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/438927-1739197175.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/438927-1739197175.jpg?lm=4711",
+			"secundarias": [
+				"Interior izquierdo"
+			]
 		},
 		{
 			"n": "22",
@@ -342,7 +357,8 @@
 				"club": "GIM",
 				"anio": 2018
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/564216-1739197270.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/564216-1739197270.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "25",
@@ -376,6 +392,10 @@
 			"rasgos": [
 				"centrador",
 				"pulmon"
+			],
+			"secundarias": [
+				"Interior derecho",
+				"Extremo derecho"
 			]
 		},
 		{
@@ -406,7 +426,8 @@
 				"club": "GIM",
 				"anio": 2022
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/852761-1724877606.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/852761-1724877606.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "28",
@@ -436,7 +457,10 @@
 				"club": "GIM",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1283981-1739197298.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1283981-1739197298.jpg?lm=4711",
+			"secundarias": [
+				"Defensa central"
+			]
 		},
 		{
 			"n": "10",
@@ -471,7 +495,11 @@
 				"cerebro",
 				"recuperador"
 			],
-			"sofascore": 7.1
+			"sofascore": 7.1,
+			"secundarias": [
+				"Mediocentro",
+				"Mediocentro ofensivo"
+			]
 		},
 		{
 			"n": "5",
@@ -505,7 +533,8 @@
 			"rasgos": [
 				"pulmon"
 			],
-			"sofascore": 7.05
+			"sofascore": 7.05,
+			"secundarias": []
 		},
 		{
 			"n": "18",
@@ -535,7 +564,10 @@
 				"club": "VEL",
 				"anio": 2022
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/850433-1682256346.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/850433-1682256346.JPG?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "39",
@@ -569,7 +601,10 @@
 				"tipo": "Recuperación de rotura del ligamento cruzado",
 				"partidos": 4
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1305326-1739197987.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1305326-1739197987.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "16",
@@ -599,7 +634,10 @@
 				"club": "SMT",
 				"anio": 2010
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/149770-1739197474.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/149770-1739197474.jpg?lm=4711",
+			"secundarias": [
+				"Pivote"
+			]
 		},
 		{
 			"n": "8",
@@ -635,7 +673,11 @@
 				"habilidoso",
 				"pase"
 			],
-			"sofascore": 7.37
+			"sofascore": 7.37,
+			"secundarias": [
+				"Mediocentro",
+				"Interior derecho"
+			]
 		},
 		{
 			"n": "20",
@@ -666,7 +708,10 @@
 				"anio": 2022
 			},
 			"college": "Club Deportivo América",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1087316-1739373928.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1087316-1739373928.jpg?lm=4711",
+			"secundarias": [
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "34",
@@ -696,7 +741,10 @@
 				"club": "GIM",
 				"anio": 2023
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/865201-1699913996.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/865201-1699913996.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "42",
@@ -726,7 +774,8 @@
 				"club": "GIM",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1305339-1739197999.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1305339-1739197999.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "11",
@@ -760,7 +809,10 @@
 				"tipo": "Lesión muscular",
 				"partidos": 2
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1283982-1739197963.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1283982-1739197963.jpg?lm=4711",
+			"secundarias": [
+				"Interior izquierdo"
+			]
 		},
 		{
 			"n": "17",
@@ -790,7 +842,11 @@
 				"club": "TIG",
 				"anio": 2012
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/238448-1739899503.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/238448-1739899503.jpg?lm=4711",
+			"secundarias": [
+				"Extremo derecho",
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "7",
@@ -820,7 +876,10 @@
 				"club": "ALD",
 				"anio": 2023
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/836252-1739197758.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/836252-1739197758.jpg?lm=4711",
+			"secundarias": [
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "43",
@@ -850,7 +909,10 @@
 				"club": "BOC",
 				"anio": 2023
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/757175-1675100785.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/757175-1675100785.JPG?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "26",
@@ -881,7 +943,11 @@
 				"anio": 2022
 			},
 			"college": "Club Atlético Banfield",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/909789-1739197619.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/909789-1739197619.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "32",
@@ -912,7 +978,10 @@
 				"anio": 2017
 			},
 			"college": "Club Atlético Boca Juniors",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/480778-1493294367.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/480778-1493294367.jpg?lm=4711",
+			"secundarias": [
+				"Mediapunta"
+			]
 		},
 		{
 			"n": "29",
@@ -948,7 +1017,8 @@
 					"tipo": "brother",
 					"nombre": "Rodrigo Auzmendi"
 				}
-			]
+			],
+			"secundarias": []
 		},
 		{
 			"n": "19",
@@ -978,7 +1048,11 @@
 				"club": "BEL",
 				"anio": 2022
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/842808-1732804707.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/842808-1732804707.JPG?lm=4711",
+			"secundarias": [
+				"Extremo derecho",
+				"Mediapunta"
+			]
 		},
 		{
 			"n": "33",
@@ -1004,7 +1078,10 @@
 			"convocado": 32,
 			"ovr": 37,
 			"prospecto": true,
-			"college": "Club de Gimnasia y Esgrima La Plata"
+			"college": "Club de Gimnasia y Esgrima La Plata",
+			"secundarias": [
+				"Mediocentro"
+			]
 		}
 	]
 }

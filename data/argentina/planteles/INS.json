@@ -90,7 +90,8 @@
 				"dnk": 0,
 				"fg": 0,
 				"tp": 0
-			}
+			},
+			"secundarias": []
 		},
 		{
 			"n": "35",
@@ -120,7 +121,8 @@
 				"club": "INS",
 				"anio": 2019
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/717685-1771006783.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/717685-1771006783.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "6",
@@ -154,7 +156,8 @@
 			"sofascore": 7,
 			"capitan": true,
 			"rasgos": ["aereo"],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/376853-1771006860.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/376853-1771006860.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "26",
@@ -185,7 +188,8 @@
 				"anio": 2016
 			},
 			"sofascore": 6.95,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/407517-1771008059.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/407517-1771008059.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "30",
@@ -218,7 +222,11 @@
 			"rasgos": [
 				"tactico"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/216730-1771007813.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/216730-1771007813.png?lm=4711",
+			"secundarias": [
+				"Pivote",
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "22",
@@ -248,7 +256,11 @@
 				"club": "INS",
 				"anio": 2024
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1221014-1771006671.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1221014-1771006671.png?lm=4711",
+			"secundarias": [
+				"Lateral derecho",
+				"Pivote"
+			]
 		},
 		{
 			"n": "32",
@@ -278,7 +290,11 @@
 				"club": "RAF",
 				"anio": 2021
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/868503-1771006600.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/868503-1771006600.png?lm=4711",
+			"secundarias": [
+				"Lateral izquierdo",
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "3",
@@ -325,7 +341,11 @@
 				"drb": 57,
 				"pss": 54,
 				"reb": 55
-			}
+			},
+			"secundarias": [
+				"Interior izquierdo",
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "23",
@@ -355,7 +375,10 @@
 				"club": "GOD",
 				"anio": 2023
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/935331-1692106135.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/935331-1692106135.JPG?lm=4711",
+			"secundarias": [
+				"Interior izquierdo"
+			]
 		},
 		{
 			"n": "44",
@@ -406,7 +429,8 @@
 				"drb": 59,
 				"pss": 58,
 				"reb": 58
-			}
+			},
+			"secundarias": []
 		},
 		{
 			"n": "2",
@@ -436,7 +460,8 @@
 				"club": "VEL",
 				"anio": 2017
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/552628-1771007362.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/552628-1771007362.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "55",
@@ -469,7 +494,11 @@
 			"rasgos": [
 				"recuperador"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/486030-1771007353.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/486030-1771007353.png?lm=4711",
+			"secundarias": [
+				"Defensa central",
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "13",
@@ -499,7 +528,10 @@
 				"club": "ARG",
 				"anio": 2018
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/508134-1771007458.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/508134-1771007458.png?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "61",
@@ -518,7 +550,8 @@
 			"convocado": 9,
 			"ovr": 27,
 			"prospecto": true,
-			"college": "Instituto Atlético Central Córdoba"
+			"college": "Instituto Atlético Central Córdoba",
+			"secundarias": []
 		},
 		{
 			"n": "14",
@@ -542,7 +575,11 @@
 				"anio": 2020
 			},
 			"college": "Club Cerro Porteño",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/661223-1772567326.PNG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/661223-1772567326.PNG?lm=4711",
+			"secundarias": [
+				"Pivote",
+				"Mediocentro ofensivo"
+			]
 		},
 		{
 			"n": "5",
@@ -572,7 +609,10 @@
 				"club": "SLO",
 				"anio": 2018
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/480764-1771006975.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/480764-1771006975.png?lm=4711",
+			"secundarias": [
+				"Pivote"
+			]
 		},
 		{
 			"n": "10",
@@ -607,7 +647,11 @@
 				"larga distancia",
 				"habilidoso"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/843126-1771006681.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/843126-1771006681.png?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "15",
@@ -639,7 +683,8 @@
 			},
 			"college": "Club Atlético River Plate",
 			"sofascore": 7,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/990785-1771008460.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/990785-1771008460.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "21",
@@ -686,7 +731,11 @@
 				"drb": 66,
 				"pss": 73,
 				"reb": 43
-			}
+			},
+			"secundarias": [
+				"Interior izquierdo",
+				"Mediapunta"
+			]
 		},
 		{
 			"n": "8",
@@ -717,7 +766,11 @@
 				"anio": 2019
 			},
 			"college": "Club Atlético San Lorenzo de Almagro",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/538530-1771007797.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/538530-1771007797.png?lm=4711",
+			"secundarias": [
+				"Mediocentro ofensivo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "72",
@@ -751,7 +804,10 @@
 				"tipo": "Lesión en el muslo",
 				"partidos": 3
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1402952-1771008192.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1402952-1771008192.png?lm=4711",
+			"secundarias": [
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "25",
@@ -774,7 +830,10 @@
 			"lesion": {
 				"tipo": "Lesión muscular",
 				"partidos": 2
-			}
+			},
+			"secundarias": [
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "20",
@@ -808,7 +867,11 @@
 			"rasgos": [
 				"veloz"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/628879-1771007680.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/628879-1771007680.png?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "19",
@@ -839,7 +902,10 @@
 				"anio": 2020
 			},
 			"college": "Club Nacional de Football",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/970866-1720713871.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/970866-1720713871.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "17",
@@ -886,7 +952,8 @@
 				"drb": 57,
 				"pss": 52,
 				"reb": 49
-			}
+			},
+			"secundarias": []
 		},
 		{
 			"n": "7",
@@ -917,7 +984,11 @@
 				"anio": 2018
 			},
 			"college": "Universidad de Chile",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/534037-1771008368.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/534037-1771008368.png?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "9",
@@ -948,7 +1019,8 @@
 				"anio": 2014
 			},
 			"college": "Club Social y Deportivo Juventud Unida (Charata)",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/702259-1771006868.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/702259-1771006868.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "11",
@@ -979,7 +1051,8 @@
 				"anio": 2022
 			},
 			"college": "Football Club Internazionale Milano",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/538919-1771008408.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/538919-1771008408.png?lm=4711",
+			"secundarias": []
 		}
 	]
 }

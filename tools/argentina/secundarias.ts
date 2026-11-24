@@ -117,9 +117,10 @@ for (const b of bloques) {
 		const nombre = (j: any) => norm(`${j.nombre} ${j.apellido}`);
 		let js = d.jugadores.filter((j: any) => nombre(j) === norm(f.jugador));
 		if (js.length !== 1) {
-			// Por número y apellido (nombres de pila distintos)
+			// Por número y apellido (nombre de pila o apellido compuesto distintos:
+			// "Juan Pérez" = Juan José Pérez; "Matías Giménez" = Matías Giménez Rojas)
 			const ap = norm(f.jugador).split(" ").at(-1)!;
-			js = d.jugadores.filter((j: any) => j.n === f.n && nombre(j).endsWith(ap));
+			js = d.jugadores.filter((j: any) => j.n === f.n && nombre(j).split(" ").includes(ap));
 		}
 		if (js.length !== 1) {
 			console.log(`  ${f.jugador}: no está en el plantel (${js.length} coincidencias)`);

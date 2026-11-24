@@ -1,0 +1,161 @@
+Capturas del usuario del 24/11/2026 ("Composición de la plantilla según
+posiciones" de Transfermarkt). Orden de la escalera: ARG, LAN, GIM, INS, IND.
+
+# ARG
+TOTAL POR 3/0 LIB 0/0 CEN 6/0 LI 2/2 LD 4/4 PIV 1/2 MC 2/1 ID 1/1 II 0/2 MCO 5/6 EI 1/6 ED 0/7 MP 0/1 DEL ?/1
+25|Brayan Cortés|POR|
+12|Gonzalo Siri|POR|
+1|Agustín Mangiaut|POR|
+16|Francisco Álvarez|CEN|LD PIV
+23|Mateo Mendoza|CEN|LD
+6|Franco Vázquez|CEN|
+17|Franco Paredes|CEN|LD
+4|Érik Godoy|CEN|LD
+13|Santino Gianini|CEN|LI
+26|Claudio Bravo|LI|II
+20|Sebastián Prieto|LI|
+30|Alan Núñez|LD|
+22|Kevin Coronel|LD|
+3|Luciano Sánchez|LD|ID
+41|Santiago Silveira|LD|LI
+15|Kevin Gutiérrez|PIV|
+32|Gino Infantino|MC|MCO EI
+18|Federico Mancuello|MC|PIV MCO
+28|Joaquín Gho|ID|ED
+23|Hernán López Muñoz|MCO|EI ED
+11|Nicolás Oroz|MCO|EI ED
+21|Gabriel Florentín|MCO|MC
+5|Facundo Carrizo|MCO|
+36|Gastón Bouhier|MCO|II DEL
+29|Emiliano Viveros|EI|MCO ED
+27|Tomás Molina|DEL|EI ED
+48|Facundo Jainikoski|DEL|EI ED
+9|Gastón Verón|DEL|MP
+19|Matías Giménez|DEL|EI
+47|Diego Porcel|DEL|MCO
+35|Alan Alcaraz|DEL|MCO
+34|Ryoga Kida|DEL|MCO
+45|Benjamín Rey|DEL|ED
+
+# LAN
+TOTAL POR 2/0 LIB 0/0 CEN 5/2 LI 1/2 LD 2/1 PIV 4/2 MC 2/6 ID 1/1 II 1/2 MCO 2/1 EI 1/2 ED 2/1 MP 0/2 DEL 2/3
+26|Nahuel Losada|POR|
+1|Franco Petroli|POR|
+13|José Canale|CEN|LI
+35|Ronaldo Dejesús|CEN|
+4|Gonzalo Pérez|CEN|LD
+24|Carlos Izquierdoz|CEN|
+2|Luciano Romero|CEN|
+6|Sasha Marcich|LI|II EI
+33|Tomás Guidara|LD|CEN
+3|Nicolás Morgantini|LD|
+17|Agustín Medina|PIV|MC
+30|Agustín Cardozo|PIV|MC
+5|Felipe Peña Biafore|PIV|CEN
+15|Raúl Loaiza|PIV|MC
+27|Facundo Sánchez|MC|PIV
+39|Thiago Laplace|MC|PIV
+23|Ramiro Carrera|ID|MC II
+16|Matías Sepúlveda|II|LI MC
+10|Marcelino Moreno|MCO|MC EI
+8|Franco Watson|MCO|DEL
+77|Lucas Besozzi|EI|MCO ED
+11|Eduardo Salvio|ED|ID DEL
+38|Benjamín Acosta|ED|MP DEL
+19|Yoshan Valois|DEL|MP
+20|Allan Wlk|DEL|
+
+# GIM
+TOTAL POR 3/0 LIB 0/0 CEN 5/1 LI 2/1 LD 3/1 PIV 5/1 MC 1/6 ID 0/2 II 0/2 MCO 4/1 EI 2/2 ED 3/4 MP 0/2 DEL ?/3
+23|Nelson Insfrán|POR|
+15|Harlen Castillo|POR|
+27|Julián Kadijevic|POR|
+4|Renzo Giampaoli|CEN|LD
+21|Enzo Martínez|CEN|LI
+35|Juan Cortazzo|CEN|
+14|Gonzalo Errecalde|CEN|
+13|Germán Conti|CEN|
+24|Pedro Silva Torrejón|LI|II
+22|Matías Melluso|LI|
+25|Alexis Steimbach|LD|ID ED
+31|Bautista Barros Schelotto|LD|
+28|Fabricio Corbalán|LD|CEN
+10|Nicolás Barros Schelotto|PIV|MC MCO
+5|Ignacio Miramón|PIV|
+18|Mateo Seoane|PIV|MC
+39|Facundo Di Biasi|PIV|MC
+33|Pablo Aguiar|PIV|MC
+16|Augusto Max|MC|PIV
+8|Nacho Fernández|MCO|MC ID
+20|Juan Pérez|MCO|ED
+34|Leandro Mamut|MCO|MC
+42|Santiago Villarreal|MCO|
+11|Jeremías Merlo|EI|II
+17|Lucas Janson|EI|ED DEL
+7|Manuel Panaro|ED|DEL
+43|Maximiliano Zalazar|ED|EI
+26|Franco Torres|ED|EI DEL
+32|Marcelo Torres|DEL|MP
+29|Agustín Auzmendi|DEL|
+19|Agustín Colazo|DEL|ED MP
+
+# INS
+TOTAL POR 2/0 LIB 0/0 CEN 5/1 LI 2/1 LD 2/3 PIV 3/4 MC 2/2 ID 0/0 II 0/3 MCO 3/2 EI 3/5 ED 2/4 MP 0/1 DEL ?/2
+29|Marcos Ledesma|POR|
+35|Emanuel Sittaro|POR|
+6|Fernando Alarcón|CEN|
+26|Leonel Mosevich|CEN|
+30|Jonatan Galván|CEN|PIV MC
+22|Agustín Massaccesi|CEN|LD PIV
+32|Agustín Bravo|CEN|LI LD
+3|Diego Sosa|LI|II EI
+23|Andrés Meli|LI|II
+44|Giuliano Cerato|LD|
+2|Hernán de la Fuente|LD|
+55|Gustavo Abregú|PIV|CEN LD
+13|Juan Ignacio Méndez|PIV|MC
+61|Joaquín Medina|PIV|
+14|Wílder Viera|MC|PIV MCO
+5|Franco Moyano|MC|PIV
+10|Alex Luna|MCO|EI DEL
+15|Matías Gallardo|MCO|
+21|Jeremías Lázaro|MCO|II MP
+8|Jonás Acevedo|EI|MCO ED
+72|Luca Rafaelli|EI|ED
+25|Lorenzo Albarracín|EI|ED
+20|Jhon Córdoba|ED|EI DEL
+19|Lucas Sanseviero|ED|EI
+17|Matías Tissera|DEL|
+7|Nicolás Guerra|DEL|EI ED
+9|Facundo Suárez|DEL|
+11|Matías Fonseca|DEL|
+
+# IND
+TOTAL POR 3/0 LIB 0/0 CEN 4/1 LI 3/1 LD 2/0 PIV 2/0 MC 1/4 ID 0/0 II 0/2 MCO 4/3 EI 2/5 ED 3/5 MP 0/0 DEL 3/0
+77|Santiago Mele|POR|
+33|Rodrigo Rey|POR|
+1|Joaquín Blázquez|POR|
+35|Juan Miguel Arrayago|CEN|
+36|Sebastián Valdez|CEN|
+2|Franco Calderón|CEN|
+13|Juan Fedorco|CEN|
+22|Facundo Zabala|LI|II
+5|Nahuel Banegas|LI|CEN
+3|Jonathan De Irastorza|LI|
+4|Santiago Arias|LD|
+29|Leonardo Godoy|LD|
+32|David Martínez|PIV|
+23|Iván Marcone|PIV|MC
+37|Joel Medina|MC|
+14|Lautaro Millán|MCO|MC
+16|Mateo Pérez Curci|MCO|MC
+10|Luciano Cabral|MCO|MC
+24|Josias Palais|MCO|
+19|Matías Abaldo|EI|MCO ED
+-|Rodrigo Márquez|EI|II ED
+7|Santiago Montiel|ED|LI EI
+8|Maximiliano Meza|ED|MCO EI
+15|Imanol Machuca|ED|EI
+9|Iván Morales|DEL|EI ED
+6|Chimy Ávila|DEL|EI ED
+34|Felipe Tempone|DEL|MCO ED
