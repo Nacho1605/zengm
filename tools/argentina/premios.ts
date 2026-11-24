@@ -37,18 +37,21 @@ export const PESOS: Record<string, [number, number]> = {
 // grandes premios los ganan sobre todo los que atacan)
 // v2.24.4, con la temporada simulada de la v2.24.3: en el motor los
 // mediapuntas juntan muchos números (6 de los 10 primeros del Ballon d'Or) y
-// un arquero quedó 7.º. v2.24.5, con la segunda temporada: ningún nueve entre
-// los 10 primeros en ninguna de las dos (el motor les da poco PER), sube a 1,1
+// un arquero quedó 7.º. v2.24.6, calibrado con la liga exportada del usuario
+// (dos temporadas en la v2.24.5; las cuentas de calibrar.ts dan los mismos
+// puestos que el juego): con nueve 1,2, mediapunta 0,88 y arquero 0,6, los 10
+// primeros quedan mezclados (2026: 4 extremos, 3 mediapuntas, 2 nueves y un
+// pivote; 2027: 5 mediapuntas, 3 extremos y 2 nueves) y los ganadores no cambian
 export const PRESTIGIO: Record<string, number> = {
-	F: 1.1,
+	F: 1.2,
 	SF: 1,
-	PG: 0.92,
+	PG: 0.88,
 	SG: 0.96,
 	G: 0.92,
 	GF: 0.88,
 	FC: 0.85,
 	PF: 0.85,
-	C: 0.65,
+	C: 0.6,
 };
 const PUESTOS = Object.keys(PESOS);
 const FUERA = "-1000 + 0*gp";
@@ -115,7 +118,8 @@ export const PREMIOS = [
 	premio("DPOY", "Defender of the Year", "defense", {
 		formula: FUERA,
 		formulaByPos: porPuesto(
-			{ FC: 1, PF: 1, GF: 1.12, G: 0.85 },
+			// Pivote 0,75: con 0,85 Paredes igual ganó en 2026
+			{ FC: 1, PF: 1, GF: 1.12, G: 0.75 },
 			(_pos, factor) =>
 				`${factor} * ${participacion(2700, 1.5)} * (2*(dbpm + 3)/3 + 0.15*gs/max(gp, 1)) * (0.75 + 0.5*winp) + 0.25*seasonFraction*winp`,
 		),
@@ -124,7 +128,7 @@ export const PREMIOS = [
 		actAs: "roy",
 		rookie: true,
 		formula: temporada("SG", PRESTIGIO.SG!, 1800),
-		formulaByPos: porPuesto({ ...PRESTIGIO, C: 0.55 }, (pos, f) => temporada(pos, f, 1800)),
+		formulaByPos: porPuesto({ ...PRESTIGIO, C: 0.45 }, (pos, f) => temporada(pos, f, 1800)),
 	}),
 	premio("SUB", "Super Sub of the Year", "offense", {
 		bench: true,
@@ -139,7 +143,10 @@ export const PREMIOS = [
 	}),
 	premio("MIP", "Most Improved Player", "offense", {
 		mip: true,
-		formula: `${participacion(2000, 1)} * (per/15 + (obpm + dbpm + 3)/3 + 0.5)`,
+		// Mejora de nivel, no de minutos: el umbral bajo (600') hace que pasar de
+		// suplente a titular no cuente como progreso (en 2027 lo ganaba José
+		// Sosa, de 42 años, por haber jugado más)
+		formula: "min(1, gp*min/600)^0.5 * (per/15 + (obpm + dbpm + 3)/3)",
 	}),
 	premio("IRON", "Iron Man", "offense", {
 		formula: FUERA,
@@ -212,14 +219,14 @@ export const PREMIOS = [
 	premio("TSA", "Team of the Season: Attack", "offense", {
 		numTeams: 1,
 		formula: FUERA,
-		// Con +15% para los nueves salieron 4 en la primera temporada y 2 en la
-		// segunda; parejos, 3 y ninguno: con +10%, dos o tres en promedio
-		formulaByPos: porPuesto({ SF: 1, F: 1.1 }, temporada),
+		// Con +20%, dos nueves y tres extremos en las dos temporadas de la liga
+		// del usuario (con +10%, uno solo en 2026)
+		formulaByPos: porPuesto({ SF: 1, F: 1.2 }, temporada),
 	}),
 	premio("RTS", "Rookie Team of the Season", "offense", {
 		numTeams: 1,
 		rookie: true,
 		formula: temporada("SG", PRESTIGIO.SG!, 1800),
-		formulaByPos: porPuesto({ ...PRESTIGIO, C: 0.55 }, (pos, f) => temporada(pos, f, 1800)),
+		formulaByPos: porPuesto({ ...PRESTIGIO, C: 0.45 }, (pos, f) => temporada(pos, f, 1800)),
 	}),
 ];

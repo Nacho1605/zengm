@@ -1,8 +1,8 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026. Última versión: **v2.24.5**
-(`data/argentina/BBGM_Argentina_2026_v.2.24.5_futbol.json`, sha256
-`143779a648c3c71ebe0c6db7941b3a82465a94b2ae82b6e90ab71aa82cab33d1`): 22 de 30
+Estado al 24/11/2026. Última versión: **v2.24.6**
+(`data/argentina/BBGM_Argentina_2026_v.2.24.6_futbol.json`, sha256
+`417fba2da3e903bf6aca8adc8bbe986a63f6401320cc510f2ef2e90653e19c11`): 22 de 30
 equipos con plantel 2026 (el último, Platense, 36 jugadores), Rendimiento
 completo; fotos de los 21 primeros (las de Platense, pendientes: las pone el
 usuario en el juego); todo el archivo en la escala nueva de OVR (20 a 78) y
@@ -13,9 +13,12 @@ actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-0. **Gala de premios: cerrada por ahora** (el usuario: "la última revisión de
-   los Awards por el momento"). v2.24.5, calibrada con dos temporadas
-   simuladas por el usuario (capturas de las carreras de premios). Para una
+0. **Gala de premios: cerrada** (el usuario: último parche de premios antes de
+   Defensa y Justicia). v2.24.6, calibrada con la liga exportada del usuario
+   (dos temporadas en la v2.24.5): `tools/argentina/premios-calibracion/`
+   reproduce los puntajes del juego (mismos 5 primeros en cada premio) y
+   prueba variantes de pesos. Para recalibrar más adelante: pedir otra liga
+   exportada con temporadas jugadas. Para una
    liga ya empezada: `premios-para-importar.json` se importa en el juego
    (Award Settings → Import settings, con "Delete existing awards"); el
    nombre corto de las zonas no viaja en ese archivo. Observado en las
@@ -36,7 +39,7 @@ actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
    distancia por "la pegada"; Cozzani: reflejos por las tandas de penales);
    la lesión de Luciano Giménez (hombro, sin fecha: 4 partidos estimados).
    Fotos de Platense: el usuario las pone en el juego y manda la liga.
-2. **Próximo equipo (v2.25):** quedan BAN, DYJ, TIG, SAR, ALD, ATU, CCO y GEM;
+2. **Próximo equipo (v2.25): Defensa y Justicia** (decidido por el usuario). quedan BAN, DYJ, TIG, SAR, ALD, ATU, CCO y GEM;
    el orden lo decide el usuario (Claude sugirió Defensa y Justicia, 14.º,
    el mejor de la tabla entre los que faltan). Las secundarias de los 8 ya
    están en `secundarias-2026.json`; las copas, en `copas-2026.json`.
@@ -591,6 +594,19 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**24/11/2026 (v2.24.6).** Huella:
+`417fba2da3e903bf6aca8adc8bbe986a63f6401320cc510f2ef2e90653e19c11`. Último
+parche de premios: liga exportada del usuario con 2026 y 2027 simuladas en la
+v2.24.5 (no se importó nada: sin fotos ni cambios propios; los ratings
+cambiaron por la simulación). Las cuentas reproducen al juego. Cambios: nueve
+1,2, mediapunta 0,88, arquero 0,6 en los premios generales (10 primeros
+mezclados en los dos años; mismos ganadores); Defender: pivote 0,75 (Paredes
+ganaba en 2026); novatos: arquero 0,45; equipo de ataque: nueves 1,2 (dos
+nueves en los dos años); MIP: mejora de nivel, no de minutos (José Sosa, 42
+años, ganaba por jugar más; ahora Nicolás Fernández, BEL). Ganadores de los
+dos años con la v2.24.6, en `premios.md`. Contra la v2.24.5 solo cambian los
+premios.
+
 **24/11/2026 (v2.24.5).** Huella:
 `143779a648c3c71ebe0c6db7941b3a82465a94b2ae82b6e90ab71aa82cab33d1`. Segunda
 temporada simulada por el usuario (sobre la liga de la v2.24.3): nueve 1,1
@@ -1080,7 +1096,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.24.5.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.24.6.
 > Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
 > líneas que entendiste el estado, antes de seguir.
 
