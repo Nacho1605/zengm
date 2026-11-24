@@ -1,0 +1,167 @@
+Capturas del usuario del 24/11/2026 ("Composición de la plantilla según
+posiciones" de Transfermarkt). Orden de la escalera: HUR, TAL, RAC, BAR, SLO.
+
+# HUR
+TOTAL POR 3/0 LIB 0/0 CEN 4/0 LI 2/1 LD 3/1 PIV 3/1 MC 1/5 ID 2/4 II 1/2 MCO 2/4 EI 1/4 ED 2/6 MP 0/2 DEL 3/0
+32|Sebastián Meza|POR|
+1|Hernán Galíndez|POR|
+27|Nazareno Durán|POR|
+35|Máximo Palazzo|CEN|
+21|Hugo Nervo|CEN|LD
+6|Fabio Pereyra|CEN|
+22|Daniel Zabala|CEN|
+25|César Ibáñez|LI|II
+19|Leandro Lescano|LI|II
+2|Lucas Blondel|LD|ID
+4|Federico Vera|LD|
+34|Ignacio Campo|LD|ID
+5|Rodrigo Fernández Cedrés|PIV|MC
+20|Emmanuel Ojeda|PIV|MC
+41|Lautaro Mora|PIV|MC ID
+8|Leonardo Gil|MC|PIV MCO
+52|Facundo Kalinger|ID|MCO ED
+-|Santiago Luján|ID|MC MCO
+15|Facundo Waller|II|LI MC
+11|Thaiel Peralta|MCO|ED
+10|Óscar Romero|MCO|EI ED
+7|Óscar Cortés|EI|MCO ED
+17|Juan Bisanz|ED|EI MP
+49|Tomás Uribe|ED|ID EI
+9|Jordy Caicedo|DEL|
+33|Bruno Barticciotto|DEL|EI ED
+23|Ignacio Pussetto|DEL|ED MP
+
+# TAL
+TOTAL POR 2/0 LIB 0/0 CEN 6/0 LI 2/0 LD 3/1 PIV 4/2 MC 2/5 ID 0/2 II 0/2 MCO 3/1 EI 2/2 ED 3/2 MP 0/1 DEL 2/3
+32|Ezequiel Unsain|POR|
+1|Santino Barbi|POR|
+44|Santiago Fernández|CEN|
+6|Román Riquelme|CEN|PIV
+13|Valentín Fascendini|CEN|
+4|Matías Catalán|CEN|LD
+25|Thiago Baroni|CEN|
+35|Gonzalo Nuccio|CEN|
+3|Alexandro Maidana|LI|EI
+23|Gabriel Báez|LI|II
+20|Augusto Schott|LD|
+2|Timoteo Chamorro|LD|
+-|Tomás Olmos|LD|
+5|Matías Galarza|PIV|MC
+15|Juan Sforza|PIV|MC
+8|Federico Fattori|PIV|MC
+31|Bruno Trey|PIV|ID II
+26|Mateo Cáceres|MC|ID
+21|Matías Gómez|MC|PIV
+18|Franco Cristaldo|MCO|MC DEL
+30|Giovanni Baroni|MCO|MC ED
+39|Lautaro Ortiz|MCO|
+37|Rick|EI|ED
+11|Valentín Depietri|EI|MCO DEL
+7|Diego Valoyes|ED|EI
+24|Ignacio Alastra|ED|
+36|Emiliano Chiavassa|ED|DEL
+9|Agustín Álvarez|DEL|MP
+49|Valentín Dávila|DEL|
+
+# RAC
+TOTAL POR 2/0 LIB 0/0 CEN 5/1 LI 2/0 LD 2/1 PIV 4/4 MC 1/4 ID 0/2 II 0/2 MCO 5/3 EI 2/5 ED 1/5 MP 0/2 DEL 3/1
+25|Facundo Cambeses|POR|
+30|Matías Tagliamonte|POR|
+3|Marco Di Césare|CEN|PIV
+23|Nazareno Colombo|CEN|LD
+2|Matías Pérez|CEN|
+38|Mateo Martínez|CEN|
+43|Gonzalo Escudero|CEN|PIV
+19|Ignacio Rodríguez|LI|II
+18|Alfonso Espino|LI|EI
+4|Ezequiel Cannavo|LD|ID
+14|Juan Barinaga|LD|
+33|Leonel Pérez|PIV|MC
+16|Ulises Ortegoza|PIV|MC MCO
+5|Matías Kranevitter|PIV|CEN MC
+8|Alan Forneris|PIV|
+20|Gastón Lodico|MC|PIV MCO
+21|Valentín Carboni|MCO|ED MP
+10|Matko Miljevic|MCO|EI
+11|Matías Zaracho|MCO|EI ED
+24|Adrián Fernández|MCO|ID II
+46|Alejandro Tello|MCO|PIV MC
+17|Tomás Conechny|EI|ED MP
+7|Duván Vergara|EI|MCO ED
+27|Leandro Córdoba|ED|EI DEL
+9|Adrián Martínez|DEL|
+32|Lautaro Díaz|DEL|EI ED
+22|Elías Torres|DEL|
+
+# BAR
+TOTAL POR 3/0 LIB 0/0 CEN 6/2 LI 2/2 LD 2/0 PIV 4/3 MC 2/6 ID 0/4 II 0/2 MCO 6/1 EI 0/4 ED 2/3 MP 0/0 DEL 7/2
+30|Marcelo Miño|POR|
+1|Juan Espínola|POR|
+38|Juan Pablo Insúa|POR|
+14|Kevin Jappert|CEN|
+31|Nicolás Demartini|CEN|
+2|Nicolás Capraro|CEN|
+15|Yonatthan Rak|CEN|
+32|Fernando Tobio|CEN|
+37|Gastón Campi|CEN|LI PIV
+6|Rodrigo Insúa|LI|II EI
+17|Elías Pereyra|LI|
+4|Damián Martínez|LD|ID
+13|Rafael Barrios|LD|CEN LI
+35|Esteban Rolón|PIV|MC
+25|Yeison Gordillo|PIV|MC ID
+5|Dardo Miloc|PIV|CEN MC
+19|Carlos Arce|PIV|
+16|Iván Guaraz|MC|
+79|Maximiliano Puig|MC|PIV
+8|Tomás Porra|MCO|
+33|Gonzalo Maroni|MCO|EI ED
+10|Iván Tapia|MCO|PIV MC
+28|Rodrigo Bogarín|MCO|ID II
+18|Manuel Duarte|MCO|MC ID
+36|Tomás Lavezzi|MCO|
+11|Norberto Briasco|ED|EI DEL
+24|Enzo Taborda|ED|MCO DEL
+77|Facundo Bruera|DEL|
+9|Gonzalo Morales|DEL|
+20|Jhonatan Candia|DEL|EI ED
+34|Nicolás Orsini|DEL|
+7|Juan Barbieri|DEL|
+23|Wilfredo Rivera|DEL|MC ED
+21|Lucas Gamba|DEL|
+
+# SLO
+TOTAL POR 3/0 LIB 0/0 CEN 7/2 LI 2/0 LD 2/3 PIV 2/2 MC 6/1 ID 0/4 II 0/2 MCO 2/3 EI 1/5 ED 3/2 MP 0/1 DEL ?/1
+25|José Devecchi|POR|
+20|Facundo Altamirano|POR|
+1|Mateo Clemente|POR|
+23|Gastón Hernández|CEN|
+36|Daniel Herrera|CEN|LD
+2|Danilo Arboleda|CEN|
+19|Emiliano Amor|CEN|
+42|Franco Lorenzon|CEN|LD
+16|Guzmán Corujo|CEN|
+35|Alejo Córdoba|CEN|
+3|Teo Rodríguez Pagano|LI|
+6|Mathías De Ritis|LI|II
+32|Ezequiel Herrera|LD|CEN
+30|Nahuel Arias|LD|
+5|Ignacio Perruzzi|PIV|
+24|Nicolás Tripichio|PIV|LD MC
+27|Martín Río|MC|CEN
+26|Gonzalo Abrego|MC|PIV ID
+8|Manuel Insaurralde|MC|PIV
+15|Mauricio Cardillo|MC|ID
+13|Juan Rattalino|MC|ID II
+62|Gonzalo Alassia|MC|MCO
+10|Facundo Gulli|MCO|
+38|Facundo Farías|MCO|EI DEL
+28|Nahuel Barrios|EI|MCO
+14|Agustín Ladstatter|ED|MCO EI
+22|Juan Pablo Álvarez|ED|ID EI
+7|Ezequiel Cerutti|ED|EI MP
+9|Alexis Cuello|DEL|EI ED
+29|Rodrigo Auzmendi|DEL|
+21|Gustavo del Prete|DEL|ED
+18|Diego Herazo|DEL|
+-|Branco Salinardi|DEL|

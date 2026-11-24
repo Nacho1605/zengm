@@ -22,10 +22,11 @@ actualizada, para anotar OVR y rasgos (con los defectos en rojo)
 2. **Posiciones secundarias** (idea del usuario, 24/11; aceptado: 20–25% sin
    cambiar el OVR, mismo peso para cada secundaria; Belgrano "funcionó de
    maravilla"): en la v2.23.10, BEL y RIV. **Tanda 1 (BOC, ROS, EST, INR,
-   VEL) y tanda 2 (ARG, LAN, GIM, INS, IND) ya están en los planteles, sin
-   versión armada** (el usuario: guardar las tandas y armar un superparche
-   al final). Faltan 9, en el orden de la escalera (once): HUR, TAL, RAC,
-   BAR, SLO (tanda 3) y NOB, UNI, RIE, ERC (tanda 4). Cada tanda:
+   VEL), tanda 2 (ARG, LAN, GIM, INS, IND) y tanda 3 (HUR, TAL, RAC, BAR,
+   SLO) ya están en los planteles, sin versión armada** (el usuario:
+   guardar las tandas y armar un superparche al final). Falta la tanda 4:
+   NOB, UNI, RIE, ERC. Duda: Peralta (HUR) es "Thiael" en el plantel y
+   "Thaiel" en la captura de secundarias (se le preguntó al usuario). Cada tanda:
    transcribir a `secundarias/tanda-N.txt`, `secundarias.ts`, revisar los
    avisos, commit. Al terminar: armar la versión (superparche), comparar
    con la v2.23.10 (ningún OVR cambia), regenerar la escalera y mandarla.
@@ -573,6 +574,11 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**24/11/2026 (sin versión): tanda 3 de secundarias.** HUR, TAL, RAC, BAR y
+SLO (`secundarias/tanda-3.txt`; las cinco coinciden con su fila "Total";
+nadie falta y los puestos coinciden). Prueba de armado con las tandas 1 a 3:
+257 jugadores cambian de ratings, ningún OVR.
+
 **24/11/2026 (sin versión): tanda 2 de secundarias.** ARG, LAN, GIM, INS e
 IND (`secundarias/tanda-2.txt`; las cinco coinciden con su fila "Total").
 Nombres distintos en la captura: Matías Giménez (Giménez Rojas, ARG), Juan

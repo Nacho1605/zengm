@@ -61,7 +61,8 @@
 				"club": "HUR",
 				"anio": 2021
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/839030-1755534201.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/839030-1755534201.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "1",
@@ -96,7 +97,8 @@
 			"rasgos": [
 				"achique"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/77127-1755533077.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/77127-1755533077.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "27",
@@ -135,7 +137,8 @@
 				"dnk": 0,
 				"fg": 0,
 				"tp": 0
-			}
+			},
+			"secundarias": []
 		},
 		{
 			"n": "35",
@@ -165,7 +168,8 @@
 				"club": "HUR",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1225847-1769438999.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1225847-1769438999.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "21",
@@ -200,7 +204,10 @@
 			"rasgos": [
 				"potente"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/107503-1755534508.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/107503-1755534508.png?lm=4711",
+			"secundarias": [
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "6",
@@ -235,7 +242,8 @@
 			"rasgos": [
 				"recuperador"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/610248-1755534929.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/610248-1755534929.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "22",
@@ -258,7 +266,8 @@
 				"club": "RIV",
 				"anio": 2024
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1203749-1755534872.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1203749-1755534872.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "25",
@@ -288,7 +297,10 @@
 				"club": "HUR",
 				"anio": 2021
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/674391-1755535385.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/674391-1755535385.jpg?lm=4711",
+			"secundarias": [
+				"Interior izquierdo"
+			]
 		},
 		{
 			"n": "19",
@@ -318,7 +330,10 @@
 				"club": "HUR",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1174823-1755534992.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1174823-1755534992.jpg?lm=4711",
+			"secundarias": [
+				"Interior izquierdo"
+			]
 		},
 		{
 			"n": "2",
@@ -351,7 +366,10 @@
 			"rasgos": [
 				"tactico"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/503348-1739896937.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/503348-1739896937.jpg?lm=4711",
+			"secundarias": [
+				"Interior derecho"
+			]
 		},
 		{
 			"n": "4",
@@ -381,7 +399,8 @@
 				"club": "UNI",
 				"anio": 2019
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/829967-1721143398.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/829967-1721143398.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "34",
@@ -411,7 +430,10 @@
 				"club": "HUR",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1225538-1755534669.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1225538-1755534669.jpg?lm=4711",
+			"secundarias": [
+				"Interior derecho"
+			]
 		},
 		{
 			"n": "5",
@@ -443,7 +465,10 @@
 			},
 			"college": "Danubio Fútbol Club",
 			"sofascore": 6.9,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/458047-1721743786.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/458047-1721743786.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "20",
@@ -473,7 +498,10 @@
 				"club": "ROS",
 				"anio": 2019
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/471657-1755535610.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/471657-1755535610.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "41",
@@ -503,7 +531,11 @@
 				"club": "HUR",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1299759-1755535590.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1299759-1755535590.png?lm=4711",
+			"secundarias": [
+				"Mediocentro",
+				"Interior derecho"
+			]
 		},
 		{
 			"n": "8",
@@ -538,7 +570,11 @@
 			"rasgos": [
 				"pulmon"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/125907-1755536204.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/125907-1755536204.jpg?lm=4711",
+			"secundarias": [
+				"Pivote",
+				"Mediocentro ofensivo"
+			]
 		},
 		{
 			"n": "52",
@@ -568,7 +604,11 @@
 				"club": "HUR",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1299661-1769438947.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1299661-1769438947.png?lm=4711",
+			"secundarias": [
+				"Mediocentro ofensivo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "42",
@@ -595,7 +635,11 @@
 				"tipo": "Linfoma difuso de células B grandes",
 				"partidos": 60
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1005166-1681076170.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1005166-1681076170.JPG?lm=4711",
+			"secundarias": [
+				"Mediocentro",
+				"Mediocentro ofensivo"
+			]
 		},
 		{
 			"n": "15",
@@ -627,7 +671,11 @@
 			},
 			"college": "Club Plaza Colonia de Deportes",
 			"sofascore": 7.07,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/322696-1755535526.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/322696-1755535526.png?lm=4711",
+			"secundarias": [
+				"Lateral izquierdo",
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "11",
@@ -657,7 +705,10 @@
 				"club": "HUR",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1299761-1769438766.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1299761-1769438766.png?lm=4711",
+			"secundarias": [
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "10",
@@ -697,7 +748,11 @@
 			"rasgos": [
 				"pase"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/217886-1646343469.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/217886-1646343469.JPG?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "7",
@@ -728,7 +783,11 @@
 				"anio": 2022
 			},
 			"college": "Millonarios Fútbol Club",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/975689-1760543706.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/975689-1760543706.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro ofensivo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "17",
@@ -758,7 +817,11 @@
 				"club": "ATL",
 				"anio": 2021
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/866061-1755536767.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/866061-1755536767.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Mediapunta"
+			]
 		},
 		{
 			"n": "49",
@@ -788,7 +851,11 @@
 				"club": "HUR",
 				"anio": 2026
 			},
-			"imgURL": "https://i.imgur.com/s2bqHEB.png"
+			"imgURL": "https://i.imgur.com/s2bqHEB.png",
+			"secundarias": [
+				"Interior derecho",
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "9",
@@ -823,7 +890,8 @@
 				"aereo",
 				"potente"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/360412-1760543461.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/360412-1760543461.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "33",
@@ -857,7 +925,11 @@
 			"rasgos": [
 				"habilidoso"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/737920-1771862665.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/737920-1771862665.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "23",
@@ -891,7 +963,11 @@
 			"rasgos": [
 				"goleador"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/283528-1630653500.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/283528-1630653500.jpg?lm=4711",
+			"secundarias": [
+				"Extremo derecho",
+				"Mediapunta"
+			]
 		}
 	]
 }

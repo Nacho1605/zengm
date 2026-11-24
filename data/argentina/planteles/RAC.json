@@ -73,7 +73,8 @@
 			"rasgos": [
 				"reflejos"
 			],
-			"sofascore": 6.82
+			"sofascore": 6.82,
+			"secundarias": []
 		},
 		{
 			"n": "30",
@@ -102,7 +103,8 @@
 				"club": "RAF",
 				"anio": 2019
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/552638-1790685739.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/552638-1790685739.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "3",
@@ -135,7 +137,10 @@
 				"tipo": "Fractura de peroné",
 				"partidos": 7
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/839029-1724348267.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/839029-1724348267.png?lm=4711",
+			"secundarias": [
+				"Pivote"
+			]
 		},
 		{
 			"n": "23",
@@ -164,7 +169,10 @@
 				"club": "EST",
 				"anio": 2019
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/688207-1724348316.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/688207-1724348316.png?lm=4711",
+			"secundarias": [
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "2",
@@ -194,7 +202,8 @@
 				"club": "LAN",
 				"anio": 2020
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/744416-1772566334.PNG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/744416-1772566334.PNG?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "38",
@@ -221,7 +230,8 @@
 			"ovr": 45,
 			"prospecto": true,
 			"college": "Racing Club",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1231193-1762504543.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1231193-1762504543.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "43",
@@ -250,7 +260,10 @@
 				"club": "RAC",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1119049-1724351559.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1119049-1724351559.png?lm=4711",
+			"secundarias": [
+				"Pivote"
+			]
 		},
 		{
 			"n": "19",
@@ -279,7 +292,10 @@
 				"club": "BAN",
 				"anio": 2023
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/881014-1752787989.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/881014-1752787989.jpg?lm=4711",
+			"secundarias": [
+				"Interior izquierdo"
+			]
 		},
 		{
 			"n": "18",
@@ -310,7 +326,10 @@
 				"anio": 2014
 			},
 			"college": "Club Nacional de Football",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/311044-1635328827.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/311044-1635328827.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "4",
@@ -340,7 +359,10 @@
 				"anio": 2024
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/844791-1770650962.jpg?lm=4711",
-			"sofascore": 6.83
+			"sofascore": 6.83,
+			"secundarias": [
+				"Interior derecho"
+			]
 		},
 		{
 			"n": "14",
@@ -370,7 +392,8 @@
 				"club": "BEL",
 				"anio": 2019
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/701491-1739896884.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/701491-1739896884.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "33",
@@ -400,7 +423,10 @@
 				"club": "HUR",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/839031-1755536662.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/839031-1755536662.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "16",
@@ -430,7 +456,11 @@
 				"club": "AND",
 				"anio": 2019
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/654814-1771860458.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/654814-1771860458.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro",
+				"Mediocentro ofensivo"
+			]
 		},
 		{
 			"n": "5",
@@ -460,7 +490,11 @@
 				"club": "RIV",
 				"anio": 2012
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/240900-1693315007.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/240900-1693315007.png?lm=4711",
+			"secundarias": [
+				"Defensa central",
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "8",
@@ -493,7 +527,8 @@
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 30
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1240382-1752788096.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1240382-1752788096.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "20",
@@ -524,7 +559,11 @@
 				"anio": 2018
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/563878-1771007046.png?lm=4711",
-			"sofascore": 7.1
+			"sofascore": 7.1,
+			"secundarias": [
+				"Pivote",
+				"Mediocentro ofensivo"
+			]
 		},
 		{
 			"n": "21",
@@ -560,6 +599,10 @@
 					"tipo": "brother",
 					"nombre": "Franco Carboni"
 				}
+			],
+			"secundarias": [
+				"Extremo derecho",
+				"Mediapunta"
 			]
 		},
 		{
@@ -592,6 +635,9 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/632797-1755536194.jpg?lm=4711",
 			"rasgos": [
 				"habilidoso"
+			],
+			"secundarias": [
+				"Extremo izquierdo"
 			]
 		},
 		{
@@ -624,6 +670,10 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/480774-1752788171.jpg?lm=4711",
 			"rasgos": [
 				"gambeta"
+			],
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
 			]
 		},
 		{
@@ -653,7 +703,11 @@
 				"club": "STE",
 				"anio": 2021
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/877208-1752788304.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/877208-1752788304.jpg?lm=4711",
+			"secundarias": [
+				"Interior derecho",
+				"Interior izquierdo"
+			]
 		},
 		{
 			"n": "46",
@@ -682,7 +736,11 @@
 				"club": "RAC",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1231222-1762504846.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1231222-1762504846.jpg?lm=4711",
+			"secundarias": [
+				"Pivote",
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "17",
@@ -712,7 +770,11 @@
 				"anio": 2018
 			},
 			"college": "Portland Timbers",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/401571-1752788547.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/401571-1752788547.jpg?lm=4711",
+			"secundarias": [
+				"Extremo derecho",
+				"Mediapunta"
+			]
 		},
 		{
 			"n": "7",
@@ -745,6 +807,10 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/413658-1752788468.jpg?lm=4711",
 			"rasgos": [
 				"veloz"
+			],
+			"secundarias": [
+				"Mediocentro ofensivo",
+				"Extremo derecho"
 			]
 		},
 		{
@@ -776,7 +842,11 @@
 				"anio": 2020
 			},
 			"college": "Sociedad Sportiva Devoto",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1515981-1790685866.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1515981-1790685866.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "9",
@@ -813,7 +883,8 @@
 			"rasgos": [
 				"goleador",
 				"potente"
-			]
+			],
+			"secundarias": []
 		},
 		{
 			"n": "32",
@@ -846,6 +917,10 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/720294-1774482394.jpg?lm=4711",
 			"rasgos": [
 				"gambeta"
+			],
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
 			]
 		},
 		{
@@ -875,7 +950,8 @@
 				"club": "ALD",
 				"anio": 2023
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1014363-1752788658.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1014363-1752788658.jpg?lm=4711",
+			"secundarias": []
 		}
 	]
 }
