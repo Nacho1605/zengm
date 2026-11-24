@@ -96,7 +96,15 @@ td.ovr { font-family: var(--display); font-weight: 700; font-size: 1.2rem; }
 .marca.cap { color: var(--accent); border-color: var(--accent); }
 .marca.dos { color: var(--fg); border-color: var(--muted); background: var(--rung); }
 .equipo { display: inline-flex; align-items: center; gap: 6px; }
-.rasgos { color: var(--muted); font-size: 0.82rem; text-align: left; white-space: normal; min-width: 120px; }
+.rasgos { color: var(--muted); font-size: 0.82rem; text-align: left; white-space: normal; min-width: 190px; }
+.rasgos.cambiado { background: var(--accent-soft); }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.chip { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; padding: 0 0 0 7px; font-size: 0.8rem; color: var(--fg); background: var(--surface); white-space: nowrap; }
+.chip.nuevo { border-color: var(--accent); }
+.chip .nom { font: inherit; border: 0; background: none; color: inherit; cursor: pointer; padding: 1px 0; }
+.chip .x { font: inherit; border: 0; background: none; color: var(--muted); cursor: pointer; padding: 1px 6px; }
+.quitado { text-decoration: line-through; color: var(--muted); font-size: 0.8rem; }
+.add-rasgo { font: inherit; font-size: 0.78rem; padding: 1px 2px; border: 1px dashed var(--line); border-radius: 999px; background: transparent; color: var(--muted); max-width: 8em; }
 .vacio { color: var(--muted); }
 td.tuyo input {
 	width: 4.2em; font: inherit; font-family: var(--display); font-weight: 700; font-size: 1.05rem; text-align: center; padding: 3px 4px;
@@ -153,6 +161,7 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 		<span><span class="marca cap">C</span> capitán</span>
 		<span><span class="marca">ª</span> ratings tuyos</span>
 		<span>Tit. = partidos de titular · % = de los minutos de su equipo actual</span>
+		<span>Rasgos: tocá el nombre para alternar la versión fuerte (+), la × para quitarlo y el menú para agregar</span>
 	</div>
 
 	<div class="tabla-caja">
@@ -164,13 +173,21 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 
 	<section class="panel" aria-label="Tus cambios">
 		<div class="panel-cab">
-			<h2>Tus cambios <span id="cuantos" class="label"></span></h2>
+			<h2>Cambios de OVR <span id="cuantos" class="label"></span></h2>
 			<div class="botones">
-				<button class="btn" id="copiar" type="button">Copiar la lista</button>
+				<button class="btn" id="copiar" type="button" data-lista="lista">Copiar la lista</button>
 				<button class="btn sec" id="borrar" type="button">Borrar todo</button>
 			</div>
 		</div>
 		<pre id="lista">Todavía no anotaste ningún cambio.</pre>
+		<div class="panel-cab">
+			<h2>Cambios de rasgos <span id="cuantosR" class="label"></span></h2>
+			<div class="botones">
+				<button class="btn" id="copiarR" type="button" data-lista="listaR">Copiar la lista</button>
+				<button class="btn sec" id="borrarR" type="button">Borrar todo</button>
+			</div>
+		</div>
+		<pre id="listaR">Todavía no cambiaste ningún rasgo.</pre>
 		<p class="nota" id="aviso">Lo que anotás queda guardado en este navegador mientras no lo borres.</p>
 	</section>
 </div>
@@ -204,6 +221,31 @@ let anotados = {};
 const CLAVE = "escalera-anotados-v1";
 try { anotados = JSON.parse(localStorage.getItem(CLAVE) || "{}") || {}; } catch { anotados = {}; }
 const guardar = () => { try { localStorage.setItem(CLAVE, JSON.stringify(anotados)); } catch {} };
+// Rasgos: id -> lista final que quiere el usuario
+let anotRasgos = {};
+const CLAVE_R = "escalera-rasgos-v1";
+try { anotRasgos = JSON.parse(localStorage.getItem(CLAVE_R) || "{}") || {}; } catch { anotRasgos = {}; }
+const guardarR = () => { try { localStorage.setItem(CLAVE_R, JSON.stringify(anotRasgos)); } catch {} };
+const rasgosDe = (j) => anotRasgos[id(j)] ?? j.r;
+const base = (r) => r.replace(/\+$/, "");
+const ABREV = { "Portero": "POR", "Líbero": "LIB", "Defensa central": "CEN", "Lateral izquierdo": "LI", "Lateral derecho": "LD", "Pivote": "PIV", "Mediocentro": "MC", "Interior derecho": "ID", "Interior izquierdo": "II", "Mediocentro ofensivo": "MCO", "Mediapunta": "MP", "Extremo izquierdo": "EI", "Extremo derecho": "ED", "Delantero centro": "DEL", "Segundo delantero": "SD" };
+function setRasgos(rid, lista) {
+	const j = DATOS.jugadores.find((x) => id(x) === rid);
+	const orden = (xs) => xs.slice().sort().join("|");
+	if (orden(lista) === orden(j.r)) delete anotRasgos[rid]; else anotRasgos[rid] = lista;
+	guardarR();
+	render();
+}
+function celdaRasgos(j) {
+	const fin = rasgosDe(j);
+	const rid = esc(id(j));
+	const chips = fin.map((r) => `<span class="chip${j.r.includes(r) ? "" : " nuevo"}"><button class="nom" type="button" data-alternar="${esc(r)}" data-rid="${rid}" title="Alternar la versión fuerte (+)">${esc(r)}</button><button class="x" type="button" data-quitar="${esc(r)}" data-rid="${rid}" aria-label="Quitar ${esc(r)}">×</button></span>`).join("");
+	const quitados = j.r.filter((r) => !fin.includes(r)).map((r) => `<span class="quitado">${esc(r)}</span>`).join("");
+	const usados = new Set(fin.map(base));
+	const opciones = (DATOS.rasgos || []).filter((x) => (j.g === "ARQ" ? x.arquero !== false : !x.arquero) && !usados.has(x.k)).map((x) => `<option value="${esc(x.k)}">${esc(x.k)}</option>`).join("");
+	const sel = opciones ? `<select class="add-rasgo" data-agregar="1" data-rid="${rid}" aria-label="Agregar rasgo a ${esc(nombreCorto(j))}"><option value="">+ rasgo</option>${opciones}</select>` : "";
+	return `<td class="rasgos${anotRasgos[id(j)] ? " cambiado" : ""}"><div class="chips">${chips}${quitados}${sel}</div></td>`;
+}
 const id = (j) => `${j.eq}|${j.n}|${j.a}`;
 const nombreCorto = (j) => (j.n ? `${j.n} ${j.a}` : j.a);
 const valor = (v) => v == null ? "–" : v >= 1e6 ? `${(v / 1e6).toLocaleString("es-AR", { maximumFractionDigits: 2 })} M€` : `${Math.round(v / 1000)} mil €`;
@@ -221,7 +263,7 @@ function filas() {
 	if (estado.grupo !== "TODOS") xs = xs.filter((j) => j.g === estado.grupo);
 	if (estado.equipo) xs = xs.filter((j) => j.eq === estado.equipo);
 	if (!estado.prospectos) xs = xs.filter((j) => !j.pros);
-	if (estado.solo) xs = xs.filter((j) => anotados[id(j)] != null);
+	if (estado.solo) xs = xs.filter((j) => anotados[id(j)] != null || anotRasgos[id(j)]);
 	if (estado.buscar) {
 		const q = estado.buscar.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 		xs = xs.filter((j) => nombreCorto(j).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().includes(q));
@@ -231,7 +273,7 @@ function filas() {
 			case "nombre": return j.a + " " + j.n;
 			case "eq": return equipoDe(j.eq).pos;
 			case "ga90": return j.min >= 90 ? ((j.gol + (j.as ?? 0)) / j.min) * 90 : -1;
-			case "rasgos": return j.r.join(",");
+			case "rasgos": return rasgosDe(j).join(",");
 			case "tuyo": return anotados[id(j)] ?? -1;
 			default: return j[estado.orden] ?? -1;
 		}
@@ -285,7 +327,7 @@ function render() {
 		const tuyo = anotados[id(j)];
 		html += `<tr>
 			<td class="ovr">${j.ovr}${delta}</td>
-			<td class="izq"><span class="nombre">${esc(nombreCorto(j))}</span>${marcas}<br><span class="pos">${esc(j.pos)}${j.pie && j.g === "CEN" ? " · " + esc(j.pie.toLowerCase()) : ""}</span></td>
+			<td class="izq"><span class="nombre">${esc(nombreCorto(j))}</span>${marcas}<br><span class="pos">${esc(j.pos)}${j.pie && j.g === "CEN" ? " · " + esc(j.pie.toLowerCase()) : ""}${j.sec && j.sec.length ? " · también " + esc(j.sec.map((x) => ABREV[x] || x).join(", ")) : ""}</span></td>
 			<td class="izq"><span class="equipo">${escudo(e)}${j.eq}<span class="pos">${e.pos}.º</span></span></td>
 			<td>${j.edad}</td>
 			<td>${j.pj}${j.otros.length ? `<br><span class="pos">${j.pjClub} + ${j.otros.map((o) => o.pj).join(" + ")}</span>` : ""}</td>
@@ -298,7 +340,7 @@ function render() {
 			<td>${num(j.ppp, 2)}</td>
 			<td>${valor(j.val)}</td>
 			<td>${j.sofa ? num(j.sofa, 2) : "–"}</td>
-			<td class="rasgos">${esc(j.r.join(", "))}</td>
+			${celdaRasgos(j)}
 			<td class="tuyo"><input type="number" inputmode="numeric" min="1" max="99" id="t-${esc(id(j)).replace(/[^\w-]/g, "_")}" data-id="${esc(id(j))}" value="${tuyo ?? ""}" placeholder="${j.ovr}" class="${tuyo != null && tuyo !== j.ovr ? "cambiado" : ""}" aria-label="Tu OVR para ${esc(nombreCorto(j))}"></td>
 		</tr>`;
 	}
@@ -315,6 +357,16 @@ function renderLista() {
 	document.getElementById("lista").textContent = cambios.length
 		? cambios.map((j) => `${j.eq} ${nombreCorto(j)}: ${j.ovr} → ${anotados[id(j)]}`).join("\n")
 		: "Todavía no anotaste ningún cambio.";
+	const cr = DATOS.jugadores.filter((j) => anotRasgos[id(j)]).sort((a, b) => a.eq.localeCompare(b.eq) || b.ovr - a.ovr);
+	document.getElementById("cuantosR").textContent = cr.length ? `· ${cr.length}` : "";
+	document.getElementById("listaR").textContent = cr.length
+		? cr.map((j) => {
+			const fin = anotRasgos[id(j)];
+			const mas = fin.filter((r) => !j.r.includes(r)).map((r) => "+ " + r);
+			const menos = j.r.filter((r) => !fin.includes(r)).map((r) => "− " + r);
+			return `${j.eq} ${nombreCorto(j)}: ${[...mas, ...menos].join(", ")}`;
+		}).join("\n")
+		: "Todavía no cambiaste ningún rasgo.";
 }
 
 document.addEventListener("click", (ev) => {
@@ -327,6 +379,16 @@ document.addEventListener("click", (ev) => {
 		render();
 		return;
 	}
+	const q = ev.target.closest("[data-quitar]");
+	if (q) { const j = DATOS.jugadores.find((x) => id(x) === q.dataset.rid); setRasgos(q.dataset.rid, rasgosDe(j).filter((r) => r !== q.dataset.quitar)); return; }
+	const al = ev.target.closest("[data-alternar]");
+	if (al) {
+		const j = DATOS.jugadores.find((x) => id(x) === al.dataset.rid);
+		const r = al.dataset.alternar;
+		const otro = r.endsWith("+") ? r.slice(0, -1) : r + "+";
+		setRasgos(al.dataset.rid, rasgosDe(j).map((x) => (x === r ? otro : x)));
+		return;
+	}
 	const th = ev.target.closest("th[data-k]");
 	if (th) {
 		const c = COLS.find((x) => x.k === th.dataset.k);
@@ -335,6 +397,13 @@ document.addEventListener("click", (ev) => {
 	}
 });
 document.getElementById("cuerpo").addEventListener("change", (ev) => {
+	const ag = ev.target.closest("select[data-agregar]");
+	if (ag) {
+		if (!ag.value) return;
+		const j = DATOS.jugadores.find((x) => id(x) === ag.dataset.rid);
+		setRasgos(ag.dataset.rid, [...rasgosDe(j), ag.value]);
+		return;
+	}
 	const inp = ev.target.closest("input[data-id]");
 	if (!inp) return;
 	const v = inp.value.trim() === "" ? null : Math.round(Number(inp.value));
@@ -354,13 +423,19 @@ document.getElementById("borrar").addEventListener("click", () => {
 	if (b.dataset.confirmar !== "1") { b.dataset.confirmar = "1"; b.textContent = "¿Seguro? Tocá de nuevo"; setTimeout(() => { b.dataset.confirmar = ""; b.textContent = "Borrar todo"; }, 3000); return; }
 	anotados = {}; guardar(); b.dataset.confirmar = ""; b.textContent = "Borrar todo"; render();
 });
-document.getElementById("copiar").addEventListener("click", () => {
-	const texto = document.getElementById("lista").textContent;
+document.getElementById("borrarR").addEventListener("click", () => {
+	const b = document.getElementById("borrarR");
+	if (b.dataset.confirmar !== "1") { b.dataset.confirmar = "1"; b.textContent = "¿Seguro? Tocá de nuevo"; setTimeout(() => { b.dataset.confirmar = ""; b.textContent = "Borrar todo"; }, 3000); return; }
+	anotRasgos = {}; guardarR(); b.dataset.confirmar = ""; b.textContent = "Borrar todo"; render();
+});
+for (const boton of ["copiar", "copiarR"]) document.getElementById(boton).addEventListener("click", (ev) => {
+	const lista = document.getElementById(ev.currentTarget.dataset.lista);
+	const texto = lista.textContent;
 	const aviso = document.getElementById("aviso");
 	navigator.clipboard.writeText(texto).then(
 		() => { aviso.textContent = "Lista copiada. Pegala en el chat."; },
 		() => {
-			const r = document.createRange(); r.selectNodeContents(document.getElementById("lista"));
+			const r = document.createRange(); r.selectNodeContents(lista);
 			const s = getSelection(); s.removeAllRanges(); s.addRange(r);
 			aviso.textContent = "No se pudo copiar solo: la lista quedó seleccionada, copiala a mano.";
 		},

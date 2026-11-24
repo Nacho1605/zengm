@@ -12,6 +12,7 @@
 // y se guarda el detalle ("otros").
 
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { FORMA_VIGENTE } from "./ratings-futbol.ts";
 
 const [archivo, baseArchivo] = process.argv.slice(2);
 if (!archivo) {
@@ -110,6 +111,8 @@ for (const f of readdirSync(plantelDir).filter((f) => f.endsWith(".json")).sort(
 			cap: !!j.capitan,
 			mano: !!j.ratings,
 			pie: j.pie ?? null,
+			// Posiciones secundarias (Transfermarkt), si están cargadas
+			sec: j.secundarias ?? [],
 		});
 	}
 	const once = p.jugadores
@@ -139,6 +142,10 @@ writeFileSync(
 		fecha: `${hoy.getDate()}/${hoy.getMonth() + 1}/${hoy.getFullYear()}`,
 		equipos,
 		jugadores,
+		// Rasgos que se pueden elegir en la página (los de la forma vigente)
+		rasgos: Object.keys(FORMA_VIGENTE.rasgos)
+			.filter((k) => k !== "pegador")
+			.map((k) => ({ k, arquero: ["reflejos", "achique", "pies"].includes(k) ? true : k === "lento" ? undefined : false })),
 	}),
 );
 const dos = jugadores.filter((j) => j.otros.length);

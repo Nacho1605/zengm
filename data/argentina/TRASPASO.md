@@ -1,28 +1,31 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026. Última versión: **v2.23.7**
-(`data/argentina/BBGM_Argentina_2026_v.2.23.7_futbol.json`, sha256
-`e52f1e4c4936c1e3b8599ed30fe005a0aef0d099ae02991d492dd559ce0d6cd3`): 21 de 30
-equipos con plantel 2026, Rendimiento completo y fotos (las del usuario, 24/11);
-todo el archivo en la escala nueva de OVR (20 a 78) y en la forma 4.
-Validación: 0 errores. Auditoría: 53 controles, 9 con alertas (las de
-siempre; fotos: solo faltan 2). Escalera por puesto del usuario actualizada
+Estado al 24/11/2026. Última versión: **v2.23.8**
+(`data/argentina/BBGM_Argentina_2026_v.2.23.8_futbol.json`, sha256
+`c3f23048f6433502f0ea9b98aa8680e7d46a15b47ae353798a3ce05881ccb3eb`): 21 de 30
+equipos con plantel 2026, Rendimiento completo y fotos (las del usuario,
+corregidas el 24/11); todo el archivo en la escala nueva de OVR (20 a 78) y
+en la forma 4. Validación: 0 errores. Auditoría: 53 controles, 8 con alertas
+(las de siempre; fotos: 696 de 696). Escalera por puesto del usuario
+actualizada, ahora también para anotar rasgos
 (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. Lista del usuario de la escalera ("EQUIPO Jugador: viejo → nuevo"):
-   aplicarla con `ajustar-ovr.ts` y armar la v2.23.8; regenerar la escalera
-   y republicarla en el mismo link.
-2. Fotos a corregir por el usuario (revisión del 24/11 sobre su liga): 3
-   fotos repetidas entre jugadores distintos (Santiago Mele = Sebastián
-   Moyano libre, mismo número de Transfermarkt 320739; Tomás González RIE =
-   Tomás González ERC, 989579; Baltasar Rodríguez = Fabricio Pérez, ambos
-   EST, 1298374); 7 miniaturas de Google (Salinardi SLO, Komar ROS, Acevedo
-   INS, Gualtieri ERC, Rubio, Luna Diale y Fragapane UNI); sin foto: Santiago
-   Solari (NOB) y Rafael Barrios (BAR); 21 de los 24 prospectos de los
-   planteles sin foto. 23 fotos son de otros sitios (365scores, futbin,
-   zerozero, imgur, soccerwiki, fotmob): links directos, válidos.
+1. Listas del usuario de la escalera: OVR ("EQUIPO Jugador: viejo → nuevo",
+   con `ajustar-ovr.ts`) y rasgos ("EQUIPO Jugador: + gambeta+, − pase", en
+   `"rasgos"` del plantel; ojo: a un jugador con ratings a mano los rasgos no
+   se le aplican solos). Armar la versión, regenerar la escalera y
+   republicarla en el mismo link.
+2. **Posiciones secundarias** (idea del usuario, 24/11): un volante con
+   secundarias de pivote o central no debería jugar igual que uno con
+   secundaria de mediapunta. Se guardan en el plantel (`"secundarias"`, con
+   los nombres de Transfermarkt en español; la captura "Composición de la
+   plantilla según posiciones"). Cargadas: BEL (25 jugadores). Faltan las
+   capturas de los otros 20 equipos. Propuesta (sin aplicar, espera al
+   usuario): en el generador, mezclar la norma del puesto con la de las
+   secundarias (cerca de un 20–25% en total), sin tocar el OVR. La página
+   de la escalera ya las muestra ("también EI, ED").
 3. Pendiente de analizar con el usuario: el ajuste del capitán según el
    motivo y si Estudiantes (sin capitán fijo) lleva el arquetipo.
 4. Equipos que faltan: BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (el orden
@@ -167,11 +170,14 @@ Formato de un jugador en el plantel:
   "prospecto": true, "leal": true, "capitan": true, "capitanias": 5,
   "imgURL": "https://img.a.transfermarkt.technology/...",
   "sofascore": 7.1, "peso": 75,
+  "secundarias": ["Extremo izquierdo", "Extremo derecho"],
   "ratings": { "stre": 50, "...": 0 } }
 ```
 
 Arriba del plantel, `"contexto"`: el comentario del usuario sobre el equipo
-(y su lugar en las tablas). `sofascore` y `contexto` son datos guardados, no
+(y su lugar en las tablas). `sofascore`, `contexto` y `secundarias`
+(posiciones secundarias de Transfermarkt, captura "Composición de la
+plantilla según posiciones"; por ahora solo BEL) son datos guardados, no
 entran al juego; `peso` (kg) reemplaza el peso calculado por la altura.
 
 `pos` usa la posición de Transfermarkt en español; `pais` en inglés (nombre
@@ -359,11 +365,13 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 
 1. **Cargar los 9 equipos restantes** (BAN, PLA, DYJ, TIG, SAR, ALD,
    ATU, CCO, GEM).
-2. **Fotos:** faltan las de Newell's, Estudiantes RC, Unión y Barracas (123); el usuario las pone
-   en el juego y manda la liga exportada. Prospectos sin foto en varios
-   equipos (TAL, INS, BEL). Ramis (INR) tiene una miniatura de Google; las
-   miniaturas de Google de los primeros ocho equipos (221) las corrige el
-   usuario al final de la fase 2. La red de la sesión bloquea Transfermarkt.
+2. **Fotos:** completas desde la v2.23.8 (591 de 591 en los planteles, sin
+   miniaturas de Google; 566 de Transfermarkt y 25 de otros sitios con link
+   directo). Prospectos sin foto: 21 de los 24 de los planteles (el usuario
+   decide). Foto repetida que queda: Sebastián Moyano (libre) tiene la de
+   Santiago Mele (IND): la de Moyano es la equivocada; se corrige al
+   normalizar los libres. Hugo Gatti (retirado) tiene una miniatura de
+   Google: fase 3. La red de la sesión bloquea Transfermarkt.
 3. **Jugadores de élite de las cinco grandes ligas** (ej. Giovani Lo Celso,
    hermano de Francesco, ERC): por ahora **opción 1, quedan afuera** (el
    juego tiene una sola liga); se retoma en el futuro. Opciones que se
@@ -551,6 +559,22 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**24/11/2026 (v2.23.8).** Huella:
+`c3f23048f6433502f0ea9b98aa8680e7d46a15b47ae353798a3ce05881ccb3eb`.
+
+- Liga del usuario con las fotos corregidas (base v2.23.7): 11 fotos
+  nuevas (las repetidas, las miniaturas de Google y las que faltaban). Contra
+  la v2.23.7 solo cambian esas 11 fotos. Revisión: los 591 jugadores de los
+  planteles con foto, ninguna de Google, una sola repetida (Moyano libre,
+  §7.2).
+- Posiciones secundarias de Belgrano (`"secundarias"`, captura del usuario):
+  se guardan; todavía no cambian el juego (§ "Lo que sigue", 2).
+- Escalera: sección nueva "Cambios de rasgos" (agregar, quitar o pasar a la
+  versión fuerte "+", con su propio "Copiar la lista"; se guarda en el
+  navegador aparte de los OVR) y las secundarias en la línea del puesto.
+  `escalera-web.ts` agrega `sec` por jugador y la lista de rasgos de la forma
+  vigente.
+
 **24/11/2026 (v2.23.7).** Huella:
 `e52f1e4c4936c1e3b8599ed30fe005a0aef0d099ae02991d492dd559ce0d6cd3`.
 
@@ -853,7 +877,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.22.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.23.8.
 > Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
 > líneas que entendiste el estado, antes de seguir.
 

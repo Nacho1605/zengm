@@ -127,7 +127,9 @@ v2.14.1 → v2.14.2).
   `files: {"escalera.json": ...}`). Si se publica en otro link, el usuario
   pierde lo que anotó (queda guardado en su navegador, por link). Lo que
   anota no lo ve Claude: el usuario copia la lista y la pega en el chat
-  ("EQUIPO Jugador: viejo → nuevo"). Los que jugaron en dos clubes cargados
+  ("EQUIPO Jugador: viejo → nuevo"). También anota rasgos (desde la
+  v2.23.8), con su propia lista: "EQUIPO Jugador: + gambeta+, + pase, −
+  gambeta" (+ agrega, − quita; van a `"rasgos"` del plantel). Los que jugaron en dos clubes cargados
   (salidas-2026.json, mismo nombre y edad ±1) aparecen con el año completo. Arqueros: la
   lista del usuario en `data/argentina/arqueros/lista-apertura-2026.md`
   (hecha en el Apertura, antes del Mundial 2026: DESACTUALIZADA, es una base
@@ -197,6 +199,10 @@ v2.14.1 → v2.14.2).
   buscar filas perdidas entre imágenes.
   El comentario del usuario también se guarda: `"contexto"` del equipo y
   `"sofascore"` de cada jugador en el plantel; `"peso"` (kg) si lo da.
+- Posiciones secundarias (captura "Composición de la plantilla según
+  posiciones" de Transfermarkt): `"secundarias"` en el plantel, con los
+  nombres en español. Hoy solo BEL; todavía no cambian el juego (propuesta en
+  TRASPASO, "Lo que sigue").
 - Un solo nombre (Rick, TAL): el nombre en `nombre` y `apellido` vacío (así
   no queda un espacio al principio). Las herramientas lo buscan por ese nombre.
 - Premios: con sus nombres originales del juego (en inglés), por pedido del

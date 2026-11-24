@@ -1,6 +1,6 @@
 {
 	"equipo": "BEL",
-	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 21/11/2026); debut, inferiores, reserva, Sofascore, rasgos, capitán, parientes, altura y año de debut (2025) de Melano y contexto: datos del usuario. OVR: Claude.",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 21/11/2026); debut, inferiores, reserva, Sofascore, rasgos, capitán, parientes, altura y año de debut (2025) de Melano y contexto: datos del usuario. OVR: Claude. Posiciones secundarias: captura del usuario de la composición del plantel según posiciones (Transfermarkt, 24/11/2026).",
 	"contexto": "Belgrano coronó un año histórico con un título que validó su crecimiento de menor a mayor, aunque esa consagración no oculta que nunca terminó de resolver su fragilidad defensiva. Con una propuesta directa y vertical, encontró su mejor versión acelerando por las bandas y atacando espacios, pero sufrió en los retrocesos y le costó sostener solidez fuera de casa. Santiago Longo sostuvo el equilibrio con orden y quite en un mediocampo al que suele faltarle fluidez. La diferencia estuvo arriba: la jerarquía y pausa de Lucas Zelarayán y Franco Vázquez y la movilidad de Nicolás Fernández pesaron en los momentos límite y terminaron inclinando la balanza a favor del Pirata. Campeón del Torneo Apertura 2026: 5.º en la zona B; en los playoffs eliminó a Talleres, Unión y Argentinos y le ganó la final a River. En ese torneo, Lisandro López y Lucas Zelarayán en el Equipo Ideal (titulares), Zelarayán MVP; Nicolás Fernández entre los suplentes. Tabla anual 2026: 10.º (49 pts, 34-28); Apertura 5.º zona B; Clausura 6.º grupo B. Copas 2026 (dato del usuario, 23/11): sin copa internacional. Copa Argentina: eliminado en octavos. Títulos y finales: Campeón del Torneo Apertura 2026.",
 	"reemplaza": [
 		{
@@ -67,7 +67,8 @@
 			},
 			"college": "Club Atlético Peñarol",
 			"sofascore": 7.37,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/294843-1758833003.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/294843-1758833003.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "23",
@@ -98,7 +99,8 @@
 				"anio": 2015
 			},
 			"college": "Club Atlético Boca Juniors",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/239697-1758832644.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/239697-1758832644.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "28",
@@ -117,7 +119,8 @@
 			"convocado": 11,
 			"ovr": 27,
 			"prospecto": true,
-			"college": "Club Atlético Belgrano"
+			"college": "Club Atlético Belgrano",
+			"secundarias": []
 		},
 		{
 			"n": "2",
@@ -147,7 +150,8 @@
 				"club": "BAN",
 				"anio": 2017
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/444100-1758832980.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/444100-1758832980.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "14",
@@ -182,7 +186,10 @@
 			"rasgos": [
 				"potente"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/457061-1758831660.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/457061-1758831660.png?lm=4711",
+			"secundarias": [
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "16",
@@ -213,7 +220,10 @@
 				"anio": 2013
 			},
 			"college": "Danubio Fútbol Club",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/285322-1758832051.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/285322-1758832051.png?lm=4711",
+			"secundarias": [
+				"Lateral izquierdo"
+			]
 		},
 		{
 			"n": "17",
@@ -247,7 +257,8 @@
 			"rasgos": [
 				"aereo"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/125019-1758832195.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/125019-1758832195.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "13",
@@ -277,7 +288,10 @@
 				"club": "BEL",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1322673-1758835644.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1322673-1758835644.png?lm=4711",
+			"secundarias": [
+				"Lateral izquierdo"
+			]
 		},
 		{
 			"n": "3",
@@ -307,7 +321,11 @@
 				"club": "BAN",
 				"anio": 2017
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/440371-1758830625.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/440371-1758830625.png?lm=4711",
+			"secundarias": [
+				"Interior izquierdo",
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "26",
@@ -338,7 +356,11 @@
 				"anio": 2023
 			},
 			"college": "Club Sportivo 2 de Mayo",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/980793-1715523597.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/980793-1715523597.jpg?lm=4711",
+			"secundarias": [
+				"Interior derecho",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "45",
@@ -368,7 +390,8 @@
 				"club": "BEL",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1379586-1758834408.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1379586-1758834408.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "5",
@@ -402,7 +425,10 @@
 			"rasgos": [
 				"recuperador"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/697065-1758830909.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/697065-1758830909.png?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "21",
@@ -433,7 +459,11 @@
 				"anio": 2020
 			},
 			"sofascore": 7.14,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/744279-1724864061.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/744279-1724864061.jpg?lm=4711",
+			"secundarias": [
+				"Pivote",
+				"Interior derecho"
+			]
 		},
 		{
 			"n": "53",
@@ -463,7 +493,11 @@
 				"club": "BEL",
 				"anio": 2024
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1264273-1758834868.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1264273-1758834868.png?lm=4711",
+			"secundarias": [
+				"Lateral izquierdo",
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "10",
@@ -498,7 +532,11 @@
 			"rasgos": [
 				"gambeta"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/230030-1758831350.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/230030-1758831350.png?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "11",
@@ -548,7 +586,11 @@
 				"drb": 64,
 				"pss": 73,
 				"reb": 41
-			}
+			},
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "51",
@@ -578,7 +620,10 @@
 				"club": "BEL",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1273494-1758834540.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1273494-1758834540.png?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "20",
@@ -613,7 +658,11 @@
 				"habilidoso",
 				"pase"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/76163-1757676848.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/76163-1757676848.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro",
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "15",
@@ -643,7 +692,8 @@
 				"club": "BEL",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1377440-1758835625.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1377440-1758835625.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "30",
@@ -673,7 +723,11 @@
 				"club": "BEL",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1292347-1758832521.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1292347-1758832521.png?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Mediapunta"
+			]
 		},
 		{
 			"n": "24",
@@ -703,7 +757,11 @@
 				"club": "BEL",
 				"anio": 2013
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/282544-1709366982.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/282544-1709366982.jpg?lm=4711",
+			"secundarias": [
+				"Interior derecho",
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "29",
@@ -733,7 +791,10 @@
 					"nombre": "Lucas Melano"
 				}
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1377439-1758835458.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1377439-1758835458.png?lm=4711",
+			"secundarias": [
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "22",
@@ -776,7 +837,10 @@
 			"rasgos": [
 				"goleador"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/333921-1758832545.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/333921-1758832545.png?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "9",
@@ -822,7 +886,8 @@
 				"drb": 53,
 				"pss": 48,
 				"reb": 45
-			}
+			},
+			"secundarias": []
 		},
 		{
 			"n": "37",
@@ -852,7 +917,10 @@
 				"club": "BEL",
 				"anio": 2026
 			},
-			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/227259"
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/227259",
+			"secundarias": [
+				"Mediocentro ofensivo"
+			]
 		}
 	]
 }

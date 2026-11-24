@@ -153,9 +153,7 @@
 			"college": "Club Atlético Rosario Central",
 			"sofascore": 7,
 			"capitan": true,
-			"rasgos": [
-				"aereo"
-			],
+			"rasgos": ["aereo"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/376853-1771006860.png?lm=4711"
 		},
 		{
@@ -719,7 +717,7 @@
 				"anio": 2019
 			},
 			"college": "Club Atlético San Lorenzo de Almagro",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1SLHrio4bV2Mxcva3xc6N3PIkWrRgt3cQ-MSSsvQ_s8xY9ZOt6wTA0Ek&s=10"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/538530-1771007797.png?lm=4711"
 		},
 		{
 			"n": "72",

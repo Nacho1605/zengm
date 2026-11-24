@@ -399,7 +399,7 @@
 				"club": "RAC",
 				"anio": 2023
 			},
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8kNIeIhXQN-5GG9-whqJvv12MW3dC1NuuTQ0-Wihh3w&s=10"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/849534-1724351198.png?lm=4711"
 		},
 		{
 			"n": "17",
@@ -614,7 +614,7 @@
 				"anio": 2019
 			},
 			"college": "Club Atlético Boca Juniors",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiTqefjd1Pa5KYzU2ni7_AEKjOfA-70PfyAkGWDcg99k38fyY77T3y8igV&s=10"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/653266-1771030976.jpg?lm=4711"
 		},
 		{
 			"n": "10",
@@ -709,7 +709,7 @@
 				"anio": 2016
 			},
 			"college": "Club Atlético Boca Juniors",
-			"imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl5DlpY17PZFUmWeadUKPnsoEPJKKTRf6r-qchkshRAw6aQ3PldB8p0Nw&s=10"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/226005-1710095781.jpg?lm=4711"
 		},
 		{
 			"n": "31",
@@ -770,9 +770,7 @@
 				"anio": 2014
 			},
 			"college": "Club Defensores del Pronunciamiento",
-			"rasgos": [
-				"aereo"
-			],
+			"rasgos": ["aereo"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/610266-1724864721.jpg?lm=4711"
 		},
 		{
