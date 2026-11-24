@@ -208,7 +208,9 @@ v2.14.1 → v2.14.2).
   nombres en español. Desde la v2.23.9 (forma 5) dan forma: la norma del
   puesto se mezcla con la de las secundarias (20% con una, 25% con dos o
   más, mismo peso cada una); el OVR no cambia. A un jugador con ratings a
-  mano no se le aplican solas. Hoy solo BEL. Las de los equipos sin cargar
+  mano se le suma el mismo corrimiento (el usuario: la consistencia del
+  archivo pesa más que sus retoques). Cargadas: BEL y RIV; el resto, en
+  tandas de cinco. Las de los equipos sin cargar
   van a `data/argentina/secundarias-2026.json` (control: la fila "Total" de
   la captura) y pasan al plantel al cargar el equipo.
 - Un solo nombre (Rick, TAL): el nombre en `nombre` y `apellido` vacío (así

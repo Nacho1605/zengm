@@ -409,6 +409,25 @@ const cargar = (plantel: any) => {
 				`${j.nombre} ${j.apellido}: sus ratings dan OVR ${ovrOficial(r)}, no ${ovrMeta}`,
 			);
 		}
+		// Posiciones secundarias en un jugador con ratings a mano (forma 5): el
+		// mismo corrimiento que a los demás, sobre sus ratings (el usuario,
+		// 24/11: la consistencia del archivo pesa más que un retoque suyo)
+		if (j.ratings && FORMA_VIGENTE.secundarias && j.secundarias?.length && pos !== "C") {
+			const con = generarRatings(j, pos, edad, ovrMeta, FORMA_VIGENTE);
+			const sin = generarRatings({ ...j, secundarias: [] }, pos, edad, ovrMeta, FORMA_VIGENTE);
+			for (const k of KEYS) {
+				if (k !== "hgt") {
+					r[k] = Math.max(0, Math.min(100, r[k] + con[k] - sin[k]));
+				}
+			}
+			const llave = ["PF", "FC", "G", "GF"].includes(pos) ? "diq" : "oiq";
+			for (let i = 0; i < 20 && ovrOficial(r) !== ovrMeta; i++) {
+				r[llave] += ovrOficial(r) < ovrMeta ? 1 : -1;
+			}
+			if (ovrOficial(r) !== ovrMeta) {
+				throw new Error(`${j.nombre} ${j.apellido}: con secundarias no llega a OVR ${ovrMeta}`);
+			}
+		}
 		// Contrato sin fecha en Transfermarkt ("-"): hasta 2027
 		const exp = j.contrato ? parseFecha(j.contrato).y : SEASON + 1;
 		const amount = sueldo(

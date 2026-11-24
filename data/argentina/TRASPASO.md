@@ -1,13 +1,13 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026. Última versión: **v2.23.9**
-(`data/argentina/BBGM_Argentina_2026_v.2.23.9_futbol.json`, sha256
-`13d10e555d5a9ec1dc9bebc3014fb88c2b1d61efb86f9f54a9407bf5a5a4d794`): 21 de 30
+Estado al 24/11/2026. Última versión: **v2.23.10**
+(`data/argentina/BBGM_Argentina_2026_v.2.23.10_futbol.json`, sha256
+`02d45e2db43eea81cebfd6be2ec5ab23cc53877515e571d56e64bfdbe645758d`): 21 de 30
 equipos con plantel 2026, Rendimiento completo y fotos (las del usuario,
 corregidas el 24/11); todo el archivo en la escala nueva de OVR (20 a 78) y
-en la forma 5 (posiciones secundarias, por ahora solo de BEL; defectos
-nuevos para elegir). Validación: 0 errores. Auditoría: 53 controles, 8 con
-alertas (las de siempre; fotos: 696 de 696). Escalera por puesto del usuario
+en la forma 5 (posiciones secundarias de BEL y RIV; defectos nuevos para
+elegir). Validación: 0 errores. Auditoría: 53 controles, 8 con alertas (las
+de siempre; fotos: 696 de 696). Escalera por puesto del usuario
 actualizada, para anotar OVR y rasgos (con los defectos en rojo)
 (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
@@ -15,19 +15,21 @@ actualizada, para anotar OVR y rasgos (con los defectos en rojo)
 **Lo que sigue:**
 1. Listas del usuario de la escalera: OVR ("EQUIPO Jugador: viejo → nuevo",
    con `ajustar-ovr.ts`) y rasgos ("EQUIPO Jugador: + gambeta+, − pase", en
-   `"rasgos"` del plantel; ojo: a un jugador con ratings a mano los rasgos no
-   se le aplican solos). Armar la versión, regenerar la escalera y
-   republicarla en el mismo link.
+   `"rasgos"` del plantel). A un jugador con ratings a mano, un rasgo nuevo
+   no se le aplica solo: sumarle el corrimiento a mano (mismo criterio que
+   las secundarias: la consistencia pesa más que sus retoques). Armar la
+   versión, regenerar la escalera y republicarla en el mismo link.
 2. **Posiciones secundarias** (idea del usuario, 24/11; aceptado: 20–25% sin
-   cambiar el OVR, mismo peso para cada secundaria): aplicadas a BEL en la
-   v2.23.9 (16 jugadores; González Metilli tiene ratings a mano y no se le
-   aplicaron: se le preguntó al usuario). Si el usuario aprueba cómo quedó
-   Belgrano, pedir las de los otros 20 equipos cargados en cuatro tandas de
-   cinco (van directo a cada plantel). Las de los 9 sin cargar van a
-   `secundarias-2026.json`: ya están PLA, BAN, DYJ, TIG y SAR (24/11); faltan
-   ALD, ATU, CCO y GEM (el usuario las manda en un mensaje de 4). Duda: Jhon
-   Rentería (SAR) figura sin puesto principal marcado (MCO y ED en claro;
-   por los totales, extremo derecho): confirmar con su plantel.
+   cambiar el OVR, mismo peso para cada secundaria; Belgrano "funcionó de
+   maravilla"): cargadas BEL y RIV. Faltan los otros 19 equipos cargados: el
+   usuario las manda en tandas de cinco (van directo a cada plantel; mismo
+   control con la fila "Total"). Las de los 9 sin cargar están completas en
+   `secundarias-2026.json` (pasarlas al plantel al cargar cada uno). Duda:
+   Jhon Rentería (SAR) figura sin puesto principal marcado (MCO y ED en
+   claro; por los totales, extremo derecho): confirmar con su plantel.
+   Sebastián Moyano, el libre con la foto de Mele, es el tercer arquero de
+   ALD (captura del 24/11): al cargar Aldosivi va en `reemplaza` y recibe
+   su foto.
 3. Pendiente de analizar con el usuario: el ajuste del capitán según el
    motivo y si Estudiantes (sin capitán fijo) lleva el arquetipo.
 4. Equipos que faltan: BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (el orden
@@ -374,8 +376,9 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    miniaturas de Google; 566 de Transfermarkt y 25 de otros sitios con link
    directo). Prospectos sin foto: 21 de los 24 de los planteles (el usuario
    decide). Foto repetida que queda: Sebastián Moyano (libre) tiene la de
-   Santiago Mele (IND): la de Moyano es la equivocada; se corrige al
-   normalizar los libres. Hugo Gatti (retirado) tiene una miniatura de
+   Santiago Mele (IND): la de Moyano es la equivocada; Moyano es el
+   tercer arquero de ALD (captura de secundarias, 24/11): se corrige al
+   cargar Aldosivi. Hugo Gatti (retirado) tiene una miniatura de
    Google: fase 3. La red de la sesión bloquea Transfermarkt.
 3. **Jugadores de élite de las cinco grandes ligas** (ej. Giovani Lo Celso,
    hermano de Francesco, ERC): por ahora **opción 1, quedan afuera** (el
@@ -564,6 +567,21 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**24/11/2026 (v2.23.10).** Huella:
+`02d45e2db43eea81cebfd6be2ec5ab23cc53877515e571d56e64bfdbe645758d`.
+
+- Secundarias de River (26 jugadores, 18 con secundarias; puestos y números
+  iguales a los del plantel) y de ALD, ATU, CCO y GEM en
+  `secundarias-2026.json` (los 9 sin cargar: 279 jugadores; cada captura
+  coincide con su fila "Total"; en las 4 últimas el botón de la página tapa
+  la cantidad de delanteros principales).
+- Secundarias también en los jugadores con ratings a mano (el usuario): el
+  mismo corrimiento sobre sus ratings (`cargar-plantel.ts`). Hoy solo
+  González Metilli (BEL).
+- Contra la v2.23.9: cambian los ratings de 19 jugadores (18 de RIV y
+  González Metilli), ningún OVR, y el resto del archivo es igual. `FORMA=4`
+  sigue dando la v2.23.8 idéntica.
+
 **24/11/2026 (v2.23.9).** Huella:
 `13d10e555d5a9ec1dc9bebc3014fb88c2b1d61efb86f9f54a9407bf5a5a4d794`.
 
@@ -896,7 +914,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.23.9.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.23.10.
 > Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
 > líneas que entendiste el estado, antes de seguir.
 

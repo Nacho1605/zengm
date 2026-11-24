@@ -57,7 +57,8 @@
 				"anio": 2025
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1138089-1762437740.png?lm=4711",
-			"sofascore": 6.93
+			"sofascore": 6.93,
+			"secundarias": []
 		},
 		{
 			"n": "33",
@@ -87,7 +88,8 @@
 				"anio": 2021
 			},
 			"college": "Club Atlético River Plate",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/626917-1724872105.JPEG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/626917-1724872105.JPEG?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "13",
@@ -117,7 +119,8 @@
 				"anio": 2024
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/1261395-1762437856.png?lm=4711",
-			"sofascore": 7.15
+			"sofascore": 7.15,
+			"secundarias": []
 		},
 		{
 			"n": "28",
@@ -148,7 +151,10 @@
 			},
 			"college": "Club Atlético Kimberley (Mar del Plata)",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/373373-1762437997.png?lm=4711",
-			"sofascore": 7.03
+			"sofascore": 7.03,
+			"secundarias": [
+				"Pivote"
+			]
 		},
 		{
 			"n": "2",
@@ -177,7 +183,8 @@
 				"club": "ARG",
 				"anio": 2024
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1000684-1720122098.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1000684-1720122098.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "5",
@@ -210,6 +217,10 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/830842-1762438107.png?lm=4711",
 			"rasgos": [
 				"pulmon"
+			],
+			"secundarias": [
+				"Lateral izquierdo",
+				"Pivote"
 			]
 		},
 		{
@@ -242,7 +253,8 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/54781-1669835534.jpg?lm=4711",
 			"capitan": true,
-			"rasgos": ["aereo"]
+			"rasgos": ["aereo"],
+			"secundarias": []
 		},
 		{
 			"n": "31",
@@ -271,7 +283,8 @@
 				"club": "RIV",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1232131-1720819416.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1232131-1720819416.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "3",
@@ -301,7 +314,10 @@
 				"club": "VEL",
 				"anio": 2018
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/553663-1784897892.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/553663-1784897892.png?lm=4711",
+			"secundarias": [
+				"Interior izquierdo"
+			]
 		},
 		{
 			"n": "21",
@@ -334,7 +350,11 @@
 			"rasgos": [
 				"centrador"
 			],
-			"sofascore": 7.03
+			"sofascore": 7.03,
+			"secundarias": [
+				"Interior izquierdo",
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "29",
@@ -367,7 +387,8 @@
 			"rasgos": [
 				"centrador"
 			],
-			"sofascore": 7.05
+			"sofascore": 7.05,
+			"secundarias": []
 		},
 		{
 			"n": "20",
@@ -398,7 +419,11 @@
 				"anio": 2014
 			},
 			"college": "Club Atlético River Plate (Montevideo)",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/339699-1753530559.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/339699-1753530559.png?lm=4711",
+			"secundarias": [
+				"Defensa central",
+				"Interior derecho"
+			]
 		},
 		{
 			"n": "6",
@@ -432,7 +457,10 @@
 				"partidos": 2
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/642758-1746577695.jpg?lm=4711",
-			"sofascore": 7.07
+			"sofascore": 7.07,
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "15",
@@ -462,7 +490,11 @@
 				"anio": 2019
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/491701-1558510727.png?lm=4711",
-			"sofascore": 6.95
+			"sofascore": 6.95,
+			"secundarias": [
+				"Mediocentro",
+				"Mediocentro ofensivo"
+			]
 		},
 		{
 			"n": "44",
@@ -491,7 +523,10 @@
 				"club": "RIV",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1418875-1793709790.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1418875-1793709790.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "50",
@@ -522,7 +557,11 @@
 				"anio": 2025
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1384266-1758286510.jpg?lm=4711",
-			"sofascore": 6.96
+			"sofascore": 6.96,
+			"secundarias": [
+				"Pivote",
+				"Interior derecho"
+			]
 		},
 		{
 			"n": "8",
@@ -556,6 +595,9 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/290249-1669365106.jpg?lm=4711",
 			"rasgos": [
 				"pulmon"
+			],
+			"secundarias": [
+				"Pivote"
 			]
 		},
 		{
@@ -585,7 +627,11 @@
 				"club": "RIV",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1264645-1785158021.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1264645-1785158021.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro ofensivo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "23",
@@ -620,6 +666,10 @@
 				"gambeta",
 				"habilidoso",
 				"pase"
+			],
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
 			]
 		},
 		{
@@ -650,7 +700,11 @@
 				"anio": 2022
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/893850-1727449987.jpg?lm=4711",
-			"sofascore": 7.03
+			"sofascore": 7.03,
+			"secundarias": [
+				"Mediocentro",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "24",
@@ -679,7 +733,11 @@
 				"club": "RIV",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1231221-1762438375.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1231221-1762438375.png?lm=4711",
+			"secundarias": [
+				"Mediocentro",
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "10",
@@ -712,6 +770,10 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/266807-1701212448.jpg?lm=4711",
 			"rasgos": [
 				"gambeta+"
+			],
+			"secundarias": [
+				"Extremo derecho",
+				"Delantero centro"
 			]
 		},
 		{
@@ -743,7 +805,10 @@
 				"anio": 2021
 			},
 			"college": "Instituto Atlético Central Córdoba",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/628366-1692881138.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/628366-1692881138.jpg?lm=4711",
+			"secundarias": [
+				"Mediapunta"
+			]
 		},
 		{
 			"n": "9",
@@ -772,7 +837,11 @@
 				"club": "RIV",
 				"anio": 2014
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/294853-1709367014.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/294853-1709367014.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro ofensivo",
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "19",
@@ -803,7 +872,10 @@
 				"anio": 2015
 			},
 			"college": "Asociación Deportivo Cali",
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/323831-1663064975.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/323831-1663064975.jpg?lm=4711",
+			"secundarias": [
+				"Mediapunta"
+			]
 		},
 		{
 			"n": "32",
@@ -836,7 +908,8 @@
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 7
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1000688-1721920782.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1000688-1721920782.png?lm=4711",
+			"secundarias": []
 		}
 	]
 }
