@@ -806,7 +806,7 @@
 			"ppp": 1,
 			"convocado": 28,
 			"fichado": "18/01/2023",
-			"ovr": 63,
+			"ovr": 61,
 			"debut": {
 				"club": "SAN",
 				"anio": 2019
@@ -939,6 +939,9 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/812625-1704205457.jpg?lm=4711",
 			"secundarias": [
 				"Mediapunta"
+			],
+			"rasgos": [
+				"goleador"
 			]
 		},
 		{

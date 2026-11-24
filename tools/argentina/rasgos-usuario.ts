@@ -10,14 +10,14 @@ import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 
 // rasgo -> [equipo, apellido, nombre (si hace falta), "+" (versión fuerte)]
 const LISTA: Record<string, [string, string, ...string[]][]> = {
-	goleador: [["BOC", "Merentiel"], ["RAC", "Martínez", "Adrián"], ["VEL", "Martínez", "Ronaldo"], ["EST", "Alario"], ["INR", "Arce", "+"], ["HUR", "Pussetto"], ["BEL", "Fernández"], ["BEL", "Passerini"]],
+	goleador: [["BOC", "Merentiel"], ["RAC", "Martínez", "Adrián"], ["VEL", "Martínez", "Ronaldo"], ["EST", "Alario"], ["INR", "Arce", "+"], ["HUR", "Pussetto"], ["BEL", "Fernández"], ["BEL", "Passerini"], ["BOC", "Bareiro"], ["GIM", "Torres", "Franco"], ["TAL", "Álvarez"]],
 	"larga distancia": [["VEL", "Lanzini"], ["INR", "Florentín"], ["BEL", "González Metilli"], ["INS", "Luna"], ["NOB", "Soñora"], ["ERC", "Alanís"], ["UNI", "Pittón"], ["BAR", "Insúa", "Rodrigo"], ["BOC", "Paredes"], ["RIV", "Moreno"]],
 	aereo: [["EST", "Palacios", "Tomás"], ["EST", "Rojo"], ["EST", "Gaich"], ["BOC", "Di Lollo"], ["RIV", "Otamendi"], ["ARG", "Álvarez"], ["INR", "Arce"], ["LAN", "Canale"], ["ARG", "Molina"], ["SLO", "Auzmendi"], ["HUR", "Caicedo"], ["BEL", "López"], ["INS", "Alarcón"], ["ERC", "Maffini"], ["UNI", "Estigarribia"], ["BAR", "Jappert"], ["BAR", "Campi"], ["BAR", "Bruera"], ["BOC", "Valencia", "+"], ["EST", "Carrillo", "+"], ["GIM", "Conti"], ["RAC", "Martínez"], ["VEL", "Martínez", "+"]],
 	gambeta: [["BOC", "Flores"], ["RIV", "Almada"], ["RAC", "Zaracho"], ["SLO", "Farías"], ["EST", "Cetré"], ["EST", "Correa"], ["ROS", "Campaz"], ["ROS", "Di María"], ["ARG", "López Muñoz", "+"], ["LAN", "Moreno"], ["IND", "Montiel"], ["RAC", "Díaz"], ["TAL", "Rick"], ["BEL", "Zelarayán", "Lucas"], ["BOC", "Romero"], ["INR", "Fernández"], ["RIV", "Correa"], ["RIV", "Driussi"], ["UNI", "Malcorra"]],
 	veloz: [["BOC", "Villa", "+"], ["RAC", "Vergara"], ["EST", "Cetré"], ["SLO", "Cuello"], ["TAL", "Rick"], ["TAL", "Valoyes"], ["INS", "Córdoba"], ["NOB", "Mazzantti", "+"], ["EST", "Meza", "+"], ["SLO", "Barrios", "+"], ["SLO", "Cerutti"]],
 	"pelota parada": [["ROS", "Di María"], ["ARG", "Mancuello"], ["IND", "Montiel"], ["LAN", "Moreno"], ["VEL", "Valdés"], ["BAR", "Tapia"], ["UNI", "Malcorra", "+"]],
 	habilidoso: [["BOC", "Paredes"], ["RIV", "Almada"], ["RAC", "Miljevic"], ["EST", "Sosa"], ["ARG", "López Muñoz"], ["GIM", "Fernández"], ["HUR", "Barticciotto"], ["TAL", "Cristaldo"], ["BEL", "Vázquez"], ["INS", "Luna"], ["ROS", "Di María"]],
-	pase: [["BOC", "Paredes", "+"], ["VEL", "Valdés"], ["GIM", "Fernández"], ["RIV", "Almada"], ["ROS", "Campaz"], ["HUR", "Romero"], ["BEL", "Vázquez"]],
+	pase: [["BOC", "Paredes", "+"], ["VEL", "Valdés"], ["GIM", "Fernández"], ["RIV", "Almada"], ["ROS", "Campaz"], ["HUR", "Romero"], ["BEL", "Vázquez"], ["INR", "Atencio"], ["LAN", "Sepúlveda"]],
 	cerebro: [["VEL", "Robertone"], ["EST", "Neves"], ["GIM", "Barros Schelotto", "Nicolás"], ["ERC", "Cabrera"], ["UNI", "Menossi"], ["BAR", "Rolón"], ["BOC", "Paredes", "+"], ["GIM", "Fernández"], ["TAL", "Fattori", "+"], ["VEL", "Aliendro", "+"]],
 	centrador: [["RIV", "Montiel"], ["RIV", "Acuña"], ["VEL", "Gómez"], ["EST", "Benedetti"], ["EST", "Meza"], ["ROS", "Di María"], ["GIM", "Steimbach"], ["LAN", "Salvio"], ["ERC", "Alanís"], ["BAR", "Insúa", "Rodrigo"]],
 	recuperador: [["BOC", "Ascacíbar"], ["BOC", "Paredes"], ["SLO", "Hernández"], ["EST", "Palacios", "Tomás"], ["EST", "Rojo"], ["ROS", "Ibarra"], ["INR", "Studer"], ["GIM", "Barros Schelotto", "Nicolás"], ["LAN", "Canale"], ["HUR", "Pereyra"], ["BEL", "Longo"], ["INS", "Abregú"], ["ERC", "Rosané"], ["ERC", "Cabrera"], ["BAR", "Gordillo"], ["IND", "Marcone"], ["LAN", "Guidara"], ["TAL", "Fattori", "+"]],
@@ -27,16 +27,16 @@ const LISTA: Record<string, [string, string, ...string[]][]> = {
 	reflejos: [["RAC", "Cambeses"], ["EST", "Muslera"], ["VEL", "Marchiori"], ["NOB", "Arias"]],
 	achique: [["IND", "Rey"], ["HUR", "Galíndez"], ["BOC", "Montero"]],
 	pies: [["IND", "Mele"], ["RIE", "Arce"]],
-	lento: [["BOC", "Paredes"], ["BEL", "Vázquez"], ["EST", "Sosa", "+"], ["EST", "Carrillo"], ["GIM", "Fernández", "+"], ["IND", "Rey"], ["IND", "Marcone"], ["IND", "Ávila"], ["RAC", "Kranevitter"], ["ROS", "Fernández", "Pol"], ["TAL", "Fattori", "+"], ["UNI", "Menossi"], ["UNI", "Malcorra"], ["VEL", "Aliendro"]],
+	lento: [["BOC", "Paredes"], ["BEL", "Vázquez"], ["EST", "Carrillo"], ["GIM", "Fernández", "+"], ["IND", "Rey"], ["IND", "Marcone"], ["IND", "Ávila"], ["RAC", "Kranevitter"], ["ROS", "Fernández", "Pol"], ["TAL", "Fattori", "+"], ["UNI", "Menossi"], ["UNI", "Malcorra"], ["VEL", "Aliendro"], ["EST", "Sosa"]],
 	erratico: [["BAR", "Orsini"], ["BOC", "Merentiel"], ["BOC", "Valencia", "+"], ["NOB", "Mazzantti"], ["ROS", "Copetti", "+"]],
 	morfon: [["BEL", "Passerini"], ["BOC", "Romero"], ["RAC", "Martínez"]],
 	"sin aire": [["BOC", "Paredes"], ["EST", "Rojo"]],
 	patadura: [["ERC", "Bruera"], ["EST", "Carrillo"], ["HUR", "Gil"], ["ROS", "Copetti"], ["UNI", "Tarragona"]],
 	inseguro: [["EST", "Muslera"], ["RIE", "Arce"]],
 	desordenado: [["EST", "González Pírez"], ["EST", "Rodríguez"], ["HUR", "Gil"], ["RIV", "Martínez Quarta"]],
-	faltero: [["EST", "Rojo", "+"], ["RIV", "Martínez Quarta"], ["RIV", "Otamendi"], ["RIV", "Moreno"]],
+	faltero: [["EST", "Rojo", "+"], ["RIV", "Otamendi"], ["RIV", "Moreno"], ["GIM", "Miramón"], ["HUR", "Ibáñez"], ["HUR", "Caicedo"], ["LAN", "Carrera"]],
 	liviano: [["EST", "Cetré"], ["RIV", "Driussi"], ["SLO", "Barrios", "+"], ["UNI", "Menossi"], ["VEL", "Marchiori"], ["VEL", "Martínez"]],
-	"flojo de arriba": [["NOB", "Arias"], ["RIV", "Driussi"], ["ROS", "Ibarra"], ["SLO", "Farías"], ["SLO", "Barrios", "+"]],
+	"flojo de arriba": [["RIV", "Driussi"], ["ROS", "Ibarra"], ["SLO", "Farías"], ["SLO", "Barrios", "+"]],
 	estatico: [["NOB", "Arias"], ["UNI", "Gomes Gerth"]],
 };
 

@@ -925,7 +925,7 @@
 				"club": "IND",
 				"anio": 2020
 			},
-			"ovr": 59,
+			"ovr": 61,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/661154-1739898867.jpg?lm=4711",
 			"sofascore": 7.01,
 			"secundarias": [
@@ -1077,7 +1077,10 @@
 			"college": "Club Olimpia",
 			"ovr": 58,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/514120-1740664400.png?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"rasgos": [
+				"goleador"
+			]
 		},
 		{
 			"n": "9",

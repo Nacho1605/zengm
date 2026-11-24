@@ -1,25 +1,33 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026. Última versión: **v2.23.12**
-(`data/argentina/BBGM_Argentina_2026_v.2.23.12_futbol.json`, sha256
-`b3196b8408077b7c8f399cda946503be93010c11e4193f2c726340ce88125aae`): 21 de 30
+Estado al 24/11/2026. Última versión: **v2.23.13**
+(`data/argentina/BBGM_Argentina_2026_v.2.23.13_futbol.json`, sha256
+`36bb31121234957ab95289e2865d94ce8f8bf6bb0417c14ad7a0accdf2a2ec8d`): 21 de 30
 equipos con plantel 2026, Rendimiento completo y fotos (las del usuario,
 corregidas el 24/11); todo el archivo en la escala nueva de OVR (20 a 78) y
 en la forma 5 (posiciones secundarias de los 21 planteles; defectos);
-aplicadas las listas de la escalera del usuario del 24/11 (45 OVR y 56
-jugadores con rasgos). Validación: 0 errores. Auditoría: 53 controles, 8 con
-alertas (las de siempre; fotos: 696 de 696). Escalera por puesto del usuario
-actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
-`data/argentina/escalera/`).
+aplicadas las listas de la escalera del usuario del 24/11 y lo que aceptó
+de `revision-v2.23.12.md`. Validación: 0 errores. Auditoría: 53 controles,
+8 con alertas (las de siempre; fotos: 696 de 696). Escalera por puesto del
+usuario actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U;
+copia en `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. Respuesta del usuario a `revision-v2.23.12.md` (sin aplicar): dudas
-   sobre 4 OVR de su lista (Farías, Galván, E. Ávila, J. Correa) y 3 rasgos
-   (Arias, José Sosa, Martínez Quarta); 5 OVR nuevos (Velasco, Depietri y
-   Nervo, estos dos valores suyos; Sansotre, Bracamonte) y rasgos sugeridos
-   por los números. Lo que acepte va como parche (v2.23.13). Las próximas
-   listas de la escalera: guardarlas en `escalera/listas/` y aplicarlas con
-   `aplicar-listas.ts`.
+1. **v2.24: Platense** (plan propuesto al usuario, 24/11; espera su
+   confirmación). Es el que más contexto tiene entre los 9 que faltan
+   (cuartos de la Libertadores y finalista de la Copa Argentina, 24.º en la
+   anual: otro equipo que priorizó las copas, como EST) y sus secundarias ya
+   están guardadas. Alternativa: Defensa y Justicia (14.º, el mejor de la
+   tabla entre los que faltan). Lo que tiene que mandar el usuario: plantel
+   "Ampliado" y Rendimiento 2026 de Transfermarkt (Platense tiene 36: puede
+   necesitar más capturas), debut e inferiores de cada uno, los que siguen
+   en reserva, lesiones, parientes, capitán, comentario del equipo,
+   Sofascore ≥ 6,90 y rasgos (con los defectos nuevos). Copas y
+   secundarias ya están. Al cargarlo: secundarias desde
+   `secundarias-2026.json`, `cruces.ts`, OVR con la escalera y `vecinos.ts`.
+2. Cabos sueltos (para una v2.23.x si el usuario prefiere cerrarlos antes):
+   el ajuste del capitán según el motivo y si Estudiantes (sin capitán fijo)
+   lleva el arquetipo; fotos de 21 de los 24 prospectos de los planteles.
 2. **Posiciones secundarias** (idea del usuario, 24/11; aceptado: 20–25% sin
    cambiar el OVR, mismo peso para cada secundaria): completas en los 21
    planteles (v2.23.11: 394 de 615 jugadores tienen alguna) y en
@@ -30,10 +38,9 @@ actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
    tercer arquero de ALD: al cargar Aldosivi va en `reemplaza` y recibe su
    foto. Mazzanti (NOB): Transfermarkt y el comentario del usuario escriben
    "Mazzantti": corregido en la v2.23.12 (con `semilla`).
-3. Pendiente de analizar con el usuario: el ajuste del capitán según el
-   motivo y si Estudiantes (sin capitán fijo) lleva el arquetipo.
 4. Equipos que faltan: BAN, PLA, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (el orden
-   no está fijado; CCO no tiene arquero desde que Mansilla pasó a UNI).
+   no está fijado; en el archivo CCO no tiene arquero desde que Mansilla
+   pasó a UNI: su captura de secundarias trae a Aguerre y Vallejos).
 5. Más adelante (el usuario: "falta bastante"): colleges, nombres y orígenes
    latinoamericanos (`playerBioInfo`, cuando estén todos los equipos y sus
    fotos, antes de los libres) y el draft (§7, 15).
@@ -567,6 +574,20 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**24/11/2026 (v2.23.13).** Huella:
+`36bb31121234957ab95289e2865d94ce8f8bf6bb0417c14ad7a0accdf2a2ec8d`.
+
+- Lo que aceptó el usuario de `revision-v2.23.12.md`
+  (`escalera/listas/2026-11-24-b.txt`): E. Ávila 58 (vuelve), Velasco 61,
+  Depietri 61, Nervo 60, Sansotre 55, Bracamonte 55; Arias sin "flojo de
+  arriba" (reflejos + estatico), José Sosa "lento" (velocidad 14 → 19),
+  Martínez Quarta solo "desordenado" (marca 66 → 73); faltero a Caicedo,
+  Miramón, Ibáñez y Carrera; goleador a Bareiro, Franco Torres y Agustín
+  Álvarez; pase a Atencio y Sepúlveda. No aceptó: Farías, Galván y J. Correa
+  quedan como los puso.
+- Contra la v2.23.12: 6 OVR y 12 jugadores con otros ratings (los de la
+  lista), más sueldo y orden que dependen del OVR; el resto es igual.
+
 **24/11/2026 (v2.23.12).** Huella:
 `b3196b8408077b7c8f399cda946503be93010c11e4193f2c726340ce88125aae`.
 
@@ -970,7 +991,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.23.12.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.23.13.
 > Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
 > líneas que entendiste el estado, antes de seguir.
 

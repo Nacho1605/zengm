@@ -194,7 +194,7 @@
 			"ppp": 1.86,
 			"convocado": 36,
 			"fichado": "23/07/2025",
-			"ovr": 62,
+			"ovr": 60,
 			"debut": {
 				"club": "ARS",
 				"anio": 2009
@@ -300,6 +300,9 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/674391-1755535385.jpg?lm=4711",
 			"secundarias": [
 				"Interior izquierdo"
+			],
+			"rasgos": [
+				"faltero"
 			]
 		},
 		{
@@ -891,7 +894,8 @@
 			"college": "Club Sport Norte América",
 			"rasgos": [
 				"aereo",
-				"potente"
+				"potente",
+				"faltero"
 			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/360412-1760543461.jpg?lm=4711",
 			"secundarias": []

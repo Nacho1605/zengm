@@ -534,7 +534,8 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/836518-1739897521.jpg?lm=4711",
 			"rasgos": [
-				"pulmon"
+				"pulmon",
+				"faltero"
 			],
 			"sofascore": 7.05,
 			"secundarias": []
@@ -952,6 +953,9 @@
 			"secundarias": [
 				"Extremo izquierdo",
 				"Delantero centro"
+			],
+			"rasgos": [
+				"goleador"
 			]
 		},
 		{

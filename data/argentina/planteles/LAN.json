@@ -554,6 +554,9 @@
 			"secundarias": [
 				"Mediocentro",
 				"Interior izquierdo"
+			],
+			"rasgos": [
+				"faltero"
 			]
 		},
 		{
@@ -589,6 +592,9 @@
 			"secundarias": [
 				"Lateral izquierdo",
 				"Mediocentro"
+			],
+			"rasgos": [
+				"pase"
 			]
 		},
 		{

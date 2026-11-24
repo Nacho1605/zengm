@@ -3,7 +3,12 @@
 24/11/2026. Las listas del usuario (45 OVR y 56 jugadores con rasgos,
 `escalera/listas/2026-11-24.txt`) están aplicadas en la v2.23.12. Esto es lo
 que se le devolvió como dudas y propuestas: **nada de esto está aplicado**,
-espera su decisión. Números de 2026 (Rendimiento: todas las competencias;
+espera su decisión.
+
+**Decisión del usuario (24/11, aplicada en la v2.23.13):** no acepta los
+cambios de Farías, Galván y J. Correa; acepta el de E. Ávila (58), los de
+Arias y José Sosa, Martínez Quarta solo con "desordenado", los 5 OVR nuevos
+y los rasgos sugeridos (falteros, goleadores y pase). Números de 2026 (Rendimiento: todas las competencias;
 "titular" = partidos de titular en su club actual).
 
 ## Dudas sobre su lista de OVR

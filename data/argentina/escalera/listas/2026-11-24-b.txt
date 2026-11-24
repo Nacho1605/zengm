@@ -1,0 +1,30 @@
+Respuesta del usuario a revision-v2.23.12.md (24/11/2026): "No acepto los
+cambios propuestos de Farías, Galván y Correa. Acepto el de Ávila. Acepto tus
+propuestas acerca de Arias y Sosa. Para Martínez Quarta, dejar únicamente
+'desordenado'. Acepto tus propuestas de OVR para Velasco, Depietri, Nervo,
+Sansotre y Bracamonte. Acepto las sugerencias de tus rasgos para los
+'falteros', 'goleadores' y 'pasadores'."
+
+## OVR
+
+IND Ezequiel Ávila: 60 → 58
+BOC Alan Velasco: 59 → 61
+TAL Valentín Depietri: 63 → 61
+HUR Hugo Nervo: 62 → 60
+RIE Nicolás Sansotre: 53 → 55
+RIE Mariano Bracamonte: 53 → 55
+
+## Rasgos
+
+NOB Gabriel Arias: − flojo de arriba
+EST José Sosa: + lento, − lento+
+RIV Lucas Martínez Quarta: − faltero
+HUR Jordy Caicedo: + faltero
+GIM Ignacio Miramón: + faltero
+HUR César Ibáñez: + faltero
+LAN Ramiro Carrera: + faltero
+BOC Adam Bareiro: + goleador
+GIM Franco Torres: + goleador
+TAL Agustín Álvarez: + goleador
+INR Rodrigo Atencio: + pase
+LAN Matías Sepúlveda: + pase
