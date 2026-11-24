@@ -1,75 +1,89 @@
-# Premios de la liga (desde la v2.24.2)
+# Premios de la liga (gala de la v2.24.3)
 
 Generado desde `tools/argentina/premios.ts`. Las estadísticas son del motor (básquet por dentro) y por partido; "gp" = partidos, "min" = minutos por partido, "winp" = % de victorias del equipo, "seasonFraction" = parte de la temporada que jugó. Ninguna fórmula usa las WS (ver `analisis-premios.md`).
 
 Peso de ataque y defensa por puesto: F 0.85/0.15, SF 0.75/0.25, PG 0.7/0.3, SG 0.5/0.5, G 0.35/0.65, GF 0.35/0.65, FC 0.2/0.8, PF 0.2/0.8, C 0.1/0.9. Peso del puesto en los premios generales: F 1, SF 1, PG 1, SG 0.96, G 0.92, GF 0.88, FC 0.85, PF 0.85, C 0.75.
 
-## Balón de Oro (ORO)
+## Ballon d'Or (BDO)
 
-El mejor jugador de la temporada. Mide el rendimiento según el puesto (ataque y defensa con distinto peso), cuánto jugó y cuánto ganó su equipo.
+El mejor jugador de la temporada (cuenta como MVP para el juego). Rendimiento según el puesto, cuánto jugó y cuánto ganó su equipo; los puestos de ataque pesan más.
 
 Condiciones: cuenta como MVP para el juego.
 
-- F: `min(1, gp*min/2700)^1.5 * 1 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
-- SF: `min(1, gp*min/2700)^1.5 * 1 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
-- PG: `min(1, gp*min/2700)^1.5 * 1 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
-- SG: `min(1, gp*min/2700)^1.5 * 0.96 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
-- G: `min(1, gp*min/2700)^1.5 * 0.92 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
-- GF: `min(1, gp*min/2700)^1.5 * 0.88 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
-- FC, PF: `min(1, gp*min/2700)^1.5 * 0.85 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
-- C: `min(1, gp*min/2700)^1.5 * 0.75 * (0.1*(per/15 + (obpm + 3)/3) + 0.9*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- F: `1 * min(1, gp*min/2700)^1.5 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- SF: `1 * min(1, gp*min/2700)^1.5 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- PG: `1 * min(1, gp*min/2700)^1.5 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- SG: `0.96 * min(1, gp*min/2700)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- G: `0.92 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- GF: `0.88 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- FC, PF: `0.85 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- C: `0.75 * min(1, gp*min/2700)^1.5 * (0.1*(per/15 + (obpm + 3)/3) + 0.9*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 
-## Botín de Oro (BOT)
+## Zone Player of the Year (ZPOY)
 
-El goleador: los puntos del motor en toda la temporada, con un plus por la eficacia del remate.
+El mejor de cada zona (Metropolitano y Federal), con la fórmula del Ballon d'Or: dos ganadores.
+
+- F: `1 * min(1, gp*min/2700)^1.5 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- SF: `1 * min(1, gp*min/2700)^1.5 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- PG: `1 * min(1, gp*min/2700)^1.5 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- SG: `0.96 * min(1, gp*min/2700)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- G: `0.92 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- GF: `0.88 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- FC, PF: `0.85 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- C: `0.75 * min(1, gp*min/2700)^1.5 * (0.1*(per/15 + (obpm + 3)/3) + 0.9*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+
+## Golden Boot (GB)
+
+El goleador: los puntos del motor en toda la temporada, con un plus por la eficacia.
 
 `pts*gp*(0.85 + 0.3*tsp/100)`
 
-## Guante de Oro (GUA)
-
-El mejor arquero (solo arqueros): defensa, atajadas (tapones), rebotes y robos, cuánto jugó y cuánto ganó su equipo.
-
-- F, SF, PG, SG, G, GF, FC, PF: `-1000 + 0*gp` (no participan)
-- C: `min(1, gp*min/2700)^1.2 * ((dbpm + 3) + 0.3*blk + 0.08*drb + 0.1*stl) * (0.7 + 0.6*winp)`
-
-## Candado de Oro (CAN)
-
-El mejor defensor, sin arqueros (centrales, laterales, pivotes y volantes; los volantes con un 10% menos): defensa, titularidad y victorias.
-
-- F, SF, PG, C: `-1000 + 0*gp` (no participan)
-- SG: `min(1, gp*min/2700)^1.5 * (2*(dbpm + 3)/3 + 0.15*gs/max(gp, 1)) * (0.75 + 0.5*winp) * 0.9 + 0.25*seasonFraction*winp`
-- G, GF, FC, PF: `min(1, gp*min/2700)^1.5 * (2*(dbpm + 3)/3 + 0.15*gs/max(gp, 1)) * (0.75 + 0.5*winp) + 0.25*seasonFraction*winp`
-
-## Maestro del Pase (PAS)
+## Playmaker of the Year (PMK)
 
 El asistidor: asistencias de toda la temporada, con un plus por el porcentaje de jugadas que asiste y un descuento por pérdidas.
 
 `ast*gp*(1 + astp/100) - 0.25*tov*gp`
 
-## Revelación del Año (REV)
+## Golden Glove (GG)
 
-La revelación (solo novatos): como el Balón de Oro, con menos minutos exigidos.
+El mejor arquero (solo arqueros): defensa, atajadas (tapones), rebotes y robos, minutos y victorias.
+
+- F, SF, PG, SG, G, GF, FC, PF: `-1000 + 0*gp` (no participan)
+- C: `min(1, gp*min/2700)^1.2 * ((dbpm + 3) + 0.3*blk + 0.08*drb + 0.1*stl) * (0.7 + 0.6*winp)`
+
+## Defender of the Year (DPOY)
+
+El mejor defensor, sin arqueros: centrales, laterales (+12%) y pivotes (+5%), por defensa, titularidad y victorias.
+
+- F, SF, PG, SG, C: `-1000 + 0*gp` (no participan)
+- G: `1.05 * min(1, gp*min/2700)^1.5 * (2*(dbpm + 3)/3 + 0.15*gs/max(gp, 1)) * (0.75 + 0.5*winp) + 0.25*seasonFraction*winp`
+- GF: `1.12 * min(1, gp*min/2700)^1.5 * (2*(dbpm + 3)/3 + 0.15*gs/max(gp, 1)) * (0.75 + 0.5*winp) + 0.25*seasonFraction*winp`
+- FC, PF: `1 * min(1, gp*min/2700)^1.5 * (2*(dbpm + 3)/3 + 0.15*gs/max(gp, 1)) * (0.75 + 0.5*winp) + 0.25*seasonFraction*winp`
+
+## Breakthrough of the Year (BTY)
+
+La revelación (solo novatos; cuenta como ROY): como el Ballon d'Or, con menos minutos exigidos y el arquero con menos peso.
 
 Condiciones: solo novatos; cuenta como ROY para el juego.
 
-- F: `min(1, gp*min/1800)^1.5 * 1 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
-- SF: `min(1, gp*min/1800)^1.5 * 1 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
-- PG: `min(1, gp*min/1800)^1.5 * 1 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
-- SG: `min(1, gp*min/1800)^1.5 * 0.96 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
-- G: `min(1, gp*min/1800)^1.5 * 0.92 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
-- GF: `min(1, gp*min/1800)^1.5 * 0.88 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
-- FC, PF: `min(1, gp*min/1800)^1.5 * 0.85 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
-- C: `min(1, gp*min/1800)^1.5 * 0.75 * (0.1*(per/15 + (obpm + 3)/3) + 0.9*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
+- F: `1 * min(1, gp*min/1800)^1.5 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- SF: `1 * min(1, gp*min/1800)^1.5 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- PG: `1 * min(1, gp*min/1800)^1.5 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- SG: `0.96 * min(1, gp*min/1800)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- G: `0.92 * min(1, gp*min/1800)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- GF: `0.88 * min(1, gp*min/1800)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- FC, PF: `0.85 * min(1, gp*min/1800)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- C: `0.65 * min(1, gp*min/1800)^1.5 * (0.1*(per/15 + (obpm + 3)/3) + 0.9*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 
-## Revulsivo del Año (RVS)
+## Super Sub of the Year (SUB)
 
-El mejor suplente (los que fueron titulares en menos de la mitad de sus partidos): rendimiento, con un mínimo de 20 partidos y 900 minutos para sumar completo.
+El mejor suplente (titular en menos de la mitad de sus partidos): rendimiento, con 20 partidos y 900 minutos para sumar completo.
 
 Condiciones: solo suplentes.
 
 `min(1, gp/20) * min(1, gp*min/900)^1.2 * (per/15 + (obpm + dbpm + 3)/3) * (0.85 + 0.3*winp)`
 
-## Mayor Progreso (PRO)
+## Most Improved Player (MIP)
 
 El que más mejoró contra la temporada anterior (rendimiento y minutos).
 
@@ -77,65 +91,138 @@ Condiciones: mejora contra el año anterior.
 
 `min(1, gp*min/2000)^1 * (per/15 + (obpm + dbpm + 3)/3 + 0.5)`
 
-## Figura de la Liguilla (LIG)
+## Iron Man (IRON)
 
-El mejor de la liguilla (todos los playoffs): rendimiento, cuántos partidos jugó (llegar lejos suma) y minutos por partido.
+El hombre de hierro: más minutos en la temporada, sin arqueros (siempre juegan 90'), con un plus por las victorias.
+
+- F, SF, PG, SG, G, GF, FC, PF: `gp*min*(0.9 + 0.2*winp)`
+- C: `-1000 + 0*gp` (no participan)
+
+## Striker of the Year (STR)
+
+El mejor delantero centro.
+
+- F: `1 * min(1, gp*min/2700)^1.5 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- SF, PG, SG, G, GF, FC, PF, C: `-1000 + 0*gp` (no participan)
+
+## Winger of the Year (WNG)
+
+El mejor extremo.
+
+- F, PG, SG, G, GF, FC, PF, C: `-1000 + 0*gp` (no participan)
+- SF: `1 * min(1, gp*min/2700)^1.5 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+
+## Number 10 of the Year (N10)
+
+El mejor mediapunta (el diez).
+
+- F, SF, SG, G, GF, FC, PF, C: `-1000 + 0*gp` (no participan)
+- PG: `1 * min(1, gp*min/2700)^1.5 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+
+## Midfield General of the Year (MID)
+
+El mejor del medio: pivotes (+5%) y volantes.
+
+- F, SF, PG, GF, FC, PF, C: `-1000 + 0*gp` (no participan)
+- SG: `1 * min(1, gp*min/2700)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- G: `1.05 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+
+## Full-Back of the Year (FB)
+
+El mejor lateral.
+
+- F, SF, PG, SG, G, FC, PF, C: `-1000 + 0*gp` (no participan)
+- GF: `1 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+
+## Center-Back of the Year (CB)
+
+El mejor central (#2 y #6).
+
+- F, SF, PG, SG, G, GF, C: `-1000 + 0*gp` (no participan)
+- FC, PF: `1 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+
+## Liguilla MVP (LMVP)
+
+El mejor de la liguilla: rendimiento, cuántos partidos jugó (llegar lejos suma) y minutos por partido. Arquero y centrales, con menos peso.
 
 Condiciones: solo playoffs.
 
-`(min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)`
+- F, SF, PG: `1 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)`
+- SG: `0.96 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)`
+- G: `0.92 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)`
+- GF: `0.88 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)`
+- FC, PF: `0.8 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)`
+- C: `0.6 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)`
 
-## Figura de la Final (FIN)
+## Final MVP (FMVP)
 
-La figura de la final: puntaje del partido, robos, tapones y asistencias; vale casi el doble si ganó; exige 45 minutos para sumar completo.
+La figura de la final: puntaje del partido, robos, tapones y asistencias; vale casi el doble si ganó; 45 minutos para sumar completo. Arquero (−40%) y centrales (−20%), con menos peso: sus rebotes inflan el puntaje.
 
 Condiciones: la final.
 
-`(gmsc + 0.4*(stl + blk) + 0.2*ast) * (1 + 0.75*won) * min(1, min/45)`
+- F, SF, PG: `1 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
+- SG: `0.96 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
+- G: `0.92 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
+- GF: `0.88 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
+- FC, PF: `0.8 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
+- C: `0.6 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
 
-## Figura de la Semifinal (SEM)
+## Semifinal MVP (SFMVP)
 
-La figura de cada semifinal, con la misma fórmula que la final.
+La figura de cada semifinal, con la fórmula de la final.
 
 Condiciones: las semifinales.
 
-`(gmsc + 0.4*(stl + blk) + 0.2*ast) * (1 + 0.75*won) * min(1, min/45)`
+- F, SF, PG: `1 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
+- SG: `0.96 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
+- G: `0.92 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
+- GF: `0.88 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
+- FC, PF: `0.8 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
+- C: `0.6 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
 
-## Equipo Ideal: Defensa (EID)
+## Team of the Season: Defense (TSD)
 
-Los 5 mejores de la defensa (centrales, laterales y pivotes), con la fórmula del Balón de Oro. Con el Guante de Oro y el equipo de medio y ataque forman el once ideal.
-
-Condiciones: equipo de 5.
-
-- F, SF, PG, SG, C: `-1000 + 0*gp` (no participan)
-- G: `min(1, gp*min/2700)^1.5 * 0.92 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
-- GF: `min(1, gp*min/2700)^1.5 * 0.88 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
-- FC, PF: `min(1, gp*min/2700)^1.5 * 0.85 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
-
-## Equipo Ideal: Medio y Ataque (EIA)
-
-Los 5 mejores del medio y el ataque (volantes, mediapuntas, extremos y delanteros), con la fórmula del Balón de Oro.
+Los 5 mejores de la defensa: centrales y laterales (+15%, para que no sean solo centrales).
 
 Condiciones: equipo de 5.
 
-- F: `min(1, gp*min/2700)^1.5 * 1 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
-- SF: `min(1, gp*min/2700)^1.5 * 1 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
-- PG: `min(1, gp*min/2700)^1.5 * 1 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
-- SG: `min(1, gp*min/2700)^1.5 * 0.96 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
-- G, GF, FC, PF, C: `-1000 + 0*gp` (no participan)
+- F, SF, PG, SG, G, C: `-1000 + 0*gp` (no participan)
+- GF: `1.15 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- FC, PF: `1 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 
-## Equipo Ideal de Revelaciones (EIR)
+## Team of the Season: Midfield (TSM)
 
-Los 5 mejores novatos, con la fórmula de la Revelación.
+Los 5 mejores del medio: pivotes (+10%), volantes (+8%) y mediapuntas (−5%, para que no sean solo mediapuntas).
+
+Condiciones: equipo de 5.
+
+- F, SF, GF, FC, PF, C: `-1000 + 0*gp` (no participan)
+- PG: `0.95 * min(1, gp*min/2700)^1.5 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- SG: `1.08 * min(1, gp*min/2700)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- G: `1.1 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+
+## Team of the Season: Attack (TSA)
+
+Los 5 mejores del ataque: extremos (−5%) y delanteros (+15%, para que haya nueves).
+
+Condiciones: equipo de 5.
+
+- F: `1.15 * min(1, gp*min/2700)^1.5 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- SF: `0.95 * min(1, gp*min/2700)^1.5 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- PG, SG, G, GF, FC, PF, C: `-1000 + 0*gp` (no participan)
+
+## Rookie Team of the Season (RTS)
+
+Los 5 mejores novatos, con la fórmula de la revelación.
 
 Condiciones: equipo de 5; solo novatos.
 
-- F: `min(1, gp*min/1800)^1.5 * 1 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
-- SF: `min(1, gp*min/1800)^1.5 * 1 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
-- PG: `min(1, gp*min/1800)^1.5 * 1 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
-- SG: `min(1, gp*min/1800)^1.5 * 0.96 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
-- G: `min(1, gp*min/1800)^1.5 * 0.92 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
-- GF: `min(1, gp*min/1800)^1.5 * 0.88 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
-- FC, PF: `min(1, gp*min/1800)^1.5 * 0.85 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
-- C: `min(1, gp*min/1800)^1.5 * 0.75 * (0.1*(per/15 + (obpm + 3)/3) + 0.9*2*(dbpm + 3)/3) * (0.9 + 0.2*winp)`
+- F: `1 * min(1, gp*min/1800)^1.5 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- SF: `1 * min(1, gp*min/1800)^1.5 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- PG: `1 * min(1, gp*min/1800)^1.5 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- SG: `0.96 * min(1, gp*min/1800)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- G: `0.92 * min(1, gp*min/1800)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- GF: `0.88 * min(1, gp*min/1800)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- FC, PF: `0.85 * min(1, gp*min/1800)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
+- C: `0.65 * min(1, gp*min/1800)^1.5 * (0.1*(per/15 + (obpm + 3)/3) + 0.9*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 

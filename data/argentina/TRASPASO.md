@@ -1,8 +1,8 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026. Última versión: **v2.24.2**
-(`data/argentina/BBGM_Argentina_2026_v.2.24.2_futbol.json`, sha256
-`9e480a1f6a5a7622cde2b6c4d462b7ffa12c4c9d1fb6763f9e2e9ea397f21e27`): 22 de 30
+Estado al 24/11/2026. Última versión: **v2.24.3**
+(`data/argentina/BBGM_Argentina_2026_v.2.24.3_futbol.json`, sha256
+`4913d9fa62ca7741a800959ea457ffe4fb4a295088f24c929742f1214615b445`): 22 de 30
 equipos con plantel 2026 (el último, Platense, 36 jugadores), Rendimiento
 completo; fotos de los 21 primeros (las de Platense, pendientes: las pone el
 usuario en el juego); todo el archivo en la escala nueva de OVR (20 a 78) y
@@ -13,13 +13,15 @@ actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-0. **Premios propios** (v2.24.2, `tools/argentina/premios.ts`, explicados en
-   `premios.md`; análisis en `analisis-premios.md`): 14 premios nuevos en
-   español, sin WS. FALTA CALIBRARLOS con datos reales: se le pidió al
-   usuario la liga que simuló en la v2.24.1 (temporada completa) para ver
-   los 10 primeros de cada premio y ajustar pesos (sobre todo el peso del
-   puesto y el de la defensa, puestos a ojo). All-Star: la elección es fija
-   del motor (2,5 × EWA + WS); el usuario decide si se desactiva.
+0. **Gala de premios** (v2.24.3, `tools/argentina/premios.ts`, explicada en
+   `premios.md`): 23 premios en inglés (pedido del usuario, por ahora). Se
+   ajustó con lo que mostraron dos temporadas simuladas por el usuario en
+   la v2.24.2 (captura de la página de premios): ningún delantero en el
+   equipo ideal de ataque, ningún lateral en el de defensa, arquero figura
+   de semifinal, revelación y equipo de revelaciones de defensores. Los
+   factores por puesto siguen a ojo: para calibrarlos bien hace falta la
+   liga exportada con esas temporadas (pedida). All-Star: decisión del
+   usuario (elección fija del motor).
 1. v2.24.1: el usuario aceptó los rasgos sugeridos (Cuesta recuperador y
    aereo, Zapiola larga distancia, Cozzani reflejos) y la lesión estimada de
    Luciano Giménez; segunda revisión breve de los OVR de Platense: se
@@ -587,6 +589,16 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**24/11/2026 (v2.24.3).** Huella:
+`4913d9fa62ca7741a800959ea457ffe4fb4a295088f24c929742f1214615b445`. Gala de
+premios: Ballon d'Or, Zone Player of the Year (uno por zona), Golden Boot,
+Playmaker, Golden Glove, Defender, Breakthrough, Super Sub, MIP, Iron Man,
+los mejores de cada puesto (Striker, Winger, Number 10, Midfield General,
+Full-Back, Center-Back), Liguilla MVP, Final MVP, Semifinal MVP y cuatro
+equipos de la temporada (Defensa, Medio, Ataque, Novatos). 194 fórmulas,
+todas válidas para el evaluador del juego. Contra la v2.24.2 solo cambian
+los premios.
+
 **24/11/2026 (v2.24.2).** Huella:
 `9e480a1f6a5a7622cde2b6c4d462b7ffa12c4c9d1fb6763f9e2e9ea397f21e27`.
 - Premios propios (pedido del usuario: reformular todos, fórmulas complejas
@@ -1045,7 +1057,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.24.2.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.24.3.
 > Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
 > líneas que entendiste el estado, antes de seguir.
 
