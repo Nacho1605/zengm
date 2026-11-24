@@ -1,0 +1,167 @@
+Capturas del usuario del 24/11/2026 ("Composición de la plantilla según
+posiciones" de Transfermarkt). Orden de la escalera: BOC, ROS, EST, INR, VEL.
+
+# BOC
+TOTAL POR 4/0 LIB 0/0 CEN 6/1 LI 2/2 LD 2/2 PIV 6/1 MC 2/5 ID 0/3 II 0/3 MCO 2/2 EI 2/7 ED 2/5 MP 0/0 DEL ?/3
+1|Álvaro Montero|POR|
+12|Leandro Brey|POR|
+-|Agustín Marchesín|POR|
+30|Javier García|POR|
+2|Lautaro Di Lollo|CEN|LD
+32|Ayrton Costa|CEN|LI
+42|Facundo Herrera|CEN|
+26|Marco Pellegrino|CEN|
+46|Matías Satas|CEN|
+4|Nicolás Figal|CEN|LD
+3|Lautaro Blanco|LI|EI
+27|Malcom Braida|LI|II EI
+17|Leandro Lozano|LD|LI ID
+24|Dylan Gorosito|LD|ID
+18|Milton Delgado|PIV|MC
+25|Santiago Ascacíbar|PIV|MC ID
+5|Leandro Paredes|PIV|MC
+8|Tomás Belmonte|PIV|MC
+23|Camilo Rey Domenech|PIV|MC
+6|Rodrigo Battaglia|PIV|CEN
+15|Williams Alarcón|MC|PIV
+-|Juan Ramírez|MC|II MCO
+10|Tomás Aranda|MCO|II EI
+7|Carlos Palacios|MCO|EI ED
+22|Sebastián Villa|EI|ED DEL
+20|Alan Velasco|EI|MCO ED
+19|Leonel Flores|ED|EI DEL
+11|Ángel Romero|ED|EI DEL
+16|Miguel Merentiel|DEL|ED
+28|Adam Bareiro|DEL|
+9|Milton Giménez|DEL|
+13|Enner Valencia|DEL|EI ED
+
+# ROS
+TOTAL POR 3/0 LIB 0/1 CEN 7/2 LI 2/4 LD 3/0 PIV 3/2 MC 2/2 ID 0/2 II 0/1 MCO 1/3 EI 3/3 ED 3/2 MP 0/0 DEL 3/0
+23|Conan Ledesma|POR|
+1|Axel Werner|POR|
+38|Damián Fernández|POR|
+46|Ignacio Ovando|CEN|
+13|Gastón Ávila|CEN|LI
+24|Juan Giménez|CEN|
+15|Facundo Mallo|CEN|
+2|Sebastián Zaracho|CEN|LI
+6|Juan Cruz Komar|CEN|LI
+47|Luca Raffin|CEN|LIB
+3|Agustín Sández|LI|CEN
+33|Alexis Soto|LI|CEN PIV
+32|Emanuel Coronel|LD|
+4|Ulises Ciccioli|LD|
+42|Elías Verón|LD|
+5|Franco Ibarra|PIV|
+20|Vicente Pizarro|PIV|MC
+31|Federico Navarro|PIV|MC
+88|Alan Rodríguez|MC|ID
+28|Pol Fernández|MC|PIV MCO
+19|Santiago Segovia|MCO|
+8|Jáminton Campaz|EI|MCO ED
+26|Giovanni Cantizano|EI|
+10|Franco Cervi|EI|LI II
+18|Julián Fernández|ED|EI
+11|Ángel Di María|ED|MCO EI
+27|Gaspar Duarte|ED|EI
+16|Tomás Badaloni|DEL|
+22|Enzo Copetti|DEL|ID ED
+9|Marco Ruben|DEL|
+
+# EST
+TOTAL POR 3/0 LIB 0/0 CEN 6/0 LI 3/3 LD 2/0 PIV 3/1 MC 2/5 ID 0/2 II 0/3 MCO 3/3 EI 3/5 ED 2/2 MP 1/2 DEL 3/1
+16|Fernando Muslera|POR|
+1|Fabricio Iacovich|POR|
+12|Rodrigo Borzone|POR|
+24|Tomás Palacios|CEN|
+4|Santiago Núñez|CEN|
+14|Leandro González Pírez|CEN|
+35|Valente Pierani|CEN|
+5|Marcos Rojo|CEN|LI
+26|Ramiro Funes Mori|CEN|LI
+15|Santiago Arzamendia|LI|II
+13|Gastón Benedetti|LI|II
+36|Joaquín Pereyra|LI|
+40|Eros Mancuso|LD|LI
+20|Eric Meza|LD|ID
+39|Jalil Elías|PIV|MC ID
+8|Gabriel Neves|PIV|MC
+21|Ezequiel Piovi|PIV|MC
+22|Alexis Castro|MC|MCO EI
+52|Bautista Kociubinski|MC|PIV
+31|Baltasar Rodríguez|MCO|MC EI
+34|Miguel Monsalve|MCO|EI
+7|José Sosa|MCO|MC
+17|Joaquín Tobio Burgos|EI|MP
+18|Edwuin Cetré|EI|II ED
+28|Brian Aguirre|EI|ED
+10|Tiago Palacios|ED|MCO MP
+29|Fabricio Pérez|ED|MCO EI
+32|Joaquín Correa|MP|EI DEL
+19|Adolfo Gaich|DEL|
+9|Guido Carrillo|DEL|
+27|Lucas Alario|DEL|
+
+# INR
+TOTAL POR 3/0 LIB 0/0 CEN 5/0 LI 1/2 LD 3/4 PIV 3/2 MC 2/3 ID 0/5 II 0/4 MCO 3/3 EI 1/4 ED 4/4 MP 0/2 DEL 4/1
+30|Nicolás Bolcato|POR|
+12|Ramiro Macagno|POR|
+21|Emmanuel Gómez Riga|POR|
+42|Sheyko Studer|CEN|
+13|Alejo Osella|CEN|LD ID
+2|Leonard Costa|CEN|LD
+40|Iván Villalba|CEN|
+6|Santiago Cena|CEN|LD
+3|Juan Elordi|LI|LD II
+14|Luciano Gómez|LD|LI ID
+28|Alex Vigo|LD|ID
+36|Ezequiel Bonifacio|LD|LI ID
+8|Leonel Bucca|PIV|MC MCO
+34|Stefano Moreyra|PIV|
+32|Kevin Vázquez|PIV|MC
+25|José Florentín|MC|PIV MCO
+5|Tomás Bottari|MC|PIV
+10|Matías Fernández|MCO|ID MP
+11|Gonzalo Ríos|MCO|EI ED
+77|Luis Sequeira|MCO|II
+27|Diego Crego|EI|II ED
+19|Rodrigo Atencio|ED|MC II
+-|Matías Reali|ED|EI MP
+23|Luis Díaz|ED|DEL
+20|Alessandro Riep|ED|MCO EI
+17|Maximiliano Salas|DEL|ED
+9|Álex Arce|DEL|
+43|Fabrizio Sartori|DEL|
+7|Victorio Ramis|DEL|EI ED
+
+# VEL
+TOTAL POR 5/0 LIB 0/0 CEN 4/2 LI 3/1 LD 2/2 PIV 1/2 MC 2/3 ID 0/0 II 0/2 MCO 4/3 EI 1/6 ED 3/2 MP 0/1 DEL 3/0
+23|Facundo Sanguinetti|POR|
+1|Tomás Marchiori|POR|
+34|Álvaro Busso|POR|
+33|Franco Villalba|POR|
+42|Agustín Cortez|POR|
+32|Thiago Silvero|CEN|LD
+2|Emanuel Mammana|CEN|LD
+16|Lisandro Magallán|CEN|
+19|Leo Cristaldo|CEN|
+18|Simón Escobar|LI|EI
+3|Elías Gómez|LI|II
+-|Joaquín Vaquero|LI|
+4|Joaquín García|LD|LI
+21|Jano Gordon|LD|CEN
+5|Claudio Baeza|PIV|CEN MC
+8|Lucas Robertone|MC|PIV MCO
+29|Rodrigo Aliendro|MC|PIV MCO
+10|Diego Valdés|MCO|MC EI
+22|Manuel Lanzini|MCO|MC II
+48|Luca Feler|MCO|
+35|Matías Arias|MCO|
+37|Juan Cruz Policella|EI|ED
+11|Matías Pellegrini|ED|MCO EI
+17|Álex Verón|ED|EI
+27|Simón Prima|ED|
+77|Ronaldo Martínez|DEL|EI MP
+39|Thiago Aguirre|DEL|
+15|Dilan Godoy|DEL|EI ED

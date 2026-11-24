@@ -21,9 +21,15 @@ actualizada, para anotar OVR y rasgos (con los defectos en rojo)
    versión, regenerar la escalera y republicarla en el mismo link.
 2. **Posiciones secundarias** (idea del usuario, 24/11; aceptado: 20–25% sin
    cambiar el OVR, mismo peso para cada secundaria; Belgrano "funcionó de
-   maravilla"): cargadas BEL y RIV. Faltan los otros 19 equipos cargados: el
-   usuario las manda en tandas de cinco (van directo a cada plantel; mismo
-   control con la fila "Total"). Las de los 9 sin cargar están completas en
+   maravilla"): en la v2.23.10, BEL y RIV. **Tanda 1 (BOC, ROS, EST, INR,
+   VEL) ya está en los planteles, sin versión armada** (el usuario: guardar
+   las tandas y armar un superparche al final). Faltan 14: el usuario las
+   manda en el orden de la escalera (once; BEL ya está): ARG, LAN, GIM,
+   INS, IND, HUR, TAL, RAC, BAR, SLO, NOB, UNI, RIE, ERC (tres tandas). Cada tanda:
+   transcribir a `secundarias/tanda-N.txt`, `secundarias.ts`, revisar los
+   avisos, commit. Al terminar: armar la versión (superparche), comparar
+   con la v2.23.10 (ningún OVR cambia), regenerar la escalera y mandarla.
+   Las de los 9 sin cargar están completas en
    `secundarias-2026.json` (pasarlas al plantel al cargar cada uno). Duda:
    Jhon Rentería (SAR) figura sin puesto principal marcado (MCO y ED en
    claro; por los totales, extremo derecho): confirmar con su plantel.
@@ -567,6 +573,13 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**24/11/2026 (sin versión): tanda 1 de secundarias.** BOC, ROS, EST, INR y
+VEL en sus planteles (`secundarias/tanda-1.txt`; herramienta nueva
+`secundarias.ts`; las cinco capturas coinciden con su fila "Total"; nadie
+falta y los puestos coinciden con los planteles). "Líbero" (Raffin, ROS)
+cuenta como central. Prueba de armado: 87 jugadores cambian de ratings,
+ningún OVR.
+
 **24/11/2026 (v2.23.10).** Huella:
 `02d45e2db43eea81cebfd6be2ec5ab23cc53877515e571d56e64bfdbe645758d`.
 

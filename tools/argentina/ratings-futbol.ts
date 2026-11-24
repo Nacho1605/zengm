@@ -78,6 +78,7 @@ export const posicion = (tm: string, pie: string | null) => {
 		case "Portero":
 			return "C";
 		case "Defensa central":
+		case "Líbero":
 			// #2 = central de pie derecho; #6 = el resto (zurdo, ambidiestro o sin
 			// dato en Transfermarkt), porque en el juego faltan centrales izquierdos
 			return pie === "Derecho" ? "FC" : "PF";

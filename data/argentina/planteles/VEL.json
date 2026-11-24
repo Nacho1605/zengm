@@ -50,7 +50,8 @@
 				"anio": 2020
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/870032-1755785095.jpg?lm=4711",
-			"sofascore": 7.24
+			"sofascore": 7.24,
+			"secundarias": []
 		},
 		{
 			"n": "1",
@@ -82,7 +83,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/596909-1720644730.jpg?lm=4711",
 			"rasgos": [
 				"reflejos"
-			]
+			],
+			"secundarias": []
 		},
 		{
 			"n": "32",
@@ -111,7 +113,10 @@
 				"club": "VEL",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1285238-1771509951.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1285238-1771509951.jpg?lm=4711",
+			"secundarias": [
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "2",
@@ -141,7 +146,10 @@
 				"anio": 2015
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/275512-1720645007.jpg?lm=4711",
-			"sofascore": 6.95
+			"sofascore": 6.95,
+			"secundarias": [
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "16",
@@ -170,7 +178,8 @@
 				"club": "GIM",
 				"anio": 2010
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/66736-1583506940.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/66736-1583506940.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "18",
@@ -199,7 +208,10 @@
 				"club": "VEL",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1310741-1762504896.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1310741-1762504896.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "3",
@@ -234,7 +246,10 @@
 			"rasgos": [
 				"centrador"
 			],
-			"sofascore": 6.94
+			"sofascore": 6.94,
+			"secundarias": [
+				"Interior izquierdo"
+			]
 		},
 		{
 			"n": "20",
@@ -263,7 +278,8 @@
 				"club": "VEL",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1290990-1747752814.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1290990-1747752814.JPG?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "4",
@@ -293,7 +309,10 @@
 				"anio": 2023
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/829433-1720645206.jpg?lm=4711",
-			"sofascore": 6.9
+			"sofascore": 6.9,
+			"secundarias": [
+				"Lateral izquierdo"
+			]
 		},
 		{
 			"n": "21",
@@ -326,7 +345,10 @@
 				"tipo": "Recuperación de rotura del ligamento cruzado",
 				"partidos": 3
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1285237-1771509929.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1285237-1771509929.jpg?lm=4711",
+			"secundarias": [
+				"Defensa central"
+			]
 		},
 		{
 			"n": "5",
@@ -357,7 +379,11 @@
 			},
 			"college": "Club Social y Deportivo Colo-Colo",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/248346-1579704061.png?lm=4711",
-			"sofascore": 6.9
+			"sofascore": 6.9,
+			"secundarias": [
+				"Defensa central",
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "8",
@@ -390,7 +416,11 @@
 			"rasgos": [
 				"cerebro"
 			],
-			"sofascore": 7.03
+			"sofascore": 7.03,
+			"secundarias": [
+				"Pivote",
+				"Mediocentro ofensivo"
+			]
 		},
 		{
 			"n": "29",
@@ -423,7 +453,11 @@
 			"rasgos": [
 				"cerebro"
 			],
-			"sofascore": 6.95
+			"sofascore": 6.95,
+			"secundarias": [
+				"Pivote",
+				"Mediocentro ofensivo"
+			]
 		},
 		{
 			"n": "10",
@@ -458,7 +492,11 @@
 				"pelota parada",
 				"pase"
 			],
-			"sofascore": 6.99
+			"sofascore": 6.99,
+			"secundarias": [
+				"Mediocentro",
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "22",
@@ -492,7 +530,11 @@
 			"rasgos": [
 				"larga distancia"
 			],
-			"sofascore": 7.11
+			"sofascore": 7.11,
+			"secundarias": [
+				"Mediocentro",
+				"Interior izquierdo"
+			]
 		},
 		{
 			"n": "48",
@@ -521,7 +563,8 @@
 				"club": "VEL",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1516245-1771510655.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1516245-1771510655.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "35",
@@ -550,7 +593,8 @@
 				"club": "VEL",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1379347-1771510098.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1379347-1771510098.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "37",
@@ -579,7 +623,10 @@
 				"club": "VEL",
 				"anio": 2026
 			},
-			"imgURL": "https://www.zerozero.com.mx/img/jogadores/new/41/07/2824107_juan_policella_20260410144345.jpg"
+			"imgURL": "https://www.zerozero.com.mx/img/jogadores/new/41/07/2824107_juan_policella_20260410144345.jpg",
+			"secundarias": [
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "11",
@@ -608,7 +655,11 @@
 				"club": "EST",
 				"anio": 2018
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/606267-1720647401.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/606267-1720647401.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro ofensivo",
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "17",
@@ -637,7 +688,10 @@
 				"club": "VEL",
 				"anio": 2026
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1231224-1771510235.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1231224-1771510235.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "77",
@@ -672,7 +726,11 @@
 				"goleador",
 				"aereo"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/567736-1724876503.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/567736-1724876503.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Mediapunta"
+			]
 		},
 		{
 			"n": "39",
@@ -701,7 +759,8 @@
 				"club": "VEL",
 				"anio": 2026
 			},
-			"imgURL": "https://cdn-img.staticzz.com/img/jogadores/new/41/05/2824105_thiago_aguirre_20260922010138.jpg"
+			"imgURL": "https://cdn-img.staticzz.com/img/jogadores/new/41/05/2824105_thiago_aguirre_20260922010138.jpg",
+			"secundarias": []
 		},
 		{
 			"n": "15",
@@ -730,7 +789,11 @@
 				"club": "VEL",
 				"anio": 2025
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1379348-1771510210.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1379348-1771510210.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "34",
@@ -756,7 +819,8 @@
 			"convocado": 5,
 			"ovr": 30,
 			"prospecto": true,
-			"college": "Club Atlético Vélez Sarsfield"
+			"college": "Club Atlético Vélez Sarsfield",
+			"secundarias": []
 		},
 		{
 			"n": "33",
@@ -782,7 +846,8 @@
 			"convocado": 2,
 			"ovr": 25,
 			"prospecto": true,
-			"college": "Club Atlético Vélez Sarsfield"
+			"college": "Club Atlético Vélez Sarsfield",
+			"secundarias": []
 		},
 		{
 			"n": "42",
@@ -808,7 +873,8 @@
 			"convocado": 3,
 			"ovr": 23,
 			"prospecto": true,
-			"college": "Club Atlético Vélez Sarsfield"
+			"college": "Club Atlético Vélez Sarsfield",
+			"secundarias": []
 		},
 		{
 			"n": "19",
@@ -834,7 +900,8 @@
 			"convocado": 25,
 			"ovr": 33,
 			"prospecto": true,
-			"college": "Club Atlético Vélez Sarsfield"
+			"college": "Club Atlético Vélez Sarsfield",
+			"secundarias": []
 		},
 		{
 			"n": "27",
@@ -860,7 +927,8 @@
 			"convocado": 3,
 			"ovr": 27,
 			"prospecto": true,
-			"college": "Club Atlético Vélez Sarsfield"
+			"college": "Club Atlético Vélez Sarsfield",
+			"secundarias": []
 		}
 	]
 }

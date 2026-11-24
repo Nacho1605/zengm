@@ -55,6 +55,7 @@ node tools/argentina/desde-juego.ts LIGA_DEL_USUARIO.json VERSION_QUE_USÓ.json 
 node tools/argentina/equipos-csv.ts ARCHIVO.json # regenera equipos.csv desde una versión (conserva "club" y "revisar")
 node tools/argentina/completar-rendimiento.mjs EQUIPO  # Rendimiento completo de un plantel ya cargado (datos en data/argentina/rendimiento/)
 node tools/argentina/escalera-web.ts ARCHIVO.json ANTERIOR.json  # datos de la escalera del usuario
+node tools/argentina/secundarias.ts data/argentina/secundarias/TANDA.txt  # posiciones secundarias: controla la fila "Total" y las pasa a los planteles
 ```
 
 En una máquina nueva, `validar.ts` necesita la librería `ajv` (no instalar
@@ -209,8 +210,11 @@ v2.14.1 → v2.14.2).
   puesto se mezcla con la de las secundarias (20% con una, 25% con dos o
   más, mismo peso cada una); el OVR no cambia. A un jugador con ratings a
   mano se le suma el mismo corrimiento (el usuario: la consistencia del
-  archivo pesa más que sus retoques). Cargadas: BEL y RIV; el resto, en
-  tandas de cinco. Las de los equipos sin cargar
+  archivo pesa más que sus retoques). Se transcriben a
+  `data/argentina/secundarias/tanda-N.txt` (formato en `secundarias.ts`) y
+  se pasan con esa herramienta. Las tandas se guardan en los planteles sin
+  armar versión; se arma una sola al final (superparche, pedido del
+  usuario). Las de los equipos sin cargar
   van a `data/argentina/secundarias-2026.json` (control: la fila "Total" de
   la captura) y pasan al plantel al cargar el equipo.
 - Un solo nombre (Rick, TAL): el nombre en `nombre` y `apellido` vacío (así

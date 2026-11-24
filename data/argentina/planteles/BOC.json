@@ -87,7 +87,8 @@
 			},
 			"college": "Associação Desportiva São Caetano",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/292985-1785758895.png?lm=4711",
-			"sofascore": 7.09
+			"sofascore": 7.09,
+			"secundarias": []
 		},
 		{
 			"n": "12",
@@ -116,7 +117,8 @@
 				"club": "AND",
 				"anio": 2021
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/982633-1739888426.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/982633-1739888426.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "40",
@@ -150,7 +152,8 @@
 				"tipo": "Rotura del ligamento cruzado",
 				"partidos": 7
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/54534-1739888548.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/54534-1739888548.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "30",
@@ -179,7 +182,8 @@
 				"club": "BOC",
 				"anio": 2008
 			},
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/7966-1739888779.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/7966-1739888779.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "2",
@@ -210,7 +214,10 @@
 			"ovr": 70,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1019744-1739889666.jpg?lm=4711",
 			"rasgos": ["aereo"],
-			"sofascore": 7.27
+			"sofascore": 7.27,
+			"secundarias": [
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "32",
@@ -239,7 +246,10 @@
 				"anio": 2020
 			},
 			"ovr": 65,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/842910-1739889633.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/842910-1739889633.jpg?lm=4711",
+			"secundarias": [
+				"Lateral izquierdo"
+			]
 		},
 		{
 			"n": "42",
@@ -268,7 +278,8 @@
 				"anio": 2026
 			},
 			"ovr": 58,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1291698-1787730598.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1291698-1787730598.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "26",
@@ -300,7 +311,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/776303-1695024223.jpg?lm=4711",
 			"rasgos": [
 				"tactico"
-			]
+			],
+			"secundarias": []
 		},
 		{
 			"n": "46",
@@ -327,7 +339,8 @@
 			"prospecto": true,
 			"college": "Club Atlético Boca Juniors",
 			"ovr": 37,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1243852-1762504967.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1243852-1762504967.jpg?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "4",
@@ -356,7 +369,10 @@
 				"anio": 2014
 			},
 			"ovr": 50,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/334055-1739889062.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/334055-1739889062.jpg?lm=4711",
+			"secundarias": [
+				"Lateral derecho"
+			]
 		},
 		{
 			"n": "3",
@@ -386,7 +402,10 @@
 			},
 			"ovr": 68,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/831161-1739896785.jpg?lm=4711",
-			"sofascore": 7.04
+			"sofascore": 7.04,
+			"secundarias": [
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "27",
@@ -415,7 +434,11 @@
 				"anio": 2018
 			},
 			"ovr": 53,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/552185-1749583747.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/552185-1749583747.jpg?lm=4711",
+			"secundarias": [
+				"Interior izquierdo",
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "17",
@@ -447,7 +470,11 @@
 			"college": "Club Atlético Boston River",
 			"ovr": 66,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/665101-1719942158.png?lm=4711",
-			"sofascore": 7.3
+			"sofascore": 7.3,
+			"secundarias": [
+				"Lateral izquierdo",
+				"Interior derecho"
+			]
 		},
 		{
 			"n": "24",
@@ -476,7 +503,10 @@
 				"anio": 2026
 			},
 			"ovr": 51,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1000669-1739900037.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1000669-1739900037.jpg?lm=4711",
+			"secundarias": [
+				"Interior derecho"
+			]
 		},
 		{
 			"n": "18",
@@ -506,7 +536,10 @@
 			},
 			"ovr": 68,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1236677-1739899248.jpg?lm=4711",
-			"sofascore": 6.94
+			"sofascore": 6.94,
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "25",
@@ -538,6 +571,10 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/423436-1739827128.jpg?lm=4711",
 			"rasgos": [
 				"recuperador"
+			],
+			"secundarias": [
+				"Mediocentro",
+				"Interior derecho"
 			]
 		},
 		{
@@ -577,7 +614,10 @@
 				"recuperador",
 				"lento"
 			],
-			"sofascore": 7.74
+			"sofascore": 7.74,
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "8",
@@ -606,7 +646,10 @@
 				"anio": 2018
 			},
 			"ovr": 58,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/483446-1739897240.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/483446-1739897240.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "23",
@@ -635,7 +678,10 @@
 				"anio": 2025
 			},
 			"ovr": 44,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1000671-1739899221.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1000671-1739899221.jpg?lm=4711",
+			"secundarias": [
+				"Mediocentro"
+			]
 		},
 		{
 			"n": "6",
@@ -664,7 +710,10 @@
 				"anio": 2011
 			},
 			"ovr": 44,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/89297-1739889334.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/89297-1739889334.jpg?lm=4711",
+			"secundarias": [
+				"Defensa central"
+			]
 		},
 		{
 			"n": "15",
@@ -694,7 +743,10 @@
 			},
 			"college": "Club Social y Deportivo Colo-Colo",
 			"ovr": 50,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/599552-1739898603.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/599552-1739898603.jpg?lm=4711",
+			"secundarias": [
+				"Pivote"
+			]
 		},
 		{
 			"n": "45",
@@ -723,7 +775,11 @@
 				"anio": 2012
 			},
 			"ovr": 32,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/190756-1633537974.JPG?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/190756-1633537974.JPG?lm=4711",
+			"secundarias": [
+				"Interior izquierdo",
+				"Mediocentro ofensivo"
+			]
 		},
 		{
 			"n": "10",
@@ -753,7 +809,11 @@
 			},
 			"ovr": 64,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1322355-1770725367.jpg?lm=4711",
-			"sofascore": 6.99
+			"sofascore": 6.99,
+			"secundarias": [
+				"Interior izquierdo",
+				"Extremo izquierdo"
+			]
 		},
 		{
 			"n": "7",
@@ -783,7 +843,11 @@
 			},
 			"college": "Unión Española",
 			"ovr": 49,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/571219-1739898808.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/571219-1739898808.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "22",
@@ -818,7 +882,11 @@
 			"rasgos": [
 				"veloz+"
 			],
-			"sofascore": 7.18
+			"sofascore": 7.18,
+			"secundarias": [
+				"Extremo derecho",
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "20",
@@ -848,7 +916,11 @@
 			},
 			"ovr": 59,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/661154-1739898867.jpg?lm=4711",
-			"sofascore": 7.01
+			"sofascore": 7.01,
+			"secundarias": [
+				"Mediocentro ofensivo",
+				"Extremo derecho"
+			]
 		},
 		{
 			"n": "19",
@@ -880,6 +952,10 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1291699-1789658026.jpg?lm=4711",
 			"rasgos": [
 				"gambeta"
+			],
+			"secundarias": [
+				"Extremo izquierdo",
+				"Delantero centro"
 			]
 		},
 		{
@@ -914,7 +990,11 @@
 				"partidos": 3
 			},
 			"ovr": 50,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/262262-1718340912.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/262262-1718340912.jpg?lm=4711",
+			"secundarias": [
+				"Extremo izquierdo",
+				"Delantero centro"
+			]
 		},
 		{
 			"n": "16",
@@ -947,6 +1027,9 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/481367-1739899560.jpg?lm=4711",
 			"rasgos": [
 				"goleador"
+			],
+			"secundarias": [
+				"Extremo derecho"
 			]
 		},
 		{
@@ -977,7 +1060,8 @@
 			},
 			"college": "Club Olimpia",
 			"ovr": 58,
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/514120-1740664400.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/514120-1740664400.png?lm=4711",
+			"secundarias": []
 		},
 		{
 			"n": "9",
@@ -1009,7 +1093,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/730779-1739899590.jpg?lm=4711",
 			"rasgos": [
 				"potente"
-			]
+			],
+			"secundarias": []
 		},
 		{
 			"n": "13",
@@ -1041,7 +1126,11 @@
 			"college": "Club Sport Emelec",
 			"ovr": 64,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/139503-1781508325.jpg?lm=4711",
-			"rasgos": ["aereo"]
+			"rasgos": ["aereo"],
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
+			]
 		}
 	]
 }
