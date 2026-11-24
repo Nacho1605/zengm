@@ -35,16 +35,19 @@ export const PESOS: Record<string, [number, number]> = {
 };
 // Peso del puesto en los premios de toda la liga (como en el fútbol: los
 // grandes premios los ganan sobre todo los que atacan)
+// v2.24.4, con la temporada simulada de la v2.24.3: en el motor los
+// mediapuntas juntan muchos números (6 de los 10 primeros del Ballon d'Or) y
+// un arquero quedó 7.º; el nueve sube un poco
 export const PRESTIGIO: Record<string, number> = {
-	F: 1,
+	F: 1.05,
 	SF: 1,
-	PG: 1,
+	PG: 0.92,
 	SG: 0.96,
 	G: 0.92,
 	GF: 0.88,
 	FC: 0.85,
 	PF: 0.85,
-	C: 0.75,
+	C: 0.65,
 };
 const PUESTOS = Object.keys(PESOS);
 const FUERA = "-1000 + 0*gp";
@@ -71,7 +74,7 @@ const solo = (pos: string[], factor = 1) => Object.fromEntries(pos.map((p) => [p
 // (robos, tapones, asistencias), casi el doble si ganó y 45' para sumar
 // completo. Arquero y centrales, con menos peso (sus rebotes inflan el
 // puntaje del partido)
-const SERIE: Record<string, number> = { ...PRESTIGIO, C: 0.6, FC: 0.8, PF: 0.8 };
+const SERIE: Record<string, number> = { ...PRESTIGIO, C: 0.4, FC: 0.8, PF: 0.8 };
 const partido = (_pos: string, factor: number) =>
 	`${factor} * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`;
 
@@ -89,7 +92,9 @@ export const PREMIOS = [
 		formula: temporada("SG", PRESTIGIO.SG!),
 		formulaByPos: porPuesto(PRESTIGIO, temporada),
 	}),
-	premio("ZPOY", "Zone Player of the Year", "offense", {
+	// Uno por zona: el juego antepone el nombre corto de la zona
+	// (Metropolitano / Federal, en cargar-plantel.ts)
+	premio("ZPOY", "Player of the Year", "offense", {
 		group: "conf",
 		formula: temporada("SG", PRESTIGIO.SG!),
 		formulaByPos: porPuesto(PRESTIGIO, temporada),
@@ -109,7 +114,7 @@ export const PREMIOS = [
 	premio("DPOY", "Defender of the Year", "defense", {
 		formula: FUERA,
 		formulaByPos: porPuesto(
-			{ FC: 1, PF: 1, GF: 1.12, G: 1.05 },
+			{ FC: 1, PF: 1, GF: 1.12, G: 0.85 },
 			(_pos, factor) =>
 				`${factor} * ${participacion(2700, 1.5)} * (2*(dbpm + 3)/3 + 0.15*gs/max(gp, 1)) * (0.75 + 0.5*winp) + 0.25*seasonFraction*winp`,
 		),
@@ -118,11 +123,18 @@ export const PREMIOS = [
 		actAs: "roy",
 		rookie: true,
 		formula: temporada("SG", PRESTIGIO.SG!, 1800),
-		formulaByPos: porPuesto({ ...PRESTIGIO, C: 0.65 }, (pos, f) => temporada(pos, f, 1800)),
+		formulaByPos: porPuesto({ ...PRESTIGIO, C: 0.55 }, (pos, f) => temporada(pos, f, 1800)),
 	}),
 	premio("SUB", "Super Sub of the Year", "offense", {
 		bench: true,
-		formula: `min(1, gp/20) * ${participacion(900, 1.2)} * (per/15 + (obpm + dbpm + 3)/3) * (0.85 + 0.3*winp)`,
+		formula: FUERA,
+		// El revulsivo es casi siempre de mitad de cancha para adelante; el
+		// arquero suplente, afuera
+		formulaByPos: porPuesto(
+			{ F: 1, SF: 1, PG: 1, SG: 0.95, G: 0.95, GF: 0.9, FC: 0.85, PF: 0.85 },
+			(_pos, f) =>
+				`${f} * min(1, gp/20) * ${participacion(900, 1.2)} * (per/15 + (obpm + dbpm + 3)/3) * (0.85 + 0.3*winp)`,
+		),
 	}),
 	premio("MIP", "Most Improved Player", "offense", {
 		mip: true,
@@ -184,22 +196,28 @@ export const PREMIOS = [
 	premio("TSD", "Team of the Season: Defense", "defense", {
 		numTeams: 1,
 		formula: FUERA,
-		formulaByPos: porPuesto({ FC: 1, PF: 1, GF: 1.15 }, temporada),
+		// Con la temporada de la v2.24.3: los laterales sacan ~60% de lo que
+		// sacan los centrales; con 1,42 quedan dos centrales y dos laterales
+		// arriba y el quinto es el mejor que siga
+		formulaByPos: porPuesto({ FC: 1, PF: 1, GF: 1.42 }, temporada),
 	}),
 	premio("TSM", "Team of the Season: Midfield", "offense", {
 		numTeams: 1,
 		formula: FUERA,
-		formulaByPos: porPuesto({ G: 1.1, SG: 1.08, PG: 0.95 }, temporada),
+		// Los mediapuntas sacan ~1,75 veces lo de pivotes y volantes: con 0,53
+		// queda un medio mezclado (pivote, volante y enganches)
+		formulaByPos: porPuesto({ G: 1, SG: 1.05, PG: 0.53 }, temporada),
 	}),
 	premio("TSA", "Team of the Season: Attack", "offense", {
 		numTeams: 1,
 		formula: FUERA,
-		formulaByPos: porPuesto({ SF: 0.95, F: 1.15 }, temporada),
+		// Extremos y nueves, parejos (con +15% para los nueves salieron 4)
+		formulaByPos: porPuesto({ SF: 1, F: 1 }, temporada),
 	}),
 	premio("RTS", "Rookie Team of the Season", "offense", {
 		numTeams: 1,
 		rookie: true,
 		formula: temporada("SG", PRESTIGIO.SG!, 1800),
-		formulaByPos: porPuesto({ ...PRESTIGIO, C: 0.65 }, (pos, f) => temporada(pos, f, 1800)),
+		formulaByPos: porPuesto({ ...PRESTIGIO, C: 0.55 }, (pos, f) => temporada(pos, f, 1800)),
 	}),
 ];

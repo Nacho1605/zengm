@@ -1,8 +1,8 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026. Última versión: **v2.24.3**
-(`data/argentina/BBGM_Argentina_2026_v.2.24.3_futbol.json`, sha256
-`4913d9fa62ca7741a800959ea457ffe4fb4a295088f24c929742f1214615b445`): 22 de 30
+Estado al 24/11/2026. Última versión: **v2.24.4**
+(`data/argentina/BBGM_Argentina_2026_v.2.24.4_futbol.json`, sha256
+`f07c820dec69d85afdcc6d17f7b09d01d79ff02d1dc764f050f136f429e79ce1`): 22 de 30
 equipos con plantel 2026 (el último, Platense, 36 jugadores), Rendimiento
 completo; fotos de los 21 primeros (las de Platense, pendientes: las pone el
 usuario en el juego); todo el archivo en la escala nueva de OVR (20 a 78) y
@@ -589,6 +589,18 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**24/11/2026 (v2.24.4).** Huella:
+`f07c820dec69d85afdcc6d17f7b09d01d79ff02d1dc764f050f136f429e79ce1`.
+Gala calibrada con una temporada simulada por el usuario en la v2.24.3
+(capturas de premios y de las carreras de cada premio, 10 primeros):
+mediapuntas −8% y nueve +5% en los premios generales, arquero 0,65 (0,55 en
+novatos, 0,4 en partidos de playoffs); pivotes −15% en Defender; Super Sub
+sin arqueros; equipos: laterales ×1,42, mediapuntas ×0,53 en el medio,
+extremos y nueves parejos. Zonas con nombre corto (`abbrev`): el premio por
+zona se ve "Metropolitano/Federal Player of the Year". MIP: sin candidatos
+en la primera temporada (necesita una anterior con minutos). Contra la
+v2.24.3 solo cambian los premios y las zonas.
+
 **24/11/2026 (v2.24.3).** Huella:
 `4913d9fa62ca7741a800959ea457ffe4fb4a295088f24c929742f1214615b445`. Gala de
 premios: Ballon d'Or, Zone Player of the Year (uno por zona), Golden Boot,
@@ -1057,7 +1069,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.24.3.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.24.4.
 > Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
 > líneas que entendiste el estado, antes de seguir.
 

@@ -103,6 +103,11 @@ for (const a of ga.awards ?? []) {
 // PREMIOS=viejos arma con los anteriores (nombres originales en inglés)
 if (process.env.PREMIOS !== "viejos") {
 	ga.awards = PREMIOS;
+	// Nombre corto de cada zona: el juego lo pone delante de los premios por
+	// zona ("Metropolitano Player of the Year"); sin él, usa la inicial
+	for (const conf of ga.confs) {
+		conf.abbrev = conf.name;
+	}
 }
 
 // Ajustes de liga decididos en la fase 2
