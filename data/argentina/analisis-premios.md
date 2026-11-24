@@ -82,3 +82,51 @@ equipo, sin concursos de volcadas ni triples.
   ronda.
 - Revisar los pesos: hoy el DPOY premia tapones y robos, donde ganan
   arqueros y centrales (análisis de composites, v2.23.6).
+
+
+## 6. Segunda parte (pedido del usuario, 24/11): fórmulas exactas y el All-Star de 12 minutos
+
+El usuario simuló una temporada en la v2.24.1: Juan Barbieri (BAR, OVR 38; 4
+partidos, 12 minutos, 6 puntos) fue All-Star con WS 7,6 y PER 32,7.
+
+**Fórmulas activas (texto exacto del archivo; las estadísticas son por partido):**
+
+| Premio | Fórmula | Condición |
+|---|---|---|
+| MVP | `ewa / 22 + vorp / 32 + min(ws/max(teamWs,ws),0.8) / 10 + seasonFraction * winp` | — |
+| DPOY | `dws/3.1 + seasonFraction * winp + gp / 43 * (blk / 4.1 + stl / 1.8)` | — |
+| ROY | `ewa / 2.1 + vorp + gp / 43 * pts / 2` | novatos |
+| SMOY | `ewa / 5.5 + vorp / 2.3 + ws / 4.9 + seasonFraction * winp + gp / 43 * pts / 9.9` | suplentes (sin titularidades, o menos de la mitad) |
+| MIP | `pts + trb + ast + per` (este año menos el anterior) | con minutos los dos años, no recién drafteado |
+| FMVP | `gmsc * (1 + 0.75*won)` en la final | — |
+| SFMVP | `gmsc * (1 + 0.75*won)` en las semis | — |
+| All-League (3 × 5) | la del MVP | — |
+| All-Defensive (2 × 5) | la del DPOY | — |
+| All-Rookie (2 × 5) | la del ROY | novatos |
+
+Además, automáticos (no se configuran): campeón, mejor campaña (general,
+por zona y por división), líderes de la liga en puntos, rebotes,
+asistencias, robos y tapones (con mínimos de partidos fijos), Salón de la
+Fama.
+
+**All-Star:** puntaje fijo `2,5 × EWA + WS` (desempata el OVR), sin puestos ni
+mínimo de minutos; no se puede cambiar desde el archivo.
+
+**Por qué salió Barbieri (lo que muestra el código):** las Win Shares (WS)
+ofensivas usan una cuenta de basket-reference con un "5" fijo (jugadores en
+cancha) en la parte de asistencias recibidas (`qAst`, en
+`src/worker/util/advStats.basketball.ts`). Con 11 en cancha, esa cuenta
+espera menos goles por minuto de cada jugador; a uno con muy pocos minutos
+que convierte casi todo (3 de 4) se le divide por un número cercano a cero o
+negativo y sus WS se disparan. Nada de esto depende del archivo: es del
+motor oficial. Afecta al All-Star (WS sin tope) y al SMOY (`ws / 4.9` sin
+tope); al MVP y al Equipo Ideal casi no (WS con tope y peso de los partidos
+jugados).
+
+**Qué se puede hacer desde el archivo:**
+1. Premios: agregar a cada fórmula un factor de minutos, por ejemplo
+   `min(1, gp*min/900)` (nadie con menos de 900' suma completo), o no usar
+   `ws` donde no tiene tope (SMOY).
+2. All-Star: no se puede corregir la elección. O se desactiva, o se acepta
+   la rareza (también cambia cuándo se juega: al principio de la temporada
+   hay más ruido; más tarde, menos).
