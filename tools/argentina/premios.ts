@@ -37,9 +37,10 @@ export const PESOS: Record<string, [number, number]> = {
 // grandes premios los ganan sobre todo los que atacan)
 // v2.24.4, con la temporada simulada de la v2.24.3: en el motor los
 // mediapuntas juntan muchos números (6 de los 10 primeros del Ballon d'Or) y
-// un arquero quedó 7.º; el nueve sube un poco
+// un arquero quedó 7.º. v2.24.5, con la segunda temporada: ningún nueve entre
+// los 10 primeros en ninguna de las dos (el motor les da poco PER), sube a 1,1
 export const PRESTIGIO: Record<string, number> = {
-	F: 1.05,
+	F: 1.1,
 	SF: 1,
 	PG: 0.92,
 	SG: 0.96,
@@ -196,23 +197,24 @@ export const PREMIOS = [
 	premio("TSD", "Team of the Season: Defense", "defense", {
 		numTeams: 1,
 		formula: FUERA,
-		// Con la temporada de la v2.24.3: los laterales sacan ~60% de lo que
-		// sacan los centrales; con 1,42 quedan dos centrales y dos laterales
-		// arriba y el quinto es el mejor que siga
-		formulaByPos: porPuesto({ FC: 1, PF: 1, GF: 1.42 }, temporada),
+		// Los laterales sacan entre 60% y 66% de lo que sacan los centrales
+		// (dos temporadas simuladas): con 1,5 salen en promedio dos o tres de
+		// cada uno (en un equipo de 5 no se pueden fijar puestos)
+		formulaByPos: porPuesto({ FC: 1, PF: 1, GF: 1.5 }, temporada),
 	}),
 	premio("TSM", "Team of the Season: Midfield", "offense", {
 		numTeams: 1,
 		formula: FUERA,
-		// Los mediapuntas sacan ~1,75 veces lo de pivotes y volantes: con 0,53
-		// queda un medio mezclado (pivote, volante y enganches)
-		formulaByPos: porPuesto({ G: 1, SG: 1.05, PG: 0.53 }, temporada),
+		// Los mediapuntas sacan ~1,75 veces lo de pivotes y volantes: con 0,55
+		// queda un medio mezclado (en promedio, dos enganches)
+		formulaByPos: porPuesto({ G: 1, SG: 1.05, PG: 0.55 }, temporada),
 	}),
 	premio("TSA", "Team of the Season: Attack", "offense", {
 		numTeams: 1,
 		formula: FUERA,
-		// Extremos y nueves, parejos (con +15% para los nueves salieron 4)
-		formulaByPos: porPuesto({ SF: 1, F: 1 }, temporada),
+		// Con +15% para los nueves salieron 4 en la primera temporada y 2 en la
+		// segunda; parejos, 3 y ninguno: con +10%, dos o tres en promedio
+		formulaByPos: porPuesto({ SF: 1, F: 1.1 }, temporada),
 	}),
 	premio("RTS", "Rookie Team of the Season", "offense", {
 		numTeams: 1,

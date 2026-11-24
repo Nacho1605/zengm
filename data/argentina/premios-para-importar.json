@@ -1,0 +1,379 @@
+{
+	"version": 75,
+	"gameAttributes": {
+		"awards": [
+			{
+				"shortName": "BDO",
+				"name": "Ballon d'Or",
+				"showStats": "offense",
+				"actAs": "mvp",
+				"formula": "0.96 * min(1, gp*min/2700)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+				"formulaByPos": {
+					"F": "1.1 * min(1, gp*min/2700)^1.5 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"SF": "1 * min(1, gp*min/2700)^1.5 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"PG": "0.92 * min(1, gp*min/2700)^1.5 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"SG": "0.96 * min(1, gp*min/2700)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"G": "0.92 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"GF": "0.88 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"FC": "0.85 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"PF": "0.85 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"C": "0.65 * min(1, gp*min/2700)^1.5 * (0.1*(per/15 + (obpm + 3)/3) + 0.9*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp"
+				}
+			},
+			{
+				"shortName": "ZPOY",
+				"name": "Player of the Year",
+				"showStats": "offense",
+				"group": "conf",
+				"formula": "0.96 * min(1, gp*min/2700)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+				"formulaByPos": {
+					"F": "1.1 * min(1, gp*min/2700)^1.5 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"SF": "1 * min(1, gp*min/2700)^1.5 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"PG": "0.92 * min(1, gp*min/2700)^1.5 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"SG": "0.96 * min(1, gp*min/2700)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"G": "0.92 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"GF": "0.88 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"FC": "0.85 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"PF": "0.85 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"C": "0.65 * min(1, gp*min/2700)^1.5 * (0.1*(per/15 + (obpm + 3)/3) + 0.9*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp"
+				}
+			},
+			{
+				"shortName": "GB",
+				"name": "Golden Boot",
+				"showStats": "offense",
+				"formula": "pts*gp*(0.85 + 0.3*tsp/100)"
+			},
+			{
+				"shortName": "PMK",
+				"name": "Playmaker of the Year",
+				"showStats": "offense",
+				"formula": "ast*gp*(1 + astp/100) - 0.25*tov*gp"
+			},
+			{
+				"shortName": "GG",
+				"name": "Golden Glove",
+				"showStats": "defense",
+				"formula": "-1000 + 0*gp",
+				"formulaByPos": {
+					"F": "-1000 + 0*gp",
+					"SF": "-1000 + 0*gp",
+					"PG": "-1000 + 0*gp",
+					"SG": "-1000 + 0*gp",
+					"G": "-1000 + 0*gp",
+					"GF": "-1000 + 0*gp",
+					"FC": "-1000 + 0*gp",
+					"PF": "-1000 + 0*gp",
+					"C": "min(1, gp*min/2700)^1.2 * ((dbpm + 3) + 0.3*blk + 0.08*drb + 0.1*stl) * (0.7 + 0.6*winp)"
+				}
+			},
+			{
+				"shortName": "DPOY",
+				"name": "Defender of the Year",
+				"showStats": "defense",
+				"formula": "-1000 + 0*gp",
+				"formulaByPos": {
+					"F": "-1000 + 0*gp",
+					"SF": "-1000 + 0*gp",
+					"PG": "-1000 + 0*gp",
+					"SG": "-1000 + 0*gp",
+					"G": "0.85 * min(1, gp*min/2700)^1.5 * (2*(dbpm + 3)/3 + 0.15*gs/max(gp, 1)) * (0.75 + 0.5*winp) + 0.25*seasonFraction*winp",
+					"GF": "1.12 * min(1, gp*min/2700)^1.5 * (2*(dbpm + 3)/3 + 0.15*gs/max(gp, 1)) * (0.75 + 0.5*winp) + 0.25*seasonFraction*winp",
+					"FC": "1 * min(1, gp*min/2700)^1.5 * (2*(dbpm + 3)/3 + 0.15*gs/max(gp, 1)) * (0.75 + 0.5*winp) + 0.25*seasonFraction*winp",
+					"PF": "1 * min(1, gp*min/2700)^1.5 * (2*(dbpm + 3)/3 + 0.15*gs/max(gp, 1)) * (0.75 + 0.5*winp) + 0.25*seasonFraction*winp",
+					"C": "-1000 + 0*gp"
+				}
+			},
+			{
+				"shortName": "BTY",
+				"name": "Breakthrough of the Year",
+				"showStats": "offense",
+				"actAs": "roy",
+				"rookie": true,
+				"formula": "0.96 * min(1, gp*min/1800)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+				"formulaByPos": {
+					"F": "1.1 * min(1, gp*min/1800)^1.5 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"SF": "1 * min(1, gp*min/1800)^1.5 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"PG": "0.92 * min(1, gp*min/1800)^1.5 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"SG": "0.96 * min(1, gp*min/1800)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"G": "0.92 * min(1, gp*min/1800)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"GF": "0.88 * min(1, gp*min/1800)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"FC": "0.85 * min(1, gp*min/1800)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"PF": "0.85 * min(1, gp*min/1800)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"C": "0.55 * min(1, gp*min/1800)^1.5 * (0.1*(per/15 + (obpm + 3)/3) + 0.9*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp"
+				}
+			},
+			{
+				"shortName": "SUB",
+				"name": "Super Sub of the Year",
+				"showStats": "offense",
+				"bench": true,
+				"formula": "-1000 + 0*gp",
+				"formulaByPos": {
+					"F": "1 * min(1, gp/20) * min(1, gp*min/900)^1.2 * (per/15 + (obpm + dbpm + 3)/3) * (0.85 + 0.3*winp)",
+					"SF": "1 * min(1, gp/20) * min(1, gp*min/900)^1.2 * (per/15 + (obpm + dbpm + 3)/3) * (0.85 + 0.3*winp)",
+					"PG": "1 * min(1, gp/20) * min(1, gp*min/900)^1.2 * (per/15 + (obpm + dbpm + 3)/3) * (0.85 + 0.3*winp)",
+					"SG": "0.95 * min(1, gp/20) * min(1, gp*min/900)^1.2 * (per/15 + (obpm + dbpm + 3)/3) * (0.85 + 0.3*winp)",
+					"G": "0.95 * min(1, gp/20) * min(1, gp*min/900)^1.2 * (per/15 + (obpm + dbpm + 3)/3) * (0.85 + 0.3*winp)",
+					"GF": "0.9 * min(1, gp/20) * min(1, gp*min/900)^1.2 * (per/15 + (obpm + dbpm + 3)/3) * (0.85 + 0.3*winp)",
+					"FC": "0.85 * min(1, gp/20) * min(1, gp*min/900)^1.2 * (per/15 + (obpm + dbpm + 3)/3) * (0.85 + 0.3*winp)",
+					"PF": "0.85 * min(1, gp/20) * min(1, gp*min/900)^1.2 * (per/15 + (obpm + dbpm + 3)/3) * (0.85 + 0.3*winp)",
+					"C": "-1000 + 0*gp"
+				}
+			},
+			{
+				"shortName": "MIP",
+				"name": "Most Improved Player",
+				"showStats": "offense",
+				"mip": true,
+				"formula": "min(1, gp*min/2000)^1 * (per/15 + (obpm + dbpm + 3)/3 + 0.5)"
+			},
+			{
+				"shortName": "IRON",
+				"name": "Iron Man",
+				"showStats": "offense",
+				"formula": "-1000 + 0*gp",
+				"formulaByPos": {
+					"F": "gp*min*(0.9 + 0.2*winp)",
+					"SF": "gp*min*(0.9 + 0.2*winp)",
+					"PG": "gp*min*(0.9 + 0.2*winp)",
+					"SG": "gp*min*(0.9 + 0.2*winp)",
+					"G": "gp*min*(0.9 + 0.2*winp)",
+					"GF": "gp*min*(0.9 + 0.2*winp)",
+					"FC": "gp*min*(0.9 + 0.2*winp)",
+					"PF": "gp*min*(0.9 + 0.2*winp)",
+					"C": "-1000 + 0*gp"
+				}
+			},
+			{
+				"shortName": "STR",
+				"name": "Striker of the Year",
+				"showStats": "offense",
+				"formula": "-1000 + 0*gp",
+				"formulaByPos": {
+					"F": "1 * min(1, gp*min/2700)^1.5 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"SF": "-1000 + 0*gp",
+					"PG": "-1000 + 0*gp",
+					"SG": "-1000 + 0*gp",
+					"G": "-1000 + 0*gp",
+					"GF": "-1000 + 0*gp",
+					"FC": "-1000 + 0*gp",
+					"PF": "-1000 + 0*gp",
+					"C": "-1000 + 0*gp"
+				}
+			},
+			{
+				"shortName": "WNG",
+				"name": "Winger of the Year",
+				"showStats": "offense",
+				"formula": "-1000 + 0*gp",
+				"formulaByPos": {
+					"F": "-1000 + 0*gp",
+					"SF": "1 * min(1, gp*min/2700)^1.5 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"PG": "-1000 + 0*gp",
+					"SG": "-1000 + 0*gp",
+					"G": "-1000 + 0*gp",
+					"GF": "-1000 + 0*gp",
+					"FC": "-1000 + 0*gp",
+					"PF": "-1000 + 0*gp",
+					"C": "-1000 + 0*gp"
+				}
+			},
+			{
+				"shortName": "N10",
+				"name": "Number 10 of the Year",
+				"showStats": "offense",
+				"formula": "-1000 + 0*gp",
+				"formulaByPos": {
+					"F": "-1000 + 0*gp",
+					"SF": "-1000 + 0*gp",
+					"PG": "1 * min(1, gp*min/2700)^1.5 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"SG": "-1000 + 0*gp",
+					"G": "-1000 + 0*gp",
+					"GF": "-1000 + 0*gp",
+					"FC": "-1000 + 0*gp",
+					"PF": "-1000 + 0*gp",
+					"C": "-1000 + 0*gp"
+				}
+			},
+			{
+				"shortName": "MID",
+				"name": "Midfield General of the Year",
+				"showStats": "offense",
+				"formula": "-1000 + 0*gp",
+				"formulaByPos": {
+					"F": "-1000 + 0*gp",
+					"SF": "-1000 + 0*gp",
+					"PG": "-1000 + 0*gp",
+					"SG": "1 * min(1, gp*min/2700)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"G": "1.05 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"GF": "-1000 + 0*gp",
+					"FC": "-1000 + 0*gp",
+					"PF": "-1000 + 0*gp",
+					"C": "-1000 + 0*gp"
+				}
+			},
+			{
+				"shortName": "FB",
+				"name": "Full-Back of the Year",
+				"showStats": "defense",
+				"formula": "-1000 + 0*gp",
+				"formulaByPos": {
+					"F": "-1000 + 0*gp",
+					"SF": "-1000 + 0*gp",
+					"PG": "-1000 + 0*gp",
+					"SG": "-1000 + 0*gp",
+					"G": "-1000 + 0*gp",
+					"GF": "1 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"FC": "-1000 + 0*gp",
+					"PF": "-1000 + 0*gp",
+					"C": "-1000 + 0*gp"
+				}
+			},
+			{
+				"shortName": "CB",
+				"name": "Center-Back of the Year",
+				"showStats": "defense",
+				"formula": "-1000 + 0*gp",
+				"formulaByPos": {
+					"F": "-1000 + 0*gp",
+					"SF": "-1000 + 0*gp",
+					"PG": "-1000 + 0*gp",
+					"SG": "-1000 + 0*gp",
+					"G": "-1000 + 0*gp",
+					"GF": "-1000 + 0*gp",
+					"FC": "1 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"PF": "1 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"C": "-1000 + 0*gp"
+				}
+			},
+			{
+				"shortName": "LMVP",
+				"name": "Liguilla MVP",
+				"showStats": "offense",
+				"statRange": "playoffs",
+				"formula": "(min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)",
+				"formulaByPos": {
+					"F": "1.1 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)",
+					"SF": "1 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)",
+					"PG": "0.92 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)",
+					"SG": "0.96 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)",
+					"G": "0.92 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)",
+					"GF": "0.88 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)",
+					"FC": "0.8 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)",
+					"PF": "0.8 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)",
+					"C": "0.4 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)"
+				}
+			},
+			{
+				"shortName": "FMVP",
+				"name": "Final MVP",
+				"showStats": "offense",
+				"statRange": -1,
+				"formula": "1 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+				"formulaByPos": {
+					"F": "1.1 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"SF": "1 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"PG": "0.92 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"SG": "0.96 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"G": "0.92 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"GF": "0.88 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"FC": "0.8 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"PF": "0.8 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"C": "0.4 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)"
+				}
+			},
+			{
+				"shortName": "SFMVP",
+				"name": "Semifinal MVP",
+				"showStats": "offense",
+				"statRange": -2,
+				"formula": "1 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+				"formulaByPos": {
+					"F": "1.1 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"SF": "1 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"PG": "0.92 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"SG": "0.96 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"G": "0.92 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"GF": "0.88 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"FC": "0.8 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"PF": "0.8 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
+					"C": "0.4 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)"
+				}
+			},
+			{
+				"shortName": "TSD",
+				"name": "Team of the Season: Defense",
+				"showStats": "defense",
+				"numTeams": 1,
+				"formula": "-1000 + 0*gp",
+				"formulaByPos": {
+					"F": "-1000 + 0*gp",
+					"SF": "-1000 + 0*gp",
+					"PG": "-1000 + 0*gp",
+					"SG": "-1000 + 0*gp",
+					"G": "-1000 + 0*gp",
+					"GF": "1.5 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"FC": "1 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"PF": "1 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"C": "-1000 + 0*gp"
+				}
+			},
+			{
+				"shortName": "TSM",
+				"name": "Team of the Season: Midfield",
+				"showStats": "offense",
+				"numTeams": 1,
+				"formula": "-1000 + 0*gp",
+				"formulaByPos": {
+					"F": "-1000 + 0*gp",
+					"SF": "-1000 + 0*gp",
+					"PG": "0.55 * min(1, gp*min/2700)^1.5 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"SG": "1.05 * min(1, gp*min/2700)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"G": "1 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"GF": "-1000 + 0*gp",
+					"FC": "-1000 + 0*gp",
+					"PF": "-1000 + 0*gp",
+					"C": "-1000 + 0*gp"
+				}
+			},
+			{
+				"shortName": "TSA",
+				"name": "Team of the Season: Attack",
+				"showStats": "offense",
+				"numTeams": 1,
+				"formula": "-1000 + 0*gp",
+				"formulaByPos": {
+					"F": "1.1 * min(1, gp*min/2700)^1.5 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"SF": "1 * min(1, gp*min/2700)^1.5 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"PG": "-1000 + 0*gp",
+					"SG": "-1000 + 0*gp",
+					"G": "-1000 + 0*gp",
+					"GF": "-1000 + 0*gp",
+					"FC": "-1000 + 0*gp",
+					"PF": "-1000 + 0*gp",
+					"C": "-1000 + 0*gp"
+				}
+			},
+			{
+				"shortName": "RTS",
+				"name": "Rookie Team of the Season",
+				"showStats": "offense",
+				"numTeams": 1,
+				"rookie": true,
+				"formula": "0.96 * min(1, gp*min/1800)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+				"formulaByPos": {
+					"F": "1.1 * min(1, gp*min/1800)^1.5 * (0.85*(per/15 + (obpm + 3)/3) + 0.15*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"SF": "1 * min(1, gp*min/1800)^1.5 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"PG": "0.92 * min(1, gp*min/1800)^1.5 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"SG": "0.96 * min(1, gp*min/1800)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"G": "0.92 * min(1, gp*min/1800)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"GF": "0.88 * min(1, gp*min/1800)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"FC": "0.85 * min(1, gp*min/1800)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"PF": "0.85 * min(1, gp*min/1800)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp",
+					"C": "0.55 * min(1, gp*min/1800)^1.5 * (0.1*(per/15 + (obpm + 3)/3) + 0.9*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp"
+				}
+			}
+		]
+	}
+}
