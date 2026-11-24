@@ -15,12 +15,12 @@ for (const season of [2026, 2027]) {
 		console.log(`BDO F${fF} PG${fPG} C${fC}:`, cuenta(r, 10), "|", r.slice(0, 6).map((x) => `${nombre(x.f)} ${x.s.toFixed(2)}`).join(" | "));
 	}
 	for (const fF of [1.1, 1.15, 1.2, 1.25]) {
-		const a = conFactor(aw("TSA"), "F", fF); const r = ranking(a, fs);
+		const a = conFactor(aw("TOTS-A"), "F", fF); const r = ranking(a, fs);
 		console.log(`TSA F${fF}:`, cuenta(r, 5), r.slice(0, 5).map((x) => x.f.n.split(" ").at(-1)).join(", "));
 	}
 	const d = conFactor(aw("DPOY"), "G", 0.75); console.log("DPOY G0.75:", ranking(d, fs).slice(0, 3).map((x) => `${nombre(x.f)} ${x.s.toFixed(2)}`).join(" | "));
-	for (const c of [0.55, 0.45]) { const b = conFactor(aw("BTY"), "C", c); console.log(`BTY C${c}:`, ranking(b, fs, (f) => f.rookie).slice(0, 4).map((x) => `${nombre(x.f)} ${x.s.toFixed(2)}`).join(" | ")); }
-	const g = aw("GG"); console.log("GG:", ranking(g, fs).slice(0, 3).map((x) => `${nombre(x.f)} ${x.s.toFixed(2)}`).join(" | "));
+	for (const c of [0.55, 0.45]) { const b = conFactor(aw("ROY"), "C", c); console.log(`BTY C${c}:`, ranking(b, fs, (f) => f.rookie).slice(0, 4).map((x) => `${nombre(x.f)} ${x.s.toFixed(2)}`).join(" | ")); }
+	const g = aw("Golden Glove"); console.log("GG:", ranking(g, fs).slice(0, 3).map((x) => `${nombre(x.f)} ${x.s.toFixed(2)}`).join(" | "));
 }
 // MIP: diferencia 2027 - 2026, con 500' o más en los dos años
 const mipViejo = aw("MIP");

@@ -77,7 +77,8 @@
 			"secundarias": [],
 			"rasgos": [
 				"reflejos"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/570470-1724876650.jpg?lm=4711"
 		},
 		{
 			"n": "22",
@@ -108,7 +109,8 @@
 				"anio": 2021
 			},
 			"college": "Asociación Atlética Argentinos Juniors",
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/923940-1771031671.jpg?lm=4711"
 		},
 		{
 			"n": "1",
@@ -132,7 +134,8 @@
 				"anio": 2021
 			},
 			"college": "Club Atlético Newell's Old Boys",
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/660734-1771029198.jpg?lm=4711"
 		},
 		{
 			"n": "13",
@@ -168,7 +171,8 @@
 			],
 			"sofascore": 6.95,
 			"capitan": true,
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/552635-1771030896.jpg?lm=4711"
 		},
 		{
 			"n": "6",
@@ -201,7 +205,8 @@
 			"college": "Club Atlético Newell's Old Boys",
 			"secundarias": [
 				"Lateral derecho"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1108130-1771029488.jpg?lm=4711"
 		},
 		{
 			"n": "32",
@@ -232,7 +237,8 @@
 				"anio": 2023
 			},
 			"college": "Club Atlético Boca Juniors",
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/961786-1771032657.jpg?lm=4711"
 		},
 		{
 			"n": "34",
@@ -263,7 +269,8 @@
 				"anio": 2025
 			},
 			"college": "Club Atlético Boca Juniors",
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1197773-1771032748.jpg?lm=4711"
 		},
 		{
 			"n": "42",
@@ -290,7 +297,8 @@
 			"rasgos": [
 				"patadura"
 			],
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/594104-1633628040.JPG?lm=4711"
 		},
 		{
 			"n": "31",
@@ -329,7 +337,8 @@
 			"rasgos": [
 				"recuperador",
 				"aereo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/104326-1771032347.jpg?lm=4711"
 		},
 		{
 			"n": "3",
@@ -360,7 +369,8 @@
 				"anio": 2022
 			},
 			"college": "Club Atlético San Lorenzo de Almagro",
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/984072-1771029333.jpg?lm=4711"
 		},
 		{
 			"n": "38",
@@ -391,7 +401,8 @@
 				"anio": 2026
 			},
 			"college": "Club Atlético Platense",
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1305389-1771032857.jpg?lm=4711"
 		},
 		{
 			"n": "25",
@@ -424,7 +435,8 @@
 			"college": "Club Estudiantes de La Plata",
 			"secundarias": [
 				"Extremo derecho"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/866094-1771031746.jpg?lm=4711"
 		},
 		{
 			"n": "4",
@@ -457,10 +469,11 @@
 			"college": "Club Atlético Tucumán",
 			"secundarias": [
 				"Defensa central"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/698551-1771029345.jpg?lm=4711"
 		},
 		{
-			"n": null,
+			"n": "44",
 			"nombre": "Fabricio",
 			"apellido": "López",
 			"pos": "Lateral derecho",
@@ -481,7 +494,8 @@
 				"anio": 2022
 			},
 			"college": "Club Deportivo Armenio",
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1123346-1749582852.jpg?lm=4711"
 		},
 		{
 			"n": "15",
@@ -515,7 +529,8 @@
 			"secundarias": [
 				"Mediocentro",
 				"Interior derecho"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/990429-1771030967.jpg?lm=4711"
 		},
 		{
 			"n": "5",
@@ -552,7 +567,8 @@
 			],
 			"secundarias": [
 				"Mediocentro"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/459318-1771029471.jpg?lm=4711"
 		},
 		{
 			"n": "17",
@@ -585,7 +601,8 @@
 			"college": "Club Atlético Vélez Sarsfield",
 			"secundarias": [
 				"Mediocentro"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1285240-1771031203.jpg?lm=4711"
 		},
 		{
 			"n": "26",
@@ -618,7 +635,8 @@
 			"college": "Club Deportivo Morón",
 			"secundarias": [
 				"Pivote"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1006239-1771031871.jpg?lm=4711"
 		},
 		{
 			"n": "24",
@@ -652,7 +670,8 @@
 			"secundarias": [
 				"Pivote",
 				"Interior izquierdo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/565981-1771031735.jpg?lm=4711"
 		},
 		{
 			"n": "27",
@@ -686,7 +705,8 @@
 			"secundarias": [
 				"Pivote",
 				"Interior derecho"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1236679-1771032163.jpg?lm=4711"
 		},
 		{
 			"n": "10",
@@ -725,7 +745,8 @@
 			"sofascoreLibertadores": 7.08,
 			"secundarias": [
 				"Mediocentro"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/909349-1771030229.jpg?lm=4711"
 		},
 		{
 			"n": "23",
@@ -759,7 +780,8 @@
 			"secundarias": [
 				"Interior derecho",
 				"Delantero centro"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/538367-1771031681.jpg?lm=4711"
 		},
 		{
 			"n": "16",
@@ -796,7 +818,8 @@
 			"secundarias": [
 				"Lateral izquierdo",
 				"Interior izquierdo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/503342-1767971628.jpg?lm=4711"
 		},
 		{
 			"n": "18",
@@ -821,7 +844,7 @@
 			"ppp": 1.39,
 			"convocado": 46,
 			"fichado": "19/01/2026",
-			"ovr": 58,
+			"ovr": 59,
 			"debut": {
 				"club": "SLO",
 				"anio": 2016
@@ -834,7 +857,24 @@
 			"secundarias": [
 				"Mediocentro ofensivo",
 				"Extremo derecho"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/431737-1771031217.jpg?lm=4711",
+			"ratings": {
+				"stre": 35,
+				"spd": 67,
+				"jmp": 54,
+				"endu": 49,
+				"ins": 44,
+				"dnk": 54,
+				"ft": 52,
+				"fg": 51,
+				"tp": 54,
+				"oiq": 64,
+				"diq": 33,
+				"drb": 78,
+				"pss": 65,
+				"reb": 34
+			}
 		},
 		{
 			"n": "29",
@@ -867,7 +907,8 @@
 			"college": "Club Atlético Platense",
 			"secundarias": [
 				"Interior izquierdo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1268653-1771032244.jpg?lm=4711"
 		},
 		{
 			"n": "7",
@@ -904,7 +945,8 @@
 			"sofascoreLibertadores": 6.96,
 			"secundarias": [
 				"Interior derecho"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/441270-1771030053.jpg?lm=4711"
 		},
 		{
 			"n": "43",
@@ -937,7 +979,8 @@
 			"college": "Club Juventud Unida (Gualeguaychú)",
 			"secundarias": [
 				"Delantero centro"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/991849-1771033112.jpg?lm=4711"
 		},
 		{
 			"n": "33",
@@ -962,7 +1005,7 @@
 			"ppp": 1.44,
 			"convocado": 47,
 			"fichado": "14/01/2026",
-			"ovr": 59,
+			"ovr": 61,
 			"debut": {
 				"club": "HUR",
 				"anio": 2022
@@ -976,7 +1019,24 @@
 			"secundarias": [
 				"Extremo izquierdo",
 				"Mediapunta"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/847283-1771032697.jpg?lm=4711",
+			"ratings": {
+				"stre": 40,
+				"spd": 82,
+				"jmp": 66,
+				"endu": 57,
+				"ins": 54,
+				"dnk": 53,
+				"ft": 59,
+				"fg": 57,
+				"tp": 63,
+				"oiq": 53,
+				"diq": 42,
+				"drb": 86,
+				"pss": 57,
+				"reb": 41
+			}
 		},
 		{
 			"n": "28",
@@ -1009,7 +1069,8 @@
 			"college": "Club Atlético Platense",
 			"secundarias": [
 				"Extremo izquierdo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1207136-1771032180.jpg?lm=4711"
 		},
 		{
 			"n": "9",
@@ -1046,7 +1107,8 @@
 			},
 			"secundarias": [
 				"Mediocentro ofensivo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1291055-1771030219.jpg?lm=4711"
 		},
 		{
 			"n": "11",
@@ -1083,7 +1145,8 @@
 			"secundarias": [
 				"Extremo derecho",
 				"Mediapunta"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/185593-1700765951.jpg?lm=4711"
 		},
 		{
 			"n": "99",
@@ -1114,7 +1177,8 @@
 				"anio": 2019
 			},
 			"college": "Club Atlético Belgrano",
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/660338-1771033257.jpg?lm=4711"
 		},
 		{
 			"n": "21",
@@ -1148,7 +1212,8 @@
 			"secundarias": [
 				"Extremo derecho",
 				"Mediapunta"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/406296-1771031349.jpg?lm=4711"
 		},
 		{
 			"n": "19",
@@ -1179,7 +1244,8 @@
 				"anio": 2021
 			},
 			"college": "12 de Octubre Football Club",
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/905417-1771031275.jpg?lm=4711"
 		},
 		{
 			"n": "20",
@@ -1216,10 +1282,11 @@
 			},
 			"secundarias": [
 				"Mediocentro ofensivo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/985755-1755536855.png?lm=4711"
 		},
 		{
-			"n": null,
+			"n": "0",
 			"nombre": "Bruno",
 			"apellido": "Sepúlveda",
 			"pos": "Delantero centro",
@@ -1251,7 +1318,8 @@
 				"aereo",
 				"patadura"
 			],
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/690718-1755788440.jpg?lm=4711"
 		}
 	]
 }

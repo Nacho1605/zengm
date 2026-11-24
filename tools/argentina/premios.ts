@@ -1,3 +1,6 @@
+// Siglas y nombres como los dejó el usuario en el juego (25/11, sobre la
+// v2.24.5): "Golden Boot", "Golden Glove", "ROY", "TOTS-D/M/A", "All-Rookie",
+// "Midfielder of the Year", "Finals MVP"; sacó Iron Man y Semifinal MVP.
 // Premios de fin de temporada de la liga ("gala"; desde la v2.24.2, segunda
 // versión en la v2.24.3 con lo que mostraron dos temporadas simuladas por el
 // usuario). Nombres en inglés por ahora (pedido del usuario, 24/11). Ver
@@ -103,13 +106,13 @@ export const PREMIOS = [
 		formula: temporada("SG", PRESTIGIO.SG!),
 		formulaByPos: porPuesto(PRESTIGIO, temporada),
 	}),
-	premio("GB", "Golden Boot", "offense", {
+	premio("Golden Boot", "Golden Boot", "offense", {
 		formula: "pts*gp*(0.85 + 0.3*tsp/100)",
 	}),
 	premio("PMK", "Playmaker of the Year", "offense", {
 		formula: "ast*gp*(1 + astp/100) - 0.25*tov*gp",
 	}),
-	premio("GG", "Golden Glove", "defense", {
+	premio("Golden Glove", "Golden Glove", "defense", {
 		formula: FUERA,
 		formulaByPos: porPuesto(solo(["C"]), () =>
 			`${participacion(2700, 1.2)} * ((dbpm + 3) + 0.3*blk + 0.08*drb + 0.1*stl) * (0.7 + 0.6*winp)`,
@@ -124,7 +127,7 @@ export const PREMIOS = [
 				`${factor} * ${participacion(2700, 1.5)} * (2*(dbpm + 3)/3 + 0.15*gs/max(gp, 1)) * (0.75 + 0.5*winp) + 0.25*seasonFraction*winp`,
 		),
 	}),
-	premio("BTY", "Breakthrough of the Year", "offense", {
+	premio("ROY", "Breakthrough of the Year", "offense", {
 		actAs: "roy",
 		rookie: true,
 		formula: temporada("SG", PRESTIGIO.SG!, 1800),
@@ -148,13 +151,6 @@ export const PREMIOS = [
 		// Sosa, de 42 años, por haber jugado más)
 		formula: "min(1, gp*min/600)^0.5 * (per/15 + (obpm + dbpm + 3)/3)",
 	}),
-	premio("IRON", "Iron Man", "offense", {
-		formula: FUERA,
-		formulaByPos: porPuesto(
-			solo(["FC", "PF", "GF", "G", "SG", "PG", "SF", "F"]),
-			() => "gp*min*(0.9 + 0.2*winp)",
-		),
-	}),
 	// --- Los mejores de cada puesto
 	premio("STR", "Striker of the Year", "offense", {
 		formula: FUERA,
@@ -168,7 +164,7 @@ export const PREMIOS = [
 		formula: FUERA,
 		formulaByPos: porPuesto(solo(["PG"]), temporada),
 	}),
-	premio("MID", "Midfield General of the Year", "offense", {
+	premio("MID", "Midfielder of the Year", "offense", {
 		formula: FUERA,
 		formulaByPos: porPuesto({ G: 1.05, SG: 1 }, temporada),
 	}),
@@ -189,19 +185,14 @@ export const PREMIOS = [
 			(_pos, f) => `${f} * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)`,
 		),
 	}),
-	premio("FMVP", "Final MVP", "offense", {
+	premio("FMVP", "Finals MVP", "offense", {
 		statRange: -1,
-		formula: partido("SG", 1),
-		formulaByPos: porPuesto(SERIE, partido),
-	}),
-	premio("SFMVP", "Semifinal MVP", "offense", {
-		statRange: -2,
 		formula: partido("SG", 1),
 		formulaByPos: porPuesto(SERIE, partido),
 	}),
 	// --- Equipos de la temporada (de a 5: así son en el juego). Con el Golden
 	// Glove forman 16: arquero, defensa, medio y ataque
-	premio("TSD", "Team of the Season: Defense", "defense", {
+	premio("TOTS-D", "Team of the Season: Defense", "defense", {
 		numTeams: 1,
 		formula: FUERA,
 		// Los laterales sacan entre 60% y 66% de lo que sacan los centrales
@@ -209,21 +200,21 @@ export const PREMIOS = [
 		// cada uno (en un equipo de 5 no se pueden fijar puestos)
 		formulaByPos: porPuesto({ FC: 1, PF: 1, GF: 1.5 }, temporada),
 	}),
-	premio("TSM", "Team of the Season: Midfield", "offense", {
+	premio("TOTS-M", "Team of the Season: Midfield", "offense", {
 		numTeams: 1,
 		formula: FUERA,
 		// Los mediapuntas sacan ~1,75 veces lo de pivotes y volantes: con 0,55
 		// queda un medio mezclado (en promedio, dos enganches)
 		formulaByPos: porPuesto({ G: 1, SG: 1.05, PG: 0.55 }, temporada),
 	}),
-	premio("TSA", "Team of the Season: Attack", "offense", {
+	premio("TOTS-A", "Team of the Season: Attack", "offense", {
 		numTeams: 1,
 		formula: FUERA,
 		// Con +20%, dos nueves y tres extremos en las dos temporadas de la liga
 		// del usuario (con +10%, uno solo en 2026)
 		formulaByPos: porPuesto({ SF: 1, F: 1.2 }, temporada),
 	}),
-	premio("RTS", "Rookie Team of the Season", "offense", {
+	premio("All-Rookie", "Rookie Team of the Season", "offense", {
 		numTeams: 1,
 		rookie: true,
 		formula: temporada("SG", PRESTIGIO.SG!, 1800),

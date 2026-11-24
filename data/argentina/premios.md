@@ -1,4 +1,4 @@
-# Premios de la liga (gala; versión final por ahora, v2.24.6)
+# Premios de la liga (gala; versión final por ahora, v2.24.7)
 
 Generado desde `tools/argentina/premios.ts`. Las estadísticas son del motor (básquet por dentro) y por partido; "gp" = partidos, "min" = minutos por partido, "winp" = % de victorias del equipo, "seasonFraction" = parte de la temporada que jugó. Ninguna fórmula usa las WS (ver `analisis-premios.md`).
 
@@ -32,7 +32,7 @@ El mejor de cada zona, con la fórmula del Ballon d'Or: dos ganadores. El juego 
 - FC, PF: `0.85 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 - C: `0.6 * min(1, gp*min/2700)^1.5 * (0.1*(per/15 + (obpm + 3)/3) + 0.9*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 
-## Golden Boot (GB)
+## Golden Boot (Golden Boot)
 
 El goleador: los puntos del motor en toda la temporada, con un plus por la eficacia.
 
@@ -44,7 +44,7 @@ El asistidor: asistencias de toda la temporada, con un plus por el porcentaje de
 
 `ast*gp*(1 + astp/100) - 0.25*tov*gp`
 
-## Golden Glove (GG)
+## Golden Glove (Golden Glove)
 
 El mejor arquero (solo arqueros): defensa, atajadas (tapones), rebotes y robos, minutos y victorias.
 
@@ -60,7 +60,7 @@ El mejor defensor, sin arqueros: centrales, laterales (+12%) y pivotes (−25%),
 - GF: `1.12 * min(1, gp*min/2700)^1.5 * (2*(dbpm + 3)/3 + 0.15*gs/max(gp, 1)) * (0.75 + 0.5*winp) + 0.25*seasonFraction*winp`
 - FC, PF: `1 * min(1, gp*min/2700)^1.5 * (2*(dbpm + 3)/3 + 0.15*gs/max(gp, 1)) * (0.75 + 0.5*winp) + 0.25*seasonFraction*winp`
 
-## Breakthrough of the Year (BTY)
+## Breakthrough of the Year (ROY)
 
 La revelación (solo novatos; cuenta como ROY): como el Ballon d'Or, con menos minutos exigidos y el arquero con 55% menos de peso.
 
@@ -95,13 +95,6 @@ Condiciones: mejora contra el año anterior.
 
 `min(1, gp*min/600)^0.5 * (per/15 + (obpm + dbpm + 3)/3)`
 
-## Iron Man (IRON)
-
-El hombre de hierro: más minutos en la temporada, sin arqueros (siempre juegan 90'), con un plus por las victorias.
-
-- F, SF, PG, SG, G, GF, FC, PF: `gp*min*(0.9 + 0.2*winp)`
-- C: `-1000 + 0*gp` (no participan)
-
 ## Striker of the Year (STR)
 
 El mejor delantero centro.
@@ -123,7 +116,7 @@ El mejor mediapunta (el diez).
 - F, SF, SG, G, GF, FC, PF, C: `-1000 + 0*gp` (no participan)
 - PG: `1 * min(1, gp*min/2700)^1.5 * (0.7*(per/15 + (obpm + 3)/3) + 0.3*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 
-## Midfield General of the Year (MID)
+## Midfielder of the Year (MID)
 
 El mejor del medio: pivotes (+5%) y volantes.
 
@@ -159,7 +152,7 @@ Condiciones: solo playoffs.
 - FC, PF: `0.8 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)`
 - C: `0.4 * (min(gp, 4)/4)^0.7 * min(1, min/60) * (per/15 + (obpm + dbpm + 3)/3)`
 
-## Final MVP (FMVP)
+## Finals MVP (FMVP)
 
 La figura de la final: puntaje del partido, robos, tapones y asistencias; vale casi el doble si ganó; 45 minutos para sumar completo. Arquero (−60%) y centrales (−20%), con menos peso: sus rebotes inflan el puntaje.
 
@@ -173,21 +166,7 @@ Condiciones: la final.
 - FC, PF: `0.8 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
 - C: `0.4 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
 
-## Semifinal MVP (SFMVP)
-
-La figura de cada semifinal, con la fórmula de la final.
-
-Condiciones: las semifinales.
-
-- F: `1.2 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
-- SF: `1 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
-- PG, GF: `0.88 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
-- SG: `0.96 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
-- G: `0.92 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
-- FC, PF: `0.8 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
-- C: `0.4 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
-
-## Team of the Season: Defense (TSD)
+## Team of the Season: Defense (TOTS-D)
 
 Los 5 mejores de la defensa: centrales y laterales (+50%: en el motor sacan entre 60% y 66% de lo de un central).
 
@@ -197,7 +176,7 @@ Condiciones: equipo de 5.
 - GF: `1.5 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 - FC, PF: `1 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 
-## Team of the Season: Midfield (TSM)
+## Team of the Season: Midfield (TOTS-M)
 
 Los 5 mejores del medio: pivotes, volantes (+5%) y mediapuntas (−45%: en el motor sacan ~1,75 veces lo de un pivote).
 
@@ -208,7 +187,7 @@ Condiciones: equipo de 5.
 - SG: `1.05 * min(1, gp*min/2700)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 - G: `1 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 
-## Team of the Season: Attack (TSA)
+## Team of the Season: Attack (TOTS-A)
 
 Los 5 mejores del ataque: extremos y delanteros (+20%).
 
@@ -218,7 +197,7 @@ Condiciones: equipo de 5.
 - SF: `1 * min(1, gp*min/2700)^1.5 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 - PG, SG, G, GF, FC, PF, C: `-1000 + 0*gp` (no participan)
 
-## Rookie Team of the Season (RTS)
+## Rookie Team of the Season (All-Rookie)
 
 Los 5 mejores novatos, con la fórmula de la revelación.
 
@@ -234,9 +213,9 @@ Condiciones: equipo de 5; solo novatos.
 - C: `0.45 * min(1, gp*min/1800)^1.5 * (0.1*(per/15 + (obpm + 3)/3) + 0.9*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 
 
-## Comprobación con la liga del usuario (dos temporadas simuladas en la v2.24.5)
+## Comprobación con la liga del usuario (2026 y 2027 simuladas en la v2.24.5)
 
-Las cuentas de `tools/argentina/premios-calibracion/` dan los mismos 5 primeros que el juego en cada premio. Con la v2.24.6, esos dos años habrían dado (sin los de playoffs, que dependen de cada serie):
+Las cuentas de `tools/argentina/premios-calibracion/` dan los mismos 5 primeros que el juego en cada premio. Con las fórmulas de la v2.24.6/v2.24.7, esos dos años habrían dado (sin los de playoffs, que dependen de cada serie):
 
 | Premio | 2026 | 2027 |
 |---|---|---|
@@ -249,11 +228,10 @@ Las cuentas de `tools/argentina/premios-calibracion/` dan los mismos 5 primeros 
 | Breakthrough of the Year | PG Tomás Porra (BAR) | FC Mateo Martínez (CCO) |
 | Super Sub of the Year | PG Óscar Romero (HUR) | PG Baltasar Rodríguez (EST) |
 | Most Improved Player | — (primera temporada) | F Nicolás Fernández (BEL) |
-| Iron Man | G Franco Ibarra (ROS) | G Franco Ibarra (ROS) |
 | Striker of the Year | F Álex Arce (INR) | F Nicolás Fernández (BEL) |
 | Winger of the Year | SF Ángel Di María (ROS) | SF Jáminton Campaz (ROS) |
 | Number 10 of the Year | PG Thiago Almada (RIV) | PG Thiago Almada (RIV) |
-| Midfield General of the Year | G Leandro Paredes (BOC) | G Nicolás Barros Schelotto (GIM) |
+| Midfielder of the Year | G Leandro Paredes (BOC) | G Nicolás Barros Schelotto (GIM) |
 | Full-Back of the Year | GF Alexis Steimbach (GIM) | GF Marcos Acuña (RIV) |
 | Center-Back of the Year | FC Sheyko Studer (INR) | PF Tomás Palacios (EST) |
 | Team of the Season: Defense | GF Alexis Steimbach (GIM), FC Sheyko Studer (INR), PF Tomás Palacios (EST), GF Gonzalo Montiel (RIV), GF Elías Gómez (VEL) | PF Tomás Palacios (EST), FC Sheyko Studer (INR), GF Marcos Acuña (RIV), FC Germán Conti (GIM), GF Emanuel Coronel (ROS) |

@@ -39,7 +39,7 @@
 				}
 			},
 			{
-				"shortName": "GB",
+				"shortName": "Golden Boot",
 				"name": "Golden Boot",
 				"showStats": "offense",
 				"formula": "pts*gp*(0.85 + 0.3*tsp/100)"
@@ -51,7 +51,7 @@
 				"formula": "ast*gp*(1 + astp/100) - 0.25*tov*gp"
 			},
 			{
-				"shortName": "GG",
+				"shortName": "Golden Glove",
 				"name": "Golden Glove",
 				"showStats": "defense",
 				"formula": "-1000 + 0*gp",
@@ -85,7 +85,7 @@
 				}
 			},
 			{
-				"shortName": "BTY",
+				"shortName": "ROY",
 				"name": "Breakthrough of the Year",
 				"showStats": "offense",
 				"actAs": "roy",
@@ -127,23 +127,6 @@
 				"showStats": "offense",
 				"mip": true,
 				"formula": "min(1, gp*min/600)^0.5 * (per/15 + (obpm + dbpm + 3)/3)"
-			},
-			{
-				"shortName": "IRON",
-				"name": "Iron Man",
-				"showStats": "offense",
-				"formula": "-1000 + 0*gp",
-				"formulaByPos": {
-					"F": "gp*min*(0.9 + 0.2*winp)",
-					"SF": "gp*min*(0.9 + 0.2*winp)",
-					"PG": "gp*min*(0.9 + 0.2*winp)",
-					"SG": "gp*min*(0.9 + 0.2*winp)",
-					"G": "gp*min*(0.9 + 0.2*winp)",
-					"GF": "gp*min*(0.9 + 0.2*winp)",
-					"FC": "gp*min*(0.9 + 0.2*winp)",
-					"PF": "gp*min*(0.9 + 0.2*winp)",
-					"C": "-1000 + 0*gp"
-				}
 			},
 			{
 				"shortName": "STR",
@@ -198,7 +181,7 @@
 			},
 			{
 				"shortName": "MID",
-				"name": "Midfield General of the Year",
+				"name": "Midfielder of the Year",
 				"showStats": "offense",
 				"formula": "-1000 + 0*gp",
 				"formulaByPos": {
@@ -267,7 +250,7 @@
 			},
 			{
 				"shortName": "FMVP",
-				"name": "Final MVP",
+				"name": "Finals MVP",
 				"showStats": "offense",
 				"statRange": -1,
 				"formula": "1 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
@@ -284,25 +267,7 @@
 				}
 			},
 			{
-				"shortName": "SFMVP",
-				"name": "Semifinal MVP",
-				"showStats": "offense",
-				"statRange": -2,
-				"formula": "1 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
-				"formulaByPos": {
-					"F": "1.2 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
-					"SF": "1 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
-					"PG": "0.88 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
-					"SG": "0.96 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
-					"G": "0.92 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
-					"GF": "0.88 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
-					"FC": "0.8 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
-					"PF": "0.8 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)",
-					"C": "0.4 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)"
-				}
-			},
-			{
-				"shortName": "TSD",
+				"shortName": "TOTS-D",
 				"name": "Team of the Season: Defense",
 				"showStats": "defense",
 				"numTeams": 1,
@@ -320,7 +285,7 @@
 				}
 			},
 			{
-				"shortName": "TSM",
+				"shortName": "TOTS-M",
 				"name": "Team of the Season: Midfield",
 				"showStats": "offense",
 				"numTeams": 1,
@@ -338,7 +303,7 @@
 				}
 			},
 			{
-				"shortName": "TSA",
+				"shortName": "TOTS-A",
 				"name": "Team of the Season: Attack",
 				"showStats": "offense",
 				"numTeams": 1,
@@ -356,7 +321,7 @@
 				}
 			},
 			{
-				"shortName": "RTS",
+				"shortName": "All-Rookie",
 				"name": "Rookie Team of the Season",
 				"showStats": "offense",
 				"numTeams": 1,

@@ -1,71 +1,48 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 24/11/2026. Última versión: **v2.24.6**
-(`data/argentina/BBGM_Argentina_2026_v.2.24.6_futbol.json`, sha256
-`417fba2da3e903bf6aca8adc8bbe986a63f6401320cc510f2ef2e90653e19c11`): 22 de 30
+Estado al 25/11/2026. Última versión: **v2.24.7**
+(`data/argentina/BBGM_Argentina_2026_v.2.24.7_futbol.json`, sha256
+`135bef58bec4fae119b2b6ecaabe372e65f021019c3dcc8e91e3dc2d7f09858f`): 22 de 30
 equipos con plantel 2026 (el último, Platense, 36 jugadores), Rendimiento
-completo; fotos de los 21 primeros (las de Platense, pendientes: las pone el
-usuario en el juego); todo el archivo en la escala nueva de OVR (20 a 78) y
-en la forma 5 (posiciones secundarias de los 22 planteles; defectos).
-Validación: 0 errores. Auditoría: 53 controles, 9 con alertas (las de
-siempre más "Foto": los 36 de Platense). Escalera por puesto del usuario
-actualizada (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
+completo y fotos de todos (717 de 717); todo el archivo en la escala nueva de
+OVR (20 a 78) y en la forma 5 (posiciones secundarias de los 22 planteles;
+defectos); gala de premios propia (21 premios, calibrada). Validación: 0
+errores. Auditoría: 53 controles, 8 con alertas (las de siempre). Escalera
+por puesto del usuario actualizada
+(https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-0. **Gala de premios: cerrada** (el usuario: último parche de premios antes de
-   Defensa y Justicia). v2.24.6, calibrada con la liga exportada del usuario
-   (dos temporadas en la v2.24.5): `tools/argentina/premios-calibracion/`
-   reproduce los puntajes del juego (mismos 5 primeros en cada premio) y
-   prueba variantes de pesos. Para recalibrar más adelante: pedir otra liga
-   exportada con temporadas jugadas. Para una
-   liga ya empezada: `premios-para-importar.json` se importa en el juego
-   (Award Settings → Import settings, con "Delete existing awards"); el
-   nombre corto de las zonas no viaja en ese archivo. Observado en las
-   simulaciones, fuera de los premios (para más adelante, decide el
-   usuario): muy pocos empates (el motor empata solo si los ~105 puntos por
-   lado quedan iguales) y mucha diferencia arriba y abajo (Boca 40-3 y
-   35-6-2; Tigre 9-34 y 5-37-1, con plantel de 2023). All-Star: sigue como
-   estaba (la elección es fija del motor).
-1. v2.24.1: el usuario aceptó los rasgos sugeridos (Cuesta recuperador y
-   aereo, Zapiola larga distancia, Cozzani reflejos) y la lesión estimada de
-   Luciano Giménez; segunda revisión breve de los OVR de Platense: se
-   sostienen todos (pedido de ahorrar mensajes). Falta que el usuario
-   corrija los OVR si quiere y ponga las fotos.
-   **Respuesta del usuario a los OVR de Platense** (propuestos por Claude en
-   la v2.24, en cuadros por sección; sus cambios van como parche v2.24.1).
-   Dudas que se le hicieron: rasgos que su comentario sugiere y no anotó
-   (Cuesta: recuperador y aereo por "anticipo y juego aéreo"; Zapiola: larga
-   distancia por "la pegada"; Cozzani: reflejos por las tandas de penales);
-   la lesión de Luciano Giménez (hombro, sin fecha: 4 partidos estimados).
-   Fotos de Platense: el usuario las pone en el juego y manda la liga.
-2. **Próximo equipo (v2.25): Defensa y Justicia** (decidido por el usuario). quedan BAN, DYJ, TIG, SAR, ALD, ATU, CCO y GEM;
-   el orden lo decide el usuario (Claude sugirió Defensa y Justicia, 14.º,
-   el mejor de la tabla entre los que faltan). Las secundarias de los 8 ya
-   están en `secundarias-2026.json`; las copas, en `copas-2026.json`.
-   Matías Borgogno (arquero de DYJ) jugó la primera mitad en Platense (22
-   PJ, 1980'; está en `salidas-2026.json`).
-3. Cabos sueltos (para una v2.24.x si el usuario prefiere cerrarlos antes):
-   el ajuste del capitán según el motivo y si Estudiantes (sin capitán fijo)
-   lleva el arquetipo; fotos de 21 de los 24 prospectos de los planteles.
-2. **Posiciones secundarias** (idea del usuario, 24/11; aceptado: 20–25% sin
-   cambiar el OVR, mismo peso para cada secundaria): completas en los 21
-   planteles (v2.23.11: 394 de 615 jugadores tienen alguna; Platense, 23 de
-   36, desde la v2.24) y en `secundarias-2026.json` para los 8 sin cargar
-   (pasarlas al plantel al cargar cada uno). Dudas: Jhon Rentería (SAR) figura sin puesto principal
-   marcado (MCO y ED en claro; por los totales, extremo derecho): confirmar
-   con su plantel. Sebastián Moyano, el libre con la foto de Mele, es el
-   tercer arquero de ALD: al cargar Aldosivi va en `reemplaza` y recibe su
-   foto. Mazzanti (NOB): Transfermarkt y el comentario del usuario escriben
-   "Mazzantti": corregido en la v2.23.12 (con `semilla`).
-4. Equipos que faltan: BAN, DYJ, TIG, SAR, ALD, ATU, CCO, GEM (el orden
-   no está fijado; en el archivo CCO no tiene arquero desde que Mansilla
-   pasó a UNI: su captura de secundarias trae a Aguerre y Vallejos).
-5. Más adelante (el usuario: "falta bastante"): colleges, nombres y orígenes
-   latinoamericanos (`playerBioInfo`, cuando estén todos los equipos y sus
-   fotos, antes de los libres) y el draft (§7, 15).
-6. Sanguinetti (VEL): Sofascore 7,24 con 13 partidos según Sofascore, 0 en
-   Transfermarkt y sin partidos en Banfield; queda como está.
+1. **Próximo equipo (v2.25): Defensa y Justicia** (decidido por el usuario).
+   Pedir lo de siempre (§3): plantel "Ampliado" y Rendimiento 2026 de
+   Transfermarkt, debut e inferiores de cada uno, los que siguen en reserva,
+   lesiones, parientes, capitán, comentario, Sofascore ≥ 6,90 (de la Liga y,
+   si lo da, de copas: `sofascoreLibertadores`) y rasgos (con defectos). Ya
+   están: secundarias (`secundarias-2026.json`), copas (`copas-2026.json`) y
+   tablas. Matías Borgogno (arquero de DYJ) jugó la primera mitad en Platense
+   (22 PJ, 1980'; en `salidas-2026.json`): valorarlo con el año completo.
+   Después quedan BAN, TIG, SAR, ALD, ATU, CCO y GEM (orden del usuario).
+2. **Premios: cerrados** (v2.24.6/v2.24.7; ver `premios.md`). Siglas y
+   nombres como los dejó el usuario en el juego (sacó Iron Man y Semifinal
+   MVP). Para recalibrar más adelante: una liga exportada con temporadas
+   jugadas y `tools/argentina/premios-calibracion/` (reproduce los puntajes
+   del juego). Para una liga ya empezada: `premios-para-importar.json`.
+   All-Star: queda como está (la elección es fija del motor).
+3. Observado en las simulaciones del usuario (para más adelante, decide él):
+   muy pocos empates (el motor empata solo si los ~105 puntos por lado quedan
+   iguales) y mucha distancia arriba y abajo (Boca 40-3; Tigre 5-37-1, con
+   plantel de 2023: se empareja al cargar los equipos que faltan).
+4. Al cargar equipos que faltan: Jhon Rentería (SAR) figura sin puesto
+   principal en su captura de secundarias (por los totales, extremo derecho;
+   confirmar con su plantel). Sebastián Moyano, el libre con la foto de Mele,
+   es el tercer arquero de ALD: al cargar Aldosivi va en `reemplaza` y recibe
+   su foto. CCO no tiene arquero en el archivo (su captura trae a Aguerre y
+   Vallejos).
+5. Cabos sueltos: el ajuste del capitán según el motivo y si Estudiantes (sin
+   capitán fijo) lleva el arquetipo; fotos de 21 de los 24 prospectos.
+6. Más adelante (el usuario: "falta bastante"): colleges, nombres y orígenes
+   latinoamericanos (`playerBioInfo`, con todos los equipos y sus fotos, antes
+   de los libres), el draft (§7, 15) y los libres.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -594,6 +571,18 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**25/11/2026 (v2.24.7).** Huella:
+`135bef58bec4fae119b2b6ecaabe372e65f021019c3dcc8e91e3dc2d7f09858f`. Liga del
+usuario (pretemporada, sobre la v2.24.5) con las fotos de Platense, importada
+con `desde-juego.ts`: 36 fotos, camisetas de Fabricio López (#44) y Sepúlveda
+(#0), OVR a mano de Gauto 61 y Merlini 59. Premios: las siglas y nombres que
+cambió en el juego ("Golden Boot", "Golden Glove", "ROY", "TOTS-D/M/A",
+"All-Rookie", "Midfielder of the Year", "Finals MVP") y los dos que sacó
+(Iron Man, Semifinal MVP), con las fórmulas de la v2.24.6. Comprobado: fotos
+y OVR iguales a su liga en los 3334 jugadores; mismos premios (siglas y
+nombres); contra la v2.24.6 solo cambian esas fotos, camisetas, los dos OVR
+(con su sueldo y orden) y los premios.
+
 **24/11/2026 (v2.24.6).** Huella:
 `417fba2da3e903bf6aca8adc8bbe986a63f6401320cc510f2ef2e90653e19c11`. Último
 parche de premios: liga exportada del usuario con 2026 y 2027 simuladas en la
@@ -1096,9 +1085,12 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.24.6.
-> Corré la auditoría y la validación sobre ese archivo y confirmame en pocas
-> líneas que entendiste el estado, antes de seguir.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.24.7.
+> Corré la validación y la auditoría sobre ese archivo y confirmame en pocas
+> líneas que entendiste el estado. Seguimos con Defensa y Justicia: decime
+> qué datos te tengo que mandar.
 
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara
-con la del repositorio y se importa con `desde-juego.ts`.
+con la del repositorio y se importa con `desde-juego.ts`, con la versión sobre
+la que jugó como base. Si la liga tiene temporadas simuladas, NO se importa
+(sus ratings cambiaron): solo se miran fotos y cambios suyos.
