@@ -1,0 +1,5 @@
+Pedido del usuario (24/11/2026) para el próximo parche (v2.24.2), todavía sin aplicar.
+
+PLA Franco Zapiola: 65 → 66
+PLA Juan Carlos Gauto: 57 → 59
+PLA Bautista Merlini: 59 → 58
