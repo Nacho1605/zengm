@@ -314,7 +314,10 @@
 				"club": "UNI",
 				"anio": 2015
 			},
-			"rasgos": ["larga distancia"],
+			"rasgos": [
+				"larga distancia",
+				"llegada"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/395216-1721143230.png?lm=4711",
 			"secundarias": [
 				"Interior izquierdo"
@@ -559,6 +562,9 @@
 			"secundarias": [
 				"Mediocentro",
 				"Interior izquierdo"
+			],
+			"rasgos": [
+				"llegada"
 			]
 		},
 		{

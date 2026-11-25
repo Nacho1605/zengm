@@ -514,8 +514,8 @@
 			"ovr": 63,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/830857-1739826759.jpg?lm=4711",
 			"rasgos": [
-				"centrador",
-				"veloz+"
+				"veloz+",
+				"llegada"
 			],
 			"secundarias": [
 				"Interior derecho"
@@ -667,6 +667,9 @@
 			"secundarias": [
 				"Mediocentro ofensivo",
 				"Extremo izquierdo"
+			],
+			"rasgos": [
+				"llegada"
 			]
 		},
 		{

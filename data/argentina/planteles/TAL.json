@@ -378,7 +378,8 @@
 			},
 			"capitan": true,
 			"rasgos": [
-				"pulmon"
+				"pulmon",
+				"llegada"
 			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/670566-1771860337.jpg?lm=4711",
 			"secundarias": [],
@@ -471,6 +472,9 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/909737-1771860398.jpg?lm=4711",
 			"secundarias": [
 				"Mediocentro"
+			],
+			"rasgos": [
+				"llegada"
 			]
 		},
 		{

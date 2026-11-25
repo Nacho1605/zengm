@@ -460,6 +460,9 @@
 			"secundarias": [
 				"Mediocentro",
 				"Mediocentro ofensivo"
+			],
+			"rasgos": [
+				"llegada"
 			]
 		},
 		{
@@ -557,8 +560,8 @@
 			"college": "Club Guaraní",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/741965-1781277180.jpg?lm=4711",
 			"rasgos": [
-				"larga distancia",
-				"pulmon"
+				"pulmon",
+				"llegada+"
 			],
 			"sofascore": 7.02,
 			"secundarias": [

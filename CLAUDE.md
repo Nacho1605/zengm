@@ -53,6 +53,7 @@ node tools/argentina/pares-minutos.mjs ARCHIVO.json EQUIPO  # segunda revisión:
 python3 tools/argentina/revision-datos.py ARCHIVO.json D.json && python3 tools/argentina/revision-modelo.py D.json M.json  # revisión general: OVR esperado de todos (necesita numpy)
 python3 tools/argentina/revision-datos2.py ARCHIVO.json D2.json  # + revision-juveniles.py y revision-defensores.py
 python3 tools/argentina/sofascore-listas.py S.json  # cruza las listas de Sofascore por puesto del usuario con los planteles
+node tools/argentina/techo-esperado.mjs EQUIPO APELLIDO OVR "rasgo1,rasgo2" ...  # techo esperado con distintas formas (reglas de crecimiento del juego, sin azar)
 node tools/argentina/arqueros.ts ARCHIVO.json > data/argentina/arqueros/valores-actuales.md  # lista de arqueros vs hoy
 node tools/argentina/ajustar-ovr.ts EQUIPO APELLIDO OVR  # cambia un OVR (y sus ratings a mano)
 node tools/argentina/desde-juego.ts LIGA_DEL_USUARIO.json VERSION_QUE_USÓ.json # importa fotos, camisetas, ratings, parientes y equipos (a equipos.csv)
@@ -110,8 +111,8 @@ v2.14.1 → v2.14.2).
   goleador, larga distancia (antes "pegador"), aereo, gambeta, veloz, pelota parada, habilidoso, pase,
   cerebro, centrador, recuperador, potente, pulmon, tactico, llegada (desde
   la v2.27.5: lateral, carrilero o volante que pisa el área desde atrás; más
-  definición, cabezazo y media distancia, un poco menos de marca; Sosa y
-  Cerato); arqueros:
+  definición, cabezazo y media distancia, un poco menos de marca; Sosa,
+  Cerato y los 14 de la lista del 25/11); arqueros:
   reflejos, achique, pies; defectos (forma 5, libertad creativa que dio el
   usuario): lento, erratico, patadura, morfon, liviano, flojo de arriba, sin
   aire, desordenado, faltero; de arqueros: estatico, inseguro (lento,
@@ -188,8 +189,15 @@ v2.14.1 → v2.14.2).
     compensa lo que el juego hace crecer a los chicos. El método orienta, no
     manda: el usuario sostuvo valores más altos por factores que no están en
     los números (Flores 69 y Aranda 64, convocatoria a la Selección de Flores;
-    Ovando 69, Barros Schelotto y Andrada 66, Herrera 58). Ver
-    `revision-ratings-mano-y-juveniles.md`.
+    Ovando 69, Barros Schelotto y Andrada 66, Herrera 58; Flores 68 desde la
+    v2.27.6). Ver `revision-ratings-mano-y-juveniles.md`.
+    La forma de los ratings NO cambia el potencial: el juego suma a cada rating
+    lo mismo sin importar cuánto vale (solo frena el tope de 100), así que con
+    el mismo OVR y la misma edad el techo es el mismo (`techo-esperado.mjs`;
+    Flores, 25/11: todas las formas a 68 dan lo mismo). El POT que muestra el
+    juego tiene azar: simula 20 carreras y toma una de las mejores (la 15.ª de
+    20), así que se mueve unos 2 puntos cada vez que lo recalcula (al importar,
+    al editar ratings, en cada pretemporada). La única palanca es el OVR.
   - Más allá de las estadísticas (el usuario, 25/11): hay factores que pesan
     en el OVR y hay que ser muy cuidadoso, por ejemplo una convocatoria a la
     Selección (`"seleccion"` en el plantel, como Flores). No decir que un OVR

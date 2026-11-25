@@ -1,0 +1,24 @@
+Pedido del usuario (25/11/2026) para el parche v2.27.6. Rasgos copiados de la escalera, tal cual:
+
+BAR Rodrigo Insúa: + llegada, − centrador
+BOC Santiago Ascacíbar: + pulmon+, + llegada, − pulmon
+ERC Gabriel Alanís: + llegada, − centrador
+EST Alexis Castro: + llegada
+EST Eric Meza: + llegada, − centrador
+GIM Alexis Steimbach: + llegada
+INR José Florentín: + llegada+, − larga distancia
+INR Leonel Bucca: + llegada
+RIV Marcos Acuña: + llegada
+RIV Tobías Andrada: + llegada
+TAL Matías Galarza: + llegada
+TAL Augusto Schott: + llegada
+UNI Brahian Cuello: + llegada
+UNI Bruno Pittón: + llegada
+
+En el mismo mensaje (no vienen de la escalera): "bajamos un punto a Beltrán (71), Otamendi (70) y Flores (68)".
+
+RIV Santiago Beltrán: 72 → 71
+RIV Nicolás Otamendi: 71 → 70
+BOC Leonel Flores: 69 → 68
+
+También acepta liberar los ratings a mano de Passerini, Durán, Ledesma, Lázaro, Tissera, Merlini y Gauto (pasan a la forma del archivo, mismo OVR).

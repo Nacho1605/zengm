@@ -75,22 +75,6 @@
 			},
 			"college": "Asociación Atlética Estudiantes (Río Cuarto)",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/344421-1621169118.jpg?lm=4711",
-			"ratings": {
-				"stre": 69,
-				"spd": 53,
-				"jmp": 77,
-				"endu": 60,
-				"ft": 50,
-				"oiq": 48,
-				"diq": 77,
-				"drb": 47,
-				"pss": 47,
-				"reb": 79,
-				"ins": 0,
-				"dnk": 0,
-				"fg": 0,
-				"tp": 0
-			},
 			"secundarias": []
 		},
 		{
@@ -678,22 +662,6 @@
 			},
 			"sofascore": 6.97,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1227286-1771007602.png?lm=4711",
-			"ratings": {
-				"stre": 49,
-				"spd": 59,
-				"jmp": 59,
-				"endu": 52,
-				"ins": 56,
-				"dnk": 57,
-				"ft": 59,
-				"fg": 65,
-				"tp": 63,
-				"oiq": 71,
-				"diq": 37,
-				"drb": 65,
-				"pss": 72,
-				"reb": 42
-			},
 			"secundarias": [
 				"Interior izquierdo",
 				"Mediapunta"
@@ -897,22 +865,6 @@
 			},
 			"college": "Club Atlético Newell's Old Boys",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/503001-1720984447.png?lm=4711",
-			"ratings": {
-				"stre": 61,
-				"spd": 56,
-				"jmp": 67,
-				"endu": 62,
-				"ins": 63,
-				"dnk": 61,
-				"ft": 59,
-				"fg": 71,
-				"tp": 59,
-				"oiq": 67,
-				"diq": 35,
-				"drb": 57,
-				"pss": 52,
-				"reb": 49
-			},
 			"secundarias": []
 		},
 		{

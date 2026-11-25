@@ -1,8 +1,8 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 25/11/2026. Última versión: **v2.27.5**
-(`data/argentina/BBGM_Argentina_2026_v.2.27.5_futbol.json`, sha256
-`3d0b436019a84eb4116cef4a8f89ab0424782f0920766b1ad956fec575903e74`): 25 de 30
+Estado al 25/11/2026. Última versión: **v2.27.6**
+(`data/argentina/BBGM_Argentina_2026_v.2.27.6_futbol.json`, sha256
+`6b8c1ded37d4c69264d4884412766992262339e998e7ad12da4ed6b9ed77c32e`): 25 de 30
 equipos con plantel 2026 (el último, Tigre, 30 jugadores), Rendimiento
 completo; fotos de 748 de 778 (faltan las 30 de TIG: las pone el usuario en
 el juego); todo el archivo en la escala nueva de OVR (20 a 79) y en la forma
@@ -21,10 +21,8 @@ Escalera por puesto del usuario actualizada
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. **Pendiente del usuario:** los otros 7 con ratings a mano que se
-   propuso liberar (casi iguales a la forma del archivo: Passerini, Durán,
-   Ledesma, Lázaro, Tissera, Merlini y Gauto; Barbi recibió su OVR 30 con sus
-   ratings) no los nombró: quedan a mano hasta que diga. También: si estira la
+1. **Pendiente del usuario:** el único que queda con ratings a mano es Barbi
+   (TAL, 30). Si estira la
    escala por los montones (60 y 61 con unos 30 jugadores). Fotos de TIG
    cuando las ponga (importar con `desde-juego.ts`, base la versión que usó).
    Pendiente: Fernando Román (DYJ) volvió de un préstamo en julio (antes en
@@ -619,6 +617,35 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**25/11/2026 (v2.27.6): "llegada" en 14 jugadores, ratings a mano liberados y
+Flores 68.** Huella:
+`6b8c1ded37d4c69264d4884412766992262339e998e7ad12da4ed6b9ed77c32e`.
+
+- Lista del usuario copiada de la escalera (`escalera/listas/2026-11-25.txt`):
+  "llegada" a Insúa (BAR), Ascacíbar (BOC, además pulmon → pulmon+), Alanís
+  (ERC), Castro y Meza (EST), Steimbach (GIM), Florentín ("llegada+", sin
+  larga distancia) y Bucca (INR), Acuña y Andrada (RIV), Galarza y Schott
+  (TAL), Cuello y Pittón (UNI); a Insúa, Alanís y Meza se les sacó
+  "centrador". Aplicada con `aplicar-listas.ts`: 0 avisos. `rasgos-usuario.ts`
+  al día (comprobado: mismos rasgos que los planteles).
+- OVR (pedido del usuario): Beltrán 71, Otamendi 70, Flores 68.
+- Liberados los ratings a mano de Passerini, Durán, Ledesma, Lázaro, Tissera,
+  Merlini y Gauto (aceptado por el usuario): forma del archivo, mismo OVR;
+  cambian a lo sumo 3 puntos (Passerini, idéntico). Queda a mano solo Barbi.
+- Flores: el usuario vio en el juego que con −1 parejo el POT pasaba de 86 a
+  88. Es azar del juego: el POT simula 20 carreras con azar y toma la 15.ª
+  mejor; al editar ratings se recalcula. Con las reglas de crecimiento del
+  juego promediadas (sin azar; `techo-esperado.mjs`), a OVR 68 todas las
+  formas probadas dan el mismo techo esperado (81; con 69, 82): gambeta,
+  gambeta+, gambeta+ y veloz, con pulmon+, con cerebro+ y habilidoso, con
+  liviano, con erratico, y el −1 parejo. La forma no mueve el potencial; solo
+  el OVR (a los 19: 68 → POT 85, 66 → 83, 64 → 81, 60 → 78). Flores queda con
+  "gambeta" y la forma del archivo.
+- Contra la v2.27.5: 3 OVR (Flores, Beltrán y Otamendi, con ratings, sueldo y
+  orden) y la forma de 21 jugadores con el mismo OVR (los 14 de la lista y los
+  7 liberados); el resto igual. Armada dos veces con la misma huella;
+  validación 0 errores; auditoría igual.
+
 **25/11/2026 (v2.27.5): rasgo "llegada", top 3 y método nuevo de juveniles.**
 Huella: `3d0b436019a84eb4116cef4a8f89ab0424782f0920766b1ad956fec575903e74`.
 

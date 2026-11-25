@@ -376,7 +376,10 @@
 				"anio": 2019
 			},
 			"college": "Club Atlético Aldosivi",
-			"rasgos": ["larga distancia", "centrador"],
+			"rasgos": [
+				"larga distancia",
+				"llegada"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/721235-1692106274.JPG?lm=4711",
 			"secundarias": [
 				"Interior izquierdo",

@@ -570,7 +570,7 @@
 			},
 			"ovr": 68,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/423436-1739827128.jpg?lm=4711",
-			"rasgos": ["recuperador", "pulmon"],
+			"rasgos": ["recuperador", "pulmon+", "llegada"],
 			"secundarias": [
 				"Mediocentro",
 				"Interior derecho"
@@ -939,8 +939,8 @@
 				"club": "BOC",
 				"anio": 2026
 			},
-			"ovr": 69,
-			"seleccion": "Convocado a la Selección Argentina en los dos últimos partidos (dato del usuario, 25/11/2026): su OVR (69) lo sostiene eso, además de sus números",
+			"ovr": 68,
+			"seleccion": "Convocado a la Selección Argentina en los dos últimos partidos (dato del usuario, 25/11/2026): pesa en su OVR además de sus números",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1291699-1789658026.jpg?lm=4711",
 			"rasgos": ["gambeta"],
 			"secundarias": [

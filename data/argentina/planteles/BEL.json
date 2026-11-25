@@ -843,22 +843,6 @@
 				"anio": 2014
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/334586-1758831368.png?lm=4711",
-			"ratings": {
-				"stre": 70,
-				"spd": 54,
-				"jmp": 60,
-				"endu": 55,
-				"ins": 72,
-				"dnk": 62,
-				"ft": 55,
-				"fg": 67,
-				"tp": 55,
-				"oiq": 63,
-				"diq": 36,
-				"drb": 56,
-				"pss": 41,
-				"reb": 46
-			},
 			"secundarias": [],
 			"rasgos": ["goleador", "morfon"],
 			"sofascore": 6.47

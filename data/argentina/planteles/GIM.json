@@ -391,7 +391,11 @@
 				"anio": 2022
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1046802-1699915063.jpg?lm=4711",
-			"rasgos": ["centrador", "pulmon"],
+			"rasgos": [
+				"centrador",
+				"pulmon",
+				"llegada"
+			],
 			"secundarias": [
 				"Interior derecho",
 				"Extremo derecho"

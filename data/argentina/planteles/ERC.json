@@ -684,7 +684,10 @@
 				"club": "BEL",
 				"anio": 2015
 			},
-			"rasgos": ["larga distancia", "centrador"],
+			"rasgos": [
+				"larga distancia",
+				"llegada"
+			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/342149-1755537157.jpg?lm=4711",
 			"secundarias": [
 				"Lateral izquierdo"

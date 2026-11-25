@@ -51,7 +51,7 @@
 			"salio": 0,
 			"ppp": 1.83,
 			"convocado": 46,
-			"ovr": 72,
+			"ovr": 71,
 			"debut": {
 				"club": "RIV",
 				"anio": 2025
@@ -249,7 +249,7 @@
 			"ppp": 1.58,
 			"convocado": 19,
 			"fichado": "01/07/2026",
-			"ovr": 71,
+			"ovr": 70,
 			"debut": {
 				"club": "VEL",
 				"anio": 2009
@@ -354,7 +354,8 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/60410-1762438025.png?lm=4711",
 			"rasgos": [
-				"centrador"
+				"centrador",
+				"llegada"
 			],
 			"sofascore": 7.03,
 			"secundarias": [
@@ -571,6 +572,9 @@
 			"secundarias": [
 				"Pivote",
 				"Interior derecho"
+			],
+			"rasgos": [
+				"llegada"
 			]
 		},
 		{

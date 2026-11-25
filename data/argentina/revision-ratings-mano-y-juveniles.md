@@ -195,3 +195,26 @@ con los mismos goles y asistencias; no se propone.
 2. Ovando: ¿68 (rinde como 71; POT 85) o 65 (POT 82, dentro de la escala)?
 3. Flores 60 y Barros Schelotto 61: son los que más bajan, porque su OVR
    estaba arriba de lo que rinden. ¿Van?
+
+## Flores y el potencial (v2.27.6)
+El usuario bajó a Flores a 68 y vio en el juego que con −1 parejo el POT
+pasaba de 86 a 88. Revisado con las reglas de crecimiento del juego
+(`developSeason.basketball.ts`), promediadas y sin azar (`techo-esperado.mjs`):
+
+| Forma a OVR 68 | Techo esperado | POT del juego (fórmula) |
+|---|---|---|
+| gambeta (la de siempre) | 81 | 85 |
+| −1 parejo desde la de 69 | 81 | 85 |
+| gambeta+ | 81 | 85 |
+| gambeta+ y veloz | 81 | 85 |
+| gambeta y pulmon+ | 81 | 85 |
+| gambeta, cerebro+ y habilidoso | 81 | 85 |
+| gambeta y liviano / gambeta y erratico | 81 | 85 |
+| (con OVR 69, la de siempre) | 82 | 86 |
+
+- El juego suma a cada rating lo mismo cada año sin importar cuánto vale (solo
+  frena el tope de 100): con el mismo OVR y la misma edad, el techo es el mismo.
+- El POT que muestra es optimista y con azar: simula 20 carreras y toma la
+  15.ª mejor; por eso queda unos 4 arriba del techo esperado y se mueve unos 2
+  puntos cada vez que se recalcula. El 88 fue eso.
+- La única palanca es el OVR: a los 19, 68 → POT 85, 66 → 83, 64 → 81, 60 → 78.
