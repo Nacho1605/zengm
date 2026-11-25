@@ -181,7 +181,7 @@
 			"salio": 1,
 			"ppp": 3,
 			"convocado": 13,
-			"ovr": 45,
+			"ovr": 44,
 			"debut": {
 				"club": "ARG",
 				"anio": 2024
@@ -284,7 +284,7 @@
 			"salio": 0,
 			"ppp": 1.89,
 			"convocado": 27,
-			"ovr": 41,
+			"ovr": 45,
 			"debut": {
 				"club": "RIV",
 				"anio": 2026
@@ -528,7 +528,7 @@
 			"salio": 3,
 			"ppp": 2.08,
 			"convocado": 28,
-			"ovr": 42,
+			"ovr": 46,
 			"debut": {
 				"club": "RIV",
 				"anio": 2026
@@ -632,7 +632,7 @@
 			"salio": 3,
 			"ppp": 1.31,
 			"convocado": 33,
-			"ovr": 40,
+			"ovr": 44,
 			"debut": {
 				"club": "RIV",
 				"anio": 2026
@@ -741,7 +741,7 @@
 			"salio": 4,
 			"ppp": 2.04,
 			"convocado": 32,
-			"ovr": 45,
+			"ovr": 50,
 			"debut": {
 				"club": "RIV",
 				"anio": 2025
@@ -917,7 +917,7 @@
 			"salio": 3,
 			"ppp": 1.5,
 			"convocado": 15,
-			"ovr": 43,
+			"ovr": 42,
 			"debut": {
 				"club": "RIV",
 				"anio": 2024

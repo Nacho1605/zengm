@@ -1,26 +1,31 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 25/11/2026. Última versión: **v2.27.1**
-(`data/argentina/BBGM_Argentina_2026_v.2.27.1_futbol.json`, sha256
-`580e7b7e9f5f0002c109cbb6f80d97095e38b98961cbbab5823c48b218b649c7`): 25 de 30
+Estado al 25/11/2026. Última versión: **v2.27.2**
+(`data/argentina/BBGM_Argentina_2026_v.2.27.2_futbol.json`, sha256
+`e24efe51b8fa0e0fbb88a48bf461872e3542b4fb3e6f61171789c63cf2cae81b`): 25 de 30
 equipos con plantel 2026 (el último, Tigre, 30 jugadores), Rendimiento
 completo; fotos de 748 de 778 (faltan las 30 de TIG: las pone el usuario en
 el juego); todo el archivo en la escala nueva de OVR (20 a 78) y en la forma
 5 (posiciones secundarias de los 25 planteles; defectos); gala de premios
 propia (21 premios, calibrada; nombres como los dejó el usuario). Validación:
 0 errores. Auditoría: 53 controles, 9 con alertas (las de siempre más "Foto":
-las 30 de TIG). Revisión general de OVR de los 25 planteles hecha
-(`revision-general-v2.27.md`). Escalera por puesto del usuario actualizada
+las 30 de TIG). Revisiones de OVR: general (`revision-general-v2.27.md`) y
+de juveniles sin la regla y defensores (`revision-juveniles-defensores-v2.27.md`).
+Escalera por puesto del usuario actualizada
 (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. **Respuestas pendientes del usuario sobre la revisión general:** Guidara
-   (LAN 60, valor suyo; propuesta 62) y Cetré (EST 68, valor suyo; los
-   números dicen menos: pregunta abierta). Fotos de TIG cuando las ponga
-   (importar con `desde-juego.ts`, base la versión que usó). Pendiente:
-   Fernando Román (DYJ) volvió de un préstamo en julio (antes en Aldosivi): al
-   cargar ALD, mirar su primera mitad del año.
+1. **Respuestas pendientes del usuario:** (a) si la regla de juveniles queda
+   como en la v2.27.2 (rendimiento como los adultos, sin plus por valor: el
+   potencial lo pone el juego por la edad) o vuelve la anterior; (b)
+   propuestas sobre valores suyos: Guidara 63 (LAN), Baroni 52, Dávila 52
+   (TAL), Jainikoski 50 (ARG) y la pregunta por Cetré (EST 68); (c) si
+   estira la escala por los montones (60 y 61 con 30 jugadores); (d) si
+   puede dar el Sofascore de todos los defensores y pivotes. Fotos de TIG
+   cuando las ponga (importar con `desde-juego.ts`, base la versión que usó).
+   Pendiente: Fernando Román (DYJ) volvió de un préstamo en julio (antes en
+   Aldosivi): al cargar ALD, mirar su primera mitad del año.
 2. **Próximo equipo (v2.28): Sarmiento.** Después ALD, ATU, CCO y GEM (orden
    del usuario). Pedir lo de siempre (§3): plantel "Ampliado" y Rendimiento
    2026, debut e inferiores, los que siguen en reserva, lesiones, parientes,
@@ -611,6 +616,36 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**25/11/2026 (v2.27.2): juveniles sin la regla y defensores.** Huella:
+`e24efe51b8fa0e0fbb88a48bf461872e3542b4fb3e6f61171789c63cf2cae81b`.
+
+- Pedido del usuario: (1) juveniles ignorando su regla (plus por valor),
+  porque el potencial depende de la edad; (2) los que no viven de las
+  estadísticas del Rendimiento (centrales, pivotes, mediocentros de marca,
+  laterales).
+- (1) El juego calcula el potencial con OVR y edad (potEstimator de BBGM:
+  72,3 − 2,33 × edad + 0,83 × OVR hasta los 29): el plus por valor contaba
+  la promesa dos veces. Modelo de rendimiento puro ajustado en adultos (23 o
+  más; `revision-juveniles.py`): los juveniles con minutos estaban en
+  promedio 6 puntos debajo de adultos con los mismos números; las figuras
+  caras, arriba. 38 cambios (35 juveniles y 3 prospectos): Flores 69 → 65,
+  Barros Schelotto 67 → 65, Cantizano 51 → 57, Guch 54 → 59, Gómez Mattar 53,
+  Tello 39 → 48, Escudero 53, Mateo Martínez (prospecto) 51, etc. A los de
+  menos de 300', solo se les sacó el plus. Propuestas sobre valores del
+  usuario: Baroni 52, Dávila 52, Jainikoski 50.
+- (2) Modelo sin goles ni asistencias para centrales, laterales, pivotes y
+  mediocentros, con el rol por secundarias, ppp relativo (puntos con él en
+  cancha contra el promedio del equipo) y goles en contra del equipo
+  (`revision-defensores.py`), más un índice defensivo. Los goles y
+  asistencias casi no pesaban en mediocampistas (los pivotes no estaban
+  castigados en bloque); en los centrales manda el minutaje. 10 cambios:
+  Arboleda 61, Izquierdoz 68, Carrizo 63, Rak 63, Miloc 60, F. Vázquez 56,
+  Gariglio 47, C. Quintana 49, Pintado 54, F. Álvarez 61. Guidara (valor del
+  usuario): propuesta 63.
+- Contra la v2.27.1: 48 OVR (ratings, sueldo, orden y números de pick que
+  dependen del OVR); el resto igual. Armada dos veces con la misma huella;
+  auditoría igual. Montones: 60 y 61 con 30 jugadores, 54 con 28.
+
 **25/11/2026 (v2.27.1): revisión general de OVR.** Huella:
 `580e7b7e9f5f0002c109cbb6f80d97095e38b98961cbbab5823c48b218b649c7`.
 

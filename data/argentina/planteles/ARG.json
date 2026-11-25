@@ -227,7 +227,7 @@
 			"salio": 1,
 			"ppp": 1.83,
 			"convocado": 12,
-			"ovr": 58,
+			"ovr": 56,
 			"debut": {
 				"club": "ARG",
 				"anio": 2025
@@ -986,7 +986,7 @@
 			"salio": 4,
 			"ppp": 1.5,
 			"convocado": 21,
-			"ovr": 39,
+			"ovr": 43,
 			"prospecto": true,
 			"college": "Asociación Atlética Argentinos Juniors",
 			"secundarias": []

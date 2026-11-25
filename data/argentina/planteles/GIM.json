@@ -294,9 +294,7 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/284321-1724348811.png?lm=4711",
 			"secundarias": [],
-			"rasgos": [
-				"aereo"
-			]
+			"rasgos": ["aereo"]
 		},
 		{
 			"n": "24",
@@ -488,7 +486,7 @@
 			"ppp": 1.78,
 			"convocado": 36,
 			"fichado": "01/07/2025",
-			"ovr": 67,
+			"ovr": 65,
 			"debut": {
 				"club": "GIM",
 				"anio": 2025

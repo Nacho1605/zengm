@@ -309,7 +309,7 @@
 			"ppp": 1.37,
 			"convocado": 44,
 			"fichado": "06/07/2025",
-			"ovr": 60,
+			"ovr": 61,
 			"debut": {
 				"club": "BEL",
 				"anio": 2013
@@ -656,7 +656,7 @@
 			"ppp": 1.56,
 			"convocado": 30,
 			"fichado": "01/07/2026",
-			"ovr": 42,
+			"ovr": 44,
 			"debut": {
 				"club": "TIG",
 				"anio": 2026
@@ -830,7 +830,7 @@
 			"ppp": 0.67,
 			"convocado": 14,
 			"fichado": "03/08/2026",
-			"ovr": 50,
+			"ovr": 52,
 			"debut": {
 				"club": "RIV",
 				"anio": 2024

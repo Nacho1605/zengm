@@ -51,6 +51,7 @@ node tools/argentina/cruces.ts                   # jugadores con números en dos
 node tools/argentina/vecinos.ts ARCHIVO.json EQUIPO  # cada jugador contra sus vecinos de la escalera
 node tools/argentina/pares-minutos.mjs ARCHIVO.json EQUIPO  # segunda revisión: contra los de su puesto con minutos parecidos
 python3 tools/argentina/revision-datos.py ARCHIVO.json D.json && python3 tools/argentina/revision-modelo.py D.json M.json  # revisión general: OVR esperado de todos (necesita numpy)
+python3 tools/argentina/revision-datos2.py ARCHIVO.json D2.json  # + revision-juveniles.py y revision-defensores.py
 node tools/argentina/arqueros.ts ARCHIVO.json > data/argentina/arqueros/valores-actuales.md  # lista de arqueros vs hoy
 node tools/argentina/ajustar-ovr.ts EQUIPO APELLIDO OVR  # cambia un OVR (y sus ratings a mano)
 node tools/argentina/desde-juego.ts LIGA_DEL_USUARIO.json VERSION_QUE_USÓ.json # importa fotos, camisetas, ratings, parientes y equipos (a equipos.csv)
@@ -173,6 +174,10 @@ v2.14.1 → v2.14.2).
     prospectos. Los que jugaron menos de 300' en Primera: +1 si su reserva
     quedó entre las 5 primeras de la anual, −1 del 21.º para abajo
     (`tablas-reserva-2026.json`). Ver propuesta-juveniles.md.
+    **v2.27.2 (pedido del usuario, a confirmar):** revisión sin esta regla:
+    juveniles valorados por rendimiento como los adultos, sin plus por valor,
+    porque el juego ya calcula el potencial con la edad (72,3 − 2,33 × edad +
+    0,83 × OVR); ver `revision-juveniles-defensores-v2.27.md`.
   - NO castigar la edad; los de media temporada, por partido; las tablas
     (`tablas-2026.json`) y Sofascore son guías, no verdad absoluta.
     Sofascore: el usuario usa 6,90 como barrera (da solo los que la superan;

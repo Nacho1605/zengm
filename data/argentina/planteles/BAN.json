@@ -278,9 +278,7 @@
 			"secundarias": [
 				"Lateral izquierdo"
 			],
-			"rasgos": [
-				"aereo"
-			],
+			"rasgos": ["aereo"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/284724-1755534717.jpg?lm=4711"
 		},
 		{
@@ -775,7 +773,7 @@
 			"ppp": 1.07,
 			"convocado": 31,
 			"fichado": "01/01/2025",
-			"ovr": 44,
+			"ovr": 49,
 			"debut": {
 				"club": "BAN",
 				"anio": 2025

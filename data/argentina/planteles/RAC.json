@@ -227,7 +227,7 @@
 			"salio": 2,
 			"ppp": 1.27,
 			"convocado": 14,
-			"ovr": 45,
+			"ovr": 51,
 			"prospecto": true,
 			"college": "Racing Club",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1231193-1762504543.jpg?lm=4711",
@@ -255,7 +255,7 @@
 			"salio": 1,
 			"ppp": 1.33,
 			"convocado": 20,
-			"ovr": 47,
+			"ovr": 53,
 			"debut": {
 				"club": "RAC",
 				"anio": 2025
@@ -734,7 +734,7 @@
 			"salio": 10,
 			"ppp": 1.46,
 			"convocado": 22,
-			"ovr": 39,
+			"ovr": 48,
 			"debut": {
 				"club": "RAC",
 				"anio": 2026
