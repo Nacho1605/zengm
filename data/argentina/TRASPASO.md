@@ -1,31 +1,34 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 25/11/2026. Última versión: **v2.25**
-(`data/argentina/BBGM_Argentina_2026_v.2.25_futbol.json`, sha256
-`4fde5fa538e141c09d798e705b8bc1777c0a3e966c6577731e15a073f4ef4904`): 23 de 30
-equipos con plantel 2026 (el último, Defensa y Justicia, 29 jugadores),
-Rendimiento completo; fotos de 708 de 737 (faltan las 29 de DYJ: las pone el
-usuario en el juego); todo el archivo en la escala nueva de OVR (20 a 78) y
-en la forma 5 (posiciones secundarias de los 23 planteles; defectos); gala de
+Estado al 25/11/2026. Última versión: **v2.26**
+(`data/argentina/BBGM_Argentina_2026_v.2.26_futbol.json`, sha256
+`0db1a22adf21f4416b8ae685a73419e683998da07870887c3e89dbc633b1c242`): 24 de 30
+equipos con plantel 2026 (el último, Banfield, 30 jugadores), Rendimiento
+completo; fotos de 698 de 757 (faltan las 29 de DYJ y las 30 de BAN: las pone
+el usuario en el juego); todo el archivo en la escala nueva de OVR (20 a 78) y
+en la forma 5 (posiciones secundarias de los 24 planteles; defectos); gala de
 premios propia (21 premios, calibrada). Validación: 0 errores. Auditoría: 53
-controles, 9 con alertas (las de siempre más "Foto": las 29 de DYJ). Escalera
-por puesto del usuario actualizada
+controles, 9 con alertas (las de siempre más "Foto": las 59 de DYJ y BAN).
+Escalera por puesto del usuario actualizada
 (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. **Defensa y Justicia (v2.25):** OVR propuestos por Claude, a corregir por
-   el usuario (correcciones = parche v2.25.x); sus fotos, cuando las ponga en
-   el juego (importar con `desde-juego.ts`, base v2.25). Pendiente para más
-   adelante: Fernando Román volvió de un préstamo en julio (Transfermarkt:
-   antes en Aldosivi) y Tiziano Perrotta debutó en Banfield en 2026: al
-   cargar ALD y BAN, mirar si figuran en su Rendimiento (primera mitad del
-   año) y revisar su OVR con el año completo.
-2. **Próximo equipo (v2.26): Banfield.** Después TIG, SAR, ALD, ATU, CCO y
-   GEM (orden del usuario). Pedir lo de siempre (§3): plantel "Ampliado" y
-   Rendimiento 2026, debut e inferiores, los que siguen en reserva, lesiones,
-   parientes, capitán, comentario, Sofascore ≥ 6,90 (de la Liga y, si lo da,
-   de copas) y rasgos (con defectos). Ya están: secundarias, copas y tablas.
+1. **Banfield (v2.26):** OVR propuestos por Claude, a corregir por el usuario
+   (el usuario aceptó los de DYJ, v2.25: "me gustó el resultado"). Fotos de
+   DYJ y BAN cuando las ponga en el juego (importar con `desde-juego.ts`, base
+   la versión que usó). Esperan respuesta del usuario: (a) Sanguinetti (VEL
+   58, valor que fijó el usuario): con sus números de Banfield (23 PJ, 2070',
+   capitán hasta agosto, Sofascore 7,24) se le propuso 61, sin aplicar; (b)
+   el Ruso Rodríguez lleva "pelota parada", que en un arquero solo sube el
+   remate de penales (ft): el juego no tiene un rating de atajar penales.
+   Pendiente: Fernando Román (DYJ) volvió de un préstamo en julio (antes en
+   Aldosivi): al cargar ALD, mirar su primera mitad del año.
+2. **Próximo equipo (v2.27): Tigre.** Después SAR, ALD, ATU, CCO y GEM (orden
+   del usuario). Pedir lo de siempre (§3): plantel "Ampliado" y Rendimiento
+   2026, debut e inferiores, los que siguen en reserva, lesiones, parientes,
+   capitán, comentario, Sofascore (Liga y copas) y rasgos (con defectos). Ya
+   están: secundarias, copas y tablas.
 3. **Premios: cerrados** (v2.24.6/v2.24.7; ver `premios.md`). Siglas y
    nombres como los dejó el usuario en el juego (sacó Iron Man y Semifinal
    MVP). Para recalibrar más adelante: una liga exportada con temporadas
@@ -55,7 +58,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 - **Fase 1 (v1.x, terminada):** esqueleto de la liga. Motor de fútbol con
   ajustes del archivo (`activar-futbol.ts`), 163 equipos (30 activos), zonas,
   premios y lesiones en español, drafts generados con norma de posición.
-- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **23 de
+- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **24 de
   30** equipos.
 - **Fase 3 (futura):** historia de la liga (temporadas pasadas, campeones,
   premios, Salón de la Fama — hay 32 retirados en el Salón, mal hechos, como
@@ -64,7 +67,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 ## 2. Equipos
 
 Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
-`RIE BOC RIV RAC SLO IND ROS EST ARG VEL INR GIM LAN HUR TAL BEL INS NOB ERC UNI BAR PLA DYJ`.
+`RIE BOC RIV RAC SLO IND ROS EST ARG VEL INR GIM LAN HUR TAL BEL INS NOB ERC UNI BAR PLA DYJ BAN`.
 
 | Abrev | En el juego | Zona / división | |
 |---|---|---|---|
@@ -78,7 +81,7 @@ Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
 | RIE | Pompeya Outlaws (Riestra) | Met / Capital | ✔ |
 | IND | Avellaneda Red Devils | Met / Conurbano | ✔ |
 | RAC | Avellaneda Academics | Met / Conurbano | ✔ |
-| BAN | Banfield Drillers | Met / Conurbano | |
+| BAN | Banfield Drillers | Met / Conurbano | ✔ |
 | PLA | Florida Squids (Platense) | Met / Conurbano | ✔ |
 | DYJ | Varela Falcons (Defensa y Justicia) | Met / Conurbano | ✔ |
 | LAN | Lanús Garnets | Met / Conurbano | ✔ |
@@ -105,7 +108,7 @@ CSIR = INR, GELP = GIM, SMSJ = SMJ (San Martín de San Juan, inactivo). Colón
 PVN. En las tablas, "Gimnasia y Esgrima" aparece dos veces (GIM y GEM) y
 "Estudiantes" también (EST y ERC).
 
-**Próximos:** BAN, TIG, SAR, ALD, ATU, CCO, GEM (de a uno o de
+**Próximos:** TIG, SAR, ALD, ATU, CCO, GEM (de a uno o de
 a dos; el usuario manda las capturas). CCO quedó sin arquero (Mansilla, que
 estaba ahí con datos de 2023, pasó a UNI): se arregla al cargar CCO.
 
@@ -308,7 +311,9 @@ Capitanes (contexto positivo; el juego no tiene capitán): Paredes (BOC), Otamen
 Cambeses (RAC), Marcone (IND), Tripichio y Devecchi (SLO, comparten),
 E. Gómez (VEL), Di María (ROS), Izquierdoz (LAN), Oroz (ARG), Nacho Fernández
 (GIM), Álex Arce (INR), Céliz (RIE), Galíndez (HUR), Lucas Zelarayán (BEL), Fernando Alarcón (INS), Luca Regiardo (NOB, 20 años),
-Ignacio Vázquez (PLA), Leandro Fernández (DYJ; ídolo, debut en el club en 2010).
+Ignacio Vázquez (PLA), Leandro Fernández (DYJ; ídolo, debut en el club en 2010),
+Diego "el Ruso" Rodríguez (BAN, desde agosto; sin confirmación en Transfermarkt;
+hasta su venta a Vélez lo fue Facundo Sanguinetti).
 Unión no tiene capitán fijo; suele serlo Cristian Tarragona (con `capitan`).
 Barracas: sin capitán fijo, suele serlo Iván Tapia (con `capitan`); Carlos
 Arce es el capitán histórico (más presencias en la historia del club).
@@ -335,13 +340,13 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 
 ## 6. Archivos de datos
 
-- `planteles/XXX.json`: los 23 planteles cargados; `planteles/preparacion/`: los
+- `planteles/XXX.json`: los 24 planteles cargados; `planteles/preparacion/`: los
   que están en preparación (hoy ninguno): solo los lee `cruces.ts`; al
   terminar se pasan a `planteles/` y se suman a `armar-v2.sh`.
 - `arqueros/`: la lista de arqueros del usuario y la comparación con hoy
   (ver §4).
-- `salidas-2026.json` (353 en total): los que se fueron de INR (8), GIM (14), LAN (12),
-  HUR (13), TAL (12), BEL (14), INS (15), NOB (15), ERC (20), UNI (21), BAR (3), PLA (6), DYJ (20) e IND (2:
+- `salidas-2026.json` (368 en total): los que se fueron de INR (8), GIM (14), LAN (12),
+  HUR (13), TAL (12), BEL (14), INS (15), NOB (15), ERC (20), UNI (21), BAR (3), PLA (6), DYJ (20), BAN (15) e IND (2:
   Fernández Cedrés y Pussetto, números que dio el usuario; IND y los equipos
   anteriores se cargaron antes de que existiera este archivo) con sus números
   2026. Villa (INR → BOC): con la suma (44 PJ, 4 g, 8 a) su 70 se sostiene.
@@ -376,12 +381,13 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 - `secundarias-2026.json`: posiciones secundarias de los equipos sin cargar
   (captura "Composición de la plantilla según posiciones"; nombres como en el
   plantel). Al cargar el equipo, pasarlas a su plantel (y sacarlo de este
-  archivo: PLA y DYJ ya pasaron).
+  archivo: PLA, DYJ y BAN ya pasaron).
 
 ## 7. Pendientes
 
-1. **Cargar los 7 equipos restantes** (BAN, TIG, SAR, ALD, ATU, CCO, GEM).
-2. **Fotos:** faltan las 29 de DYJ (v2.25; las pone el usuario en el juego).
+1. **Cargar los 6 equipos restantes** (TIG, SAR, ALD, ATU, CCO, GEM).
+2. **Fotos:** faltan las 29 de DYJ (v2.25) y las 30 de BAN (v2.26); las pone el
+   usuario en el juego.
    Completas en los demás desde la v2.23.8 (591 de 591 en los planteles, sin
    miniaturas de Google; 566 de Transfermarkt y 25 de otros sitios con link
    directo). Prospectos sin foto: 21 de los 24 de los planteles (el usuario
@@ -410,6 +416,13 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    (UNI): nieto de Jorge Solari, sobrino de Fernando Redondo y primo de
    Santiago, Esteban y David Solari y de Fernando y Federico Redondo; ninguno
    es pariente directo (el juego no une primos ni tíos): fase 3.
+   Banfield (datos del usuario, 25/11; ninguno está en el archivo): Juan
+   Luis Alfaro es hermano gemelo de Juan Fernando Alfaro (1999, mediocentro,
+   1 M€; draft de Juventud Unida de Gualeguaychú, JUG, en 2018; hoy en el
+   Club Olimpia de Paraguay: 42 partidos, 1 gol, 7 amarillas, 2756'); Thomas
+   Rodríguez es hijo de Leonardo Rodríguez (1966, mediapunta; Selección
+   1991–1994; draft de Lanús en 1985; en la liga LAN, VEL, ARG y SLO; afuera,
+   Francia, Italia, Alemania, Chile —donde nació Thomas— y México): fase 3.
    Barracas (datos del usuario, 23/11; ninguno está en el archivo, para la
    fase 3): Rodrigo Insúa es hermano de Robertino Insúa (PG, 1994; inferiores
    en San Lorenzo y Unión 2014–2017, sin debut en la liga; Ecuador 2017–2021,
@@ -587,6 +600,45 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**25/11/2026 (v2.26): Banfield.** Huella:
+`0db1a22adf21f4416b8ae685a73419e683998da07870887c3e89dbc633b1c242`.
+
+- Banfield (30 jugadores): capturas del usuario (plantel Ampliado y
+  Rendimiento leídos con zoom; los 3 arqueros suman 3330' = 37 partidos de
+  liga y Copa Argentina, y las 45 filas, 36.538' contra 36.630': la
+  diferencia son 3 expulsiones), debut e inferiores (el usuario reenvió la
+  lista completa; Villegas debutó en 2025), rasgos (con defectos), capitán
+  el Ruso Rodríguez (W y arquetipo), Sofascore (los 2 que pasan 6,90 y los 3
+  siguientes del top 5, como los dio el usuario) y comentario (`contexto`,
+  con tablas, copas y los parientes fuera del archivo). Sin lesiones ni
+  prospectos. Secundarias desde `secundarias-2026.json` (coinciden).
+  Leales por la regla: Ríos y Thomas Rodríguez. `reemplaza`: 4 (Diego
+  Rodríguez 1990, Meriano 2001, Zalazar 2003, Anselmo 1995); los 10 que tenía
+  BAN pasan a libres. Colleges nuevos: Club de Fútbol La Solana (Pais),
+  Hapoel Afula Football Club (López García), Club Sportivo Cerrito (Balboa);
+  ya existían Envigado Fútbol Club, Club Llaneros y Club Atlético Cerro.
+  Camioneros = CMN; Juventud Unida de Gualeguaychú = JUG. Abraham con la
+  bandera de Siria (como Amor).
+- Salidas (15) a `salidas-2026.json`. Revisión hacia atrás con el año
+  completo: Perrotta (DYJ) 43 → 62 (8 goles en 1348' en Banfield, 19 años,
+  3,5 M€; en Defensa 0 goles en 380'), Arboleda (SLO) 57 → 59 (31 PJ,
+  2725'), Sepúlveda (PLA) 51 → 57 (6 goles en 1182'); R. Auzmendi (SLO 65)
+  igual. Sanguinetti (VEL 58, valor del usuario): propuesta 61, sin aplicar.
+  Llegaron de equipos cargados: Paz (HUR), Hernández (SLO) y el Ruso (ARG,
+  0 PJ por el cruzado).
+- OVR (Claude, a corregir por el usuario): once 57,0, a la par de Riestra
+  (57,2): mejor año que Riestra pero plantel desarmado a mitad de año y
+  arquero de 37 años que vuelve de un cruzado. Abraham 62, Adoryán 60,
+  Gómez 60, López García 59, Meriano 58, Zalazar 57, el Ruso 55 (como
+  Devecchi: capitán con 15 PJ). Ajustados con `vecinos.ts`: Abraham +1,
+  Gómez +1, Paz +1. Once de DYJ con Perrotta: 62,9.
+- La v2.25 se rearma idéntica desde lo guardado (copia aparte del
+  repositorio); la v2.26, dos veces con la misma huella.
+- Contra la v2.25: 30 jugadores nuevos (BAN), 4 borrados (`reemplaza`), 10
+  ex BAN a libres, Perrotta, Arboleda y Sepúlveda (OVR, ratings y sueldo),
+  el orden de 17 compañeros suyos y el número de pick del draft 2025 de 4 de
+  DYJ (sigue el orden por OVR); el resto del archivo es igual.
+
 **25/11/2026 (v2.25): Defensa y Justicia.** Huella:
 `4fde5fa538e141c09d798e705b8bc1777c0a3e966c6577731e15a073f4ef4904`.
 
@@ -1144,10 +1196,10 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.25.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.26.
 > Corré la validación y la auditoría sobre ese archivo y confirmame en pocas
-> líneas que entendiste el estado. Seguimos con Banfield: decime qué datos
-> te tengo que mandar.
+> líneas que entendiste el estado. Seguimos con Tigre: decime qué datos te
+> tengo que mandar.
 
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara
 con la del repositorio y se importa con `desde-juego.ts`, con la versión sobre

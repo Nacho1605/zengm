@@ -1,10 +1,10 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.25_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.26_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
-## Equipos cargados (23)
+## Equipos cargados (24)
 
 | Equipo | Arquero | Lista | Hoy | Cambio | PJ 2026 | Min |
 |---|---|---|---|---|---|---|
@@ -32,6 +32,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | BOC | Agustín Marchesín | 63 | 60 | −3 | 13 | 1084 |
 | VEL | Facundo Sanguinetti | 62 (BAN) | 58 | −4 | 0 | 0 |
 | IND | Santiago Mele | 60 | 56 | −4 | 5 | 450 |
+| BAN | Diego Rodríguez | 52 (ARG) | 55 | +3 | 12 | 1080 |
 | SLO | José Devecchi | 43 | 55 | +12 | 15 | 1287 |
 | BAR | Juan Espínola | 53 | 51 | −2 | 13 | 1069 |
 | BOC | Leandro Brey | 55 | 50 | −5 | 17 | 1400 |
@@ -45,6 +46,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | RAC | Matías Tagliamonte | 46 | 38 | −8 | 3 | 225 |
 | HUR | Sebastián Meza | 43 | 37 | −6 | 4 | 360 |
 | RIV | Ezequiel Centurión | 48 | 37 | −11 | 0 | 0 |
+| BAN | Gino Santilli | 41 | 36 | −5 | 2 | 180 |
 | IND | Joaquín Blázquez | — | 36 | no estaba | 1 | 90 |
 | UNI | Federico Gomes Gerth | 45 | 36 | −9 | 0 | 0 |
 | ARG | Gonzalo Siri | 39 | 35 | −4 | 1 | 90 |
@@ -72,6 +74,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | SLO | Mateo Clemente | — | 24 | no estaba | 0 | 0 |
 | TAL | Santino Barbi | 35 | 24 | −11 | 0 | 0 |
 | VEL | Agustín Cortez | — | 23 | no estaba | 0 | 0 |
+| BAN | Joaquín Molina | — | 22 | no estaba | 0 | 0 |
 | HUR | Nazareno Durán | — | 22 | no estaba | 0 | 0 |
 | ARG | Agustín Mangiaut | — | 20 | no estaba | 0 | 0 |
 
@@ -80,11 +83,10 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | Lista | Arquero | Club en la lista | Hoy en el archivo |
 |---|---|---|---|
 | 72 | Orlando Gill | SLO | no está en el archivo |
-| 52 | Diego Rodríguez | ARG | libre |
 | 42 | Lautaro Morales | LAN | libre |
 | 37 | Lautaro Maldonado | INS | no está en el archivo |
 
-## Equipos sin cargar: la lista es la base (11)
+## Equipos sin cargar: la lista es la base (10)
 
 | Lista | Arquero | Club en la lista | Hoy en el archivo (datos 2023) |
 |---|---|---|---|
@@ -96,7 +98,6 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | 55 | César Rigamonti | GEM | no está en el archivo |
 | 44 | Ignacio Chicco | ALD | ALD |
 | 42 | Tomás Durso | ATU | libre |
-| 41 | Gino Santilli | BAN | no está en el archivo |
 | 39 | Lautaro Petrucci | GEM | no está en el archivo |
 | 38 | Sebastián Moyano | ALD | libre |
 

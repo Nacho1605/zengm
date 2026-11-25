@@ -173,7 +173,8 @@ v2.14.1 → v2.14.2).
     (`tablas-reserva-2026.json`). Ver propuesta-juveniles.md.
   - NO castigar la edad; los de media temporada, por partido; las tablas
     (`tablas-2026.json`) y Sofascore son guías, no verdad absoluta.
-    Sofascore: el usuario usa 6,90 como barrera (da solo los que la superan);
+    Sofascore: el usuario usa 6,90 como barrera (da solo los que la superan;
+    si completa el top 5 del equipo con valores más bajos, se guardan igual);
     es el promedio del jugador solo en el club que se evalúa (el criterio del
     50% de los minutos no es seguro, 23/11). El Rendimiento de Transfermarkt
     suma todas las competencias (Liga, Copa Argentina y copas
