@@ -49,6 +49,7 @@ node tools/argentina/escalera.ts ARCHIVO.json 52 EQUIPO   # OVR por posición
 node tools/argentina/ver-equipo.ts EQUIPO [...]  # plantel por línea con datos
 node tools/argentina/cruces.ts                   # jugadores con números en dos clubes
 node tools/argentina/vecinos.ts ARCHIVO.json EQUIPO  # cada jugador contra sus vecinos de la escalera
+node tools/argentina/pares-minutos.mjs ARCHIVO.json EQUIPO  # segunda revisión: contra los de su puesto con minutos parecidos
 node tools/argentina/arqueros.ts ARCHIVO.json > data/argentina/arqueros/valores-actuales.md  # lista de arqueros vs hoy
 node tools/argentina/ajustar-ovr.ts EQUIPO APELLIDO OVR  # cambia un OVR (y sus ratings a mano)
 node tools/argentina/desde-juego.ts LIGA_DEL_USUARIO.json VERSION_QUE_USÓ.json # importa fotos, camisetas, ratings, parientes y equipos (a equipos.csv)

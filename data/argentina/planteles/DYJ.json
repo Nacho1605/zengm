@@ -189,7 +189,7 @@
 			"ppp": 2.4,
 			"convocado": 14,
 			"fichado": "07/08/2026",
-			"ovr": 41,
+			"ovr": 39,
 			"debut": {
 				"club": null,
 				"anio": 2023
@@ -317,7 +317,7 @@
 			"ppp": 1,
 			"convocado": 7,
 			"fichado": "14/01/2026",
-			"ovr": 40,
+			"ovr": 44,
 			"debut": {
 				"club": "DYJ",
 				"anio": 2026
@@ -520,7 +520,7 @@
 			"ppp": 1.53,
 			"convocado": 33,
 			"fichado": "03/01/2025",
-			"ovr": 60,
+			"ovr": 61,
 			"debut": {
 				"club": "SLO",
 				"anio": 2024
@@ -756,7 +756,7 @@
 			"ppp": 1.62,
 			"convocado": 14,
 			"fichado": "01/08/2026",
-			"ovr": 43,
+			"ovr": 44,
 			"debut": {
 				"club": "VEL",
 				"anio": 2025
@@ -932,7 +932,7 @@
 			"ppp": 1.67,
 			"convocado": 12,
 			"fichado": "14/08/2026",
-			"ovr": 62,
+			"ovr": 61,
 			"debut": {
 				"club": "BAN",
 				"anio": 2026

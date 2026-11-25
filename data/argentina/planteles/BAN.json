@@ -1,7 +1,7 @@
 {
 	"equipo": "BAN",
 	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 25/11/2026); posiciones secundarias (captura del usuario, 24/11/2026); debut, inferiores, Sofascore, rasgos, capitán, parientes, lesiones y contexto: datos del usuario. OVR: Claude.",
-	"contexto": "Banfield padeció un año muy pobre en la liga, golpeado por una crisis económica que desarmó su plantel en el receso. Relegado en ambos torneos y lejos de playoffs y copas —salvó la categoría, pero quedó comprometido en los promedios—, halló su único desahogo al llegar a semifinales de Copa Argentina por penales antes del adiós de Pedro Troglio. De bajísima tenencia, jugó directo y al roce, pero fue muy frágil atrás y perdió gol con las salidas de Mauro Méndez, Tiziano Perrotta y Facundo Sanguinetti. Diego \"El Ruso\" Rodríguez resultó decisivo para sostener esa ilusión copera, mientras Lautaro Gómez sumó llegada al área y Tomás Adoryán, Santiago López García y David Zalazar aportaron despliegue y desequilibrio. Sofascore (Liga): Tomás Adoryán (6,96), Ignacio Abraham (6,91); nadie más supera el umbral de 6,90. Completan el top 5 Lautaro Gómez (6,87), Santiago López García (6,84) y David Zalazar (6,84). Capitán: Diego \"El Ruso\" Rodríguez (sin confirmación oficial en Transfermarkt). Facundo Sanguinetti fue el capitán hasta su venta a Vélez en agosto de 2026; en su reemplazo llegó el Ruso, cedido por Argentinos Juniors, después de superar una grave lesión de ligamentos cruzados. Lesiones: ninguna. Parientes fuera del archivo: Juan Luis Alfaro es hermano gemelo de Juan Fernando Alfaro (1999, mediocentro, 1 M€; draft de Juventud Unida de Gualeguaychú en 2018, hoy en el Club Olimpia de Paraguay: 42 partidos, 1 gol, 7 amarillas, 2756 minutos). Thomas Rodríguez es hijo de Leonardo Rodríguez (1966, mediapunta; Selección Argentina 1991–1994; draft de Lanús en 1985, en la liga jugó en LAN, VEL, ARG y SLO; en el exterior, en Francia, Italia, Alemania, Chile —donde nació Thomas— y México). Tabla anual 2026: 25.º (33 pts, 35-44); Apertura 12.º de la zona B (18 pts, 17-19); Clausura 12.º del grupo B (15 pts, 18-25); promedios: 28.º. Copas 2026 (dato del usuario, 23/11): Copa Argentina: semifinalista (por penales).",
+	"contexto": "Banfield padeció un año muy pobre en la liga, golpeado por una crisis económica que desarmó su plantel en el receso. Relegado en ambos torneos y lejos de playoffs y copas —salvó la categoría, pero quedó comprometido en los promedios—, halló su único desahogo al llegar a semifinales de Copa Argentina por penales antes del adiós de Pedro Troglio. De bajísima tenencia, jugó directo y al roce, pero fue muy frágil atrás y perdió gol con las salidas de Mauro Méndez, Tiziano Perrotta y Facundo Sanguinetti. Diego \"El Ruso\" Rodríguez resultó decisivo para sostener esa ilusión copera, mientras Lautaro Gómez sumó llegada al área y Tomás Adoryán, Santiago López García y David Zalazar aportaron despliegue y desequilibrio. Sofascore (Liga): Tomás Adoryán (6,96), Ignacio Abraham (6,91); nadie más supera el umbral de 6,90. Completan el top 5 Lautaro Gómez (6,87), Santiago López García (6,84) y David Zalazar (6,84). Capitán: Diego \"El Ruso\" Rodríguez (sin confirmación oficial en Transfermarkt). Facundo Sanguinetti fue el capitán hasta su venta a Vélez en agosto de 2026; en su reemplazo llegó el Ruso, cedido por Argentinos Juniors, después de superar una grave lesión de ligamentos cruzados. El Ruso patea penales, como Chilavert: convirtió 12 goles en su carrera (por eso lleva \"pelota parada\", dato del usuario). Abraham es sirio y Adoryán, armenio; ninguno del plantel es prospecto (el usuario). Lesiones: ninguna. Parientes fuera del archivo: Juan Luis Alfaro es hermano gemelo de Juan Fernando Alfaro (1999, mediocentro, 1 M€; draft de Juventud Unida de Gualeguaychú en 2018, hoy en el Club Olimpia de Paraguay: 42 partidos, 1 gol, 7 amarillas, 2756 minutos). Thomas Rodríguez es hijo de Leonardo Rodríguez (1966, mediapunta; Selección Argentina 1991–1994; draft de Lanús en 1985, en la liga jugó en LAN, VEL, ARG y SLO; en el exterior, en Francia, Italia, Alemania, Chile —donde nació Thomas— y México). Tabla anual 2026: 25.º (33 pts, 35-44); Apertura 12.º de la zona B (18 pts, 17-19); Clausura 12.º del grupo B (15 pts, 18-25); promedios: 28.º. Copas 2026 (dato del usuario, 23/11): Copa Argentina: semifinalista (por penales).",
 	"reemplaza": [
 		{
 			"nombre": "Diego Rodríguez",
@@ -331,7 +331,7 @@
 			"ppp": 1,
 			"convocado": 15,
 			"fichado": "14/08/2026",
-			"ovr": 45,
+			"ovr": 43,
 			"debut": {
 				"club": "VEL",
 				"anio": 2024
@@ -460,7 +460,7 @@
 			"ppp": 1.29,
 			"convocado": 27,
 			"fichado": "01/07/2024",
-			"ovr": 53,
+			"ovr": 54,
 			"debut": {
 				"club": "BAN",
 				"anio": 2024
@@ -492,7 +492,7 @@
 			"ppp": 1.46,
 			"convocado": 36,
 			"fichado": "01/01/2025",
-			"ovr": 52,
+			"ovr": 53,
 			"debut": {
 				"club": "BAN",
 				"anio": 2025
@@ -552,7 +552,7 @@
 			"ppp": 1.17,
 			"convocado": 37,
 			"fichado": "14/01/2026",
-			"ovr": 59,
+			"ovr": 60,
 			"debut": {
 				"club": null,
 				"anio": 2015
@@ -624,7 +624,7 @@
 			"ppp": 1.27,
 			"convocado": 20,
 			"fichado": "06/02/2026",
-			"ovr": 46,
+			"ovr": 45,
 			"debut": {
 				"club": null,
 				"anio": 2017
@@ -788,7 +788,7 @@
 			"ppp": 1.13,
 			"convocado": 32,
 			"fichado": "09/02/2026",
-			"ovr": 57,
+			"ovr": 58,
 			"debut": {
 				"club": "ARG",
 				"anio": 2022
@@ -824,7 +824,7 @@
 			"ppp": 0.93,
 			"convocado": 25,
 			"fichado": "01/07/2024",
-			"ovr": 46,
+			"ovr": 47,
 			"debut": {
 				"club": "BAN",
 				"anio": 2024

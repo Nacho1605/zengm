@@ -1,27 +1,21 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 25/11/2026. Última versión: **v2.26**
-(`data/argentina/BBGM_Argentina_2026_v.2.26_futbol.json`, sha256
-`0db1a22adf21f4416b8ae685a73419e683998da07870887c3e89dbc633b1c242`): 24 de 30
+Estado al 25/11/2026. Última versión: **v2.26.1**
+(`data/argentina/BBGM_Argentina_2026_v.2.26.1_futbol.json`, sha256
+`2c31557b6ff0102ffd316e15f571799a66c0d2f98ab29bd535474ea8f8fcf6be`): 24 de 30
 equipos con plantel 2026 (el último, Banfield, 30 jugadores), Rendimiento
-completo; fotos de 698 de 757 (faltan las 29 de DYJ y las 30 de BAN: las pone
-el usuario en el juego); todo el archivo en la escala nueva de OVR (20 a 78) y
-en la forma 5 (posiciones secundarias de los 24 planteles; defectos); gala de
-premios propia (21 premios, calibrada). Validación: 0 errores. Auditoría: 53
-controles, 9 con alertas (las de siempre más "Foto": las 59 de DYJ y BAN).
-Escalera por puesto del usuario actualizada
+completo; fotos de 698 de 757 (faltan las 29 de DYJ y las 30 de BAN: el
+usuario las está poniendo en el juego sobre la v2.26.1); todo el archivo en la
+escala nueva de OVR (20 a 78) y en la forma 5 (posiciones secundarias de los
+24 planteles; defectos); gala de premios propia (21 premios, calibrada).
+Validación: 0 errores. Auditoría: 53 controles, 9 con alertas (las de siempre
+más "Foto": las 59 de DYJ y BAN). Escalera por puesto del usuario actualizada
 (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. **Banfield (v2.26):** OVR propuestos por Claude, a corregir por el usuario
-   (el usuario aceptó los de DYJ, v2.25: "me gustó el resultado"). Fotos de
-   DYJ y BAN cuando las ponga en el juego (importar con `desde-juego.ts`, base
-   la versión que usó). Esperan respuesta del usuario: (a) Sanguinetti (VEL
-   58, valor que fijó el usuario): con sus números de Banfield (23 PJ, 2070',
-   capitán hasta agosto, Sofascore 7,24) se le propuso 61, sin aplicar; (b)
-   el Ruso Rodríguez lleva "pelota parada", que en un arquero solo sube el
-   remate de penales (ft): el juego no tiene un rating de atajar penales.
+1. **Fotos de DYJ y BAN:** el usuario manda su liga exportada (hecha sobre la
+   v2.26.1): importar con `desde-juego.ts` dándole la v2.26.1 como base.
    Pendiente: Fernando Román (DYJ) volvió de un préstamo en julio (antes en
    Aldosivi): al cargar ALD, mirar su primera mitad del año.
 2. **Próximo equipo (v2.27): Tigre.** Después SAR, ALD, ATU, CCO y GEM (orden
@@ -600,6 +594,29 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**25/11/2026 (v2.26.1): segunda revisión de DYJ y BAN.** Huella:
+`2c31557b6ff0102ffd316e15f571799a66c0d2f98ab29bd535474ea8f8fcf6be`.
+
+- Respuestas del usuario: Sanguinetti 61 (aceptado); el Ruso Rodríguez
+  queda con "pelota parada" (patea penales, como Chilavert: 12 goles en su
+  carrera); Abraham es sirio y Adoryán armenio; nadie de BAN es prospecto;
+  los parientes fuera del archivo, anotados (bien). Aceptó los OVR de DYJ de
+  la v2.25 ("me gustó el resultado").
+- Segunda revisión (pedido del usuario), con otro ángulo: cada jugador
+  contra los de su puesto con minutos parecidos (±25%) en toda la liga
+  (`tools/argentina/pares-minutos.mjs`; desvío medio con 600' o más:
+  BAN −2,5, DYJ +1,0, en línea con PLA −1,7, BAR −2,2, RIE −6,2, HUR +1,1 e
+  IND +1,3: ningún ajuste en bloque). Cambios sueltos: DYJ Perrotta 62 → 61
+  (era suplente de L. Fernández, 62), S. Sosa 60 → 61 (titular con 2709', 4
+  M€, como Regiardo), Porcel 43 → 44, Burdín 41 → 39 (22' en el año, debajo
+  de Pierani), Máximo Rodríguez 40 → 44 (jugó más que Cano y dio una
+  asistencia); BAN López García 59 → 60, Zalazar 57 → 58 (como Merlini, que
+  fijó el usuario), Esquivel 53 → 54 (= Pais), Villegas 52 → 53, Medina 46 →
+  47, N. Moreno 46 → 45, Cano 45 → 43. Once: DYJ 62,9, BAN 57,3.
+- Contra la v2.26: esos 13 OVR y Sanguinetti (con ratings y sueldo), el
+  orden de 12 compañeros y el número de pick de 5 (sigue el orden por OVR);
+  la auditoría da lo mismo. Armada dos veces con la misma huella.
+
 **25/11/2026 (v2.26): Banfield.** Huella:
 `0db1a22adf21f4416b8ae685a73419e683998da07870887c3e89dbc633b1c242`.
 
@@ -1196,7 +1213,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.26.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.26.1.
 > Corré la validación y la auditoría sobre ese archivo y confirmame en pocas
 > líneas que entendiste el estado. Seguimos con Tigre: decime qué datos te
 > tengo que mandar.
