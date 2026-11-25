@@ -19,11 +19,15 @@ Escalera por puesto del usuario actualizada
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. **Juveniles "a revisión de formato"** (el usuario, 25/11): definir con él
-   el formato nuevo para valorar a los juveniles (la regla del plus por valor
-   sigue mientras tanto; la prueba de la v2.27.2 quedó solo en Guch,
-   Cantizano y L. Gutiérrez). Ahí entran los 35 cambios J que no aceptó y las
-   propuestas de Baroni, Dávila y Jainikoski. También pendiente: si estira la
+1. **Propuestas a decidir** (`revision-ratings-mano-y-juveniles.md`, 25/11):
+   (a) juveniles: método de punto medio (rendimiento como los adultos,
+   descuento parejo por edad 4/6/8/10 a los 20/19/18/17, el plus por valor de
+   siempre, a mitad de camino con menos de 900', potencial dentro de la escala
+   de la liga): 17 cambios y Dávila 48 (valor suyo); preguntas: Ovando 68 o
+   65, Flores 60 y Barros Schelotto 61; (b) los 11 con ratings a mano: Sosa
+   64, Barbi 30 (pregunta) y "liberar" sus ratings (8 casi iguales a la forma
+   del archivo; González Metilli con "larga distancia+"; Sosa y Cerato: a mano
+   o rasgo nuevo "llegada"). También pendiente: si estira la
    escala por los montones (60 y 61 con unos 30 jugadores). Fotos de TIG
    cuando las ponga (importar con `desde-juego.ts`, base la versión que usó).
    Pendiente: Fernando Román (DYJ) volvió de un préstamo en julio (antes en
@@ -618,6 +622,28 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**25/11/2026 (sin versión): revisión de los ratings a mano y punto medio para
+juveniles.** Pedido del usuario. Todo en `revision-ratings-mano-y-juveniles.md`;
+nada aplicado.
+
+- Los 11 con ratings a mano (marca ª en la escalera): OVR en línea salvo Sosa
+  (propuesta 64) y Barbi (30, pregunta). Una copia de prueba sin sus ratings
+  (no guardada) muestra que en 8 son casi iguales a la forma del archivo (0 a
+  3 puntos); lo propio del usuario: el remate de González Metilli y los
+  laterales con llegada de Sosa y Cerato.
+- Error corregido en `revision-datos.py` y `revision-datos2.py`: un jugador
+  llegado en julio que figuraba en el Rendimiento de otro club con 0 minutos
+  (Marcos Ledesma, DYJ → INS) no se tomaba como de medio año (salía 10 puntos
+  arriba de lo esperado; ahora 61 contra su 62).
+- Juveniles: el POT lo calcula el juego (72,3 − 2,33 × edad + 0,83 × OVR, y lo
+  recalcula cada pretemporada; el crecimiento no lo usa). Con la regla del
+  usuario, la mediana del POT de los 72 juveniles es 65 (la línea de los 100
+  mejores); con el rendimiento puro de la v2.27.2 era 70: por eso no encajaba.
+  La regla del usuario descuenta, en promedio, 9/8/5/4 puntos a los de
+  17/18/19/20 años (después del plus): compensa lo que el juego los hace
+  crecer. Escala de la liga: 1.º 78, 10.º 71, 30.º 69, 100.º 65; mejor POT de
+  21 a 23 años: 81 (Beltrán).
+
 **25/11/2026 (v2.27.4): decisiones del usuario sobre los cambios de OVR.**
 Huella: `4545e760fac61a66963ecee40054e9987c338c83436791c34b1843569788d4a4`.
 

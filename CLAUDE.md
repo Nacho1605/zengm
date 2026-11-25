@@ -181,7 +181,11 @@ v2.14.1 → v2.14.2).
     no quedó: aceptó solo Guch, Cantizano y L. Gutiérrez; los otros 35
     volvieron en la v2.27.4 al valor con esta regla. Hasta que se defina el
     formato nuevo, sigue esta regla; ver `revision-juveniles-defensores-v2.27.md`
-    y `cambios-ovr-desde-v2.27.md`.
+    y `cambios-ovr-desde-v2.27.md`. Propuesta de punto medio (25/11, a
+    decidir): `revision-ratings-mano-y-juveniles.md`. El POT lo calcula el
+    juego con el OVR y la edad y lo recalcula cada temporada (no se puede fijar
+    aparte); tu regla descuenta más a los más chicos y eso mantiene los
+    potenciales dentro de la escala de la liga.
   - NO castigar la edad; los de media temporada, por partido; las tablas
     (`tablas-2026.json`) y Sofascore son guías, no verdad absoluta.
     Sofascore: el usuario usa 6,90 como barrera (da solo los que la superan;

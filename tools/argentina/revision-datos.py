@@ -37,7 +37,7 @@ for f in sorted(os.listdir(R+"planteles")):
         otros = [s for s in sal if s["club"] != eq and norm(s["nombre"]+" "+s["apellido"]) == norm(nom) and abs(s.get("edad", edad) - edad) <= 1 and not (eq == "DYJ" and j["apellido"] == "Sosa")]
         suma = lambda k: (j.get(k) or 0) + sum((s.get(k) or 0) for s in otros)
         fich = j.get("fichado")
-        medio = bool(fich) and int(fich[3:5]) >= 7 and int(fich[-4:]) == 2026 and not otros and (j.get("pj") or 0) <= 20
+        medio = bool(fich) and int(fich[3:5]) >= 7 and int(fich[-4:]) == 2026 and not any((s.get("min") or 0) > 0 for s in otros) and (j.get("pj") or 0) <= 20  # el otro club sin minutos (Marcos Ledesma, DYJ → INS) no cuenta
         pz = pos.get((eq, norm(nom)))
         if not pz: print("sin posición", eq, nom, file=sys.stderr); continue
         out.append(dict(eq=eq, nombre=nom, ap=j["apellido"], g=G[pz[0]], pos=pz[0], ovr=pz[1], edad=edad, pj=suma("pj"), min=suma("min"),
