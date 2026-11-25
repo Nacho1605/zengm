@@ -38,7 +38,7 @@ El goleador: los puntos del motor en toda la temporada, con un plus por la efica
 
 `pts*gp*(0.85 + 0.3*tsp/100)`
 
-## Playmaker of the Year (PMK)
+## Playmaker of the Year (Playmaker Award)
 
 El asistidor: asistencias de toda la temporada, con un plus por el porcentaje de jugadas que asiste y un descuento por pérdidas.
 
@@ -166,7 +166,7 @@ Condiciones: la final.
 - FC, PF: `0.8 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
 - C: `0.4 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
 
-## Team of the Season: Defense (TOTS-D)
+## Team of the Season – D (TOTS-D)
 
 Los 5 mejores de la defensa: centrales y laterales (+50%: en el motor sacan entre 60% y 66% de lo de un central).
 
@@ -176,7 +176,7 @@ Condiciones: equipo de 5.
 - GF: `1.5 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 - FC, PF: `1 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 
-## Team of the Season: Midfield (TOTS-M)
+## Team of the Season – M (TOTS-M)
 
 Los 5 mejores del medio: pivotes, volantes (+5%) y mediapuntas (−45%: en el motor sacan ~1,75 veces lo de un pivote).
 
@@ -187,7 +187,7 @@ Condiciones: equipo de 5.
 - SG: `1.05 * min(1, gp*min/2700)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 - G: `1 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 
-## Team of the Season: Attack (TOTS-A)
+## Team of the Season – A (TOTS-A)
 
 Los 5 mejores del ataque: extremos y delanteros (+20%).
 

@@ -62,7 +62,8 @@
 				"anio": 2021
 			},
 			"secundarias": [],
-			"sofascore": 7.22
+			"sofascore": 7.22,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/592427-1771031291.jpg?lm=4711"
 		},
 		{
 			"n": "36",
@@ -93,7 +94,8 @@
 				"anio": 2021
 			},
 			"college": "Club Atlético Sarmiento (Junín)",
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/844790-1770654389.png?lm=4711"
 		},
 		{
 			"n": "29",
@@ -127,12 +129,14 @@
 			"rasgos": [
 				"faltero"
 			],
-			"sofascore": 7.06
+			"sofascore": 7.06,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/706562-1770653878.png?lm=4711"
 		},
 		{
 			"n": "21",
-			"nombre": "David",
+			"nombre": "Héctor David",
 			"apellido": "Martínez",
+			"semilla": "David Martínez",
 			"pos": "Defensa central",
 			"nac": "21/01/1998",
 			"pais": "Paraguay",
@@ -164,7 +168,8 @@
 			"rasgos": [
 				"tactico"
 			],
-			"sofascore": 7.13
+			"sofascore": 7.13,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/401576-1770652428.png?lm=4711"
 		},
 		{
 			"n": "6",
@@ -195,7 +200,8 @@
 				"anio": 2023
 			},
 			"college": "Albion Football Club",
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1054439-1760626996.png?lm=4711"
 		},
 		{
 			"n": "2",
@@ -228,7 +234,8 @@
 			"college": "Quilmes Atlético Club",
 			"secundarias": [
 				"Lateral izquierdo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1068089-1770650512.jpg?lm=4711"
 		},
 		{
 			"n": "32",
@@ -258,7 +265,8 @@
 				"club": "ARS",
 				"anio": 2025
 			},
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1263453-1770654275.png?lm=4711"
 		},
 		{
 			"n": "3",
@@ -292,7 +300,8 @@
 			"secundarias": [
 				"Defensa central"
 			],
-			"sofascore": 6.9
+			"sofascore": 6.9,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/836251-1771937311.jpg?lm=4711"
 		},
 		{
 			"n": "40",
@@ -326,7 +335,8 @@
 			"secundarias": [
 				"Pivote",
 				"Mediocentro"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1307242-1746047889.png?lm=4711"
 		},
 		{
 			"n": "30",
@@ -358,7 +368,8 @@
 			},
 			"secundarias": [
 				"Defensa central"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1290950-1771510465.jpg?lm=4711"
 		},
 		{
 			"n": "16",
@@ -394,7 +405,8 @@
 			],
 			"rasgos": [
 				"desordenado"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/841207-1770651665.png?lm=4711"
 		},
 		{
 			"n": "33",
@@ -427,7 +439,8 @@
 			"secundarias": [
 				"Defensa central",
 				"Lateral izquierdo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/699689-1770654339.jpg?lm=4711"
 		},
 		{
 			"n": "28",
@@ -459,7 +472,8 @@
 			},
 			"secundarias": [
 				"Defensa central"
-			]
+			],
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_64,h_64,c_limit,q_auto:eco,dpr_3,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/206417"
 		},
 		{
 			"n": "5",
@@ -495,7 +509,8 @@
 			"rasgos": [
 				"recuperador",
 				"faltero"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/625203-1770654529.png?lm=4711"
 		},
 		{
 			"n": "15",
@@ -527,7 +542,8 @@
 			},
 			"secundarias": [
 				"Pivote"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1253317-1770651137.jpg?lm=4711"
 		},
 		{
 			"n": "8",
@@ -565,7 +581,8 @@
 			"rasgos": [
 				"pulmon"
 			],
-			"sofascore": 7.02
+			"sofascore": 7.02,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/662746-1770650759.jpg?lm=4711"
 		},
 		{
 			"n": "10",
@@ -604,7 +621,8 @@
 				"pase",
 				"flojo de arriba"
 			],
-			"sofascore": 7.27
+			"sofascore": 7.27,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/575999-1770650929.jpg?lm=4711"
 		},
 		{
 			"n": "19",
@@ -644,7 +662,8 @@
 				"liviano",
 				"sin aire"
 			],
-			"sofascore": 6.9
+			"sofascore": 6.9,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/356089-1770651945.jpg?lm=4711"
 		},
 		{
 			"n": "23",
@@ -674,7 +693,8 @@
 				"club": "DYJ",
 				"anio": 2026
 			},
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1253294-1770653593.jpg?lm=4711"
 		},
 		{
 			"n": "20",
@@ -698,7 +718,8 @@
 				"anio": 2022
 			},
 			"college": "Montevideo City Torque",
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/100649"
 		},
 		{
 			"n": "26",
@@ -731,7 +752,8 @@
 			"secundarias": [
 				"Mediocentro",
 				"Interior derecho"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1173444-1758834431.png?lm=4711"
 		},
 		{
 			"n": "22",
@@ -764,12 +786,14 @@
 			"secundarias": [
 				"Mediocentro",
 				"Interior derecho"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1074965-1681414044.jpg?lm=4711"
 		},
 		{
 			"n": "24",
-			"nombre": "Juan",
+			"nombre": "Juan Manuel",
 			"apellido": "Gutiérrez",
+			"semilla": "Juan Gutiérrez",
 			"pos": "Extremo izquierdo",
 			"nac": "04/02/2002",
 			"pais": "Uruguay",
@@ -801,7 +825,8 @@
 			],
 			"rasgos": [
 				"gambeta"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/581321-1770653614.png?lm=4711"
 		},
 		{
 			"n": "27",
@@ -838,7 +863,8 @@
 			],
 			"rasgos": [
 				"flojo de arriba"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/285127-1659701412.png?lm=4711"
 		},
 		{
 			"n": "25",
@@ -870,7 +896,8 @@
 			},
 			"secundarias": [
 				"Extremo izquierdo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/923459-1739374017.JPG?lm=4711"
 		},
 		{
 			"n": "17",
@@ -907,7 +934,8 @@
 			"rasgos": [
 				"erratico",
 				"flojo de arriba"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/668514-1770651802.jpg?lm=4711"
 		},
 		{
 			"n": "11",
@@ -939,7 +967,8 @@
 			},
 			"secundarias": [
 				"Mediocentro ofensivo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1324736-1771518440.jpg?lm=4711"
 		},
 		{
 			"n": "7",
@@ -969,7 +998,8 @@
 				"club": "RAC",
 				"anio": 2025
 			},
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1142432-1760365212.jpeg?lm=4711"
 		},
 		{
 			"n": "9",
@@ -1019,7 +1049,8 @@
 					"nombre": "Nicolás Fernández",
 					"equipo": "BEL"
 				}
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/131840-1666624522.JPG?lm=4711"
 		}
 	]
 }

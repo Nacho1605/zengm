@@ -1,4 +1,5 @@
 // Siglas y nombres como los dejó el usuario en el juego (25/11, sobre la
+// v2.26.1: "Playmaker Award" y "Team of the Season – D/M/A"; antes, sobre la
 // v2.24.5): "Golden Boot", "Golden Glove", "ROY", "TOTS-D/M/A", "All-Rookie",
 // "Midfielder of the Year", "Finals MVP"; sacó Iron Man y Semifinal MVP.
 // Premios de fin de temporada de la liga ("gala"; desde la v2.24.2, segunda
@@ -109,7 +110,7 @@ export const PREMIOS = [
 	premio("Golden Boot", "Golden Boot", "offense", {
 		formula: "pts*gp*(0.85 + 0.3*tsp/100)",
 	}),
-	premio("PMK", "Playmaker of the Year", "offense", {
+	premio("Playmaker Award", "Playmaker of the Year", "offense", {
 		formula: "ast*gp*(1 + astp/100) - 0.25*tov*gp",
 	}),
 	premio("Golden Glove", "Golden Glove", "defense", {
@@ -192,7 +193,7 @@ export const PREMIOS = [
 	}),
 	// --- Equipos de la temporada (de a 5: así son en el juego). Con el Golden
 	// Glove forman 16: arquero, defensa, medio y ataque
-	premio("TOTS-D", "Team of the Season: Defense", "defense", {
+	premio("TOTS-D", "Team of the Season – D", "defense", {
 		numTeams: 1,
 		formula: FUERA,
 		// Los laterales sacan entre 60% y 66% de lo que sacan los centrales
@@ -200,14 +201,14 @@ export const PREMIOS = [
 		// cada uno (en un equipo de 5 no se pueden fijar puestos)
 		formulaByPos: porPuesto({ FC: 1, PF: 1, GF: 1.5 }, temporada),
 	}),
-	premio("TOTS-M", "Team of the Season: Midfield", "offense", {
+	premio("TOTS-M", "Team of the Season – M", "offense", {
 		numTeams: 1,
 		formula: FUERA,
 		// Los mediapuntas sacan ~1,75 veces lo de pivotes y volantes: con 0,55
 		// queda un medio mezclado (en promedio, dos enganches)
 		formulaByPos: porPuesto({ G: 1, SG: 1.05, PG: 0.55 }, temporada),
 	}),
-	premio("TOTS-A", "Team of the Season: Attack", "offense", {
+	premio("TOTS-A", "Team of the Season – A", "offense", {
 		numTeams: 1,
 		formula: FUERA,
 		// Con +20%, dos nueves y tres extremos en las dos temporadas de la liga

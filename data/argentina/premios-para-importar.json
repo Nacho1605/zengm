@@ -45,7 +45,7 @@
 				"formula": "pts*gp*(0.85 + 0.3*tsp/100)"
 			},
 			{
-				"shortName": "PMK",
+				"shortName": "Playmaker Award",
 				"name": "Playmaker of the Year",
 				"showStats": "offense",
 				"formula": "ast*gp*(1 + astp/100) - 0.25*tov*gp"
@@ -268,7 +268,7 @@
 			},
 			{
 				"shortName": "TOTS-D",
-				"name": "Team of the Season: Defense",
+				"name": "Team of the Season – D",
 				"showStats": "defense",
 				"numTeams": 1,
 				"formula": "-1000 + 0*gp",
@@ -286,7 +286,7 @@
 			},
 			{
 				"shortName": "TOTS-M",
-				"name": "Team of the Season: Midfield",
+				"name": "Team of the Season – M",
 				"showStats": "offense",
 				"numTeams": 1,
 				"formula": "-1000 + 0*gp",
@@ -304,7 +304,7 @@
 			},
 			{
 				"shortName": "TOTS-A",
-				"name": "Team of the Season: Attack",
+				"name": "Team of the Season – A",
 				"showStats": "offense",
 				"numTeams": 1,
 				"formula": "-1000 + 0*gp",

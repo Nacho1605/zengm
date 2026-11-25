@@ -49,7 +49,8 @@
 				"club": "BAN",
 				"anio": 2023
 			},
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/881009-1771515031.jpg?lm=4711"
 		},
 		{
 			"n": "50",
@@ -86,7 +87,8 @@
 				"reflejos",
 				"inseguro"
 			],
-			"capitan": true
+			"capitan": true,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/90800-1720121389.png?lm=4711"
 		},
 		{
 			"n": "31",
@@ -109,7 +111,8 @@
 				"club": "BAN",
 				"anio": 2023
 			},
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1301444-1771515265.jpg?lm=4711"
 		},
 		{
 			"n": "6",
@@ -142,7 +145,8 @@
 			"college": "Club Atlético Rosario Central",
 			"secundarias": [
 				"Lateral izquierdo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/941511-1771515778.jpg?lm=4711"
 		},
 		{
 			"n": "37",
@@ -174,7 +178,8 @@
 			},
 			"secundarias": [
 				"Lateral derecho"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/746958-1716422274.png?lm=4711"
 		},
 		{
 			"n": "13",
@@ -208,7 +213,8 @@
 			"secundarias": [
 				"Pivote",
 				"Mediocentro"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1322606-1771516069.jpg?lm=4711"
 		},
 		{
 			"n": "34",
@@ -238,7 +244,8 @@
 				"club": "CHA",
 				"anio": 2024
 			},
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/1281969-1755786207.jpg?lm=4711"
 		},
 		{
 			"n": "14",
@@ -273,7 +280,8 @@
 			],
 			"rasgos": [
 				"aereo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/284724-1755534717.jpg?lm=4711"
 		},
 		{
 			"n": "27",
@@ -306,7 +314,8 @@
 			"secundarias": [
 				"Interior izquierdo"
 			],
-			"sofascore": 6.91
+			"sofascore": 6.91,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/985269-1755785976.jpg?lm=4711"
 		},
 		{
 			"n": "19",
@@ -339,7 +348,8 @@
 			"secundarias": [
 				"Interior izquierdo",
 				"Extremo izquierdo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/677957-1777301078.jpeg?lm=4711"
 		},
 		{
 			"n": "4",
@@ -372,7 +382,8 @@
 			"secundarias": [
 				"Lateral izquierdo",
 				"Interior derecho"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/997374-1755786216.jpg?lm=4711"
 		},
 		{
 			"n": "8",
@@ -402,12 +413,14 @@
 				"club": "BAN",
 				"anio": 2021
 			},
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/878220-1755786522.jpg?lm=4711"
 		},
 		{
 			"n": "35",
-			"nombre": "Ignacio",
+			"nombre": "Nacho",
 			"apellido": "Pais",
+			"semilla": "Ignacio Pais",
 			"pos": "Mediocentro",
 			"nac": "30/05/2000",
 			"pais": "Argentina",
@@ -435,7 +448,8 @@
 			"college": "Club de Fútbol La Solana",
 			"secundarias": [
 				"Pivote"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/491702-1771516578.jpg?lm=4711"
 		},
 		{
 			"n": "15",
@@ -467,7 +481,8 @@
 			},
 			"secundarias": [
 				"Pivote"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1301391-1755787878.jpg?lm=4711"
 		},
 		{
 			"n": "21",
@@ -497,7 +512,8 @@
 				"club": "BAN",
 				"anio": 2025
 			},
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/883411-1771517187.jpg?lm=4711"
 		},
 		{
 			"n": "23",
@@ -527,7 +543,8 @@
 				"club": "BAN",
 				"anio": 2024
 			},
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1073555-1755787097.jpg?lm=4711"
 		},
 		{
 			"n": "24",
@@ -562,7 +579,8 @@
 				"Lateral derecho",
 				"Mediocentro"
 			],
-			"sofascore": 6.84
+			"sofascore": 6.84,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/654813-1755787943.jpg?lm=4711"
 		},
 		{
 			"n": "20",
@@ -599,7 +617,8 @@
 				"pulmon",
 				"faltero"
 			],
-			"sofascore": 6.96
+			"sofascore": 6.96,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1115868-1755787086.jpg?lm=4711"
 		},
 		{
 			"n": "33",
@@ -633,7 +652,8 @@
 			"secundarias": [
 				"Extremo izquierdo",
 				"Extremo derecho"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/571908-1771516517.jpg?lm=4711"
 		},
 		{
 			"n": "10",
@@ -670,7 +690,8 @@
 			"rasgos": [
 				"larga distancia"
 			],
-			"sofascore": 6.87
+			"sofascore": 6.87,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1232512-1771518003.jpg?lm=4711"
 		},
 		{
 			"n": "11",
@@ -703,7 +724,8 @@
 			"secundarias": [
 				"Extremo izquierdo",
 				"Extremo derecho"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/280149-1771517178.jpg?lm=4711"
 		},
 		{
 			"n": "70",
@@ -727,7 +749,8 @@
 				"anio": 2020
 			},
 			"college": "Club Llaneros",
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/203361-1712905560.jpg?lm=4711"
 		},
 		{
 			"n": "7",
@@ -763,7 +786,8 @@
 			],
 			"rasgos": [
 				"erratico"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1301427-1771518322.jpg?lm=4711"
 		},
 		{
 			"n": "40",
@@ -799,7 +823,8 @@
 			"rasgos": [
 				"sin aire"
 			],
-			"sofascore": 6.84
+			"sofascore": 6.84,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/983867-1771517705.jpg?lm=4711"
 		},
 		{
 			"n": "18",
@@ -829,7 +854,8 @@
 				"club": "BAN",
 				"anio": 2024
 			},
-			"secundarias": []
+			"secundarias": [],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1228198-1771517714.jpg?lm=4711"
 		},
 		{
 			"n": "77",
@@ -861,7 +887,8 @@
 			},
 			"secundarias": [
 				"Extremo izquierdo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/402581-1771517766.jpg?lm=4711"
 		},
 		{
 			"n": "9",
@@ -899,7 +926,8 @@
 				"aereo",
 				"potente",
 				"erratico"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/252209-1770830948.png?lm=4711"
 		},
 		{
 			"n": "22",
@@ -933,7 +961,8 @@
 			"secundarias": [
 				"Interior izquierdo",
 				"Extremo izquierdo"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/657755-1742487328.jpg?lm=4711"
 		},
 		{
 			"n": "30",
@@ -967,7 +996,8 @@
 			"rasgos": [
 				"aereo",
 				"erratico"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/343163-1771518014.jpg?lm=4711"
 		},
 		{
 			"n": "28",
@@ -1000,7 +1030,8 @@
 			"secundarias": [
 				"Extremo izquierdo",
 				"Extremo derecho"
-			]
+			],
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1029496-1754162037.jpg?lm=4711"
 		}
 	]
 }
