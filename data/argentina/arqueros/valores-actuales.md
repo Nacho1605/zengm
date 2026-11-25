@@ -1,10 +1,10 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.24.7_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.25_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
-## Equipos cargados (22)
+## Equipos cargados (23)
 
 | Equipo | Arquero | Lista | Hoy | Cambio | PJ 2026 | Min |
 |---|---|---|---|---|---|---|
@@ -20,6 +20,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | RIE | Ignacio Arce | 68 | 67 | −1 | 37 | 3330 |
 | ROS | Conan Ledesma | 67 | 67 | = | 39 | 3540 |
 | BAR | Marcelo Miño | 65 | 66 | +1 | 30 | 2690 |
+| DYJ | Matías Borgogno | 67 | 66 | −1 | 17 | 1530 |
 | INR | Nicolás Bolcato | 67 | 66 | −1 | 43 | 3856 |
 | GIM | Nelson Insfrán | 64 | 65 | +1 | 30 | 2638 |
 | VEL | Tomás Marchiori | 66 | 64 | −2 | 20 | 1830 |
@@ -47,6 +48,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | IND | Joaquín Blázquez | — | 36 | no estaba | 1 | 90 |
 | UNI | Federico Gomes Gerth | 45 | 36 | −9 | 0 | 0 |
 | ARG | Gonzalo Siri | 39 | 35 | −4 | 1 | 90 |
+| DYJ | Lautaro Amadé | 41 | 35 | −6 | 1 | 90 |
 | ERC | Lautaro Herrera | — | 35 | no estaba | 5 | 450 |
 | LAN | Franco Petroli | 44 | 35 | −9 | 3 | 270 |
 | SLO | Facundo Altamirano | 43 | 35 | −8 | 1 | 90 |
@@ -82,11 +84,10 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | 42 | Lautaro Morales | LAN | libre |
 | 37 | Lautaro Maldonado | INS | no está en el archivo |
 
-## Equipos sin cargar: la lista es la base (13)
+## Equipos sin cargar: la lista es la base (11)
 
 | Lista | Arquero | Club en la lista | Hoy en el archivo (datos 2023) |
 |---|---|---|---|
-| 67 | Matías Borgogno | DYJ | no está en el archivo |
 | 64 | Felipe Zenobio | TIG | no está en el archivo |
 | 61 | Alan Aguerre | CCO | libre |
 | 58 | Lucas Acosta | ALD | libre |
@@ -96,7 +97,6 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | 44 | Ignacio Chicco | ALD | ALD |
 | 42 | Tomás Durso | ATU | libre |
 | 41 | Gino Santilli | BAN | no está en el archivo |
-| 41 | Lautaro Amadé | DYJ | no está en el archivo |
 | 39 | Lautaro Petrucci | GEM | no está en el archivo |
 | 38 | Sebastián Moyano | ALD | libre |
 

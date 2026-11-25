@@ -9,7 +9,7 @@
 // o después) sin números del club anterior en salidas-2026.json: a esos hay
 // que valorarlos por partido, o pedirle al usuario sus números previos.
 
-import { readdirSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 
 const dir = new URL("../../data/argentina/", import.meta.url);
 const norm = (s: string) =>
@@ -20,9 +20,10 @@ const norm = (s: string) =>
 const salidas = JSON.parse(
 	readFileSync(new URL("salidas-2026.json", dir), "utf8"),
 ).jugadores;
-// Los cargados y los que están en preparación (planteles/preparacion/)
+// Los cargados y los que están en preparación (planteles/preparacion/; git no
+// guarda la carpeta vacía: si no está, no hay ninguno)
 const leer = (sub: string) =>
-	readdirSync(new URL(sub, dir))
+	(existsSync(new URL(sub, dir)) ? readdirSync(new URL(sub, dir)) : [])
 		.filter((f) => f.endsWith(".json"))
 		.map((f) => JSON.parse(readFileSync(new URL(`${sub}${f}`, dir), "utf8")));
 const planteles = [...leer("planteles/"), ...leer("planteles/preparacion/")];

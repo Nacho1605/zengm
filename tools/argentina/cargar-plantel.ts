@@ -749,7 +749,9 @@ for (const file of plantelFiles) {
 	for (const file of plantelFiles) {
 		const plantel = JSON.parse(readFileSync(file, "utf8"));
 		for (const j of plantel.jugadores) {
-			for (const { tipo, nombre } of j.parientes ?? []) {
+			// "equipo" (opcional): el equipo del pariente, para cuando hay
+			// homónimos (Nicolás Fernández: BEL, un libre y prospectos)
+			for (const { tipo, nombre, equipo } of j.parientes ?? []) {
 				// Con homónimos, el del propio equipo (o el prospecto de su club)
 				const propios = buscar(`${j.nombre} ${j.apellido}`);
 				const tidEquipo = league.teams.find((t: any) => t.abbrev === plantel.equipo)?.tid;
@@ -757,7 +759,12 @@ for (const file of plantelFiles) {
 					propios.length === 1
 						? propios[0]
 						: propios.find((x: any) => x.tid === (j.prospecto ? -2 : tidEquipo));
-				const otros = buscar(nombre);
+				const tidPariente = equipo
+					? league.teams.find((t: any) => t.abbrev === equipo)?.tid
+					: undefined;
+				const otros = buscar(nombre).filter(
+					(x: any) => !equipo || x.tid === tidPariente,
+				);
 				if (!p || otros.length !== 1) {
 					console.log(
 						`Pariente sin resolver: ${j.nombre} ${j.apellido} -> ${nombre} (${otros.length})`,

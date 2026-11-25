@@ -1,0 +1,1025 @@
+{
+	"equipo": "DYJ",
+	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 25/11/2026); posiciones secundarias (captura del usuario, 24/11/2026); debut, inferiores, Sofascore, rasgos, capitán, parientes, lesiones y contexto: datos del usuario. OVR: Claude.",
+	"contexto": "Defensa y Justicia cerró un año cambiante y sin premios. Tras sostener el último invicto del Apertura, una seguidilla de derrotas lo marginó de los playoffs y forzó un cambio de ciclo. Eliminado rápido en Copa Argentina y renovado en el receso, remontó en el Clausura para clasificar arriba, pero cayó enseguida en el cruce inicial y perdió la Sudamericana por desempate disciplinario. Fiel a la posesión y al pase asociado, se hizo fuerte en Varela pero le faltó claridad ante bloques cerrados. Aarón Molinas condujo el gran arranque antes de lesionarse; luego sostuvieron la campaña Matías Borgogno en el arco, David Martínez atrás, el peso constante de David Barbona, y el gol de Leandro Fernández. Sofascore (Liga): Aarón Molinas (7,27), Matías Borgogno (7,22), David Martínez (7,13), Damián Fernández (7,06), César Pérez (7,02), David Barbona (6,90), Fernando Román (6,90). Capitán: Leandro Fernández (hermano de Brian y de Nicolás \"Uvita\" Fernández, BEL). Lesiones: ninguna. El Santiago Sosa de Defensa (2005) es un homónimo del Santiago Sosa que jugó la primera mitad del año en Racing (en salidas-2026.json): no son la misma persona (dato del usuario). Valentín Loza: las fuentes dan entre 1,80 y 1,84 m (dato del usuario); se usa 1,82. Tabla anual 2026: 14.º (47 pts, 39-36); Apertura 10.º de la zona A (19 pts, 18-21); Clausura 4.º del grupo A (28 pts, 21-15), eliminado en el primer cruce; promedios: 15.º. Copas 2026 (dato del usuario, 23/11): Copa Argentina: eliminado en dieciseisavos. Sin copa internacional; la Sudamericana 2027 se le escapó por desempate disciplinario.",
+	"reemplaza": [
+		{
+			"nombre": "David Martínez",
+			"nacimiento": 1998
+		},
+		{
+			"nombre": "Julián López",
+			"nacimiento": 2000
+		},
+		{
+			"nombre": "Aaron Molinas",
+			"nacimiento": 2001
+		},
+		{
+			"nombre": "David Barbona",
+			"nacimiento": 1995
+		},
+		{
+			"nombre": "Domingo Blanco",
+			"nacimiento": 1996
+		},
+		{
+			"nombre": "Agustín Hausch",
+			"nacimiento": 2004
+		},
+		{
+			"nombre": "Leandro Fernández",
+			"nacimiento": 1992
+		}
+	],
+	"jugadores": [
+		{
+			"n": "1",
+			"nombre": "Matías",
+			"apellido": "Borgogno",
+			"pos": "Portero",
+			"nac": "21/08/1998",
+			"pais": "Argentina",
+			"altura": 1.88,
+			"pie": "Derecho",
+			"contrato": "30/06/2027",
+			"valor": 2800000,
+			"pj": 17,
+			"goles": 0,
+			"min": 1530,
+			"asist": 0,
+			"amarillas": 0,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 0,
+			"salio": 0,
+			"ppp": 1.65,
+			"convocado": 17,
+			"fichado": "22/07/2026",
+			"ovr": 66,
+			"debut": {
+				"club": "VEL",
+				"anio": 2021
+			},
+			"secundarias": [],
+			"sofascore": 7.22
+		},
+		{
+			"n": "36",
+			"nombre": "Lautaro",
+			"apellido": "Amadé",
+			"pos": "Portero",
+			"nac": "21/12/1999",
+			"pais": "Argentina",
+			"altura": 1.93,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 300000,
+			"pj": 1,
+			"goles": 0,
+			"min": 90,
+			"asist": 0,
+			"amarillas": 0,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 0,
+			"salio": 0,
+			"ppp": 0,
+			"convocado": 34,
+			"fichado": "01/01/2021",
+			"ovr": 35,
+			"debut": {
+				"club": "DYJ",
+				"anio": 2021
+			},
+			"college": "Club Atlético Sarmiento (Junín)",
+			"secundarias": []
+		},
+		{
+			"n": "29",
+			"nombre": "Damián",
+			"apellido": "Fernández",
+			"pos": "Defensa central",
+			"nac": "02/01/2001",
+			"pais": "Argentina",
+			"altura": 1.79,
+			"pie": "Derecho",
+			"contrato": "31/12/2029",
+			"valor": 1800000,
+			"pj": 29,
+			"goles": 1,
+			"min": 2380,
+			"asist": 0,
+			"amarillas": 9,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 2,
+			"salio": 5,
+			"ppp": 1.38,
+			"convocado": 32,
+			"fichado": "06/07/2025",
+			"ovr": 64,
+			"debut": {
+				"club": "VEL",
+				"anio": 2022
+			},
+			"secundarias": [],
+			"rasgos": [
+				"faltero"
+			],
+			"sofascore": 7.06
+		},
+		{
+			"n": "21",
+			"nombre": "David",
+			"apellido": "Martínez",
+			"pos": "Defensa central",
+			"nac": "21/01/1998",
+			"pais": "Paraguay",
+			"altura": 1.85,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 900000,
+			"pj": 29,
+			"goles": 2,
+			"min": 2463,
+			"asist": 1,
+			"amarillas": 9,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 0,
+			"salio": 5,
+			"ppp": 1.45,
+			"convocado": 31,
+			"fichado": "14/01/2026",
+			"ovr": 65,
+			"debut": {
+				"club": "DYJ",
+				"anio": 2019
+			},
+			"college": "Club Atlético River Plate",
+			"secundarias": [
+				"Lateral izquierdo"
+			],
+			"rasgos": [
+				"tactico"
+			],
+			"sofascore": 7.13
+		},
+		{
+			"n": "6",
+			"nombre": "Ezequiel",
+			"apellido": "Burdín",
+			"pos": "Defensa central",
+			"nac": "16/10/2004",
+			"pais": "Uruguay",
+			"altura": 1.92,
+			"pie": "Izquierdo",
+			"contrato": "30/06/2030",
+			"valor": 800000,
+			"pj": 5,
+			"goles": 0,
+			"min": 22,
+			"asist": 0,
+			"amarillas": 0,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 5,
+			"salio": 0,
+			"ppp": 2.4,
+			"convocado": 14,
+			"fichado": "07/08/2026",
+			"ovr": 41,
+			"debut": {
+				"club": null,
+				"anio": 2023
+			},
+			"college": "Albion Football Club",
+			"secundarias": []
+		},
+		{
+			"n": "2",
+			"nombre": "Samuel",
+			"apellido": "Lucero",
+			"pos": "Defensa central",
+			"nac": "29/07/2005",
+			"pais": "Argentina",
+			"altura": 1.84,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 250000,
+			"pj": 11,
+			"goles": 0,
+			"min": 642,
+			"asist": 0,
+			"amarillas": 1,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 4,
+			"salio": 2,
+			"ppp": 1.82,
+			"convocado": 25,
+			"fichado": "01/01/2025",
+			"ovr": 48,
+			"debut": {
+				"club": "DYJ",
+				"anio": 2025
+			},
+			"college": "Quilmes Atlético Club",
+			"secundarias": [
+				"Lateral izquierdo"
+			]
+		},
+		{
+			"n": "32",
+			"nombre": "Nazareno",
+			"apellido": "Roselli",
+			"pos": "Defensa central",
+			"nac": "09/08/2006",
+			"pais": "Argentina",
+			"altura": 1.84,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 150000,
+			"pj": 5,
+			"goles": 0,
+			"min": 116,
+			"asist": 0,
+			"amarillas": 1,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 4,
+			"salio": 1,
+			"ppp": 1.4,
+			"convocado": 26,
+			"fichado": "14/01/2026",
+			"ovr": 38,
+			"debut": {
+				"club": "ARS",
+				"anio": 2025
+			},
+			"secundarias": []
+		},
+		{
+			"n": "3",
+			"nombre": "Fernando",
+			"apellido": "Román",
+			"pos": "Lateral izquierdo",
+			"nac": "20/11/1998",
+			"pais": "Paraguay",
+			"altura": 1.86,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 450000,
+			"pj": 11,
+			"goles": 1,
+			"min": 689,
+			"asist": 0,
+			"amarillas": 3,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 3,
+			"salio": 2,
+			"ppp": 1.91,
+			"convocado": 14,
+			"fichado": "09/07/2026",
+			"ovr": 58,
+			"debut": {
+				"club": "ALD",
+				"anio": 2020
+			},
+			"college": "Club Cerro Porteño",
+			"secundarias": [
+				"Defensa central"
+			],
+			"sofascore": 6.9
+		},
+		{
+			"n": "40",
+			"nombre": "Máximo",
+			"apellido": "Rodríguez",
+			"pos": "Lateral izquierdo",
+			"nac": "05/02/2005",
+			"pais": "Argentina",
+			"altura": 1.83,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 150000,
+			"pj": 4,
+			"goles": 0,
+			"min": 304,
+			"asist": 1,
+			"amarillas": 0,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 0,
+			"salio": 3,
+			"ppp": 1,
+			"convocado": 7,
+			"fichado": "14/01/2026",
+			"ovr": 40,
+			"debut": {
+				"club": "DYJ",
+				"anio": 2026
+			},
+			"college": "Club Atlético Talleres (Remedios de Escalada)",
+			"secundarias": [
+				"Pivote",
+				"Mediocentro"
+			]
+		},
+		{
+			"n": "30",
+			"nombre": "Demián",
+			"apellido": "Domínguez",
+			"pos": "Lateral izquierdo",
+			"nac": "14/01/2006",
+			"pais": "Argentina",
+			"altura": 1.79,
+			"pie": null,
+			"contrato": "31/12/2027",
+			"valor": 25000,
+			"pj": 8,
+			"goles": 0,
+			"min": 619,
+			"asist": 0,
+			"amarillas": 0,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 2,
+			"salio": 2,
+			"ppp": 1.38,
+			"convocado": 13,
+			"fichado": "01/08/2026",
+			"ovr": 47,
+			"debut": {
+				"club": "VEL",
+				"anio": 2026
+			},
+			"secundarias": [
+				"Defensa central"
+			]
+		},
+		{
+			"n": "16",
+			"nombre": "Ayrton",
+			"apellido": "Portillo",
+			"pos": "Lateral derecho",
+			"nac": "18/08/2000",
+			"pais": "Argentina",
+			"altura": 1.82,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 1000000,
+			"pj": 22,
+			"goles": 3,
+			"min": 1222,
+			"asist": 1,
+			"amarillas": 5,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 9,
+			"salio": 6,
+			"ppp": 1.18,
+			"convocado": 30,
+			"fichado": "10/07/2024",
+			"ovr": 56,
+			"debut": {
+				"club": "RAF",
+				"anio": 2020
+			},
+			"secundarias": [
+				"Interior derecho",
+				"Extremo derecho"
+			],
+			"rasgos": [
+				"desordenado"
+			]
+		},
+		{
+			"n": "33",
+			"nombre": "Lucas",
+			"apellido": "Souto",
+			"pos": "Lateral derecho",
+			"nac": "11/10/1998",
+			"pais": "Argentina",
+			"altura": 1.8,
+			"pie": "Ambidiestro",
+			"contrato": "31/12/2026",
+			"valor": 400000,
+			"pj": 22,
+			"goles": 1,
+			"min": 1727,
+			"asist": 0,
+			"amarillas": 0,
+			"dobleAmarilla": 0,
+			"rojas": 1,
+			"entro": 1,
+			"salio": 4,
+			"ppp": 1.23,
+			"convocado": 23,
+			"fichado": "08/07/2022",
+			"ovr": 57,
+			"debut": {
+				"club": "FCO",
+				"anio": 2020
+			},
+			"secundarias": [
+				"Defensa central",
+				"Lateral izquierdo"
+			]
+		},
+		{
+			"n": "28",
+			"nombre": "Valentín",
+			"apellido": "Loza",
+			"pos": "Lateral derecho",
+			"nac": "12/02/2007",
+			"pais": "Argentina",
+			"altura": 1.82,
+			"pie": "Derecho",
+			"contrato": null,
+			"valor": 175000,
+			"pj": 14,
+			"goles": 0,
+			"min": 1028,
+			"asist": 2,
+			"amarillas": 1,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 3,
+			"salio": 1,
+			"ppp": 1.93,
+			"convocado": 20,
+			"fichado": "01/07/2026",
+			"ovr": 53,
+			"debut": {
+				"club": "DYJ",
+				"anio": 2026
+			},
+			"secundarias": [
+				"Defensa central"
+			]
+		},
+		{
+			"n": "5",
+			"nombre": "Julián",
+			"apellido": "López",
+			"pos": "Pivote",
+			"nac": "08/01/2000",
+			"pais": "Argentina",
+			"altura": 1.86,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 650000,
+			"pj": 11,
+			"goles": 0,
+			"min": 356,
+			"asist": 0,
+			"amarillas": 0,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 9,
+			"salio": 1,
+			"ppp": 2,
+			"convocado": 26,
+			"fichado": "01/01/2024",
+			"ovr": 46,
+			"debut": {
+				"club": "RAC",
+				"anio": 2020
+			},
+			"secundarias": [
+				"Mediocentro"
+			],
+			"rasgos": [
+				"recuperador",
+				"faltero"
+			]
+		},
+		{
+			"n": "15",
+			"nombre": "Santiago",
+			"apellido": "Sosa",
+			"pos": "Mediocentro",
+			"nac": "30/01/2005",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 4000000,
+			"pj": 32,
+			"goles": 0,
+			"min": 2709,
+			"asist": 0,
+			"amarillas": 5,
+			"dobleAmarilla": 0,
+			"rojas": 2,
+			"entro": 0,
+			"salio": 7,
+			"ppp": 1.53,
+			"convocado": 33,
+			"fichado": "03/01/2025",
+			"ovr": 60,
+			"debut": {
+				"club": "SLO",
+				"anio": 2024
+			},
+			"secundarias": [
+				"Pivote"
+			]
+		},
+		{
+			"n": "8",
+			"nombre": "César",
+			"apellido": "Pérez",
+			"pos": "Mediocentro",
+			"nac": "29/11/2002",
+			"pais": "Chile",
+			"altura": 1.76,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 3000000,
+			"pj": 20,
+			"goles": 2,
+			"min": 1564,
+			"asist": 3,
+			"amarillas": 3,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 2,
+			"salio": 8,
+			"ppp": 1.25,
+			"convocado": 21,
+			"fichado": "24/07/2024",
+			"ovr": 61,
+			"debut": {
+				"club": null,
+				"anio": 2020
+			},
+			"college": "Club Deportes Magallanes",
+			"secundarias": [
+				"Pivote",
+				"Mediocentro ofensivo"
+			],
+			"rasgos": [
+				"pulmon"
+			],
+			"sofascore": 7.02
+		},
+		{
+			"n": "10",
+			"nombre": "Aarón",
+			"apellido": "Molinas",
+			"pos": "Mediocentro ofensivo",
+			"nac": "02/08/2000",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 3200000,
+			"pj": 21,
+			"goles": 4,
+			"min": 1537,
+			"asist": 4,
+			"amarillas": 4,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 5,
+			"salio": 2,
+			"ppp": 1.19,
+			"convocado": 21,
+			"fichado": "01/02/2024",
+			"ovr": 66,
+			"debut": {
+				"club": "BOC",
+				"anio": 2021
+			},
+			"secundarias": [
+				"Mediocentro",
+				"Extremo derecho"
+			],
+			"rasgos": [
+				"cerebro",
+				"pase",
+				"flojo de arriba"
+			],
+			"sofascore": 7.27
+		},
+		{
+			"n": "19",
+			"nombre": "David",
+			"apellido": "Barbona",
+			"pos": "Mediocentro ofensivo",
+			"nac": "22/02/1995",
+			"pais": "Argentina",
+			"altura": 1.76,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 450000,
+			"pj": 28,
+			"goles": 5,
+			"min": 1583,
+			"asist": 5,
+			"amarillas": 1,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 9,
+			"salio": 17,
+			"ppp": 1.39,
+			"convocado": 35,
+			"fichado": "03/01/2024",
+			"ovr": 63,
+			"debut": {
+				"club": "NCH",
+				"anio": 2013
+			},
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
+			],
+			"rasgos": [
+				"habilidoso",
+				"pelota parada",
+				"liviano",
+				"sin aire"
+			],
+			"sofascore": 6.9
+		},
+		{
+			"n": "23",
+			"nombre": "Mateo",
+			"apellido": "Aguiar",
+			"pos": "Mediocentro ofensivo",
+			"nac": "18/03/2007",
+			"pais": "Argentina",
+			"altura": 1.68,
+			"pie": null,
+			"contrato": "31/12/2028",
+			"valor": 225000,
+			"pj": 9,
+			"goles": 0,
+			"min": 151,
+			"asist": 0,
+			"amarillas": 1,
+			"dobleAmarilla": 0,
+			"rojas": 1,
+			"entro": 9,
+			"salio": 1,
+			"ppp": 1,
+			"convocado": 19,
+			"fichado": "01/01/2026",
+			"ovr": 36,
+			"debut": {
+				"club": "DYJ",
+				"anio": 2026
+			},
+			"secundarias": []
+		},
+		{
+			"n": "20",
+			"nombre": "Nicolás",
+			"apellido": "Palavecino",
+			"pos": "Mediocentro ofensivo",
+			"nac": "29/03/2003",
+			"pais": "Argentina",
+			"altura": 1.86,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 150000,
+			"pj": 0,
+			"goles": 0,
+			"min": 0,
+			"convocado": 4,
+			"fichado": "01/01/2025",
+			"ovr": 40,
+			"debut": {
+				"club": null,
+				"anio": 2022
+			},
+			"college": "Montevideo City Torque",
+			"secundarias": []
+		},
+		{
+			"n": "26",
+			"nombre": "Jeremías",
+			"apellido": "Lucco",
+			"pos": "Mediocentro ofensivo",
+			"nac": "10/12/2005",
+			"pais": "Argentina",
+			"altura": 1.72,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 150000,
+			"pj": 13,
+			"goles": 2,
+			"min": 840,
+			"asist": 0,
+			"amarillas": 2,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 4,
+			"salio": 5,
+			"ppp": 1.62,
+			"convocado": 14,
+			"fichado": "31/07/2026",
+			"ovr": 50,
+			"debut": {
+				"club": "BEL",
+				"anio": 2024
+			},
+			"secundarias": [
+				"Mediocentro",
+				"Interior derecho"
+			]
+		},
+		{
+			"n": "22",
+			"nombre": "Maximiliano",
+			"apellido": "Porcel",
+			"pos": "Mediocentro ofensivo",
+			"nac": "02/01/2006",
+			"pais": "Argentina",
+			"altura": 1.78,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2027",
+			"valor": 75000,
+			"pj": 13,
+			"goles": 0,
+			"min": 436,
+			"asist": 2,
+			"amarillas": 2,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 10,
+			"salio": 3,
+			"ppp": 1.62,
+			"convocado": 14,
+			"fichado": "01/08/2026",
+			"ovr": 43,
+			"debut": {
+				"club": "VEL",
+				"anio": 2025
+			},
+			"secundarias": [
+				"Mediocentro",
+				"Interior derecho"
+			]
+		},
+		{
+			"n": "24",
+			"nombre": "Juan",
+			"apellido": "Gutiérrez",
+			"pos": "Extremo izquierdo",
+			"nac": "04/02/2002",
+			"pais": "Uruguay",
+			"altura": 1.78,
+			"pie": "Derecho",
+			"contrato": "30/06/2030",
+			"valor": 2000000,
+			"pj": 35,
+			"goles": 6,
+			"min": 2927,
+			"asist": 8,
+			"amarillas": 3,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 1,
+			"salio": 17,
+			"ppp": 1.43,
+			"convocado": 35,
+			"fichado": "02/07/2026",
+			"ovr": 65,
+			"debut": {
+				"club": null,
+				"anio": 2018
+			},
+			"college": "Danubio Fútbol Club",
+			"secundarias": [
+				"Extremo derecho",
+				"Delantero centro"
+			],
+			"rasgos": [
+				"gambeta"
+			]
+		},
+		{
+			"n": "27",
+			"nombre": "Domingo",
+			"apellido": "Blanco",
+			"pos": "Extremo derecho",
+			"nac": "22/04/1995",
+			"pais": "Argentina",
+			"altura": 1.7,
+			"pie": "Derecho",
+			"contrato": "30/06/2027",
+			"valor": 1000000,
+			"pj": 9,
+			"goles": 0,
+			"min": 244,
+			"asist": 0,
+			"amarillas": 0,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 8,
+			"salio": 2,
+			"ppp": 1.56,
+			"convocado": 18,
+			"fichado": "14/07/2026",
+			"ovr": 46,
+			"debut": {
+				"club": "IND",
+				"anio": 2017
+			},
+			"college": "Club Olimpo",
+			"secundarias": [
+				"Mediocentro ofensivo",
+				"Extremo izquierdo"
+			],
+			"rasgos": [
+				"flojo de arriba"
+			]
+		},
+		{
+			"n": "25",
+			"nombre": "Facundo",
+			"apellido": "Altamira",
+			"pos": "Extremo derecho",
+			"nac": "03/08/2001",
+			"pais": "Argentina",
+			"altura": 1.83,
+			"pie": "Derecho",
+			"contrato": "31/12/2026",
+			"valor": 550000,
+			"pj": 6,
+			"goles": 0,
+			"min": 161,
+			"asist": 0,
+			"amarillas": 1,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 5,
+			"salio": 1,
+			"ppp": 1.5,
+			"convocado": 20,
+			"fichado": "27/01/2026",
+			"ovr": 41,
+			"debut": {
+				"club": "GOD",
+				"anio": 2024
+			},
+			"secundarias": [
+				"Extremo izquierdo"
+			]
+		},
+		{
+			"n": "17",
+			"nombre": "Agustín",
+			"apellido": "Hausch",
+			"pos": "Extremo derecho",
+			"nac": "21/05/2003",
+			"pais": "Argentina",
+			"altura": 1.75,
+			"pie": "Derecho",
+			"contrato": "31/12/2028",
+			"valor": 400000,
+			"pj": 29,
+			"goles": 2,
+			"min": 1166,
+			"asist": 1,
+			"amarillas": 1,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 14,
+			"salio": 15,
+			"ppp": 1.41,
+			"convocado": 33,
+			"fichado": "03/01/2025",
+			"ovr": 54,
+			"debut": {
+				"club": "SLO",
+				"anio": 2023
+			},
+			"secundarias": [
+				"Interior derecho",
+				"Delantero centro"
+			],
+			"rasgos": [
+				"erratico",
+				"flojo de arriba"
+			]
+		},
+		{
+			"n": "11",
+			"nombre": "Tiziano",
+			"apellido": "Perrotta",
+			"pos": "Delantero centro",
+			"nac": "25/11/2006",
+			"pais": "Argentina",
+			"altura": 1.8,
+			"pie": "Izquierdo",
+			"contrato": "31/12/2026",
+			"valor": 3500000,
+			"pj": 12,
+			"goles": 0,
+			"min": 380,
+			"asist": 0,
+			"amarillas": 1,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 9,
+			"salio": 2,
+			"ppp": 1.67,
+			"convocado": 12,
+			"fichado": "14/08/2026",
+			"ovr": 43,
+			"debut": {
+				"club": "BAN",
+				"anio": 2026
+			},
+			"secundarias": [
+				"Mediocentro ofensivo"
+			]
+		},
+		{
+			"n": "7",
+			"nombre": "Tomás",
+			"apellido": "Pérez",
+			"pos": "Delantero centro",
+			"nac": "27/04/2006",
+			"pais": "Argentina",
+			"altura": 1.81,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 300000,
+			"pj": 5,
+			"goles": 1,
+			"min": 54,
+			"asist": 0,
+			"amarillas": 0,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 5,
+			"salio": 0,
+			"ppp": 1.4,
+			"convocado": 12,
+			"fichado": "31/07/2026",
+			"ovr": 43,
+			"debut": {
+				"club": "RAC",
+				"anio": 2025
+			},
+			"secundarias": []
+		},
+		{
+			"n": "9",
+			"nombre": "Leandro",
+			"apellido": "Fernández",
+			"pos": "Delantero centro",
+			"nac": "12/03/1991",
+			"pais": "Argentina",
+			"altura": 1.79,
+			"pie": "Derecho",
+			"contrato": "31/12/2027",
+			"valor": 300000,
+			"pj": 18,
+			"goles": 6,
+			"min": 1380,
+			"asist": 1,
+			"amarillas": 5,
+			"dobleAmarilla": 0,
+			"rojas": 0,
+			"entro": 1,
+			"salio": 12,
+			"ppp": 1.56,
+			"convocado": 18,
+			"fichado": "09/07/2026",
+			"ovr": 62,
+			"debut": {
+				"club": "DYJ",
+				"anio": 2010
+			},
+			"secundarias": [
+				"Extremo izquierdo",
+				"Extremo derecho"
+			],
+			"rasgos": [
+				"goleador",
+				"morfon",
+				"sin aire"
+			],
+			"capitan": true,
+			"parientes": [
+				{
+					"tipo": "brother",
+					"nombre": "Brian Fernández"
+				},
+				{
+					"tipo": "brother",
+					"nombre": "Nicolás Fernández",
+					"equipo": "BEL"
+				}
+			]
+		}
+	]
+}

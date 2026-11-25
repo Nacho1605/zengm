@@ -277,4 +277,6 @@ v2.14.1 → v2.14.2).
   ahora quedan afuera del archivo (decisión del usuario, se retoma más
   adelante); sus parientes en la liga se anotan en TRASPASO.
 - Si falta la altura en Transfermarkt, pedirla: el cargador se frena.
-- El juego solo vincula padre, hijo y hermano (no primos).
+- El juego solo vincula padre, hijo y hermano (no primos). Si el pariente
+  tiene homónimos en el archivo, anotarlo con su equipo (`"equipo": "BEL"`
+  en el pariente; ej.: Leandro y Nicolás Fernández) o el lazo no se arma.
