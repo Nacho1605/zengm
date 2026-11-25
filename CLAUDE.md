@@ -175,10 +175,13 @@ v2.14.1 → v2.14.2).
     prospectos. Los que jugaron menos de 300' en Primera: +1 si su reserva
     quedó entre las 5 primeras de la anual, −1 del 21.º para abajo
     (`tablas-reserva-2026.json`). Ver propuesta-juveniles.md.
-    **v2.27.2 (pedido del usuario, a confirmar):** revisión sin esta regla:
-    juveniles valorados por rendimiento como los adultos, sin plus por valor,
-    porque el juego ya calcula el potencial con la edad (72,3 − 2,33 × edad +
-    0,83 × OVR); ver `revision-juveniles-defensores-v2.27.md`.
+    **Formato de los juveniles en revisión (el usuario, 25/11):** la prueba de
+    la v2.27.2 (rendimiento como los adultos, sin plus por valor, porque el
+    juego calcula el potencial con la edad: 72,3 − 2,33 × edad + 0,83 × OVR)
+    no quedó: aceptó solo Guch, Cantizano y L. Gutiérrez; los otros 35
+    volvieron en la v2.27.4 al valor con esta regla. Hasta que se defina el
+    formato nuevo, sigue esta regla; ver `revision-juveniles-defensores-v2.27.md`
+    y `cambios-ovr-desde-v2.27.md`.
   - NO castigar la edad; los de media temporada, por partido; las tablas
     (`tablas-2026.json`) y Sofascore son guías, no verdad absoluta.
     Sofascore: el usuario usa 6,90 como barrera (da solo los que la superan;

@@ -337,7 +337,7 @@
 			"convocado": 5,
 			"prospecto": true,
 			"college": "Club Atlético Boca Juniors",
-			"ovr": 36,
+			"ovr": 37,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1243852-1762504967.jpg?lm=4711",
 			"secundarias": []
 		},
@@ -939,7 +939,7 @@
 				"club": "BOC",
 				"anio": 2026
 			},
-			"ovr": 65,
+			"ovr": 69,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1291699-1789658026.jpg?lm=4711",
 			"rasgos": ["gambeta"],
 			"secundarias": [

@@ -7,6 +7,21 @@ de Sofascore por puesto del usuario (v2.27.3; `sofascore/liga-2026-por-puesto.tx
 vuelve a su regla de juveniles, se deshacen de una vez los 38 marcados con J.
 Detalle: `revision-general-v2.27.md` y `revision-juveniles-defensores-v2.27.md`.
 
+
+## Decisión del usuario (25/11/2026, aplicada en la v2.27.4)
+- **Aceptados (28 cambios y 4 propuestas):** Izquierdoz, Rak, Carrizo,
+  Arboleda, F. Vázquez, C. Quintana, Gariglio, Reinatti, Marcich, De Ritis,
+  F. Álvarez, Pintado, Rodríguez Pagano, A. Núñez, Tripichio, Miloc, Gho,
+  Mancuello, Abaldo, Solari, Pérez Curci, Guch, Cantizano, Reali, Stringa,
+  Molina, M. Giménez (BOC) y L. Gutiérrez (BEL); propuestas: Guidara 63,
+  Mansilla 63, A. Auzmendi 64 y Silva Torrejón 63.
+- **Denegados:** Braian Sánchez (vuelve a 41) y las propuestas de Cetré, Rey,
+  López Muñoz y Maravilla Martínez (quedan como estaban).
+- **Juveniles: "a revisión de formato".** Los otros 35 cambios marcados con J
+  volvieron al valor de la v2.27 (regla con plus por valor) hasta definir el
+  formato nuevo; también quedan para esa revisión las propuestas de Baroni,
+  Dávila y Jainikoski (sin cambios).
+
 ## Centrales (14)
 | Eq. | N.º | Jugador | OVR | Rev. | Por qué |
 |---|---|---|---|---|---|

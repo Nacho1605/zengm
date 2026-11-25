@@ -80,7 +80,7 @@
 			"ppp": 1.33,
 			"convocado": 36,
 			"fichado": "14/01/2026",
-			"ovr": 61,
+			"ovr": 63,
 			"debut": {
 				"club": "MID",
 				"anio": 2017
@@ -276,7 +276,7 @@
 			"ppp": 1.5,
 			"convocado": 16,
 			"fichado": "01/07/2026",
-			"ovr": 54,
+			"ovr": 53,
 			"debut": {
 				"club": "UNI",
 				"anio": 2026
@@ -794,7 +794,7 @@
 			"ppp": 1.15,
 			"convocado": 30,
 			"fichado": "01/01/2026",
-			"ovr": 46,
+			"ovr": 43,
 			"debut": {
 				"club": "UNI",
 				"anio": 2026

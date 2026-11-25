@@ -205,7 +205,7 @@
 			"salio": 2,
 			"ppp": 1.6,
 			"convocado": 24,
-			"ovr": 50,
+			"ovr": 48,
 			"debut": {
 				"club": "VEL",
 				"anio": 2026
@@ -621,7 +621,7 @@
 			"salio": 9,
 			"ppp": 1.45,
 			"convocado": 17,
-			"ovr": 47,
+			"ovr": 44,
 			"debut": {
 				"club": "VEL",
 				"anio": 2026
@@ -687,7 +687,7 @@
 			"salio": 5,
 			"ppp": 1.5,
 			"convocado": 34,
-			"ovr": 43,
+			"ovr": 40,
 			"debut": {
 				"club": "VEL",
 				"anio": 2026
@@ -760,7 +760,7 @@
 			"salio": 4,
 			"ppp": 1.92,
 			"convocado": 18,
-			"ovr": 43,
+			"ovr": 40,
 			"debut": {
 				"club": "VEL",
 				"anio": 2026

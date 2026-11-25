@@ -1,8 +1,8 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 25/11/2026. Última versión: **v2.27.3**
-(`data/argentina/BBGM_Argentina_2026_v.2.27.3_futbol.json`, sha256
-`cca1b96cce5ff47c57715f4fb99427527a9717103f5ca12090734c2a70e327f0`): 25 de 30
+Estado al 25/11/2026. Última versión: **v2.27.4**
+(`data/argentina/BBGM_Argentina_2026_v.2.27.4_futbol.json`, sha256
+`4545e760fac61a66963ecee40054e9987c338c83436791c34b1843569788d4a4`): 25 de 30
 equipos con plantel 2026 (el último, Tigre, 30 jugadores), Rendimiento
 completo; fotos de 748 de 778 (faltan las 30 de TIG: las pone el usuario en
 el juego); todo el archivo en la escala nueva de OVR (20 a 78) y en la forma
@@ -11,22 +11,20 @@ propia (21 premios, calibrada; nombres como los dejó el usuario). Validación:
 0 errores. Auditoría: 53 controles, 9 con alertas (las de siempre más "Foto":
 las 30 de TIG). Revisiones de OVR: general (`revision-general-v2.27.md`), de
 juveniles sin la regla y defensores (`revision-juveniles-defensores-v2.27.md`)
-y con las listas de Sofascore por puesto (v2.27.3). Todos los cambios desde
-la v2.27, para que decida el usuario: `cambios-ovr-desde-v2.27.md`.
+y con las listas de Sofascore por puesto (v2.27.3). El usuario ya decidió
+sobre todos los cambios desde la v2.27 (v2.27.4; `cambios-ovr-desde-v2.27.md`),
+menos los juveniles, que van a una revisión de formato.
 Escalera por puesto del usuario actualizada
 (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. **Respuestas pendientes del usuario:** (a) si la regla de juveniles queda
-   como en la v2.27.2 (rendimiento como los adultos, sin plus por valor: el
-   potencial lo pone el juego por la edad) o vuelve la anterior; (b)
-   propuestas sobre valores suyos: Guidara 63 (LAN), Baroni 52, Dávila 52
-   (TAL), Jainikoski 50 (ARG), la pregunta por Cetré (EST 68) y, desde la
-   v2.27.3, Mansilla 63 (UNI), Rey 65 (IND), A. Auzmendi 64 y Silva Torrejón
-   63 (GIM), y las preguntas por López Muñoz (ARG 70) y Adrián "Maravilla"
-   Martínez (RAC 70); (c) si estira la escala por los montones (60 y 61 con
-   30 jugadores). Todo en `cambios-ovr-desde-v2.27.md`. Fotos de TIG
+1. **Juveniles "a revisión de formato"** (el usuario, 25/11): definir con él
+   el formato nuevo para valorar a los juveniles (la regla del plus por valor
+   sigue mientras tanto; la prueba de la v2.27.2 quedó solo en Guch,
+   Cantizano y L. Gutiérrez). Ahí entran los 35 cambios J que no aceptó y las
+   propuestas de Baroni, Dávila y Jainikoski. También pendiente: si estira la
+   escala por los montones (60 y 61 con unos 30 jugadores). Fotos de TIG
    cuando las ponga (importar con `desde-juego.ts`, base la versión que usó).
    Pendiente: Fernando Román (DYJ) volvió de un préstamo en julio (antes en
    Aldosivi): al cargar ALD, mirar su primera mitad del año.
@@ -620,6 +618,25 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**25/11/2026 (v2.27.4): decisiones del usuario sobre los cambios de OVR.**
+Huella: `4545e760fac61a66963ecee40054e9987c338c83436791c34b1843569788d4a4`.
+
+- El usuario decidió sobre la lista `cambios-ovr-desde-v2.27.md` (decisión
+  anotada arriba de todo en ese archivo). Aceptó 28 cambios (todos los de la
+  revisión general, de defensores y de Sofascore menos uno, más Guch,
+  Cantizano y L. Gutiérrez) y 4 propuestas sobre valores suyos: Guidara 63
+  (LAN), Mansilla 63 (UNI), A. Auzmendi 64 y Silva Torrejón 63 (GIM).
+  Denegados: Braian Sánchez (RIE, vuelve a 41) y las propuestas de Cetré,
+  Rey, López Muñoz y Maravilla Martínez (sin cambios). Juveniles: "a revisión
+  de formato": los otros 35 cambios J vuelven al valor de la v2.27 hasta
+  definirlo.
+- Solo cambió la línea `ovr` de 40 jugadores en los planteles (36 vuelven,
+  4 propuestas); el resto de los archivos, intacto.
+- Contra la v2.27.3: 40 OVR (ratings, sueldo de 37 (los 3 prospectos no
+  tienen), orden de 89 y 12 números de pick); el resto igual. Los 36 que
+  vuelven quedan con los ratings idénticos a los de la v2.27. Armada dos
+  veces con la misma huella; validación 0 errores; auditoría igual.
+
 **25/11/2026 (v2.27.3): listas de Sofascore por puesto.** Huella:
 `cca1b96cce5ff47c57715f4fb99427527a9717103f5ca12090734c2a70e327f0`.
 

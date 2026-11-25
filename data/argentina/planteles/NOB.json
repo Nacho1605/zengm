@@ -563,7 +563,7 @@
 			"ppp": 0.29,
 			"convocado": 16,
 			"fichado": "01/01/2025",
-			"ovr": 43,
+			"ovr": 42,
 			"debut": {
 				"club": "NOB",
 				"anio": 2025
@@ -762,7 +762,7 @@
 			"ppp": 1.29,
 			"convocado": 31,
 			"fichado": "01/07/2025",
-			"ovr": 53,
+			"ovr": 47,
 			"debut": {
 				"club": "NOB",
 				"anio": 2025
@@ -899,7 +899,7 @@
 			"ppp": 1.57,
 			"convocado": 17,
 			"fichado": "01/07/2026",
-			"ovr": 43,
+			"ovr": 40,
 			"debut": {
 				"club": "NOB",
 				"anio": 2026

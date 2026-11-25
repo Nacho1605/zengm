@@ -1,6 +1,6 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.27.3_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.27.4_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
@@ -27,9 +27,9 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | NOB | Josué Reinatti | 52 | 64 | +12 | 21 | 1890 |
 | VEL | Tomás Marchiori | 66 | 64 | −2 | 20 | 1830 |
 | PLA | Juan Pablo Cozzani | 63 | 63 | = | 22 | 1980 |
+| UNI | Matías Mansilla | 60 | 63 | +3 | 36 | 3240 |
 | INS | Marcos Ledesma | 59 | 62 | +3 | 17 | 1530 |
 | TAL | Ezequiel Unsaín | 63 | 62 | −1 | 16 | 1440 |
-| UNI | Matías Mansilla | 60 | 61 | +1 | 36 | 3240 |
 | VEL | Facundo Sanguinetti | 62 (BAN) | 61 | −1 | 0 | 0 |
 | BOC | Agustín Marchesín | 63 | 60 | −3 | 13 | 1084 |
 | IND | Santiago Mele | 60 | 56 | −4 | 5 | 450 |
