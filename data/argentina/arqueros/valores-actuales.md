@@ -1,10 +1,10 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.26.1_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.27_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
-## Equipos cargados (24)
+## Equipos cargados (25)
 
 | Equipo | Arquero | Lista | Hoy | Cambio | PJ 2026 | Min |
 |---|---|---|---|---|---|---|
@@ -23,6 +23,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | DYJ | Matías Borgogno | 67 | 66 | −1 | 17 | 1530 |
 | INR | Nicolás Bolcato | 67 | 66 | −1 | 43 | 3856 |
 | GIM | Nelson Insfrán | 64 | 65 | +1 | 30 | 2638 |
+| TIG | Felipe Zenobio | 64 | 65 | +1 | 42 | 3780 |
 | VEL | Tomás Marchiori | 66 | 64 | −2 | 20 | 1830 |
 | NOB | Josué Reinatti | 52 | 63 | +11 | 21 | 1890 |
 | PLA | Juan Pablo Cozzani | 63 | 63 | = | 22 | 1980 |
@@ -48,6 +49,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | RIV | Ezequiel Centurión | 48 | 37 | −11 | 0 | 0 |
 | BAN | Gino Santilli | 41 | 36 | −5 | 2 | 180 |
 | IND | Joaquín Blázquez | — | 36 | no estaba | 1 | 90 |
+| TIG | Lautaro Morales | 42 (LAN) | 36 | −6 | 1 | 90 |
 | UNI | Federico Gomes Gerth | 45 | 36 | −9 | 0 | 0 |
 | ARG | Gonzalo Siri | 39 | 35 | −4 | 1 | 90 |
 | DYJ | Lautaro Amadé | 41 | 35 | −6 | 1 | 90 |
@@ -83,14 +85,12 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | Lista | Arquero | Club en la lista | Hoy en el archivo |
 |---|---|---|---|
 | 72 | Orlando Gill | SLO | no está en el archivo |
-| 42 | Lautaro Morales | LAN | libre |
 | 37 | Lautaro Maldonado | INS | no está en el archivo |
 
-## Equipos sin cargar: la lista es la base (10)
+## Equipos sin cargar: la lista es la base (9)
 
 | Lista | Arquero | Club en la lista | Hoy en el archivo (datos 2023) |
 |---|---|---|---|
-| 64 | Felipe Zenobio | TIG | no está en el archivo |
 | 61 | Alan Aguerre | CCO | libre |
 | 58 | Lucas Acosta | ALD | libre |
 | 57 | Luis Ingolotti | ATU | no está en el archivo |

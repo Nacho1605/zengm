@@ -212,7 +212,8 @@ v2.14.1 → v2.14.2).
   buscar filas perdidas entre imágenes.
   El comentario del usuario también se guarda: `"contexto"` del equipo y
   `"sofascore"` de cada jugador en el plantel (el de la Liga; si da el de
-  una copa, aparte: `"sofascoreLibertadores"`); `"peso"` (kg) si lo da.
+  una copa, aparte: `"sofascoreLibertadores"` o `"sofascoreSudamericana"`); `"peso"`
+  (kg) si lo da.
 - Posiciones secundarias (captura "Composición de la plantilla según
   posiciones" de Transfermarkt): `"secundarias"` en el plantel, con los
   nombres en español. Desde la v2.23.9 (forma 5) dan forma: la norma del

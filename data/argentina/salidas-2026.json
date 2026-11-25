@@ -368,6 +368,20 @@
 		{ "club": "BAN", "nombre": "Agustín", "apellido": "Alaniz", "pos": "Extremo derecho", "edad": 24, "pais": "Uruguay", "convocado": 1, "pj": 0 },
 		{ "club": "BAN", "nombre": "Bruno", "apellido": "Sepúlveda", "pos": "Delantero centro", "edad": 34, "pais": "Argentina", "convocado": 26, "pj": 20, "goles": 4, "asist": 1, "amarillas": 2, "dobleAmarilla": 0, "rojas": 0, "entro": 15, "salio": 5, "ppp": 1.35, "min": 605, "nota": "se fue a Platense (ya cargado en PLA)" },
 		{ "club": "BAN", "nombre": "Jeremías", "apellido": "Acosta", "pos": "Delantero centro", "edad": 18, "pais": "Argentina", "convocado": 5, "pj": 2, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 2, "salio": 0, "ppp": 3, "min": 15 },
-		{ "club": "BAN", "nombre": "Valentín", "apellido": "Gonzalez", "pos": "Extremo derecho", "edad": 21, "pais": "Argentina", "convocado": 3, "pj": 0 }
+		{ "club": "BAN", "nombre": "Valentín", "apellido": "Gonzalez", "pos": "Extremo derecho", "edad": 21, "pais": "Argentina", "convocado": 3, "pj": 0 },
+		{ "club": "TIG", "nombre": "Tomás", "apellido": "Sultani", "pos": "Portero", "edad": 28, "pais": "Argentina", "convocado": 23, "pj": 1, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 0, "salio": 0, "ppp": 0, "min": 90 },
+		{ "club": "TIG", "nombre": "Luka", "apellido": "Fuster", "pos": "Portero", "edad": 20, "pais": "Argentina", "convocado": 4, "pj": 0 },
+		{ "club": "TIG", "nombre": "Máximo", "apellido": "Leguizamón", "pos": "Portero", "edad": 19, "pais": "Argentina", "convocado": 1, "pj": 0 },
+		{ "club": "TIG", "nombre": "Nahuel", "apellido": "Banegas", "pos": "Lateral izquierdo", "edad": 30, "pais": "Argentina", "convocado": 32, "pj": 20, "goles": 0, "asist": 1, "amarillas": 3, "dobleAmarilla": 0, "rojas": 1, "entro": 3, "salio": 5, "ppp": 0.85, "min": 1388, "nota": "se fue a Independiente (ya cargado en IND)" },
+		{ "club": "TIG", "nombre": "Germán", "apellido": "Guiffrey", "pos": "Defensa central", "edad": 28, "pais": "Argentina", "convocado": 3, "pj": 0 },
+		{ "club": "TIG", "nombre": "Elías", "apellido": "Cabrera", "pos": "Mediocentro ofensivo", "edad": 23, "pais": "Argentina", "convocado": 25, "pj": 21, "goles": 1, "asist": 1, "amarillas": 3, "dobleAmarilla": 0, "rojas": 0, "entro": 8, "salio": 12, "ppp": 1.33, "min": 1082 },
+		{ "club": "TIG", "nombre": "Jalil", "apellido": "Elías", "pos": "Pivote", "edad": 30, "pais": "Syria", "convocado": 35, "pj": 29, "goles": 2, "asist": 0, "amarillas": 3, "dobleAmarilla": 0, "rojas": 0, "entro": 3, "salio": 11, "ppp": 1.31, "min": 2229, "nota": "se fue a Estudiantes (ya cargado en EST); Sofascore en la Sudamericana con Tigre: 6,85" },
+		{ "club": "TIG", "nombre": "Joaquín", "apellido": "Mosqueira", "pos": "Pivote", "edad": 22, "pais": "Argentina", "convocado": 24, "pj": 9, "goles": 0, "asist": 1, "amarillas": 1, "dobleAmarilla": 0, "rojas": 0, "entro": 8, "salio": 1, "ppp": 1.89, "min": 118, "nota": "se fue a Unión (ya cargado en UNI)" },
+		{ "club": "TIG", "nombre": "Gonzalo", "apellido": "Piñeiro", "pos": "Pivote", "edad": 26, "pais": "Argentina", "convocado": 17, "pj": 11, "goles": 0, "asist": 0, "amarillas": 5, "dobleAmarilla": 0, "rojas": 0, "entro": 6, "salio": 4, "ppp": 1.45, "min": 463 },
+		{ "club": "TIG", "nombre": "Alan", "apellido": "Lezcano", "pos": "Interior derecho", "edad": 19, "pais": "Argentina", "convocado": 8, "pj": 0 },
+		{ "club": "TIG", "nombre": "Lucian", "apellido": "Carracedo", "pos": "Pivote", "edad": 20, "pais": "Argentina", "convocado": 1, "pj": 0 },
+		{ "club": "TIG", "nombre": "Román", "apellido": "Pesolilla", "pos": "Centrocampista", "edad": 20, "pais": "Argentina", "convocado": 1, "pj": 0 },
+		{ "club": "TIG", "nombre": "David", "apellido": "Romero", "pos": "Delantero centro", "edad": 23, "pais": "Argentina", "convocado": 19, "pj": 19, "goles": 11, "asist": 2, "amarillas": 1, "dobleAmarilla": 0, "rojas": 0, "entro": 4, "salio": 9, "ppp": 1.53, "min": 1257, "nota": "emigró; lesionado (luxación acromioclavicular, vuelta probable 10/02/2027)" },
+		{ "club": "TIG", "nombre": "Marco", "apellido": "Rivas", "pos": "Extremo derecho", "edad": 18, "pais": "Peru", "convocado": 12, "pj": 1, "goles": 0, "asist": 0, "amarillas": 0, "dobleAmarilla": 0, "rojas": 0, "entro": 1, "salio": 0, "ppp": 0, "min": 15 }
 	]
 }

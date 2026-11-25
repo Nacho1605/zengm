@@ -1,28 +1,36 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 25/11/2026. Última versión: **v2.26.1**
-(`data/argentina/BBGM_Argentina_2026_v.2.26.1_futbol.json`, sha256
-`2c31557b6ff0102ffd316e15f571799a66c0d2f98ab29bd535474ea8f8fcf6be`): 24 de 30
-equipos con plantel 2026 (el último, Banfield, 30 jugadores), Rendimiento
-completo; fotos de 698 de 757 (faltan las 29 de DYJ y las 30 de BAN: el
-usuario las está poniendo en el juego sobre la v2.26.1); todo el archivo en la
-escala nueva de OVR (20 a 78) y en la forma 5 (posiciones secundarias de los
-24 planteles; defectos); gala de premios propia (21 premios, calibrada).
-Validación: 0 errores. Auditoría: 53 controles, 9 con alertas (las de siempre
-más "Foto": las 59 de DYJ y BAN). Escalera por puesto del usuario actualizada
+Estado al 25/11/2026. Última versión: **v2.27**
+(`data/argentina/BBGM_Argentina_2026_v.2.27_futbol.json`, sha256
+`7247b28251ee80ef27780b8b5cc96faae038f033727562a87f4d3ca47850f9a2`): 25 de 30
+equipos con plantel 2026 (el último, Tigre, 30 jugadores), Rendimiento
+completo; fotos de 748 de 778 (faltan las 30 de TIG: las pone el usuario en
+el juego); todo el archivo en la escala nueva de OVR (20 a 78) y en la forma
+5 (posiciones secundarias de los 25 planteles; defectos); gala de premios
+propia (21 premios, calibrada; nombres como los dejó el usuario). Validación:
+0 errores. Auditoría: 53 controles, 9 con alertas (las de siempre más "Foto":
+las 30 de TIG). Escalera por puesto del usuario actualizada
 (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. **Fotos de DYJ y BAN:** el usuario manda su liga exportada (hecha sobre la
-   v2.26.1): importar con `desde-juego.ts` dándole la v2.26.1 como base.
-   Pendiente: Fernando Román (DYJ) volvió de un préstamo en julio (antes en
-   Aldosivi): al cargar ALD, mirar su primera mitad del año.
-2. **Próximo equipo (v2.27): Tigre.** Después SAR, ALD, ATU, CCO y GEM (orden
+1. **Tigre (v2.27):** OVR propuestos por Claude, a corregir por el usuario
+   (aceptó los de DYJ y BAN con la segunda revisión, v2.26.1). Esperan
+   respuesta: (a) los parientes fuera del archivo (Kevin Barrionuevo, Joaquín
+   Serrago, Miguel Ángel Russo; antes los de BAN y BAR): ¿crearlos? Hoy el
+   cargador no crea libres ni retirados; (b) Mateo Retegui (estaba en el TIG
+   de 2023, OVR 67; juega en Italia, élite) quedó libre al cargar TIG: es el
+   mejor libre del archivo; (c) la lesión de Ramón Arias (operación de
+   rodilla, sin fecha): estimada en 8 partidos. Fotos de TIG cuando las ponga
+   (importar con `desde-juego.ts`, base la versión que usó). Pendiente:
+   Fernando Román (DYJ) volvió de un préstamo en julio (antes en Aldosivi): al
+   cargar ALD, mirar su primera mitad del año.
+2. **Próximo equipo (v2.28): Sarmiento.** Después ALD, ATU, CCO y GEM (orden
    del usuario). Pedir lo de siempre (§3): plantel "Ampliado" y Rendimiento
    2026, debut e inferiores, los que siguen en reserva, lesiones, parientes,
    capitán, comentario, Sofascore (Liga y copas) y rasgos (con defectos). Ya
-   están: secundarias, copas y tablas.
+   están: secundarias, copas y tablas. Jhon Rentería (SAR) figura sin puesto
+   principal en su captura de secundarias (confirmar con su plantel).
 3. **Premios: cerrados** (v2.24.6/v2.24.7; ver `premios.md`). Siglas y
    nombres como los dejó el usuario en el juego (sacó Iron Man y Semifinal
    MVP). Para recalibrar más adelante: una liga exportada con temporadas
@@ -52,7 +60,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 - **Fase 1 (v1.x, terminada):** esqueleto de la liga. Motor de fútbol con
   ajustes del archivo (`activar-futbol.ts`), 163 equipos (30 activos), zonas,
   premios y lesiones en español, drafts generados con norma de posición.
-- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **24 de
+- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **25 de
   30** equipos.
 - **Fase 3 (futura):** historia de la liga (temporadas pasadas, campeones,
   premios, Salón de la Fama — hay 32 retirados en el Salón, mal hechos, como
@@ -61,7 +69,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 ## 2. Equipos
 
 Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
-`RIE BOC RIV RAC SLO IND ROS EST ARG VEL INR GIM LAN HUR TAL BEL INS NOB ERC UNI BAR PLA DYJ BAN`.
+`RIE BOC RIV RAC SLO IND ROS EST ARG VEL INR GIM LAN HUR TAL BEL INS NOB ERC UNI BAR PLA DYJ BAN TIG`.
 
 | Abrev | En el juego | Zona / división | |
 |---|---|---|---|
@@ -79,7 +87,7 @@ Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
 | PLA | Florida Squids (Platense) | Met / Conurbano | ✔ |
 | DYJ | Varela Falcons (Defensa y Justicia) | Met / Conurbano | ✔ |
 | LAN | Lanús Garnets | Met / Conurbano | ✔ |
-| TIG | Victoria Tigers | Met / Conurbano | |
+| TIG | Victoria Tigers | Met / Conurbano | ✔ |
 | EST | La Plata Students ("EDLP") | Fed / Buenos Aires | ✔ |
 | GIM | La Plata Wolves (Gimnasia LP, "GELP") | Fed / Buenos Aires | ✔ |
 | SAR | Junín Greens (Sarmiento) | Fed / Buenos Aires | |
@@ -102,7 +110,7 @@ CSIR = INR, GELP = GIM, SMSJ = SMJ (San Martín de San Juan, inactivo). Colón
 PVN. En las tablas, "Gimnasia y Esgrima" aparece dos veces (GIM y GEM) y
 "Estudiantes" también (EST y ERC).
 
-**Próximos:** TIG, SAR, ALD, ATU, CCO, GEM (de a uno o de
+**Próximos:** SAR, ALD, ATU, CCO, GEM (de a uno o de
 a dos; el usuario manda las capturas). CCO quedó sin arquero (Mansilla, que
 estaba ahí con datos de 2023, pasó a UNI): se arregla al cargar CCO.
 
@@ -307,7 +315,8 @@ E. Gómez (VEL), Di María (ROS), Izquierdoz (LAN), Oroz (ARG), Nacho Fernández
 (GIM), Álex Arce (INR), Céliz (RIE), Galíndez (HUR), Lucas Zelarayán (BEL), Fernando Alarcón (INS), Luca Regiardo (NOB, 20 años),
 Ignacio Vázquez (PLA), Leandro Fernández (DYJ; ídolo, debut en el club en 2010),
 Diego "el Ruso" Rodríguez (BAN, desde agosto; sin confirmación en Transfermarkt;
-hasta su venta a Vélez lo fue Facundo Sanguinetti).
+hasta su venta a Vélez lo fue Facundo Sanguinetti). Tigre: sin capitán fijo, se
+reparten la cinta Laso y Zenobio (los dos con `capitan`) y a veces Russo.
 Unión no tiene capitán fijo; suele serlo Cristian Tarragona (con `capitan`).
 Barracas: sin capitán fijo, suele serlo Iván Tapia (con `capitan`); Carlos
 Arce es el capitán histórico (más presencias en la historia del club).
@@ -334,13 +343,13 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 
 ## 6. Archivos de datos
 
-- `planteles/XXX.json`: los 24 planteles cargados; `planteles/preparacion/`: los
+- `planteles/XXX.json`: los 25 planteles cargados; `planteles/preparacion/`: los
   que están en preparación (hoy ninguno): solo los lee `cruces.ts`; al
   terminar se pasan a `planteles/` y se suman a `armar-v2.sh`.
 - `arqueros/`: la lista de arqueros del usuario y la comparación con hoy
   (ver §4).
-- `salidas-2026.json` (368 en total): los que se fueron de INR (8), GIM (14), LAN (12),
-  HUR (13), TAL (12), BEL (14), INS (15), NOB (15), ERC (20), UNI (21), BAR (3), PLA (6), DYJ (20), BAN (15) e IND (2:
+- `salidas-2026.json` (382 en total): los que se fueron de INR (8), GIM (14), LAN (12),
+  HUR (13), TAL (12), BEL (14), INS (15), NOB (15), ERC (20), UNI (21), BAR (3), PLA (6), DYJ (20), BAN (15), TIG (14) e IND (2:
   Fernández Cedrés y Pussetto, números que dio el usuario; IND y los equipos
   anteriores se cargaron antes de que existiera este archivo) con sus números
   2026. Villa (INR → BOC): con la suma (44 PJ, 4 g, 8 a) su 70 se sostiene.
@@ -375,13 +384,13 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 - `secundarias-2026.json`: posiciones secundarias de los equipos sin cargar
   (captura "Composición de la plantilla según posiciones"; nombres como en el
   plantel). Al cargar el equipo, pasarlas a su plantel (y sacarlo de este
-  archivo: PLA, DYJ y BAN ya pasaron).
+  archivo: PLA, DYJ, BAN y TIG ya pasaron).
 
 ## 7. Pendientes
 
-1. **Cargar los 6 equipos restantes** (TIG, SAR, ALD, ATU, CCO, GEM).
-2. **Fotos:** faltan las 29 de DYJ (v2.25) y las 30 de BAN (v2.26); las pone el
-   usuario en el juego.
+1. **Cargar los 5 equipos restantes** (SAR, ALD, ATU, CCO, GEM).
+2. **Fotos:** faltan las 30 de TIG (v2.27; las de DYJ y BAN entraron en la
+   v2.26.2); las pone el usuario en el juego.
    Completas en los demás desde la v2.23.8 (591 de 591 en los planteles, sin
    miniaturas de Google; 566 de Transfermarkt y 25 de otros sitios con link
    directo). Prospectos sin foto: 21 de los 24 de los planteles (el usuario
@@ -410,6 +419,18 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    (UNI): nieto de Jorge Solari, sobrino de Fernando Redondo y primo de
    Santiago, Esteban y David Solari y de Fernando y Federico Redondo; ninguno
    es pariente directo (el juego no une primos ni tíos): fase 3.
+   Tigre (datos del usuario, 25/11; ninguno está en el archivo): Alan
+   Barrionuevo es hermano de Kevin Barrionuevo (1998, pivote, 0 €; draft de
+   EXC en 2022; EXC 2022–2023, ALT 2024, CGL 2024, ALT 2024–2025, libre desde
+   2025); Tiago Serrago, de Joaquín Serrago (1995, extremo, 0 €; inferiores en
+   River, sin draft en 2015, una década en las divisiones bajas de España e
+   Italia, sin club desde el 01/07/2023); Ignacio Russo es hijo de Miguel
+   Ángel Russo (1956–2025, mediocentro; draft de EST en 1975, jugador de un
+   solo club hasta 1988: 435 partidos en 14 temporadas, cuarto en la historia
+   de EST detrás de Abel Herrera, GF, 483, 1972–1988; Manuel Pelegrina, SF,
+   480, 1938–1952 y 1954–1956; y Mariano Andujar, C, 458, 2006–2009, 2012 y
+   2015–2023: datos para la fase 3). Federico Álvarez tiene un tío y un primo
+   futbolistas (no son parientes directos).
    Banfield (datos del usuario, 25/11; ninguno está en el archivo): Juan
    Luis Alfaro es hermano gemelo de Juan Fernando Alfaro (1999, mediocentro,
    1 M€; draft de Juventud Unida de Gualeguaychú, JUG, en 2018; hoy en el
@@ -594,6 +615,55 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**25/11/2026 (v2.27): Tigre.** Huella:
+`7247b28251ee80ef27780b8b5cc96faae038f033727562a87f4d3ca47850f9a2`.
+
+- Tigre (30 jugadores): capturas del usuario (plantel Ampliado y Rendimiento
+  leídos con zoom; 44 filas, 43.483' contra 43.560' de 44 partidos: la
+  diferencia son 5 expulsiones), debut e inferiores, rasgos, capitanes
+  compartidos (Laso y Zenobio), Sofascore de la Liga y de la Sudamericana
+  (`sofascoreSudamericana`, como el de la Libertadores de PLA), lesión de
+  Ramón Arias (operación de rodilla sin fecha: 8 partidos estimados),
+  Minniti 1,80 m y comentario (`contexto`, con tablas, copas y parientes
+  fuera del archivo). Sin prospectos. Secundarias desde
+  `secundarias-2026.json` (coinciden; Dómina sin número). Leal por la regla:
+  Zenobio. `reemplaza`: 4 (Lautaro Morales 2000, Laso 1991, Soto 1994, Leyes
+  2002); los 9 que tenía TIG pasan a libres, Mateo Retegui entre ellos (67:
+  el mejor libre; ver "Lo que sigue"). Clubes: Almirante Brown = ALT,
+  Estudiantes de Caseros = EBA, Guillermo Brown = GBR; Colleges nuevos: Club
+  Atlético Unión (Mar del Plata) (Laso) y Club Rubio Ñu (Oviedo).
+- Salidas (14) a `salidas-2026.json`. Revisión hacia atrás con el año
+  completo: Jalil Elías (EST) 45 → 60 (29 PJ, 2229' en Tigre, de donde su
+  salida vació al equipo; como Leyes), Nahuel Banegas (IND) 49 → 56 (20 PJ,
+  1388' en Tigre); Mosqueira (UNI 54) igual (+118'). Llegaron con números de
+  otro club cargado: Subiabre (RIV 22 PJ) y Mauro Méndez (BAN 18 PJ, 7
+  goles).
+- OVR (Claude, a corregir por el usuario): once 62,9; desvío contra los de
+  su puesto con minutos parecidos −0,9 (entre NOB −1,1 y SLO −0,3), en línea
+  con un 20.º con octavos de Sudamericana. Barrionuevo 66, Zenobio 65 (lista
+  64; como Insfrán), Russo 65, Laso 64, Pity Martínez 64 (Sofascore 7,23 en
+  1064'), Santiago López 64, Méndez 62. Ajustados con `vecinos.ts` y
+  `pares-minutos.mjs`: López +1, Villalba +1, Peluffo +1, Arias −2.
+- Contra la v2.26.2: 30 jugadores nuevos (TIG), 4 borrados (`reemplaza`), 9
+  ex TIG a libres, Elías y Banegas (OVR, ratings y sueldo) y el orden de 12
+  compañeros suyos; el resto del archivo es igual. Armada dos veces con la
+  misma huella.
+
+**25/11/2026 (v2.26.2): fotos de DYJ y BAN.** Huella:
+`7d33e2f17d7140f5edabac7e57ff5a78cfc3c61daca8cdb406017df8cd023973`.
+
+- Liga del usuario (pretemporada, sin partidos, sobre la v2.26.1) importada
+  con `desde-juego.ts`: 56 fotos; 3 jugadores que el usuario renombró en el
+  juego, a mano con `"semilla"` del nombre viejo y su foto: Héctor David
+  Martínez, Juan Manuel Gutiérrez (DYJ) y Nacho Pais (BAN). Premios que
+  renombró: "Playmaker Award" (antes PMK) y "Team of the Season – D/M/A"
+  (en `premios.ts`, `premios.md` y `premios-para-importar.json`). Los
+  rasgos de personalidad que difieren son de prospectos (los sortea el
+  juego al importar).
+- Comprobado: igual a la liga del usuario en fotos (757 de 757), nombres,
+  OVR y premios; contra la v2.26.1 solo cambian 59 fotos, los 3 nombres y
+  los premios. Auditoría: 8 alertas (ya no "Foto").
+
 **25/11/2026 (v2.26.1): segunda revisión de DYJ y BAN.** Huella:
 `2c31557b6ff0102ffd316e15f571799a66c0d2f98ab29bd535474ea8f8fcf6be`.
 
@@ -1213,10 +1283,10 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.26.1.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.27.
 > Corré la validación y la auditoría sobre ese archivo y confirmame en pocas
-> líneas que entendiste el estado. Seguimos con Tigre: decime qué datos te
-> tengo que mandar.
+> líneas que entendiste el estado. Seguimos con Sarmiento: decime qué datos
+> te tengo que mandar.
 
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara
 con la del repositorio y se importa con `desde-juego.ts`, con la versión sobre
