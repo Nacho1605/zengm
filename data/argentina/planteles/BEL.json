@@ -151,7 +151,8 @@
 				"anio": 2017
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/444100-1758832980.png?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.85
 		},
 		{
 			"n": "14",
@@ -183,9 +184,7 @@
 			},
 			"college": "Club Atlético Paraná",
 			"sofascore": 6.94,
-			"rasgos": [
-				"potente"
-			],
+			"rasgos": ["potente"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/457061-1758831660.png?lm=4711",
 			"secundarias": [
 				"Lateral derecho"
@@ -323,7 +322,8 @@
 			"secundarias": [
 				"Interior izquierdo",
 				"Extremo izquierdo"
-			]
+			],
+			"sofascore": 6.72
 		},
 		{
 			"n": "26",
@@ -420,9 +420,7 @@
 				"anio": 2020
 			},
 			"college": "Club Atlético Unión",
-			"rasgos": [
-				"recuperador"
-			],
+			"rasgos": ["recuperador"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/697065-1758830909.png?lm=4711",
 			"secundarias": [
 				"Mediocentro"
@@ -527,9 +525,7 @@
 			},
 			"sofascore": 7.04,
 			"capitan": true,
-			"rasgos": [
-				"gambeta"
-			],
+			"rasgos": ["gambeta"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/230030-1758831350.png?lm=4711",
 			"secundarias": [
 				"Extremo izquierdo",
@@ -565,9 +561,7 @@
 				"anio": 2017
 			},
 			"sofascore": 6.92,
-			"rasgos": [
-				"larga distancia"
-			],
+			"rasgos": ["larga distancia"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/442679-1758831469.png?lm=4711",
 			"ratings": {
 				"stre": 45,
@@ -652,11 +646,7 @@
 				"anio": 2007
 			},
 			"sofascore": 7.04,
-			"rasgos": [
-				"habilidoso",
-				"pase",
-				"lento"
-			],
+			"rasgos": ["habilidoso", "pase", "lento"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/76163-1757676848.jpg?lm=4711",
 			"secundarias": [
 				"Mediocentro",
@@ -760,7 +750,8 @@
 			"secundarias": [
 				"Interior derecho",
 				"Extremo izquierdo"
-			]
+			],
+			"sofascore": 6.65
 		},
 		{
 			"n": "29",
@@ -833,9 +824,7 @@
 					"nombre": "Brian Fernández"
 				}
 			],
-			"rasgos": [
-				"goleador"
-			],
+			"rasgos": ["goleador"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/333921-1758832545.png?lm=4711",
 			"secundarias": [
 				"Extremo izquierdo"
@@ -887,10 +876,8 @@
 				"reb": 46
 			},
 			"secundarias": [],
-			"rasgos": [
-				"goleador",
-				"morfon"
-			]
+			"rasgos": ["goleador", "morfon"],
+			"sofascore": 6.47
 		},
 		{
 			"n": "37",

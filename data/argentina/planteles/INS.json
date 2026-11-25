@@ -153,7 +153,7 @@
 				"anio": 2016
 			},
 			"college": "Club Atlético Rosario Central",
-			"sofascore": 7,
+			"sofascore": 6.98,
 			"capitan": true,
 			"rasgos": ["aereo"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/376853-1771006860.png?lm=4711",
@@ -187,7 +187,7 @@
 				"club": "ARG",
 				"anio": 2016
 			},
-			"sofascore": 6.95,
+			"sofascore": 6.94,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/407517-1771008059.png?lm=4711",
 			"secundarias": []
 		},
@@ -219,14 +219,13 @@
 				"club": "ALD",
 				"anio": 2011
 			},
-			"rasgos": [
-				"tactico"
-			],
+			"rasgos": ["tactico"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/216730-1771007813.png?lm=4711",
 			"secundarias": [
 				"Pivote",
 				"Mediocentro"
-			]
+			],
+			"sofascore": 6.89
 		},
 		{
 			"n": "22",
@@ -409,10 +408,8 @@
 				"anio": 2019
 			},
 			"college": "Club Atlético Vélez Sarsfield",
-			"sofascore": 7.14,
-			"rasgos": [
-				"pulmon"
-			],
+			"sofascore": 7.11,
+			"rasgos": ["pulmon"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/971423-1771007275.png?lm=4711",
 			"ratings": {
 				"stre": 57,
@@ -491,14 +488,13 @@
 				"club": "SMT",
 				"anio": 2019
 			},
-			"rasgos": [
-				"recuperador"
-			],
+			"rasgos": ["recuperador"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/486030-1771007353.png?lm=4711",
 			"secundarias": [
 				"Defensa central",
 				"Lateral derecho"
-			]
+			],
+			"sofascore": 6.86
 		},
 		{
 			"n": "13",
@@ -642,11 +638,8 @@
 				"club": "RAF",
 				"anio": 2021
 			},
-			"sofascore": 7.09,
-			"rasgos": [
-				"larga distancia",
-				"habilidoso"
-			],
+			"sofascore": 7.1,
+			"rasgos": ["larga distancia", "habilidoso"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/843126-1771006681.png?lm=4711",
 			"secundarias": [
 				"Extremo izquierdo",
@@ -864,9 +857,7 @@
 				"anio": 2019
 			},
 			"college": "Club Deportivo Atlético Huila",
-			"rasgos": [
-				"veloz"
-			],
+			"rasgos": ["veloz"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/628879-1771007680.png?lm=4711",
 			"secundarias": [
 				"Extremo izquierdo",

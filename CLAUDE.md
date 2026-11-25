@@ -52,6 +52,7 @@ node tools/argentina/vecinos.ts ARCHIVO.json EQUIPO  # cada jugador contra sus v
 node tools/argentina/pares-minutos.mjs ARCHIVO.json EQUIPO  # segunda revisión: contra los de su puesto con minutos parecidos
 python3 tools/argentina/revision-datos.py ARCHIVO.json D.json && python3 tools/argentina/revision-modelo.py D.json M.json  # revisión general: OVR esperado de todos (necesita numpy)
 python3 tools/argentina/revision-datos2.py ARCHIVO.json D2.json  # + revision-juveniles.py y revision-defensores.py
+python3 tools/argentina/sofascore-listas.py S.json  # cruza las listas de Sofascore por puesto del usuario con los planteles
 node tools/argentina/arqueros.ts ARCHIVO.json > data/argentina/arqueros/valores-actuales.md  # lista de arqueros vs hoy
 node tools/argentina/ajustar-ovr.ts EQUIPO APELLIDO OVR  # cambia un OVR (y sus ratings a mano)
 node tools/argentina/desde-juego.ts LIGA_DEL_USUARIO.json VERSION_QUE_USÓ.json # importa fotos, camisetas, ratings, parientes y equipos (a equipos.csv)

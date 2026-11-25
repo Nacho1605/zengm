@@ -180,7 +180,8 @@
 				"anio": 2010
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/66736-1583506940.jpg?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.85
 		},
 		{
 			"n": "18",
@@ -661,7 +662,8 @@
 			"secundarias": [
 				"Mediocentro ofensivo",
 				"Extremo izquierdo"
-			]
+			],
+			"sofascore": 6.88
 		},
 		{
 			"n": "17",
@@ -733,7 +735,8 @@
 			"secundarias": [
 				"Extremo izquierdo",
 				"Mediapunta"
-			]
+			],
+			"sofascore": 6.89
 		},
 		{
 			"n": "39",

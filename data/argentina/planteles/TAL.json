@@ -381,7 +381,8 @@
 				"pulmon"
 			],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/670566-1771860337.jpg?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.65
 		},
 		{
 			"n": "2",
@@ -781,7 +782,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/645955-1771862496.jpg?lm=4711",
 			"secundarias": [
 				"Extremo derecho"
-			]
+			],
+			"sofascore": 6.82
 		},
 		{
 			"n": "11",

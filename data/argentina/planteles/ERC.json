@@ -52,9 +52,7 @@
 			"college": "Club Estudiantes de La Plata",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/469761-1732809156.png?lm=4711",
 			"secundarias": [],
-			"rasgos": [
-				"patadura"
-			]
+			"rasgos": ["patadura"]
 		},
 		{
 			"n": "43",
@@ -247,7 +245,8 @@
 			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/150761",
 			"secundarias": [
 				"Lateral izquierdo"
-			]
+			],
+			"sofascore": 6.76
 		},
 		{
 			"n": "2",
@@ -314,7 +313,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/261240-1710427310.jpg?lm=4711",
 			"secundarias": [
 				"Lateral derecho"
-			]
+			],
+			"sofascore": 6.8
 		},
 		{
 			"n": "3",
@@ -578,9 +578,7 @@
 				"anio": 2021
 			},
 			"sofascore": 6.89,
-			"rasgos": [
-				"recuperador"
-			],
+			"rasgos": ["recuperador"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/836253-1706803594.JPG?lm=4711",
 			"secundarias": [
 				"Mediocentro"
@@ -615,11 +613,7 @@
 				"anio": 2016
 			},
 			"sofascore": 7.05,
-			"rasgos": [
-				"cerebro",
-				"recuperador",
-				"pulmon"
-			],
+			"rasgos": ["cerebro", "recuperador", "pulmon"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/671895-1724427442.png?lm=4711",
 			"secundarias": [
 				"Mediocentro"
@@ -655,9 +649,7 @@
 			},
 			"college": "Club Estudiantes de La Plata",
 			"leal": true,
-			"rasgos": [
-				"pulmon"
-			],
+			"rasgos": ["pulmon"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/440865-1717764779.JPG?lm=4711",
 			"secundarias": [
 				"Mediocentro",
@@ -692,14 +684,12 @@
 				"club": "BEL",
 				"anio": 2015
 			},
-			"rasgos": [
-				"larga distancia",
-				"centrador"
-			],
+			"rasgos": ["larga distancia", "centrador"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/342149-1755537157.jpg?lm=4711",
 			"secundarias": [
 				"Lateral izquierdo"
-			]
+			],
+			"sofascore": 6.64
 		},
 		{
 			"n": "10",
@@ -734,7 +724,8 @@
 			"secundarias": [
 				"Mediocentro",
 				"Interior izquierdo"
-			]
+			],
+			"sofascore": 6.53
 		},
 		{
 			"n": "40",

@@ -192,7 +192,7 @@
 			},
 			"college": "Club Atlético Peñarol",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/578737-1739197041.jpg?lm=4711",
-			"sofascore": 7.02,
+			"sofascore": 7.03,
 			"secundarias": [
 				"Lateral izquierdo"
 			]
@@ -328,7 +328,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/438927-1739197175.jpg?lm=4711",
 			"secundarias": [
 				"Interior izquierdo"
-			]
+			],
+			"sofascore": 6.84
 		},
 		{
 			"n": "22",
@@ -390,14 +391,12 @@
 				"anio": 2022
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1046802-1699915063.jpg?lm=4711",
-			"rasgos": [
-				"centrador",
-				"pulmon"
-			],
+			"rasgos": ["centrador", "pulmon"],
 			"secundarias": [
 				"Interior derecho",
 				"Extremo derecho"
-			]
+			],
+			"sofascore": 6.79
 		},
 		{
 			"n": "31",
@@ -492,10 +491,7 @@
 				"anio": 2025
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1123309-1770216831.jpg?lm=4711",
-			"rasgos": [
-				"cerebro",
-				"recuperador"
-			],
+			"rasgos": ["cerebro", "recuperador"],
 			"sofascore": 7.1,
 			"secundarias": [
 				"Mediocentro",
@@ -531,11 +527,8 @@
 				"anio": 2023
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/836518-1739897521.jpg?lm=4711",
-			"rasgos": [
-				"pulmon",
-				"faltero"
-			],
-			"sofascore": 7.05,
+			"rasgos": ["pulmon", "faltero"],
+			"sofascore": 7.13,
 			"secundarias": []
 		},
 		{
@@ -671,13 +664,8 @@
 			},
 			"capitan": true,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/50669-1693315048.png?lm=4711",
-			"rasgos": [
-				"habilidoso",
-				"pase",
-				"lento+",
-				"cerebro"
-			],
-			"sofascore": 7.37,
+			"rasgos": ["habilidoso", "pase", "lento+", "cerebro"],
+			"sofascore": 7.43,
 			"secundarias": [
 				"Mediocentro",
 				"Interior derecho"
@@ -952,9 +940,7 @@
 				"Extremo izquierdo",
 				"Delantero centro"
 			],
-			"rasgos": [
-				"goleador"
-			]
+			"rasgos": ["goleador"]
 		},
 		{
 			"n": "32",
@@ -988,7 +974,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/480778-1493294367.jpg?lm=4711",
 			"secundarias": [
 				"Mediapunta"
-			]
+			],
+			"sofascore": 6.67
 		},
 		{
 			"n": "29",
@@ -1025,7 +1012,8 @@
 					"nombre": "Rodrigo Auzmendi"
 				}
 			],
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.83
 		},
 		{
 			"n": "19",

@@ -301,7 +301,7 @@
 			"ppp": 1.56,
 			"convocado": 46,
 			"fichado": "13/01/2025",
-			"ovr": 65,
+			"ovr": 66,
 			"debut": {
 				"club": "PLA",
 				"anio": 2021
@@ -313,7 +313,8 @@
 			"secundarias": [
 				"Interior izquierdo",
 				"Extremo izquierdo"
-			]
+			],
+			"sofascore": 6.88
 		},
 		{
 			"n": "33",
@@ -742,7 +743,8 @@
 			"secundarias": [
 				"Interior derecho",
 				"Delantero centro"
-			]
+			],
+			"sofascore": 6.63
 		},
 		{
 			"n": "77",

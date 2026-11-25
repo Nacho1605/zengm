@@ -508,7 +508,8 @@
 			"rasgos": [
 				"recuperador"
 			],
-			"sofascoreSudamericana": 6.79
+			"sofascoreSudamericana": 6.79,
+			"sofascore": 6.87
 		},
 		{
 			"n": "10",
@@ -544,7 +545,8 @@
 			],
 			"rasgos": [
 				"cerebro"
-			]
+			],
+			"sofascore": 6.78
 		},
 		{
 			"n": "27",
@@ -805,7 +807,8 @@
 			"rasgos": [
 				"gambeta",
 				"liviano"
-			]
+			],
+			"sofascore": 6.7
 		},
 		{
 			"n": "25",
@@ -907,7 +910,8 @@
 			"secundarias": [],
 			"rasgos": [
 				"goleador"
-			]
+			],
+			"sofascore": 6.74
 		},
 		{
 			"n": "33",
@@ -938,7 +942,8 @@
 				"anio": 2019
 			},
 			"college": "Montevideo Wanderers Fútbol Club",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.78
 		},
 		{
 			"n": null,

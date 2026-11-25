@@ -81,7 +81,8 @@
 			},
 			"ovr": 67,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/284342-1721919720.png?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.89
 		},
 		{
 			"n": "1",
@@ -404,7 +405,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/847023-1742570529.png?lm=4711",
 			"secundarias": [
 				"Defensa central"
-			]
+			],
+			"sofascore": 6.67
 		},
 		{
 			"n": "33",
@@ -468,7 +470,8 @@
 			"college": "Racing Club",
 			"ovr": 65,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/565194-1742570597.png?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.79
 		},
 		{
 			"n": "4",
@@ -1007,7 +1010,8 @@
 			"secundarias": [
 				"Interior derecho",
 				"Extremo derecho"
-			]
+			],
+			"sofascore": 6.64
 		},
 		{
 			"n": "9",

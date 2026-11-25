@@ -101,7 +101,8 @@
 				"achique",
 				"lento"
 			],
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.87
 		},
 		{
 			"n": "1",
@@ -191,7 +192,8 @@
 				"anio": 2018
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/538374-1708009770.JPG?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.88
 		},
 		{
 			"n": "2",
@@ -285,7 +287,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/660140-1744671858.JPG?lm=4711",
 			"secundarias": [
 				"Interior izquierdo"
-			]
+			],
+			"sofascore": 6.87
 		},
 		{
 			"n": "5",
@@ -383,7 +386,8 @@
 			"rasgos": [
 				"tactico"
 			],
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.77
 		},
 		{
 			"n": "29",
@@ -569,7 +573,7 @@
 			"salio": 19,
 			"ppp": 1.57,
 			"convocado": 37,
-			"ovr": 60,
+			"ovr": 58,
 			"debut": {
 				"club": "IND",
 				"anio": 2026
@@ -578,7 +582,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1298516-1771514503.png?lm=4711",
 			"secundarias": [
 				"Mediocentro"
-			]
+			],
+			"sofascore": 6.61
 		},
 		{
 			"n": "10",
@@ -665,7 +670,7 @@
 			"salio": 19,
 			"ppp": 1.44,
 			"convocado": 35,
-			"ovr": 67,
+			"ovr": 65,
 			"debut": {
 				"club": null,
 				"anio": 2022
@@ -675,7 +680,8 @@
 			"secundarias": [
 				"Mediocentro ofensivo",
 				"Extremo derecho"
-			]
+			],
+			"sofascore": 6.64
 		},
 		{
 			"n": "18",

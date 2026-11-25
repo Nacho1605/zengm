@@ -632,7 +632,8 @@
 			"secundarias": [
 				"Extremo izquierdo",
 				"Extremo derecho"
-			]
+			],
+			"sofascore": 6.66
 		},
 		{
 			"n": "11",
@@ -759,7 +760,7 @@
 			"salio": 16,
 			"ppp": 1.85,
 			"convocado": 34,
-			"ovr": 65,
+			"ovr": 63,
 			"debut": {
 				"club": "ALT",
 				"anio": 2018
@@ -770,7 +771,8 @@
 			"secundarias": [
 				"Extremo izquierdo",
 				"Extremo derecho"
-			]
+			],
+			"sofascore": 6.57
 		},
 		{
 			"n": "48",

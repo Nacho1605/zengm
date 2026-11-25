@@ -1,16 +1,18 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 25/11/2026. Última versión: **v2.27.2**
-(`data/argentina/BBGM_Argentina_2026_v.2.27.2_futbol.json`, sha256
-`e24efe51b8fa0e0fbb88a48bf461872e3542b4fb3e6f61171789c63cf2cae81b`): 25 de 30
+Estado al 25/11/2026. Última versión: **v2.27.3**
+(`data/argentina/BBGM_Argentina_2026_v.2.27.3_futbol.json`, sha256
+`cca1b96cce5ff47c57715f4fb99427527a9717103f5ca12090734c2a70e327f0`): 25 de 30
 equipos con plantel 2026 (el último, Tigre, 30 jugadores), Rendimiento
 completo; fotos de 748 de 778 (faltan las 30 de TIG: las pone el usuario en
 el juego); todo el archivo en la escala nueva de OVR (20 a 78) y en la forma
 5 (posiciones secundarias de los 25 planteles; defectos); gala de premios
 propia (21 premios, calibrada; nombres como los dejó el usuario). Validación:
 0 errores. Auditoría: 53 controles, 9 con alertas (las de siempre más "Foto":
-las 30 de TIG). Revisiones de OVR: general (`revision-general-v2.27.md`) y
-de juveniles sin la regla y defensores (`revision-juveniles-defensores-v2.27.md`).
+las 30 de TIG). Revisiones de OVR: general (`revision-general-v2.27.md`), de
+juveniles sin la regla y defensores (`revision-juveniles-defensores-v2.27.md`)
+y con las listas de Sofascore por puesto (v2.27.3). Todos los cambios desde
+la v2.27, para que decida el usuario: `cambios-ovr-desde-v2.27.md`.
 Escalera por puesto del usuario actualizada
 (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
@@ -20,9 +22,11 @@ Escalera por puesto del usuario actualizada
    como en la v2.27.2 (rendimiento como los adultos, sin plus por valor: el
    potencial lo pone el juego por la edad) o vuelve la anterior; (b)
    propuestas sobre valores suyos: Guidara 63 (LAN), Baroni 52, Dávila 52
-   (TAL), Jainikoski 50 (ARG) y la pregunta por Cetré (EST 68); (c) si
-   estira la escala por los montones (60 y 61 con 30 jugadores); (d) si
-   puede dar el Sofascore de todos los defensores y pivotes. Fotos de TIG
+   (TAL), Jainikoski 50 (ARG), la pregunta por Cetré (EST 68) y, desde la
+   v2.27.3, Mansilla 63 (UNI), Rey 65 (IND), A. Auzmendi 64 y Silva Torrejón
+   63 (GIM), y las preguntas por López Muñoz (ARG 70) y Adrián "Maravilla"
+   Martínez (RAC 70); (c) si estira la escala por los montones (60 y 61 con
+   30 jugadores). Todo en `cambios-ovr-desde-v2.27.md`. Fotos de TIG
    cuando las ponga (importar con `desde-juego.ts`, base la versión que usó).
    Pendiente: Fernando Román (DYJ) volvió de un préstamo en julio (antes en
    Aldosivi): al cargar ALD, mirar su primera mitad del año.
@@ -616,6 +620,39 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**25/11/2026 (v2.27.3): listas de Sofascore por puesto.** Huella:
+`cca1b96cce5ff47c57715f4fb99427527a9717103f5ca12090734c2a70e327f0`.
+
+- El usuario mandó el Sofascore de la Liga por puesto (arqueros, laterales,
+  centrales, pivotes, mediocentros, mediapuntas, extremos y "9"), guardado
+  tal cual en `sofascore/liga-2026-por-puesto.txt`. Es un acompañamiento,
+  no la verdad absoluta (el usuario). Cada lista corta en un valor distinto
+  (arqueros 6,72; centrales 6,77; laterales 6,60; mediocampo 6,55; ofensivos
+  6,60; "9" 6,25): no figurar es un dato débil (puede tener menos de la
+  mitad de los minutos de la Liga porque jugó copas).
+- `tools/argentina/sofascore-listas.py` cruza las listas con los planteles
+  (apodos: Nacho = Fernández (GIM), Ronaldo = Martínez (VEL), Maravilla =
+  Martínez (RAC); "Sáchez" (BEL) = Sánchez, "Pellegini" = Pellegrini, Silva
+  (GIM) = Silva Torrejón). Fuera del archivo: Gill y Lomónaco (élite),
+  Lescano (ARG, libre en el Brasileirão) y Ávalos (IND, libre en Paraguay);
+  Santiago Sosa (RAC) está en el Vasco da Gama (libre a futuro). "Aranda
+  (RIV)" es un error de la lista (Aranda es de Boca): no se asignó. Maizon
+  Rodríguez (UNI, 6,93) se fue: su valor va a `salidas-2026.json`.
+- 96 valores de `sofascore` en los planteles: 85 nuevos y 11 que cambian
+  contra el que dio el usuario con su equipo (Reinatti 7,37 → 7,29, Nacho
+  Fernández 7,37 → 7,43, Miramón 7,05 → 7,13, Carrizo 7,28 → 7,25, Cerato
+  7,14 → 7,11, etc.; manda la lista, que es la más nueva). Con el Sofascore
+  centrado en el promedio del puesto, el modelo general explica un poco más
+  (R² 0,929 → 0,934).
+- 7 cambios de OVR (ninguno sobre valores del usuario): Reinatti (NOB) 64,
+  Marcich (LAN) 66, De Ritis (SLO) 59, Solari (NOB) 62, Pérez Curci (IND) 58,
+  Abaldo (IND) 65 y Molina (ARG) 63. Propuestas sobre valores del usuario:
+  Mansilla 63, Rey 65, A. Auzmendi 64, Silva Torrejón 63; preguntas: López
+  Muñoz (6,66) y Maravilla Martínez (6,25, 13 goles).
+- Contra la v2.27.2: esos 7 OVR (ratings, sueldo, orden y números de pick
+  que dependen del OVR) y los valores de Sofascore; el resto igual. Armada
+  dos veces con la misma huella; auditoría igual.
+
 **25/11/2026 (v2.27.2): juveniles sin la regla y defensores.** Huella:
 `e24efe51b8fa0e0fbb88a48bf461872e3542b4fb3e6f61171789c63cf2cae81b`.
 

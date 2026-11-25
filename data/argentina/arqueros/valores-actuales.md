@@ -1,6 +1,6 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.27.2_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.27.3_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
@@ -24,8 +24,8 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | INR | Nicolás Bolcato | 67 | 66 | −1 | 43 | 3856 |
 | GIM | Nelson Insfrán | 64 | 65 | +1 | 30 | 2638 |
 | TIG | Felipe Zenobio | 64 | 65 | +1 | 42 | 3780 |
+| NOB | Josué Reinatti | 52 | 64 | +12 | 21 | 1890 |
 | VEL | Tomás Marchiori | 66 | 64 | −2 | 20 | 1830 |
-| NOB | Josué Reinatti | 52 | 63 | +11 | 21 | 1890 |
 | PLA | Juan Pablo Cozzani | 63 | 63 | = | 22 | 1980 |
 | INS | Marcos Ledesma | 59 | 62 | +3 | 17 | 1530 |
 | TAL | Ezequiel Unsaín | 63 | 62 | −1 | 16 | 1440 |

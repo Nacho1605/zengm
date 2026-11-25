@@ -146,7 +146,8 @@
 			"secundarias": [
 				"Lateral izquierdo",
 				"Lateral derecho"
-			]
+			],
+			"sofascore": 6.64
 		},
 		{
 			"n": "22",
@@ -473,7 +474,8 @@
 			"secundarias": [
 				"Interior derecho",
 				"Extremo derecho"
-			]
+			],
+			"sofascore": 6.62
 		},
 		{
 			"n": "16",
@@ -906,7 +908,8 @@
 			"secundarias": [
 				"Interior izquierdo",
 				"Extremo izquierdo"
-			]
+			],
+			"sofascore": 6.55
 		},
 		{
 			"n": "21",

@@ -543,7 +543,8 @@
 			"secundarias": [
 				"Pivote"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1253317-1770651137.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1253317-1770651137.jpg?lm=4711",
+			"sofascore": 6.83
 		},
 		{
 			"n": "8",
@@ -826,7 +827,8 @@
 			"rasgos": [
 				"gambeta"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/581321-1770653614.png?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/581321-1770653614.png?lm=4711",
+			"sofascore": 6.79
 		},
 		{
 			"n": "27",

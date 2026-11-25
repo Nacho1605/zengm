@@ -46,7 +46,8 @@
 				"anio": 2026
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1301353-1781278529.jpg?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.87
 		},
 		{
 			"n": "12",
@@ -146,7 +147,8 @@
 			"rasgos": [
 				"recuperador"
 			],
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.82
 		},
 		{
 			"n": "13",
@@ -251,7 +253,8 @@
 			},
 			"college": "Imbabura Sporting Club",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/312562-1781277280.jpg?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.86
 		},
 		{
 			"n": "6",
@@ -319,7 +322,8 @@
 			"secundarias": [
 				"Lateral derecho",
 				"Interior izquierdo"
-			]
+			],
+			"sofascore": 6.86
 		},
 		{
 			"n": "14",
@@ -593,7 +597,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/840860-1781278898.jpg?lm=4711",
 			"secundarias": [
 				"Pivote"
-			]
+			],
+			"sofascore": 6.85
 		},
 		{
 			"n": "10",
@@ -631,7 +636,8 @@
 			"secundarias": [
 				"Interior derecho",
 				"Mediapunta"
-			]
+			],
+			"sofascore": 6.81
 		},
 		{
 			"n": "11",
@@ -983,7 +989,8 @@
 			},
 			"college": "Club Atlético Newell's Old Boys",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/978970-1781277381.jpg?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.56
 		},
 		{
 			"n": "7",

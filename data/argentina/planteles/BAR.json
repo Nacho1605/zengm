@@ -174,10 +174,7 @@
 				"anio": 2024
 			},
 			"sofascore": 6.97,
-			"rasgos": [
-				"aereo",
-				"potente"
-			],
+			"rasgos": ["aereo", "potente"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1020837-1751483391.jpg?lm=4711",
 			"secundarias": []
 		},
@@ -210,7 +207,8 @@
 				"anio": 2018
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/537257-1706803525.JPG?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.8
 		},
 		{
 			"n": "2",
@@ -274,9 +272,7 @@
 			},
 			"college": "Club Sportivo Miramar Misiones",
 			"sofascore": 7.19,
-			"rasgos": [
-				"potente"
-			],
+			"rasgos": ["potente"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/header/227781-1625134507.jpg?lm=4711",
 			"secundarias": []
 		},
@@ -312,9 +308,7 @@
 				"tipo": "Desgarro muscular",
 				"partidos": 3
 			},
-			"rasgos": [
-				"potente"
-			],
+			"rasgos": ["potente"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/69802-1636410574.JPG?lm=4711",
 			"secundarias": []
 		},
@@ -382,15 +376,13 @@
 				"anio": 2019
 			},
 			"college": "Club Atlético Aldosivi",
-			"rasgos": [
-				"larga distancia",
-				"centrador"
-			],
+			"rasgos": ["larga distancia", "centrador"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/721235-1692106274.JPG?lm=4711",
 			"secundarias": [
 				"Interior izquierdo",
 				"Extremo izquierdo"
-			]
+			],
+			"sofascore": 6.8
 		},
 		{
 			"n": "17",
@@ -489,7 +481,8 @@
 			"secundarias": [
 				"Defensa central",
 				"Lateral izquierdo"
-			]
+			],
+			"sofascore": 6.83
 		},
 		{
 			"n": "35",
@@ -519,9 +512,7 @@
 				"club": "ARG",
 				"anio": 2016
 			},
-			"rasgos": [
-				"cerebro"
-			],
+			"rasgos": ["cerebro"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/399887-1771937412.jpg?lm=4711",
 			"secundarias": [
 				"Mediocentro"
@@ -556,9 +547,7 @@
 				"anio": 2010
 			},
 			"college": "Boyacá Chicó Fútbol Club",
-			"rasgos": [
-				"recuperador"
-			],
+			"rasgos": ["recuperador"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/147670-1720647262.jpg?lm=4711",
 			"secundarias": [
 				"Mediocentro",
@@ -598,7 +587,8 @@
 			"secundarias": [
 				"Defensa central",
 				"Mediocentro"
-			]
+			],
+			"sofascore": 6.76
 		},
 		{
 			"n": "19",
@@ -726,7 +716,8 @@
 			},
 			"college": "Club Atlético San Lorenzo de Almagro",
 			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/150422",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.8
 		},
 		{
 			"n": "33",
@@ -792,14 +783,13 @@
 				"anio": 2015
 			},
 			"capitan": true,
-			"rasgos": [
-				"pelota parada"
-			],
+			"rasgos": ["pelota parada"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/697405-1646482665.JPG?lm=4711",
 			"secundarias": [
 				"Pivote",
 				"Mediocentro"
-			]
+			],
+			"sofascore": 6.82
 		},
 		{
 			"n": "28",
@@ -1003,10 +993,7 @@
 				"anio": 2017
 			},
 			"college": "Club Estudiantes de La Plata",
-			"rasgos": [
-				"aereo",
-				"potente"
-			],
+			"rasgos": ["aereo", "potente"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/538880-1715627909.JPG?lm=4711",
 			"parientes": [
 				{
@@ -1113,9 +1100,7 @@
 			"college": "Club Tiro Federal y Deportivo Morteros",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/289149-1721144407.png?lm=4711",
 			"secundarias": [],
-			"rasgos": [
-				"erratico"
-			]
+			"rasgos": ["erratico"]
 		},
 		{
 			"n": "7",

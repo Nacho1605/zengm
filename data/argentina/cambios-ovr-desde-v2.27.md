@@ -1,8 +1,9 @@
 # Cambios de OVR desde la v2.27 (para que decida el usuario)
 
-58 jugadores cambiados (aplicados en la v2.27.1 y la v2.27.2) y 5 propuestas
+64 jugadores cambiados (aplicados en la v2.27.1, v2.27.2 y v2.27.3) y 11 propuestas o preguntas
 sobre valores del usuario (sin aplicar). Revisión: G = general (v2.27.1),
-J = juveniles sin la regla (v2.27.2), D = defensores (v2.27.2). Si el usuario
+J = juveniles sin la regla (v2.27.2), D = defensores (v2.27.2), S = con las listas
+de Sofascore por puesto del usuario (v2.27.3; `sofascore/liga-2026-por-puesto.txt`). Si el usuario
 vuelve a su regla de juveniles, se deshacen de una vez los 38 marcados con J.
 Detalle: `revision-general-v2.27.md` y `revision-juveniles-defensores-v2.27.md`.
 
@@ -24,9 +25,16 @@ Detalle: `revision-general-v2.27.md` y `revision-juveniles-defensores-v2.27.md`.
 | ROS | 24 | Juan Giménez | 46 → 44 | J | 181'; sin el plus de 2 M€. |
 | BOC | – | Matías Satas (prospecto) | 37 → 36 | J | 91'; sin el plus de 1 M€. |
 
-## Laterales (10)
+## Arqueros (1)
 | Eq. | N.º | Jugador | OVR | Rev. | Por qué |
 |---|---|---|---|---|---|
+| NOB | 30 | Josué Reinatti | 63 → 64 | S | Sofascore 7,29 (4.º arquero): arriba de Cozzani (63, sin Sofascore en la lista). |
+
+## Laterales (12)
+| Eq. | N.º | Jugador | OVR | Rev. | Por qué |
+|---|---|---|---|---|---|
+| LAN | 6 | Sasha Marcich | 65 → 66 | S | El lateral que más jugó (3928'), Sofascore 6,88: como Prieto (ARG, 66; 6,96) y E. Gómez (VEL, 66; 6,94). |
+| SLO | 6 | Mathías De Ritis | 61 → 59 | S | 2044' y SLO sumó menos con él; no figura en la lista (debajo de 6,62 o menos de la mitad de la liga): como Benítez y Lagos (59). |
 | TIG | 24 | Federico Álvarez | 60 → 61 | D | Sofascore 6,92; Tigre sumó más con él: como Garay (61). |
 | UNI | 15 | Juan Pintado | 52 → 54 | D | 697' desde julio (por partido), 2 a. |
 | UNI | 18 | Lucas Ayala | 53 → 54 | J | 19 años, 1165', 2 a: como D. Martínez (BAR, 54). |
@@ -51,11 +59,13 @@ Detalle: `revision-general-v2.27.md` y `revision-juveniles-defensores-v2.27.md`.
 | ARG | 28 | Joaquín Gho | 46 → 41 | G | Sin minutos: debajo de J. Portillo (RIV, 42). |
 | ARG | 18 | Federico Mancuello | 43 → 40 | G | 12' en el año. |
 
-## Ofensivos (19)
+## Ofensivos (21)
 | Eq. | N.º | Jugador | OVR | Rev. | Por qué |
 |---|---|---|---|---|---|
+| IND | 19 | Matías Abaldo | 67 → 65 | S | 9 G+A en 2231', Sofascore 6,64 (bajo): apenas arriba de Ó. Cortés (HUR, 64; mismos goles y asistencias, Sofascore 6,79), por el valor (5 M€). |
+| NOB | 32 | Santiago Solari | 60 → 62 | S | 8 G+A en 2298' (RAC + NOB), Sofascore 6,77: arriba de Conechny y Rigoni (6,64 y 6,65). |
 | BOC | 19 | Leonel Flores | 69 → 65 | J | 19 años, 1805', 8 G+A: arriba de Aranda (BOC, 64). Potencial 86 → 82. |
-| IND | 16 | Mateo Pérez Curci | 62 → 60 | G | 3 G+A en 1954': como Millán (IND, 60). |
+| IND | 16 | Mateo Pérez Curci | 62 → 58 | G+S | 3 G+A en 1954' y Sofascore 6,61 (bajo para su puesto): como Maroni (BAR, 58). |
 | NOB | 20 | Facundo Guch | 54 → 59 | J | 19 años, 2106', 6 G+A: un poco debajo de Gulli (SLO, 61). |
 | ROS | 26 | Giovanni Cantizano | 51 → 57 | J | 19 años, 1074', 6 G+A: como Maroni (BAR, 58), un poco menos. |
 | INR | 33 | Matías Reali | 54 → 55 | G | 5 G+A en 1288' (SLO + INR): como Bisanz (HUR, 55). |
@@ -74,9 +84,10 @@ Detalle: `revision-general-v2.27.md` y `revision-juveniles-defensores-v2.27.md`.
 | NOB | 39 | Thomas Rios | 40 → 43 | J | 20 años, 418', 1 a. |
 | ARG | – | Facundo Carrizo (prospecto) | 39 → 43 | J | 19 años, 534' en Primera. |
 
-## Delanteros (6)
+## Delanteros (7)
 | Eq. | N.º | Jugador | OVR | Rev. | Por qué |
 |---|---|---|---|---|---|
+| ARG | 27 | Tomás Molina | 65 → 63 | S | 8 G+A en 2493', Sofascore 6,57: como Estigarribia y Cóccaro (61; 6,69 y 6,64) con el plus de su equipo (3.º). |
 | BOC | 9 | Milton Giménez | 52 → 54 | G | 4 goles en 634': como I. Ramírez (NOB, 54). |
 | BEL | 37 | Lautaro Gutiérrez | 47 → 52 | J | 20 años, 603', 4 g y 1 a: debajo de M. Giménez (54). |
 | IND | 34 | Felipe Tempone | 44 → 46 | J | 20 años, 428', 3 G+A. |
@@ -92,3 +103,9 @@ Detalle: `revision-general-v2.27.md` y `revision-juveniles-defensores-v2.27.md`.
 | TAL | 49 | Valentín Dávila | 45 | 52 | 19 años, 920', 4 goles: como I. Ramírez (NOB, 54), un poco menos. |
 | ARG | 48 | Facundo Jainikoski | 46 | 50 | 18 años, 943', 3 G+A: como G. Morales (BAR, 52), un poco menos. |
 | EST | 18 | Edwuin Cetré | 68 | 66 (pregunta) | 1771', entró 26 veces desde el banco, 7 G+A: los números lo ubican cerca de 61; Valdés (VEL, 67) produjo más. |
+| UNI | 21 | Matías Mansilla | 61 | 63 | Arquero, 36 PJ con Sofascore 7,03: arriba de Cozzani (63) y M. Ledesma (62), que no figuran en la lista. |
+| IND | 33 | Rodrigo Rey | 67 | 65 | Arquero, Sofascore 6,87 (de los más bajos): debajo de Insfrán (6,99) y Zenobio (6,95), los dos 65. Tu lista: 68. |
+| GIM | 29 | Agustín Auzmendi | 62 | 64 | 12 G+A en 2256' con Sofascore 6,83 (de los mejores "9"): Sartori y Molina, con menos, tienen 65 y 63. |
+| GIM | 24 | Pedro Silva Torrejón | 61 | 63 | Lateral, 2930' con Sofascore 6,84: como Schott y T. Silva (62; 6,65 y 6,85), un poco más. |
+| ARG | 10 | Hernán López Muñoz | 70 | (pregunta) | Sofascore 6,66, bajo para un mediapunta (el promedio es 6,91), con 7 G+A en 1881': los números lo ubican cerca de 64. |
+| RAC | 9 | Adrián Martínez | 70 | (pregunta) | 13 goles, pero Sofascore 6,25 (el más bajo de los "9" de la lista). Lo dejaste en 70 a propósito. |

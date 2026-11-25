@@ -60,13 +60,13 @@
 			"ppp": 1.52,
 			"convocado": 26,
 			"fichado": "01/01/2024",
-			"ovr": 63,
+			"ovr": 64,
 			"debut": {
 				"club": "NOB",
 				"anio": 2024
 			},
 			"college": "Club Atlético River Plate",
-			"sofascore": 7.37,
+			"sofascore": 7.29,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1229028-1721743621.jpg?lm=4711",
 			"secundarias": []
 		},
@@ -260,7 +260,7 @@
 				"club": "QUI",
 				"anio": 2017
 			},
-			"sofascore": 7.28,
+			"sofascore": 7.25,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/522204-1755535394.jpg?lm=4711",
 			"secundarias": [
 				"Lateral izquierdo",
@@ -363,7 +363,7 @@
 				"club": "NOB",
 				"anio": 2026
 			},
-			"sofascore": 6.94,
+			"sofascore": 6.9,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1139402-1771512898.png?lm=4711",
 			"secundarias": [
 				"Interior izquierdo",
@@ -537,7 +537,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1328380-1754068588.png?lm=4711",
 			"secundarias": [
 				"Mediocentro"
-			]
+			],
+			"sofascore": 6.85
 		},
 		{
 			"n": "10",
@@ -604,7 +605,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/842141-1621169719.jpg?lm=4711",
 			"secundarias": [
 				"Mediocentro"
-			]
+			],
+			"sofascore": 6.66
 		},
 		{
 			"n": "29",
@@ -734,7 +736,8 @@
 			"secundarias": [
 				"Extremo izquierdo",
 				"Extremo derecho"
-			]
+			],
+			"sofascore": 6.87
 		},
 		{
 			"n": "19",
@@ -929,7 +932,7 @@
 			"ppp": 1.33,
 			"convocado": 9,
 			"fichado": "02/09/2026",
-			"ovr": 60,
+			"ovr": 62,
 			"debut": {
 				"club": "JUU",
 				"anio": 2019
@@ -947,7 +950,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/866059-1724348548.png?lm=4711",
 			"secundarias": [
 				"Extremo izquierdo"
-			]
+			],
+			"sofascore": 6.77
 		},
 		{
 			"n": "18",
@@ -987,7 +991,8 @@
 			"secundarias": [
 				"Interior derecho",
 				"Delantero centro"
-			]
+			],
+			"sofascore": 6.89
 		},
 		{
 			"n": "52",
@@ -1052,7 +1057,8 @@
 			},
 			"college": "Rampla Juniors Fútbol Club",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/454625-1710100418.jpg?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.64
 		},
 		{
 			"n": "99",

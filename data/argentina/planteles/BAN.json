@@ -81,12 +81,7 @@
 				"anio": 2011
 			},
 			"secundarias": [],
-			"rasgos": [
-				"pies+",
-				"pelota parada",
-				"reflejos",
-				"inseguro"
-			],
+			"rasgos": ["pies+", "pelota parada", "reflejos", "inseguro"],
 			"capitan": true,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/90800-1720121389.png?lm=4711"
 		},
@@ -146,7 +141,8 @@
 			"secundarias": [
 				"Lateral izquierdo"
 			],
-			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/941511-1771515778.jpg?lm=4711"
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/941511-1771515778.jpg?lm=4711",
+			"sofascore": 6.64
 		},
 		{
 			"n": "37",
@@ -611,10 +607,7 @@
 			"secundarias": [
 				"Extremo derecho"
 			],
-			"rasgos": [
-				"pulmon",
-				"faltero"
-			],
+			"rasgos": ["pulmon", "faltero"],
 			"sofascore": 6.96,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1115868-1755787086.jpg?lm=4711"
 		},
@@ -685,9 +678,7 @@
 				"Interior izquierdo",
 				"Extremo izquierdo"
 			],
-			"rasgos": [
-				"larga distancia"
-			],
+			"rasgos": ["larga distancia"],
 			"sofascore": 6.87,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1232512-1771518003.jpg?lm=4711"
 		},
@@ -782,9 +773,7 @@
 				"Extremo derecho",
 				"Delantero centro"
 			],
-			"rasgos": [
-				"erratico"
-			],
+			"rasgos": ["erratico"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1301427-1771518322.jpg?lm=4711"
 		},
 		{
@@ -818,9 +807,7 @@
 			"secundarias": [
 				"Interior izquierdo"
 			],
-			"rasgos": [
-				"sin aire"
-			],
+			"rasgos": ["sin aire"],
 			"sofascore": 6.84,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/983867-1771517705.jpg?lm=4711"
 		},
@@ -920,11 +907,7 @@
 			"secundarias": [
 				"Extremo izquierdo"
 			],
-			"rasgos": [
-				"aereo",
-				"potente",
-				"erratico"
-			],
+			"rasgos": ["aereo", "potente", "erratico"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/252209-1770830948.png?lm=4711"
 		},
 		{
@@ -991,10 +974,7 @@
 				"anio": 2014
 			},
 			"secundarias": [],
-			"rasgos": [
-				"aereo",
-				"erratico"
-			],
+			"rasgos": ["aereo", "erratico"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/343163-1771518014.jpg?lm=4711"
 		},
 		{

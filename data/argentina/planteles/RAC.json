@@ -777,7 +777,8 @@
 			"secundarias": [
 				"Extremo derecho",
 				"Mediapunta"
-			]
+			],
+			"sofascore": 6.64
 		},
 		{
 			"n": "7",
@@ -889,7 +890,8 @@
 				"aereo",
 				"morfon"
 			],
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.25
 		},
 		{
 			"n": "32",

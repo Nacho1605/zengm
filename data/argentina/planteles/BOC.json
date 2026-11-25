@@ -89,9 +89,7 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/292985-1785758895.png?lm=4711",
 			"sofascore": 7.09,
 			"secundarias": [],
-			"rasgos": [
-				"achique"
-			]
+			"rasgos": ["achique"]
 		},
 		{
 			"n": "12",
@@ -312,9 +310,7 @@
 			},
 			"ovr": 55,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/776303-1695024223.jpg?lm=4711",
-			"rasgos": [
-				"tactico"
-			],
+			"rasgos": ["tactico"],
 			"secundarias": []
 		},
 		{
@@ -376,9 +372,7 @@
 			"secundarias": [
 				"Lateral derecho"
 			],
-			"rasgos": [
-				"tactico"
-			]
+			"rasgos": ["tactico"]
 		},
 		{
 			"n": "3",
@@ -412,9 +406,7 @@
 			"secundarias": [
 				"Extremo izquierdo"
 			],
-			"rasgos": [
-				"tactico"
-			]
+			"rasgos": ["tactico"]
 		},
 		{
 			"n": "27",
@@ -578,14 +570,12 @@
 			},
 			"ovr": 68,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/423436-1739827128.jpg?lm=4711",
-			"rasgos": [
-				"recuperador",
-				"pulmon"
-			],
+			"rasgos": ["recuperador", "pulmon"],
 			"secundarias": [
 				"Mediocentro",
 				"Interior derecho"
-			]
+			],
+			"sofascore": 6.87
 		},
 		{
 			"n": "5",
@@ -616,15 +606,7 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/166237-1692881087.jpg?lm=4711",
 			"capitan": true,
-			"rasgos": [
-				"habilidoso",
-				"pase+",
-				"recuperador",
-				"lento",
-				"cerebro+",
-				"sin aire",
-				"larga distancia"
-			],
+			"rasgos": ["habilidoso", "pase+", "recuperador", "lento", "cerebro+", "sin aire", "larga distancia"],
 			"sofascore": 7.74,
 			"secundarias": [
 				"Mediocentro"
@@ -890,9 +872,7 @@
 			"college": "Club Deportes Tolima",
 			"ovr": 71,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/493000-1781278600.jpg?lm=4711",
-			"rasgos": [
-				"veloz+"
-			],
+			"rasgos": ["veloz+"],
 			"sofascore": 7.18,
 			"secundarias": [
 				"Extremo derecho",
@@ -961,9 +941,7 @@
 			},
 			"ovr": 65,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1291699-1789658026.jpg?lm=4711",
-			"rasgos": [
-				"gambeta"
-			],
+			"rasgos": ["gambeta"],
 			"secundarias": [
 				"Extremo izquierdo",
 				"Delantero centro"
@@ -1006,10 +984,7 @@
 				"Extremo izquierdo",
 				"Delantero centro"
 			],
-			"rasgos": [
-				"gambeta",
-				"morfon"
-			]
+			"rasgos": ["gambeta", "morfon"]
 		},
 		{
 			"n": "16",
@@ -1040,13 +1015,11 @@
 			"college": "Club Atlético Peñarol",
 			"ovr": 71,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/481367-1739899560.jpg?lm=4711",
-			"rasgos": [
-				"goleador",
-				"erratico"
-			],
+			"rasgos": ["goleador", "erratico"],
 			"secundarias": [
 				"Extremo derecho"
-			]
+			],
+			"sofascore": 6.8
 		},
 		{
 			"n": "28",
@@ -1078,9 +1051,7 @@
 			"ovr": 58,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/514120-1740664400.png?lm=4711",
 			"secundarias": [],
-			"rasgos": [
-				"goleador"
-			]
+			"rasgos": ["goleador"]
 		},
 		{
 			"n": "9",
@@ -1110,9 +1081,7 @@
 			},
 			"ovr": 54,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/730779-1739899590.jpg?lm=4711",
-			"rasgos": [
-				"potente"
-			],
+			"rasgos": ["potente"],
 			"secundarias": []
 		},
 		{
@@ -1145,10 +1114,7 @@
 			"college": "Club Sport Emelec",
 			"ovr": 64,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/139503-1781508325.jpg?lm=4711",
-			"rasgos": [
-				"aereo+",
-				"erratico+"
-			],
+			"rasgos": ["aereo+", "erratico+"],
 			"secundarias": [
 				"Extremo izquierdo",
 				"Extremo derecho"

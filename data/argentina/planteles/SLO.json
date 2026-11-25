@@ -267,7 +267,8 @@
 				"anio": 2015
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/348273-1770650569.png?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.81
 		},
 		{
 			"n": "42",
@@ -414,7 +415,7 @@
 			"salio": 11,
 			"ppp": 1.03,
 			"convocado": 39,
-			"ovr": 61,
+			"ovr": 59,
 			"debut": {
 				"club": "BAN",
 				"anio": 2024
@@ -455,7 +456,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/966316-1749582727.jpg?lm=4711",
 			"secundarias": [
 				"Defensa central"
-			]
+			],
+			"sofascore": 6.79
 		},
 		{
 			"n": "30",
@@ -1000,7 +1002,8 @@
 			"secundarias": [
 				"Extremo izquierdo",
 				"Extremo derecho"
-			]
+			],
+			"sofascore": 6.77
 		},
 		{
 			"n": "29",
@@ -1032,7 +1035,8 @@
 			"college": "Club Plaza Colonia de Deportes",
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/690727-1755788528.jpg?lm=4711",
 			"rasgos": ["aereo"],
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.72
 		},
 		{
 			"n": "21",

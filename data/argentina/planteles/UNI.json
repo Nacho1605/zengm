@@ -123,9 +123,7 @@
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/826528-1684910778.jpg?lm=4711",
 			"secundarias": [],
-			"rasgos": [
-				"estatico"
-			]
+			"rasgos": ["estatico"]
 		},
 		{
 			"n": "40",
@@ -187,7 +185,8 @@
 				"anio": 2023
 			},
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1103988-1721140292.png?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.81
 		},
 		{
 			"n": "4",
@@ -315,9 +314,7 @@
 				"club": "UNI",
 				"anio": 2015
 			},
-			"rasgos": [
-				"larga distancia"
-			],
+			"rasgos": ["larga distancia"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/395216-1721143230.png?lm=4711",
 			"secundarias": [
 				"Interior izquierdo"
@@ -358,7 +355,8 @@
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1159650-1744728756.png?lm=4711",
 			"secundarias": [
 				"Interior derecho"
-			]
+			],
+			"sofascore": 6.82
 		},
 		{
 			"n": "15",
@@ -522,11 +520,7 @@
 				"club": "TIG",
 				"anio": 2015
 			},
-			"rasgos": [
-				"cerebro",
-				"lento",
-				"liviano"
-			],
+			"rasgos": ["cerebro", "lento", "liviano"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/225481-1758832085.png?lm=4711",
 			"secundarias": [
 				"Pivote"
@@ -633,7 +627,8 @@
 			"secundarias": [
 				"Extremo izquierdo",
 				"Extremo derecho"
-			]
+			],
+			"sofascore": 6.85
 		},
 		{
 			"n": "11",
@@ -699,16 +694,13 @@
 				"anio": 2008
 			},
 			"college": "Comisión de Actividades Infantiles",
-			"rasgos": [
-				"pelota parada+",
-				"gambeta",
-				"lento"
-			],
+			"rasgos": ["pelota parada+", "gambeta", "lento"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/87518-1742570974.png?lm=4711",
 			"secundarias": [
 				"Interior izquierdo",
 				"Extremo izquierdo"
-			]
+			],
+			"sofascore": 6.78
 		},
 		{
 			"n": "46",
@@ -843,7 +835,8 @@
 			"college": "Club Defensores del Pronunciamiento",
 			"rasgos": ["aereo"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/610266-1724864721.jpg?lm=4711",
-			"secundarias": []
+			"secundarias": [],
+			"sofascore": 6.69
 		},
 		{
 			"n": "9",
@@ -912,9 +905,7 @@
 			"capitan": true,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/422698-1699915095.jpg?lm=4711",
 			"secundarias": [],
-			"rasgos": [
-				"patadura"
-			]
+			"rasgos": ["patadura"]
 		},
 		{
 			"n": "38",
