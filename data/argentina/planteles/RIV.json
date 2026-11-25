@@ -284,7 +284,7 @@
 			"salio": 0,
 			"ppp": 1.89,
 			"convocado": 27,
-			"ovr": 41,
+			"ovr": 43,
 			"debut": {
 				"club": "RIV",
 				"anio": 2026
@@ -384,7 +384,7 @@
 			"salio": 6,
 			"ppp": 1.79,
 			"convocado": 38,
-			"ovr": 75,
+			"ovr": 76,
 			"debut": {
 				"club": "RIV",
 				"anio": 2017
@@ -561,7 +561,7 @@
 			"ppp": 1.88,
 			"convocado": 16,
 			"fichado": "31/07/2026",
-			"ovr": 67,
+			"ovr": 66,
 			"debut": {
 				"club": "VEL",
 				"anio": 2025

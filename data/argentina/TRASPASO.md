@@ -1,33 +1,30 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 25/11/2026. Última versión: **v2.27.4**
-(`data/argentina/BBGM_Argentina_2026_v.2.27.4_futbol.json`, sha256
-`4545e760fac61a66963ecee40054e9987c338c83436791c34b1843569788d4a4`): 25 de 30
+Estado al 25/11/2026. Última versión: **v2.27.5**
+(`data/argentina/BBGM_Argentina_2026_v.2.27.5_futbol.json`, sha256
+`3d0b436019a84eb4116cef4a8f89ab0424782f0920766b1ad956fec575903e74`): 25 de 30
 equipos con plantel 2026 (el último, Tigre, 30 jugadores), Rendimiento
 completo; fotos de 748 de 778 (faltan las 30 de TIG: las pone el usuario en
-el juego); todo el archivo en la escala nueva de OVR (20 a 78) y en la forma
-5 (posiciones secundarias de los 25 planteles; defectos); gala de premios
-propia (21 premios, calibrada; nombres como los dejó el usuario). Validación:
-0 errores. Auditoría: 53 controles, 9 con alertas (las de siempre más "Foto":
-las 30 de TIG). Revisiones de OVR: general (`revision-general-v2.27.md`), de
-juveniles sin la regla y defensores (`revision-juveniles-defensores-v2.27.md`)
-y con las listas de Sofascore por puesto (v2.27.3). El usuario ya decidió
-sobre todos los cambios desde la v2.27 (v2.27.4; `cambios-ovr-desde-v2.27.md`),
-menos los juveniles, que van a una revisión de formato.
+el juego); todo el archivo en la escala nueva de OVR (20 a 79) y en la forma
+5 (posiciones secundarias de los 25 planteles; defectos; rasgo "llegada" desde
+la v2.27.5); gala de premios propia (21 premios, calibrada; nombres como los
+dejó el usuario). Validación: 0 errores. Auditoría: 53 controles, 9 con
+alertas (las de siempre más "Foto": las 30 de TIG). Revisiones de OVR: general
+(`revision-general-v2.27.md`), juveniles sin la regla y defensores
+(`revision-juveniles-defensores-v2.27.md`), listas de Sofascore (v2.27.3),
+decisiones del usuario (v2.27.4; `cambios-ovr-desde-v2.27.md`) y ratings a
+mano y punto medio para juveniles (v2.27.5;
+`revision-ratings-mano-y-juveniles.md`; método de juveniles nuevo, ver
+CLAUDE.md).
 Escalera por puesto del usuario actualizada
 (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. **Propuestas a decidir** (`revision-ratings-mano-y-juveniles.md`, 25/11):
-   (a) juveniles: método de punto medio (rendimiento como los adultos,
-   descuento parejo por edad 4/6/8/10 a los 20/19/18/17, el plus por valor de
-   siempre, a mitad de camino con menos de 900', potencial dentro de la escala
-   de la liga): 17 cambios y Dávila 48 (valor suyo); preguntas: Ovando 68 o
-   65, Flores 60 y Barros Schelotto 61; (b) los 11 con ratings a mano: Sosa
-   64, Barbi 30 (pregunta) y "liberar" sus ratings (8 casi iguales a la forma
-   del archivo; González Metilli con "larga distancia+"; Sosa y Cerato: a mano
-   o rasgo nuevo "llegada"). También pendiente: si estira la
+1. **Pendiente del usuario:** los otros 7 con ratings a mano que se
+   propuso liberar (casi iguales a la forma del archivo: Passerini, Durán,
+   Ledesma, Lázaro, Tissera, Merlini y Gauto; Barbi recibió su OVR 30 con sus
+   ratings) no los nombró: quedan a mano hasta que diga. También: si estira la
    escala por los montones (60 y 61 con unos 30 jugadores). Fotos de TIG
    cuando las ponga (importar con `desde-juego.ts`, base la versión que usó).
    Pendiente: Fernando Román (DYJ) volvió de un préstamo en julio (antes en
@@ -235,7 +232,7 @@ lesionados) · RIE 78. Estudiantes queda alto siendo 11.º porque está por juga
 la final de la Libertadores 2026. Los 17 sin cargar tienen datos de 2023
 (47–60).
 
-Techo: Paredes 78, Di María 77, Montiel 75, Almada 74, Correa 73. Orientación
+Techo: Paredes 79, Di María 78, Montiel 76 (+1 en la v2.27.5), Almada 74, Correa 73. Orientación
 en la escala nueva (v2.23.1; no son reglas): pocos por encima de 70;
 titulares de los de arriba 64–72, del resto 56–66; suplentes con minutos
 45–57; pocos minutos 32–45; sin minutos 20–30. Como mucho unos 20 jugadores
@@ -622,6 +619,33 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**25/11/2026 (v2.27.5): rasgo "llegada", top 3 y método nuevo de juveniles.**
+Huella: `3d0b436019a84eb4116cef4a8f89ab0424782f0920766b1ad956fec575903e74`.
+
+- Rasgo nuevo **llegada** (pedido del usuario), en la forma 5: ins +5, dnk +4,
+  fg +4, diq −3 (lateral, carrilero o volante que pisa el área; hecho con los
+  retoques a mano de Sosa y Cerato). Nadie más lo tiene: armar la v2.27.4 con
+  la forma nueva dio la misma huella (4545e760…). Sosa y Cerato pasan de
+  ratings a mano a la forma del archivo con "llegada" (Cerato queda igual que
+  a mano en ins, dnk, fg y diq: 48, 48, 48, 68); González Metilli, a la forma
+  del archivo con "larga distancia+" (tp 76; con sus ratings tenía 78). La
+  página de la escalera ya lo ofrece. `rasgos-usuario.ts` al día (comprobado
+  contra los planteles: mismos rasgos; solo cambia el orden en 16).
+- OVR: Paredes 79, Di María 78, Montiel 76 (+1, pedido del usuario; el resto
+  igual); Sosa 64; Barbi 30 (con sus ratings a mano, movidos parejo).
+- Juveniles con el método de punto medio y las concesiones del usuario:
+  Silvero 58, Arrayago 48, Escudero 45, F. González 43, Ovando 69 (método 68),
+  Escobar 46, E. Verón 41, Barros Schelotto 66 y Andrada 66 (método 61 y 64),
+  Palais 44, Rios 43, Perrotta 59, Godoy 54, Tempone 46, Dávila 48 (valor del
+  usuario). Quedan: Herrera 58, Flores 69 y Aranda 64. El usuario: "hay más
+  factores que afectan el OVR además de las estadísticas netas"; Flores fue
+  convocado a la Selección en los dos últimos partidos (`"seleccion"` en su
+  plantel).
+- Contra la v2.27.4: 20 OVR distintos, los ratings de esos 20 más los de
+  González Metilli y Cerato (mismo OVR, otra forma), sueldo de 19, orden de
+  30 y 8 números de pick; el resto igual. Armada dos veces con la misma
+  huella; validación 0 errores; auditoría igual.
+
 **25/11/2026 (sin versión): revisión de los ratings a mano y punto medio para
 juveniles.** Pedido del usuario. Todo en `revision-ratings-mano-y-juveniles.md`;
 nada aplicado.

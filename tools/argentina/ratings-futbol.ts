@@ -385,6 +385,12 @@ export const FORMA_5: Forma = {
 	secundarias: { una: 0.2, varias: 0.25 },
 	rasgos: {
 		...FORMA_4.rasgos,
+		// Llegada (el usuario, 25/11/2026; hecho a partir de los retoques que
+		// les había dado a mano a Sosa y Cerato, INS): lateral, carrilero o
+		// volante que pisa el área desde atrás. Define mejor, gana de cabeza en
+		// el área rival y remata de media distancia; a cambio descuida un poco
+		// la marca. No es goleador: es el que llega.
+		llegada: { ins: 5, dnk: 4, fg: 4, diq: -3 },
 		// Falla frente al arco (lo contrario de goleador)
 		erratico: { ins: -6, fg: -6, tp: -3 },
 		// Poca técnica: le cuesta gambetear y pasar (lo contrario de habilidoso;

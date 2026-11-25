@@ -108,7 +108,10 @@ v2.14.1 → v2.14.2).
   suave desde 93 (cada punto cuenta la mitad), tope 95, en todo el archivo.
 - Rasgos de juego (arquetipos) en el plantel (`"rasgos"`), según el usuario:
   goleador, larga distancia (antes "pegador"), aereo, gambeta, veloz, pelota parada, habilidoso, pase,
-  cerebro, centrador, recuperador, potente, pulmon, tactico; arqueros:
+  cerebro, centrador, recuperador, potente, pulmon, tactico, llegada (desde
+  la v2.27.5: lateral, carrilero o volante que pisa el área desde atrás; más
+  definición, cabezazo y media distancia, un poco menos de marca; Sosa y
+  Cerato); arqueros:
   reflejos, achique, pies; defectos (forma 5, libertad creativa que dio el
   usuario): lento, erratico, patadura, morfon, liviano, flojo de arriba, sin
   aire, desordenado, faltero; de arqueros: estatico, inseguro (lento,
@@ -118,8 +121,9 @@ v2.14.1 → v2.14.2).
   cada equipo nuevo. A un jugador con ratings a mano, `aplicar-listas.ts` le
   suma el corrimiento del rasgo (el usuario prefiere la consistencia).
 - OVR: valor a mano en el plantel (`ovr`), escala amplia, top sin repetir
-  (Paredes 78, Di María 77, Montiel 75, Almada 74, Correa 73). Desde la
-  v2.23.1 la escala va de 20 a 78: el techo queda en 78 (Paredes y Di María
+  (Paredes 79, Di María 78, Montiel 76, Almada 74, Correa 73; +1 a los tres
+  primeros en la v2.27.5, pedido del usuario). Desde la v2.23.1 la escala va
+  de 20 a 78 (79 desde la v2.27.5): el techo queda arriba (Paredes y Di María
   bien separados del resto) y se abre hacia abajo (piso 20: arqueros y
   juveniles que no jugaron), sin montones (como mucho unos 20 jugadores por
   valor). Correspondencia con la escala vieja en
@@ -169,23 +173,27 @@ v2.14.1 → v2.14.2).
     plagado de estrellas; Racing: año malo y sin estrellas). El recién llegado
     se valora por lo que jugó, no por el nombre (con algo de peso para el
     talento probado).
-  - Juveniles (menores de 19): rendimiento (minutos, rol, producción por
-    minuto) más un plus por valor de mercado (+1 desde 1 M€, +2 desde 2 M€,
-    +3 desde 3,5 M€): el precio también dice algo. Vale para menores de 20 y
-    prospectos. Los que jugaron menos de 300' en Primera: +1 si su reserva
-    quedó entre las 5 primeras de la anual, −1 del 21.º para abajo
-    (`tablas-reserva-2026.json`). Ver propuesta-juveniles.md.
-    **Formato de los juveniles en revisión (el usuario, 25/11):** la prueba de
-    la v2.27.2 (rendimiento como los adultos, sin plus por valor, porque el
-    juego calcula el potencial con la edad: 72,3 − 2,33 × edad + 0,83 × OVR)
-    no quedó: aceptó solo Guch, Cantizano y L. Gutiérrez; los otros 35
-    volvieron en la v2.27.4 al valor con esta regla. Hasta que se defina el
-    formato nuevo, sigue esta regla; ver `revision-juveniles-defensores-v2.27.md`
-    y `cambios-ovr-desde-v2.27.md`. Propuesta de punto medio (25/11, a
-    decidir): `revision-ratings-mano-y-juveniles.md`. El POT lo calcula el
-    juego con el OVR y la edad y lo recalcula cada temporada (no se puede fijar
-    aparte); la regla del usuario descuenta más a los más chicos y eso mantiene los
-    potenciales dentro de la escala de la liga.
+  - Juveniles y prospectos (20 años o menos): método de punto medio,
+    aceptado por el usuario el 25/11 (v2.27.5) con concesiones. (1)
+    Rendimiento como los adultos (minutos, rol, producción, Sofascore); (2)
+    descuento parejo por edad: 4 a los 20, 6 a los 19, 8 a los 18, 10 a los 17;
+    (3) plus por valor de mercado (+1 desde 1 M€, +2 desde 2 M€, +3 desde 3,5
+    M€); (4) con menos de 900', a mitad de camino entre el valor que tenía y el
+    del método; con menos de 300', la regla vieja: +1 si su reserva quedó entre
+    las 5 primeras de la anual, −1 del 21.º para abajo
+    (`tablas-reserva-2026.json`); (5) el POT tiene que caber en la escala de la
+    liga (ninguno muy por encima del mejor POT de los de 21 a 23). Por qué: el
+    POT lo calcula el juego con el OVR y la edad (72,3 − 2,33 × edad + 0,83 ×
+    OVR) y lo recalcula cada temporada (no se puede fijar aparte); el descuento
+    compensa lo que el juego hace crecer a los chicos. El método orienta, no
+    manda: el usuario sostuvo valores más altos por factores que no están en
+    los números (Flores 69 y Aranda 64, convocatoria a la Selección de Flores;
+    Ovando 69, Barros Schelotto y Andrada 66, Herrera 58). Ver
+    `revision-ratings-mano-y-juveniles.md`.
+  - Más allá de las estadísticas (el usuario, 25/11): hay factores que pesan
+    en el OVR y hay que ser muy cuidadoso, por ejemplo una convocatoria a la
+    Selección (`"seleccion"` en el plantel, como Flores). No decir que un OVR
+    está "por encima de lo que rinde" solo por los números.
   - NO castigar la edad; los de media temporada, por partido; las tablas
     (`tablas-2026.json`) y Sofascore son guías, no verdad absoluta.
     Sofascore: el usuario usa 6,90 como barrera (da solo los que la superan;

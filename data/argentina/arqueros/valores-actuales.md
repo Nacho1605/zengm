@@ -1,6 +1,6 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.27.4_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.27.5_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
@@ -63,6 +63,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | BAR | Juan Pablo Insúa | — | 30 | no estaba | 1 | 21 |
 | PLA | Brian Bustos | 41 | 30 | −11 | 0 | 0 |
 | ROS | Damián Fernández | — | 30 | no estaba | 0 | 0 |
+| TAL | Santino Barbi | 35 | 30 | −5 | 0 | 0 |
 | VEL | Álvaro Busso | 40 | 30 | −10 | 0 | 0 |
 | ERC | Francisco Gualtieri | — | 29 | no estaba | 1 | 90 |
 | EST | Rodrigo Borzone | — | 29 | no estaba | 0 | 0 |
@@ -74,7 +75,6 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | VEL | Franco Villalba | — | 25 | no estaba | 0 | 0 |
 | RIE | Iván López | — | 24 | no estaba | 1 | 90 |
 | SLO | Mateo Clemente | — | 24 | no estaba | 0 | 0 |
-| TAL | Santino Barbi | 35 | 24 | −11 | 0 | 0 |
 | VEL | Agustín Cortez | — | 23 | no estaba | 0 | 0 |
 | BAN | Joaquín Molina | — | 22 | no estaba | 0 | 0 |
 | HUR | Nazareno Durán | — | 22 | no estaba | 0 | 0 |

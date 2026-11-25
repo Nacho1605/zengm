@@ -171,7 +171,7 @@
 				"club": "ROS",
 				"anio": 2026
 			},
-			"ovr": 70,
+			"ovr": 69,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1297993-1742571532.png?lm=4711",
 			"sofascore": 7.08,
 			"secundarias": []
@@ -529,7 +529,7 @@
 				"club": "ROS",
 				"anio": 2026
 			},
-			"ovr": 39,
+			"ovr": 41,
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1428253-1787784071.png?lm=4711",
 			"secundarias": []
 		},
@@ -892,7 +892,7 @@
 			"salio": 20,
 			"ppp": 1.97,
 			"convocado": 40,
-			"ovr": 77,
+			"ovr": 78,
 			"debut": {
 				"club": "ROS",
 				"anio": 2006

@@ -561,24 +561,8 @@
 				"anio": 2017
 			},
 			"sofascore": 6.92,
-			"rasgos": ["larga distancia"],
+			"rasgos": ["larga distancia+"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/442679-1758831469.png?lm=4711",
-			"ratings": {
-				"stre": 45,
-				"spd": 51,
-				"jmp": 55,
-				"endu": 56,
-				"ins": 56,
-				"dnk": 57,
-				"ft": 60,
-				"fg": 67,
-				"tp": 78,
-				"oiq": 68,
-				"diq": 40,
-				"drb": 64,
-				"pss": 73,
-				"reb": 41
-			},
 			"secundarias": [
 				"Extremo izquierdo",
 				"Extremo derecho"

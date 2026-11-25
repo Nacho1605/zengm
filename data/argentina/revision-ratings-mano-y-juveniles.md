@@ -6,6 +6,24 @@ propuestas; y buscar un punto medio para valorar juveniles y prospectos, de modo
 que sus potenciales encajen en la fuerza estándar de la liga. Nada aplicado:
 son propuestas.
 
+
+## Decisión del usuario (25/11/2026, aplicada en la v2.27.5)
+- Ratings a mano: acepta Sosa 64, Barbi 30 y González Metilli con "larga
+  distancia+". Crea el rasgo **llegada** (Sosa y Cerato lo llevan, sin ratings
+  a mano). Los otros 7 que se propuso liberar no los nombró: quedan a mano.
+- Además: Paredes 79, Di María 78 y Montiel 76 (+1 al top 3; el resto igual).
+- Juveniles: acepta el método con concesiones. Centrales: Silvero 58,
+  Arrayago 48, Escudero 45, F. González 43; **Ovando 69** y **Herrera 58**
+  (queda). Laterales: Escobar 46, E. Verón 41. Mediocampistas: **Barros
+  Schelotto 66** y **Andrada 66**. Ofensivos: Palais 44, Rios 43; **Flores 69
+  y Aranda 64 quedan**. Delanteros: Perrotta 59, Godoy 54, Tempone 46, Dávila
+  48.
+- El usuario sobre Flores: "No considero que Flores haya tenido el OVR por
+  encima de lo que rinde: como siempre menciono, hay más factores que afectan
+  el OVR además de las estadísticas netas y hay que ser muy cuidadoso con
+  ello. Flores está teniendo un nivel lo suficientemente alto como para haber
+  sido convocado a la Selección Argentina en los últimos dos partidos."
+
 ## 1. Los 11 jugadores con ratings a mano
 
 ### OVR

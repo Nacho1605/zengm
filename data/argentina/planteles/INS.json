@@ -318,29 +318,14 @@
 			"ppp": 1.74,
 			"convocado": 35,
 			"fichado": "14/01/2026",
-			"ovr": 63,
+			"ovr": 64,
 			"debut": {
 				"club": "TIG",
 				"anio": 2017
 			},
 			"sofascore": 6.95,
+			"rasgos": ["llegada"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/464365-1771006775.png?lm=4711",
-			"ratings": {
-				"stre": 54,
-				"spd": 64,
-				"jmp": 55,
-				"endu": 71,
-				"ins": 38,
-				"dnk": 38,
-				"ft": 57,
-				"fg": 46,
-				"tp": 46,
-				"oiq": 56,
-				"diq": 65,
-				"drb": 57,
-				"pss": 54,
-				"reb": 55
-			},
 			"secundarias": [
 				"Interior izquierdo",
 				"Extremo izquierdo"
@@ -409,24 +394,8 @@
 			},
 			"college": "Club Atlético Vélez Sarsfield",
 			"sofascore": 7.11,
-			"rasgos": ["pulmon"],
+			"rasgos": ["pulmon", "llegada"],
 			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/971423-1771007275.png?lm=4711",
-			"ratings": {
-				"stre": 57,
-				"spd": 70,
-				"jmp": 65,
-				"endu": 83,
-				"ins": 48,
-				"dnk": 48,
-				"ft": 61,
-				"fg": 48,
-				"tp": 50,
-				"oiq": 63,
-				"diq": 68,
-				"drb": 59,
-				"pss": 58,
-				"reb": 58
-			},
 			"secundarias": []
 		},
 		{
