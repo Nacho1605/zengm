@@ -1,27 +1,23 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 25/11/2026. Última versión: **v2.27**
-(`data/argentina/BBGM_Argentina_2026_v.2.27_futbol.json`, sha256
-`7247b28251ee80ef27780b8b5cc96faae038f033727562a87f4d3ca47850f9a2`): 25 de 30
+Estado al 25/11/2026. Última versión: **v2.27.1**
+(`data/argentina/BBGM_Argentina_2026_v.2.27.1_futbol.json`, sha256
+`580e7b7e9f5f0002c109cbb6f80d97095e38b98961cbbab5823c48b218b649c7`): 25 de 30
 equipos con plantel 2026 (el último, Tigre, 30 jugadores), Rendimiento
 completo; fotos de 748 de 778 (faltan las 30 de TIG: las pone el usuario en
 el juego); todo el archivo en la escala nueva de OVR (20 a 78) y en la forma
 5 (posiciones secundarias de los 25 planteles; defectos); gala de premios
 propia (21 premios, calibrada; nombres como los dejó el usuario). Validación:
 0 errores. Auditoría: 53 controles, 9 con alertas (las de siempre más "Foto":
-las 30 de TIG). Escalera por puesto del usuario actualizada
+las 30 de TIG). Revisión general de OVR de los 25 planteles hecha
+(`revision-general-v2.27.md`). Escalera por puesto del usuario actualizada
 (https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. **Tigre (v2.27):** OVR propuestos por Claude, a corregir por el usuario
-   (aceptó los de DYJ y BAN con la segunda revisión, v2.26.1). Esperan
-   respuesta: (a) los parientes fuera del archivo (Kevin Barrionuevo, Joaquín
-   Serrago, Miguel Ángel Russo; antes los de BAN y BAR): ¿crearlos? Hoy el
-   cargador no crea libres ni retirados; (b) Mateo Retegui (estaba en el TIG
-   de 2023, OVR 67; juega en Italia, élite) quedó libre al cargar TIG: es el
-   mejor libre del archivo; (c) la lesión de Ramón Arias (operación de
-   rodilla, sin fecha): estimada en 8 partidos. Fotos de TIG cuando las ponga
+1. **Respuestas pendientes del usuario sobre la revisión general:** Guidara
+   (LAN 60, valor suyo; propuesta 62) y Cetré (EST 68, valor suyo; los
+   números dicen menos: pregunta abierta). Fotos de TIG cuando las ponga
    (importar con `desde-juego.ts`, base la versión que usó). Pendiente:
    Fernando Román (DYJ) volvió de un préstamo en julio (antes en Aldosivi): al
    cargar ALD, mirar su primera mitad del año.
@@ -615,6 +611,38 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**25/11/2026 (v2.27.1): revisión general de OVR.** Huella:
+`580e7b7e9f5f0002c109cbb6f80d97095e38b98961cbbab5823c48b218b649c7`.
+
+- Respuestas del usuario: Retegui queda como libre (de Atalanta pasó al
+  Al-Qadisiyah de Arabia Saudita en julio de 2025: no es de élite de las
+  cinco grandes ligas); su valor, como el de todos los libres (escala vieja),
+  se revisa al final. Parientes fuera del archivo: se guardan los datos y se
+  crean cuando estén todas las cargas (los retirados como Miguel Ángel Russo
+  se crean y se rehacen en la v3; ver cómo hacer que el cargador cree
+  retirados y libres). Ramón "Cachila" Arias: limpieza/operación de rodilla
+  al terminar el primer semestre, bacteria e internación cuando estaba por
+  volver, sigue en recuperación a fines de noviembre: 10 partidos estimados
+  (mediados de febrero de 2027). Capitanes de TIG (Laso y Zenobio) bien.
+- Revisión general pedida por el usuario: los 716 jugadores de los 25
+  planteles, con el año completo. Modelo objetivo nuevo
+  (`tools/argentina/revision-datos.py` y `revision-modelo.py`): mínimos
+  cuadrados del OVR contra valor, minutos, titularidades, G+A por 90,
+  Sofascore, edad, capitán, tabla y copas; explica el 93% en jugadores de
+  campo (error típico 2,9) y el 94% en arqueros (4,1). Por equipo nadie se
+  aparta más de ±1,5 (sin cambios en bloque). Dentro de cada equipo, la
+  jerarquía es coherente (un solo caso, Carboni, valor del usuario). Cada
+  jugador marcado (|dif.| ≥ 4,5 con 450' o más: 52) se miró con sus pares.
+- 11 cambios (ninguno sobre valores del usuario): M. Giménez (BOC) 54,
+  Pérez Curci (IND) 60, Reali (INR) 55, B. Sánchez 43, Stringa 44 y
+  Gariglio 45 (RIE), Rodríguez Pagano 58 y Tripichio 64 (SLO), Gho 41, A.
+  Núñez 39 y Mancuello 40 (ARG). Propuestas sobre valores del usuario:
+  Guidara 62 y Cetré (pregunta). Todo, jugador por jugador, en
+  `revision-general-v2.27.md`.
+- Contra la v2.27: esos 11 OVR (ratings y sueldo), el orden de 12 compañeros
+  y la lesión de Arias; el resto igual. Armada dos veces con la misma
+  huella; auditoría igual salvo la lesión.
+
 **25/11/2026 (v2.27): Tigre.** Huella:
 `7247b28251ee80ef27780b8b5cc96faae038f033727562a87f4d3ca47850f9a2`.
 
