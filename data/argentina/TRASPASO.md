@@ -1,8 +1,8 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 26/11/2026. Última versión: **v2.27.8**
-(`data/argentina/BBGM_Argentina_2026_v.2.27.8_futbol.json`, sha256
-`d6b2053dad13dac91dd75e463785bb16d6bcd103511760104b9385176b5be552`): 25 de 30
+Estado al 26/11/2026. Última versión: **v2.27.9**
+(`data/argentina/BBGM_Argentina_2026_v.2.27.9_futbol.json`, sha256
+`adaf38f92d7e7d0e05f931bfbbc33e555619696a67369e9fb3726fdea7f44ec8`): 25 de 30
 equipos con plantel 2026 (el último, Tigre, 30 jugadores), Rendimiento
 completo; fotos de los 778 jugadores de los equipos cargados; todo el archivo en la escala nueva de OVR (20 a 79) y en la forma
 5 (posiciones secundarias de los 25 planteles; defectos; rasgo "llegada" desde
@@ -33,8 +33,9 @@ Escalera por puesto del usuario actualizada
    el draft generado, pero menos de +15: en la v2.27.8, +8; y el descuento de
    los de 17, de 10 a 12. Segunda simulación suya (v2.27.8, hasta 2045): con +8
    la liga aguanta mejor pero sigue bajando (11 mejores de cada equipo: 61 →
-   49 en 2041 → 46 en 2045). Estimado: +18 la mantendría como en 2026. Decide
-   él la suba (ver `simulacion-2042-analisis.md`).
+   49 en 2041 → 46 en 2045). Estimado: +18 la mantendría como en 2026. El
+   usuario eligió +12 (v2.27.9; estimado: unos 54 en 2041) y no descontar más a
+   los juveniles. Confirmar con otra simulación suya cuando quiera.
    **Libres (pregunta del usuario):** 442 en el archivo (345 de 35 años o
    menos); Transfermarkt no los da en bloque. Propuesta: juntar sus números de
    a poco sin calcular (capturas que se transcriben por tandas, o una página
@@ -636,6 +637,16 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**26/11/2026 (v2.27.9): draft generado +12 y Baroni 41.** Huella:
+`adaf38f92d7e7d0e05f931bfbbc33e555619696a67369e9fb3726fdea7f44ec8`.
+
+- Decisiones del usuario sobre la segunda simulación: el draft generado pasa de
+  +8 a +12 (clases 2027-2055: el mejor de cada una, 44-61, media 52; los 10
+  mejores, 41,7 de media); no se descuenta más a los juveniles; Baroni (TAL)
+  43 → 41 (el método).
+- Contra la v2.27.8: Baroni y los 2100 prospectos generados; el resto igual.
+  Armada dos veces con la misma huella; validación 0 errores; auditoría igual.
+
 **26/11/2026 (v2.27.8): draft generado +8 y descuento de los de 17.** Huella:
 `d6b2053dad13dac91dd75e463785bb16d6bcd103511760104b9385176b5be552`.
 

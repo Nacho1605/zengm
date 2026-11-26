@@ -938,8 +938,8 @@ if (ESCALA_TODO) {
 // el juego hace crecer a todos los mismos puntos, y la liga se desinflaba).
 // SUBA_DRAFT puntos de OVR más a cada prospecto generado, parejo (menos la
 // altura; los arqueros sin tiro), con el mismo techo. SUBA_DRAFT=0 arma como
-// la v2.27.7
-const SUBA_DRAFT = Number(process.env.SUBA_DRAFT ?? 8);
+// la v2.27.7; SUBA_DRAFT=8, como la v2.27.8
+const SUBA_DRAFT = Number(process.env.SUBA_DRAFT ?? 12); // +8 en la v2.27.8; +12 desde la v2.27.9 (el usuario, con su segunda simulación)
 if (SUBA_DRAFT > 0) {
 	const TECHO = FORMA_2.techo!;
 	let n = 0;

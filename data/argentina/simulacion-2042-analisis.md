@@ -112,3 +112,6 @@ los 94 prospectos de 2026, idénticos. 20 temporadas (hasta los playoffs de 2045
   pico, a los 25; el POT de 2026 quedó 4,5 arriba del pico real). Esta vez los
   que más llegaron: Aranda 87, Barros Schelotto 85, Herrera 82, Andrada 81,
   Flores 80. La cima de la liga anda en 85-87 entre 2030 y 2038.
+
+## Decisión del usuario sobre la segunda simulación (26/11/2026, v2.27.9)
+- Draft generado: de +8 a +12. No descontar más a los juveniles. Baroni 41.

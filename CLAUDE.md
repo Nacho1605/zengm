@@ -136,11 +136,11 @@ v2.14.1 → v2.14.2).
   generados: `cargar-plantel.ts` los baja con esa correspondencia) y el
   sueldo inicial se calcula con el OVR equivalente de la escala vieja (la
   economía queda como antes). `ESCALA=1` arma como la v2.23.1.
-  Draft generado (los 2100 prospectos ficticios de 2026-2055): desde la
-  v2.27.8, +8 de OVR parejo después de la escala nueva (el usuario, con su liga
-  simulada 2026-2042: no llegaban nunca al nivel de la Primera y la liga se
-  desinflaba; ver `simulacion-2042-analisis.md`). `SUBA_DRAFT=N` arma con otra
-  suba (0 = como la v2.27.7).
+  Draft generado (los 2100 prospectos ficticios de 2026-2055): +12 de OVR
+  parejo después de la escala nueva desde la v2.27.9 (+8 en la v2.27.8; el
+  usuario, con sus dos ligas simuladas: no llegaban al nivel de la Primera y la
+  liga se desinflaba; ver `simulacion-2042-analisis.md`). `SUBA_DRAFT=N` arma
+  con otra suba (0 = como la v2.27.7, 8 = como la v2.27.8).
 - **Escalera por puesto del usuario** (página con todos los jugadores, sus
   números y una columna "Tu OVR" para anotar cambios):
   https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U (copia en
