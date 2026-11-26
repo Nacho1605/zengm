@@ -26,8 +26,12 @@ Escalera por puesto del usuario actualizada
    (https://icamcmusic-ship-it.github.io/bbgm-league-explorer/#/home); igual
    cree que hasta ahora está todo bien. En la v2.27.7 bajó en el juego a 9
    juveniles (Loza, Perrotta, Barros Schelotto, Guch, Andrada, Ovando, Baroni,
-   S. López, Feler) y a 3 de Tigre. Pedirle qué vio (y, si puede, esa liga
-   simulada exportada: se analiza, no se importa).
+   S. López, Feler) y a 3 de Tigre. Mandó la liga simulada (2042, salió de
+   la v2.27.6): análisis en `simulacion-2042-analisis.md`. Lo principal: el
+   draft generado es muy flojo (bajado dos veces: −3 y escala nueva) y la liga
+   se desinfla (mediana 50 → 27, puesto 100: 65 → 43). Propuesta: subir los
+   prospectos generados al nivel con que los hace el juego (unos +15). Decide
+   él.
    **Libres (pregunta del usuario):** 442 en el archivo (345 de 35 años o
    menos); Transfermarkt no los da en bloque. Propuesta: juntar sus números de
    a poco sin calcular (capturas que se transcriben por tandas, o una página
@@ -629,6 +633,16 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**26/11/2026 (sin versión): análisis de la liga simulada del usuario
+(2026 → 2042).** Ver `simulacion-2042-analisis.md`; herramientas en
+`tools/argentina/simulacion/` (solo leen la liga). Salió de la v2.27.6 (776 de
+778 con los mismos ratings). La liga se desinfla: arriba los jóvenes de hoy la
+llevan a 85-88 (2029-2034) y abajo se vacía (mediana 50 → 27) porque el draft
+generado está unos 15 puntos debajo del nivel con que lo hace el juego (y 25
+debajo de los juveniles reales en sus 10 mejores). Crecimiento medio hasta el
+pico: +17 a los 19, +15 a los 20, +10 a los 21; no depende del nivel; el POT
+sobreestima el pico en unos 6.
+
 **26/11/2026 (v2.27.7): liga del usuario (fotos de Tigre y 12 OVR).** Huella:
 `d49be76685177b6e8741fc68c6f75ef765139fdbb6c802a541db82cecf91f644`.
 
