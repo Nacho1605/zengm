@@ -27,6 +27,7 @@
 
 import { nombresCompletos } from "./equipos-csv.ts";
 import { PREMIOS } from "./premios.ts";
+import { EN_INGLES } from "./lesiones.ts";
 import { readFileSync, writeFileSync } from "node:fs";
 import {
 	azar,
@@ -1028,4 +1029,23 @@ if (SUBA_DRAFT > 0) {
 // La v2.0 traía una sola, vieja, con el escudo de Unión
 delete league.events;
 
+// Lesiones en inglés, el idioma del juego (v2.27.11, pedido del usuario): la
+// lista de la liga y las de los jugadores (actuales y su historial)
+if (process.env.INGLES !== "no") {
+	const sinTraducir = new Set<string>();
+	const en = (t: string) => {
+		if (!t || t === "Healthy") return t;
+		if (EN_INGLES[t]) return EN_INGLES[t]!;
+		if (Object.values(EN_INGLES).includes(t)) return t;
+		sinTraducir.add(t);
+		return t;
+	};
+	for (const i of ga.injuries ?? []) i.name = en(i.name);
+	for (const p of league.players) {
+		if (p.injury) p.injury.type = en(p.injury.type);
+		for (const i of p.injuries ?? []) i.type = en(i.type);
+	}
+	if (sinTraducir.size) throw new Error(`Lesiones sin traducir: ${[...sinTraducir].join(", ")}`);
+	console.log("Lesiones en inglés");
+}
 writeFileSync(output, JSON.stringify(league));
