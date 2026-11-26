@@ -115,3 +115,19 @@ los 94 prospectos de 2026, idénticos. 20 temporadas (hasta los playoffs de 2045
 
 ## Decisión del usuario sobre la segunda simulación (26/11/2026, v2.27.9)
 - Draft generado: de +8 a +12. No descontar más a los juveniles. Baroni 41.
+
+## Para la Fase 3 (historia y Salón de la Fama)
+Las dos simulaciones muestran cómo es una carrera en este motor y sirven de
+modelo para armar a los retirados (hoy los 32 del Salón tienen una sola fila
+de ratings, de 2022):
+- Curva: sube hasta los 25, baja desde los 26-27, se retira a los 32 de
+  promedio (2498 retiros en la segunda simulación). Un retirado bien hecho
+  tendría una fila de ratings por temporada con esa forma, y números por
+  temporada en la escala que da el motor.
+- **Salón de la Fama:** en 20 temporadas no entró nadie. El juego lo decide
+  con las win shares de la carrera (`madeHof.basketball.ts`) contra un umbral
+  de 120 × duración de temporada × `hofFactor`. Con 43 partidos de 2 × 45' y
+  `hofFactor` 1,2, el umbral es de unos 103. El mejor puntaje de un retirado
+  fue el de Tomás Aranda: 81 (después Nacho Fernández 40, Fabricio Pérez 40,
+  Di María 38, Paredes 35). Habría que bajar `hofFactor` (ajuste de liga, sin
+  tocar el motor) cuando se arme la Fase 3; a 0,5 el umbral queda en unos 43.

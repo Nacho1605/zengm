@@ -36,6 +36,10 @@ Escalera por puesto del usuario actualizada
    49 en 2041 → 46 en 2045). Estimado: +18 la mantendría como en 2026. El
    usuario eligió +12 (v2.27.9; estimado: unos 54 en 2041) y no descontar más a
    los juveniles. Confirmar con otra simulación suya cuando quiera.
+   Para la Fase 3: en 20 temporadas simuladas nadie entró al Salón de la Fama
+   (umbral de unos 103 con `hofFactor` 1,2; el mejor retirado, Aranda, 81):
+   bajar `hofFactor` (a 0,5, umbral de unos 43). Las simulaciones sirven de
+   modelo para las carreras de los retirados (ver el análisis).
    **Libres (pregunta del usuario):** 442 en el archivo (345 de 35 años o
    menos); Transfermarkt no los da en bloque. Propuesta: juntar sus números de
    a poco sin calcular (capturas que se transcriben por tandas, o una página
