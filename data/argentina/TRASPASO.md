@@ -1,8 +1,8 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 26/11/2026. Última versión: **v2.27.11**
-(`data/argentina/BBGM_Argentina_2026_v.2.27.11_futbol.json`, sha256
-`52e7547659fc1fdb9796e7f423c17d5fd1b99fceee0622a31b01c0899493dd20`, ver bitácora): 25 de 30
+Estado al 26/11/2026. Última versión: **v2.27.12**
+(`data/argentina/BBGM_Argentina_2026_v.2.27.12_futbol.json`, sha256
+`633aa383ec639fdd476908daad1b508e302dcbcd60a8be74e2d1dad31f5cd68b`): 25 de 30
 equipos con plantel 2026 (el último, Tigre, 30 jugadores), Rendimiento
 completo; fotos de los 778 jugadores de los equipos cargados; todo el archivo en la escala nueva de OVR (20 a 79) y en la forma
 5 (posiciones secundarias de los 25 planteles; defectos; rasgo "llegada" desde
@@ -642,6 +642,14 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**26/11/2026 (v2.27.12): nombres oficiales de 16 clubes.** Huella: `633aa383ec639fdd476908daad1b508e302dcbcd60a8be74e2d1dad31f5cd68b`.
+Corregidos por el usuario en la columna "club" de `equipos.csv` (DEF, MID, AGR,
+RIE, ATE, AMM, SMM, GER, JUU, UAI, FLA, VDA, BZT, JJU, MUN, CNU) y en el College
+de un jugador de ERC (Atenas). En el archivo cambian solo 3 Colleges (Bravo:
+Deportivo Riestra; Gualtieri: Club Sportivo y Biblioteca Atenas; Mansilla: Club
+Atlético Ferrocarril Midland); los equipos del juego, iguales. Validación 0
+errores; auditoría igual; misma huella armada dos veces.
+
 **26/11/2026 (v2.27.11): lesiones en inglés.** Pedido del usuario (idioma
 original del juego). Los datos siguen en castellano (`lesiones.ts`, planteles);
 `cargar-plantel.ts` los pasa al inglés al armar con `EN_INGLES` (`INGLES=no`
