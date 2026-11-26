@@ -268,7 +268,7 @@
 			},
 			{
 				"shortName": "TOTS-D",
-				"name": "Team of the Season – D",
+				"name": "All-Defense",
 				"showStats": "defense",
 				"numTeams": 1,
 				"formula": "-1000 + 0*gp",
@@ -286,7 +286,7 @@
 			},
 			{
 				"shortName": "TOTS-M",
-				"name": "Team of the Season – M",
+				"name": "All-Midfield",
 				"showStats": "offense",
 				"numTeams": 1,
 				"formula": "-1000 + 0*gp",
@@ -304,7 +304,7 @@
 			},
 			{
 				"shortName": "TOTS-A",
-				"name": "Team of the Season – A",
+				"name": "All-Attack",
 				"showStats": "offense",
 				"numTeams": 1,
 				"formula": "-1000 + 0*gp",
@@ -322,7 +322,7 @@
 			},
 			{
 				"shortName": "All-Rookie",
-				"name": "Rookie Team of the Season",
+				"name": "All-Rookie",
 				"showStats": "offense",
 				"numTeams": 1,
 				"rookie": true,

@@ -1,5 +1,6 @@
-// Siglas y nombres como los dejó el usuario en el juego (25/11, sobre la
-// v2.26.1: "Playmaker Award" y "Team of the Season – D/M/A"; antes, sobre la
+// Siglas y nombres como los dejó el usuario en el juego (26/11, sobre la
+// v2.27.6: "All-Defense", "All-Midfield", "All-Attack" y "All-Rookie" para los
+// equipos de la temporada; 25/11, sobre la v2.26.1: "Playmaker Award" y "Team of the Season – D/M/A"; antes, sobre la
 // v2.24.5): "Golden Boot", "Golden Glove", "ROY", "TOTS-D/M/A", "All-Rookie",
 // "Midfielder of the Year", "Finals MVP"; sacó Iron Man y Semifinal MVP.
 // Premios de fin de temporada de la liga ("gala"; desde la v2.24.2, segunda
@@ -193,7 +194,7 @@ export const PREMIOS = [
 	}),
 	// --- Equipos de la temporada (de a 5: así son en el juego). Con el Golden
 	// Glove forman 16: arquero, defensa, medio y ataque
-	premio("TOTS-D", "Team of the Season – D", "defense", {
+	premio("TOTS-D", "All-Defense", "defense", {
 		numTeams: 1,
 		formula: FUERA,
 		// Los laterales sacan entre 60% y 66% de lo que sacan los centrales
@@ -201,21 +202,21 @@ export const PREMIOS = [
 		// cada uno (en un equipo de 5 no se pueden fijar puestos)
 		formulaByPos: porPuesto({ FC: 1, PF: 1, GF: 1.5 }, temporada),
 	}),
-	premio("TOTS-M", "Team of the Season – M", "offense", {
+	premio("TOTS-M", "All-Midfield", "offense", {
 		numTeams: 1,
 		formula: FUERA,
 		// Los mediapuntas sacan ~1,75 veces lo de pivotes y volantes: con 0,55
 		// queda un medio mezclado (en promedio, dos enganches)
 		formulaByPos: porPuesto({ G: 1, SG: 1.05, PG: 0.55 }, temporada),
 	}),
-	premio("TOTS-A", "Team of the Season – A", "offense", {
+	premio("TOTS-A", "All-Attack", "offense", {
 		numTeams: 1,
 		formula: FUERA,
 		// Con +20%, dos nueves y tres extremos en las dos temporadas de la liga
 		// del usuario (con +10%, uno solo en 2026)
 		formulaByPos: porPuesto({ SF: 1, F: 1.2 }, temporada),
 	}),
-	premio("All-Rookie", "Rookie Team of the Season", "offense", {
+	premio("All-Rookie", "All-Rookie", "offense", {
 		numTeams: 1,
 		rookie: true,
 		formula: temporada("SG", PRESTIGIO.SG!, 1800),

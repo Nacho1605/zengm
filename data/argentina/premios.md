@@ -166,7 +166,7 @@ Condiciones: la final.
 - FC, PF: `0.8 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
 - C: `0.4 * (gmsc + 0.4*(stl + blk) + 0.3*ast) * (1 + 0.75*won) * min(1, min/45)`
 
-## Team of the Season – D (TOTS-D)
+## All-Defense (TOTS-D)
 
 Los 5 mejores de la defensa: centrales y laterales (+50%: en el motor sacan entre 60% y 66% de lo de un central).
 
@@ -176,7 +176,7 @@ Condiciones: equipo de 5.
 - GF: `1.5 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 - FC, PF: `1 * min(1, gp*min/2700)^1.5 * (0.2*(per/15 + (obpm + 3)/3) + 0.8*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 
-## Team of the Season – M (TOTS-M)
+## All-Midfield (TOTS-M)
 
 Los 5 mejores del medio: pivotes, volantes (+5%) y mediapuntas (−45%: en el motor sacan ~1,75 veces lo de un pivote).
 
@@ -187,7 +187,7 @@ Condiciones: equipo de 5.
 - SG: `1.05 * min(1, gp*min/2700)^1.5 * (0.5*(per/15 + (obpm + 3)/3) + 0.5*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 - G: `1 * min(1, gp*min/2700)^1.5 * (0.35*(per/15 + (obpm + 3)/3) + 0.65*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 
-## Team of the Season – A (TOTS-A)
+## All-Attack (TOTS-A)
 
 Los 5 mejores del ataque: extremos y delanteros (+20%).
 
@@ -197,7 +197,7 @@ Condiciones: equipo de 5.
 - SF: `1 * min(1, gp*min/2700)^1.5 * (0.75*(per/15 + (obpm + 3)/3) + 0.25*2*(dbpm + 3)/3) * (0.8 + 0.4*winp) + 0.3*seasonFraction*winp`
 - PG, SG, G, GF, FC, PF, C: `-1000 + 0*gp` (no participan)
 
-## Rookie Team of the Season (All-Rookie)
+## All-Rookie (All-Rookie)
 
 Los 5 mejores novatos, con la fórmula de la revelación.
 

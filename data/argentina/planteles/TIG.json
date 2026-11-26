@@ -45,6 +45,7 @@
 			"convocado": 43,
 			"fichado": "01/02/2021",
 			"ovr": 65,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/826527-1727448033.jpg?lm=4711",
 			"debut": {
 				"club": "TIG",
 				"anio": 2021
@@ -80,6 +81,7 @@
 			"convocado": 17,
 			"fichado": "31/07/2026",
 			"ovr": 36,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/576023-1636409603.JPG?lm=4711",
 			"debut": {
 				"club": "LAN",
 				"anio": 2019
@@ -109,7 +111,8 @@
 			"ppp": 1.23,
 			"convocado": 44,
 			"fichado": "22/01/2025",
-			"ovr": 66,
+			"ovr": 64,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/865491-1708949794.png?lm=4711",
 			"debut": {
 				"club": "ALT",
 				"anio": 2019
@@ -145,6 +148,7 @@
 			"convocado": 18,
 			"fichado": "20/07/2026",
 			"ovr": 46,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1120902-1774189687.png?lm=4711",
 			"debut": {
 				"club": "INS",
 				"anio": 2024
@@ -175,6 +179,7 @@
 			"convocado": 43,
 			"fichado": "15/01/2026",
 			"ovr": 50,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1005800-1681414528.jpg?lm=4711",
 			"debut": {
 				"club": "GIM",
 				"anio": 2025
@@ -209,6 +214,7 @@
 			"convocado": 35,
 			"fichado": "14/01/2025",
 			"ovr": 64,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/360797-1720465039.png?lm=4711",
 			"debut": {
 				"club": null,
 				"anio": 2011
@@ -249,6 +255,7 @@
 			"convocado": 23,
 			"fichado": "10/09/2024",
 			"ovr": 53,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/131095-1727448336.jpg?lm=4711",
 			"debut": {
 				"club": null,
 				"anio": 2011
@@ -280,6 +287,7 @@
 			"convocado": 0,
 			"fichado": "01/01/2024",
 			"ovr": 22,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1153735-1727448866.jpg?lm=4711",
 			"debut": {
 				"club": "TIG",
 				"anio": 2024
@@ -310,6 +318,7 @@
 			"convocado": 44,
 			"fichado": "06/07/2025",
 			"ovr": 61,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/289117-1747847816.jpg?lm=4711",
 			"debut": {
 				"club": "BEL",
 				"anio": 2013
@@ -338,6 +347,7 @@
 			"convocado": 3,
 			"fichado": "01/01/2024",
 			"ovr": 30,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1264276-1727448991.jpg?lm=4711",
 			"debut": {
 				"club": "TIG",
 				"anio": 2024
@@ -368,6 +378,7 @@
 			"convocado": 39,
 			"fichado": "01/07/2024",
 			"ovr": 59,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1238749-1727451183.jpg?lm=4711",
 			"debut": {
 				"club": "TIG",
 				"anio": 2024
@@ -400,6 +411,7 @@
 			"convocado": 43,
 			"fichado": "11/01/2023",
 			"ovr": 61,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/696730-1727449005.jpg?lm=4711",
 			"debut": {
 				"club": "EBA",
 				"anio": 2017
@@ -434,6 +446,7 @@
 			"convocado": 31,
 			"fichado": "06/07/2025",
 			"ovr": 50,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/534909-1693833147.png?lm=4711",
 			"debut": {
 				"club": null,
 				"anio": 2014
@@ -467,6 +480,7 @@
 			"convocado": 15,
 			"fichado": "01/07/2026",
 			"ovr": 31,
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/206220",
 			"debut": {
 				"club": "TIG",
 				"anio": 2026
@@ -497,6 +511,7 @@
 			"convocado": 35,
 			"fichado": "10/07/2025",
 			"ovr": 60,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/910641-1739373572.JPG?lm=4711",
 			"debut": {
 				"club": "GOD",
 				"anio": 2022
@@ -535,6 +550,7 @@
 			"convocado": 35,
 			"fichado": "31/01/2025",
 			"ovr": 61,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1174943-1705514491.jpg?lm=4711",
 			"debut": {
 				"club": "BOC",
 				"anio": 2024
@@ -572,6 +588,7 @@
 			"convocado": 20,
 			"fichado": "01/01/2024",
 			"ovr": 54,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1249779-1727449808.jpg?lm=4711",
 			"debut": {
 				"club": "TIG",
 				"anio": 2024
@@ -602,6 +619,7 @@
 			"convocado": 3,
 			"fichado": "31/07/2026",
 			"ovr": 42,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1207586-1771529176.jpg?lm=4711",
 			"debut": {
 				"club": "INS",
 				"anio": 2024
@@ -627,6 +645,7 @@
 			"convocado": 0,
 			"fichado": "10/07/2025",
 			"ovr": 29,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/912009-1721144095.png?lm=4711",
 			"debut": {
 				"club": "BOC",
 				"anio": 2024
@@ -659,6 +678,7 @@
 			"convocado": 30,
 			"fichado": "01/07/2026",
 			"ovr": 42,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1379292-1776954109.png?lm=4711",
 			"debut": {
 				"club": "TIG",
 				"anio": 2026
@@ -692,6 +712,7 @@
 			"convocado": 32,
 			"fichado": "06/01/2023",
 			"ovr": 44,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/840774-1727449975.jpg?lm=4711",
 			"debut": {
 				"club": "GBR",
 				"anio": 2020
@@ -726,6 +747,7 @@
 			"convocado": 41,
 			"fichado": "14/01/2026",
 			"ovr": 55,
+			"imgURL": "https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Athletes:default.png,r_max,c_thumb,g_face,z_0.65/Athletes/127661",
 			"debut": {
 				"club": "RIV",
 				"anio": 2024
@@ -758,7 +780,8 @@
 			"ppp": 1.32,
 			"convocado": 28,
 			"fichado": "22/01/2026",
-			"ovr": 64,
+			"ovr": 62,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/281405-1721920823.png?lm=4711",
 			"debut": {
 				"club": "HUR",
 				"anio": 2011
@@ -796,7 +819,8 @@
 			"ppp": 1.19,
 			"convocado": 43,
 			"fichado": "14/01/2026",
-			"ovr": 64,
+			"ovr": 60,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1000687-1742571079.png?lm=4711",
 			"debut": {
 				"club": "IND",
 				"anio": 2024
@@ -834,6 +858,7 @@
 			"convocado": 14,
 			"fichado": "03/08/2026",
 			"ovr": 50,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1074969-1721920693.png?lm=4711",
 			"debut": {
 				"club": "RIV",
 				"anio": 2024
@@ -871,6 +896,7 @@
 			"convocado": 29,
 			"fichado": "24/07/2025",
 			"ovr": 39,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1288905-1770309145.jpeg?lm=4711",
 			"debut": {
 				"club": "VEL",
 				"anio": 2025
@@ -903,6 +929,7 @@
 			"convocado": 43,
 			"fichado": "14/01/2026",
 			"ovr": 65,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/833130-1717079395.jpeg?lm=4711",
 			"debut": {
 				"club": "ROS",
 				"anio": 2022
@@ -937,6 +964,7 @@
 			"convocado": 11,
 			"fichado": "10/08/2026",
 			"ovr": 62,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/675468-1739829194.jpg?lm=4711",
 			"debut": {
 				"club": null,
 				"anio": 2019
@@ -946,7 +974,7 @@
 			"sofascore": 6.78
 		},
 		{
-			"n": null,
+			"n": "31",
 			"nombre": "Jerónimo",
 			"apellido": "Dómina",
 			"pos": "Delantero centro",
@@ -968,7 +996,8 @@
 			"ppp": 0.88,
 			"convocado": 8,
 			"fichado": "02/09/2026",
-			"ovr": 59,
+			"ovr": 57,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/1103986-1721144258.png?lm=4711",
 			"debut": {
 				"club": "UNI",
 				"anio": 2023
@@ -1001,6 +1030,7 @@
 			"convocado": 36,
 			"fichado": "31/01/2025",
 			"ovr": 48,
+			"imgURL": "https://img.a.transfermarkt.technology/portrait/big/518354-1576676638.jpg?lm=4711",
 			"debut": {
 				"club": null,
 				"anio": 2011

@@ -1,15 +1,14 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 25/11/2026. Última versión: **v2.27.6**
-(`data/argentina/BBGM_Argentina_2026_v.2.27.6_futbol.json`, sha256
-`6b8c1ded37d4c69264d4884412766992262339e998e7ad12da4ed6b9ed77c32e`): 25 de 30
+Estado al 26/11/2026. Última versión: **v2.27.7**
+(`data/argentina/BBGM_Argentina_2026_v.2.27.7_futbol.json`, sha256
+`d49be76685177b6e8741fc68c6f75ef765139fdbb6c802a541db82cecf91f644`): 25 de 30
 equipos con plantel 2026 (el último, Tigre, 30 jugadores), Rendimiento
-completo; fotos de 748 de 778 (faltan las 30 de TIG: las pone el usuario en
-el juego); todo el archivo en la escala nueva de OVR (20 a 79) y en la forma
+completo; fotos de los 778 jugadores de los equipos cargados; todo el archivo en la escala nueva de OVR (20 a 79) y en la forma
 5 (posiciones secundarias de los 25 planteles; defectos; rasgo "llegada" desde
 la v2.27.5); gala de premios propia (21 premios, calibrada; nombres como los
-dejó el usuario). Validación: 0 errores. Auditoría: 53 controles, 9 con
-alertas (las de siempre más "Foto": las 30 de TIG). Revisiones de OVR: general
+dejó el usuario). Validación: 0 errores. Auditoría: 53 controles, 8 con
+alertas (las de siempre). Revisiones de OVR: general
 (`revision-general-v2.27.md`), juveniles sin la regla y defensores
 (`revision-juveniles-defensores-v2.27.md`), listas de Sofascore (v2.27.3),
 decisiones del usuario (v2.27.4; `cambios-ovr-desde-v2.27.md`) y ratings a
@@ -21,8 +20,21 @@ Escalera por puesto del usuario actualizada
 `data/argentina/escalera/`).
 
 **Lo que sigue:**
-1. **Pendiente del usuario:** el único que queda con ratings a mano es Barbi
-   (TAL, 30). Si estira la
+1. **Juveniles (el usuario, 26/11): "creo que estamos manejando mal la
+   cuestión de los juveniles".** Lo vio en una liga suya simulada más de 15
+   temporadas, con un visualizador de carreras
+   (https://icamcmusic-ship-it.github.io/bbgm-league-explorer/#/home); igual
+   cree que hasta ahora está todo bien. En la v2.27.7 bajó en el juego a 9
+   juveniles (Loza, Perrotta, Barros Schelotto, Guch, Andrada, Ovando, Baroni,
+   S. López, Feler) y a 3 de Tigre. Pedirle qué vio (y, si puede, esa liga
+   simulada exportada: se analiza, no se importa).
+   **Libres (pregunta del usuario):** 442 en el archivo (345 de 35 años o
+   menos); Transfermarkt no los da en bloque. Propuesta: juntar sus números de
+   a poco sin calcular (capturas que se transcriben por tandas, o una página
+   tipo escalera donde los carga y queda guardado) y valorarlos todos juntos al
+   final, en un solo parche. Decide él cuando lleguemos.
+   El único con ratings a mano es Barbi (TAL, 30) y Andrada (RIV, 65, su
+   forma: menos marca, más gambeta y pase). Si estira la
    escala por los montones (60 y 61 con unos 30 jugadores). Fotos de TIG
    cuando las ponga (importar con `desde-juego.ts`, base la versión que usó).
    Pendiente: Fernando Román (DYJ) volvió de un préstamo en julio (antes en
@@ -617,6 +629,31 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**26/11/2026 (v2.27.7): liga del usuario (fotos de Tigre y 12 OVR).** Huella:
+`d49be76685177b6e8741fc68c6f75ef765139fdbb6c802a541db82cecf91f644`.
+
+- Liga exportada por el usuario (pretemporada 2026, sin partidos; base
+  v2.27.6), importada con `desde-juego.ts`: 30 fotos de Tigre (778 de 778 con
+  foto), camiseta de Dómina (#31), 4 nombres de premios (All-Defense,
+  All-Midfield, All-Attack y All-Rookie: `premios.ts`,
+  `premios-para-importar.json`, `premios.md`) y 12 OVR que cambió en el juego:
+  Loza 49, Perrotta 56, Barros Schelotto 65, Guch 57, Andrada 65, Ovando 68,
+  Baroni 43, Barrionuevo 64, G. Martínez 62, S. López 60, Dómina 57, Feler
+  35. En 11 bajó parejo: quedan a 1 punto como mucho de la forma del archivo
+  con el nuevo OVR, así que se guardan como OVR (sin ratings a mano, como
+  pidió con los liberados). Andrada tiene forma propia (marca 58 → 48, gambeta
+  y pase +4): queda con sus ratings.
+- Error corregido: a los ratings que vienen del juego el cargador les sumaba
+  otra vez el corrimiento de las secundarias (ya lo traen desde la forma 5):
+  Andrada salía hasta 2 puntos distinto. `desde-juego.ts` ahora anota
+  `"ratingsDelJuego": true` y `cargar-plantel.ts` no se los vuelve a sumar.
+  Con eso Andrada sale idéntico a la liga del usuario; armado con y sin el
+  arreglo, solo cambia él.
+- Contra la liga del usuario: los 3408 jugadores con el mismo OVR, foto y
+  camiseta; ratings idénticos salvo esos 11 (a lo sumo 1 punto); premios
+  iguales. Contra la v2.27.6: esos 12 OVR. Armada dos veces con la misma
+  huella; validación 0 errores; auditoría igual salvo "Foto" (ya sin alerta).
+
 **25/11/2026 (v2.27.6): "llegada" en 14 jugadores, ratings a mano liberados y
 Flores 68.** Huella:
 `6b8c1ded37d4c69264d4884412766992262339e998e7ad12da4ed6b9ed77c32e`.

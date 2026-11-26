@@ -562,7 +562,7 @@
 			"ppp": 1.88,
 			"convocado": 16,
 			"fichado": "31/07/2026",
-			"ovr": 66,
+			"ovr": 65,
 			"debut": {
 				"club": "VEL",
 				"anio": 2025
@@ -575,7 +575,24 @@
 			],
 			"rasgos": [
 				"llegada"
-			]
+			],
+			"ratings": {
+				"stre": 58,
+				"spd": 66,
+				"jmp": 60,
+				"endu": 70,
+				"ins": 58,
+				"dnk": 59,
+				"ft": 58,
+				"fg": 62,
+				"tp": 56,
+				"oiq": 57,
+				"diq": 48,
+				"drb": 66,
+				"pss": 67,
+				"reb": 61
+			},
+			"ratingsDelJuego": true
 		},
 		{
 			"n": "8",

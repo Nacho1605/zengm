@@ -422,8 +422,10 @@ const cargar = (plantel: any) => {
 		}
 		// Posiciones secundarias en un jugador con ratings a mano (forma 5): el
 		// mismo corrimiento que a los demás, sobre sus ratings (el usuario,
-		// 24/11: la consistencia del archivo pesa más que un retoque suyo)
-		if (j.ratings && FORMA_VIGENTE.secundarias && j.secundarias?.length && pos !== "C") {
+		// 24/11: la consistencia del archivo pesa más que un retoque suyo).
+		// Salvo que los ratings vengan del juego ("ratingsDelJuego", los anota
+		// desde-juego.ts): esos ya lo traen (si no, se suma dos veces)
+		if (j.ratings && !j.ratingsDelJuego && FORMA_VIGENTE.secundarias && j.secundarias?.length && pos !== "C") {
 			const con = generarRatings(j, pos, edad, ovrMeta, FORMA_VIGENTE);
 			const sin = generarRatings({ ...j, secundarias: [] }, pos, edad, ovrMeta, FORMA_VIGENTE);
 			for (const k of KEYS) {

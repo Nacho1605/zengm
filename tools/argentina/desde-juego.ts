@@ -121,6 +121,10 @@ for (const pl of planteles) {
 		const b = bp?.ratings.at(-1);
 		if (b && KEYS.some((k) => b[k] !== r[k])) {
 			j.ratings = Object.fromEntries(KEYS.map((k) => [k, r[k]]));
+			// Los ratings del juego ya traen el corrimiento de las secundarias
+			// (forma 5): el cargador no tiene que sumarlo otra vez (26/11; antes
+			// se sumaba dos veces y el jugador quedaba hasta 2 puntos distinto)
+			j.ratingsDelJuego = true;
 			resumen.ratings!.push(`${j.nombre} ${j.apellido} ${j.ovr}→${r.ovr}`);
 			j.ovr = r.ovr;
 			pl.cambios += 1;
