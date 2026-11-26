@@ -136,6 +136,11 @@ v2.14.1 → v2.14.2).
   generados: `cargar-plantel.ts` los baja con esa correspondencia) y el
   sueldo inicial se calcula con el OVR equivalente de la escala vieja (la
   economía queda como antes). `ESCALA=1` arma como la v2.23.1.
+  Draft generado (los 2100 prospectos ficticios de 2026-2055): desde la
+  v2.27.8, +8 de OVR parejo después de la escala nueva (el usuario, con su liga
+  simulada 2026-2042: no llegaban nunca al nivel de la Primera y la liga se
+  desinflaba; ver `simulacion-2042-analisis.md`). `SUBA_DRAFT=N` arma con otra
+  suba (0 = como la v2.27.7).
 - **Escalera por puesto del usuario** (página con todos los jugadores, sus
   números y una columna "Tu OVR" para anotar cambios):
   https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U (copia en
@@ -180,7 +185,8 @@ v2.14.1 → v2.14.2).
   - Juveniles y prospectos (20 años o menos): método de punto medio,
     aceptado por el usuario el 25/11 (v2.27.5) con concesiones. (1)
     Rendimiento como los adultos (minutos, rol, producción, Sofascore); (2)
-    descuento parejo por edad: 4 a los 20, 6 a los 19, 8 a los 18, 10 a los 17;
+    descuento parejo por edad: 4 a los 20, 6 a los 19, 8 a los 18, 12 a los 17
+    (10 hasta la v2.27.7: en la simulación del usuario los de 17 crecieron más);
     (3) plus por valor de mercado (+1 desde 1 M€, +2 desde 2 M€, +3 desde 3,5
     M€); (4) con menos de 900', a mitad de camino entre el valor que tenía y el
     del método; con menos de 300', la regla vieja: +1 si su reserva quedó entre

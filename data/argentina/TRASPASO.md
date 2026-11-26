@@ -1,8 +1,8 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 26/11/2026. Última versión: **v2.27.7**
-(`data/argentina/BBGM_Argentina_2026_v.2.27.7_futbol.json`, sha256
-`d49be76685177b6e8741fc68c6f75ef765139fdbb6c802a541db82cecf91f644`): 25 de 30
+Estado al 26/11/2026. Última versión: **v2.27.8**
+(`data/argentina/BBGM_Argentina_2026_v.2.27.8_futbol.json`, sha256
+`d6b2053dad13dac91dd75e463785bb16d6bcd103511760104b9385176b5be552`): 25 de 30
 equipos con plantel 2026 (el último, Tigre, 30 jugadores), Rendimiento
 completo; fotos de los 778 jugadores de los equipos cargados; todo el archivo en la escala nueva de OVR (20 a 79) y en la forma
 5 (posiciones secundarias de los 25 planteles; defectos; rasgo "llegada" desde
@@ -29,9 +29,9 @@ Escalera por puesto del usuario actualizada
    S. López, Feler) y a 3 de Tigre. Mandó la liga simulada (2042, salió de
    la v2.27.6): análisis en `simulacion-2042-analisis.md`. Lo principal: el
    draft generado es muy flojo (bajado dos veces: −3 y escala nueva) y la liga
-   se desinfla (mediana 50 → 27, puesto 100: 65 → 43). Propuesta: subir los
-   prospectos generados al nivel con que los hace el juego (unos +15). Decide
-   él.
+   se desinfla (mediana 50 → 27, puesto 100: 65 → 43). El usuario aceptó subir
+   el draft generado, pero menos de +15: en la v2.27.8, +8 (a confirmar con él
+   y con otra simulación suya); y el descuento de los de 17, de 10 a 12.
    **Libres (pregunta del usuario):** 442 en el archivo (345 de 35 años o
    menos); Transfermarkt no los da en bloque. Propuesta: juntar sus números de
    a poco sin calcular (capturas que se transcriben por tandas, o una página
@@ -633,6 +633,29 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**26/11/2026 (v2.27.8): draft generado +8 y descuento de los de 17.** Huella:
+`d6b2053dad13dac91dd75e463785bb16d6bcd103511760104b9385176b5be552`.
+
+- El usuario aceptó subir el nivel del draft generado ("tu propuesta es
+  demasiado elevada": +15, el nivel con que lo hace el juego) y descontar algo
+  más a los de 17 y 18. En `cargar-plantel.ts`, después de la escala nueva: +8
+  de OVR parejo a cada uno de los 2100 prospectos generados (menos la altura;
+  los arqueros sin tiro; mismo techo). Clases 2027-2055: el mejor de cada una
+  pasa de 32-49 a 40-57 (media 40 → 48), los 10 mejores de 29,7 a 37,7, los 30
+  mejores de 22,9 a 30,9 (como lo hace el juego: 46-61, 45,3, 38,4; juveniles
+  reales de 19 años en los equipos: el mejor 68, los 10 mejores 57,9, los 20
+  48,1). `SUBA_DRAFT=N` arma con otra suba; con 0 da la v2.27.7 (comprobado:
+  misma huella, d49be766…). Los 24 prospectos reales, sin cambios.
+- Juveniles de 17: descuento 10 → 12 (en la simulación crecieron +23,5 hasta
+  el pico contra +16,9 los de 19). Los de 18 quedan en 8: crecieron +18,3,
+  apenas 1,4 más que los de 19, y el método ya les descuenta 2 más. Aplicado
+  con la regla del método (con menos de 900', la mitad): Escobar 45, Policella
+  43 y T. Aguirre 39 (VEL). Baroni (TAL, 1156'): el método daría 41, pero el 43
+  es suyo (lo puso en el juego): propuesta aparte.
+- Contra la v2.27.7: esos 3 OVR y los 2100 prospectos generados; el resto
+  igual. Armada dos veces con la misma huella; validación 0 errores; auditoría
+  igual.
+
 **26/11/2026 (sin versión): análisis de la liga simulada del usuario
 (2026 → 2042).** Ver `simulacion-2042-analisis.md`; herramientas en
 `tools/argentina/simulacion/` (solo leen la liga). Salió de la v2.27.6 (776 de

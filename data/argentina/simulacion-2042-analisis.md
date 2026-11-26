@@ -75,3 +75,10 @@ Suba media hasta el pico, según la edad en 2026:
    Lo del azar no se puede controlar desde el archivo.
 3. **Veteranos:** el juego los baja desde los 26-27 (es su curva de básquet) y
    no hay ajuste de liga para eso. Solo se informa.
+
+## Decisión del usuario (26/11/2026, v2.27.8)
+- Acepta subir el draft generado, pero +15 le parece demasiado: queda en +8
+  (a mitad de camino; el mejor de cada clase, 40-57; los 10 mejores, 37,7 de
+  media). Se puede ajustar con `SUBA_DRAFT`.
+- Acepta descontar algo más a los de 17 y 18: los de 17 pasan de 10 a 12; los
+  de 18 quedan en 8 (los datos no lo piden; ver TRASPASO).

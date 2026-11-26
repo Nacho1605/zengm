@@ -933,6 +933,57 @@ if (ESCALA_TODO) {
 	);
 }
 
+// Draft generado más fuerte (v2.27.8; el usuario, 26/11, con su liga simulada
+// 2026-2042: los chicos generados nunca llegaban al nivel de la Primera, porque
+// el juego hace crecer a todos los mismos puntos, y la liga se desinflaba).
+// SUBA_DRAFT puntos de OVR más a cada prospecto generado, parejo (menos la
+// altura; los arqueros sin tiro), con el mismo techo. SUBA_DRAFT=0 arma como
+// la v2.27.7
+const SUBA_DRAFT = Number(process.env.SUBA_DRAFT ?? 8);
+if (SUBA_DRAFT > 0) {
+	const TECHO = FORMA_2.techo!;
+	let n = 0;
+	let antes = 0;
+	let despues = 0;
+	let max = 0;
+	for (const p of league.players) {
+		if (p.tid !== -2 || creados.has(p.pid)) {
+			continue;
+		}
+		const r = p.ratings.at(-1);
+		const pos = r.pos ?? p.pos;
+		const meta = r.ovr + SUBA_DRAFT;
+		const ks = KEYS.filter((k) => k !== "hgt" && !(pos === "C" && SIN_TIRO.includes(k)));
+		antes += r.ovr;
+		for (let i = 0; i < 100 && ovrOficial(r) < meta; i++) {
+			for (const k of ks) {
+				r[k] = Math.min(TECHO.max, r[k] + 1);
+			}
+		}
+		const llave: Key = ["C", "PF", "FC", "G", "GF"].includes(pos) ? "diq" : "oiq";
+		for (let i = 0; i < 30 && ovrOficial(r) !== meta; i++) {
+			r[llave] = Math.max(0, Math.min(TECHO.max, r[llave] + (ovrOficial(r) < meta ? 1 : -1)));
+		}
+		if (ovrOficial(r) !== meta) {
+			throw new Error(`${p.firstName} ${p.lastName}: no llega a OVR ${meta}`);
+		}
+		r.ovr = meta;
+		delete r.pot;
+		delete r.skills;
+		if (p.draft?.year === r.season) {
+			delete p.draft.pot;
+			delete p.draft.ovr;
+			delete p.draft.skills;
+		}
+		n += 1;
+		despues += r.ovr;
+		max = Math.max(max, r.ovr);
+	}
+	console.log(
+		`Draft generado más fuerte: ${n} prospectos +${SUBA_DRAFT} (OVR medio ${(antes / n).toFixed(1)} -> ${(despues / n).toFixed(1)}, máximo ${max})`,
+	);
+}
+
 // Techo para el resto de los jugadores (prospectos generados, libres y
 // equipos sin cargar): ningún rating actual llega a 100. Mismo techo que la
 // forma 2 (desde 93, cada punto cuenta la mitad, tope 95) y retoque fino para
