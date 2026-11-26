@@ -5,7 +5,8 @@ const L = JSON.parse(readFileSync(process.argv[2], "utf8"));
 const reales = new Set(); // los que ya estaban en 2026 (con ratings de 2026)
 for (const p of L.players) if (p.ratings.some((r) => r.season === 2026) && p.draft.year <= 2025) reales.add(p.pid);
 const filas = [];
-for (let s = 2026; s <= 2041; s++) {
+const ultima = Math.max(...L.players.flatMap((p) => (p.stats ?? []).filter((x) => !x.playoffs && x.gp > 0).map((x) => x.season)));
+for (let s = 2026; s <= ultima; s++) {
 	const xs = [];
 	for (const p of L.players) {
 		const st = (p.stats ?? []).filter((x) => x.season === s && !x.playoffs && x.gp > 0 && x.tid >= 0);

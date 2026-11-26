@@ -11,7 +11,7 @@ const info = (p) => {
 };
 const todos = L.players.map(info);
 // 1) Los 25 picos más altos de toda la simulación
-console.log("Los 25 picos más altos (2026-2042):");
+console.log(`Los 25 picos más altos (2026-${Math.max(...L.players.flatMap((p) => p.ratings.map((r) => r.season)))}):`);
 for (const x of [...todos].sort((a, b) => b.pico.ovr - a.pico.ovr).slice(0, 25)) {
 	const o = x.p.draft.year >= 2026 ? `draft ${x.p.draft.year} (generado)` : `2026: ${x.r26 ? x.r26.ovr + "/" + x.r26.pot : "?"} a los ${2026 - x.p.born.year}`;
 	console.log(`  ${x.p.firstName} ${x.p.lastName} | pico ${x.pico.ovr} en ${x.pico.season} (${x.edadPico} años) | ${o}`);

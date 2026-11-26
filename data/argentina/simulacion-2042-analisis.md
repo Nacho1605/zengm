@@ -82,3 +82,33 @@ Suba media hasta el pico, según la edad en 2026:
   media). Se puede ajustar con `SUBA_DRAFT`.
 - Acepta descontar algo más a los de 17 y 18: los de 17 pasan de 10 a 12; los
   de 18 quedan en 8 (los datos no lo piden; ver TRASPASO).
+
+## Segunda simulación del usuario: v2.27.8 (draft +8), 2026 → 2045
+Archivo `BBGM_Argentina_2045_draft_lottery.json` (sha256
+`ed787ce3be595ba0957b9e9df01a11111a27856dc2e8ee4f2f35e816d9002fc0`; 104 MB, no
+se guarda). Salió exactamente de la v2.27.8: los 778 jugadores de los equipos y
+los 94 prospectos de 2026, idénticos. 20 temporadas (hasta los playoffs de 2045).
+
+| | 2026 | 2041 con +0 (1.ª simulación) | 2041 con +8 | 2045 con +8 |
+|---|---|---|---|---|
+| El mejor | 79 | 74 | 77 | 77 |
+| El 10.º | 71 | 63 | 67 | 67 |
+| El 100.º | 65 | 43 | 54 | 51 |
+| Mediana | 50 | 27 | 35 | 33 |
+| 11 mejores de cada equipo (promedio) | 61 | 40,0 | 49,3 | 46,2 |
+| De los 100 mejores, del draft generado | 0 | 52 | 82 | 94 |
+
+- Con +8 la liga aguanta mucho mejor: los chicos generados ya son la mayoría de
+  los 100 mejores desde 2038 (hay recambio de verdad). Los 10 primeros elegidos
+  de cada draft llegan a un pico medio de 51-62 (antes 39-56); el mejor de cada
+  camada, 62-79.
+- Pero la liga sigue bajando: el promedio de los 11 mejores de cada equipo va
+  de 61 (2026) a 49 (2041) y a 46 (2045), y sigue cayendo (unos 0,8 por año al
+  final).
+- Estimado en línea recta entre las dos simulaciones (cada punto de suba dejó
+  1,16 más en los 11 mejores de 2041; hay que confirmarlo con otra
+  simulación): +12 → unos 54; +15 → unos 57; +18 → unos 61 (como en 2026).
+- Juveniles reales: el mismo patrón que en la primera (suba media +18 hasta el
+  pico, a los 25; el POT de 2026 quedó 4,5 arriba del pico real). Esta vez los
+  que más llegaron: Aranda 87, Barros Schelotto 85, Herrera 82, Andrada 81,
+  Flores 80. La cima de la liga anda en 85-87 entre 2030 y 2038.

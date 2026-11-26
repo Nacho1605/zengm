@@ -30,8 +30,11 @@ Escalera por puesto del usuario actualizada
    la v2.27.6): análisis en `simulacion-2042-analisis.md`. Lo principal: el
    draft generado es muy flojo (bajado dos veces: −3 y escala nueva) y la liga
    se desinfla (mediana 50 → 27, puesto 100: 65 → 43). El usuario aceptó subir
-   el draft generado, pero menos de +15: en la v2.27.8, +8 (a confirmar con él
-   y con otra simulación suya); y el descuento de los de 17, de 10 a 12.
+   el draft generado, pero menos de +15: en la v2.27.8, +8; y el descuento de
+   los de 17, de 10 a 12. Segunda simulación suya (v2.27.8, hasta 2045): con +8
+   la liga aguanta mejor pero sigue bajando (11 mejores de cada equipo: 61 →
+   49 en 2041 → 46 en 2045). Estimado: +18 la mantendría como en 2026. Decide
+   él la suba (ver `simulacion-2042-analisis.md`).
    **Libres (pregunta del usuario):** 442 en el archivo (345 de 35 años o
    menos); Transfermarkt no los da en bloque. Propuesta: juntar sus números de
    a poco sin calcular (capturas que se transcriben por tandas, o una página
