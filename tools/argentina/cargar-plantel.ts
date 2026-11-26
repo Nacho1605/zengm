@@ -101,6 +101,13 @@ for (const a of ga.awards ?? []) {
 }
 // Premios propios de la liga (desde la v2.24.2, ver premios.ts).
 // PREMIOS=viejos arma con los anteriores (nombres originales en inglés)
+// Salón de la Fama (v2.27.10; el usuario, con sus dos ligas simuladas: en 20
+// temporadas no entró nadie con el 1,2 que traía la base). El juego exige
+// puntaje de carrera > 120 × duración de temporada (0,718 con 43 partidos de
+// 2 × 45') × hofFactor. Con 0,5 el umbral es 43,1: entran Di María y Paredes
+// con el promedio de sus puntajes en las dos simulaciones (57,8 y 43,9).
+// HOF_FACTOR=1.2 arma como la v2.27.9
+ga.hofFactor = Number(process.env.HOF_FACTOR ?? 0.5);
 if (process.env.PREMIOS !== "viejos") {
 	ga.awards = PREMIOS;
 	// Nombre corto de cada zona: el juego lo pone delante de los premios por

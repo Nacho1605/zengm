@@ -131,3 +131,9 @@ de ratings, de 2022):
   fue el de Tomás Aranda: 81 (después Nacho Fernández 40, Fabricio Pérez 40,
   Di María 38, Paredes 35). Habría que bajar `hofFactor` (ajuste de liga, sin
   tocar el motor) cuando se arme la Fase 3; a 0,5 el umbral queda en unos 43.
+
+## Decisión del usuario sobre el Salón de la Fama (26/11/2026, v2.27.10)
+- Puntajes (`sim-salon.mjs`): Di María 77,3 (1.ª) y 38,2 (2.ª), promedio 57,8;
+  Paredes 52,8 y 35,0, promedio 43,9. `hofFactor` 0,5 (umbral 43,1) para que
+  entren los dos con el promedio. Con ese umbral: 1.ª simulación, Di María y
+  Paredes; 2.ª, solo Aranda.

@@ -282,7 +282,9 @@ v2.14.1 → v2.14.2).
   calibrar.ts). Una liga simulada NO se importa con desde-juego.ts (sus
   ratings cambiaron por la simulación): solo se miran fotos o cambios del
   usuario. Para una liga ya empezada: `premios-para-importar.json` (Award
-  Settings → Import settings).
+  Settings → Import settings). Salón de la Fama: `hofFactor` 0,5 desde la
+  v2.27.10 (umbral 43,1; con el 1,2 de la base no entraba nadie en 20
+  temporadas simuladas; `HOF_FACTOR=1.2` arma como antes).
 - Fotos: el usuario las pone en el juego cuando le conviene (a veces de
   varios equipos juntos) y manda la liga exportada; recién ahí se importan.
 - Dos equipos a la vez (cada uno es su versión: v2.16 HUR y v2.17 TAL, se

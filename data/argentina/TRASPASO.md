@@ -1,8 +1,8 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 26/11/2026. Última versión: **v2.27.9**
-(`data/argentina/BBGM_Argentina_2026_v.2.27.9_futbol.json`, sha256
-`adaf38f92d7e7d0e05f931bfbbc33e555619696a67369e9fb3726fdea7f44ec8`): 25 de 30
+Estado al 26/11/2026. Última versión: **v2.27.10**
+(`data/argentina/BBGM_Argentina_2026_v.2.27.10_futbol.json`, sha256
+`fa826772c4ee47547b10812bb6806aae1cac3d6d46958bdaa4345ab7d1c5d4e3`): 25 de 30
 equipos con plantel 2026 (el último, Tigre, 30 jugadores), Rendimiento
 completo; fotos de los 778 jugadores de los equipos cargados; todo el archivo en la escala nueva de OVR (20 a 79) y en la forma
 5 (posiciones secundarias de los 25 planteles; defectos; rasgo "llegada" desde
@@ -36,10 +36,11 @@ Escalera por puesto del usuario actualizada
    49 en 2041 → 46 en 2045). Estimado: +18 la mantendría como en 2026. El
    usuario eligió +12 (v2.27.9; estimado: unos 54 en 2041) y no descontar más a
    los juveniles. Confirmar con otra simulación suya cuando quiera.
-   Para la Fase 3: en 20 temporadas simuladas nadie entró al Salón de la Fama
-   (umbral de unos 103 con `hofFactor` 1,2; el mejor retirado, Aranda, 81):
-   bajar `hofFactor` (a 0,5, umbral de unos 43). Las simulaciones sirven de
-   modelo para las carreras de los retirados (ver el análisis).
+   Salón de la Fama: en 20 temporadas simuladas no entraba nadie (umbral de
+   unos 103 con `hofFactor` 1,2). Desde la v2.27.10, `hofFactor` 0,5 (umbral
+   43,1), pedido del usuario: que entren Di María y Paredes con el promedio de
+   sus puntajes en las dos simulaciones (57,8 y 43,9). Las simulaciones sirven
+   de modelo para las carreras de los retirados en la Fase 3 (ver el análisis).
    **Libres (pregunta del usuario):** 442 en el archivo (345 de 35 años o
    menos); Transfermarkt no los da en bloque. Propuesta: juntar sus números de
    a poco sin calcular (capturas que se transcriben por tandas, o una página
@@ -641,6 +642,21 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**26/11/2026 (v2.27.10): umbral del Salón de la Fama.** Huella:
+`fa826772c4ee47547b10812bb6806aae1cac3d6d46958bdaa4345ab7d1c5d4e3`.
+
+- Pedido del usuario: bajar el umbral para que entren Di María y Paredes, con
+  el promedio de sus puntajes en las dos simulaciones (misma cuenta que el
+  juego, `tools/argentina/simulacion/sim-salon.mjs`): Di María 77,3 y 38,2
+  (promedio 57,8), Paredes 52,8 y 35,0 (43,9). El juego exige más que 120 ×
+  0,718 × `hofFactor`: con 0,5, 43,1. En `cargar-plantel.ts` (`HOF_FACTOR=1.2`
+  arma como la v2.27.9: comprobado, misma huella).
+- Con ese umbral habrían entrado, en la 1.ª simulación, Di María y Paredes (2
+  de 1779 retirados); en la 2.ª, solo Tomás Aranda (81,2; de 2498): ahí Di María
+  y Paredes sacaron menos que el promedio.
+- Contra la v2.27.9: solo `hofFactor` (1,2 → 0,5). Armada dos veces con la
+  misma huella; validación 0 errores; auditoría igual.
+
 **26/11/2026 (v2.27.9): draft generado +12 y Baroni 41.** Huella:
 `adaf38f92d7e7d0e05f931bfbbc33e555619696a67369e9fb3726fdea7f44ec8`.
 
