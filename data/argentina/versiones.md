@@ -8,7 +8,7 @@ bitácora de `TRASPASO.md` (§9).
 
 **Quedan en la carpeta:**
 - `BBGM_Argentina_2026_v.2.0_futbol.json`: la base de la fase 2 (`armar-v2.sh` arma todo desde ella).
-- Las tres últimas versiones (v2.27.10, v2.27.11 y v2.27.12): para comparar con la anterior y por si el usuario juega sobre una de ellas (`desde-juego.ts` necesita esa base).
+- Las tres últimas versiones (hoy v2.27.11, v2.27.12 y v2.27.13): para comparar con la anterior y por si el usuario juega sobre una de ellas (`desde-juego.ts` necesita esa base).
 
 **Cómo recuperar una versión borrada** (sin armarla de nuevo):
 
@@ -138,6 +138,7 @@ formato (versión, fecha, huella, commit, qué cambió).
 | v2.27.7 | 2026-11-26 | `d49be76685177b6e8741fc68c6f75ef765139fdbb6c802a541db82cecf91f644` | `1647d05a0` | liga del usuario (fotos de Tigre, 12 OVR y nombres de premios) | no |
 | v2.27.8 | 2026-11-26 | `d6b2053dad13dac91dd75e463785bb16d6bcd103511760104b9385176b5be552` | `3f58676cc` | draft generado +8 y descuento de los juveniles de 17 | no |
 | v2.27.9 | 2026-11-26 | `adaf38f92d7e7d0e05f931bfbbc33e555619696a67369e9fb3726fdea7f44ec8` | `5c347e7fc` | draft generado +12 y Baroni 41 | no |
-| v2.27.10 | 2026-11-26 | `fa826772c4ee47547b10812bb6806aae1cac3d6d46958bdaa4345ab7d1c5d4e3` | `f333198c6` | umbral del Salón de la Fama (hofFactor 0,5) | sí |
+| v2.27.10 | 2026-11-26 | `fa826772c4ee47547b10812bb6806aae1cac3d6d46958bdaa4345ab7d1c5d4e3` | `f333198c6` | umbral del Salón de la Fama (hofFactor 0,5) | no |
 | v2.27.11 | 2026-11-26 | `52e7547659fc1fdb9796e7f423c17d5fd1b99fceee0622a31b01c0899493dd20` | `f0a6e1317` | lesiones en inglés | sí |
 | v2.27.12 | 2026-11-26 | `633aa383ec639fdd476908daad1b508e302dcbcd60a8be74e2d1dad31f5cd68b` | `f85e27ac1` | nombres oficiales de 16 clubes (equipos.csv) | sí |
+| v2.27.13 | 2026-11-28 | `35655d24290433d511287c537ed362048205879ec96ba4444cca0567cb9811f9` | (este commit) | Barbi y Andrada con la forma del archivo; gambeta a Andrada | sí |

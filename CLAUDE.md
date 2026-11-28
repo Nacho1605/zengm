@@ -33,10 +33,12 @@ oficial.
   `.json.gz`. Datos que manda (tablas, estadísticas) se guardan en archivos.
 - Edita cosas dentro del juego (fotos, ratings, equipos) y manda su liga
   exportada: SIEMPRE importar esos cambios con `desde-juego.ts` antes de armar
-  una versión nueva, o se pierden. Si en el juego solo subió o bajó parejo un
-  OVR (queda a 1 punto como mucho de la forma del archivo), se guarda solo el
-  OVR, sin ratings a mano (consistencia, 26/11); los que traen forma propia
-  quedan a mano con `"ratingsDelJuego": true` (ya traen las secundarias).
+  una versión nueva, o se pierden. De lo que cambia en el juego se trae solo
+  el OVR (`desde-juego.ts`, desde el 28/11): todos los jugadores quedan con la
+  forma del archivo, autogenerada. El usuario: no darles mucho valor a sus
+  retoques chicos de forma ("a veces no sé bien lo que hago"). Si una forma
+  que dejó parece querer decir algo, proponerle un rasgo.
+  `RATINGS_A_MANO=si` guarda ratings exactos solo si él lo pide.
 - Decide él. Quiere que Claude analice por su cuenta (no por reglas escritas
   ni fórmulas) y le devuelva sus dudas; él corrige.
 - Usa esfuerzo alto (xHigh) mientras se afinan los procedimientos.

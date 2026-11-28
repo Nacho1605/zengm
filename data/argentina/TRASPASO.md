@@ -1,24 +1,24 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 28/11/2026. Última versión: **v2.27.12**
-(`data/argentina/BBGM_Argentina_2026_v.2.27.12_futbol.json`, sha256
-`633aa383ec639fdd476908daad1b508e302dcbcd60a8be74e2d1dad31f5cd68b`).
+Estado al 28/11/2026. Última versión: **v2.27.13**
+(`data/argentina/BBGM_Argentina_2026_v.2.27.13_futbol.json`, sha256
+`35655d24290433d511287c537ed362048205879ec96ba4444cca0567cb9811f9`).
 
 - **Planteles:** 25 de 30 equipos con plantel 2026 (faltan SAR, ALD, ATU, CCO
   y GEM), Rendimiento completo, comentario (`contexto`) en los 25, fotos de
   los 778 jugadores de los equipos cargados.
 - **OVR:** escala de 20 a 79 (Paredes 79, Di María 78, Montiel 76); método de
-  juveniles de punto medio (CLAUDE.md); solo Barbi (TAL) y Andrada (RIV) con
-  ratings a mano.
+  juveniles de punto medio (CLAUDE.md). Ningún jugador con ratings a mano:
+  todos con la forma del archivo (autogenerada), pedido del usuario (28/11).
 - **Forma de los ratings:** forma 5 (posiciones secundarias, defectos y rasgo
   "llegada").
 - **Liga:** gala de premios propia (21); Salón de la Fama con `hofFactor` 0,5;
   draft generado +12; lesiones en inglés; cierre de pases a mitad de año. Ver
   §5.
-- **Comprobado** el 28/11: armada desde la v2.0 da la misma huella; validación
+- **Comprobado** el 28/11 (v2.27.13): armada dos veces desde la v2.0, misma huella; validación
   0 errores; auditoría 53 controles, 8 con alertas (las de siempre).
 - **Escalera del usuario:** https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U
-  (copia en `data/argentina/escalera/`), al día con la v2.27.12.
+  (copia en `data/argentina/escalera/`), al día con la v2.27.13.
 - **Repositorio:** en la carpeta quedan la v2.0 (base) y las tres últimas
   versiones; las otras 112 salieron de la carpeta el 28/11 (pedido del
   usuario) y siguen en el historial de git. Huella, commit y resumen de cada
@@ -569,9 +569,12 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   reciente salvo que se le dé la base: si se armó una versión después de la
   que usó el usuario, darle esa base o los OVR nuevos se pisan. Para saber la
   base: mirar un OVR que cambió entre versiones (ej. Cantizano 62/56).
-- Ratings que el usuario ajusta en el juego quedan "a mano" (`ratings` en el
-  plantel): sus rasgos ya no se aplican solos y su OVR no se puede cambiar sin
-  tocar los ratings (`ajustar-ovr.ts`).
+- Ratings que el usuario ajusta en el juego: desde el 28/11 `desde-juego.ts`
+  trae solo el OVR (el jugador sigue con la forma del archivo; si la forma que
+  dejó parece querer decir algo, lo avisa para proponer un rasgo).
+  `RATINGS_A_MANO=si` guarda los ratings exactos, como antes, solo si el
+  usuario lo pide. Un jugador con ratings a mano no recibe solos sus rasgos y
+  su OVR se cambia con `ajustar-ovr.ts`.
 - Abreviaturas: las de `equipos.csv` (al día con el juego). Si el usuario
   cambia una en el juego, `desde-juego.ts` la pasa al CSV.
 - Transfermarkt a veces repite números de camiseta en un plantel: dejar sin
@@ -647,6 +650,19 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**28/11/2026 (v2.27.13): todos autogenerados.** Huella: `35655d24290433d511287c537ed362048205879ec96ba4444cca0567cb9811f9`.
+- Pedido del usuario: Barbi (TAL) y Andrada (RIV) sin ratings a mano, con la
+  forma del archivo ("a lo largo de las sesiones les das mucho valor a cambios
+  menores que hago de manera arbitraria... a veces no sé bien lo que hago").
+- A Andrada, "gambeta" para hacerlo más ofensivo: gambeta 66 → 72, marca 48
+  → 56, pase 67 → 61; mismo OVR 65. Ya no queda ningún jugador con ratings a
+  mano.
+- `desde-juego.ts` trae solo el OVR de lo que el usuario cambia en el juego
+  (`RATINGS_A_MANO=si` para lo de antes).
+- En la carpeta sale la v2.27.10 (anotada en `versiones.md`).
+- Contra la v2.27.12: solo los ratings de esos dos (mismo OVR). Armada dos
+  veces con la misma huella; validación 0 errores; auditoría igual.
+
 **28/11/2026 (sin versión nueva): repositorio al día y traspaso.** Pedido del
 usuario: limpiar las versiones viejas (dejándolas como referencia escrita) y
 poner la documentación al día.
@@ -1624,7 +1640,7 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.27.12.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.27.13.
 > Corré la validación y la auditoría sobre ese archivo y confirmame en pocas
 > líneas que entendiste el estado. Seguimos con Sarmiento: decime qué datos
 > te tengo que mandar.

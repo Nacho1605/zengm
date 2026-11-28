@@ -10,7 +10,8 @@
 // "ratings ajustados a mano" y volverían al valor viejo.
 //
 // - Planteles (data/argentina/planteles/*.json): fotos, camisetas que asignó
-//   el juego, ratings ajustados a mano (se guardan exactos en "ratings") y
+//   el juego, OVR que cambió el usuario (solo el OVR desde el 28/11; con
+//   RATINGS_A_MANO=si, los ratings exactos en "ratings") y
 //   parientes nuevos (en "parientes", de un solo lado: el cargador los une en
 //   los dos sentidos).
 // - Equipos (data/argentina/equipos.csv): ciudad, apodo,
@@ -120,12 +121,20 @@ for (const pl of planteles) {
 		const bp = enBase.get(clave(p)) as any;
 		const b = bp?.ratings.at(-1);
 		if (b && KEYS.some((k) => b[k] !== r[k])) {
-			j.ratings = Object.fromEntries(KEYS.map((k) => [k, r[k]]));
-			// Los ratings del juego ya traen el corrimiento de las secundarias
-			// (forma 5): el cargador no tiene que sumarlo otra vez (26/11; antes
-			// se sumaba dos veces y el jugador quedaba hasta 2 puntos distinto)
-			j.ratingsDelJuego = true;
-			resumen.ratings!.push(`${j.nombre} ${j.apellido} ${j.ovr}→${r.ovr}`);
+			// Desde el 28/11 (el usuario: todos autogenerados; sus retoques de forma
+			// en el juego no son decisiones firmes) se trae solo el OVR: el jugador
+			// sigue con la forma del archivo. Si la forma que dejó parece querer
+			// decir algo, se le propone un rasgo. RATINGS_A_MANO=si guarda los
+			// ratings exactos, como antes (solo si el usuario lo pide)
+			if (process.env.RATINGS_A_MANO === "si") {
+				j.ratings = Object.fromEntries(KEYS.map((k) => [k, r[k]]));
+				// Los ratings del juego ya traen el corrimiento de las secundarias
+				// (forma 5): el cargador no tiene que sumarlo otra vez
+				j.ratingsDelJuego = true;
+			}
+			const dif = KEYS.filter((k) => k !== "hgt").map((k) => r[k] - b[k]);
+			const parejo = Math.max(...dif) - Math.min(...dif) <= 2;
+			resumen.ratings!.push(`${j.nombre} ${j.apellido} ${j.ovr}→${r.ovr}${parejo ? "" : " (cambió la forma: ver si pide un rasgo)"}`);
 			j.ovr = r.ovr;
 			pl.cambios += 1;
 		}
