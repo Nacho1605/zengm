@@ -146,4 +146,4 @@ formato (versión, fecha, huella, commit, qué cambió).
 | v2.28.1 | 2026-11-28 | `2b9e3bf028cb5bc85ac58a4e2caed93c0ca5c622a96bfe46098f96af263a2476` | `b78b2e578` | segunda revisión de OVR de Sarmiento (9 cambios) | no |
 | v2.29 | 2026-11-28 | `14d412fe74e43a966be1034a903952a15949b332ddb900c1abcd2d257286ba72` | `d1fe521d8` | Aldosivi (32 jugadores), Arboleda 44 y revisión hacia atrás de Rolón y R. Márquez | sí |
 | v2.29.1 | 2026-11-28 | `e2ec23576031b71aed1db43b0da78816bebe0123e9f262233875d6af6f1de5ee` | `1515ca2ed` | segunda revisión de OVR de Aldosivi (3 cambios) y los que se van en enero | sí |
-| v2.29.2 | 2026-11-28 | `77d2f21ca4eedcd10f7e35dd870d75016fbcb2fbdc30531761fcf0d86133fdf7` | (commit de la v2.29.2) | respuestas del usuario: Werner 48, Pombo 58, "faltero" a Martín García | sí |
+| v2.29.2 | 2026-11-28 | `77d2f21ca4eedcd10f7e35dd870d75016fbcb2fbdc30531761fcf0d86133fdf7` | `a5770caf8` | respuestas del usuario: Werner 48, Pombo 58, "faltero" a Martín García | sí |
