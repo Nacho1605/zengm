@@ -1,8 +1,8 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 28/11/2026. Última versión: **v2.28**
-(`data/argentina/BBGM_Argentina_2026_v.2.28_futbol.json`, sha256
-`82f7f53df459c79dd8c53feb9ebabf8328564b595ab71b4356be1b626317d211`).
+Estado al 28/11/2026. Última versión: **v2.28.1**
+(`data/argentina/BBGM_Argentina_2026_v.2.28.1_futbol.json`, sha256
+`2b9e3bf028cb5bc85ac58a4e2caed93c0ca5c622a96bfe46098f96af263a2476`).
 
 - **Planteles:** 26 de 30 equipos con plantel 2026 (faltan ALD, ATU, CCO y
   GEM), Rendimiento completo, comentario (`contexto`) en los 26, fotos de
@@ -16,20 +16,21 @@ Estado al 28/11/2026. Última versión: **v2.28**
 - **Liga:** gala de premios propia (21); Salón de la Fama con `hofFactor` 0,5;
   draft generado +12; lesiones en inglés; cierre de pases a mitad de año. Ver
   §5.
-- **Comprobado** el 28/11 (v2.28): armada dos veces desde la v2.0, misma huella; validación
+- **Comprobado** el 28/11 (v2.28.1): armada dos veces desde la v2.0, misma huella; validación
   0 errores; auditoría 53 controles, 9 con alertas (las de siempre y las 32
   fotos de Sarmiento).
 - **Escalera del usuario:** https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U
-  (copia en `data/argentina/escalera/`), al día con la v2.28.
+  (copia en `data/argentina/escalera/`), al día con la v2.28.1.
 - **Repositorio:** en la carpeta quedan la v2.0 (base) y las tres últimas
-  versiones (v2.27.12, v2.27.13 y v2.28); las otras 114 salieron de la
+  versiones (v2.27.13, v2.28 y v2.28.1); las otras 115 salieron de la
   carpeta (pedido del usuario, 28/11) y siguen en el historial de git.
   Huella, commit y resumen de cada una en `versiones.md`; se recuperan con la
   misma huella.
 
 **Lo que sigue:**
-1. **Sarmiento (v2.28) cargado:** esperar las respuestas del usuario a las
-   dudas de OVR (bitácora del 28/11) y sus fotos (las pone en el juego).
+1. **Sarmiento (v2.28, segunda revisión en la v2.28.1):** esperar las
+   respuestas del usuario a las dudas de OVR (bitácora del 28/11) y sus fotos
+   (las pone en el juego).
    **Próximo equipo (v2.29): Aldosivi.** Después ATU, CCO y GEM (orden
    del usuario). Pedir lo de siempre (§3): plantel "Ampliado" y Rendimiento
    2026, debut e inferiores, los que siguen en reserva, lesiones, parientes,
@@ -665,6 +666,41 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**28/11/2026 (v2.28.1): segunda revisión de Sarmiento.** Huella:
+`2b9e3bf028cb5bc85ac58a4e2caed93c0ca5c622a96bfe46098f96af263a2476`.
+
+- Pedido del usuario: segunda revisión con todos los datos guardados. Se
+  cruzaron cuatro miradas por jugador: el modelo general (`revision-datos.py`
+  y `revision-modelo.py`: valor, minutos, titularidades, G+A/90, Sofascore,
+  edad, capitán, puntos por partido del equipo y copas, ajustado con los 748
+  jugadores cargados), el de defensores y medios (`revision-datos2.py` y
+  `revision-defensores.py`: sin goles, con el ppp relativo y los goles en
+  contra del equipo), el de juveniles (`revision-juveniles.py`) y los pares
+  por minutos (`pares-minutos.mjs`). Cambio solo si al menos dos coinciden
+  en la dirección.
+- Sofascore de las listas por puesto del usuario que faltaba en el plantel:
+  Suárez 6,63 (lateral izquierdo) y Herrera 6,48 (9).
+- Tendencia del usuario contra el modelo (sus valores fijados, 600' o más):
+  ofensivos +2,1, delanteros +1,6, centrales +0,7, volantes −0,2, laterales
+  −1,0, arqueros −0,7. Por eso Mavilla queda en 62 (el modelo da 60,5, como
+  Pity Martínez 62 y Lázaro 61 del usuario) y los laterales bajan.
+- 9 cambios: Ayala 59 → 58 (como titular de medio año el modelo da 56,7;
+  entre Devecchi y D. Rodríguez, 55, y M. Ledesma y Unsaín, 62), Suárez 60 →
+  59, Seyral 52 → 50 (modelo 46,7, pares 52), Santamaría 56 → 55 (=
+  Bonifacio), Pasquini 51 → 50, Díaz 50 → 49, M. Martínez 61 → 60, Nadruz 40
+  → 39 (debajo de Viera, 40), Magnin 48 → 49 (= L. Giménez, mismos números).
+  Sin cambio por miradas opuestas: Cabrera, García, E. Giménez (el modelo lo
+  sube por llegar en julio, pero en River no jugaba), G. González, Contrera,
+  Churín, Márquez y Marabel (modelo 66,8, pares 65). Juveniles: U. Giménez y
+  O. Giménez coinciden con el método.
+- Once 59,6 (antes 60,0); desvío del modelo +1,59 → +1,31 y por minutos −0,6
+  → −0,9. Dudas que siguen: Arboleda 45 (lista 56; los datos dan 35 a 40),
+  Herrera 55 y Marabel 66 o 67.
+- Contra la v2.28: esos 9 OVR (ratings y sueldo), el orden del plantel y el
+  número de pick de 4 de SAR; los otros 3421 jugadores, iguales. Armada dos
+  veces con la misma huella; validación 0 errores; auditoría igual. Sale de
+  la carpeta la v2.27.12.
+
 **28/11/2026 (v2.28): Sarmiento.** Huella:
 `82f7f53df459c79dd8c53feb9ebabf8328564b595ab71b4356be1b626317d211`.
 

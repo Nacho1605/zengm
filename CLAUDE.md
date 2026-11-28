@@ -92,8 +92,8 @@ juego lo acepta. Commit + push de cada versión
 Versiones en la carpeta (desde el 28/11, pedido del usuario): solo la v2.0
 (base) y las tres últimas. Al armar una nueva, la más vieja de las tres sale de
 la carpeta (`git rm`) y se anota en `data/argentina/versiones.md` (versión,
-fecha, huella, commit, qué cambió). Ahí están todas (114 fuera de la carpeta
-desde la v2.28), recuperables con `git show COMMIT:data/argentina/ARCHIVO.json > ARCHIVO.json`
+fecha, huella, commit, qué cambió). Ahí están todas (115 fuera de la carpeta
+desde la v2.28.1), recuperables con `git show COMMIT:data/argentina/ARCHIVO.json > ARCHIVO.json`
 (si el clon de la sesión es corto, antes `git fetch --deepen=1500 origin
 liga-profesional-ar-2026-json`).
 

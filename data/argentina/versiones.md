@@ -8,7 +8,7 @@ bitácora de `TRASPASO.md` (§9).
 
 **Quedan en la carpeta:**
 - `BBGM_Argentina_2026_v.2.0_futbol.json`: la base de la fase 2 (`armar-v2.sh` arma todo desde ella).
-- Las tres últimas versiones (hoy v2.27.12, v2.27.13 y v2.28): para comparar con la anterior y por si el usuario juega sobre una de ellas (`desde-juego.ts` necesita esa base).
+- Las tres últimas versiones (hoy v2.27.13, v2.28 y v2.28.1): para comparar con la anterior y por si el usuario juega sobre una de ellas (`desde-juego.ts` necesita esa base).
 
 **Cómo recuperar una versión borrada** (sin armarla de nuevo):
 
@@ -140,6 +140,7 @@ formato (versión, fecha, huella, commit, qué cambió).
 | v2.27.9 | 2026-11-26 | `adaf38f92d7e7d0e05f931bfbbc33e555619696a67369e9fb3726fdea7f44ec8` | `5c347e7fc` | draft generado +12 y Baroni 41 | no |
 | v2.27.10 | 2026-11-26 | `fa826772c4ee47547b10812bb6806aae1cac3d6d46958bdaa4345ab7d1c5d4e3` | `f333198c6` | umbral del Salón de la Fama (hofFactor 0,5) | no |
 | v2.27.11 | 2026-11-26 | `52e7547659fc1fdb9796e7f423c17d5fd1b99fceee0622a31b01c0899493dd20` | `f0a6e1317` | lesiones en inglés | no |
-| v2.27.12 | 2026-11-26 | `633aa383ec639fdd476908daad1b508e302dcbcd60a8be74e2d1dad31f5cd68b` | `f85e27ac1` | nombres oficiales de 16 clubes (equipos.csv) | sí |
+| v2.27.12 | 2026-11-26 | `633aa383ec639fdd476908daad1b508e302dcbcd60a8be74e2d1dad31f5cd68b` | `f85e27ac1` | nombres oficiales de 16 clubes (equipos.csv) | no |
 | v2.27.13 | 2026-11-28 | `35655d24290433d511287c537ed362048205879ec96ba4444cca0567cb9811f9` | `3ed436538` | Barbi y Andrada con la forma del archivo; gambeta a Andrada | sí |
 | v2.28 | 2026-11-28 | `82f7f53df459c79dd8c53feb9ebabf8328564b595ab71b4356be1b626317d211` | `bf3426cfa` | Sarmiento (32 jugadores) | sí |
+| v2.28.1 | 2026-11-28 | `2b9e3bf028cb5bc85ac58a4e2caed93c0ca5c622a96bfe46098f96af263a2476` | (commit de la v2.28.1) | segunda revisión de OVR de Sarmiento (9 cambios) | sí |
