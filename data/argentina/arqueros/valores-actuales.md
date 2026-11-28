@@ -1,6 +1,6 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.29.1_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.29.2_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
@@ -41,12 +41,12 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | BOC | Leandro Brey | 55 | 50 | −5 | 17 | 1400 |
 | EST | Fabricio Iacovich | 57 | 49 | −8 | 13 | 1125 |
 | ERC | Lucas Bruera | 54 | 48 | −6 | 9 | 810 |
+| ROS | Axel Werner | 51 | 48 | −3 | 3 | 270 |
 | NOB | Gabriel Arias | 58 | 46 | −12 | 7 | 613 |
 | SAR | Iván Arboleda | 56 | 44 | −12 | 2 | 180 |
 | ERC | Agustín Lastra | 49 | 42 | −7 | 13 | 1170 |
 | ALD | Ignacio Chicco | 44 | 41 | −3 | 8 | 720 |
 | GIM | Harlen Castillo | 42 | 40 | −2 | 5 | 450 |
-| ROS | Axel Werner | 51 | 40 | −11 | 3 | 270 |
 | BEL | Manuel Vicentini | 45 | 38 | −7 | 3 | 270 |
 | RAC | Matías Tagliamonte | 46 | 38 | −8 | 3 | 225 |
 | HUR | Sebastián Meza | 43 | 37 | −6 | 4 | 360 |

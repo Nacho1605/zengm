@@ -210,7 +210,7 @@
 			"ppp": 0.82,
 			"convocado": 17,
 			"fichado": "01/07/2026",
-			"ovr": 55,
+			"ovr": 58,
 			"debut": {
 				"club": "ARS",
 				"anio": 2023
@@ -679,6 +679,9 @@
 			"secundarias": [
 				"Pivote",
 				"Mediocentro ofensivo"
+			],
+			"rasgos": [
+				"faltero"
 			],
 			"sofascore": 6.7
 		},

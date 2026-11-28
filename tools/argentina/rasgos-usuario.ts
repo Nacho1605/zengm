@@ -36,7 +36,7 @@ const LISTA: Record<string, [string, string, ...string[]][]> = {
 	patadura: [["ERC", "Bruera"], ["EST", "Carrillo"], ["HUR", "Gil"], ["ROS", "Copetti"], ["UNI", "Tarragona"], ["PLA", "Goñi"], ["PLA", "Sepúlveda"], ["SAR", "Orihuela"]],
 	inseguro: [["EST", "Muslera"], ["RIE", "Arce"], ["BAN", "Rodríguez", "Diego"]],
 	desordenado: [["EST", "González Pírez"], ["EST", "Rodríguez"], ["HUR", "Gil"], ["RIV", "Martínez Quarta"], ["DYJ", "Portillo"]],
-	faltero: [["EST", "Rojo", "+"], ["RIV", "Otamendi"], ["RIV", "Moreno"], ["GIM", "Miramón"], ["HUR", "Ibáñez"], ["HUR", "Caicedo"], ["LAN", "Carrera"], ["DYJ", "Fernández", "Damián"], ["DYJ", "López"], ["BAN", "Adoryán"], ["SAR", "Insaurralde", "+"], ["ALD", "Bochi"]],
+	faltero: [["EST", "Rojo", "+"], ["RIV", "Otamendi"], ["RIV", "Moreno"], ["GIM", "Miramón"], ["HUR", "Ibáñez"], ["HUR", "Caicedo"], ["LAN", "Carrera"], ["DYJ", "Fernández", "Damián"], ["DYJ", "López"], ["BAN", "Adoryán"], ["SAR", "Insaurralde", "+"], ["ALD", "Bochi"], ["ALD", "García"]],
 	liviano: [["EST", "Cetré"], ["RIV", "Driussi"], ["SLO", "Barrios", "+"], ["UNI", "Menossi"], ["VEL", "Marchiori"], ["VEL", "Martínez"], ["PLA", "Zapiola"], ["PLA", "Merlini"], ["PLA", "Gauto"], ["DYJ", "Barbona"], ["TIG", "Serrago"], ["TIG", "López"], ["SAR", "Giménez", "Elián"], ["SAR", "González"], ["SAR", "Contrera"]],
 	"flojo de arriba": [["RIV", "Driussi"], ["ROS", "Ibarra"], ["SLO", "Farías"], ["SLO", "Barrios", "+"], ["PLA", "Gómez"], ["DYJ", "Molinas"], ["DYJ", "Blanco"], ["DYJ", "Hausch"], ["SAR", "García"], ["ALD", "Rodríguez"]],
 	estatico: [["NOB", "Arias"], ["UNI", "Gomes Gerth"]],

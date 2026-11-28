@@ -1,8 +1,8 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 28/11/2026. Última versión: **v2.29.1**
-(`data/argentina/BBGM_Argentina_2026_v.2.29.1_futbol.json`, sha256
-`e2ec23576031b71aed1db43b0da78816bebe0123e9f262233875d6af6f1de5ee`).
+Estado al 28/11/2026. Última versión: **v2.29.2**
+(`data/argentina/BBGM_Argentina_2026_v.2.29.2_futbol.json`, sha256
+`77d2f21ca4eedcd10f7e35dd870d75016fbcb2fbdc30531761fcf0d86133fdf7`).
 
 - **Planteles:** 27 de 30 equipos con plantel 2026 (faltan ATU, CCO y GEM),
   Rendimiento completo, comentario (`contexto`) en los 27, fotos de los 778
@@ -16,23 +16,21 @@ Estado al 28/11/2026. Última versión: **v2.29.1**
 - **Liga:** gala de premios propia (21); Salón de la Fama con `hofFactor` 0,5;
   draft generado +12; lesiones en inglés; cierre de pases a mitad de año. Ver
   §5.
-- **Comprobado** el 28/11 (v2.29.1): armada dos veces desde la v2.0, misma huella; validación
+- **Comprobado** el 28/11 (v2.29.2): armada dos veces desde la v2.0, misma huella; validación
   0 errores; auditoría 53 controles, 9 con alertas (las de siempre y las 64
   fotos de Sarmiento y Aldosivi).
 - **Escalera del usuario:** https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U
-  (copia en `data/argentina/escalera/`), al día con la v2.29.1.
+  (copia en `data/argentina/escalera/`), al día con la v2.29.2.
 - **Repositorio:** en la carpeta quedan la v2.0 (base) y las tres últimas
-  versiones (v2.28.1, v2.29 y v2.29.1); las otras 117 salieron de la
+  versiones (v2.29, v2.29.1 y v2.29.2); las otras 118 salieron de la
   carpeta (pedido del usuario, 28/11) y siguen en el historial de git.
   Huella, commit y resumen de cada una en `versiones.md`; se recuperan con la
   misma huella.
 
 **Lo que sigue:**
-1. **Aldosivi (v2.29, segunda revisión en la v2.29.1):** quedan dos dudas
-   sin respuesta (Werner 40 → 48 propuesto, sin aplicar; Acosta 56 contra su
-   lista 58) y la pregunta del rasgo "faltero" para Martín García; el
-   usuario aceptó la lesión de Moyano, "Blas Agustín" y los parientes. Fotos
-   de SAR y ALD pendientes (las pone en el juego). Sarmiento cerrado (Arboleda
+1. **Aldosivi cerrado** (v2.29, segunda revisión en la v2.29.1, respuestas
+   del usuario en la v2.29.2). Fotos de SAR y ALD pendientes (las pone en el
+   juego). Sarmiento cerrado (Arboleda
    44, Herrera 55 y Marabel 66, confirmados por el usuario).
    **Próximo equipo (v2.30): Atlético Tucumán.** Después CCO y GEM (orden
    del usuario). Pedir lo de siempre (§3): plantel "Ampliado" y Rendimiento
@@ -677,6 +675,22 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**28/11/2026 (v2.29.2): respuestas del usuario sobre Aldosivi.** Huella:
+`77d2f21ca4eedcd10f7e35dd870d75016fbcb2fbdc30531761fcf0d86133fdf7`.
+
+- Acepta Werner 40 → 48 (ROS; con los 1350' de titular en ALD), Acosta 56 y
+  "faltero" para Martín García (ALD; también en `rasgos-usuario.ts`: marca
+  más faltas y lee menos en defensa, mismo OVR 53).
+- Pombo 55 → 58: "si el modelo le daba 58, me parece un buen número para
+  buffearlo". Lección: cuando los números y el modelo coinciden en un valor
+  alto, el usuario prefiere ese número antes que bajarlo por una lectura
+  cualitativa de su comentario (acá, "perdió solidez atrás").
+- Once ALD 55,8. Contra la v2.29.1: Werner y Pombo (OVR, ratings, sueldo),
+  los ratings de García, el orden de 10 compañeros y el número de pick de 2
+  de ROS; los otros 3440 jugadores, iguales. Armada dos veces con la misma
+  huella; validación 0 errores; auditoría igual. Sale de la carpeta la
+  v2.28.1.
+
 **28/11/2026 (v2.29.1): segunda revisión de Aldosivi.** Huella:
 `e2ec23576031b71aed1db43b0da78816bebe0123e9f262233875d6af6f1de5ee`.
 
