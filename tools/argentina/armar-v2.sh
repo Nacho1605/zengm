@@ -16,7 +16,7 @@ node "$dir/tools/argentina/equipos-interior.ts" \
 	"$dir/data/argentina/BBGM_Argentina_2026_v.2.0_futbol.json" "$tmp/base.json"
 
 archivos=()
-for p in RIE BOC RIV RAC SLO IND ROS EST ARG VEL INR GIM LAN HUR TAL BEL INS NOB ERC UNI BAR PLA DYJ BAN TIG SAR; do
+for p in RIE BOC RIV RAC SLO IND ROS EST ARG VEL INR GIM LAN HUR TAL BEL INS NOB ERC UNI BAR PLA DYJ BAN TIG SAR ALD; do
 	archivos+=("$dir/data/argentina/planteles/$p.json")
 done
 node "$dir/tools/argentina/cargar-plantel.ts" "$tmp/base.json" "$salida" "${archivos[@]}"

@@ -57,6 +57,7 @@ node tools/argentina/vecinos.ts ARCHIVO.json EQUIPO  # cada jugador contra sus v
 node tools/argentina/pares-minutos.mjs ARCHIVO.json EQUIPO  # segunda revisión: contra los de su puesto con minutos parecidos
 python3 tools/argentina/revision-datos.py ARCHIVO.json D.json && python3 tools/argentina/revision-modelo.py D.json M.json  # revisión general: OVR esperado de todos (necesita numpy)
 python3 tools/argentina/revision-datos2.py ARCHIVO.json D2.json  # + revision-juveniles.py y revision-defensores.py
+python3 tools/argentina/revision-modelo-sin.py D.json EQUIPO M.json  # OVR esperado de un equipo nuevo, con el modelo ajustado sin él
 python3 tools/argentina/sofascore-listas.py S.json  # cruza las listas de Sofascore por puesto del usuario con los planteles
 node tools/argentina/techo-esperado.mjs EQUIPO APELLIDO OVR "rasgo1,rasgo2" ...  # techo esperado con distintas formas (reglas de crecimiento del juego, sin azar)
 node tools/argentina/arqueros.ts ARCHIVO.json > data/argentina/arqueros/valores-actuales.md  # lista de arqueros vs hoy
@@ -92,8 +93,8 @@ juego lo acepta. Commit + push de cada versión
 Versiones en la carpeta (desde el 28/11, pedido del usuario): solo la v2.0
 (base) y las tres últimas. Al armar una nueva, la más vieja de las tres sale de
 la carpeta (`git rm`) y se anota en `data/argentina/versiones.md` (versión,
-fecha, huella, commit, qué cambió). Ahí están todas (115 fuera de la carpeta
-desde la v2.28.1), recuperables con `git show COMMIT:data/argentina/ARCHIVO.json > ARCHIVO.json`
+fecha, huella, commit, qué cambió). Ahí están todas (116 fuera de la carpeta
+desde la v2.29), recuperables con `git show COMMIT:data/argentina/ARCHIVO.json > ARCHIVO.json`
 (si el clon de la sesión es corto, antes `git fetch --deepen=1500 origin
 liga-profesional-ar-2026-json`).
 

@@ -149,4 +149,5 @@ export const EN_INGLES: Record<string, string> = {
 	"Rotura de ligamentos cruzados": "Torn ACL",
 	"Lesión de hombro": "Shoulder Injury",
 	"Operación de rodilla": "Knee Surgery",
+	"Artroscopia": "Arthroscopic Surgery",
 };
