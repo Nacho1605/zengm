@@ -93,8 +93,8 @@ juego lo acepta. Commit + push de cada versión
 Versiones en la carpeta (desde el 28/11, pedido del usuario): solo la v2.0
 (base) y las tres últimas. Al armar una nueva, la más vieja de las tres sale de
 la carpeta (`git rm`) y se anota en `data/argentina/versiones.md` (versión,
-fecha, huella, commit, qué cambió). Ahí están todas (116 fuera de la carpeta
-desde la v2.29), recuperables con `git show COMMIT:data/argentina/ARCHIVO.json > ARCHIVO.json`
+fecha, huella, commit, qué cambió). Ahí están todas (117 fuera de la carpeta
+desde la v2.29.1), recuperables con `git show COMMIT:data/argentina/ARCHIVO.json > ARCHIVO.json`
 (si el clon de la sesión es corto, antes `git fetch --deepen=1500 origin
 liga-profesional-ar-2026-json`).
 
@@ -324,6 +324,9 @@ v2.14.1 → v2.14.2).
 - Lesiones: 1 partido ≈ 1 semana desde la fecha actual. Sin fecha de vuelta:
   estimar por el tipo y el tiempo que ya pasó, y avisarle.
 - Contrato "-" en Transfermarkt: vence en 2027.
+- Flecha roja con el escudo de "sin club" en el plantel de Transfermarkt: el
+  jugador deja el club en enero de 2027 (`"saleEnEnero": true`; se carga igual).
+  Sirve para el paso a 2027 (TRASPASO §7.9).
 - Jugadores que ya existen en el archivo con datos de 2023: van en
   `reemplaza` (se borran y se crean de nuevo, sin historial). Buscarlos por
   apellido y año ±2 (ojo con los nombres de pila compuestos) y revisar

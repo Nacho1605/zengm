@@ -1,8 +1,8 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 28/11/2026. Última versión: **v2.29**
-(`data/argentina/BBGM_Argentina_2026_v.2.29_futbol.json`, sha256
-`14d412fe74e43a966be1034a903952a15949b332ddb900c1abcd2d257286ba72`).
+Estado al 28/11/2026. Última versión: **v2.29.1**
+(`data/argentina/BBGM_Argentina_2026_v.2.29.1_futbol.json`, sha256
+`e2ec23576031b71aed1db43b0da78816bebe0123e9f262233875d6af6f1de5ee`).
 
 - **Planteles:** 27 de 30 equipos con plantel 2026 (faltan ATU, CCO y GEM),
   Rendimiento completo, comentario (`contexto`) en los 27, fotos de los 778
@@ -16,21 +16,23 @@ Estado al 28/11/2026. Última versión: **v2.29**
 - **Liga:** gala de premios propia (21); Salón de la Fama con `hofFactor` 0,5;
   draft generado +12; lesiones en inglés; cierre de pases a mitad de año. Ver
   §5.
-- **Comprobado** el 28/11 (v2.29): armada dos veces desde la v2.0, misma huella; validación
+- **Comprobado** el 28/11 (v2.29.1): armada dos veces desde la v2.0, misma huella; validación
   0 errores; auditoría 53 controles, 9 con alertas (las de siempre y las 64
   fotos de Sarmiento y Aldosivi).
 - **Escalera del usuario:** https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U
-  (copia en `data/argentina/escalera/`), al día con la v2.29.
+  (copia en `data/argentina/escalera/`), al día con la v2.29.1.
 - **Repositorio:** en la carpeta quedan la v2.0 (base) y las tres últimas
-  versiones (v2.28, v2.28.1 y v2.29); las otras 116 salieron de la
+  versiones (v2.28.1, v2.29 y v2.29.1); las otras 117 salieron de la
   carpeta (pedido del usuario, 28/11) y siguen en el historial de git.
   Huella, commit y resumen de cada una en `versiones.md`; se recuperan con la
   misma huella.
 
 **Lo que sigue:**
-1. **Aldosivi (v2.29):** esperar las respuestas del usuario a las dudas
-   (bitácora del 28/11: Werner, Acosta, Moyano, "Blas Agustín" Palavecino) y
-   las fotos de SAR y ALD (las pone en el juego). Sarmiento cerrado (Arboleda
+1. **Aldosivi (v2.29, segunda revisión en la v2.29.1):** quedan dos dudas
+   sin respuesta (Werner 40 → 48 propuesto, sin aplicar; Acosta 56 contra su
+   lista 58) y la pregunta del rasgo "faltero" para Martín García; el
+   usuario aceptó la lesión de Moyano, "Blas Agustín" y los parientes. Fotos
+   de SAR y ALD pendientes (las pone en el juego). Sarmiento cerrado (Arboleda
    44, Herrera 55 y Marabel 66, confirmados por el usuario).
    **Próximo equipo (v2.30): Atlético Tucumán.** Después CCO y GEM (orden
    del usuario). Pedir lo de siempre (§3): plantel "Ampliado" y Rendimiento
@@ -504,6 +506,15 @@ se llegó; lo vigente está en CLAUDE.md y en este archivo):
    Cruz y uno más en diciembre): el usuario decidió esperar. Plan propuesto:
    pretemporada 2027, contratos de fin de 2026 renovados un año, lesiones
    recalculadas al 24/01/2027, prospectos de reserva a la clase 2027.
+   Dato nuevo (el usuario, 28/11): la flecha roja con el escudo de "sin
+   club" en la captura del plantel de Transfermarkt quiere decir que el
+   jugador deja el club en enero (en ALD: Moyano, L. Rodríguez, Bochi, Gino,
+   L. Chávez y Vombergar; `saleEnEnero` en el plantel, no entra al juego).
+   Es un problema para dentro de un mes: el usuario quiere que para entonces
+   ya esté resuelto qué hacer con ascensos y descensos, con el Torneo
+   Apertura 2027 empezando en enero de 2027 y la temporada del motor (la NBA,
+   base del archivo) empezando en octubre: hay que trabajar esa conversión de
+   fechas.
 10. **Fase 3 (historia):** Guillermo y Gustavo Barros Schelotto (hermanos;
     padres de Nicolás y de Bautista, que son primos: el juego une a los primos
     solo a través de los padres). Marcelo Barticciotto (leyenda de Colo-Colo),
@@ -666,6 +677,37 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**28/11/2026 (v2.29.1): segunda revisión de Aldosivi.** Huella:
+`e2ec23576031b71aed1db43b0da78816bebe0123e9f262233875d6af6f1de5ee`.
+
+- Respuestas del usuario: acepta la lesión estimada de Moyano (4 partidos),
+  "Blas Agustín" Palavecino y los parientes (Chicco, Perruzzi). La flecha
+  roja con "sin club" = deja el club en enero (`saleEnEnero` en 6 jugadores
+  de ALD; ver §7.9: el paso a 2027 y la conversión de fechas).
+- Segunda revisión con ángulos nuevos (las miradas de la v2.29 se volvieron a
+  correr con ALD ya valorado y dan lo mismo): (1) a nivel equipo, ALD quedó
+  más generoso que sus vecinos de tabla (modelo +1,13 y pares −2,3, contra
+  RIE −1,34 y −5,5, ERC −0,81 y −6,3; como BAN, +1,03 y −2,2), con un
+  Clausura (el del plantel renovado) de 11 pts, entre ERC 9 y RIE 12; (2)
+  puesto por puesto contra RIE, ERC y BAN; (3) el comentario del usuario
+  ("perdió solidez atrás" en el Clausura); (4) ppp del jugador contra el del
+  equipo. Sin ajuste en bloque: la ofensiva de ALD (16 goles en el Clausura,
+  contra 11 de RIE y 10 de ERC) sostiene que sus ofensivos estén arriba de
+  los de RIE y ERC.
+- 3 cambios: Pombo 57 → 55 (los números daban 58, pero fue el central del
+  Clausura en que el equipo "perdió solidez atrás"; = Daniele, BAN, y arriba
+  de Randazzo, RIE, 53), Gaitán 54 → 53 (modelo y pares 53; uno arriba de
+  Hesar, ERC, 52, que hizo más goles), Dadín 38 → 37 (modelo general y de
+  juveniles, 37).
+- Once 55,5 (antes 55,8); desvío del modelo +0,97 y por minutos −2,4. Dudas
+  que siguen: Werner (48 propuesto), Acosta 56 (lista 58) y "faltero" para
+  Martín García (11 amarillas en 27 PJ, el usuario dijo que el equipo "abusó
+  de las faltas").
+- Contra la v2.29: esos 3 OVR (ratings y sueldo de Pombo y Gaitán) y el orden
+  de 5 compañeros; los otros 3445 jugadores, iguales. Armada dos veces con la
+  misma huella; validación 0 errores; auditoría igual. Sale de la carpeta la
+  v2.28.
+
 **28/11/2026 (v2.29): Aldosivi.** Huella:
 `14d412fe74e43a966be1034a903952a15949b332ddb900c1abcd2d257286ba72`.
 

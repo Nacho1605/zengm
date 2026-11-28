@@ -1,7 +1,7 @@
 {
 	"equipo": "ALD",
 	"fuente": "Transfermarkt, plantel y rendimiento 2026 (capturas del usuario, 28/11/2026); posiciones secundarias (captura del usuario, 24/11/2026); debut, inferiores, Sofascore (Liga), rasgos, capitán, parientes, lesiones y contexto: datos del usuario. OVR: Claude.",
-	"contexto": "Aldosivi perdió la categoría por la tabla anual tras un año a contramano, entre cambios en el banco y una purga masiva en el receso. Completó el Apertura sin triunfos por una sequía lapidaria y jamás ganó de visitante en la liga; solo en la Copa Argentina dio un golpe resonante antes de ceder. Renovado para el Clausura, sumó peso arriba y apenas festejó en Mar del Plata, pero perdió solidez atrás. De fuerte roce para recuperar sin tenencia, abusó de las faltas y careció de elaboración. Andrés Vombergar cargó el gol aéreo, Tomás Fernández aportó filo y asistencias, Nicolás Gaitán dio pausa y último pase, Alan Sosa sostuvo criterio y Lucas Acosta respondió con atajadas clave. Sofascore (Liga): Nicolás Zalazar (6,95), Alan Sosa (6,92); nadie supera 7,00 y solo estos dos superan 6,90; completan el top 5 Lucas Castro (6,76), Blas Agustín Palavecino (6,72) y Martín García (6,70). Capitán: Lucas Castro. Lesiones: Sebastián Moyano, artroscopia (sin fecha de vuelta; no estuvo en el plantel en todo 2026; estimada en 4 partidos). Andrés Chávez está excedido de peso (dato del usuario). Andrés Vombergar es esloveno (primera bandera en Transfermarkt; también argentino). Parientes: Ignacio Chicco es hermano de Julián Chicco (\"Julián Chico\" en el mensaje del usuario; pivote, 1998; draft de Patronato en 2019, inferiores en Boca; en la liga PAT 2019-2020, SAR 2021-2022 y COL 2022-2023; después dos años en España, en el Leganés, y desde el 02/09/2025 en Grecia, en el Asteras Aktor; en el archivo, libre con datos de 2023). Francisco Perruzzi es hermano de Ignacio Perruzzi (SLO). Con flecha roja y el escudo de \"sin club\" en la captura del plantel: Moyano, Lucas Rodríguez, Bochi, Gino, Lautaro Chávez y Vombergar (los cinco primeros sin número). Llegaron a mitad de año: Acosta, Pombo, Sigali, Cufré, E. López, Linares, Perruzzi, Castro, Gaitán, Godoy, Dadín, A. Chávez y Vombergar; Vales y Anso subieron de la reserva (debut en 2026). Mateo Vales sin fecha de contrato (\"-\": hasta 2027). Tabla anual 2026: 29.º (19 pts, 22-45), descendido; Apertura 14.º de la zona B (8 pts, 6-19, sin triunfos); Clausura 14.º del grupo B (11 pts, 16-26); promedios: 29.º. Reserva: 28.ª en la anual. Copas 2026 (dato del usuario, 23/11): Copa Argentina: eliminado en octavos.",
+	"contexto": "Aldosivi perdió la categoría por la tabla anual tras un año a contramano, entre cambios en el banco y una purga masiva en el receso. Completó el Apertura sin triunfos por una sequía lapidaria y jamás ganó de visitante en la liga; solo en la Copa Argentina dio un golpe resonante antes de ceder. Renovado para el Clausura, sumó peso arriba y apenas festejó en Mar del Plata, pero perdió solidez atrás. De fuerte roce para recuperar sin tenencia, abusó de las faltas y careció de elaboración. Andrés Vombergar cargó el gol aéreo, Tomás Fernández aportó filo y asistencias, Nicolás Gaitán dio pausa y último pase, Alan Sosa sostuvo criterio y Lucas Acosta respondió con atajadas clave. Sofascore (Liga): Nicolás Zalazar (6,95), Alan Sosa (6,92); nadie supera 7,00 y solo estos dos superan 6,90; completan el top 5 Lucas Castro (6,76), Blas Agustín Palavecino (6,72) y Martín García (6,70). Capitán: Lucas Castro. Lesiones: Sebastián Moyano, artroscopia (sin fecha de vuelta; no estuvo en el plantel en todo 2026; estimada en 4 partidos). Andrés Chávez está excedido de peso (dato del usuario). Andrés Vombergar es esloveno (primera bandera en Transfermarkt; también argentino). Parientes: Ignacio Chicco es hermano de Julián Chicco (\"Julián Chico\" en el mensaje del usuario; pivote, 1998; draft de Patronato en 2019, inferiores en Boca; en la liga PAT 2019-2020, SAR 2021-2022 y COL 2022-2023; después dos años en España, en el Leganés, y desde el 02/09/2025 en Grecia, en el Asteras Aktor; en el archivo, libre con datos de 2023). Francisco Perruzzi es hermano de Ignacio Perruzzi (SLO). Dejan el club en enero de 2027 (flecha roja con el escudo de \"sin club\" en la captura del plantel; dato del usuario, 28/11; `saleEnEnero` en el plantel): Moyano, Lucas Rodríguez, Bochi, Gino, Lautaro Chávez y Vombergar (los cinco primeros sin número). El usuario aceptó la lesión estimada de Moyano, el nombre \"Blas Agustín\" Palavecino y los parientes (Chicco, Perruzzi). Llegaron a mitad de año: Acosta, Pombo, Sigali, Cufré, E. López, Linares, Perruzzi, Castro, Gaitán, Godoy, Dadín, A. Chávez y Vombergar; Vales y Anso subieron de la reserva (debut en 2026). Mateo Vales sin fecha de contrato (\"-\": hasta 2027). Tabla anual 2026: 29.º (19 pts, 22-45), descendido; Apertura 14.º de la zona B (8 pts, 6-19, sin triunfos); Clausura 14.º del grupo B (11 pts, 16-26); promedios: 29.º. Reserva: 28.ª en la anual. Copas 2026 (dato del usuario, 23/11): Copa Argentina: eliminado en octavos.",
 	"reemplaza": [
 		{
 			"nombre": "Lucas Acosta",
@@ -149,7 +149,8 @@
 			"lesion": {
 				"tipo": "Artroscopia",
 				"partidos": 4
-			}
+			},
+			"saleEnEnero": true
 		},
 		{
 			"n": "33",
@@ -209,7 +210,7 @@
 			"ppp": 0.82,
 			"convocado": 17,
 			"fichado": "01/07/2026",
-			"ovr": 57,
+			"ovr": 55,
 			"debut": {
 				"club": "ARS",
 				"anio": 2023
@@ -407,7 +408,8 @@
 			],
 			"rasgos": [
 				"flojo de arriba"
-			]
+			],
+			"saleEnEnero": true
 		},
 		{
 			"n": "38",
@@ -569,7 +571,8 @@
 			"secundarias": [],
 			"rasgos": [
 				"faltero"
-			]
+			],
+			"saleEnEnero": true
 		},
 		{
 			"n": "15",
@@ -642,7 +645,8 @@
 			"secundarias": [
 				"Lateral derecho",
 				"Pivote"
-			]
+			],
+			"saleEnEnero": true
 		},
 		{
 			"n": "8",
@@ -742,7 +746,8 @@
 			"secundarias": [
 				"Extremo izquierdo",
 				"Extremo derecho"
-			]
+			],
+			"saleEnEnero": true
 		},
 		{
 			"n": "10",
@@ -767,7 +772,7 @@
 			"ppp": 0.5,
 			"convocado": 14,
 			"fichado": "27/07/2026",
-			"ovr": 54,
+			"ovr": 53,
 			"debut": {
 				"club": "BOC",
 				"anio": 2008
@@ -1017,7 +1022,8 @@
 			"rasgos": [
 				"aereo",
 				"potente"
-			]
+			],
+			"saleEnEnero": true
 		},
 		{
 			"n": "9",
@@ -1075,7 +1081,7 @@
 			"ppp": 0.77,
 			"convocado": 18,
 			"fichado": "04/07/2026",
-			"ovr": 38,
+			"ovr": 37,
 			"debut": {
 				"club": "RIV",
 				"anio": 2026
