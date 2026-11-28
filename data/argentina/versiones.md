@@ -144,4 +144,4 @@ formato (versión, fecha, huella, commit, qué cambió).
 | v2.27.13 | 2026-11-28 | `35655d24290433d511287c537ed362048205879ec96ba4444cca0567cb9811f9` | `3ed436538` | Barbi y Andrada con la forma del archivo; gambeta a Andrada | no |
 | v2.28 | 2026-11-28 | `82f7f53df459c79dd8c53feb9ebabf8328564b595ab71b4356be1b626317d211` | `bf3426cfa` | Sarmiento (32 jugadores) | sí |
 | v2.28.1 | 2026-11-28 | `2b9e3bf028cb5bc85ac58a4e2caed93c0ca5c622a96bfe46098f96af263a2476` | `b78b2e578` | segunda revisión de OVR de Sarmiento (9 cambios) | sí |
-| v2.29 | 2026-11-28 | `14d412fe74e43a966be1034a903952a15949b332ddb900c1abcd2d257286ba72` | (commit de la v2.29) | Aldosivi (32 jugadores), Arboleda 44 y revisión hacia atrás de Rolón y R. Márquez | sí |
+| v2.29 | 2026-11-28 | `14d412fe74e43a966be1034a903952a15949b332ddb900c1abcd2d257286ba72` | `d1fe521d8` | Aldosivi (32 jugadores), Arboleda 44 y revisión hacia atrás de Rolón y R. Márquez | sí |
