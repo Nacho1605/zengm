@@ -1,10 +1,10 @@
 # Arqueros: lista del Apertura y valores de hoy
 
-Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.27.13_futbol.json`.
+Generado con `tools/argentina/arqueros.ts` sobre `BBGM_Argentina_2026_v.2.28_futbol.json`.
 La lista es la del usuario (`lista-apertura-2026.md`, desactualizada); "hoy" es
 el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 
-## Equipos cargados (25)
+## Equipos cargados (26)
 
 | Equipo | Arquero | Lista | Hoy | Cambio | PJ 2026 | Min |
 |---|---|---|---|---|---|---|
@@ -32,6 +32,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | TAL | Ezequiel Unsaín | 63 | 62 | −1 | 16 | 1440 |
 | VEL | Facundo Sanguinetti | 62 (BAN) | 61 | −1 | 0 | 0 |
 | BOC | Agustín Marchesín | 63 | 60 | −3 | 13 | 1084 |
+| SAR | Thyago Ayala | — | 59 | no estaba | 15 | 1350 |
 | IND | Santiago Mele | 60 | 56 | −4 | 5 | 450 |
 | BAN | Diego Rodríguez | 52 (ARG) | 55 | +3 | 12 | 1080 |
 | SLO | José Devecchi | 43 | 55 | +12 | 15 | 1287 |
@@ -40,6 +41,7 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | EST | Fabricio Iacovich | 57 | 49 | −8 | 13 | 1125 |
 | ERC | Lucas Bruera | 54 | 48 | −6 | 9 | 810 |
 | NOB | Gabriel Arias | 58 | 46 | −12 | 7 | 613 |
+| SAR | Iván Arboleda | 56 | 45 | −11 | 2 | 180 |
 | ERC | Agustín Lastra | 49 | 42 | −7 | 13 | 1170 |
 | GIM | Harlen Castillo | 42 | 40 | −2 | 5 | 450 |
 | ROS | Axel Werner | 51 | 40 | −11 | 3 | 270 |
@@ -87,14 +89,13 @@ el OVR de los planteles cargados. Se vuelve a generar al cargar cada equipo.
 | 72 | Orlando Gill | SLO | no está en el archivo |
 | 37 | Lautaro Maldonado | INS | no está en el archivo |
 
-## Equipos sin cargar: la lista es la base (9)
+## Equipos sin cargar: la lista es la base (8)
 
 | Lista | Arquero | Club en la lista | Hoy en el archivo (datos 2023) |
 |---|---|---|---|
 | 61 | Alan Aguerre | CCO | libre |
 | 58 | Lucas Acosta | ALD | libre |
 | 57 | Luis Ingolotti | ATU | no está en el archivo |
-| 56 | Iván Arboleda | SAR | no está en el archivo |
 | 55 | César Rigamonti | GEM | no está en el archivo |
 | 44 | Ignacio Chicco | ALD | ALD |
 | 42 | Tomás Durso | ATU | libre |

@@ -1,12 +1,13 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 28/11/2026. Última versión: **v2.27.13**
-(`data/argentina/BBGM_Argentina_2026_v.2.27.13_futbol.json`, sha256
-`35655d24290433d511287c537ed362048205879ec96ba4444cca0567cb9811f9`).
+Estado al 28/11/2026. Última versión: **v2.28**
+(`data/argentina/BBGM_Argentina_2026_v.2.28_futbol.json`, sha256
+`82f7f53df459c79dd8c53feb9ebabf8328564b595ab71b4356be1b626317d211`).
 
-- **Planteles:** 25 de 30 equipos con plantel 2026 (faltan SAR, ALD, ATU, CCO
-  y GEM), Rendimiento completo, comentario (`contexto`) en los 25, fotos de
-  los 778 jugadores de los equipos cargados.
+- **Planteles:** 26 de 30 equipos con plantel 2026 (faltan ALD, ATU, CCO y
+  GEM), Rendimiento completo, comentario (`contexto`) en los 26, fotos de
+  los 778 jugadores de los 25 primeros (faltan las 32 de Sarmiento: las pone
+  el usuario en el juego).
 - **OVR:** escala de 20 a 79 (Paredes 79, Di María 78, Montiel 76); método de
   juveniles de punto medio (CLAUDE.md). Ningún jugador con ratings a mano:
   todos con la forma del archivo (autogenerada), pedido del usuario (28/11).
@@ -15,24 +16,25 @@ Estado al 28/11/2026. Última versión: **v2.27.13**
 - **Liga:** gala de premios propia (21); Salón de la Fama con `hofFactor` 0,5;
   draft generado +12; lesiones en inglés; cierre de pases a mitad de año. Ver
   §5.
-- **Comprobado** el 28/11 (v2.27.13): armada dos veces desde la v2.0, misma huella; validación
-  0 errores; auditoría 53 controles, 8 con alertas (las de siempre).
+- **Comprobado** el 28/11 (v2.28): armada dos veces desde la v2.0, misma huella; validación
+  0 errores; auditoría 53 controles, 9 con alertas (las de siempre y las 32
+  fotos de Sarmiento).
 - **Escalera del usuario:** https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U
-  (copia en `data/argentina/escalera/`), al día con la v2.27.13.
+  (copia en `data/argentina/escalera/`), al día con la v2.28.
 - **Repositorio:** en la carpeta quedan la v2.0 (base) y las tres últimas
-  versiones; las otras 112 salieron de la carpeta el 28/11 (pedido del
-  usuario) y siguen en el historial de git. Huella, commit y resumen de cada
-  una en `versiones.md`: las 116 comprobadas, se recuperan con la misma
-  huella.
+  versiones (v2.27.12, v2.27.13 y v2.28); las otras 114 salieron de la
+  carpeta (pedido del usuario, 28/11) y siguen en el historial de git.
+  Huella, commit y resumen de cada una en `versiones.md`; se recuperan con la
+  misma huella.
 
 **Lo que sigue:**
-1. **Próximo equipo (v2.28): Sarmiento.** Después ALD, ATU, CCO y GEM (orden
+1. **Sarmiento (v2.28) cargado:** esperar las respuestas del usuario a las
+   dudas de OVR (bitácora del 28/11) y sus fotos (las pone en el juego).
+   **Próximo equipo (v2.29): Aldosivi.** Después ATU, CCO y GEM (orden
    del usuario). Pedir lo de siempre (§3): plantel "Ampliado" y Rendimiento
    2026, debut e inferiores, los que siguen en reserva, lesiones, parientes,
    capitán, comentario, Sofascore (Liga y copas) y rasgos (con defectos). Ya
    están: secundarias (`secundarias-2026.json`), copas y tablas. Avisos:
-   - Jhon Rentería (SAR) figura sin puesto principal en su captura de
-     secundarias (por los totales, extremo derecho: confirmar con su plantel).
    - Sebastián Moyano, el libre con la foto de Mele, es el tercer arquero de
      ALD: va en `reemplaza` y recibe su foto.
    - Fernando Román (DYJ) volvió de un préstamo en Aldosivi en julio: al cargar
@@ -82,7 +84,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 - **Fase 1 (v1.x, terminada):** esqueleto de la liga. Motor de fútbol con
   ajustes del archivo (`activar-futbol.ts`), 163 equipos (30 activos), zonas,
   premios y lesiones en español, drafts generados con norma de posición.
-- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **25 de
+- **Fase 2 (v2.x, en curso):** temporada 2026 y planteles reales. Van **26 de
   30** equipos.
 - **Fase 3 (futura):** historia de la liga (temporadas pasadas, campeones,
   premios, Salón de la Fama — hay 32 retirados en el Salón, mal hechos, como
@@ -91,7 +93,7 @@ Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 ## 2. Equipos
 
 Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
-`RIE BOC RIV RAC SLO IND ROS EST ARG VEL INR GIM LAN HUR TAL BEL INS NOB ERC UNI BAR PLA DYJ BAN TIG`.
+`RIE BOC RIV RAC SLO IND ROS EST ARG VEL INR GIM LAN HUR TAL BEL INS NOB ERC UNI BAR PLA DYJ BAN TIG SAR`.
 
 | Abrev | En el juego | Zona / división | |
 |---|---|---|---|
@@ -112,7 +114,7 @@ Activos (✔ = plantel 2026 cargado), con el orden de carga actual:
 | TIG | Victoria Tigers | Met / Conurbano | ✔ |
 | EST | La Plata Students ("EDLP") | Fed / Buenos Aires | ✔ |
 | GIM | La Plata Wolves (Gimnasia LP, "GELP") | Fed / Buenos Aires | ✔ |
-| SAR | Junín Greens (Sarmiento) | Fed / Buenos Aires | |
+| SAR | Junín Greens (Sarmiento) | Fed / Buenos Aires | ✔ |
 | ALD | Mar del Plata Sharks (Aldosivi) | Fed / Buenos Aires | |
 | BEL | Córdoba Pirates (Belgrano) | Fed / Córdoba | ✔ |
 | INS | Córdoba Glory (Instituto) | Fed / Córdoba | ✔ |
@@ -132,7 +134,7 @@ CSIR = INR, GELP = GIM, SMSJ = SMJ (San Martín de San Juan, inactivo). Colón
 PVN. En las tablas, "Gimnasia y Esgrima" aparece dos veces (GIM y GEM) y
 "Estudiantes" también (EST y ERC).
 
-**Próximos:** SAR, ALD, ATU, CCO, GEM (de a uno o de
+**Próximos:** ALD, ATU, CCO, GEM (de a uno o de
 a dos; el usuario manda las capturas). CCO quedó sin arquero (Mansilla, que
 estaba ahí con datos de 2023, pasó a UNI): se arregla al cargar CCO.
 
@@ -340,6 +342,7 @@ Diego "el Ruso" Rodríguez (BAN, desde agosto; sin confirmación en Transfermark
 hasta su venta a Vélez lo fue Facundo Sanguinetti). Tigre: sin capitán fijo, se
 reparten la cinta Laso y Zenobio (los dos con `capitan`) y a veces Russo.
 Unión no tiene capitán fijo; suele serlo Cristian Tarragona (con `capitan`).
+Sarmiento: Juan Manuel "Chaco" Insaurralde, desde hace varios años (42 años).
 Barracas: sin capitán fijo, suele serlo Iván Tapia (con `capitan`); Carlos
 Arce es el capitán histórico (más presencias en la historia del club).
 ERC no tiene capitán fijo; suele serlo Maffini (anotado con `capitan`). Estudiantes no tiene
@@ -374,14 +377,14 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 ## 6. Archivos de datos
 
 **Datos (fuente de todo; `armar-v2.sh` arma desde acá):**
-- `planteles/XXX.json`: los 25 planteles cargados. `planteles/preparacion/`:
+- `planteles/XXX.json`: los 26 planteles cargados. `planteles/preparacion/`:
   los que están en preparación (hoy ninguno; solo los lee `cruces.ts`).
 - `equipos.csv`: fuente única de los 163 equipos (abreviatura, ciudad, apodo,
   nombre oficial del club para el College, zona, división, colores, camiseta,
   estadio, población y logos). La aplica `equipos-interior.ts`;
   `desde-juego.ts` escribe ahí lo que el usuario cambia en el juego. Nombres
   oficiales corregidos por el usuario el 24/11 y el 26/11 (16 clubes).
-- `salidas-2026.json` (382): los que se fueron de los equipos cargados, con
+- `salidas-2026.json` (393): los que se fueron de los equipos cargados, con
   sus números 2026, por si aparecen en otro equipo (`cruces.ts`).
 - `secundarias-2026.json`: posiciones secundarias de los equipos sin cargar
   (pasan al plantel al cargarlos).
@@ -430,8 +433,9 @@ se llegó; lo vigente está en CLAUDE.md y en este archivo):
 
 ## 7. Pendientes
 
-1. **Cargar los 5 equipos restantes** (SAR, ALD, ATU, CCO, GEM).
-2. **Fotos:** completas en los 25 planteles (778 de 778 desde la v2.27.7;
+1. **Cargar los 4 equipos restantes** (ALD, ATU, CCO, GEM).
+2. **Fotos:** completas en los 25 primeros planteles (778 desde la v2.27.7);
+   faltan las 32 de Sarmiento (v2.28;
    las pone el usuario en el juego y vuelven con `desde-juego.ts`). Prospectos sin foto: 21 de los 24 de los planteles (el usuario
    decide). Foto repetida que queda: Sebastián Moyano (libre) tiene la de
    Santiago Mele (IND): la de Moyano es la equivocada; Moyano es el
@@ -470,6 +474,11 @@ se llegó; lo vigente está en CLAUDE.md y en este archivo):
    480, 1938–1952 y 1954–1956; y Mariano Andujar, C, 458, 2006–2009, 2012 y
    2015–2023: datos para la fase 3). Federico Álvarez tiene un tío y un primo
    futbolistas (no son parientes directos).
+   Sarmiento (dato del usuario, 28/11; no está en el archivo): Gastón
+   Arturia es hermano de Marcos Arturia (1998, delantero; draft de Talleres
+   en 2019; en TAL 2019, 2020, 2022, 2023 y 2024, cedido a VDA 2019, ERC
+   2021, SMJ 2023, TEM 2024 y BAN 2025; en Deportes Limache, Chile, desde el
+   06/01/2026).
    Banfield (datos del usuario, 25/11; ninguno está en el archivo): Juan
    Luis Alfaro es hermano gemelo de Juan Fernando Alfaro (1999, mediocentro,
    1 M€; draft de Juventud Unida de Gualeguaychú, JUG, en 2018; hoy en el
@@ -500,7 +509,13 @@ se llegó; lo vigente está en CLAUDE.md y en este archivo):
     padre de Bruno (HUR). Diego Soñora (padre de Alan, NOB, y de Joel, libre)
     ya está como retirado pero con nacimiento 1967: corregir a 17/07/1969;
     draft de Boca 1988, 8 temporadas de GF (marcador de punta derecho) en Boca,
-    1988–1996, después emigró a Estados Unidos.
+    1988–1996, después emigró a Estados Unidos. Jonathan Herrera (SAR, 1991):
+    máximo goleador de la historia de Riestra (2013-2016, 2017, 2019 y
+    2024-2026) con 131 goles, casi el triple que el segundo (Rubén Rodríguez,
+    58, 1964-1966 y 1968-1973); único goleador de las cuatro categorías del
+    ascenso (quinta 2013, cuarta 2014, tercera 2015, segunda 2018) y único con
+    goles en todas ellas y en Primera con el mismo club (dato del usuario,
+    28/11).
 11. Logos: sitios poco comunes para mirar en el juego: Pinterest (ALD), pikpng
     (CAR), seeklogo (MOR, DPV), fundacionamigospd.com (FAD), ESPN (CMN),
     bibliotecariodelfutbol (MSL), wikia (IND), footylogos (HUR, SLO, RAC, LAN,
@@ -650,6 +665,56 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**28/11/2026 (v2.28): Sarmiento.** Huella:
+`82f7f53df459c79dd8c53feb9ebabf8328564b595ab71b4356be1b626317d211`.
+
+- Al empezar: la liga que mandó el usuario es idéntica a la v2.27.13 (misma
+  huella; nada que importar); la v2.27.13 armada desde la v2.0 da la misma
+  huella; validación 0 errores; auditoría 53 controles, 8 con alertas.
+- Sarmiento (32 jugadores): capturas del usuario (plantel Ampliado y
+  Rendimiento leídos con zoom; 43 filas, 33.424' contra 33.660' de 34
+  partidos: la diferencia son 8 expulsiones), debut e inferiores, rasgos (14
+  jugadores; "Pasador" = pase, "Gambeteador" = gambeta), capitán
+  (Insaurralde), Sofascore de la Liga ("Juan Mavilla" = Julián), lesión de
+  Seyral (cruzado, vuelta posible 31/01/2027: 9 partidos) y comentario
+  (`contexto`, con tablas, copas, el hermano de Arturia y el récord de
+  Herrera en Riestra). Sin prospectos (el usuario no marcó ninguno en
+  reserva). Secundarias desde `secundarias-2026.json` (las 32 coinciden;
+  Rentería, extremo derecho por el plantel). Vallejos sin número (el 17 lo
+  usa Nadruz desde agosto). Leal por la regla: Lucas Suárez. `reemplaza`: 6
+  (Insaurralde 1985, Pasquini 1991, Zabala 1998, Gastón González 2002,
+  Jonathan Herrera 1992, Pablo Magnín 1991); los 13 que quedaban de SAR
+  (datos 2023, Lisandro López entre ellos) pasan a libres. Clubes: QAC =
+  QUI, Sportivo Las Parejas = SLP, Douglas Haig = DOU, Centro Español de
+  Haedo = CES; Colleges nuevos: Asociación Deportivo Pasto, Club Ferro Carril
+  Oeste (General Pico), Club Atlético Rentistas, Club General Caballero y
+  Leones Fútbol Club. Rasgos también en `rasgos-usuario.ts`.
+- Salidas (11) a `salidas-2026.json` (Burrai, que se fue en el receso, y 10
+  con pocos o ningún minuto). Ninguna está en otro equipo cargado. Llegaron
+  con números de otro club cargado: Mavilla (BEL 7 PJ), Herrera (RIE 21 PJ, 0
+  goles) y Ulises Giménez (RIV 3 PJ); sin números previos: Arboleda, Nadruz y
+  Elián Giménez.
+- OVR (Claude, a corregir por el usuario): once 60,0 (entre NOB 60,0 y UNI
+  59,7; 19.º en la anual con 16,8 M€ de plantel, sin copas). Marabel 66 (14
+  goles y 5 asistencias; entre Caicedo 67 y Russo 65), Zabala 63, Mavilla 62
+  (Sofascore 7,16), Insaurralde 62 (capitán), M. Martínez 61, Suárez 60, Ayala
+  59, Salle 58. Ajustados con `vecinos.ts` y `pares-minutos.mjs`: Salle +1,
+  Orihuela +1, Contrera +1, Herrera +2, Churín +1, Arboleda −3, G. González
+  −2, Nadruz −1, Márquez +2; Zabala +1 para no dejar tres titulares en 62.
+  Desvío contra los de su puesto con minutos parecidos −0,6. Juveniles por el
+  método: U. Giménez 43 (20 años, 555'), O. Giménez 28 (19, 0'; reserva 25.ª).
+  Dudas para el usuario: Arboleda 45 (su lista 56; 2 PJ, suplente de Ayala),
+  Herrera 55 (ídolo de RIE con pocos goles), Ayala 59 (arriba de la mediana
+  de su minutaje por el comentario del usuario) y Marabel 66.
+- Contra la v2.27.13: 32 jugadores nuevos (SAR), 6 borrados (`reemplaza`), 13
+  ex SAR a libres (solo equipo y contrato); el resto del archivo es igual
+  (3389 jugadores idénticos). Armada dos veces con la misma huella;
+  validación 0 errores; auditoría 53 controles, 9 con alertas: SAR sale de
+  "planteles", "arqueros" y "edades" (Lisandro López), y entra "Foto" (las 32
+  de Sarmiento).
+- En la carpeta sale la v2.27.11 (anotada en `versiones.md`). Escalera
+  republicada en el mismo link; tabla de arqueros regenerada.
+
 **28/11/2026 (v2.27.13): todos autogenerados.** Huella: `35655d24290433d511287c537ed362048205879ec96ba4444cca0567cb9811f9`.
 - Pedido del usuario: Barbi (TAL) y Andrada (RIV) sin ratings a mano, con la
   forma del archivo ("a lo largo de las sesiones les das mucho valor a cambios
@@ -1640,9 +1705,9 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.27.13.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.28.
 > Corré la validación y la auditoría sobre ese archivo y confirmame en pocas
-> líneas que entendiste el estado. Seguimos con Sarmiento: decime qué datos
+> líneas que entendiste el estado. Seguimos con Aldosivi: decime qué datos
 > te tengo que mandar.
 
 Al arrancar (Claude):
