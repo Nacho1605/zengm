@@ -675,6 +675,15 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**28/11/2026 (sin versión): escudos de la escalera.** Pedido del usuario: en la
+página de la escalera, cada circulito con el diseño de su club (con los colores
+de siempre): liso, banda diagonal (RIV, ARG, DYJ, BAN), franja horizontal (BOC,
+GIM, TIG, PLA, RIE), bastones (ROS, EST, INS, TAL, RAC, SLO, BAR, UNI, ALD),
+mitades (NOB) y la V de Vélez. Tabla `DISENO` en `escalera/index.html`; los
+equipos sin cargar (ATU, CCO, GEM) siguen con el corte en diagonal hasta que el
+usuario dé el suyo. Comprobado con una captura de la página; el archivo de liga
+no cambia.
+
 **28/11/2026 (v2.29.2): respuestas del usuario sobre Aldosivi.** Huella:
 `77d2f21ca4eedcd10f7e35dd870d75016fbcb2fbdc30531761fcf0d86133fdf7`.
 

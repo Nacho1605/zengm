@@ -258,9 +258,40 @@ const num = (v, dec = 0) => v == null ? "–" : v.toFixed(dec).replace(".", ",")
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 
 const equipoDe = (eq) => DATOS.equipos.find((e) => e.eq === eq);
+// Diseño del escudo de cada club (indicación del usuario, 28/11/2026), con sus
+// colores de siempre: [tipo, color de fondo, color de la franja], índices de e.colores.
+// liso = círculo de un color; banda = franja diagonal; franja = franja horizontal;
+// bastones = franjas verticales (empieza por el primer color); mitades = mitad y mitad;
+// v = chevrón. Los equipos que no están (sin cargar) siguen con el corte en diagonal.
+const DISENO = {
+	RIV: ["banda", 0, 1], BOC: ["franja", 0, 1], ROS: ["bastones", 0, 1], EST: ["bastones", 0, 1],
+	INR: ["liso", 0], VEL: ["v", 0, 1], BEL: ["liso", 0], LAN: ["liso", 0],
+	ARG: ["banda", 0, 1], GIM: ["franja", 0, 1], INS: ["bastones", 1, 0], HUR: ["liso", 0],
+	IND: ["liso", 0], DYJ: ["banda", 0, 1], TAL: ["bastones", 0, 1], RAC: ["bastones", 0, 1],
+	TIG: ["franja", 0, 1], PLA: ["franja", 0, 1], SLO: ["bastones", 1, 0], BAR: ["bastones", 0, 1],
+	NOB: ["mitades", 1, 0], UNI: ["bastones", 0, 1], SAR: ["liso", 0], BAN: ["banda", 1, 0],
+	RIE: ["franja", 0, 1], ALD: ["bastones", 1, 0], ERC: ["liso", 0],
+};
 const escudo = (e) => {
-	const [a, b] = e.colores || ["#888", "#ccc"];
-	return `<span class="escudo" style="background:linear-gradient(135deg, ${esc(a)} 0 50%, ${esc(b)} 50% 100%)" aria-hidden="true"></span>`;
+	const c = e.colores || ["#888", "#ccc"];
+	const d = DISENO[e.eq];
+	let fondo;
+	if (!d) {
+		fondo = `linear-gradient(135deg, ${esc(c[0])} 0 50%, ${esc(c[1])} 50% 100%)`;
+	} else {
+		const [tipo, i, k] = d;
+		const a = esc(c[i] ?? "#888");
+		const b = esc(c[k ?? i] ?? "#ccc");
+		fondo = {
+			liso: a,
+			banda: `linear-gradient(45deg, ${a} 0 37%, ${b} 37% 63%, ${a} 63%)`,
+			franja: `linear-gradient(180deg, ${a} 0 35%, ${b} 35% 65%, ${a} 65%)`,
+			bastones: `linear-gradient(90deg, ${a} 0 20%, ${b} 20% 40%, ${a} 40% 60%, ${b} 60% 80%, ${a} 80%)`,
+			mitades: `linear-gradient(90deg, ${a} 0 50%, ${b} 50%)`,
+			v: `linear-gradient(to bottom left, transparent 0 36%, ${b} 36% 64%, transparent 64%) 0 0 / 50% 85% no-repeat, linear-gradient(to bottom right, transparent 0 36%, ${b} 36% 64%, transparent 64%) 100% 0 / 50% 85% no-repeat, ${a}`,
+		}[tipo];
+	}
+	return `<span class="escudo" style="background:${fondo}" aria-hidden="true"></span>`;
 };
 
 function filas() {
