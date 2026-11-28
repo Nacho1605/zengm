@@ -1,5 +1,7 @@
 # Revisión general de OVR (v2.22.2, 23/11/2026)
 
+**Documento histórico** (28/11/2026): revisión de la v2.22.2, ya aplicada. Queda como registro de cómo se decidió; lo vigente está en CLAUDE.md y TRASPASO.md.
+
 Pedido del usuario: revisión exhaustiva de los 21 planteles cargados (los 20 de
 la v2.22.1 y Barracas, en revisión), con permiso para cambiar cualquier valor.
 Criterios: escalera por puesto, arquetipos, valor de mercado, estadísticas y

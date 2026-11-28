@@ -1,5 +1,7 @@
 # Revisión general de OVR (v2.27 → v2.27.1)
 
+**Documento histórico** (28/11/2026): decidida por el usuario en la v2.27.4 (ver `cambios-ovr-desde-v2.27.md`). Queda como registro de cómo se decidió; lo vigente está en CLAUDE.md y TRASPASO.md.
+
 Pedido del usuario (25/11/2026): revisar jugador por jugador los 25 planteles cargados (716 jugadores).
 Herramientas: `tools/argentina/revision-datos.py` y `revision-modelo.py` (modelo), `pares-minutos.mjs` y `vecinos.ts`.
 

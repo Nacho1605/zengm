@@ -1,84 +1,79 @@
 # Traspaso de sesión — Liga Profesional Argentina 2026 (BBGM)
 
-Estado al 26/11/2026. Última versión: **v2.27.12**
+Estado al 28/11/2026. Última versión: **v2.27.12**
 (`data/argentina/BBGM_Argentina_2026_v.2.27.12_futbol.json`, sha256
-`633aa383ec639fdd476908daad1b508e302dcbcd60a8be74e2d1dad31f5cd68b`): 25 de 30
-equipos con plantel 2026 (el último, Tigre, 30 jugadores), Rendimiento
-completo; fotos de los 778 jugadores de los equipos cargados; todo el archivo en la escala nueva de OVR (20 a 79) y en la forma
-5 (posiciones secundarias de los 25 planteles; defectos; rasgo "llegada" desde
-la v2.27.5); gala de premios propia (21 premios, calibrada; nombres como los
-dejó el usuario). Validación: 0 errores. Auditoría: 53 controles, 8 con
-alertas (las de siempre). Revisiones de OVR: general
-(`revision-general-v2.27.md`), juveniles sin la regla y defensores
-(`revision-juveniles-defensores-v2.27.md`), listas de Sofascore (v2.27.3),
-decisiones del usuario (v2.27.4; `cambios-ovr-desde-v2.27.md`) y ratings a
-mano y punto medio para juveniles (v2.27.5;
-`revision-ratings-mano-y-juveniles.md`; método de juveniles nuevo, ver
-CLAUDE.md).
-Escalera por puesto del usuario actualizada
-(https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U; copia en
-`data/argentina/escalera/`).
+`633aa383ec639fdd476908daad1b508e302dcbcd60a8be74e2d1dad31f5cd68b`).
+
+- **Planteles:** 25 de 30 equipos con plantel 2026 (faltan SAR, ALD, ATU, CCO
+  y GEM), Rendimiento completo, comentario (`contexto`) en los 25, fotos de
+  los 778 jugadores de los equipos cargados.
+- **OVR:** escala de 20 a 79 (Paredes 79, Di María 78, Montiel 76); método de
+  juveniles de punto medio (CLAUDE.md); solo Barbi (TAL) y Andrada (RIV) con
+  ratings a mano.
+- **Forma de los ratings:** forma 5 (posiciones secundarias, defectos y rasgo
+  "llegada").
+- **Liga:** gala de premios propia (21); Salón de la Fama con `hofFactor` 0,5;
+  draft generado +12; lesiones en inglés; cierre de pases a mitad de año. Ver
+  §5.
+- **Comprobado** el 28/11: armada desde la v2.0 da la misma huella; validación
+  0 errores; auditoría 53 controles, 8 con alertas (las de siempre).
+- **Escalera del usuario:** https://claude.ai/artifact/QBmdQXyJf4kKCSxMxTAa3U
+  (copia en `data/argentina/escalera/`), al día con la v2.27.12.
+- **Repositorio:** en la carpeta quedan la v2.0 (base) y las tres últimas
+  versiones; las otras 112 salieron de la carpeta el 28/11 (pedido del
+  usuario) y siguen en el historial de git. Huella, commit y resumen de cada
+  una en `versiones.md`: las 116 comprobadas, se recuperan con la misma
+  huella.
 
 **Lo que sigue:**
-1. **Juveniles (el usuario, 26/11): "creo que estamos manejando mal la
-   cuestión de los juveniles".** Lo vio en una liga suya simulada más de 15
-   temporadas, con un visualizador de carreras
-   (https://icamcmusic-ship-it.github.io/bbgm-league-explorer/#/home); igual
-   cree que hasta ahora está todo bien. En la v2.27.7 bajó en el juego a 9
-   juveniles (Loza, Perrotta, Barros Schelotto, Guch, Andrada, Ovando, Baroni,
-   S. López, Feler) y a 3 de Tigre. Mandó la liga simulada (2042, salió de
-   la v2.27.6): análisis en `simulacion-2042-analisis.md`. Lo principal: el
-   draft generado es muy flojo (bajado dos veces: −3 y escala nueva) y la liga
-   se desinfla (mediana 50 → 27, puesto 100: 65 → 43). El usuario aceptó subir
-   el draft generado, pero menos de +15: en la v2.27.8, +8; y el descuento de
-   los de 17, de 10 a 12. Segunda simulación suya (v2.27.8, hasta 2045): con +8
-   la liga aguanta mejor pero sigue bajando (11 mejores de cada equipo: 61 →
-   49 en 2041 → 46 en 2045). Estimado: +18 la mantendría como en 2026. El
-   usuario eligió +12 (v2.27.9; estimado: unos 54 en 2041) y no descontar más a
-   los juveniles. Confirmar con otra simulación suya cuando quiera.
-   Salón de la Fama: en 20 temporadas simuladas no entraba nadie (umbral de
-   unos 103 con `hofFactor` 1,2). Desde la v2.27.10, `hofFactor` 0,5 (umbral
-   43,1), pedido del usuario: que entren Di María y Paredes con el promedio de
-   sus puntajes en las dos simulaciones (57,8 y 43,9). Las simulaciones sirven
-   de modelo para las carreras de los retirados en la Fase 3 (ver el análisis).
-   **Libres (pregunta del usuario):** 442 en el archivo (345 de 35 años o
-   menos); Transfermarkt no los da en bloque. Propuesta: juntar sus números de
-   a poco sin calcular (capturas que se transcriben por tandas, o una página
-   tipo escalera donde los carga y queda guardado) y valorarlos todos juntos al
-   final, en un solo parche. Decide él cuando lleguemos.
-   El único con ratings a mano es Barbi (TAL, 30) y Andrada (RIV, 65, su
-   forma: menos marca, más gambeta y pase). Si estira la
-   escala por los montones (60 y 61 con unos 30 jugadores). Fotos de TIG
-   cuando las ponga (importar con `desde-juego.ts`, base la versión que usó).
-   Pendiente: Fernando Román (DYJ) volvió de un préstamo en julio (antes en
-   Aldosivi): al cargar ALD, mirar su primera mitad del año.
-2. **Próximo equipo (v2.28): Sarmiento.** Después ALD, ATU, CCO y GEM (orden
+1. **Próximo equipo (v2.28): Sarmiento.** Después ALD, ATU, CCO y GEM (orden
    del usuario). Pedir lo de siempre (§3): plantel "Ampliado" y Rendimiento
    2026, debut e inferiores, los que siguen en reserva, lesiones, parientes,
    capitán, comentario, Sofascore (Liga y copas) y rasgos (con defectos). Ya
-   están: secundarias, copas y tablas. Jhon Rentería (SAR) figura sin puesto
-   principal en su captura de secundarias (confirmar con su plantel).
-3. **Premios: cerrados** (v2.24.6/v2.24.7; ver `premios.md`). Siglas y
-   nombres como los dejó el usuario en el juego (sacó Iron Man y Semifinal
-   MVP). Para recalibrar más adelante: una liga exportada con temporadas
-   jugadas y `tools/argentina/premios-calibracion/` (reproduce los puntajes
-   del juego). Para una liga ya empezada: `premios-para-importar.json`.
-   All-Star: queda como está (la elección es fija del motor).
-4. Observado en las simulaciones del usuario (para más adelante, decide él):
-   muy pocos empates (el motor empata solo si los ~105 puntos por lado quedan
-   iguales) y mucha distancia arriba y abajo (Boca 40-3; Tigre 5-37-1, con
-   plantel de 2023: se empareja al cargar los equipos que faltan).
-5. Al cargar equipos que faltan: Jhon Rentería (SAR) figura sin puesto
-   principal en su captura de secundarias (por los totales, extremo derecho;
-   confirmar con su plantel). Sebastián Moyano, el libre con la foto de Mele,
-   es el tercer arquero de ALD: al cargar Aldosivi va en `reemplaza` y recibe
-   su foto. CCO no tiene arquero en el archivo (su captura trae a Aguerre y
-   Vallejos).
-6. Cabos sueltos: el ajuste del capitán según el motivo y si Estudiantes (sin
-   capitán fijo) lleva el arquetipo; fotos de 21 de los 24 prospectos.
-7. Más adelante (el usuario: "falta bastante"): colleges, nombres y orígenes
-   latinoamericanos (`playerBioInfo`, con todos los equipos y sus fotos, antes
-   de los libres), el draft (§7, 15) y los libres.
+   están: secundarias (`secundarias-2026.json`), copas y tablas. Avisos:
+   - Jhon Rentería (SAR) figura sin puesto principal en su captura de
+     secundarias (por los totales, extremo derecho: confirmar con su plantel).
+   - Sebastián Moyano, el libre con la foto de Mele, es el tercer arquero de
+     ALD: va en `reemplaza` y recibe su foto.
+   - Fernando Román (DYJ) volvió de un préstamo en Aldosivi en julio: al cargar
+     ALD, mirar su primera mitad del año.
+   - CCO no tiene arquero en el archivo (su captura trae a Aguerre y
+     Vallejos). Mauro Pittón está en CCO con nacimiento 1995: es de 1994
+     (§7.6).
+2. **Libres (442; 345 de 35 años o menos)**, cuando estén los planteles.
+   Transfermarkt no los da en bloque. Propuesta aceptada en principio: juntar
+   sus números de a poco sin calcular (capturas por tandas que se transcriben,
+   o una página tipo escalera donde los carga y queda guardado) y valorarlos
+   todos juntos en un solo parche. Retirar a los que ya no juegan en el país
+   (§7.5).
+3. **Prospectos y draft** (después de libres y planteles): segunda ronda de
+   draft (§7.15).
+   - El draft generado queda en +12, elegido por el usuario después de dos
+     simulaciones suyas: `simulacion-2042-analisis.md`.
+   - Estimado para 2041: promedio de los 11 mejores de cada equipo, unos 54
+     (61 en 2026). Confirmarlo con otra simulación suya.
+4. **Análisis aceptados para más adelante** (llevan tiempo):
+   - Presupuesto de entrenamiento por club: hace crecer más o menos a sus
+     jugadores. Hoy todos tienen el nivel 34.
+   - Frecuencia de lesiones para el fútbol: calibrarla con una liga simulada
+     del usuario.
+   - Empates: el usuario duda de que se pueda hacer algo.
+5. **Fase 3 (historia):** §1, §7.6 y §7.10.
+   - Los 32 del Salón de la Fama tienen una sola fila de ratings (2022). Hay
+     que darles carreras completas con la curva de las simulaciones: sube
+     hasta los 25, baja desde los 26-27, retiro a los 32.
+   - Parientes fuera del archivo y personalidad de los ídolos.
+6. **Cabos sueltos:**
+   - Si estira la escala por los montones (60 y 61 con unos 30 jugadores).
+   - El ajuste del capitán según el motivo.
+   - Fotos de 21 de los 24 prospectos.
+   - Jugadores de élite de las cinco grandes ligas (§7.3).
+   - Colleges y nombres latinoamericanos (§7.14).
+   - All-Star (§7.8).
+7. **Premios: cerrados** (v2.24.6/v2.24.7 y nombres del 26/11; ver
+   `premios.md`). Para recalibrar: una liga exportada con temporadas jugadas y
+   `tools/argentina/premios-calibracion/`. Para una liga ya empezada:
+   `premios-para-importar.json`.
 
 Las reglas esenciales están en `/CLAUDE.md`. Esto es el detalle.
 
@@ -367,60 +362,77 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
   2026 (`TABLA_ANUAL_2026`, igual a `tablas-2026.json`); equipo del usuario
   por defecto: Central (ROS).
 - Banderas: Siria con imagen propia; "Sao Tome and Principe".
+- Desde la v2.27.8-v2.27.11 (26/11):
+  - Draft generado (2100 prospectos ficticios de 2026-2055): +12 de OVR parejo
+    después de la escala nueva. `SUBA_DRAFT=N` arma con otra suba.
+  - Salón de la Fama: `hofFactor` 0,5 (umbral 43,1). `HOF_FACTOR=1.2` arma como
+    antes.
+  - Lesiones en inglés al armar: `EN_INGLES` en `lesiones.ts`; los datos siguen
+    en castellano. `INGLES=no` arma como antes.
+  - Cierre de pases a mitad de temporada (`tradeDeadline` 0,5; ya venía así).
 
 ## 6. Archivos de datos
 
-- `planteles/XXX.json`: los 25 planteles cargados; `planteles/preparacion/`: los
-  que están en preparación (hoy ninguno): solo los lee `cruces.ts`; al
-  terminar se pasan a `planteles/` y se suman a `armar-v2.sh`.
-- `arqueros/`: la lista de arqueros del usuario y la comparación con hoy
-  (ver §4).
-- `salidas-2026.json` (382 en total): los que se fueron de INR (8), GIM (14), LAN (12),
-  HUR (13), TAL (12), BEL (14), INS (15), NOB (15), ERC (20), UNI (21), BAR (3), PLA (6), DYJ (20), BAN (15), TIG (14) e IND (2:
-  Fernández Cedrés y Pussetto, números que dio el usuario; IND y los equipos
-  anteriores se cargaron antes de que existiera este archivo) con sus números
-  2026. Villa (INR → BOC): con la suma (44 PJ, 4 g, 8 a) su 70 se sostiene.
-  Dylan Aquino (LAN) se fue a Union Saint-Gilloise (Bélgica). Leonel Pérez
-  (HUR → RAC): 0 PJ en Huracán, no cambia nada. Por revisar con la suma al
-  cargar TAL (ya están en equipos cargados): Vigo (TAL → INR, 57), Ortegoza
-  (TAL → RAC, 61), Río (TAL → SLO, 54) y Ronaldo Martínez (TAL → VEL, 69).
-- `tablas-reserva-2026.json`: Torneo de Reserva 2026 (Anual, Apertura y
-  Clausura; sin promedios). Sirve para valorar a los juveniles que casi no
-  jugaron en Primera.
-- `tablas-2026.json`: Apertura, Clausura, Anual y Promedios 2026 (verificadas:
-  Apertura + Clausura = Anual; promedios = puntos / partidos).
-- `propuesta-valores-fijos.md`: propuesta sobre valores fijos, ya resuelta
-  (v2.14.3).
-- `propuesta-juveniles.md`: análisis de los menores de 19 y valores
-  aplicados en la v2.18.2 (rendimiento + plus por valor de mercado) y la
-  segunda revisión con la reserva (menores de 20 y prospectos, v2.19.2).
-- Herramientas nuevas de esta sesión: `arqueros.ts` (lista vs hoy) y
-  `vecinos.ts` (cada jugador contra sus vecinos de la escalera).
-- `equipos.csv`: fuente única de los 163 equipos (desde la v2.23.3; reemplazó
-  a `equipos-usuario.json`): abreviatura, ciudad, apodo, nombre completo del
-  club (College), zona, división, colores, camiseta, estadio, población y
-  logos. La aplica `equipos-interior.ts`; `desde-juego.ts` escribe ahí lo que
-  el usuario cambia en el juego; `equipos-csv.ts` la regenera desde una
-  versión. Los 163 con nombre completo (los dudosos los confirmó el
-  usuario, 24/11).
-- `copas-2026.json`: copas 2026 de los 30 equipos (dato del usuario).
-- `rendimiento/EQUIPO.mjs`: Rendimiento completo de los 13 primeros (el
-  resto lo tiene en su plantel desde que se cargó).
-- `propuesta-ovr-v2.23.3.md`: revisiones de OVR con el año completo (sin
-  aplicar).
+**Datos (fuente de todo; `armar-v2.sh` arma desde acá):**
+- `planteles/XXX.json`: los 25 planteles cargados. `planteles/preparacion/`:
+  los que están en preparación (hoy ninguno; solo los lee `cruces.ts`).
+- `equipos.csv`: fuente única de los 163 equipos (abreviatura, ciudad, apodo,
+  nombre oficial del club para el College, zona, división, colores, camiseta,
+  estadio, población y logos). La aplica `equipos-interior.ts`;
+  `desde-juego.ts` escribe ahí lo que el usuario cambia en el juego. Nombres
+  oficiales corregidos por el usuario el 24/11 y el 26/11 (16 clubes).
+- `salidas-2026.json` (382): los que se fueron de los equipos cargados, con
+  sus números 2026, por si aparecen en otro equipo (`cruces.ts`).
 - `secundarias-2026.json`: posiciones secundarias de los equipos sin cargar
-  (captura "Composición de la plantilla según posiciones"; nombres como en el
-  plantel). Al cargar el equipo, pasarlas a su plantel (y sacarlo de este
-  archivo: PLA, DYJ, BAN y TIG ya pasaron).
+  (pasan al plantel al cargarlos).
+- `tablas-2026.json` (Apertura, Clausura, Anual y Promedios),
+  `tablas-reserva-2026.json` (Reserva) y `copas-2026.json` (copas de los 30).
+- `rendimiento/EQUIPO.mjs`: Rendimiento completo de los 13 primeros (los demás
+  lo tienen en su plantel desde que se cargaron).
+- `sofascore/liga-2026-por-puesto.txt`: listas de Sofascore por puesto del
+  usuario.
+- `arqueros/`: la lista de arqueros del usuario (desactualizada, base de
+  comparación) y `valores-actuales.md` (se regenera con cada versión).
+- `escalera/`: copia de la página del usuario (`index.html`,
+  `escalera.json`) y `escalera/listas/FECHA.txt` (sus listas, tal cual).
+- `premios-para-importar.json`: los premios para una liga ya empezada.
+- `versiones.md`: registro de las versiones que salieron de la carpeta
+  (huella, commit y qué cambió; cómo recuperarlas).
+
+**Documentos** (vigentes):
+- `premios.md`: la gala de premios.
+- `sistema-ratings.md`: cómo se pasan los ratings del básquet al fútbol.
+- `simulacion-2042-analisis.md`: las dos ligas simuladas del usuario (draft
+  generado, juveniles, Salón de la Fama).
+- `revision-ratings-mano-y-juveniles.md`: el método de juveniles de punto
+  medio (aceptado con concesiones) y el potencial de Flores.
+
+**Documentos históricos** (decisiones ya tomadas; quedan como registro de cómo
+se llegó; lo vigente está en CLAUDE.md y en este archivo):
+- `propuesta-valores-fijos.md` (resuelta en la v2.14.3).
+- `propuesta-juveniles.md` (regla vieja de juveniles, v2.18-v2.19).
+- `revision-general-2026-11-23.md` (v2.22.2) y `revision-escala-2026-11-23.md`
+  (escala nueva, v2.23.1; tiene la correspondencia con la escala vieja, que
+  sigue en uso para el sueldo).
+- `propuesta-ovr-v2.23.3.md` (aceptada en parte en la v2.23.4),
+  `revision-v2.23.4.md` y `revision-v2.23.12.md`.
+- `analisis-composites-y-capitanes.md` (aplicado en la v2.23.6) y
+  `analisis-premios.md` (base de `premios.md`).
+- `revision-general-v2.27.md`, `revision-juveniles-defensores-v2.27.md` y
+  `cambios-ovr-desde-v2.27.md` (decididos en la v2.27.4).
+- `prospectos-2026-2055.json` y `posiciones_a_revisar.csv`: de la fase 1
+  (v1.67); ninguna herramienta los usa.
+
+**Herramientas** (`tools/argentina/`): las de CLAUDE.md. Además,
+`simulacion/` (leen una liga simulada del usuario: `sim-escala`,
+`sim-equipos`, `sim-juveniles`, `sim-ganancia`, `sim-curva`, `sim-salon`) y
+`premios-calibracion/`.
 
 ## 7. Pendientes
 
 1. **Cargar los 5 equipos restantes** (SAR, ALD, ATU, CCO, GEM).
-2. **Fotos:** faltan las 30 de TIG (v2.27; las de DYJ y BAN entraron en la
-   v2.26.2); las pone el usuario en el juego.
-   Completas en los demás desde la v2.23.8 (591 de 591 en los planteles, sin
-   miniaturas de Google; 566 de Transfermarkt y 25 de otros sitios con link
-   directo). Prospectos sin foto: 21 de los 24 de los planteles (el usuario
+2. **Fotos:** completas en los 25 planteles (778 de 778 desde la v2.27.7;
+   las pone el usuario en el juego y vuelven con `desde-juego.ts`). Prospectos sin foto: 21 de los 24 de los planteles (el usuario
    decide). Foto repetida que queda: Sebastián Moyano (libre) tiene la de
    Santiago Mele (IND): la de Moyano es la equivocada; Moyano es el
    tercer arquero de ALD (captura de secundarias, 24/11): se corrige al
@@ -434,7 +446,7 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
    acepta).
 4. **Para drafts futuros:** Juan Solari (RIV, reserva, clase 2007; hermano de
    Santiago, NOB, y de Pablo, libre).
-5. **Libres (~420):** versiones viejas de 2023. Al final de la fase 2: retirar
+5. **Libres (442):** versiones viejas de 2023. Al final de la fase 2: retirar
    a los que ya no juegan en el país y normalizar al resto (forma de los
    ratings pendiente en ellos).
 6. **Parentescos:** el usuario los va dando con cada equipo o los agrega en el
@@ -508,41 +520,17 @@ Pírez 1, Correa 1. Talleres: la capitanía se la reparten Schott y Cristaldo
 15. **Draft**: hoy es de 1 ronda (30 picks) con clases de 70 prospectos (la
     de 2026, 94): de cada clase quedan sin elegir 40 a 64, que pasan a ser
     libres. Propuesta: 2 rondas (60 picks, como la proporción del juego:
-    clase = 7/6 de los picks) o achicar las clases a 35. Espera la decisión.
+    clase = 7/6 de los picks) o achicar las clases a 35. El usuario (26/11):
+   se analiza con los prospectos, después de libres y planteles.
 16. Nombres completos de `equipos.csv`: completos (el usuario dio los 23 que
     faltaban o eran dudosos, 24/11). CES = Centro Social y Recreativo
     Español (draft de Smarra, RIE).
 
-**Datos que faltan (inventario del 23/11/2026; se le pidieron al usuario):**
-
-- Hay dos épocas de carga. Los 13 primeros (RIE, BOC, RIV, RAC, SLO, IND,
-  ROS, EST, ARG, VEL, INR, GIM, LAN) tienen del Rendimiento solo PJ, goles y
-  minutos; desde HUR, todas las columnas (convocado, entró, salió,
-  asistencias, tarjetas, ppp). Pedido: el Rendimiento de esos 13 (3 imágenes
-  cada uno; el plantel "Ampliado" no hace falta). De INR, GIM y LAN las
-  salidas sí están completas; de los 10 primeros no hay salidas (salvo 2 de
-  IND que dio el usuario): por eso a Montero (VEL → BOC) le falta su mitad
-  en Vélez. Si los números cambiaron desde la primera captura, usar los
-  nuevos y avisar.
-- Comentario del equipo (`contexto`) solo en los 8 últimos; RAC tiene solo
-  sus competiciones (captura del usuario). Pedido, en texto: comentario y
-  Sofascore ≥ 6,90 de los 13 primeros (los de GIM se dieron en su momento
-  pero no se guardaron) y las copas 2026 de todos (Copa Argentina,
-  Libertadores/Sudamericana); si ya se definió el Clausura. La posición en
-  las tablas la agrega Claude desde `tablas-2026.json` (INS no la tiene).
-- La final de la Libertadores de EST está solo en estas notas, no en su
-  plantel.
-- Nunca se transcribió la columna "antes" (club anterior, con ícono de
-  préstamo) del plantel Ampliado: no se sabe de dónde vino cada uno de los
-  112 que llegaron desde julio ni quién está a préstamo. El usuario decidió
-  que no hace falta anotarla.
-- Otros detalles fuera de lo común (no son errores): EST, único con
-  `capitanias` (6 jugadores); SLO y TAL con dos capitanes; lealtad a mano en
-  Arce, Nervo, Pussetto y Talpone; `peso` solo en Thiago Baroni; ratings a
-  mano en 9 (5 de INS); rasgos muy desparejos (EST 14 jugadores, el resto
-  4–9); prospectos solo en 10 equipos (ARG 6, VEL 5, TAL 5).
-- El más completo: UNI (y BAR a la par, con su copa). Ninguno tiene fotos
-  todavía.
+**Datos que faltaban (inventario del 23/11/2026): resuelto.** Los 13 primeros
+tienen el Rendimiento completo (`rendimiento/`, `completar-rendimiento.mjs`);
+los 25 tienen comentario (`contexto`) y Sofascore; las copas de los 30 están en
+`copas-2026.json`. La columna "antes" (club anterior) del plantel Ampliado no
+se anota (decisión del usuario).
 
 Resuelto en la sesión del 20–22/11 (para no volver a preguntar): Luján 60
 partidos (linfoma); Lodico 63; Olmos 44; Ortegoza 62 y Vigo 58 (Ronaldo
@@ -602,6 +590,23 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   que se fue de Racing (27 años); `cruces.ts` y la escalera los separan por
   la edad (±1).
 - `planteles/preparacion/` vacía no está en git: `cruces.ts` la tolera.
+- Ratings que vienen del juego (`desde-juego.ts`) ya traen el corrimiento de
+  las secundarias: se marcan `"ratingsDelJuego": true` para que el cargador no
+  lo sume otra vez (hasta el 26/11 se sumaba dos veces).
+- El POT que muestra el juego tiene azar (20 carreras simuladas; toma la 15.ª
+  mejor): cambia unos 2 puntos cada vez que se recalcula. La forma de los
+  ratings no lo mueve; el OVR sí (`techo-esperado.mjs`).
+- `ajustar-ovr.ts`, `desde-juego.ts` y `rasgos-usuario.ts --aplicar`
+  reescriben el plantel entero y cambian el formato de los rasgos (listas en
+  una línea → varias): diferencias de forma, no de datos. Para cambios
+  chicos, editar el texto del jugador; después revisar `git diff`.
+- Una liga simulada del usuario puede pesar 100-220 MB: leerla con
+  `node --max-old-space-size=8000` (herramientas de `simulacion/`).
+- La copia del repositorio en la sesión puede venir con poca historia (clon
+  corto): para recuperar una versión vieja con `git show`, primero `git fetch
+  --deepen=1500 origin liga-profesional-ar-2026-json`.
+- Versiones viejas: no están en la carpeta. Para comparar con una, sacarla del
+  historial (`versiones.md`) a una carpeta temporal.
 
 ## 9. Bitácora
 
@@ -642,6 +647,22 @@ y ERC aceptadas; Tirado (NOB) cargado igual.
   gambeta, habilidoso, pase. El "José Florentín" libre borrado en la v2.15.3
   era una copia vieja de Gabriel (misma foto, 1999, debut en Argentinos); José
   (INR, 1996) y Gabriel (ARG, 1999) siguen intactos.
+**28/11/2026 (sin versión nueva): repositorio al día y traspaso.** Pedido del
+usuario: limpiar las versiones viejas (dejándolas como referencia escrita) y
+poner la documentación al día.
+- 112 versiones viejas (v1.62 a v2.27.9, unos 520 MB) salieron de la carpeta.
+  Quedan la v2.0 y las tres últimas.
+- Las 116 están anotadas en `versiones.md` (versión, fecha, huella, commit y
+  qué cambió). Comprobado: las 116 se recuperan del historial con la misma
+  huella.
+- Armado desde la v2.0 da la v2.27.12 (misma huella); validación 0 errores;
+  auditoría igual.
+- Al día: encabezado y "Lo que sigue", §5 (configuración), §6 (archivos, con
+  índice de documentos vigentes e históricos), §7 (fotos, libres, draft,
+  inventario resuelto), §8 (trampas nuevas) y §10 (cómo empezar).
+- CLAUDE.md: regla de versiones en la carpeta.
+- Los documentos históricos llevan una nota arriba.
+
 **26/11/2026 (v2.27.12): nombres oficiales de 16 clubes.** Huella: `633aa383ec639fdd476908daad1b508e302dcbcd60a8be74e2d1dad31f5cd68b`.
 Corregidos por el usuario en la columna "club" de `equipos.csv` (DEF, MID, AGR,
 RIE, ATE, AMM, SMM, GER, JUU, UAI, FLA, VDA, BZT, JJU, MUN, CNU) y en el College
@@ -1603,12 +1624,28 @@ Mensaje sugerido del usuario:
 
 > Seguimos con el proyecto de la Liga Profesional Argentina 2026 en BBGM.
 > Primero traé la rama de GitHub, que tu copia puede estar atrasada. Leé
-> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.27.
+> CLAUDE.md y data/argentina/TRASPASO.md. La última versión es la v2.27.12.
 > Corré la validación y la auditoría sobre ese archivo y confirmame en pocas
 > líneas que entendiste el estado. Seguimos con Sarmiento: decime qué datos
 > te tengo que mandar.
 
+Al arrancar (Claude):
+1. `git fetch origin liga-profesional-ar-2026-json` y `git merge --ff-only
+   FETCH_HEAD`.
+2. Instalar `ajv` si falta (CLAUDE.md).
+3. Armar desde la v2.0 y comprobar que da la huella de la última versión
+   (`versiones.md` y el encabezado de este archivo).
+4. Validar y auditar.
+5. Contarle al usuario el estado en pocas líneas.
+
 Si el usuario editó cosas en el juego, que mande su liga exportada: se compara
 con la del repositorio y se importa con `desde-juego.ts`, con la versión sobre
-la que jugó como base. Si la liga tiene temporadas simuladas, NO se importa
-(sus ratings cambiaron): solo se miran fotos y cambios suyos.
+la que jugó como base. Si esa versión ya no está en la carpeta, se saca del
+historial (`versiones.md`). Si la liga tiene temporadas simuladas, NO se
+importa (sus ratings cambiaron): se analiza con `tools/argentina/simulacion/`.
+
+Con cada versión nueva:
+- En la carpeta quedan la v2.0 y las tres últimas. La más vieja de las tres
+  sale de la carpeta (`git rm`) y se anota en `versiones.md`.
+- Republicar la escalera en el mismo link.
+- Agregar la entrada en la bitácora y actualizar el encabezado.

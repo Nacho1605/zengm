@@ -1,5 +1,7 @@
 # Revisión de las listas del usuario y segunda pasada de la escalera (v2.23.12)
 
+**Documento histórico** (28/11/2026): aplicada en la v2.23.12. Queda como registro de cómo se decidió; lo vigente está en CLAUDE.md y TRASPASO.md.
+
 24/11/2026. Las listas del usuario (45 OVR y 56 jugadores con rasgos,
 `escalera/listas/2026-11-24.txt`) están aplicadas en la v2.23.12. Esto es lo
 que se le devolvió como dudas y propuestas: **nada de esto está aplicado**,

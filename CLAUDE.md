@@ -87,6 +87,14 @@ Entregar: `gzip -c` al scratchpad y mandar con SendUserFile (`.json.gz`); el
 juego lo acepta. Commit + push de cada versión
 (`git -c push.negotiate=true push`).
 
+Versiones en la carpeta (desde el 28/11, pedido del usuario): solo la v2.0
+(base) y las tres últimas. Al armar una nueva, la más vieja de las tres sale de
+la carpeta (`git rm`) y se anota en `data/argentina/versiones.md` (versión,
+fecha, huella, commit, qué cambió). Ahí están las 116 que salieron, todas
+recuperables con `git show COMMIT:data/argentina/ARCHIVO.json > ARCHIVO.json`
+(si el clon de la sesión es corto, antes `git fetch --deepen=1500 origin
+liga-profesional-ar-2026-json`).
+
 **Versiones:** vX.Y.Z = Fase.Versión.Parche. Cada equipo nuevo es una versión
 (v2.13 → v2.14); las correcciones sin equipo nuevo son parches (v2.14 →
 v2.14.1 → v2.14.2).

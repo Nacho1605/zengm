@@ -1,5 +1,7 @@
 # Análisis: composites del motor y el capitán como arquetipo (24/11/2026)
 
+**Documento histórico** (28/11/2026): aplicado en la forma 4 (v2.23.6). Queda como registro de cómo se decidió; lo vigente está en CLAUDE.md y TRASPASO.md.
+
 Sobre la v2.23.4 (jugadores de los 21 planteles con OVR 55 o más: 293).
 **Aplicado en la v2.23.6** (el usuario aceptó, 24/11): las soluciones
 recomendadas a los cuatro problemas (1 y 3 se aceptan como están; 2 y 4 en

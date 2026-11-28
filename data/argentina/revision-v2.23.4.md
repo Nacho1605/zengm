@@ -1,5 +1,7 @@
 # Segunda revisión de la escalera (v2.23.4, 24/11/2026)
 
+**Documento histórico** (28/11/2026): aplicada en la v2.23.4. Queda como registro de cómo se decidió; lo vigente está en CLAUDE.md y TRASPASO.md.
+
 Base: v2.23.3 más las 14 propuestas aceptadas por el usuario
 (`propuesta-ovr-v2.23.3.md`). Criterio: los lineamientos de TRASPASO §4
 (sesiones del 22 y 23/11), ahora con el Rendimiento completo y el Sofascore

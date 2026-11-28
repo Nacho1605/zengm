@@ -1,5 +1,7 @@
 # Propuesta de OVR con el Rendimiento completo (sobre la v2.23.3)
 
+**Documento histórico** (28/11/2026): aceptada en parte en la v2.23.4 (ver `revision-v2.23.4.md`). Queda como registro de cómo se decidió; lo vigente está en CLAUDE.md y TRASPASO.md.
+
 Sin aplicar: espera la decisión del usuario. Valores en la escala nueva
 (20 a 78). Salió de completar el Rendimiento de los 13 primeros equipos: 41
 jugadores tienen ahora números en dos clubes y varios estaban valorados con

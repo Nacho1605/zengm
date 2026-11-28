@@ -1,5 +1,7 @@
 # Segunda revisión de OVR: escala abierta hacia abajo (v2.23.1, 23/11/2026)
 
+**Documento histórico** (28/11/2026): escala nueva (v2.23.1), aplicada; la correspondencia con la escala vieja sigue en uso para el sueldo. Queda como registro de cómo se decidió; lo vigente está en CLAUDE.md y TRASPASO.md.
+
 Pedido del usuario (23/11, después de la v2.22.2):
 
 - El techo está bien en 78, con Paredes y Di María bastante lejos del resto.

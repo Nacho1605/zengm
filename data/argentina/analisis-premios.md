@@ -1,5 +1,7 @@
 # Análisis: premios de fin de temporada y Partido de las Estrellas (24/11/2026)
 
+**Documento histórico** (28/11/2026): base de la gala; lo vigente está en `premios.md`. Queda como registro de cómo se decidió; lo vigente está en CLAUDE.md y TRASPASO.md.
+
 Sobre la v2.24.1 y el código del juego (el mismo que usa play.basketball-gm.com;
 el esquema oficial `tools/argentina/league-schema.json` lo confirma).
 

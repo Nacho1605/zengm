@@ -1,5 +1,7 @@
 # Revisión de juveniles (sin la regla) y de defensores (v2.27.1 → v2.27.2)
 
+**Documento histórico** (28/11/2026): decidida por el usuario en la v2.27.4; el método de juveniles vigente es el de la v2.27.5. Queda como registro de cómo se decidió; lo vigente está en CLAUDE.md y TRASPASO.md.
+
 Pedido del usuario (25/11/2026): (1) revisar a los juveniles ignorando su regla (plus por valor de mercado), teniendo en cuenta que el potencial depende de la edad; (2) revisar a los que no viven de las estadísticas del Rendimiento (centrales, pivotes, mediocentros de marca, laterales), porque compararlos por goles y asistencias o solo por minutos es un error de método.
 Herramientas: `tools/argentina/revision-datos2.py`, `revision-juveniles.py`, `revision-defensores.py` (y las de la revisión general).
 

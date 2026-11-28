@@ -1,5 +1,7 @@
 # Propuesta: menores de 19 años de los planteles (21/11/2026, v2.18.1)
 
+**Documento histórico** (28/11/2026): regla vieja de juveniles (v2.18-v2.19), reemplazada por el método de punto medio (v2.27.5; ver CLAUDE.md y `revision-ratings-mano-y-juveniles.md`). Queda como registro de cómo se decidió; lo vigente está en CLAUDE.md y TRASPASO.md.
+
 Pedido del usuario: analizar las valoraciones y estadísticas de todos los
 jugadores menores de 19 años de los planteles cargados (edad al 21/11/2026),
 para normalizarlas. Son 22: 13 del primer equipo y 9 prospectos de reserva (P).

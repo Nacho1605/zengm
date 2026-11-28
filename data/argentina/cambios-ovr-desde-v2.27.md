@@ -1,5 +1,7 @@
 # Cambios de OVR desde la v2.27 (para que decida el usuario)
 
+**Documento histórico** (28/11/2026): decidido por el usuario en la v2.27.4. Queda como registro de cómo se decidió; lo vigente está en CLAUDE.md y TRASPASO.md.
+
 64 jugadores cambiados (aplicados en la v2.27.1, v2.27.2 y v2.27.3) y 11 propuestas o preguntas
 sobre valores del usuario (sin aplicar). Revisión: G = general (v2.27.1),
 J = juveniles sin la regla (v2.27.2), D = defensores (v2.27.2), S = con las listas
