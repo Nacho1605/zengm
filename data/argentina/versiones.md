@@ -142,4 +142,4 @@ formato (versión, fecha, huella, commit, qué cambió).
 | v2.27.11 | 2026-11-26 | `52e7547659fc1fdb9796e7f423c17d5fd1b99fceee0622a31b01c0899493dd20` | `f0a6e1317` | lesiones en inglés | no |
 | v2.27.12 | 2026-11-26 | `633aa383ec639fdd476908daad1b508e302dcbcd60a8be74e2d1dad31f5cd68b` | `f85e27ac1` | nombres oficiales de 16 clubes (equipos.csv) | sí |
 | v2.27.13 | 2026-11-28 | `35655d24290433d511287c537ed362048205879ec96ba4444cca0567cb9811f9` | `3ed436538` | Barbi y Andrada con la forma del archivo; gambeta a Andrada | sí |
-| v2.28 | 2026-11-28 | `82f7f53df459c79dd8c53feb9ebabf8328564b595ab71b4356be1b626317d211` | (commit de la v2.28) | Sarmiento (32 jugadores) | sí |
+| v2.28 | 2026-11-28 | `82f7f53df459c79dd8c53feb9ebabf8328564b595ab71b4356be1b626317d211` | `bf3426cfa` | Sarmiento (32 jugadores) | sí |
