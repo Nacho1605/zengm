@@ -259,29 +259,38 @@ const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&l
 
 const equipoDe = (eq) => DATOS.equipos.find((e) => e.eq === eq);
 // Diseño del escudo de cada club (indicación del usuario, 28/11/2026), con sus
-// colores de siempre: [tipo, color de fondo, color de la franja], índices de e.colores.
+// colores de siempre: [tipo, color de fondo, color de la franja, borde], índices de
+// e.colores (el borde también puede ser un color fijo, "#...", si el club no lo tiene).
 // liso = círculo de un color; banda = franja diagonal; franja = franja horizontal;
 // bastones = franjas verticales (empieza por el primer color); mitades = mitad y mitad;
-// v = chevrón. Los equipos que no están (sin cargar) siguen con el corte en diagonal.
+// v = chevrón. Bordes, ATU, CCO y GEM: indicación del usuario del 28/11 (los tres
+// últimos se ven al cargarlos). Los equipos que no están siguen con el corte en diagonal.
 const DISENO = {
 	RIV: ["banda", 0, 1], BOC: ["franja", 0, 1], ROS: ["bastones", 0, 1], EST: ["bastones", 0, 1],
-	INR: ["liso", 0], VEL: ["v", 0, 1], BEL: ["liso", 0], LAN: ["liso", 0],
-	ARG: ["banda", 0, 1], GIM: ["franja", 0, 1], INS: ["bastones", 1, 0], HUR: ["liso", 0],
-	IND: ["liso", 0], DYJ: ["banda", 0, 1], TAL: ["bastones", 0, 1], RAC: ["bastones", 0, 1],
-	TIG: ["franja", 0, 1], PLA: ["franja", 0, 1], SLO: ["bastones", 1, 0], BAR: ["bastones", 0, 1],
-	NOB: ["mitades", 1, 0], UNI: ["bastones", 0, 1], SAR: ["liso", 0], BAN: ["banda", 1, 0],
-	RIE: ["franja", 0, 1], ALD: ["bastones", 1, 0], ERC: ["liso", 0],
+	INR: ["liso", 0, 0, 1], VEL: ["v", 0, 1], BEL: ["liso", 0], LAN: ["liso", 0],
+	ARG: ["banda", 0, 1, 2], GIM: ["franja", 0, 1], INS: ["bastones", 1, 0], HUR: ["liso", 0, 0, 1],
+	IND: ["liso", 0], DYJ: ["liso", 0, 0, 1], TAL: ["bastones", 0, 1], RAC: ["bastones", 0, 1],
+	TIG: ["franja", 0, 1, 1], PLA: ["franja", 0, 1, 1], SLO: ["bastones", 1, 0], BAR: ["bastones", 0, 1],
+	NOB: ["mitades", 1, 0], UNI: ["bastones", 0, 1, 2], SAR: ["liso", 0], BAN: ["banda", 1, 0, "#f07f1a"],
+	RIE: ["franja", 0, 1], ALD: ["bastones", 1, 0], ERC: ["liso", 0, 0, 1],
+	ATU: ["bastones", 0, 1, 2], CCO: ["bastones", 0, 1], GEM: ["bastones", 1, 0],
 };
 const escudo = (e) => {
 	const c = e.colores || ["#888", "#ccc"];
 	const d = DISENO[e.eq];
 	let fondo;
+	let borde = "";
 	if (!d) {
 		fondo = `linear-gradient(135deg, ${esc(c[0])} 0 50%, ${esc(c[1])} 50% 100%)`;
 	} else {
-		const [tipo, i, k] = d;
+		const [tipo, i, k, br] = d;
 		const a = esc(c[i] ?? "#888");
 		const b = esc(c[k ?? i] ?? "#ccc");
+		// Borde de 2 px (el de 1 px de siempre, en el color del club, y 1 px más por dentro)
+		if (br != null) {
+			const x = esc(typeof br === "number" ? (c[br] ?? "#888") : br);
+			borde = `;border-color:${x};box-shadow:inset 0 0 0 1px ${x}`;
+		}
 		fondo = {
 			liso: a,
 			banda: `linear-gradient(45deg, ${a} 0 37%, ${b} 37% 63%, ${a} 63%)`,
@@ -291,7 +300,7 @@ const escudo = (e) => {
 			v: `linear-gradient(to bottom left, transparent 0 36%, ${b} 36% 64%, transparent 64%) 0 0 / 50% 85% no-repeat, linear-gradient(to bottom right, transparent 0 36%, ${b} 36% 64%, transparent 64%) 100% 0 / 50% 85% no-repeat, ${a}`,
 		}[tipo];
 	}
-	return `<span class="escudo" style="background:${fondo}" aria-hidden="true"></span>`;
+	return `<span class="escudo" style="background:${fondo}${borde}" aria-hidden="true"></span>`;
 };
 
 function filas() {

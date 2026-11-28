@@ -680,9 +680,14 @@ página de la escalera, cada circulito con el diseño de su club (con los colore
 de siempre): liso, banda diagonal (RIV, ARG, DYJ, BAN), franja horizontal (BOC,
 GIM, TIG, PLA, RIE), bastones (ROS, EST, INS, TAL, RAC, SLO, BAR, UNI, ALD),
 mitades (NOB) y la V de Vélez. Tabla `DISENO` en `escalera/index.html`; los
-equipos sin cargar (ATU, CCO, GEM) siguen con el corte en diagonal hasta que el
-usuario dé el suyo. Comprobado con una captura de la página; el archivo de liga
-no cambia.
+equipos sin cargar siguen con el corte en diagonal. Después, bordes de 2 px
+(pedido del usuario): INR blanco, HUR rojo, ERC negro, UNI azul, ARG azul, TIG
+rojo, PLA marrón, BAN naranja (#f07f1a: el club no tiene naranja entre sus
+colores) y DYJ pasa a círculo amarillo con borde verde. Ya están los de los que
+faltan cargar (se ven al cargarlos): ATU bastones celestes y blancos con borde
+dorado (#9f8e55, su tercer color), CCO y GEM bastones negros y blancos.
+Comprobado con capturas de la página (con una prueba de los tres que faltan);
+el archivo de liga no cambia.
 
 **28/11/2026 (v2.29.2): respuestas del usuario sobre Aldosivi.** Huella:
 `77d2f21ca4eedcd10f7e35dd870d75016fbcb2fbdc30531761fcf0d86133fdf7`.
