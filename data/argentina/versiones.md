@@ -141,4 +141,4 @@ formato (versión, fecha, huella, commit, qué cambió).
 | v2.27.10 | 2026-11-26 | `fa826772c4ee47547b10812bb6806aae1cac3d6d46958bdaa4345ab7d1c5d4e3` | `f333198c6` | umbral del Salón de la Fama (hofFactor 0,5) | no |
 | v2.27.11 | 2026-11-26 | `52e7547659fc1fdb9796e7f423c17d5fd1b99fceee0622a31b01c0899493dd20` | `f0a6e1317` | lesiones en inglés | sí |
 | v2.27.12 | 2026-11-26 | `633aa383ec639fdd476908daad1b508e302dcbcd60a8be74e2d1dad31f5cd68b` | `f85e27ac1` | nombres oficiales de 16 clubes (equipos.csv) | sí |
-| v2.27.13 | 2026-11-28 | `35655d24290433d511287c537ed362048205879ec96ba4444cca0567cb9811f9` | (este commit) | Barbi y Andrada con la forma del archivo; gambeta a Andrada | sí |
+| v2.27.13 | 2026-11-28 | `35655d24290433d511287c537ed362048205879ec96ba4444cca0567cb9811f9` | `3ed436538` | Barbi y Andrada con la forma del archivo; gambeta a Andrada | sí |
